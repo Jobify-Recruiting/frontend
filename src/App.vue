@@ -1,125 +1,314 @@
-<script setup>
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "@/components/HelloWorld.vue";
+<script>
+export default {
+  name: "navbar",
+  components: {},
+  data() {
+    return {
+      scrollPosition: null,
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.updateScroll);
+    if (this.$route.path === "/social") {
+      this.selected = 0;
+    } else if (this.$route.path === `/social/followings`) {
+      this.selected = 1;
+    } else if (
+      this.isAuthenticated &&
+      this.$route.path === `/social/profile/${this.loggedInUser.nickname}`
+    ) {
+      this.selected = 2;
+    } else if (this.$route.path === `/social/projects`) {
+      this.selected = 3;
+    } else if (this.$route.path === `/social/settings`) {
+      this.selected = 4;
+    } else if (this.$route.path === `/social/panel/panel`) {
+      this.selected = 5;
+    } else {
+      this.selected = 0;
+    }
+  },
+  methods: {
+    openMenu() {
+      let content = document.querySelector(".menu");
+      content.style.width = "100%";
+      content.style.opacity = "1";
+      content.style.visibility = "visible";
+      content.style.display = "inline";
+    },
+
+    closeMenu() {
+      let content = document.querySelector(".menu");
+      content.style.width = "0%";
+      content.style.opacity = "0";
+      content.style.visibility = "hidden";
+      content.style.display = "unset";
+    },
+    updateScroll() {
+      this.scrollPosition = window.scrollY;
+    },
+  },
+};
 </script>
 
 <template>
   <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+    <div
+      class="nav"
+      :class="{
+        change_color: scrollPosition > 50,
+        change_color2: scrollPosition < 50,
+      }"
+    >
+      <div class="content">
+        <div class="link">Home</div>
+        <div class="link">Aziende</div>
+        <div class="logo">Logo</div>
+        <div class="link">Lavoratori</div>
+        <div class="link" @click="openMenu()">Menu</div>
+      </div>
     </div>
   </header>
 
+  <div class="menu">
+    <div class="top">
+      <div class="logo">Logo</div>
+      <div class="closeMenu" @click="closeMenu()">X</div>
+    </div>
+    <div class="main">
+      <div class="list">
+        <div class="link">
+          <h3>
+            <p class="icon">></p>
+            Home
+          </h3>
+        </div>
+        <div class="link">
+          <h3>
+            <p class="icon">></p>
+            Posizioni aperte
+          </h3>
+        </div>
+        <div class="link">
+          <h3>
+            <p class="icon">></p>
+            Tecnologie
+          </h3>
+        </div>
+        <div class="link">
+          <h3>
+            <p class="icon">></p>
+            Richiedi candidature
+          </h3>
+        </div>
+      </div>
+
+      <div class="list">
+        <div class="link">
+          <h3>
+            <p class="icon">></p>
+            Partnerships
+          </h3>
+        </div>
+        <div class="link">
+          <h3>
+            <p class="icon">></p>
+            Lavora con noi
+          </h3>
+        </div>
+        <div class="link">
+          <h3>
+            <p class="icon">></p>
+            Chi siamo
+          </h3>
+        </div>
+        <div class="link">
+          <h3>
+            <p class="icon">></p>
+            Contattaci
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="socialFooter">
+        <div class="link">Facebook</div>
+        <div class="link">Linkedin</div>
+        <div class="link">Instagram</div>
+        <div class="link">Twitter</div>
+      </div>
+    </div>
+  </div>
   <RouterView />
 </template>
 
 <style>
+@import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
+@import url("http://fonts.cdnfonts.com/css/planer");
 @import "@/assets/base.css";
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
+* {
+  /*font-family: "Rogan-Regular";*/
+  font-family: "Planer", sans-serif;
 }
 
 @media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
+  .change_color {
+    background-color: #010c18;
+    backdrop-filter: blur(12px);
+    width: fit-content;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+  .change_color2 {
+    background: transparent;
+    width: fit-content;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   header {
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    z-index: 15;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav {
     display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 20px;
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
+
+  .nav .content {
+    display: flex;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav .link {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+  }
+
+  .nav .logo {
+    margin-left: 18rem;
+    margin-right: 18rem;
+  }
+
+  .menu {
+    position: fixed;
+    z-index: 20;
+    width: 0%;
+    height: 100%;
+    background: #010c18;
+    padding: 7rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: inline;
+  }
+
+  .menu .top {
+    display: flex;
+  }
+
+  .menu .top .closeMenu {
+    margin-left: auto;
+    padding: 1rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-radius: 16px;
+    border: 2px solid rgba(82, 82, 82, 0.315);
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu .top .closeMenu:hover {
+    border-color: white;
+    transform: rotate(90deg);
+  }
+
+  .menu .main {
+    display: flex;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+  }
+
+  .menu .main .list {
+    margin-right: 10rem;
+  }
+
+  .menu .main .list .link {
+    align-items: center;
+  }
+
+  .menu .main .list h3 {
+    font-size: 40px;
+    color: rgb(184, 184, 184);
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu .main .list h3:hover {
+    color: white;
+  }
+
+  .menu .main .list p {
+    margin-right: 2rem;
+    font-size: 20px;
+  }
+
+  .menu .footer {
+    display: flex;
+    border-top: 1px solid rgba(82, 82, 82, 0.315);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .menu .footer .socialFooter {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .menu .footer .socialFooter .link {
+    color: rgb(184, 184, 184);
+    margin-left: 1.5rem;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu .footer .socialFooter .link {
+    color: white;
+  }
+}
+
+@media (max-width: 1023px) {
 }
 </style>

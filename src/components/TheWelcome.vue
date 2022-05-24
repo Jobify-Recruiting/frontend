@@ -1,93 +1,237 @@
-<script setup>
-import WelcomeItem from "./WelcomeItem.vue";
-import DocumentationIcon from "./icons/IconDocumentation.vue";
-import ToolingIcon from "./icons/IconTooling.vue";
-import EcosystemIcon from "./icons/IconEcosystem.vue";
-import CommunityIcon from "./icons/IconCommunity.vue";
-import SupportIcon from "./icons/IconSupport.vue";
+<script>
+import Globe from "globe.gl";
+export default {
+  name: "welcome",
+  components: {},
+  data() {
+    return {};
+  },
+  mounted() {
+    // Gen random data
+    const N = 20;
+    const arcsData = [...Array(N).keys()].map(() => ({
+      startLat: (Math.random() - 0.5) * 180,
+      startLng: (Math.random() - 0.5) * 360,
+      endLat: (Math.random() - 0.5) * 180,
+      endLng: (Math.random() - 0.5) * 360,
+      color: [
+        ["#000aff", "#bbbdff", "#b4ffa3", "#ce00ff"][
+          Math.round(Math.random() * 6)
+        ],
+        ["#000aff", "#bbbdff", "#b4ffa3", "#ce00ff"][
+          Math.round(Math.random() * 6)
+        ],
+      ],
+    }));
+
+    Globe()
+      .globeImageUrl("//unpkg.com/three-globe/example/img/earth-night.jpg")
+      .arcsData(arcsData)
+      .backgroundColor("rgba(0,0,0,0)")
+      .arcColor("color")
+      .arcDashLength(() => Math.random())
+      .arcDashGap(() => Math.random())
+      .arcDashAnimateTime(() => Math.random() * 10000 + 500)(
+      document.getElementById("globeViz")
+    );
+  },
+  methods: {},
+};
 </script>
 
 <template>
-  <WelcomeItem>
-    <template #icon>
-      <DocumentationIcon />
-    </template>
-    <template #heading>Documentation</template>
-
-    Vue’s
-    <a target="_blank" href="https://vuejs.org/">official documentation</a>
-    provides you with all information you need to get started.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <ToolingIcon />
-    </template>
-    <template #heading>Tooling</template>
-
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite</a>.
-    The recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank">VSCode</a> +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>.
-    If you need to test your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank">Cypress</a> and
-    <a
-      href="https://docs.cypress.io/guides/component-testing/introduction"
-      target="_blank"
-      >Cypress Component Testing</a
-    >.
-
-    <br />
-
-    More instructions are available in <code>README.md</code>.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <EcosystemIcon />
-    </template>
-    <template #heading>Ecosystem</template>
-
-    Get official tools and libraries for your project:
-    <a target="_blank" href="https://pinia.vuejs.org/">Pinia</a>,
-    <a target="_blank" href="https://router.vuejs.org/">Vue Router</a>,
-    <a target="_blank" href="https://test-utils.vuejs.org/">Vue Test Utils</a>,
-    and
-    <a target="_blank" href="https://github.com/vuejs/devtools">Vue Dev Tools</a
-    >. If you need more resources, we suggest paying
-    <a target="_blank" href="https://github.com/vuejs/awesome-vue"
-      >Awesome Vue</a
-    >
-    a visit.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <CommunityIcon />
-    </template>
-    <template #heading>Community</template>
-
-    Got stuck? Ask your question on
-    <a target="_blank" href="https://chat.vuejs.org">Vue Land</a>, our official
-    Discord server, or
-    <a target="_blank" href="https://stackoverflow.com/questions/tagged/vue.js"
-      >StackOverflow</a
-    >. You should also subscribe to
-    <a target="_blank" href="https://news.vuejs.org">our mailing list</a> and
-    follow the official
-    <a target="_blank" href="https://twitter.com/vuejs">@vuejs</a>
-    twitter account for latest news in the Vue world.
-  </WelcomeItem>
-
-  <WelcomeItem>
-    <template #icon>
-      <SupportIcon />
-    </template>
-    <template #heading>Support Vue</template>
-
-    As an independent project, Vue relies on community backing for its
-    sustainability. You can help us by
-    <a target="_blank" href="https://vuejs.org/sponsor/">becoming a sponsor</a>.
-  </WelcomeItem>
+  <div id="globeViz"></div>
+  <div class="hover1"></div>
+  <div class="mainTitle">
+    <div class="Iam">
+      <p>Jobify è</p>
+      <b>
+        <div class="innerIam">
+          leggera<br />
+          a theme in progress<br />
+          built on bootstrap<br />
+          how I learn stuff<br />
+          how we do it
+        </div>
+      </b>
+    </div>
+    <h2>Ricerca e selezione al servizio delle aziende e del candidato</h2>
+  </div>
 </template>
+
+<style scoped>
+@import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
+@import url("http://fonts.cdnfonts.com/css/planer");
+
+* {
+  /*font-family: "Rogan-Regular";*/
+  font-family: "Planer", sans-serif;
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@-moz-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@-o-keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+  20% {
+    top: -50px;
+  }
+  40% {
+    top: -100px;
+  }
+  60% {
+    top: -150px;
+  }
+  80% {
+    top: -200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #globeViz {
+    position: fixed;
+    left: 20%;
+    cursor: pointer;
+  }
+
+  .hover1 {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    left: 0;
+  }
+
+  .mainTitle {
+    margin-left: 3rem;
+    padding-bottom: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 12rem;
+    width: 55%;
+  }
+
+  .mainTitle h2 {
+    color: white;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 600;
+    margin-top: 6rem;
+  }
+
+  .Iam {
+    padding-top: 3rem;
+    font: normal 40px/50px Planer, sans-serif;
+    color: #fff;
+  }
+  .Iam p {
+    height: 50px;
+    float: left;
+    margin-right: 0.3em;
+  }
+  .Iam b {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+  }
+  .Iam .innerIam {
+    display: inline-block;
+    color: #0062f5;
+    font-weight: 700;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+
+    /*animation*/
+    -webkit-animation: move 5s;
+    -moz-animation: move 5s;
+    -ms-animation: move 5s;
+    -o-animation: move 5s;
+    animation: move 5s;
+    /*animation-iteration-count*/
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    /*animation-delay*/
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+}
+
+@media (max-width: 1023px) {
+}
+</style>
