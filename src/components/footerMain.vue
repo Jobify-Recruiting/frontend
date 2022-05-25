@@ -64,8 +64,6 @@ export default {
 @media (min-width: 1024px) {
   .footer {
     width: 100%;
-    position: absolute;
-    bottom: -20%;
     background: linear-gradient(
       211deg,
       #010712,

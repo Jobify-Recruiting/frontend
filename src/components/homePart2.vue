@@ -5,7 +5,25 @@ export default {
   data() {
     return {};
   },
-  mounted() {},
+  mounted() {
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 2800 ||
+        document.documentElement.scrollTop > 2800
+      ) {
+        console.log(document.documentElement.scrollTop);
+        document.getElementById("text2").style.fontSize = "64px";
+        document.getElementById("text2").style.lineHeight = "68px";
+      } else {
+        document.getElementById("text2").style.fontSize = "94px";
+        document.getElementById("text2").style.lineHeight = "98px";
+      }
+    }
+  },
   methods: {},
 };
 </script>
@@ -67,6 +85,67 @@ export default {
             </div>
             <div class="elemdx">
               <div class="image"></div>
+            </div>
+          </div>
+
+          <div class="numbers">
+            <div class="number">
+              <div class="num">+ &nbsp;</div>
+              <div class="subtitle">ore di lavoro</div>
+            </div>
+            <div class="number">
+              <div class="num">+ &nbsp;</div>
+              <div class="subtitle">ore di lavoro</div>
+            </div>
+            <div class="number">
+              <div class="num">+ &nbsp;</div>
+              <div class="subtitle">ore di lavoro</div>
+            </div>
+          </div>
+
+          <div class="flow">
+            <div class="elemsx" style="padding-bottom: 10rem">
+              <div class="image2"></div>
+              <p class="elemP_image">
+                <span>Qui scriviamo la descrizione riferito</span> al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore
+              </p>
+              <p class="elemP_image">
+                <span>Qui scriviamo la descrizione riferito</span> al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore
+              </p>
+              <p class="elemP_image">
+                <span>Qui scriviamo la descrizione riferito</span> al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore
+              </p>
+            </div>
+            <div class="elemdx">
+              <h2 class="elemH2" id="text2">
+                Guarda il nostro workflow, come lavoriamo ogni giorno con i
+                nostri clienti
+              </h2>
+              <p class="elemP">
+                Qui scriviamo la descrizione riferito al testo superiore.
+              </p>
+            </div>
+          </div>
+
+          <div class="flowSingle">
+            <div class="flowSingleContent">
+              <h2 class="flowSingleTitle">
+                Guarda il nostro workflow, come lavoriamo ogni giorno con i
+                nostri clienti
+              </h2>
+              <a href="#first" class="flowSingleBtn">
+                <span>Scopri di più <span>></span></span>
+                <div class="liquid"></div>
+              </a>
             </div>
           </div>
         </div>
@@ -184,13 +263,12 @@ export default {
   .second .flow {
     margin-top: 15rem;
     display: flex;
-    align-items: center;
     width: 100%;
   }
 
   .second .flow .elemsx {
     width: 50%;
-    border-right: 2px solid #dadfe95d;
+    border-right: 2px solid #ffffff40;
     text-align: left;
     margin: 2rem;
   }
@@ -224,18 +302,209 @@ export default {
     font-weight: 700;
   }
 
-  .second .flow .elemdx {
-    width: 50%;
-    text-align: center;
+  .elemH2 {
+    background: -webkit-linear-gradient(-70deg, #3bf0e4 0%, #bca1f7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-size: 94px;
+    line-height: 98px;
+    font-weight: 700;
+    transition: all 0.5s ease-out;
   }
 
-  .second .flow .elemdx .image {
+  .elemP {
+    margin-top: 0.5rem;
+    color: rgb(219, 219, 219);
+    font-size: 24px;
+    width: 80%;
+    line-height: 28px;
+    letter-spacing: -0.03em !important;
+    font-weight: 700;
+  }
+
+  .elemP_image {
+    margin-top: 15rem !important;
+    color: rgb(219, 219, 219) !important;
+    font-size: 24px !important;
+    width: 90% !important;
+    line-height: 28px !important;
+    letter-spacing: -0.03em !important;
+    font-weight: 700 !important;
+  }
+
+  .elemP_image span {
+    margin-top: 15rem !important;
+    color: rgb(115, 164, 255) !important;
+    font-size: 24px !important;
+    width: 90% !important;
+    line-height: 28px !important;
+    letter-spacing: -0.03em !important;
+    font-weight: 700 !important;
+  }
+
+  .second .flow .elemdx {
+    width: 50%;
+  }
+
+  .image {
     width: 100%;
     height: 20vw;
     background: white;
     left: -10%;
     margin-top: 10rem;
     border-radius: 30px;
+  }
+
+  .image2 {
+    width: 100%;
+    height: 33vw;
+    background: white;
+    right: 5%;
+    border-radius: 30px;
+    margin-bottom: 10rem;
+  }
+
+  .numbers {
+    display: flex;
+    padding: 5rem;
+    align-items: center;
+    margin-left: auto;
+    width: fit-content;
+    margin-right: auto;
+    margin-top: 10rem;
+  }
+
+  .numbers .number {
+    text-align: center;
+    padding-left: 5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-right: 5rem;
+  }
+
+  .numbers .number .num {
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+  }
+
+  @property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+
+  .num {
+    transition: --num 5s;
+    counter-set: num var(--num);
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .num::after {
+    content: counter(num);
+    font-weight: 700;
+    font-size: 32px;
+  }
+  .num:hover {
+    --num: 800;
+  }
+
+  .numbers .number .subtitle {
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .second .flowSingle {
+    display: flex;
+    width: 100%;
+  }
+
+  .second .flowSingle .flowSingleContent {
+    padding: 5rem;
+    width: 100%;
+  }
+
+  .second .flowSingle .flowSingleContent .flowSingleTitle {
+    color: white;
+    font-size: 54px;
+    font-weight: 800 !important;
+    width: 100%;
+    text-align: center;
+    line-height: 58px;
+    font-family: "Alliance No.1", sans-serif;
+    font-feature-settings: "ss02" on, "ss01" on;
+    letter-spacing: -0.03em !important;
+  }
+
+  a {
+    position: relative;
+    padding: 14px 22px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: fit-content;
+    overflow: hidden;
+    border-radius: 16px;
+    margin-top: 3rem;
+    cursor: pointer;
+    font-family: "Planer";
+  }
+
+  a span {
+    position: relative;
+    color: #fff;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: "Planer";
+    letter-spacing: 5px;
+    font-weight: 600;
+    z-index: 1;
+  }
+
+  a .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #0062f5;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+  }
+
+  a .liquid::after,
+  a .liquid::before {
+    content: "";
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #000;
+  }
+
+  a .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 1);
+    animation: animate 5s linear infinite;
+  }
+
+  a .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, 0.5);
+    animation: animate 10s linear infinite;
+  }
+
+  a:hover .liquid {
+    top: -120px;
+  }
+
+  .flowSingleBtn {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -273,6 +542,15 @@ export default {
   }
   100% {
     background-position: 0px 50%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -75%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -75%) rotate(360deg);
   }
 }
 </style>
