@@ -1,9 +1,15 @@
 <script>
 import TheWelcome from "@/components/TheWelcome.vue";
+import homePart2 from "@/components/homePart2.vue";
+import homePart3 from "@/components/homePart3.vue";
+import footerMain from "@/components/footerMain.vue";
 
 export default {
   components: {
     TheWelcome,
+    homePart2,
+    homePart3,
+    footerMain,
   },
   methods: {
     updateScroll() {
@@ -29,10 +35,22 @@ export default {
 <template>
   <main>
     <TheWelcome></TheWelcome>
+    <homePart2></homePart2>
+    <homePart3></homePart3>
+    <footerMain></footerMain>
   </main>
 </template>
 
 <style scoped>
+main {
+  background: linear-gradient(211deg, #010712, #030f20, rgb(1 10 20), #010712);
+  background-size: 300%;
+  overflow: visible;
+  animation: animated_text 5s ease-in-out infinite;
+  -moz-animation: animated_text 5s ease-in-out infinite;
+  -webkit-animation: animated_text 5s ease-in-out infinite;
+}
+
 @-webkit-keyframes animated_text {
   0% {
     background-position: 0% 50%;
@@ -65,15 +83,5 @@ export default {
   100% {
     background-position: 0px 50%;
   }
-}
-
-main {
-  background: linear-gradient(211deg, #010712, #010916, rgb(1 10 20), #010712);
-  background-size: 300%;
-  overflow: visible;
-  animation: animated_text 5s ease-in-out infinite;
-  -moz-animation: animated_text 5s ease-in-out infinite;
-  -webkit-animation: animated_text 5s ease-in-out infinite;
-  height: 100vw;
 }
 </style>

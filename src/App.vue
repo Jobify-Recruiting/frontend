@@ -152,6 +152,16 @@ export default {
   font-family: "Planer", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 @media (min-width: 1024px) {
   .change_color {
     background-color: #010c18;
