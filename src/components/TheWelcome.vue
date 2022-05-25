@@ -63,7 +63,7 @@ export default {
       al servizio delle aziende e del candidato e selezione al servizio delle
       aziende e del candidato
     </h2>
-    <button class="btn">Scopri di più <span>></span></button>
+    <!--<button class="btn">Scopri di più <span>></span></button>-->
     <a href="#first">
       <span>Scopri di più <span>></span></span>
       <div class="liquid"></div>
