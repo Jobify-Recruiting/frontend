@@ -78,7 +78,7 @@ export default {
 <style scoped>
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
-@import url("http://fonts.cdnfonts.com/css/alliance-no1");
+@import url("https://fonts.cdnfonts.com/css/alliance-no1");
 
 * {
   /*font-family: "Rogan-Regular";*/
