@@ -15,7 +15,7 @@ export default {
         document.body.scrollTop > 2800 ||
         document.documentElement.scrollTop > 2800
       ) {
-        console.log(document.documentElement.scrollTop);
+        //console.log(document.documentElement.scrollTop);
         document.getElementById("text2").style.fontSize = "64px";
         document.getElementById("text2").style.lineHeight = "68px";
       } else {
@@ -148,6 +148,95 @@ export default {
               </a>
             </div>
           </div>
+          <div class="flow">
+            <div class="elemsx" style="padding-bottom: 10rem">
+              <h2 class="elemH2" id="text2">
+                Guarda il nostro workflow, come lavoriamo ogni giorno con i
+                nostri clienti
+              </h2>
+              <p class="elemP">
+                Qui scriviamo la descrizione riferito al testo superiore.
+              </p>
+            </div>
+            <div class="elemdx">
+              <div class="image3"></div>
+              <p class="elemP_image">
+                <span>Qui scriviamo la descrizione riferito</span> al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore
+              </p>
+              <p class="elemP_image">
+                <span>Qui scriviamo la descrizione riferito</span> al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore
+              </p>
+              <p class="elemP_image">
+                <span>Qui scriviamo la descrizione riferito</span> al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore, Qui scriviamo la descrizione riferito al testo
+                superiore
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="thirdDiv" id="third">
+      <div class="content">
+        <div class="partnersImgs">
+          <div class="partnerImg" style="left: 15%"></div>
+          <div class="partnerImg" style="right: 15%; top: 20%"></div>
+          <div class="partnerImg" style="right: 3%"></div>
+          <div class="partnerImg" style="right: 0%; top: 43%"></div>
+          <div class="partnerImg" style="right: 10%; top: 75%"></div>
+          <div class="partnerImg" style="top: 55%"></div>
+          <div class="partnerImg" style="left: 5%; top: 25%"></div>
+          <div class="partnerImg" style="left: 12%; top: 75%"></div>
+
+          <div class="partnerImg2" style="left: 15%"></div>
+          <div class="partnerImg2" style="right: 15%; top: 20%"></div>
+          <div class="partnerImg2" style="right: 3%"></div>
+          <div class="partnerImg2" style="right: 0%; top: 43%"></div>
+          <div class="partnerImg2" style="right: 10%; top: 75%"></div>
+          <div class="partnerImg2" style="top: 55%"></div>
+          <div class="partnerImg2" style="left: 5%; top: 25%"></div>
+          <div class="partnerImg2" style="left: 12%; top: 75%"></div>
+        </div>
+        <div class="first">
+          <div class="title">
+            <h2>Partners</h2>
+            <p
+              style="
+                width: 70% !important;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
+              tua ricerca e selezione, la tua ricerca e selezione, la tua
+              ricerca e selezione
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fourthDiv" id="fourth">
+      <div class="content">
+        <div class="first">
+          <div class="title">
+            <h2>Resta in <span>contatto</span> con noi</h2>
+            <p>
+              Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
+              tua ricerca e selezione, la tua ricerca e selezione, la tua
+              ricerca e selezione
+            </p>
+            <a href="#first" class="flowSingleBtn2">
+              <span>Scopri di più <span>></span></span>
+              <div class="liquid"></div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -161,7 +250,7 @@ export default {
 
 * {
   /*font-family: "Rogan-Regular";*/
-  font-family: "Planer", sans-serif;
+  font-family: "Alliance No.1", sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -186,6 +275,7 @@ export default {
   .content .first {
     display: flex;
     align-items: center;
+    padding-bottom: 5rem;
   }
 
   .mainTitle .title h2 {
@@ -268,15 +358,15 @@ export default {
 
   .second .flow .elemsx {
     width: 50%;
-    border-right: 2px solid #ffffff40;
+    border-right: 2px solid #0a1e4375;
     text-align: left;
     margin: 2rem;
   }
 
   .second .flow .elemsx h2 {
     color: white;
-    font-size: 54px;
-    line-height: 58px;
+    font-size: 64px;
+    line-height: 68px;
     font-weight: 700;
   }
 
@@ -362,6 +452,14 @@ export default {
     height: 33vw;
     background: white;
     right: 5%;
+    border-radius: 30px;
+    margin-bottom: 10rem;
+  }
+
+  .image3 {
+    width: 100%;
+    height: 33vw;
+    background: white;
     border-radius: 30px;
     margin-bottom: 10rem;
   }
@@ -505,6 +603,134 @@ export default {
   .flowSingleBtn {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .flowSingleBtn2 {
+  }
+
+  .thirdDiv {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    width: 100%;
+    background-color: #010712;
+    padding-top: 10rem;
+  }
+
+  .thirdDiv .content {
+    padding: 5rem;
+    padding-top: 10rem;
+  }
+
+  .thirdDiv .title h2 {
+    color: white;
+    font-size: 54px;
+    font-weight: 800 !important;
+    width: 100%;
+    text-align: center;
+    line-height: 58px;
+    font-family: "Alliance No.1", sans-serif;
+    font-feature-settings: "ss02" on, "ss01" on;
+    letter-spacing: -0.03em !important;
+  }
+
+  .thirdDiv .title h2 span {
+    background: -webkit-linear-gradient(-70deg, #3bf0e4 0%, #bca1f7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-family: "Alliance No.1", sans-serif;
+    font-feature-settings: "ss02" on, "ss01" on;
+    letter-spacing: -0.03em !important;
+    font-weight: 800 !important;
+  }
+
+  .thirdDiv .title p {
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+    line-height: 28px;
+    letter-spacing: -0.03em !important;
+  }
+
+  .partnersImgs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .partnerImg {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 16px;
+    position: absolute;
+  }
+
+  .partnerImg2 {
+    width: 110px;
+    height: 110px;
+    background: transparent;
+    border: 2px solid #0a1e4375;
+    border-radius: 16px;
+    position: absolute;
+  }
+
+  .fourthDiv {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 3rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    width: 100%;
+    background-color: #010712;
+    padding-top: 10rem;
+  }
+
+  .fourthDiv .content {
+    padding: 5rem;
+    padding-top: 10rem;
+  }
+
+  .fourthDiv .title h2 {
+    color: white;
+    font-size: 54px;
+    font-weight: 800 !important;
+    width: 40%;
+    text-align: left;
+    line-height: 58px;
+    font-family: "Alliance No.1", sans-serif;
+    font-feature-settings: "ss02" on, "ss01" on;
+    letter-spacing: -0.03em !important;
+  }
+
+  .fourthDiv .title h2 span {
+    background: -webkit-linear-gradient(-70deg, #3bf0e4 0%, #bca1f7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-family: "Alliance No.1", sans-serif;
+    font-feature-settings: "ss02" on, "ss01" on;
+    letter-spacing: -0.03em !important;
+    font-weight: 800 !important;
+  }
+
+  .fourthDiv .title p {
+    margin-top: 0.5rem;
+    color: white;
+    font-size: 24px;
+    width: 40%;
+    text-align: left;
+    line-height: 28px;
+    letter-spacing: -0.03em !important;
   }
 }
 

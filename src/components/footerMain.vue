@@ -55,10 +55,11 @@ export default {
 <style scoped>
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
+@import url("https://fonts.cdnfonts.com/css/planer");
 
 * {
   /*font-family: "Rogan-Regular";*/
-  font-family: "Planer", sans-serif;
+  font-family: "Alliance No.1", sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -117,7 +118,7 @@ export default {
     margin-left: 10rem;
     margin-right: 10rem;
     display: flex;
-    border-top: 2px solid rgba(82, 82, 82, 0.315);
+    border-top: 2px solid #0a1e4375;
   }
 
   .footer .bottom .left {

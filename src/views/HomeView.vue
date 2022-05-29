@@ -42,6 +42,12 @@ export default {
 </template>
 
 <style scoped>
+@import url("https://fonts.cdnfonts.com/css/alliance-no1");
+
+* {
+  /*font-family: "Rogan-Regular";*/
+  font-family: "Alliance No.1", sans-serif;
+}
 main {
   background: linear-gradient(211deg, #010712, #030f20, rgb(1 10 20), #010712);
   background-size: 300%;

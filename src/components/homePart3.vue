@@ -11,9 +11,7 @@ export default {
 </script>
 
 <template>
-  <div class="divPart3">
-    <div class="content">ciao</div>
-  </div>
+  <div class="divPart3"></div>
 </template>
 
 <style scoped>

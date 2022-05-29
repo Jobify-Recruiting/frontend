@@ -146,10 +146,11 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import "@/assets/base.css";
+@import url("https://fonts.cdnfonts.com/css/alliance-no1");
 
 * {
   /*font-family: "Rogan-Regular";*/
-  font-family: "Planer", sans-serif;
+  font-family: "Alliance No.1", sans-serif;
 }
 
 html {
@@ -247,7 +248,7 @@ html {
     padding-top: 0.2rem;
     padding-bottom: 0.2rem;
     border-radius: 16px;
-    border: 2px solid rgba(82, 82, 82, 0.315);
+    border: 2px solid #0a1e4375;
     color: white;
     font-size: 24px;
     font-weight: 600;
@@ -296,7 +297,7 @@ html {
 
   .menu .footer {
     display: flex;
-    border-top: 1px solid rgba(82, 82, 82, 0.315);
+    border-top: 1px solid #0a1e4375;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
   }
