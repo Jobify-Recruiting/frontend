@@ -249,8 +249,8 @@ export default {
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 
 * {
-  /*font-family: "Rogan-Regular";*/
-  font-family: "Alliance No.1", sans-serif;
+  /*font-family: "Alliance No.1", sans-serif;*/
+  font-family: "planer", sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -323,7 +323,6 @@ export default {
     width: 100%;
     text-align: center;
     line-height: 58px;
-    font-family: "Alliance No.1", sans-serif;
     font-feature-settings: "ss02" on, "ss01" on;
     letter-spacing: -0.03em !important;
   }
@@ -334,7 +333,6 @@ export default {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-family: "Alliance No.1", sans-serif;
     font-feature-settings: "ss02" on, "ss01" on;
     letter-spacing: -0.03em !important;
     font-weight: 800 !important;
@@ -531,7 +529,6 @@ export default {
     width: 100%;
     text-align: center;
     line-height: 58px;
-    font-family: "Alliance No.1", sans-serif;
     font-feature-settings: "ss02" on, "ss01" on;
     letter-spacing: -0.03em !important;
   }
@@ -631,7 +628,6 @@ export default {
     width: 100%;
     text-align: center;
     line-height: 58px;
-    font-family: "Alliance No.1", sans-serif;
     font-feature-settings: "ss02" on, "ss01" on;
     letter-spacing: -0.03em !important;
   }
@@ -642,7 +638,6 @@ export default {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-family: "Alliance No.1", sans-serif;
     font-feature-settings: "ss02" on, "ss01" on;
     letter-spacing: -0.03em !important;
     font-weight: 800 !important;
@@ -706,7 +701,6 @@ export default {
     width: 40%;
     text-align: left;
     line-height: 58px;
-    font-family: "Alliance No.1", sans-serif;
     font-feature-settings: "ss02" on, "ss01" on;
     letter-spacing: -0.03em !important;
   }
@@ -717,7 +711,6 @@ export default {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-family: "Alliance No.1", sans-serif;
     font-feature-settings: "ss02" on, "ss01" on;
     letter-spacing: -0.03em !important;
     font-weight: 800 !important;

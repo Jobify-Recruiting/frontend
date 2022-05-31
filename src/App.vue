@@ -149,8 +149,8 @@ export default {
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 
 * {
-  /*font-family: "Rogan-Regular";*/
-  font-family: "Alliance No.1", sans-serif;
+  /*font-family: "Alliance No.1", sans-serif;*/
+  font-family: "planer", sans-serif;
 }
 
 html {
