@@ -38,7 +38,7 @@ export default {
       class="position-absolute width-full z-1"
       style="margin-bottom: -1rem"
     >
-      <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#010712"></path>
+      <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
     </svg>
     <div class="mainTitle" id="first">
       <div class="content">
@@ -218,6 +218,10 @@ export default {
               tua ricerca e selezione, la tua ricerca e selezione, la tua
               ricerca e selezione
             </p>
+            <a href="#first" class="flowSingleBtn">
+              <span>Scopri di più <span>></span></span>
+              <div class="liquid"></div>
+            </a>
           </div>
         </div>
       </div>
@@ -264,7 +268,7 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
-    background-color: #010712;
+    background-color: #fff;
   }
 
   .mainTitle .content {
@@ -279,7 +283,7 @@ export default {
   }
 
   .mainTitle .title h2 {
-    color: white;
+    color: #010712;
     font-size: 54px;
     font-weight: 700;
     width: 90%;
@@ -288,16 +292,16 @@ export default {
 
   .mainTitle .title p {
     margin-top: 0.5rem;
-    color: white;
-    font-size: 24px;
+    color: #6c6f73;
+    font-size: 22px;
     width: 90%;
-    line-height: 28px;
+    line-height: 26px;
   }
 
   .first .video {
     width: 70vw;
     height: 25vw;
-    background: white;
+    background: #010712;
     border-radius: 30px;
   }
 
@@ -308,7 +312,7 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
-    background-color: #010712;
+    background-color: #fff;
   }
 
   .secondDiv .content {
@@ -317,34 +321,32 @@ export default {
   }
 
   .secondDiv .title h2 {
-    color: white;
-    font-size: 54px;
+    color: #010712;
+    font-size: 60px;
     font-weight: 800 !important;
     width: 100%;
     text-align: center;
-    line-height: 58px;
-    font-feature-settings: "ss02" on, "ss01" on;
+    line-height: 64px;
     letter-spacing: -0.03em !important;
   }
 
   .secondDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #3bf0e4 0%, #bca1f7 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-feature-settings: "ss02" on, "ss01" on;
     letter-spacing: -0.03em !important;
     font-weight: 800 !important;
   }
 
   .secondDiv .title p {
     margin-top: 0.5rem;
-    color: white;
-    font-size: 24px;
+    color: #6c6f73;
+    font-size: 22px;
     width: 100%;
     text-align: center;
-    line-height: 28px;
+    line-height: 26px;
     letter-spacing: -0.03em !important;
   }
 
@@ -362,7 +364,7 @@ export default {
   }
 
   .second .flow .elemsx h2 {
-    color: white;
+    color: #010712;
     font-size: 64px;
     line-height: 68px;
     font-weight: 700;
@@ -370,10 +372,10 @@ export default {
 
   .second .flow .elemsx h2 span {
     color: white;
-    font-size: 54px;
-    line-height: 58px;
+    font-size: 64px;
+    line-height: 68px;
     font-weight: 700;
-    background: -webkit-linear-gradient(-70deg, #3bf0e4 0%, #bca1f7 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -382,16 +384,15 @@ export default {
 
   .second .flow .elemsx p {
     margin-top: 0.5rem;
-    color: rgb(219, 219, 219);
+    color: #6c6f73;
     font-size: 24px;
     width: 80%;
     line-height: 28px;
     letter-spacing: -0.03em !important;
-    font-weight: 700;
   }
 
   .elemH2 {
-    background: -webkit-linear-gradient(-70deg, #3bf0e4 0%, #bca1f7 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -404,17 +405,16 @@ export default {
 
   .elemP {
     margin-top: 0.5rem;
-    color: rgb(219, 219, 219);
-    font-size: 24px;
+    color: #6c6f73;
+    font-size: 22px;
     width: 80%;
-    line-height: 28px;
+    line-height: 26px;
     letter-spacing: -0.03em !important;
-    font-weight: 700;
   }
 
   .elemP_image {
     margin-top: 15rem !important;
-    color: rgb(219, 219, 219) !important;
+    color: #010712 !important;
     font-size: 24px !important;
     width: 90% !important;
     line-height: 28px !important;
@@ -439,7 +439,7 @@ export default {
   .image {
     width: 100%;
     height: 20vw;
-    background: white;
+    background: #010712;
     left: -10%;
     margin-top: 10rem;
     border-radius: 30px;
@@ -448,7 +448,7 @@ export default {
   .image2 {
     width: 100%;
     height: 33vw;
-    background: white;
+    background: #010712;
     right: 5%;
     border-radius: 30px;
     margin-bottom: 10rem;
@@ -457,7 +457,7 @@ export default {
   .image3 {
     width: 100%;
     height: 33vw;
-    background: white;
+    background: #010712;
     border-radius: 30px;
     margin-bottom: 10rem;
   }
@@ -481,7 +481,7 @@ export default {
   }
 
   .numbers .number .num {
-    color: white;
+    color: #010712;
     font-weight: 700;
     font-size: 32px;
   }
@@ -508,7 +508,7 @@ export default {
   }
 
   .numbers .number .subtitle {
-    color: #fff;
+    color: #010712;
     font-size: 18px;
   }
 
@@ -523,12 +523,12 @@ export default {
   }
 
   .second .flowSingle .flowSingleContent .flowSingleTitle {
-    color: white;
-    font-size: 54px;
+    color: #010712;
+    font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
     text-align: center;
-    line-height: 58px;
+    line-height: 68px;
     font-feature-settings: "ss02" on, "ss01" on;
     letter-spacing: -0.03em !important;
   }
@@ -612,7 +612,7 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
-    background-color: #010712;
+    background-color: #fff;
     padding-top: 10rem;
   }
 
@@ -622,18 +622,17 @@ export default {
   }
 
   .thirdDiv .title h2 {
-    color: white;
-    font-size: 54px;
+    color: #010712;
+    font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
     text-align: center;
-    line-height: 58px;
-    font-feature-settings: "ss02" on, "ss01" on;
+    line-height: 68px;
     letter-spacing: -0.03em !important;
   }
 
   .thirdDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #3bf0e4 0%, #bca1f7 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -645,11 +644,11 @@ export default {
 
   .thirdDiv .title p {
     margin-top: 0.5rem;
-    color: white;
-    font-size: 24px;
+    color: #6c6f73;
+    font-size: 22px;
     width: 100%;
     text-align: center;
-    line-height: 28px;
+    line-height: 26px;
     letter-spacing: -0.03em !important;
   }
 
@@ -664,14 +663,14 @@ export default {
   .partnerImg {
     width: 100px;
     height: 100px;
-    background: white;
+    background: #010712;
     border-radius: 16px;
     position: absolute;
   }
 
   .partnerImg2 {
-    width: 110px;
-    height: 110px;
+    width: 105px;
+    height: 105px;
     background: transparent;
     border: 2px solid #0a1e4375;
     border-radius: 16px;
@@ -685,7 +684,7 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
-    background-color: #010712;
+    background-color: #fff;
     padding-top: 10rem;
   }
 
@@ -695,30 +694,28 @@ export default {
   }
 
   .fourthDiv .title h2 {
-    color: white;
-    font-size: 54px;
+    color: #010712;
+    font-size: 64px;
     font-weight: 800 !important;
     width: 40%;
     text-align: left;
-    line-height: 58px;
-    font-feature-settings: "ss02" on, "ss01" on;
+    line-height: 68px;
     letter-spacing: -0.03em !important;
   }
 
   .fourthDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #3bf0e4 0%, #bca1f7 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-feature-settings: "ss02" on, "ss01" on;
     letter-spacing: -0.03em !important;
     font-weight: 800 !important;
   }
 
   .fourthDiv .title p {
     margin-top: 0.5rem;
-    color: white;
+    color: #6c6f73;
     font-size: 24px;
     width: 40%;
     text-align: left;
