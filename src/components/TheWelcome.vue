@@ -64,10 +64,50 @@ export default {
       aziende e del candidato
     </h2>
     <!--<button class="btn">Scopri di più <span>></span></button>-->
-    <a href="#first">
-      <span>Scopri di più <span>></span></span>
-      <div class="liquid"></div>
-    </a>
+    <div class="" style="display: flex">
+      <a href="#first">
+        <span>Scopri di più <span>></span></span>
+        <div class="liquid"></div>
+      </a>
+    </div>
+    <div
+      class="test"
+      style="
+        display: flex;
+        border-top: 2px solid #0a1e4375;
+        position: absolute;
+        bottom: -5%;
+      "
+    >
+      <div
+        class="item"
+        style="margin-right: 4rem; text-align: left; margin-top: 2rem"
+      >
+        <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
+        <p style="color: #9fa5ac; font-size: 16px">ore</p>
+      </div>
+      <div
+        class="item"
+        style="margin-right: 4rem; text-align: left; margin-top: 2rem"
+      >
+        <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
+        <p style="color: #9fa5ac; font-size: 16px">ore</p>
+      </div>
+      <div
+        class="item"
+        style="margin-top: 2rem; margin-right: 4rem; text-align: left"
+      >
+        <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
+        <p style="color: #9fa5ac; font-size: 16px">ore</p>
+      </div>
+      <div
+        class="item"
+        style="margin-top: 2rem; margin-right: 4rem; text-align: left"
+      >
+        <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
+        <p style="color: #9fa5ac; font-size: 16px">ore</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -246,6 +286,7 @@ export default {
     height: 50px;
     float: left;
     margin-right: 0.3em;
+    font-weight: 700;
   }
   .Iam b {
     float: left;
