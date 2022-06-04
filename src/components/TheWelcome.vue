@@ -63,13 +63,15 @@ export default {
       al servizio delle aziende e del candidato e selezione al servizio delle
       aziende e del candidato
     </h2>
-    <!--<button class="btn">Scopri di più <span>></span></button>-->
-    <div class="" style="display: flex">
+    <a href="#first"
+      ><button class="btn">Scopri di più <span>></span></button></a
+    >
+    <!--<div class="" style="display: flex">
       <a href="#first">
         <span>Scopri di più <span>></span></span>
         <div class="liquid"></div>
       </a>
-    </div>
+    </div>-->
     <div
       class="test"
       style="
@@ -188,6 +190,17 @@ export default {
 
   a {
     position: relative;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: fit-content;
+    overflow: hidden;
+    cursor: pointer;
+    font-family: "Planer";
+  }
+
+  /*a {
+    position: relative;
     padding: 14px 22px;
     display: block;
     text-decoration: none;
@@ -248,7 +261,7 @@ export default {
 
   a:hover .liquid {
     top: -120px;
-  }
+  }*/
 
   .btn {
     display: -webkit-inline-box;
@@ -261,15 +274,22 @@ export default {
     border-radius: 16px;
     background: #0062f5;
     color: #ffffff;
-    letter-spacing: 1.75px;
     line-height: 20px;
     font-size: 12px;
     font-family: "Planer";
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 5px;
     margin-top: 3rem;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  .btn:hover {
+    background: #ffffff;
+    color: #0062f5;
+    font-weight: 600;
   }
 
   .btn span {
