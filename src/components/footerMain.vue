@@ -39,9 +39,9 @@ export default {
     <div class="bottom">
       <div class="left">
         <div class="link">Made by Loris Caputo</div>
+        <div class="link">2022. Tutti i diritti riservati.</div>
         <div class="link">Privacy Policy</div>
         <div class="link">Termini & Condizioni</div>
-        <div class="link">2022. Tutti i diritti riservati.</div>
       </div>
       <div class="right">
         <div class="link">Facebook</div>
@@ -81,7 +81,6 @@ export default {
     border-top-right-radius: 60px;
     border-top-left-radius: 60px;
     position: absolute;
-    bottom: -5%;
   }
 
   .footer .content {

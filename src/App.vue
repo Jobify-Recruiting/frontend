@@ -9,24 +9,6 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", this.updateScroll);
-    if (this.$route.path === "/social") {
-      this.selected = 0;
-    } else if (this.$route.path === `/social/followings`) {
-      this.selected = 1;
-    } else if (
-      this.isAuthenticated &&
-      this.$route.path === `/social/profile/${this.loggedInUser.nickname}`
-    ) {
-      this.selected = 2;
-    } else if (this.$route.path === `/social/projects`) {
-      this.selected = 3;
-    } else if (this.$route.path === `/social/settings`) {
-      this.selected = 4;
-    } else if (this.$route.path === `/social/panel/panel`) {
-      this.selected = 5;
-    } else {
-      this.selected = 0;
-    }
   },
   methods: {
     openMenu() {

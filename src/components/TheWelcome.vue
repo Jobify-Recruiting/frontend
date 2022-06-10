@@ -86,28 +86,28 @@ export default {
         style="margin-right: 4rem; text-align: left; margin-top: 2rem"
       >
         <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
-        <p style="color: #9fa5ac; font-size: 16px">ore</p>
+        <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
       <div
         class="item"
         style="margin-right: 4rem; text-align: left; margin-top: 2rem"
       >
         <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
-        <p style="color: #9fa5ac; font-size: 16px">ore</p>
+        <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
       <div
         class="item"
         style="margin-top: 2rem; margin-right: 4rem; text-align: left"
       >
         <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
-        <p style="color: #9fa5ac; font-size: 16px">ore</p>
+        <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
       <div
         class="item"
         style="margin-top: 2rem; margin-right: 4rem; text-align: left"
       >
         <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
-        <p style="color: #9fa5ac; font-size: 16px">ore</p>
+        <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
     </div>
   </div>
