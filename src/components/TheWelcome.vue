@@ -271,7 +271,7 @@ export default {
     -ms-flex-align: center;
     align-items: center;
     padding: 14px 22px;
-    border-radius: 16px;
+    border-radius: 25rem;
     background: #0062f5;
     color: #ffffff;
     line-height: 20px;
