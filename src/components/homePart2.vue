@@ -1043,7 +1043,7 @@ export default {
     text-transform: uppercase;
     width: fit-content;
     overflow: hidden;
-    border-radius: 16px;
+    border-radius: 25rem;
     margin-top: 3rem;
     cursor: pointer;
     font-family: "Planer";
@@ -1294,11 +1294,12 @@ export default {
 
   .fourthDiv .title p {
     margin-top: 0.5rem;
-    color: #6c6f73;
+    color: #6c6c6c;
     font-size: 24px;
     width: 40%;
     text-align: left;
-    line-height: 28px;
+    line-height: 32px;
+    font-weight: 700 !important;
   }
 
   .contentImage {
