@@ -106,6 +106,42 @@ export default {
               </div>
             </div>
           </div>
+          <div class="position">
+            <div class="content">
+              <div class="logo"></div>
+              <div class="desc">
+                <h3>Web developer</h3>
+                <p class="description">
+                  Sei appassionato di informatica e vuoi acquisire competenze
+                  nel settore? la specializzazione digital & technologies.
+                </p>
+
+                <div class="info">
+                  <p>• &nbsp;Milano</p>
+                  <p>• &nbsp;Tempo indeterminato</p>
+                  <a href="" class="btn btn1">Apri offerta ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="position">
+            <div class="content">
+              <div class="logo"></div>
+              <div class="desc">
+                <h3>Web developer</h3>
+                <p class="description">
+                  Sei appassionato di informatica e vuoi acquisire competenze
+                  nel settore? la specializzazione digital & technologies.
+                </p>
+
+                <div class="info">
+                  <p>• &nbsp;Milano</p>
+                  <p>• &nbsp;Tempo indeterminato</p>
+                  <a href="" class="btn btn1">Apri offerta ></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -225,6 +261,7 @@ export default {
 
   .positions .position {
     border-bottom: 2px solid #8c909481;
+    margin-bottom: 2rem;
   }
 
   .positions .position .content {
