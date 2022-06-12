@@ -183,8 +183,8 @@ export default {
 
   .mainTitle h2 {
     color: white;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 24px;
     margin-top: 4rem;
   }
 

@@ -10,12 +10,30 @@ export default {
       scrollFunction();
     };
 
+    function reveal() {
+      var reveals = document.querySelectorAll(".transition");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+
     function scrollFunction() {
       if (
         document.body.scrollTop > 3000 ||
         document.documentElement.scrollTop > 3000
       ) {
-        console.log(document.documentElement.scrollTop);
+        //console.log(document.documentElement.scrollTop);
         document.getElementById("text2").style.fontSize = "74px";
         document.getElementById("text2").style.lineHeight = "68px";
       } else {
@@ -62,7 +80,7 @@ export default {
               ricerca e selezione
             </p>
           </div>
-          <div class="video">
+          <div class="video transition">
             <iframe
               width="600"
               height="350"
@@ -107,7 +125,7 @@ export default {
                 <a href="#">Entra ora nel mondo Jobify <span>></span></a>
               </button>
             </div>
-            <div class="elemdx">
+            <div class="elemdx transition">
               <div class="image"></div>
               <p class="elemdxP_small">
                 Qui scriviamo la descrizione riferito al testo superiore.
@@ -134,27 +152,28 @@ export default {
 
           <div class="flow">
             <div class="elemsx" style="padding-bottom: 10rem">
-              <div class="image2"></div>
-              <p class="elemP_image">
+              <div class="image2 transition"></div>
+              <p class="elemP_image transition">
                 <span>Qui scriviamo la descrizione riferito</span> al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore
               </p>
-              <div class="elemP_point2"></div>
-              <p class="elemP_image">
+              <div class="elemP_point2 transition"></div>
+              <p class="elemP_image transition">
                 <span>Qui scriviamo la descrizione riferito</span> al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore
               </p>
-              <div class="elemP_point2"></div>
-              <p class="elemP_image">
+              <div class="elemP_point2 transition"></div>
+              <p class="elemP_image transition">
                 <span>Qui scriviamo la descrizione riferito</span> al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore
               </p>
+              <div class="elemP_point2 transition"></div>
             </div>
             <div class="elemdx">
               <h2 class="elemH2" id="text2">
@@ -167,13 +186,35 @@ export default {
                 scriviamo la descrizione riferito al testo superiore
               </p>
 
-              <div class="elemdx_rectangle1"></div>
-              <div class="elemdx_rectangle2"></div>
-              <div class="elemdx_rectangle3"></div>
+              <div class="elemdx_rectangle1 transition"></div>
+              <div class="elemdx_rectangle2 transition"></div>
+              <div class="elemdx_rectangle3 transition">
+                <p class="elemdx_text">
+                  <span
+                    style="
+                      margin-right: 1rem !important;
+                      color: #b8002e !important;
+                    "
+                    >></span
+                  ><span>Al testo superiore,</span> qui scriviamo la descrizione
+                  riferito al testo superiore.
+                </p>
+                <p class="elemdx_text2">
+                  <span
+                    style="
+                      margin-right: 1rem !important;
+                      color: #b8002e !important;
+                    "
+                    >></span
+                  ><span>Al testo superiore,</span> qui scriviamo la descrizione
+                </p>
+              </div>
 
-              <div class="elemdx_rectangle4"></div>
+              <div class="elemdx_rectangle4 transition"></div>
               <div class="elemdx_rectangle5"></div>
-              <div class="elemdx_rectangle6"></div>
+              <div class="elemdx_rectangle6 transition">
+                <img src="/src/assets/img_h2.png" />
+              </div>
             </div>
           </div>
 
@@ -190,7 +231,7 @@ export default {
             </div>
           </div>
           <div class="flow">
-            <div class="elemsx" style="padding-bottom: 10rem">
+            <div class="elemsx">
               <h2 class="elemH2_v2" id="text2">
                 Guarda il nostro workflow, come lavoriamo ogni giorno con i
                 nostri clienti
@@ -202,59 +243,83 @@ export default {
                 scriviamo la descrizione riferito al testo superiore
               </p>
 
-              <div class="elemdx_rectangle1"></div>
-              <div class="elemdx_rectangle3"></div>
+              <div class="elemdx_rectangle1 transition"></div>
+              <div class="elemdx_rectangle3 transition">
+                <img src="/src/assets/img_h3.png" />
+              </div>
 
-              <div class="elemdx_rectangle4"></div>
-              <div class="elemdx_rectangle6"></div>
+              <div class="elemdx_rectangle4 transition"></div>
+              <div class="elemdx_rectangle6 transition">
+                <p class="elemdx_text">
+                  <span
+                    style="
+                      margin-right: 1rem !important;
+                      color: #b8002e !important;
+                    "
+                    >></span
+                  ><span>Al testo superiore,</span> qui scriviamo la descrizione
+                  riferito al testo superiore.
+                </p>
+                <p class="elemdx_text2">
+                  <span
+                    style="
+                      margin-right: 1rem !important;
+                      color: #b8002e !important;
+                    "
+                    >></span
+                  ><span>Al testo superiore,</span> qui scriviamo la descrizione
+                </p>
+              </div>
             </div>
-            <div class="elemdx">
-              <div class="image3"></div>
-              <p class="elemP_image">
+            <div class="elemdx" style="padding-bottom: 10rem">
+              <div class="image3 transition"></div>
+              <p class="elemP_image transition">
                 <span>Qui scriviamo la descrizione riferito</span> al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore
               </p>
-              <div class="elemP_point"></div>
-              <p class="elemP_image">
+              <div class="elemP_point transition"></div>
+              <p class="elemP_image transition">
                 <span>Qui scriviamo la descrizione riferito</span> al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore
               </p>
-              <div class="elemP_point"></div>
-              <p class="elemP_image">
+              <div class="elemP_point transition"></div>
+              <p class="elemP_image transition">
                 <span>Qui scriviamo la descrizione riferito</span> al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore
               </p>
+              <div class="elemP_point transition"></div>
             </div>
           </div>
           <div class="flow">
             <div class="elemsx" style="padding-bottom: 10rem">
-              <div class="image2"></div>
-              <p class="elemP_image">
+              <div class="image2 transition"></div>
+              <p class="elemP_image transition">
                 <span>Qui scriviamo la descrizione riferito</span> al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore
               </p>
-              <div class="elemP_point2"></div>
-              <p class="elemP_image">
+              <div class="elemP_point2 transition"></div>
+              <p class="elemP_image transition">
                 <span>Qui scriviamo la descrizione riferito</span> al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore
               </p>
-              <div class="elemP_point2"></div>
-              <p class="elemP_image">
+              <div class="elemP_point2 transition"></div>
+              <p class="elemP_image transition">
                 <span>Qui scriviamo la descrizione riferito</span> al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore
               </p>
+              <div class="elemP_point2 transition"></div>
             </div>
             <div class="elemdx">
               <h2 class="elemH2" id="text3">
@@ -267,13 +332,35 @@ export default {
                 scriviamo la descrizione riferito al testo superiore
               </p>
 
-              <div class="elemdx_rectangle1"></div>
-              <div class="elemdx_rectangle2"></div>
-              <div class="elemdx_rectangle3"></div>
+              <div class="elemdx_rectangle1 transition"></div>
+              <div class="elemdx_rectangle2 transition"></div>
+              <div class="elemdx_rectangle3 transition">
+                <p class="elemdx_text3">
+                  <span
+                    style="
+                      margin-right: 1rem !important;
+                      color: #fff !important;
+                    "
+                    >></span
+                  ><span>Al testo superiore,</span> qui scriviamo la descrizione
+                  riferito al testo superiore.
+                </p>
+                <p class="elemdx_text4">
+                  <span
+                    style="
+                      margin-right: 1rem !important;
+                      color: #fff !important;
+                    "
+                    >></span
+                  ><span>Al testo superiore,</span> qui scriviamo la descrizione
+                </p>
+              </div>
 
-              <div class="elemdx_rectangle4"></div>
+              <div class="elemdx_rectangle4 transition"></div>
               <div class="elemdx_rectangle5"></div>
-              <div class="elemdx_rectangle6"></div>
+              <div class="elemdx_rectangle6 transition">
+                <img src="/src/assets/img_h1.png" />
+              </div>
             </div>
           </div>
         </div>
@@ -287,7 +374,7 @@ export default {
       <div class="content">
         <div class="partnersImgs">
           <div
-            class="partnerImg"
+            class="partnerImg transition"
             style="
               left: 15%;
               background-image: url(/src/assets/ph1.jpeg);
@@ -296,7 +383,7 @@ export default {
             "
           ></div>
           <div
-            class="partnerImg"
+            class="partnerImg transition"
             style="
               right: 15%;
               top: 20%;
@@ -306,7 +393,7 @@ export default {
             "
           ></div>
           <div
-            class="partnerImg"
+            class="partnerImg transition"
             style="
               right: 3%;
               background-image: url(/src/assets/ph5.jpeg);
@@ -315,7 +402,7 @@ export default {
             "
           ></div>
           <div
-            class="partnerImg"
+            class="partnerImg transition"
             style="
               right: 0%;
               top: 43%;
@@ -325,7 +412,7 @@ export default {
             "
           ></div>
           <div
-            class="partnerImg"
+            class="partnerImg transition"
             style="
               right: 10%;
               top: 75%;
@@ -335,7 +422,7 @@ export default {
             "
           ></div>
           <div
-            class="partnerImg"
+            class="partnerImg transition"
             style="
               top: 55%;
               background-image: url(/src/assets/ph3.jpeg);
@@ -344,7 +431,7 @@ export default {
             "
           ></div>
           <div
-            class="partnerImg"
+            class="partnerImg transition"
             style="
               left: 5%;
               top: 25%;
@@ -354,7 +441,7 @@ export default {
             "
           ></div>
           <div
-            class="partnerImg"
+            class="partnerImg transition"
             style="
               left: 12%;
               top: 75%;
@@ -367,33 +454,36 @@ export default {
           <div class="partnerImg3" style="left: 0%"></div>
           <!--<div class="partnerImg4" style="left: 0%"></div>-->
 
-          <div class="partnerImg5" style="left: -5%; top: 30%"></div>
+          <div class="partnerImg5 transition" style="left: -5%; top: 30%"></div>
 
           <div class="partnerImg3" style="left: -5%; top: 80%"></div>
 
-          <div class="partnerImg3" style="left: 80%; top: 50%"></div>
+          <div class="partnerImg3 transition" style="left: 80%; top: 50%"></div>
 
           <div class="partnerImg5" style="left: 70%"></div>
 
-          <div class="partnerImg5" style="left: 95%; top: 25%"></div>
+          <div class="partnerImg5 transition" style="left: 95%; top: 25%"></div>
 
           <div class="partnerImg3" style="left: 95%; top: 80%"></div>
 
-          <div class="partnerImg5" style="left: 15%; top: 55%"></div>
+          <div class="partnerImg5 transition" style="left: 15%; top: 55%"></div>
 
           <div class="partnerImg5" style="left: 10%; top: 95%"></div>
 
-          <div class="partnerImg5" style="left: 25%; top: 75%"></div>
+          <div class="partnerImg5 transition" style="left: 25%; top: 75%"></div>
 
           <div class="partnerImg3" style="left: 30%; top: 15%"></div>
 
-          <div class="partnerImg3" style="left: 70%; top: 75%"></div>
+          <div class="partnerImg3 transition" style="left: 70%; top: 75%"></div>
 
           <div class="partnerImg3" style="left: 100%; top: 5%"></div>
 
-          <div class="partnerImg3" style="left: 100%; top: 60%"></div>
+          <div
+            class="partnerImg3 transition"
+            style="left: 100%; top: 60%"
+          ></div>
 
-          <div class="partnerImg5" style="left: 85%; top: 95%"></div>
+          <div class="partnerImg5 transition" style="left: 85%; top: 95%"></div>
 
           <!--<div class="partnerImg2" style="left: 15%"></div>
           <div class="partnerImg2" style="right: 15%; top: 20%"></div>
@@ -443,11 +533,11 @@ export default {
           </div>
         </div>
         <div class="contentImage">
-          <div class="square"></div>
-          <div class="square2"></div>
-          <div class="square3"></div>
-          <div class="square4"></div>
-          <div class="rectangle">
+          <div class="square transition"></div>
+          <div class="square2 transition"></div>
+          <div class="square3 transition"></div>
+          <div class="square4 transition"></div>
+          <div class="rectangle transition">
             <h2>Assistenza H24</h2>
             <p>Siamo a tua completa disposizione.</p>
           </div>
@@ -502,7 +592,7 @@ export default {
 
   .mainTitle .title p {
     margin-top: 0.5rem;
-    color: #6c6c6c;
+    color: #627597;
     font-size: 22px;
     width: 90%;
     line-height: 32px;
@@ -527,7 +617,7 @@ export default {
   }
 
   .secondDiv .content {
-    padding: 5rem;
+    padding: 3rem;
     padding-top: 10rem;
   }
 
@@ -553,12 +643,23 @@ export default {
 
   .secondDiv .title p {
     margin-top: 0.5rem;
-    color: #6c6c6c;
+    color: #627597;
     font-size: 22px;
     width: 100%;
     text-align: center;
     line-height: 32px;
     font-weight: 700 !important;
+  }
+
+  .transition {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+
+  .transition.active {
+    transform: translateY(0);
+    opacity: 1;
   }
 
   .second .flow {
@@ -628,16 +729,14 @@ export default {
   .elemsx .elemdx_rectangle3 {
     width: 450px;
     height: 250px;
-    background: #fff;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    box-shadow: 0px 0px 133px 17px rgba(0, 119, 255, 0.17);
     position: absolute;
-    top: 53%;
-    left: -15%;
+    top: 47%;
+    left: -13%;
     z-index: 1;
+  }
+
+  .elemsx .elemdx_rectangle3 img {
+    width: 80%;
   }
 
   .elemsx .elemdx_rectangle4 {
@@ -668,6 +767,48 @@ export default {
     top: 77%;
     left: -15%;
     z-index: 1;
+    padding: 2rem;
+  }
+
+  .elemdx_rectangle6 .elemdx_text {
+    margin-top: 0 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
+  }
+
+  .elemdx_rectangle6 .elemdx_text span {
+    margin-top: 0 !important;
+    color: #00b818 !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
+  }
+
+  .elemdx_rectangle6 .elemdx_text2 {
+    margin-top: 0 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
+    margin-top: 1rem !important;
+  }
+
+  .elemdx_rectangle6 .elemdx_text2 span {
+    margin-top: 0 !important;
+    color: #00b818 !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
   }
 
   .second .flow .elemsx {
@@ -700,7 +841,7 @@ export default {
 
   .second .flow .elemsx p {
     margin-top: 2rem;
-    color: #6c6c6c;
+    color: #627597;
     font-size: 24px;
     width: 80%;
     line-height: 32px;
@@ -735,7 +876,7 @@ export default {
 
   .elemP {
     margin-top: 0.5rem;
-    color: #6c6c6c;
+    color: #627597;
     font-size: 22px;
     width: 80%;
     line-height: 32px;
@@ -745,7 +886,7 @@ export default {
 
   .elemP_image {
     margin-top: 25rem !important;
-    color: #6c6c6c !important;
+    color: #627597 !important;
     font-size: 24px !important;
     width: 90% !important;
     line-height: 28px !important;
@@ -828,6 +969,97 @@ export default {
     top: 43%;
     left: 20%;
     z-index: 1;
+    padding: 2rem;
+  }
+
+  .elemdx_rectangle3 .elemdx_text {
+    margin-top: 0 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
+  }
+
+  .elemdx_rectangle3 .elemdx_text span {
+    margin-top: 0 !important;
+    color: #00b818 !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
+  }
+
+  .elemdx_rectangle3 .elemdx_text2 {
+    margin-top: 0 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
+    margin-top: 1rem !important;
+  }
+
+  .elemdx_rectangle3 .elemdx_text2 span {
+    margin-top: 0 !important;
+    color: #00b818 !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
+  }
+
+  .elemdx_rectangle3 .elemdx_text3 {
+    background: rgb(0 74 255);
+    border-radius: 8px;
+    padding: 0.4rem;
+    margin-top: 0 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
+  }
+
+  .elemdx_rectangle3 .elemdx_text3 span {
+    margin-top: 0 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
+  }
+
+  .elemdx_rectangle3 .elemdx_text4 {
+    background: rgb(0 74 255);
+    border-radius: 8px;
+    padding: 0.4rem;
+    margin-top: 0 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
+    margin-top: 1rem !important;
+  }
+
+  .elemdx_rectangle3 .elemdx_text4 span {
+    margin-top: 0 !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    font-size: 16px !important;
+    width: 100% !important;
+    line-height: 20px !important;
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
+      Liberation Mono, monospace !important;
   }
 
   .elemdx .elemdx_rectangle4 {
@@ -863,21 +1095,19 @@ export default {
   .elemdx .elemdx_rectangle6 {
     width: 350px;
     height: 450px;
-    background: #fff;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    box-shadow: 0px 0px 133px 17px rgba(0, 119, 255, 0.17);
     position: absolute;
-    top: 68%;
-    left: 40%;
+    top: 66%;
+    left: 33%;
     z-index: 1;
+  }
+
+  .elemdx .elemdx_rectangle6 img {
+    width: 100%;
   }
 
   .second .flow .elemdx p {
     margin-top: 2rem;
-    color: #6c6f73;
+    color: #627597;
     font-size: 24px;
     width: 80%;
     line-height: 28px;
@@ -1190,7 +1420,7 @@ export default {
 
   .thirdDiv .title p {
     margin-top: 0.5rem;
-    color: #6c6c6c;
+    color: #627597;
     font-size: 22px;
     width: 100%;
     text-align: center;
@@ -1294,7 +1524,7 @@ export default {
 
   .fourthDiv .title p {
     margin-top: 0.5rem;
-    color: #6c6c6c;
+    color: #627597;
     font-size: 24px;
     width: 40%;
     text-align: left;

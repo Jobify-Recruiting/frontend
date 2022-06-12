@@ -80,7 +80,7 @@ export default {
         <div class="link">
           <h3>
             <p class="icon">></p>
-            Richiedi candidature
+            Journal
           </h3>
         </div>
       </div>
