@@ -34,6 +34,12 @@ export default {
       .arcDashAnimateTime(() => Math.random() * 10000 + 500)(
       document.getElementById("globeViz")
     );
+
+    let content = document.querySelector(".menu");
+    content.style.width = "0%";
+    content.style.opacity = "0";
+    content.style.visibility = "hidden";
+    content.style.display = "unset";
   },
   methods: {},
 };
@@ -63,9 +69,15 @@ export default {
       al servizio delle aziende e del candidato e selezione al servizio delle
       aziende e del candidato
     </h2>
-    <a href="#first"
-      ><button class="btn">Scopri di più <span>></span></button></a
-    >
+    <div class="" style="display: flex; align-items: center">
+      <a href="#first"
+        ><button class="btn">Scopri di più <span>></span></button></a
+      >
+
+      <a href="#first"
+        ><button class="btn2">Chi siamo<span>></span></button></a
+      >
+    </div>
     <!--<div class="" style="display: flex">
       <a href="#first">
         <span>Scopri di più <span>></span></span>
@@ -284,6 +296,7 @@ export default {
     margin-top: 3rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
+    margin-right: 1.5rem;
   }
 
   .btn:hover {
@@ -293,6 +306,40 @@ export default {
   }
 
   .btn span {
+    padding-left: 0.8rem;
+  }
+
+  .btn2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 22px;
+    border-radius: 25rem;
+    background: transparent;
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: "Planer";
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  .btn2:hover {
+    background: #ffffff;
+    color: #0062f5;
+    font-weight: 600;
+  }
+
+  .btn2 span {
     padding-left: 0.8rem;
   }
 

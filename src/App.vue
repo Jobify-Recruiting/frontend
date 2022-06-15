@@ -43,7 +43,7 @@ export default {
       }"
     >
       <div class="content">
-        <div class="link">Home</div>
+        <router-link to="/"><div class="link">Home</div></router-link>
         <div class="link">Aziende</div>
         <div class="logo">Logo</div>
         <div class="link">Lavoratori</div>
@@ -59,18 +59,22 @@ export default {
     </div>
     <div class="main">
       <div class="list">
-        <div class="link">
-          <h3>
-            <p class="icon">></p>
-            Home
-          </h3>
-        </div>
-        <div class="link">
-          <h3>
-            <p class="icon">></p>
-            Posizioni aperte
-          </h3>
-        </div>
+        <router-link to="/">
+          <div class="link">
+            <h3>
+              <p class="icon">></p>
+              Home
+            </h3>
+          </div>
+        </router-link>
+        <router-link to="/openposition">
+          <div class="link">
+            <h3>
+              <p class="icon">></p>
+              Posizioni aperte
+            </h3>
+          </div>
+        </router-link>
         <div class="link">
           <h3>
             <p class="icon">></p>
@@ -137,6 +141,14 @@ export default {
 
 html {
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {

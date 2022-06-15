@@ -377,7 +377,7 @@ export default {
             class="partnerImg transition"
             style="
               left: 15%;
-              background-image: url(/src/assets/ph1.jpeg);
+              background-image: url(/src/assets/partners/logo1.png);
               background-size: cover;
               background-position: center;
             "
@@ -387,7 +387,7 @@ export default {
             style="
               right: 15%;
               top: 20%;
-              background-image: url(/src/assets/ph4.jpeg);
+              background-image: url(/src/assets/partners/logo2.png);
               background-size: cover;
               background-position: center;
             "
@@ -396,7 +396,7 @@ export default {
             class="partnerImg transition"
             style="
               right: 3%;
-              background-image: url(/src/assets/ph5.jpeg);
+              background-image: url(/src/assets/partners/logo3.png);
               background-size: cover;
               background-position: center;
             "
@@ -406,7 +406,7 @@ export default {
             style="
               right: 0%;
               top: 43%;
-              background-image: url(/src/assets/ph3.jpeg);
+              background-image: url(/src/assets/partners/logo4.png);
               background-size: cover;
               background-position: center;
             "
@@ -416,7 +416,7 @@ export default {
             style="
               right: 10%;
               top: 75%;
-              background-image: url(/src/assets/ph2.jpeg);
+              background-image: url(/src/assets/partners/logo5.png);
               background-size: cover;
               background-position: center;
             "
@@ -425,7 +425,7 @@ export default {
             class="partnerImg transition"
             style="
               top: 55%;
-              background-image: url(/src/assets/ph3.jpeg);
+              background-image: url(/src/assets/partners/logo6.png);
               background-size: cover;
               background-position: center;
             "
@@ -435,7 +435,7 @@ export default {
             style="
               left: 5%;
               top: 25%;
-              background-image: url(/src/assets/ph6.jpeg);
+              background-image: url(/src/assets/partners/logo7.png);
               background-size: cover;
               background-position: center;
             "
@@ -445,7 +445,7 @@ export default {
             style="
               left: 12%;
               top: 75%;
-              background-image: url(/src/assets/ph1.jpeg);
+              background-image: url(/src/assets/partners/logo8.png);
               background-size: cover;
               background-position: center;
             "
@@ -1078,7 +1078,6 @@ export default {
   }
 
   .elemdx .elemdx_rectangle5 {
-    width: 600px;
     height: 60%;
     background: rgba(0, 255, 234, 0.07);
     border: 2px solid #fff;
@@ -1624,6 +1623,84 @@ export default {
 }
 
 @media (max-width: 1023px) {
+}
+
+@media (min-width: 1920px) {
+  .dynamicContent {
+    margin-top: 15rem;
+  }
+  .elemsx .elemdx_rectangle1 {
+    width: 450px;
+    height: 250px;
+    background: rgba(4, 0, 255, 0.17);
+    border: 2px solid #fff;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
+    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
+    box-shadow: 0px 0px 133px 17px rgba(4, 0, 255, 0.17);
+    position: absolute;
+    top: 49%;
+    left: -6%;
+    z-index: 1;
+  }
+
+  .elemsx .elemdx_rectangle3 {
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    top: 47%;
+    left: 0%;
+    z-index: 1;
+  }
+
+  .elemsx .elemdx_rectangle4 {
+    width: 450px;
+    height: 450px;
+    background: #c700ff2b;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
+    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
+    box-shadow: 0px 0px 133px 17px #c700ff2b;
+    position: absolute;
+    top: 75%;
+    left: -6%;
+    z-index: 1;
+  }
+
+  .elemsx .elemdx_rectangle6 {
+    width: 350px;
+    height: 400px;
+    background: #010712;
+    border: 2px solid #010712;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
+    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
+    box-shadow: 0px 0px 133px 17px rgba(0, 119, 255, 0.17);
+    position: absolute;
+    top: 77%;
+    left: 0%;
+    z-index: 1;
+    padding: 2rem;
+  }
+  .elemP_point {
+    position: absolute;
+    left: -6%;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 2px solid #98a1b0;
+    border-radius: 25rem;
+  }
+  .elemP_point2 {
+    position: absolute;
+    right: -2%;
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 2px solid #98a1b0;
+    border-radius: 25rem;
+  }
 }
 
 @-webkit-keyframes animated_text {
