@@ -190,7 +190,7 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 12rem;
-    width: 55%;
+    width: 65%;
   }
 
   .mainTitle h2 {
@@ -198,6 +198,7 @@ export default {
     font-size: 20px;
     line-height: 24px;
     margin-top: 4rem;
+    width: 75%;
   }
 
   a {
@@ -320,7 +321,7 @@ export default {
     border-radius: 25rem;
     background: transparent;
     color: #ffffff;
-    border: none;
+    border: 1px solid #fff;
     font-weight: 700;
     line-height: 20px;
     font-size: 12px;
