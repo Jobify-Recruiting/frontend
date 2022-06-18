@@ -474,6 +474,28 @@ export default {
             <h2>Posizioni aperte</h2>
             <p>Cerca tra i lavori attuali</p>
           </div>
+          <div class="search">
+            <div class="searchKey">
+              <input
+                id="nav"
+                class="input searchBar"
+                type="text"
+                name="searchbar"
+                placeholder="Cerca parola chiave"
+              />
+              <span>></span>
+            </div>
+            <div class="searchLocation">
+              <input
+                id="nav"
+                class="input searchBar"
+                type="text"
+                name="searchbar"
+                placeholder="Cerca luogo"
+              />
+              <span>></span>
+            </div>
+          </div>
           <div class="filters">
             <h2>Esplora</h2>
             <div class="content">
@@ -521,9 +543,68 @@ export default {
               </div>
             </div>
           </div>
+          <div class="ctaCV">
+            <div class="cols">
+              <div class="col col-padding">
+                <h3>
+                  Non hai trovato <span>offerte in linea</span> con le tue
+                  aspettative?
+                </h3>
+                <a href=""
+                  ><div class="button">Manda il tuo CV <span>></span></div></a
+                >
+              </div>
+              <div
+                class="col"
+                style="
+                  background-image: url(/src/assets/img_h1.png);
+                  background-size: cover;
+                "
+              ></div>
+            </div>
+          </div>
+
+          <div class="ctaCV" style="background: rgb(161 161 161 / 10%)">
+            <div class="blur"></div>
+            <div class="cols">
+              <div class="col col-padding">
+                <h3 style="color: #fff">
+                  Non hai trovato <span>offerte in linea</span> con le tue
+                  aspettative?
+                </h3>
+                <a href=""
+                  ><div class="button">Manda il tuo CV <span>></span></div></a
+                >
+              </div>
+              <div
+                class="col"
+                style="
+                  background-image: url(/src/assets/img_h1.png);
+                  background-size: cover;
+                "
+              ></div>
+            </div>
+          </div>
 
           <div class="positions">
             <h2>Tutti</h2>
+            <div class="filtersPositions">
+              <div class="blur"></div>
+              <div class="filterPosition">
+                Città
+                <p>></p>
+              </div>
+
+              <div class="filterPosition">
+                Data
+                <p>></p>
+              </div>
+
+              <div class="filterPosition">
+                Tipo di Contratto
+                <p>></p>
+              </div>
+            </div>
             <div class="content1">
               <div class="position">
                 <div class="blur"></div>
@@ -542,9 +623,9 @@ export default {
                     </div>
                   </div>
                   <div class="right">
-                    <div class="bottom2">Nuovo</div>
+                    <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="bottom">Apri ora <span>></span></div></a
+                      ><div class="button">Apri ora <span>></span></div></a
                     >
                   </div>
                 </div>
@@ -566,9 +647,9 @@ export default {
                     </div>
                   </div>
                   <div class="right">
-                    <div class="bottom2">Nuovo</div>
+                    <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="bottom">Apri ora <span>></span></div></a
+                      ><div class="button">Apri ora <span>></span></div></a
                     >
                   </div>
                 </div>
@@ -590,9 +671,9 @@ export default {
                     </div>
                   </div>
                   <div class="right">
-                    <div class="bottom2">Nuovo</div>
+                    <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="bottom">Apri ora <span>></span></div></a
+                      ><div class="button">Apri ora <span>></span></div></a
                     >
                   </div>
                 </div>
@@ -614,9 +695,9 @@ export default {
                     </div>
                   </div>
                   <div class="right">
-                    <div class="bottom2">Nuovo</div>
+                    <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="bottom">Apri ora <span>></span></div></a
+                      ><div class="button">Apri ora <span>></span></div></a
                     >
                   </div>
                 </div>
@@ -638,9 +719,9 @@ export default {
                     </div>
                   </div>
                   <div class="right">
-                    <div class="bottom2">Nuovo</div>
+                    <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="bottom">Apri ora <span>></span></div></a
+                      ><div class="button">Apri ora <span>></span></div></a
                     >
                   </div>
                 </div>
@@ -662,9 +743,9 @@ export default {
                     </div>
                   </div>
                   <div class="right">
-                    <div class="bottom2">Nuovo</div>
+                    <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="bottom">Apri ora <span>></span></div></a
+                      ><div class="button">Apri ora <span>></span></div></a
                     >
                   </div>
                 </div>
@@ -686,9 +767,9 @@ export default {
                     </div>
                   </div>
                   <div class="right">
-                    <div class="bottom2">Nuovo</div>
+                    <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="bottom">Apri ora <span>></span></div></a
+                      ><div class="button">Apri ora <span>></span></div></a
                     >
                   </div>
                 </div>
@@ -814,7 +895,7 @@ export default {
   .filters {
     margin-bottom: 4rem;
     width: 92%;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .filters .content {
@@ -951,12 +1032,12 @@ export default {
     letter-spacing: 1px;
   }
 
-  .positions .position .bottom {
+  .positions .position .button {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
-    background: #008cff;
+    background: #0062f5;
     color: #fff;
     font-size: 14px;
     font-weight: 600;
@@ -967,16 +1048,16 @@ export default {
     letter-spacing: 1.5px;
   }
 
-  .positions .position .bottom span {
+  .positions .position .button span {
     margin-left: 0.5rem;
   }
 
-  .positions .position .bottom:hover {
+  .positions .position .button:hover {
     background: #fff;
     color: #008cff;
   }
 
-  .positions .position .bottom2 {
+  .positions .position .button2 {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
     padding-left: 1.2rem;
@@ -991,6 +1072,189 @@ export default {
     letter-spacing: 1.5px;
     margin-left: auto;
     margin-bottom: 1rem;
+  }
+
+  .search {
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .searchKey {
+    width: 40%;
+    margin-right: 4rem;
+  }
+
+  .searchKey input {
+    font-size: 16px;
+    background-color: #1c1c1c;
+    border: 0;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: none;
+    width: 100%;
+    float: right;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-right: 3rem;
+    padding-bottom: 1.5rem;
+    height: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgba(38, 43, 49, 0.486);
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+
+  input:focus {
+    border: none;
+    outline: none;
+  }
+
+  .searchKey span {
+    position: absolute;
+    color: white;
+    right: 2%;
+    top: 8%;
+    font-size: 24px;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 12px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .searchKey span:hover {
+    background-color: rgba(27, 36, 46, 0.9);
+  }
+
+  .searchLocation {
+    width: 40%;
+    margin-right: 4rem;
+  }
+
+  .searchLocation input {
+    font-size: 16px;
+    background-color: #1c1c1c;
+    border: 0;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: none;
+    width: 100%;
+    float: right;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-right: 3rem;
+    padding-bottom: 1.5rem;
+    height: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgba(38, 43, 49, 0.486);
+  }
+
+  .searchLocation span {
+    position: absolute;
+    color: white;
+    right: 2%;
+    top: 8%;
+    font-size: 24px;
+    cursor: pointer;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 12px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .searchLocation span:hover {
+    background-color: rgba(27, 36, 46, 0.9);
+  }
+
+  .ctaCV {
+    width: 90%;
+    height: 300px;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .ctaCV .cols {
+    height: 100%;
+  }
+
+  .ctaCV .col-padding {
+    padding: 3rem;
+  }
+
+  .ctaCV .col h3 {
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 700;
+  }
+
+  .ctaCV .col h3 span {
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 700;
+    color: #0062f5;
+  }
+
+  .ctaCV .col {
+    width: 50%;
+    height: 100%;
+  }
+
+  .ctaCV .button {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    background: #0062f5;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 16px;
+    width: fit-content;
+    transition: 0.5s all;
+    letter-spacing: 1.5px;
+    margin-top: 2rem;
+  }
+
+  .ctaCV .button span {
+    margin-left: 0.5rem;
+  }
+
+  .ctaCV .button:hover {
+    background: #003585;
+  }
+
+  .filtersPositions {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: rgb(161 161 161 / 10%);
+    width: 90%;
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .filtersPositions .filterPosition {
+    color: white;
+    font-size: 20px;
+    margin-right: 3rem;
+    display: flex;
+    cursor: pointer;
+  }
+
+  .filtersPositions .filterPosition p {
+    transform: rotate(90deg);
+    margin-left: 2rem;
   }
 }
 
