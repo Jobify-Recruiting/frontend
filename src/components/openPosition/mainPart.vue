@@ -1242,19 +1242,25 @@ export default {
     width: 90%;
     padding: 1rem;
     border-radius: 12px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 16;
   }
 
   .filtersPositions .filterPosition {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 3rem;
     display: flex;
     cursor: pointer;
+    font-weight: 600;
   }
 
   .filtersPositions .filterPosition p {
     transform: rotate(90deg);
     margin-left: 2rem;
+    font-weight: 100;
   }
 }
 
