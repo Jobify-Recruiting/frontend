@@ -224,6 +224,10 @@ a:active {
     margin-top: 0.5rem;
   }
 
+  .logo img {
+    width: 95px;
+  }
+
   .menu {
     position: fixed;
     z-index: 20;
