@@ -13,7 +13,7 @@ export default {
 <template>
   <div class="footer">
     <div class="content">
-      <div class="col-logo">logo</div>
+      <div class="col-logo"><img src="/src/assets/logo/small_white.png" /></div>
       <div class="col">
         <div class="title">Azienda</div>
         <div class="link">Clicca qui</div>
@@ -93,6 +93,10 @@ export default {
 
   .footer .content .col-logo {
     width: 50%;
+  }
+
+  .col-logo img {
+    width: 80px;
   }
 
   .footer .content .col {

@@ -45,7 +45,9 @@ export default {
       <div class="content">
         <router-link to="/"><div class="link">Home</div></router-link>
         <div class="link">Aziende</div>
-        <div class="logo">Logo</div>
+        <div class="logo">
+          <img src="/src/assets/logo/white.png" />
+        </div>
         <div class="link">Lavoratori</div>
         <div class="link" @click="openMenu()">Menu</div>
       </div>
@@ -198,6 +200,7 @@ a:active {
 
   .nav .content {
     display: flex;
+    align-items: center;
     width: 100%;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -217,6 +220,8 @@ a:active {
   .nav .logo {
     margin-left: 18rem;
     margin-right: 18rem;
+    width: 170px;
+    margin-top: 0.5rem;
   }
 
   .menu {
