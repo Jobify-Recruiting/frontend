@@ -25,12 +25,9 @@ export default {
         <div class="title">Azienda</div>
         <div class="link">Clicca qui</div>
         <div class="link">Clicca qui</div>
-        <div class="link">Clicca qui</div>
-        <div class="link">Clicca qui</div>
       </div>
       <div class="col">
         <div class="title">Azienda</div>
-        <div class="link">Clicca qui</div>
         <div class="link">Clicca qui</div>
         <div class="link">Clicca qui</div>
         <div class="link">Clicca qui</div>
@@ -38,8 +35,10 @@ export default {
     </div>
     <div class="bottom">
       <div class="left">
-        <div class="link">Made by Loris Caputo</div>
-        <div class="link">2022. Tutti i diritti riservati.</div>
+        <div class="link">
+          Made by Loris Caputo &nbsp;&nbsp;•&nbsp;&nbsp; 2022. Tutti i diritti
+          riservati.
+        </div>
         <div class="link">Privacy Policy</div>
         <div class="link">Termini & Condizioni</div>
       </div>
@@ -78,8 +77,8 @@ export default {
     animation: animated_text 5s ease-in-out infinite;
     -moz-animation: animated_text 5s ease-in-out infinite;
     -webkit-animation: animated_text 5s ease-in-out infinite;
-    border-top-right-radius: 60px;
-    border-top-left-radius: 60px;
+    /*border-top-right-radius: 60px;
+    border-top-left-radius: 60px;*/
     position: absolute;
   }
 
@@ -92,7 +91,7 @@ export default {
   }
 
   .footer .content .col-logo {
-    width: 50%;
+    width: 30%;
   }
 
   .col-logo img {
@@ -109,6 +108,7 @@ export default {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 5px;
+    margin-bottom: 1.5rem;
   }
 
   .content .col .link {
@@ -125,6 +125,8 @@ export default {
     margin-right: 10rem;
     display: flex;
     border-top: 2px solid #0a1e4375;
+    font-size: 13px;
+    letter-spacing: 1px;
   }
 
   .footer .bottom .left {

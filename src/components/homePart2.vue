@@ -65,7 +65,7 @@ export default {
       preserveAspectRatio="none"
       viewBox="0 0 1680 40"
       class="position-absolute width-full z-1"
-      style="margin-bottom: -1rem"
+      style="top: -1.8rem"
     >
       <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
     </svg>
@@ -552,6 +552,17 @@ export default {
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 
+.transition {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.transition.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
   font-family: "planer", sans-serif;
@@ -649,17 +660,6 @@ export default {
     text-align: center;
     line-height: 32px;
     font-weight: 700 !important;
-  }
-
-  .transition {
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-  }
-
-  .transition.active {
-    transform: translateY(0);
-    opacity: 1;
   }
 
   .second .flow {
@@ -1122,7 +1122,7 @@ export default {
     background: #010712;
     left: -10%;
     margin-top: 10rem;
-    border-radius: 15px;
+    border-radius: 60px;
     -webkit-box-shadow: 0px 0px 133px 9px rgb(3 149 217 / 17%);
     -moz-box-shadow: 0px 0px 133px 9px rgba(3, 149, 217, 0.17);
     box-shadow: 0px 0px 133px 9px #0d5cffb5;
@@ -1137,7 +1137,7 @@ export default {
     background: #010712;
     right: -5%;
     margin-top: 2rem;
-    border-radius: 15px;
+    border-radius: 60px;
     margin-bottom: 10rem;
     -webkit-box-shadow: 0px 0px 133px 9px rgb(110 110 110 / 17%);
     -moz-box-shadow: 0px 0px 133px 9px rgba(110, 110, 110, 0.17);
@@ -1153,7 +1153,7 @@ export default {
     background: #010712;
     left: -10%;
     margin-top: 5rem;
-    border-radius: 15px;
+    border-radius: 60px;
     margin-bottom: 10rem;
     -webkit-box-shadow: 0px 0px 133px 9px rgb(0 174 255 / 17%);
     -moz-box-shadow: 0px 0px 133px 9px rgba(0, 174, 255, 0.17);

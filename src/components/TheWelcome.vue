@@ -40,6 +40,8 @@ export default {
     content.style.opacity = "0";
     content.style.visibility = "hidden";
     content.style.display = "unset";
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
   },
   methods: {},
 };
@@ -197,7 +199,7 @@ export default {
     color: white;
     font-size: 20px;
     line-height: 24px;
-    margin-top: 4rem;
+    margin-top: 5rem;
     width: 75%;
   }
 

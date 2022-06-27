@@ -1,5 +1,5 @@
 <script>
-import mainPart from "@/components/workwithus/mainPart.vue";
+import mainPart from "@/components/technologies/mainPart.vue";
 import footerMain from "@/components/footerMain.vue";
 
 export default {

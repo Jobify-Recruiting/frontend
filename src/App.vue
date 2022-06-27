@@ -44,11 +44,15 @@ export default {
     >
       <div class="content">
         <router-link to="/"><div class="link">Home</div></router-link>
-        <div class="link">Aziende</div>
+        <router-link to="/companies"
+          ><div class="link">Aziende</div></router-link
+        >
         <div class="logo">
           <img src="/src/assets/logo/white.png" />
         </div>
-        <div class="link">Lavoratori</div>
+        <router-link to="/workers"
+          ><div class="link">Lavoratori</div></router-link
+        >
         <div class="link" @click="openMenu()">Menu</div>
       </div>
     </div>
@@ -77,48 +81,66 @@ export default {
             </h3>
           </div>
         </router-link>
-        <div class="link">
-          <h3>
-            <p class="icon">></p>
-            Tecnologie
-          </h3>
-        </div>
-        <div class="link">
-          <h3>
-            <p class="icon">></p>
-            Journal
-          </h3>
-        </div>
+        <router-link to="/technologies">
+          <div class="link">
+            <h3>
+              <p class="icon">></p>
+              Tecnologie
+            </h3>
+          </div>
+        </router-link>
+        <router-link to="/journal">
+          <div class="link">
+            <h3>
+              <p class="icon">></p>
+              Journal
+            </h3>
+          </div>
+        </router-link>
       </div>
 
       <div class="list">
-        <div class="link">
-          <h3>
-            <p class="icon">></p>
-            Partnerships
-          </h3>
-        </div>
-        <div class="link">
-          <h3>
-            <p class="icon">></p>
-            Lavora con noi
-          </h3>
-        </div>
-        <div class="link">
-          <h3>
-            <p class="icon">></p>
-            Chi siamo
-          </h3>
-        </div>
-        <div class="link">
-          <h3>
-            <p class="icon">></p>
-            Contattaci
-          </h3>
-        </div>
+        <router-link to="/partnerships">
+          <div class="link">
+            <h3>
+              <p class="icon">></p>
+              Partnerships
+            </h3>
+          </div>
+        </router-link>
+        <router-link to="/workwithus">
+          <div class="link">
+            <h3>
+              <p class="icon">></p>
+              Lavora con noi
+            </h3>
+          </div>
+        </router-link>
+        <router-link to="/about">
+          <div class="link">
+            <h3>
+              <p class="icon">></p>
+              Chi siamo
+            </h3>
+          </div>
+        </router-link>
+        <router-link to="/contact">
+          <div class="link">
+            <h3>
+              <p class="icon">></p>
+              Contattaci
+            </h3>
+          </div>
+        </router-link>
       </div>
     </div>
     <div class="footer">
+      <div class="menuFooterSx">
+        <p>
+          Made by Loris Caputo &nbsp;&nbsp;•&nbsp;&nbsp; 2022. Tutti i diritti
+          riservati.
+        </p>
+      </div>
       <div class="socialFooter">
         <div class="link">Facebook</div>
         <div class="link">Linkedin</div>
@@ -135,6 +157,7 @@ export default {
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import "@/assets/base.css";
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css");
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
@@ -150,6 +173,11 @@ a {
 }
 
 a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  color: none;
   text-decoration: none;
 }
 
@@ -248,13 +276,13 @@ a:active {
 
   .menu .top .closeMenu {
     margin-left: auto;
-    padding: 1rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
+    padding: 1.2rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
     border-radius: 16px;
     border: 2px solid #0a1e4375;
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
@@ -278,6 +306,7 @@ a:active {
 
   .menu .main .list .link {
     align-items: center;
+    margin-bottom: 1rem;
   }
 
   .menu .main .list h3 {
@@ -312,15 +341,18 @@ a:active {
   }
 
   .menu .footer .socialFooter .link {
-    color: rgb(184, 184, 184);
+    color: #8b929f;
     margin-left: 1.5rem;
     cursor: pointer;
+    font-size: 14px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
 
-  .menu .footer .socialFooter .link {
-    color: white;
+  .menuFooterSx p {
+    color: #8b929f;
+    font-size: 14px;
+    letter-spacing: 1px;
   }
 }
 

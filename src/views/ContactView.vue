@@ -1,14 +1,10 @@
 <script>
-import TheWelcome from "@/components/TheWelcome.vue";
-import homePart2 from "@/components/homePart2.vue";
-import homePart3 from "@/components/homePart3.vue";
+import mainPart from "@/components/contact/mainPart.vue";
 import footerMain from "@/components/footerMain.vue";
 
 export default {
   components: {
-    TheWelcome,
-    homePart2,
-    homePart3,
+    mainPart,
     footerMain,
   },
   methods: {
@@ -34,9 +30,7 @@ export default {
 
 <template>
   <main>
-    <TheWelcome></TheWelcome>
-    <homePart2></homePart2>
-    <homePart3></homePart3>
+    <mainPart></mainPart>
     <footerMain></footerMain>
   </main>
 </template>

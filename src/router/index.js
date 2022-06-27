@@ -1,12 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import Openposition from "../views/OpenPositionsView.vue";
-import TechnolgiesView from "../views/TechnolgiesView.vue";
+import TechnologiesView from "../views/TechnologiesView.vue";
 import JournalView from "../views/JournalView.vue";
 import PartnershipsView from "../views/PartnershipsView.vue";
 import WorkwithusView from "../views/WorkwithusView.vue";
 import ContactView from "../views/ContactView.vue";
-
+import WorkersView from "../views/WorkersView.vue";
+import CompaniesView from "../views/CompaniesView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -29,9 +30,9 @@ const router = createRouter({
       component: Openposition,
     },
     {
-      path: "/technolgies",
-      name: "Technolgies",
-      component: TechnolgiesView,
+      path: "/technologies",
+      name: "Technologies",
+      component: TechnologiesView,
     },
     {
       path: "/journal",
@@ -52,6 +53,16 @@ const router = createRouter({
       path: "/contact",
       name: "Contact",
       component: ContactView,
+    },
+    {
+      path: "/workers",
+      name: "Workers",
+      component: WorkersView,
+    },
+    {
+      path: "/companies",
+      name: "Companies",
+      component: CompaniesView,
     },
   ],
 });
