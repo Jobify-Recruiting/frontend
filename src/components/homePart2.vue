@@ -604,7 +604,7 @@ export default {
   .mainTitle .title p {
     margin-top: 0.5rem;
     color: #627597;
-    font-size: 22px;
+    font-size: 24px;
     width: 90%;
     line-height: 32px;
     font-weight: 700 !important;
@@ -655,7 +655,7 @@ export default {
   .secondDiv .title p {
     margin-top: 0.5rem;
     color: #627597;
-    font-size: 22px;
+    font-size: 24px;
     width: 100%;
     text-align: center;
     line-height: 32px;
@@ -1120,7 +1120,7 @@ export default {
     width: 100%;
     height: 43vw;
     background: #010712;
-    left: -10%;
+    left: -7%;
     margin-top: 10rem;
     border-radius: 60px;
     -webkit-box-shadow: 0px 0px 133px 9px rgb(3 149 217 / 17%);
@@ -1135,7 +1135,7 @@ export default {
     width: 100%;
     height: 43vw;
     background: #010712;
-    right: -5%;
+    right: -1%;
     margin-top: 2rem;
     border-radius: 60px;
     margin-bottom: 10rem;
@@ -1151,7 +1151,7 @@ export default {
     width: 100%;
     height: 43vw;
     background: #010712;
-    left: -10%;
+    left: -7%;
     margin-top: 5rem;
     border-radius: 60px;
     margin-bottom: 10rem;
@@ -1284,7 +1284,7 @@ export default {
     line-height: 20px;
     font-size: 12px;
     font-family: "Planer";
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-weight: 600;
     z-index: 1;
   }

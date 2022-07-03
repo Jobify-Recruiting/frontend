@@ -295,7 +295,7 @@ export default {
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     margin-top: 3rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -309,7 +309,7 @@ export default {
   }
 
   .btn span {
-    padding-left: 0.8rem;
+    padding-left: 0.4rem;
   }
 
   .btn2 {
@@ -330,7 +330,7 @@ export default {
     font-family: "Planer";
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     margin-top: 3rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -343,7 +343,7 @@ export default {
   }
 
   .btn2 span {
-    padding-left: 0.8rem;
+    padding-left: 0.4rem;
   }
 
   .Iam {

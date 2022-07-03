@@ -52,7 +52,7 @@ export default {
           </div>
         </div>
         <div class="cols">
-          <div class="col col_1">
+          <div class="col col_1 transition">
             <p>Partners</p>
             <h2>Diventa nostro partner</h2>
             <div class="subtitle">
@@ -126,7 +126,7 @@ export default {
               ></div>
             </div>
           </div>
-          <div class="col col_2">
+          <div class="col col_2 transition">
             <h3>Invia richiesta</h3>
             <div
               class="input"
@@ -193,6 +193,17 @@ export default {
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 
+.transition {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.transition.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
   font-family: "planer", sans-serif;
@@ -223,7 +234,7 @@ export default {
     line-height: 20px;
     font-size: 12px;
     font-family: "Planer";
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-weight: 600;
     z-index: 1;
   }
@@ -268,13 +279,15 @@ export default {
   }
 
   .first {
-    padding: 9rem;
+    padding: 5rem;
     padding-top: 8rem;
   }
 
   .first .cols {
     display: flex;
     margin-top: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .cols .col_1 {
@@ -332,7 +345,7 @@ export default {
     font-size: 40px;
     line-height: 40px;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .cols .col .subtitle {

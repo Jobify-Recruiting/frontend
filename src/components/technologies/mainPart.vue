@@ -320,7 +320,7 @@ export default {
     line-height: 20px;
     font-size: 12px;
     font-family: "Planer";
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-weight: 600;
     z-index: 1;
   }
@@ -379,9 +379,9 @@ export default {
   }
 
   .first p {
-    color: #8b949e;
-    font-size: 20px;
-    line-height: 24px;
+    color: #c1c6cb;
+    font-size: 24px;
+    line-height: 28px;
     margin-top: 1rem;
     width: 60%;
     margin-left: auto;
@@ -444,7 +444,7 @@ export default {
     width: 50%;
     margin-left: auto;
     height: 120px;
-    background: #111925;
+    background: #0c1829;
     border-radius: 6px;
     box-shadow: 0 0 0 1px #0d0d0d, 0 30px 30px rgb(0 0 0 / 7%),
       0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%),
@@ -455,7 +455,7 @@ export default {
     width: 100%;
     margin-left: auto;
     height: 300px;
-    background: #111925;
+    background: #0c1829;
     border-radius: 6px;
     box-shadow: 0 0 0 1px #0d0d0d, 0 30px 30px rgb(0 0 0 / 7%),
       0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%),
@@ -466,7 +466,7 @@ export default {
     width: 60%;
     margin-left: auto;
     height: 120px;
-    background: #111925;
+    background: #0c1829;
     border-radius: 6px;
     box-shadow: 0 0 0 1px #0d0d0d, 0 30px 30px rgb(0 0 0 / 7%),
       0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%),
@@ -477,7 +477,7 @@ export default {
     width: 30%;
     margin-right: auto;
     height: 120px;
-    background: #111925;
+    background: #0c1829;
     border-radius: 6px;
     box-shadow: 0 0 0 1px #0d0d0d, 0 30px 30px rgb(0 0 0 / 7%),
       0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%),
@@ -494,7 +494,7 @@ export default {
     width: 50%;
     margin-right: auto;
     height: 120px;
-    background: #111925;
+    background: #0c1829;
     border-radius: 6px;
     box-shadow: 0 0 0 1px #0d0d0d, 0 30px 30px rgb(0 0 0 / 7%),
       0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%),
@@ -505,7 +505,7 @@ export default {
     width: 100%;
     margin-left: auto;
     height: 300px;
-    background: #111925;
+    background: #0c1829;
     border-radius: 6px;
     box-shadow: 0 0 0 1px #0d0d0d, 0 30px 30px rgb(0 0 0 / 7%),
       0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%),
@@ -516,7 +516,7 @@ export default {
     width: 60%;
     margin-left: auto;
     height: 120px;
-    background: #111925;
+    background: #0c1829;
     border-radius: 6px;
     box-shadow: 0 0 0 1px #0d0d0d, 0 30px 30px rgb(0 0 0 / 7%),
       0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%),
@@ -527,7 +527,7 @@ export default {
     width: 30%;
     margin-right: auto;
     height: 120px;
-    background: #111925;
+    background: #0c1829;
     border-radius: 6px;
     box-shadow: 0 0 0 1px #0d0d0d, 0 30px 30px rgb(0 0 0 / 7%),
       0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%),
@@ -554,7 +554,7 @@ export default {
     width: 100%;
     height: 100px;
     margin-top: 1rem;
-    background: #111925;
+    background: #0c1829;
     border-radius: 6px;
     box-shadow: 0 0 0 1px #0d0d0d, 0 30px 30px rgb(0 0 0 / 7%),
       0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%),
@@ -585,7 +585,7 @@ export default {
   }
 
   .third .cols .col-sx p {
-    color: #8b949e;
+    color: #c1c6cb;
     font-size: 24px;
     line-height: 28px;
     margin-top: 1rem;
@@ -641,7 +641,7 @@ export default {
   }
 
   .fourth .cols .col-sx p {
-    color: #8b949e;
+    color: #c1c6cb;
     font-size: 24px;
     line-height: 28px;
     margin-top: 1rem;
@@ -673,7 +673,7 @@ export default {
   }
 
   .elementsFlex .element p {
-    color: #8b949e;
+    color: #c1c6cb;
     font-size: 16px !important;
     line-height: 22px !important;
     font-weight: 700;
@@ -713,7 +713,7 @@ export default {
   }
 
   .fifth .cols .col-sx p {
-    color: #8b949e;
+    color: #c1c6cb;
     font-size: 24px;
     line-height: 28px;
     margin-top: 1rem;
@@ -754,7 +754,7 @@ export default {
   }
 
   .sixth p {
-    color: #8b949e;
+    color: #c1c6cb;
     font-size: 24px;
     line-height: 28px;
     margin-top: 1rem;
@@ -893,7 +893,7 @@ export default {
   .card-body {
     font-size: 16px !important;
     line-height: 24px !important;
-    color: #8b949e;
+    color: #c1c6cb;
   }
 
   code {

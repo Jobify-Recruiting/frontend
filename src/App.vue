@@ -137,7 +137,7 @@ export default {
     <div class="footer">
       <div class="menuFooterSx">
         <p>
-          Made by Loris Caputo &nbsp;&nbsp;•&nbsp;&nbsp; 2022. Tutti i diritti
+          Made by Loris Caputo 2022. &nbsp;&nbsp;•&nbsp;&nbsp; Tutti i diritti
           riservati.
         </p>
       </div>
@@ -235,13 +235,13 @@ a:hover {
   }
 
   .nav .link {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     color: white;
     font-weight: 600;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     cursor: pointer;
   }
 
@@ -262,7 +262,7 @@ a:hover {
     width: 0%;
     height: 100%;
     background: #010c18;
-    padding: 7rem;
+    padding: 8rem;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.3s ease-in-out;
@@ -310,13 +310,14 @@ a:hover {
   }
 
   .menu .main .list h3 {
-    font-size: 40px;
+    font-size: 46px;
     color: rgb(184, 184, 184);
     align-items: center;
     display: flex;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
   }
 
   .menu .main .list h3:hover {
@@ -344,15 +345,18 @@ a:hover {
     color: #8b929f;
     margin-left: 1.5rem;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 13px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    font-weight: 700;
+    letter-spacing: 1px;
   }
 
   .menuFooterSx p {
     color: #8b929f;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: 1px;
+    font-weight: 700;
   }
 }
 

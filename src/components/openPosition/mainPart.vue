@@ -13,6 +13,23 @@ export default {
     );
     document.head.appendChild(recaptchaScript);
 
+    function reveal() {
+      var reveals = document.querySelectorAll(".transition");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
     window.scrollTo({ top: 0, behavior: "smooth" });
 
     let content = document.querySelector(".menu");
@@ -86,7 +103,7 @@ export default {
                 <h3>Web Design</h3>
               </div>
             </div>
-            <div class="content">
+            <div class="content transition">
               <div class="filter" style="border-bottom: 4px solid #00b91e">
                 <div class="blur"></div>
                 <h4>05</h4>
@@ -130,7 +147,10 @@ export default {
             </div>
           </div>-->
 
-          <div class="ctaCV" style="background: rgb(161 161 161 / 10%)">
+          <div
+            class="ctaCV transition"
+            style="background: rgb(161 161 161 / 10%)"
+          >
             <div class="blur"></div>
             <div class="cols">
               <div class="col col-padding">
@@ -152,7 +172,7 @@ export default {
             </div>
           </div>
 
-          <div class="positions">
+          <div class="positions transition">
             <h2>Tutti</h2>
             <div class="filtersPositions">
               <div class="blur"></div>
@@ -352,6 +372,17 @@ export default {
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 
+.transition {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.transition.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
   font-family: "planer", sans-serif;
@@ -420,6 +451,7 @@ export default {
   .colPositions {
     width: 65%;
     margin-left: 5rem;
+    padding-bottom: 5rem;
   }
 
   .cols .col1 {
@@ -466,7 +498,7 @@ export default {
 
   .filters .content {
     display: flex;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .filters h2 {
@@ -485,6 +517,10 @@ export default {
     margin-right: 1rem;
     cursor: pointer;
     transition: 0.5s all;
+  }
+
+  .filters .filter:hover {
+    background: rgb(255 255 255 / 0%);
   }
 
   .blur {
@@ -589,6 +625,7 @@ export default {
   .positions .position .content .info {
     padding-top: 1rem;
     display: flex;
+    margin-bottom: 0rem !important;
   }
 
   .positions .position .content .info p {
@@ -596,6 +633,7 @@ export default {
     font-weight: 700;
     color: #fff;
     letter-spacing: 1px;
+    margin-bottom: 0rem !important;
   }
 
   .positions .position .button {
@@ -605,22 +643,22 @@ export default {
     padding-right: 1.6rem;
     background: #0062f5;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     border-radius: 16px;
     width: fit-content;
     float: right;
     transition: 0.5s all;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 
   .positions .position .button span {
-    margin-left: 0.5rem;
+    margin-left: 0.4rem;
   }
 
   .positions .position .button:hover {
-    background: #fff;
-    color: #008cff;
+    background: #003585;
   }
 
   .positions .position .button2 {
@@ -630,7 +668,7 @@ export default {
     padding-right: 1.2rem;
     background: #11ca00;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     border-radius: 12px;
     width: fit-content;
@@ -786,17 +824,18 @@ export default {
     padding-right: 1.6rem;
     background: #0062f5;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     border-radius: 16px;
     width: fit-content;
     transition: 0.5s all;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     margin-top: 2rem;
+    text-transform: uppercase;
   }
 
   .ctaCV .button span {
-    margin-left: 0.5rem;
+    margin-left: 0.4rem;
   }
 
   .ctaCV .button:hover {
@@ -824,13 +863,15 @@ export default {
     margin-right: 3rem;
     display: flex;
     cursor: pointer;
-    font-weight: 600;
+    align-items: center;
   }
 
   .filtersPositions .filterPosition p {
     transform: rotate(90deg);
-    margin-left: 2rem;
+    margin-left: 1.2rem;
     font-weight: 100;
+    margin-top: 0 !important;
+    margin-bottom: 0rem !important;
   }
 }
 

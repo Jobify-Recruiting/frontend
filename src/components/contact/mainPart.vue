@@ -65,10 +65,10 @@ export default {
 
         <div class="images">
           <div class="img1">
-            <img class="mainImage transition" src="/src/assets/ph15.jpg" />
+            <img class="mainImage" src="/src/assets/ph15.jpg" />
           </div>
           <div class="img2">
-            <img class="mainImage transition" src="/src/assets/ph16.jpg" />
+            <img class="mainImage" src="/src/assets/ph16.jpg" />
           </div>
         </div>
       </div>
@@ -139,6 +139,17 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
+
+.transition {
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.transition.active {
+  transform: translateY(0);
+  opacity: 1;
+}
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
@@ -213,12 +224,14 @@ export default {
   }
 
   .first {
-    padding: 9rem;
+    padding: 5rem;
     padding-top: 14rem;
   }
 
   .first .cols {
     display: flex;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .cols .col_1 {

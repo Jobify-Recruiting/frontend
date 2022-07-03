@@ -36,7 +36,7 @@ export default {
     <div class="bottom">
       <div class="left">
         <div class="link">
-          Made by Loris Caputo &nbsp;&nbsp;•&nbsp;&nbsp; 2022. Tutti i diritti
+          Made by Loris Caputo 2022. &nbsp;&nbsp;•&nbsp;&nbsp; Tutti i diritti
           riservati.
         </div>
         <div class="link">Privacy Policy</div>
@@ -141,6 +141,7 @@ export default {
   .bottom .link {
     margin-right: 1rem;
     color: rgb(199, 199, 199);
+    font-weight: 700;
   }
 }
 
