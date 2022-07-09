@@ -47,7 +47,6 @@ export default {
       <div class="glow"></div>
       <div class="glow2"></div>
       <div class="glow3"></div>
-      <div class="glow4"></div>
       <div class="cols">
         <div class="col2 colImage">
           <img class="avatar" src="/src/assets/avatartech.png" />

@@ -34,8 +34,8 @@ export default {
         document.documentElement.scrollTop > 3000
       ) {
         //console.log(document.documentElement.scrollTop);
-        document.getElementById("text2").style.fontSize = "74px";
-        document.getElementById("text2").style.lineHeight = "68px";
+        document.getElementById("text2").style.fontSize = "68px";
+        document.getElementById("text2").style.lineHeight = "72px";
       } else {
         document.getElementById("text2").style.fontSize = "94px";
         document.getElementById("text2").style.lineHeight = "98px";
@@ -73,11 +73,15 @@ export default {
       <div class="content">
         <div class="first">
           <div class="title">
-            <h2>Jobify, la tua ricerca e selezione</h2>
+            <h2>
+              <span class="gradientTitle">Jobify</span>, la tua ricerca e
+              selezione
+            </h2>
             <p>
-              Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
-              tua ricerca e selezione, la tua ricerca e selezione, la tua
-              ricerca e selezione
+              Jobify, la tua ricerca e selezione, la tua ricerca e selezione,
+              <span style="color: #010c18; font-weight: 700"
+                >la tua ricerca e selezione</span
+              >, la tua ricerca e selezione, la tua ricerca e selezione
             </p>
           </div>
           <div class="video transition">
@@ -106,6 +110,17 @@ export default {
               Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
               tua ricerca e selezione, la tua ricerca e selezione, la tua
               ricerca e selezione
+              <br />
+              <button
+                class="btn2"
+                style="
+                  margin-left: auto;
+                  margin-right: auto;
+                  width: fit-content;
+                "
+              >
+                <a href="#">Entra ora nel mondo Jobify <span>></span></a>
+              </button>
             </p>
           </div>
         </div>
@@ -117,9 +132,11 @@ export default {
                 giorno con i nostri clienti
               </h2>
               <p>
-                Qui scriviamo la descrizione riferito al testo superiore, Qui
-                scriviamo la descrizione riferito al testo superiore, Qui
-                scriviamo la descrizione riferito al testo superiore
+                Qui scriviamo la descrizione riferito al testo superiore,
+                <span style="color: #010c18; font-weight: 700"
+                  >la tua ricerca e selezione Qui scriviamo la descrizione
+                  riferito al testo superiore</span
+                >
               </p>
               <button class="btn2">
                 <a href="#">Entra ora nel mondo Jobify <span>></span></a>
@@ -153,12 +170,6 @@ export default {
           <div class="flow">
             <div class="elemsx" style="padding-bottom: 10rem">
               <div class="image2 transition"></div>
-              <p class="elemP_image transition">
-                <span>Qui scriviamo la descrizione riferito</span> al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore
-              </p>
               <div class="elemP_point2 transition"></div>
               <p class="elemP_image transition">
                 <span>Qui scriviamo la descrizione riferito</span> al testo
@@ -166,23 +177,38 @@ export default {
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore
               </p>
+
+              <p class="elemP_image transition">
+                <span
+                  >Qui scriviamo la descrizione riferito al testo superiore, Qui
+                  scriviamo la descrizione riferito al</span
+                >
+                testo superiore, Qui scriviamo la descrizione riferito al testo
+                superiore
+              </p>
               <div class="elemP_point2 transition"></div>
               <p class="elemP_image transition">
-                <span>Qui scriviamo la descrizione riferito</span> al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore
+                <span
+                  >Qui scriviamo la descrizione riferito al testo
+                  superiore,</span
+                >
+                Qui scriviamo la descrizione riferito al testo superiore, Qui
+                scriviamo la descrizione riferito al testo superiore
               </p>
               <div class="elemP_point2 transition"></div>
             </div>
             <div class="elemdx">
               <h2 class="elemH2" id="text2">
-                Guarda il nostro workflow, come lavoriamo ogni giorno con i
-                nostri clienti
+                Guarda il nostro workflow, come lavoriamo ogni<span>
+                  giorno con i nostri clienti</span
+                >
               </h2>
               <p class="elemP">
+                <span style="color: #010c18; font-weight: 700"
+                  >Qui scriviamo la descrizione riferito al testo
+                  superiore,</span
+                >
                 Qui scriviamo la descrizione riferito al testo superiore, Qui
-                scriviamo la descrizione riferito al testo superiore, Qui
                 scriviamo la descrizione riferito al testo superiore
               </p>
 
@@ -222,25 +248,34 @@ export default {
             <div class="flowSingleContent">
               <h2 class="flowSingleTitle">
                 Guarda il nostro workflow, come
-                <span>lavoriamo ogni giorno con i nostri clienti</span>
+                <span class="flowSingleTitleSpan"
+                  >lavoriamo ogni giorno con i nostri clienti</span
+                >
+                <br />
+                <button class="btn2">
+                  <a href="#"
+                    >Entra ora nel mondo Jobify
+                    <span class="btnSpan">></span></a
+                  >
+                </button>
               </h2>
-              <a href="#first" class="flowSingleBtn">
-                <span>Scopri di più <span>></span></span>
-                <div class="liquid"></div>
-              </a>
             </div>
           </div>
           <div class="flow">
             <div class="elemsx">
               <h2 class="elemH2_v2" id="text2">
-                Guarda il nostro workflow, come lavoriamo ogni giorno con i
-                nostri clienti
+                Guarda il nostro workflow, come lavoriamo
+                <span class="elemH2_v2Span"
+                  >ogni giorno con i nostri clienti</span
+                >
               </h2>
               <p class="">
                 Qui scriviamo la descrizione riferito al testo superiore. Qui
-                scriviamo la descrizione riferito al testo superiore, Qui
-                scriviamo la descrizione riferito al testo superiore, Qui
-                scriviamo la descrizione riferito al testo superiore
+                scriviamo la descrizione riferito al testo superiore,
+                <span style="color: #010c18; font-weight: 700"
+                  >Qui scriviamo la descrizione riferito al testo superiore, Qui
+                  scriviamo la descrizione riferito al testo superiore</span
+                >
               </p>
 
               <div class="elemdx_rectangle1 transition"></div>
@@ -296,7 +331,7 @@ export default {
               <div class="elemP_point transition"></div>
             </div>
           </div>
-          <div class="flow">
+          <!--<div class="flow">
             <div class="elemsx" style="padding-bottom: 10rem">
               <div class="image2 transition"></div>
               <p class="elemP_image transition">
@@ -328,8 +363,11 @@ export default {
               </h2>
               <p class="elemP">
                 Qui scriviamo la descrizione riferito al testo superiore, Qui
-                scriviamo la descrizione riferito al testo superiore, Qui
-                scriviamo la descrizione riferito al testo superiore
+                scriviamo la descrizione riferito al testo superiore,
+                <span style="color: #010c18; font-weight: 700"
+                  >Qui scriviamo la descrizione riferito al testo
+                  superiore</span
+                >
               </p>
 
               <div class="elemdx_rectangle1 transition"></div>
@@ -362,7 +400,7 @@ export default {
                 <img src="/src/assets/img_h1.png" />
               </div>
             </div>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
@@ -595,14 +633,15 @@ export default {
 
   .mainTitle .title h2 {
     color: #010712;
-    font-size: 54px;
+    font-size: 68px;
     font-weight: 700;
     width: 90%;
-    line-height: 58px;
+    line-height: 72px;
+    letter-spacing: -0.03em !important;
   }
 
   .mainTitle .title p {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     color: #627597;
     font-size: 24px;
     width: 90%;
@@ -615,6 +654,20 @@ export default {
     height: fit-content;
     background: #010712;
     border-radius: 30px;
+  }
+
+  .gradientTitle {
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700 !important;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 72px;
+    padding-right: 0.05rem;
+    letter-spacing: -0.03em !important;
   }
 
   .secondDiv {
@@ -634,16 +687,18 @@ export default {
 
   .secondDiv .title h2 {
     color: #010712;
-    font-size: 60px;
+    font-size: 68px;
     font-weight: 800 !important;
-    width: 100%;
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    line-height: 64px;
+    line-height: 72px;
     letter-spacing: -0.03em !important;
   }
 
   .secondDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -653,10 +708,12 @@ export default {
   }
 
   .secondDiv .title p {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     color: #627597;
     font-size: 24px;
-    width: 100%;
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     line-height: 32px;
     font-weight: 700 !important;
@@ -676,12 +733,14 @@ export default {
     font-size: 24px;
     padding-top: 0;
     padding-left: 0;
-    padding-bottom: 0.3rem;
+    padding-bottom: 0;
+    padding-right: 0;
     font-weight: 700;
     margin-top: 1.5rem;
-    border-bottom: 3px solid #8c909481;
+    border-bottom: 2px solid #8c909481;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    line-height: 35px;
   }
 
   .btn2 a {
@@ -707,8 +766,15 @@ export default {
     font-size: 24px;
   }
 
+  .btn .btnSpan {
+    color: #2d2e2f !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px !important;
+    font-size: 24px !important;
+  }
+
   .btn2:hover {
-    border-bottom: 3px solid #2d2e2f;
+    border-color: #2d2e2f;
   }
 
   .elemsx .elemdx_rectangle1 {
@@ -764,7 +830,7 @@ export default {
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     box-shadow: 0px 0px 133px 17px rgba(0, 119, 255, 0.17);
     position: absolute;
-    top: 77%;
+    top: 76%;
     left: -15%;
     z-index: 1;
     padding: 2rem;
@@ -813,7 +879,7 @@ export default {
 
   .second .flow .elemsx {
     width: 60%;
-    border-right: 2px solid #0a1e4375;
+    border-right: 3px solid #e8ebf1;
     text-align: left;
     margin: 2rem;
     padding-bottom: 4rem;
@@ -821,52 +887,73 @@ export default {
 
   .second .flow .elemsx h2 {
     color: #010712;
-    font-size: 74px;
-    line-height: 68px;
+    font-size: 68px;
+    line-height: 72px;
     font-weight: 700;
     margin-right: 2rem;
+    letter-spacing: -0.03em !important;
   }
 
   .second .flow .elemsx h2 span {
     color: white;
-    font-size: 64px;
-    line-height: 68px;
+    font-size: 68px;
+    line-height: 72px;
     font-weight: 700;
     background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
+    padding-right: 0.05rem;
   }
 
   .second .flow .elemsx p {
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #627597;
     font-size: 24px;
     width: 80%;
     line-height: 32px;
     font-weight: 700 !important;
+    letter-spacing: 0.2px;
   }
 
   .elemH2 {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    color: #010712;
+    font-size: 68px;
+    line-height: 72px;
+    font-weight: 700;
+    margin-left: 2rem;
+    transition: all 0.5s ease-out;
+    letter-spacing: -0.03em !important;
+  }
+
+  .elemH2 span {
+    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-size: 94px;
-    line-height: 98px;
+    font-size: 68px;
+    line-height: 72px;
     font-weight: 700;
     transition: all 0.5s ease-out;
-    margin-left: 2rem;
+    letter-spacing: -0.03em !important;
   }
 
   .elemH2_v2 {
-    background: -webkit-linear-gradient(-70deg, #6000ffa8 0%, #ed4e50 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
+    color: #010712;
+  }
+
+  .elemH2_v2 .elemH2_v2Span {
+    background: -webkit-linear-gradient(
+      -70deg,
+      #6000ffa8 0%,
+      #ed4e50 100%
+    ) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    -webkit-box-decoration-break: clone !important;
     font-size: 94px;
     line-height: 98px;
     font-weight: 700;
@@ -895,7 +982,7 @@ export default {
 
   .elemP_image span {
     margin-top: 15rem !important;
-    color: #227aff !important;
+    color: #010c18 !important;
     font-size: 24px !important;
     width: 90% !important;
     line-height: 28px !important;
@@ -908,7 +995,7 @@ export default {
     width: 30px;
     height: 30px;
     background: white;
-    border: 2px solid #98a1b0;
+    border: 3px solid #e8ebf1;
     border-radius: 25rem;
   }
 
@@ -918,7 +1005,7 @@ export default {
     width: 30px;
     height: 30px;
     background: white;
-    border: 2px solid #98a1b0;
+    border: 3px solid #e8ebf1;
     border-radius: 25rem;
   }
 
@@ -929,12 +1016,12 @@ export default {
   .elemdx .elemdx_rectangle1 {
     width: 450px;
     height: 250px;
-    background: rgba(4, 0, 255, 0.17);
+    background: #00e9d359;
     border: 2px solid #fff;
     border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    box-shadow: 0px 0px 133px 17px rgba(4, 0, 255, 0.17);
+    -webkit-box-shadow: 0px 0px 133px 17px rgba(0 220 207 / 35%);
+    -moz-box-shadow: 0px 0px 133px 17px rgba(0 220 207 / 35%);
+    box-shadow: 0px 0px 133px 17px rgb(0 220 207 / 35%);
     position: absolute;
     top: 37%;
     left: 25%;
@@ -951,7 +1038,7 @@ export default {
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     box-shadow: 0px 0px 133px 17px rgba(0, 119, 255, 0.17);
     position: absolute;
-    top: 40%;
+    top: 39%;
     left: 30%;
     z-index: 1;
   }
@@ -966,7 +1053,7 @@ export default {
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     box-shadow: 0px 0px 133px 17px rgba(0, 119, 255, 0.17);
     position: absolute;
-    top: 43%;
+    top: 41%;
     left: 20%;
     z-index: 1;
     padding: 2rem;
@@ -1065,12 +1152,12 @@ export default {
   .elemdx .elemdx_rectangle4 {
     width: 350px;
     height: 450px;
-    background: rgba(4, 0, 255, 0.17);
+    background: rgb(0 119 255 / 17%);
     border: 2px solid #fff;
     border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    box-shadow: 0px 0px 133px 17px rgba(4, 0, 255, 0.17);
+    -webkit-box-shadow: 0px 0px 133px 17px rgb(0 119 255 / 17%);
+    -moz-box-shadow: 0px 0px 133px 17px rgb(0 119 255 / 17%);
+    box-shadow: 0px 0px 133px 17px rgb(0 119 255 / 17%);
     position: absolute;
     top: 65%;
     left: 25%;
@@ -1105,11 +1192,12 @@ export default {
   }
 
   .second .flow .elemdx p {
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #627597;
     font-size: 24px;
     width: 80%;
     line-height: 28px;
+    letter-spacing: 0.5px;
   }
 
   .elemdxP_small {
@@ -1157,7 +1245,7 @@ export default {
     margin-bottom: 10rem;
     -webkit-box-shadow: 0px 0px 133px 9px rgb(0 174 255 / 17%);
     -moz-box-shadow: 0px 0px 133px 9px rgba(0, 174, 255, 0.17);
-    box-shadow: 0px 0px 133px 9px #6000ffa8;
+    box-shadow: 0px 0px 60px 9px #d2508680;
     background-image: url(/src/assets/ph3.jpeg);
     background-size: cover;
     background-position: center;
@@ -1165,7 +1253,7 @@ export default {
 
   .numbers .numbersHR_left {
     position: absolute;
-    background: #0a1e4375;
+    background: #e8ebf1;
     width: 10%;
     height: 3px;
     left: 0;
@@ -1173,7 +1261,7 @@ export default {
 
   .numbers .numbersHR_right {
     position: absolute;
-    background: #0a1e4375;
+    background: #e8ebf1;
     width: 10%;
     height: 3px;
     right: 0;
@@ -1198,9 +1286,10 @@ export default {
   }
 
   .numbers .number .num {
-    color: #010712;
+    color: #0059ff;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 36px;
+    letter-spacing: -0.03em;
   }
 
   @property --num {
@@ -1225,8 +1314,9 @@ export default {
   }
 
   .numbers .number .subtitle {
-    color: #010712;
+    color: #627597;
     font-size: 18px;
+    letter-spacing: 0.5px;
   }
 
   .second .flowSingle {
@@ -1238,26 +1328,24 @@ export default {
     padding: 5rem;
     width: 100%;
     margin-top: 10rem;
-    margin-bottom: 5rem;
   }
 
   .second .flowSingle .flowSingleContent .flowSingleTitle {
     color: #010712;
-    font-size: 64px;
+    font-size: 68px;
     font-weight: 800 !important;
     width: 100%;
     text-align: center;
-    line-height: 68px;
-    font-feature-settings: "ss02" on, "ss01" on;
+    line-height: 72px;
     letter-spacing: -0.03em !important;
   }
 
-  .second .flowSingle .flowSingleContent .flowSingleTitle span {
+  .second .flowSingle .flowSingleContent .flowSingleTitle .flowSingleTitleSpan {
     color: #010712;
-    font-size: 64px;
-    line-height: 68px;
+    font-size: 68px;
+    line-height: 72px;
     font-weight: 700;
-    background: -webkit-linear-gradient(-70deg, #9700bd 0%, #0097dd 100%);
+    background: -webkit-linear-gradient(-70deg, #67a3f0 0%, #4e54ed 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1266,16 +1354,17 @@ export default {
 
   a {
     position: relative;
-    padding: 14px 22px;
+    padding: 14px 26px;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
     width: fit-content;
     overflow: hidden;
-    border-radius: 25rem;
+    border-radius: 20px;
     margin-top: 3rem;
     cursor: pointer;
     font-family: "Planer";
+    letter-spacing: 2px;
   }
 
   a span {
@@ -1425,6 +1514,7 @@ export default {
     text-align: center;
     line-height: 32px;
     font-weight: 700;
+    letter-spacing: 0.2px;
   }
 
   .partnersImgs {
@@ -1529,6 +1619,7 @@ export default {
     text-align: left;
     line-height: 32px;
     font-weight: 700 !important;
+    letter-spacing: 0.2px;
   }
 
   .contentImage {
@@ -1632,12 +1723,12 @@ export default {
   .elemsx .elemdx_rectangle1 {
     width: 450px;
     height: 250px;
-    background: rgba(4, 0, 255, 0.17);
+    background: rgb(156 0 126 / 17%);
     border: 2px solid #fff;
     border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    box-shadow: 0px 0px 133px 17px rgba(4, 0, 255, 0.17);
+    -webkit-box-shadow: 0px 0px 133px 17px rgb(156 0 126 / 17%);
+    -moz-box-shadow: 0px 0px 133px 17px rgb(156 0 126 / 17%);
+    box-shadow: 0px 0px 133px 17px rgb(156 0 126 / 17%);
     position: absolute;
     top: 49%;
     left: -6%;
@@ -1678,7 +1769,7 @@ export default {
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     box-shadow: 0px 0px 133px 17px rgba(0, 119, 255, 0.17);
     position: absolute;
-    top: 77%;
+    top: 76%;
     left: 0%;
     z-index: 1;
     padding: 2rem;
@@ -1689,7 +1780,7 @@ export default {
     width: 30px;
     height: 30px;
     background: white;
-    border: 2px solid #98a1b0;
+    border: 3px solid #e8ebf1;
     border-radius: 25rem;
   }
   .elemP_point2 {
@@ -1698,7 +1789,7 @@ export default {
     width: 30px;
     height: 30px;
     background: white;
-    border: 2px solid #98a1b0;
+    border: 3px solid #e8ebf1;
     border-radius: 25rem;
   }
 }

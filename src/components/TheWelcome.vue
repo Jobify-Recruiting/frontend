@@ -15,10 +15,10 @@ export default {
       endLat: (Math.random() - 0.5) * 180,
       endLng: (Math.random() - 0.5) * 360,
       color: [
-        ["#000aff", "#bbbdff", "#b4ffa3", "#ce00ff"][
+        ["#007bff", "#00f544", "#a100ffe6", "#00bbffe6"][
           Math.round(Math.random() * 3)
         ],
-        ["#000aff", "#bbbdff", "#b4ffa3", "#ce00ff"][
+        ["#007bff", "#00f544", "#a100ffe6", "#00bbffe6"][
           Math.round(Math.random() * 3)
         ],
       ],
@@ -58,11 +58,11 @@ export default {
       <p>Jobify è</p>
       <b>
         <div class="innerIam">
-          leggera<br />
-          a theme in progress<br />
-          built on bootstrap<br />
-          how I learn stuff<br />
-          how we do it
+          innovazione<br />
+          tecnologia<br />
+          progresso<br />
+          risorse umane<br />
+          etica
         </div>
       </b>
     </div>
@@ -86,40 +86,20 @@ export default {
         <div class="liquid"></div>
       </a>
     </div>-->
-    <div
-      class="test"
-      style="
-        display: flex;
-        border-top: 2px solid #0a1e4375;
-        position: absolute;
-        bottom: -5%;
-      "
-    >
-      <div
-        class="item"
-        style="margin-right: 4rem; text-align: left; margin-top: 2rem"
-      >
+    <div class="datas">
+      <div class="item">
         <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
-      <div
-        class="item"
-        style="margin-right: 4rem; text-align: left; margin-top: 2rem"
-      >
+      <div class="item">
         <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
-      <div
-        class="item"
-        style="margin-top: 2rem; margin-right: 4rem; text-align: left"
-      >
+      <div class="item">
         <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
-      <div
-        class="item"
-        style="margin-top: 2rem; margin-right: 4rem; text-align: left"
-      >
+      <div class="item">
         <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
@@ -135,6 +115,16 @@ export default {
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
   font-family: "planer", sans-serif;
+}
+
+@media (min-width: 1600px) {
+  #globeViz {
+    left: 22% !important;
+  }
+
+  .mainTitle {
+    margin-left: 8rem !important;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -187,11 +177,10 @@ export default {
   }
 
   .mainTitle {
-    margin-left: 3rem;
-    padding-bottom: 8rem;
+    margin-left: 2rem;
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-top: 12rem;
+    padding-top: 8rem;
     width: 65%;
   }
 
@@ -201,6 +190,24 @@ export default {
     line-height: 24px;
     margin-top: 5rem;
     width: 75%;
+  }
+
+  .datas {
+    display: flex;
+    border-top: 2px solid #0a1e4375;
+    margin-top: 7rem;
+    width: fit-content;
+  }
+
+  .datas p {
+    margin-bottom: 0 !important;
+    letter-spacing: 1px;
+  }
+
+  .datas .item {
+    margin-right: 6rem;
+    text-align: left;
+    margin-top: 2rem;
   }
 
   a {
@@ -285,8 +292,8 @@ export default {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 14px 22px;
-    border-radius: 25rem;
+    padding: 14px 26px;
+    border-radius: 20px;
     background: #0062f5;
     color: #ffffff;
     line-height: 20px;
@@ -296,7 +303,7 @@ export default {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 3rem;
+    margin-top: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
     margin-right: 1.5rem;
@@ -319,11 +326,10 @@ export default {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 14px 22px;
-    border-radius: 25rem;
-    background: transparent;
-    color: #ffffff;
-    border: 1px solid #fff;
+    padding: 14px 26px;
+    border-radius: 20px;
+    background: #fff;
+    color: #0062f5;
     font-weight: 700;
     line-height: 20px;
     font-size: 12px;
@@ -331,14 +337,14 @@ export default {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-top: 3rem;
+    margin-top: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
   }
 
   .btn2:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #0062f5;
+    color: #fff;
     font-weight: 600;
   }
 
@@ -350,7 +356,7 @@ export default {
     padding-top: 3rem;
     font: normal 40px/50px Planer, sans-serif;
     color: #fff;
-    font-size: 45px;
+    font-size: 60px;
   }
   .Iam p {
     height: 50px;

@@ -219,7 +219,8 @@ export default {
 
   .first .cols {
     display: flex;
-    margin-top: 5rem;
+    margin-top: 8rem;
+    margin-bottom: 3rem;
     padding-left: 4rem;
     padding-right: 4rem;
   }

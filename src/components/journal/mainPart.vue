@@ -167,7 +167,7 @@ export default {
   }
 
   .first {
-    padding-top: 8rem;
+    padding-top: 5rem;
   }
 
   .first .cols {

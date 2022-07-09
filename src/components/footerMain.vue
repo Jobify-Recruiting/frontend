@@ -15,29 +15,46 @@ export default {
     <div class="content">
       <div class="col-logo"><img src="/src/assets/logo/small_white.png" /></div>
       <div class="col">
-        <div class="title">Azienda</div>
-        <div class="link">Clicca qui</div>
-        <div class="link">Clicca qui</div>
-        <div class="link">Clicca qui</div>
-        <div class="link">Clicca qui</div>
+        <div class="title">Servizi</div>
+        <router-link to="/openposition">
+          <div class="link">Posizioni aperte</div></router-link
+        >
+        <router-link to="/companies">
+          <div class="link">Aziende</div></router-link
+        >
+        <router-link to="/workers">
+          <div class="link">Lavoratori</div></router-link
+        >
+      </div>
+      <div class="col">
+        <div class="title">Piattaforma</div>
+        <router-link to="/technologies">
+          <div class="link">Tecnologie</div></router-link
+        >
+        <router-link to="/partnerships">
+          <div class="link">Partnerships</div></router-link
+        >
       </div>
       <div class="col">
         <div class="title">Azienda</div>
-        <div class="link">Clicca qui</div>
-        <div class="link">Clicca qui</div>
-      </div>
-      <div class="col">
-        <div class="title">Azienda</div>
-        <div class="link">Clicca qui</div>
-        <div class="link">Clicca qui</div>
-        <div class="link">Clicca qui</div>
+        <router-link to="/about">
+          <div class="link">Chi siamo</div></router-link
+        >
+        <router-link to="/journal">
+          <div class="link">Journal</div></router-link
+        >
+        <router-link to="/workwithus">
+          <div class="link">Lavora con noi</div></router-link
+        >
+        <router-link to="/contact">
+          <div class="link">Contattaci</div></router-link
+        >
       </div>
     </div>
     <div class="bottom">
       <div class="left">
         <div class="link">
-          Made by Loris Caputo 2022. &nbsp;&nbsp;•&nbsp;&nbsp; Tutti i diritti
-          riservati.
+          Made by 2022. &nbsp;&nbsp;•&nbsp;&nbsp; Tutti i diritti riservati.
         </div>
         <div class="link">Privacy Policy</div>
         <div class="link">Termini & Condizioni</div>
@@ -116,6 +133,7 @@ export default {
     font-size: 18px;
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
+    letter-spacing: 1px;
   }
 
   .footer .bottom {

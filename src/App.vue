@@ -68,7 +68,7 @@ export default {
         <router-link to="/">
           <div class="link">
             <h3>
-              <p class="icon">></p>
+              <p class="icon">01</p>
               Home
             </h3>
           </div>
@@ -76,7 +76,7 @@ export default {
         <router-link to="/openposition">
           <div class="link">
             <h3>
-              <p class="icon">></p>
+              <p class="icon">02</p>
               Posizioni aperte
             </h3>
           </div>
@@ -84,7 +84,7 @@ export default {
         <router-link to="/technologies">
           <div class="link">
             <h3>
-              <p class="icon">></p>
+              <p class="icon">03</p>
               Tecnologie
             </h3>
           </div>
@@ -92,7 +92,7 @@ export default {
         <router-link to="/journal">
           <div class="link">
             <h3>
-              <p class="icon">></p>
+              <p class="icon">04</p>
               Journal
             </h3>
           </div>
@@ -103,7 +103,7 @@ export default {
         <router-link to="/partnerships">
           <div class="link">
             <h3>
-              <p class="icon">></p>
+              <p class="icon">05</p>
               Partnerships
             </h3>
           </div>
@@ -111,7 +111,7 @@ export default {
         <router-link to="/workwithus">
           <div class="link">
             <h3>
-              <p class="icon">></p>
+              <p class="icon">06</p>
               Lavora con noi
             </h3>
           </div>
@@ -119,7 +119,7 @@ export default {
         <router-link to="/about">
           <div class="link">
             <h3>
-              <p class="icon">></p>
+              <p class="icon">07</p>
               Chi siamo
             </h3>
           </div>
@@ -127,7 +127,7 @@ export default {
         <router-link to="/contact">
           <div class="link">
             <h3>
-              <p class="icon">></p>
+              <p class="icon">08</p>
               Contattaci
             </h3>
           </div>
@@ -137,8 +137,7 @@ export default {
     <div class="footer">
       <div class="menuFooterSx">
         <p>
-          Made by Loris Caputo 2022. &nbsp;&nbsp;•&nbsp;&nbsp; Tutti i diritti
-          riservati.
+          Made by 2022. &nbsp;&nbsp;•&nbsp;&nbsp; Tutti i diritti riservati.
         </p>
       </div>
       <div class="socialFooter">
@@ -262,7 +261,7 @@ a:hover {
     width: 0%;
     height: 100%;
     background: #010c18;
-    padding: 8rem;
+    padding: 7rem;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: all 0.3s ease-in-out;
@@ -296,7 +295,7 @@ a:hover {
 
   .menu .main {
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
     margin-top: 5rem;
   }
 
@@ -311,7 +310,7 @@ a:hover {
 
   .menu .main .list h3 {
     font-size: 46px;
-    color: rgb(184, 184, 184);
+    color: #526272;
     align-items: center;
     display: flex;
     cursor: pointer;
@@ -324,9 +323,14 @@ a:hover {
     color: white;
   }
 
+  .menu .main .list h3:hover p {
+    color: white;
+  }
+
   .menu .main .list p {
     margin-right: 2rem;
-    font-size: 20px;
+    font-size: 14px;
+    color: #526272;
   }
 
   .menu .footer {

@@ -43,7 +43,7 @@ export default {
   font-family: "Alliance No.1", sans-serif;
 }
 main {
-  background: linear-gradient(211deg, #010712, #030f20, rgb(1 10 20), #010712);
+  background: #030812;
   background-size: 300%;
   overflow: visible;
   animation: animated_text 5s ease-in-out infinite;
