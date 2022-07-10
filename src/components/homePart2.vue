@@ -34,8 +34,8 @@ export default {
         document.documentElement.scrollTop > 3000
       ) {
         //console.log(document.documentElement.scrollTop);
-        document.getElementById("text2").style.fontSize = "68px";
-        document.getElementById("text2").style.lineHeight = "72px";
+        document.getElementById("text2").style.fontSize = "64px";
+        document.getElementById("text2").style.lineHeight = "68px";
       } else {
         document.getElementById("text2").style.fontSize = "94px";
         document.getElementById("text2").style.lineHeight = "98px";
@@ -144,9 +144,6 @@ export default {
             </div>
             <div class="elemdx transition">
               <div class="image"></div>
-              <p class="elemdxP_small">
-                Qui scriviamo la descrizione riferito al testo superiore.
-              </p>
             </div>
           </div>
 
@@ -633,10 +630,10 @@ export default {
 
   .mainTitle .title h2 {
     color: #010712;
-    font-size: 68px;
+    font-size: 64px;
     font-weight: 700;
     width: 90%;
-    line-height: 72px;
+    line-height: 68px;
     letter-spacing: -0.03em !important;
   }
 
@@ -663,9 +660,9 @@ export default {
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     font-weight: 700 !important;
-    font-size: 68px;
+    font-size: 64px;
     font-weight: 700;
-    line-height: 72px;
+    line-height: 68px;
     padding-right: 0.05rem;
     letter-spacing: -0.03em !important;
   }
@@ -687,13 +684,13 @@ export default {
 
   .secondDiv .title h2 {
     color: #010712;
-    font-size: 68px;
+    font-size: 64px;
     font-weight: 800 !important;
     width: 87%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    line-height: 72px;
+    line-height: 68px;
     letter-spacing: -0.03em !important;
   }
 
@@ -788,7 +785,7 @@ export default {
     box-shadow: 0px 0px 133px 17px rgba(4, 0, 255, 0.17);
     position: absolute;
     top: 49%;
-    left: -25%;
+    left: -5%;
     z-index: 1;
   }
 
@@ -797,7 +794,7 @@ export default {
     height: 250px;
     position: absolute;
     top: 47%;
-    left: -13%;
+    left: 0%;
     z-index: 1;
   }
 
@@ -816,7 +813,7 @@ export default {
     box-shadow: 0px 0px 133px 17px #c700ff2b;
     position: absolute;
     top: 75%;
-    left: -25%;
+    left: -5%;
     z-index: 1;
   }
 
@@ -831,7 +828,7 @@ export default {
     box-shadow: 0px 0px 133px 17px rgba(0, 119, 255, 0.17);
     position: absolute;
     top: 76%;
-    left: -15%;
+    left: 5%;
     z-index: 1;
     padding: 2rem;
   }
@@ -839,9 +836,9 @@ export default {
   .elemdx_rectangle6 .elemdx_text {
     margin-top: 0 !important;
     color: #fff !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
   }
@@ -849,9 +846,9 @@ export default {
   .elemdx_rectangle6 .elemdx_text span {
     margin-top: 0 !important;
     color: #00b818 !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
   }
@@ -859,9 +856,9 @@ export default {
   .elemdx_rectangle6 .elemdx_text2 {
     margin-top: 0 !important;
     color: #fff !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
     margin-top: 1rem !important;
@@ -870,16 +867,15 @@ export default {
   .elemdx_rectangle6 .elemdx_text2 span {
     margin-top: 0 !important;
     color: #00b818 !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
   }
 
   .second .flow .elemsx {
     width: 60%;
-    border-right: 3px solid #e8ebf1;
     text-align: left;
     margin: 2rem;
     padding-bottom: 4rem;
@@ -887,8 +883,8 @@ export default {
 
   .second .flow .elemsx h2 {
     color: #010712;
-    font-size: 68px;
-    line-height: 72px;
+    font-size: 64px;
+    line-height: 68px;
     font-weight: 700;
     margin-right: 2rem;
     letter-spacing: -0.03em !important;
@@ -896,8 +892,8 @@ export default {
 
   .second .flow .elemsx h2 span {
     color: white;
-    font-size: 68px;
-    line-height: 72px;
+    font-size: 64px;
+    line-height: 68px;
     font-weight: 700;
     background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
@@ -919,8 +915,8 @@ export default {
 
   .elemH2 {
     color: #010712;
-    font-size: 68px;
-    line-height: 72px;
+    font-size: 64px;
+    line-height: 68px;
     font-weight: 700;
     margin-left: 2rem;
     transition: all 0.5s ease-out;
@@ -933,8 +929,8 @@ export default {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-size: 68px;
-    line-height: 72px;
+    font-size: 64px;
+    line-height: 68px;
     font-weight: 700;
     transition: all 0.5s ease-out;
     letter-spacing: -0.03em !important;
@@ -972,7 +968,7 @@ export default {
   }
 
   .elemP_image {
-    margin-top: 25rem !important;
+    margin-top: 18rem !important;
     color: #627597 !important;
     font-size: 24px !important;
     width: 90% !important;
@@ -1023,7 +1019,7 @@ export default {
     -moz-box-shadow: 0px 0px 133px 17px rgba(0 220 207 / 35%);
     box-shadow: 0px 0px 133px 17px rgb(0 220 207 / 35%);
     position: absolute;
-    top: 37%;
+    top: 40%;
     left: 25%;
     z-index: 1;
   }
@@ -1038,7 +1034,7 @@ export default {
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     box-shadow: 0px 0px 133px 17px rgba(0, 119, 255, 0.17);
     position: absolute;
-    top: 39%;
+    top: 42%;
     left: 30%;
     z-index: 1;
   }
@@ -1047,13 +1043,13 @@ export default {
     width: 450px;
     height: 250px;
     background: #010712;
-    border: 2px solid #010712;
+    border: 3px solid #324567;
     border-radius: 30px;
     -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     box-shadow: 0px 0px 133px 17px rgba(0, 119, 255, 0.17);
     position: absolute;
-    top: 41%;
+    top: 44%;
     left: 20%;
     z-index: 1;
     padding: 2rem;
@@ -1062,9 +1058,9 @@ export default {
   .elemdx_rectangle3 .elemdx_text {
     margin-top: 0 !important;
     color: #fff !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
   }
@@ -1072,9 +1068,9 @@ export default {
   .elemdx_rectangle3 .elemdx_text span {
     margin-top: 0 !important;
     color: #00b818 !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
   }
@@ -1082,9 +1078,9 @@ export default {
   .elemdx_rectangle3 .elemdx_text2 {
     margin-top: 0 !important;
     color: #fff !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
     margin-top: 1rem !important;
@@ -1093,9 +1089,9 @@ export default {
   .elemdx_rectangle3 .elemdx_text2 span {
     margin-top: 0 !important;
     color: #00b818 !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
   }
@@ -1106,9 +1102,9 @@ export default {
     padding: 0.4rem;
     margin-top: 0 !important;
     color: #fff !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
   }
@@ -1117,9 +1113,9 @@ export default {
     margin-top: 0 !important;
     color: #ffffff !important;
     font-weight: 600;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
   }
@@ -1130,9 +1126,9 @@ export default {
     padding: 0.4rem;
     margin-top: 0 !important;
     color: #fff !important;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
     margin-top: 1rem !important;
@@ -1142,9 +1138,9 @@ export default {
     margin-top: 0 !important;
     color: #ffffff !important;
     font-weight: 600;
-    font-size: 16px !important;
+    font-size: 12px !important;
     width: 100% !important;
-    line-height: 20px !important;
+    line-height: 16px !important;
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
       Liberation Mono, monospace !important;
   }
@@ -1200,53 +1196,36 @@ export default {
     letter-spacing: 0.5px;
   }
 
-  .elemdxP_small {
-    margin-top: 5rem !important;
-  }
-
   .image {
-    width: 100%;
-    height: 43vw;
-    background: #010712;
-    left: -7%;
-    margin-top: 10rem;
+    width: 34vw;
+    height: 35vw;
+    background: transparent;
+    margin-top: 5rem;
     border-radius: 60px;
-    -webkit-box-shadow: 0px 0px 133px 9px rgb(3 149 217 / 17%);
-    -moz-box-shadow: 0px 0px 133px 9px rgba(3, 149, 217, 0.17);
-    box-shadow: 0px 0px 133px 9px #0d5cffb5;
-    background-image: url(/src/assets/ph1.jpeg);
+    background-image: url(/src/assets/analysis.png);
     background-size: cover;
     background-position: center;
+    position: absolute;
   }
 
   .image2 {
-    width: 100%;
-    height: 43vw;
-    background: #010712;
-    right: -1%;
-    margin-top: 2rem;
+    width: 34vw;
+    height: 35vw;
+    background: transparent;
     border-radius: 60px;
-    margin-bottom: 10rem;
-    -webkit-box-shadow: 0px 0px 133px 9px rgb(110 110 110 / 17%);
-    -moz-box-shadow: 0px 0px 133px 9px rgba(110, 110, 110, 0.17);
-    box-shadow: 0px 0px 133px 9px rgba(61, 177, 255, 0.705);
-    background-image: url(/src/assets/ph2.jpeg);
+    margin-bottom: 5rem;
+    background-image: url(/src/assets/searchimage.png);
     background-size: cover;
     background-position: center;
   }
 
   .image3 {
-    width: 100%;
-    height: 43vw;
-    background: #010712;
-    left: -7%;
-    margin-top: 5rem;
+    width: 34vw;
+    height: 35vw;
+    background: transparent;
     border-radius: 60px;
     margin-bottom: 10rem;
-    -webkit-box-shadow: 0px 0px 133px 9px rgb(0 174 255 / 17%);
-    -moz-box-shadow: 0px 0px 133px 9px rgba(0, 174, 255, 0.17);
-    box-shadow: 0px 0px 60px 9px #d2508680;
-    background-image: url(/src/assets/ph3.jpeg);
+    background-image: url(/src/assets/webupimage.png);
     background-size: cover;
     background-position: center;
   }
@@ -1332,18 +1311,18 @@ export default {
 
   .second .flowSingle .flowSingleContent .flowSingleTitle {
     color: #010712;
-    font-size: 68px;
+    font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
     text-align: center;
-    line-height: 72px;
+    line-height: 68px;
     letter-spacing: -0.03em !important;
   }
 
   .second .flowSingle .flowSingleContent .flowSingleTitle .flowSingleTitleSpan {
     color: #010712;
-    font-size: 68px;
-    line-height: 72px;
+    font-size: 64px;
+    line-height: 68px;
     font-weight: 700;
     background: -webkit-linear-gradient(-70deg, #67a3f0 0%, #4e54ed 100%);
     -webkit-background-clip: text;
@@ -1763,7 +1742,7 @@ export default {
     width: 350px;
     height: 400px;
     background: #010712;
-    border: 2px solid #010712;
+    border: 3px solid #324567;
     border-radius: 30px;
     -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);

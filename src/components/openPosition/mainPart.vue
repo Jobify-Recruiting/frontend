@@ -674,7 +674,7 @@ export default {
     transition: 0.5s all;
     letter-spacing: 1.5px;
     margin-left: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   .search {

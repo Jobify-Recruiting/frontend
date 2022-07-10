@@ -100,11 +100,11 @@ export default {
       </div>
 
       <div class="list">
-        <router-link to="/partnerships">
+        <router-link to="/about">
           <div class="link">
             <h3>
               <p class="icon">05</p>
-              Partnerships
+              Chi siamo
             </h3>
           </div>
         </router-link>
@@ -116,11 +116,11 @@ export default {
             </h3>
           </div>
         </router-link>
-        <router-link to="/about">
+        <router-link to="/partnerships">
           <div class="link">
             <h3>
               <p class="icon">07</p>
-              Chi siamo
+              Partnerships
             </h3>
           </div>
         </router-link>
