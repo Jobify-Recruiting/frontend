@@ -112,7 +112,7 @@ export default {
   }
 
   .col-logo img {
-    width: 80px;
+    width: 60px;
   }
 
   .footer .content .col {

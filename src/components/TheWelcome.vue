@@ -195,7 +195,7 @@ export default {
   .datas {
     display: flex;
     border-top: 2px solid #0a1e4375;
-    margin-top: 7rem;
+    margin-top: 10rem;
     width: fit-content;
   }
 

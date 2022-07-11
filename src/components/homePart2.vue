@@ -52,8 +52,49 @@ export default {
         document.getElementById("text3").style.lineHeight = "98px";
       }
     }
+
+    const slider = document.querySelector(".partnersContent");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    if (slider) {
+      slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      slider.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mouseup", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+      });
+    }
   },
-  methods: {},
+  methods: {
+    btnScrollSx() {
+      let content = document.querySelector(".partnersContent");
+      const itemWidth = content.querySelector(".partner").clientWidth;
+      content.scrollBy({ left: -itemWidth * 4, top: 0, behavior: "smooth" });
+      console.log(content);
+    },
+
+    btnScrollDx() {
+      let content = document.querySelector(".partnersContent");
+      const itemWidth = content.querySelector(".partner").clientWidth;
+      content.scrollBy({ left: itemWidth * 4, top: 0, behavior: "smooth" });
+    },
+  },
 };
 </script>
 
@@ -147,7 +188,7 @@ export default {
             </div>
           </div>
 
-          <div class="numbers">
+          <div class="numbers transition">
             <div class="numbersHR_left"></div>
             <div class="number">
               <div class="num">+ &nbsp;</div>
@@ -195,12 +236,12 @@ export default {
               <div class="elemP_point2 transition"></div>
             </div>
             <div class="elemdx">
-              <h2 class="elemH2" id="text2">
+              <h2 class="elemH2 transition" id="text2">
                 Guarda il nostro workflow, come lavoriamo ogni<span>
                   giorno con i nostri clienti</span
                 >
               </h2>
-              <p class="elemP">
+              <p class="elemP transition">
                 <span style="color: #010c18; font-weight: 700"
                   >Qui scriviamo la descrizione riferito al testo
                   superiore,</span
@@ -260,13 +301,13 @@ export default {
           </div>
           <div class="flow">
             <div class="elemsx">
-              <h2 class="elemH2_v2" id="text2">
+              <h2 class="elemH2_v2 transition" id="text2">
                 Guarda il nostro workflow, come lavoriamo
                 <span class="elemH2_v2Span"
                   >ogni giorno con i nostri clienti</span
                 >
               </h2>
-              <p class="">
+              <p class="transition">
                 Qui scriviamo la descrizione riferito al testo superiore. Qui
                 scriviamo la descrizione riferito al testo superiore,
                 <span style="color: #010c18; font-weight: 700"
@@ -486,32 +527,32 @@ export default {
             "
           ></div>
 
-          <div class="partnerImg3" style="left: 0%"></div>
+          <div class="partnerImg3 transition" style="left: 0%"></div>
           <!--<div class="partnerImg4" style="left: 0%"></div>-->
 
           <div class="partnerImg5 transition" style="left: -5%; top: 30%"></div>
 
-          <div class="partnerImg3" style="left: -5%; top: 80%"></div>
+          <div class="partnerImg3 transition" style="left: -5%; top: 80%"></div>
 
           <div class="partnerImg3 transition" style="left: 80%; top: 50%"></div>
 
-          <div class="partnerImg5" style="left: 70%"></div>
+          <div class="partnerImg5 transition" style="left: 70%"></div>
 
           <div class="partnerImg5 transition" style="left: 95%; top: 25%"></div>
 
-          <div class="partnerImg3" style="left: 95%; top: 80%"></div>
+          <div class="partnerImg3 transition" style="left: 95%; top: 80%"></div>
 
           <div class="partnerImg5 transition" style="left: 15%; top: 55%"></div>
 
-          <div class="partnerImg5" style="left: 10%; top: 95%"></div>
+          <div class="partnerImg5 transition" style="left: 10%; top: 95%"></div>
 
           <div class="partnerImg5 transition" style="left: 25%; top: 75%"></div>
 
-          <div class="partnerImg3" style="left: 30%; top: 15%"></div>
+          <div class="partnerImg3 transition" style="left: 30%; top: 15%"></div>
 
           <div class="partnerImg3 transition" style="left: 70%; top: 75%"></div>
 
-          <div class="partnerImg3" style="left: 100%; top: 5%"></div>
+          <div class="partnerImg3 transition" style="left: 100%; top: 5%"></div>
 
           <div
             class="partnerImg3 transition"
@@ -547,6 +588,208 @@ export default {
               <span>Scopri di più <span>></span></span>
               <div class="liquid"></div>
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="third">
+      <div class="flowSingle">
+        <div class="flowSingleContent">
+          <h2 class="flowSingleTitle">
+            <span class="flowSingleTitleSpan">Partners</span>
+            <br />
+            <button class="btn2">
+              <a href="#">Scopri di più <span class="btnSpan">></span></a>
+            </button>
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="partners">
+      <div class="btnScrollR" @click="btnScrollDx()">></div>
+      <div class="btnScrollL" @click="btnScrollSx()">></div>
+      <div class="partnersContent">
+        <div class="partner">
+          <div class="bg1"></div>
+          <div
+            class="imagePartner"
+            style="
+              background-image: url(/src/assets/partners/logo1.png);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="bg2"></div>
+          <div class="infoPartner">
+            <h4>Studio Felli</h4>
+            <p class="desc">Descrizione del partner e cosa fa.</p>
+            <div class="btnPartner">Vedi Partner <span>></span></div>
+          </div>
+        </div>
+        <div class="partner">
+          <div class="bg1"></div>
+          <div
+            class="imagePartner"
+            style="
+              background-image: url(/src/assets/partners/logo3.png);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="bg2"></div>
+          <div class="infoPartner">
+            <h4>Sapienza Università di Roma</h4>
+            <p class="desc">Descrizione del partner e cosa fa.</p>
+            <div class="btnPartner">Vedi Partner <span>></span></div>
+          </div>
+        </div>
+        <div class="partner">
+          <div class="bg1"></div>
+          <div
+            class="imagePartner"
+            style="
+              background-image: url(/src/assets/partners/logo4.png);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="bg2"></div>
+          <div class="infoPartner">
+            <h4>Talent.com</h4>
+            <p class="desc">Descrizione del partner e cosa fa.</p>
+            <div class="btnPartner">Vedi Partner <span>></span></div>
+          </div>
+        </div>
+        <div class="partner">
+          <div class="bg1"></div>
+          <div
+            class="imagePartner"
+            style="
+              background-image: url(/src/assets/partners/logo6.png);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="bg2"></div>
+          <div class="infoPartner">
+            <h4>In-recruiting</h4>
+            <p class="desc">Descrizione del partner e cosa fa.</p>
+            <div class="btnPartner">Vedi Partner <span>></span></div>
+          </div>
+        </div>
+        <div class="partner">
+          <div class="bg1"></div>
+          <div
+            class="imagePartner"
+            style="
+              background-image: url(/src/assets/partners/logo7.png);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="bg2"></div>
+          <div class="infoPartner">
+            <h4>UPCommunication</h4>
+            <p class="desc">Descrizione del partner e cosa fa.</p>
+            <div class="btnPartner">Vedi Partner <span>></span></div>
+          </div>
+        </div>
+        <div class="partner">
+          <div class="bg1"></div>
+          <div
+            class="imagePartner"
+            style="
+              background-image: url(/src/assets/partners/logo8.png);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="bg2"></div>
+          <div class="infoPartner">
+            <h4>Cafiero Pezzali & Associati</h4>
+            <p class="desc">Descrizione del partner e cosa fa.</p>
+            <div class="btnPartner">Vedi Partner <span>></span></div>
+          </div>
+        </div>
+        <div class="partner">
+          <div class="bg1"></div>
+          <div
+            class="imagePartner"
+            style="
+              background-image: url(/src/assets/partners/logo5.png);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="bg2"></div>
+          <div class="infoPartner">
+            <h4>Aidp</h4>
+            <p class="desc">Descrizione del partner e cosa fa.</p>
+            <div class="btnPartner">Vedi Partner <span>></span></div>
+          </div>
+        </div>
+        <div class="partner">
+          <div class="bg1"></div>
+          <div
+            class="imagePartner"
+            style="
+              background-image: url(/src/assets/partners/logo2.png);
+              background-size: cover;
+              background-position: center;
+            "
+          ></div>
+          <div class="bg2"></div>
+          <div class="infoPartner">
+            <h4>Atempo SpA</h4>
+            <p class="desc">Descrizione del partner e cosa fa.</p>
+            <div class="btnPartner">Vedi Partner <span>></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feedbackDiv" id="feedback">
+      <div class="content">
+        <h2>I clienti dicono di noi</h2>
+        <div class="feedbacks">
+          <div class="feedback transition">
+            <p class="quote">"</p>
+            <h3>
+              Unreal—Codespaces had me running a server in minutes, and that
+              never happens as a new hire. What an awesome first week!
+            </h3>
+            <p class="author">Chris Westra</p>
+            <p class="worktitle">Senior Software Engineer</p>
+          </div>
+          <div class="feedback transition">
+            <p class="quote">"</p>
+            <h3>
+              Unreal—Codespaces had me running a server in minutes, and that
+              never happens as a new hire. What an awesome first week!
+            </h3>
+            <p class="author">Chris Westra</p>
+            <p class="worktitle">Senior Software Engineer</p>
+          </div>
+        </div>
+        <div class="feedbacks">
+          <div class="feedback transition">
+            <p class="quote">"</p>
+            <h3>
+              Unreal—Codespaces had me running a server in minutes, and that
+              never happens as a new hire. What an awesome first week!
+            </h3>
+            <p class="author">Chris Westra</p>
+            <p class="worktitle">Senior Software Engineer</p>
+          </div>
+          <div class="feedback transition">
+            <p class="quote">"</p>
+            <h3>
+              Unreal—Codespaces had me running a server in minutes, and that
+              never happens as a new hire. What an awesome first week!
+            </h3>
+            <p class="author">Chris Westra</p>
+            <p class="worktitle">Senior Software Engineer</p>
           </div>
         </div>
       </div>
@@ -784,7 +1027,7 @@ export default {
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     box-shadow: 0px 0px 133px 17px rgba(4, 0, 255, 0.17);
     position: absolute;
-    top: 49%;
+    top: 39%;
     left: -5%;
     z-index: 1;
   }
@@ -793,7 +1036,7 @@ export default {
     width: 450px;
     height: 250px;
     position: absolute;
-    top: 47%;
+    top: 36%;
     left: 0%;
     z-index: 1;
   }
@@ -812,7 +1055,7 @@ export default {
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     box-shadow: 0px 0px 133px 17px #c700ff2b;
     position: absolute;
-    top: 75%;
+    top: 65%;
     left: -5%;
     z-index: 1;
   }
@@ -827,7 +1070,7 @@ export default {
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     box-shadow: 0px 0px 133px 17px rgba(0, 119, 255, 0.17);
     position: absolute;
-    top: 76%;
+    top: 66%;
     left: 5%;
     z-index: 1;
     padding: 2rem;
@@ -1225,7 +1468,7 @@ export default {
     background: transparent;
     border-radius: 60px;
     margin-bottom: 10rem;
-    background-image: url(/src/assets/webupimage.png);
+    background-image: url(/src/assets/webpcimage.png);
     background-size: cover;
     background-position: center;
   }
@@ -1554,6 +1797,209 @@ export default {
     position: absolute;
   }
 
+  .third {
+    height: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    background-color: #fff;
+  }
+
+  .third .flowSingle {
+    display: flex;
+    width: 100%;
+  }
+
+  .third .flowSingle .flowSingleContent {
+    padding: 5rem;
+    width: 100%;
+  }
+
+  .third .flowSingle .flowSingleContent .flowSingleTitle {
+    color: #010712;
+    font-size: 64px;
+    font-weight: 800 !important;
+    width: 100%;
+    text-align: center;
+    line-height: 68px;
+    letter-spacing: -0.03em !important;
+  }
+
+  .third .flowSingle .flowSingleContent .flowSingleTitle .flowSingleTitleSpan {
+    color: #010712;
+    font-size: 64px;
+    line-height: 68px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(-70deg, #67a3f0 0%, #4e54ed 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 9999px;
+    background-color: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+    border-radius: 9999px;
+    background-clip: padding-box;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    /*background: #555;*/
+  }
+  .partners ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  /* Track */
+  .partners ::-webkit-scrollbar-track {
+    border-radius: 9999px;
+    background-color: transparent;
+  }
+
+  /* Handle */
+  .partners ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+    border-radius: 9999px;
+    background-clip: padding-box;
+  }
+
+  /* Handle on hover */
+  .partners ::-webkit-scrollbar-thumb:hover {
+    /*background: #555;*/
+  }
+
+  .partners {
+  }
+
+  .partnersContent {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10rem;
+    padding-right: 8rem;
+    background-color: #fff;
+    display: flex;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+  }
+
+  .partnersContent.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+
+  .partners .btnScrollR {
+    position: absolute;
+    right: 4%;
+    font-size: 30px;
+    border: 1px solid #020917;
+    font-weight: 700;
+    top: 25%;
+    background: white;
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding-top: 1.4rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    padding-bottom: 1.4rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .partners .btnScrollL {
+    position: absolute;
+    left: 4%;
+    font-size: 30px;
+    border: 1px solid #020917;
+    font-weight: 700;
+    top: 25%;
+    background: white;
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding-top: 1.4rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    padding-bottom: 1.4rem;
+    line-height: 0px;
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
+
+  .partners .partner {
+    border-radius: 36px;
+    background-color: #d4d8db5c;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
+      0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
+      0 22px 17px rgb(0 0 0 / 2%) !important;
+  }
+
+  .partners .partner .imagePartner {
+    width: 18vw;
+    height: 17vw;
+    border-radius: 36px;
+    margin: 1rem;
+  }
+
+  .partners .partner .infoPartner {
+    padding: 2rem;
+    padding-top: 1rem;
+    border-radius: 46px;
+    padding-bottom: 5rem;
+  }
+
+  .partners .partner .infoPartner h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.5px;
+    color: #000;
+  }
+
+  .partners .partner .infoPartner .desc {
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    color: #35393d;
+    font-weight: 700;
+  }
+
+  .partners .partner .infoPartner .btnPartner {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #000;
+    float: right;
+    cursor: pointer;
+    margin-top: 1.5rem;
+  }
+
+  .partners .partner .infoPartner .btnPartner span {
+    margin-left: 1rem;
+  }
+
   .fourthDiv {
     height: 100%;
     width: 100%;
@@ -1561,8 +2007,8 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
-    background-color: #fff;
-    padding-top: 10rem;
+    background-color: #010c18;
+    padding-top: 8rem;
   }
 
   .fourthDiv .content {
@@ -1571,7 +2017,7 @@ export default {
   }
 
   .fourthDiv .title h2 {
-    color: #010712;
+    color: #fff;
     font-size: 64px;
     font-weight: 800 !important;
     width: 40%;
@@ -1596,7 +2042,7 @@ export default {
     font-size: 24px;
     width: 40%;
     text-align: left;
-    line-height: 32px;
+    line-height: 28px;
     font-weight: 700 !important;
     letter-spacing: 0.2px;
   }
@@ -1689,6 +2135,85 @@ export default {
     font-size: 24px;
     line-height: 28px;
     margin-top: 2rem;
+  }
+
+  .feedbackDiv {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 10rem;
+  }
+
+  .feedbackDiv .content {
+    padding: 2rem;
+  }
+
+  .feedbackDiv h2 {
+    color: #010712;
+    font-size: 64px;
+    font-weight: 800 !important;
+    text-align: center;
+    line-height: 68px;
+    letter-spacing: -0.03em !important;
+  }
+
+  .feedbackDiv .feedbacks {
+    display: flex;
+    margin-top: 4rem;
+  }
+
+  .feedbackDiv .feedbacks .feedback {
+    background: #161b22;
+    border-radius: 30px;
+    padding: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    box-shadow: 0 0 0 1px #000, 0 30px 30px rgb(0 0 0 / 7%),
+      0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%),
+      0 4px 4px rgb(0 0 0 / 4%), 0 2px 2px rgb(0 0 0 / 3%);
+  }
+
+  .feedbackDiv .feedbacks .feedback .quote {
+    background: -webkit-linear-gradient(-70deg, #67a3f0 0%, #4e54ed 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: 1.5px;
+    line-height: 38px;
+    margin-bottom: 0;
+    padding-top: 1rem;
+  }
+
+  .feedbackDiv .feedbacks .feedback h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: 1.5px;
+    line-height: 38px;
+    margin-bottom: 2rem;
+  }
+
+  .feedbackDiv .feedbacks .feedback .author {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin-bottom: 0.1rem;
+  }
+
+  .feedbackDiv .feedbacks .feedback .worktitle {
+    color: #8b949e;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    margin-bottom: 0rem;
   }
 }
 
