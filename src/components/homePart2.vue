@@ -1912,7 +1912,7 @@ export default {
     font-weight: 700;
     top: 25%;
     background: white;
-    border-radius: 25rem;
+    border-radius: 20px;
     height: auto;
     z-index: 10;
     padding-top: 1.4rem;
@@ -1931,7 +1931,7 @@ export default {
     font-weight: 700;
     top: 25%;
     background: white;
-    border-radius: 25rem;
+    border-radius: 20px;
     height: auto;
     z-index: 10;
     padding-top: 1.4rem;
@@ -1945,7 +1945,7 @@ export default {
 
   .partners .partner {
     border-radius: 36px;
-    background-color: #d4d8db5c;
+    background-color: #6398ef29;
     margin-right: 1rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
