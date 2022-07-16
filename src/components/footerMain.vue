@@ -76,7 +76,7 @@ export default {
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
-  font-family: "planer", sans-serif;
+  /*font-family: "planer", sans-serif;*/
 }
 
 @media (min-width: 1024px) {
@@ -129,11 +129,18 @@ export default {
   }
 
   .content .col .link {
-    color: white;
-    font-size: 18px;
+    color: rgb(222 222 222);
+    font-size: 16px;
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
     letter-spacing: 1px;
+    font-weight: 300;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .content .col .link:hover {
+    color: #fff;
   }
 
   .footer .bottom {
@@ -159,7 +166,9 @@ export default {
   .bottom .link {
     margin-right: 1rem;
     color: rgb(199, 199, 199);
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-size: 12px;
   }
 }
 

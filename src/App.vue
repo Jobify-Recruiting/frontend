@@ -43,17 +43,38 @@ export default {
       }"
     >
       <div class="content">
-        <router-link to="/"><div class="link">Home</div></router-link>
-        <router-link to="/companies"
-          ><div class="link">Aziende</div></router-link
-        >
         <div class="logo">
           <img src="/src/assets/logo/white.png" />
         </div>
-        <router-link to="/workers"
-          ><div class="link">Lavoratori</div></router-link
-        >
-        <div class="link" @click="openMenu()">Menu</div>
+        <div class="center">
+          <router-link to="/"><div class="link">Home</div></router-link>
+          <router-link to="/openposition"
+            ><div class="link">Posizioni aperte</div></router-link
+          >
+          <router-link to="/companies"
+            ><div class="link">Aziende</div></router-link
+          >
+          <router-link to="/workers"
+            ><div class="link">Lavoratori</div></router-link
+          >
+        </div>
+        <div class="left">
+          <div class="link menuBtn" @click="openMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              fill="#fff"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -61,7 +82,20 @@ export default {
   <div class="menu">
     <div class="top">
       <div class="logo">Logo</div>
-      <div class="closeMenu" @click="closeMenu()">X</div>
+      <div class="closeMenu" @click="closeMenu()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-x-lg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+          />
+        </svg>
+      </div>
     </div>
     <div class="main">
       <div class="list">
@@ -157,10 +191,12 @@ export default {
 @import "@/assets/base.css";
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
-  font-family: "planer", sans-serif;
+  /*font-family: "planer", sans-serif;*/
+  font-family: "Heebo", sans-serif;
 }
 
 html {
@@ -188,7 +224,7 @@ a:hover {
 
 @media (min-width: 1024px) {
   .change_color {
-    background-color: #010c18;
+    background-color: #010c18d4;
     backdrop-filter: blur(12px);
     width: fit-content;
     -webkit-transition: all 0.3s ease-in-out;
@@ -214,15 +250,25 @@ a:hover {
 
   .nav {
     display: flex;
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     align-items: center;
-    border-radius: 20px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+  }
+
+  .nav .left {
+    display: flex;
+    margin-right: 4rem;
+    align-items: center;
+  }
+
+  .nav .center {
+    margin-left: auto;
+    display: flex;
+    margin-right: auto;
+    align-items: center;
   }
 
   .nav .content {
@@ -236,19 +282,49 @@ a:hover {
   .nav .link {
     margin-left: 2rem;
     margin-right: 2rem;
-    color: white;
-    font-weight: 600;
+    color: rgb(222 222 222);
+    font-weight: 300;
     font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav .link:hover {
+    color: #fff;
+  }
+
+  .nav .menuBtn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 15px;
+    background: #0062f5;
+    color: #ffffff;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
+    transition: all 0.3s ease-out;
+  }
+
+  .nav .menuBtn:hover {
+    background: #fff;
+    color: #0062f5;
   }
 
   .nav .logo {
-    margin-left: 18rem;
-    margin-right: 18rem;
     width: 170px;
     margin-top: 0.5rem;
+    margin-left: 3rem;
   }
 
   .logo img {
@@ -260,7 +336,8 @@ a:hover {
     z-index: 20;
     width: 0%;
     height: 100%;
-    background: #010c18;
+    background-color: #010c18d4;
+    backdrop-filter: blur(12px);
     padding: 7rem;
     opacity: 0;
     visibility: hidden;
@@ -275,14 +352,12 @@ a:hover {
 
   .menu .top .closeMenu {
     margin-left: auto;
-    padding: 1.2rem;
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem;
+    padding: 1rem;
     border-radius: 16px;
     border: 2px solid #0a1e4375;
     color: white;
     font-size: 18px;
-    font-weight: 600;
+    line-height: 0;
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -317,6 +392,7 @@ a:hover {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     letter-spacing: 1px;
+    font-weight: 200;
   }
 
   .menu .main .list h3:hover {
@@ -331,6 +407,7 @@ a:hover {
     margin-right: 2rem;
     font-size: 14px;
     color: #526272;
+    font-weight: 100;
   }
 
   .menu .footer {
@@ -349,18 +426,18 @@ a:hover {
     color: #8b929f;
     margin-left: 1.5rem;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 12px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    font-weight: 700;
-    letter-spacing: 1px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
   }
 
   .menuFooterSx p {
     color: #8b929f;
     font-size: 13px;
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 400;
   }
 }
 

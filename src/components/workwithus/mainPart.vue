@@ -45,14 +45,12 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <div class="images">
-          <div class="img1">
-            <div class="hover"></div>
-            <h2>Costruiamo il futuro insieme</h2>
-          </div>
-        </div>
+        <div class="glow"></div>
+        <div class="glow2"></div>
+        <div class="glow3"></div>
+        <div class="glow4"></div>
         <div class="cols">
-          <div class="col col_1 transition">
+          <div class="col col_1">
             <p>Lavora con noi</p>
             <h2>Cerchiamo talenti per creare il futuro</h2>
             <div class="subtitle">
@@ -60,14 +58,14 @@ export default {
               creare il futuro, cerchiamo talenti per creare il futuro
             </div>
           </div>
-          <div class="col col_2 transition">
+          <div class="col col_2">
             <h3>Candidati qui</h3>
             <div
               class="input"
-              style="display: flex; width: 95%; margin: 0 0 1rem 0"
+              style="display: flex; width: 95%; margin: 0 0 1.5rem 0"
             >
               <input
-                style="width: 100%; margin: 0 1rem 0 0"
+                style="width: 100%; margin: 0 1.5rem 0 0"
                 id="nav"
                 class="input"
                 type="text"
@@ -108,7 +106,16 @@ export default {
                 class="input"
                 type="text"
                 name="nickname"
-                placeholder="Altro campo"
+                placeholder="Telefono"
+              />
+            </div>
+            <div class="input">
+              <input
+                id="nav"
+                class="input"
+                type="text"
+                name="nickname"
+                placeholder="Dettagli"
               />
             </div>
 
@@ -126,6 +133,7 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .transition {
   transform: translateY(150px);
@@ -140,7 +148,8 @@ export default {
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
-  font-family: "planer", sans-serif;
+  /*font-family: "planer", sans-serif;*/
+  font-family: "Heebo", sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -213,8 +222,8 @@ export default {
   }
 
   .first {
-    padding: 5rem;
-    padding-top: 8rem;
+    padding: 8rem;
+    padding-top: 3rem;
   }
 
   .first .cols {
@@ -267,27 +276,26 @@ export default {
 
   .cols .col h2 {
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: -0.04em;
     font-size: 64px;
-    line-height: 64px;
-    font-weight: 700;
+    line-height: 68px;
+    font-weight: 800;
     margin-bottom: 2rem;
   }
 
   .cols .col h3 {
     color: #fff;
-    letter-spacing: 1px;
-    font-size: 40px;
-    line-height: 40px;
-    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
     margin-bottom: 1.5rem;
   }
 
   .cols .col .subtitle {
     color: rgb(211, 211, 211);
-    letter-spacing: 1px;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 22px;
   }
 
   .images {
@@ -296,28 +304,8 @@ export default {
 
   .images .img1 {
     width: 100%;
-    background-image: url("/src/assets/ph15.jpg");
-    border-radius: 60px;
     height: 50vw;
-    background-position: center;
-    background-size: cover;
     padding: 20rem;
-  }
-
-  .img1 .hover {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.158);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 60px;
-  }
-
-  .img1 h2 {
-    text-align: center;
-    color: #fff;
-    font-size: 68px;
   }
 
   .mailto {
@@ -337,13 +325,12 @@ export default {
     width: 95%;
     margin-right: 4rem;
     margin-left: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .input input {
-    font-size: 16px;
+    font-size: 14px;
     background-color: #1c1c1c;
-    border: 0;
     border-radius: 12px;
     color: #fff;
     box-shadow: none;
@@ -357,6 +344,7 @@ export default {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background: rgba(38, 43, 49, 0.486);
+    border: 2px solid #b3b3b326;
   }
 
   ::placeholder {
@@ -366,8 +354,52 @@ export default {
   }
 
   input:focus {
-    border: none;
     outline: none;
+    background-color: rgb(38 43 49 / 31%);
+    border-color: #0062f5;
+  }
+
+  .glow {
+    position: absolute;
+    width: 5vw;
+    opacity: 0.5;
+    left: 10%;
+    top: 30%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+  }
+
+  .glow2 {
+    position: absolute;
+    width: 5vw;
+    top: 70%;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
+  }
+
+  .glow3 {
+    position: absolute;
+    width: 5vw;
+    top: 75%;
+    left: 80%;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+  }
+
+  .glow4 {
+    position: absolute;
+    width: 5vw;
+    top: 30%;
+    opacity: 0.5;
+    left: 85%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
   }
 }
 

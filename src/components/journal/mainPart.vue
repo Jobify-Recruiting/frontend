@@ -38,22 +38,110 @@ export default {
     content.style.visibility = "hidden";
     content.style.display = "unset";
   },
-  methods: {},
+  methods: {
+    btnScrollSx() {
+      let content = document.querySelector(".featuredContent");
+      const itemWidth = content.querySelector(".featured").clientWidth;
+      content.scrollBy({ left: -itemWidth * 4, top: 0, behavior: "smooth" });
+      console.log(content);
+    },
+
+    btnScrollDx() {
+      let content = document.querySelector(".featuredContent");
+      const itemWidth = content.querySelector(".featured").clientWidth;
+      content.scrollBy({ left: itemWidth * 4, top: 0, behavior: "smooth" });
+    },
+  },
 };
 </script>
 <template>
   <div>
     <div class="main">
       <div class="first">
+        <div class="titlePage">News</div>
         <div class="topContent">
           <div class="img1"></div>
           <div class="firstTitle">
             <p>APR 22, 2022</p>
             <h2>Sustainability at Jobify: the technology transformation</h2>
             <div class="subtitle">
-              Sustainability at Jobify: the technology transformation
+              Sustainability at Jobify: the technology transformation, Jobify:
+              the technology transformation, Sustainability at : the technology
+              transformation
             </div>
-            <div class="btnRead">Leggi di più &nbsp;&nbsp;></div>
+            <div class="btnRead">
+              Leggi di più &nbsp;&nbsp;<span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="secondPart">
+          <div class="articles articles2">
+            <div class="article">
+              <div class="image">
+                <div class="hover"></div>
+                <div class="date">APR 22, 2022</div>
+              </div>
+              <div class="desctitle">Update</div>
+              <div class="title">
+                Sustainability at Jobify: the technology transformation
+              </div>
+              <div class="subtitle">
+                Sustainability at Jobify: the technology transformation
+              </div>
+            </div>
+            <div class="article">
+              <div class="image">
+                <div class="hover"></div>
+                <div class="date">APR 22, 2022</div>
+              </div>
+              <div class="desctitle">Update</div>
+              <div class="title">
+                Sustainability at Jobify: the technology transformation
+              </div>
+              <div class="subtitle">
+                Sustainability at Jobify: the technology transformation
+              </div>
+            </div>
+            <div class="article">
+              <div class="image">
+                <div class="hover"></div>
+                <div class="date">APR 22, 2022</div>
+              </div>
+              <div class="desctitle">Update</div>
+              <div class="title">
+                Sustainability at Jobify: the technology transformation
+              </div>
+              <div class="subtitle">
+                Sustainability at Jobify: the technology transformation
+              </div>
+            </div>
+            <div class="article">
+              <div class="image">
+                <div class="hover"></div>
+                <div class="date">APR 22, 2022</div>
+              </div>
+              <div class="desctitle">Update</div>
+              <div class="title">
+                Sustainability at Jobify: the technology transformation
+              </div>
+              <div class="subtitle">
+                Sustainability at Jobify: the technology transformation
+              </div>
+            </div>
           </div>
         </div>
         <div class="secondPart">
@@ -63,6 +151,7 @@ export default {
                 <div class="hover"></div>
                 <div class="date">APR 22, 2022</div>
               </div>
+              <div class="desctitle">Update</div>
               <div class="title">
                 Sustainability at Jobify: the technology transformation
               </div>
@@ -75,6 +164,7 @@ export default {
                 <div class="hover"></div>
                 <div class="date">APR 22, 2022</div>
               </div>
+              <div class="desctitle">Update</div>
               <div class="title">
                 Sustainability at Jobify: the technology transformation
               </div>
@@ -87,6 +177,7 @@ export default {
                 <div class="hover"></div>
                 <div class="date">APR 22, 2022</div>
               </div>
+              <div class="desctitle">Update</div>
               <div class="title">
                 Sustainability at Jobify: the technology transformation
               </div>
@@ -99,6 +190,7 @@ export default {
                 <div class="hover"></div>
                 <div class="date">APR 22, 2022</div>
               </div>
+              <div class="desctitle">Update</div>
               <div class="title">
                 Sustainability at Jobify: the technology transformation
               </div>
@@ -111,6 +203,7 @@ export default {
                 <div class="hover"></div>
                 <div class="date">APR 22, 2022</div>
               </div>
+              <div class="desctitle">Update</div>
               <div class="title">
                 Sustainability at Jobify: the technology transformation
               </div>
@@ -123,6 +216,7 @@ export default {
                 <div class="hover"></div>
                 <div class="date">APR 22, 2022</div>
               </div>
+              <div class="desctitle">Update</div>
               <div class="title">
                 Sustainability at Jobify: the technology transformation
               </div>
@@ -133,8 +227,96 @@ export default {
           </div>
 
           <router-link to="/contact">
-            <div class="articlesButton">Carica altro <span>></span></div>
+            <div class="articlesButton">
+              Carica altro<span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </span>
+            </div>
           </router-link>
+        </div>
+      </div>
+
+      <div class="second">
+        <div class="featureds">
+          <div class="titles">
+            <h2>Featured</h2>
+            <div class="buttons">
+              <div class="btnScrollL" @click="btnScrollSx()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#010712"
+                  class="bi bi-chevron-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </div>
+              <div class="btnScrollR" @click="btnScrollDx()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#010712"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="featuredContent">
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+                <p>April 22, 2022</p>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+                <p>April 22, 2022</p>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+                <p>April 22, 2022</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -144,6 +326,7 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .transition {
   transform: translateY(150px);
@@ -158,7 +341,8 @@ export default {
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
-  font-family: "planer", sans-serif;
+  /*font-family: "planer", sans-serif;*/
+  font-family: "Heebo", sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -168,6 +352,16 @@ export default {
 
   .first {
     padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #ada996
+    );
+    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad);
   }
 
   .first .cols {
@@ -175,6 +369,15 @@ export default {
     margin-top: 5rem;
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .titlePage {
+    font-size: 40px;
+    line-height: 44px;
+    color: #fff;
+    font-weight: 800;
+    margin-left: 11rem;
+    margin-top: 3rem;
   }
 
   .cols .col_1 {
@@ -245,16 +448,19 @@ export default {
   .topContent {
     display: flex;
     align-items: center;
-    margin-top: 5rem;
-    padding-left: 11rem;
-    padding-right: 11rem;
-    padding-bottom: 5rem;
+    margin-top: 2rem;
+    border-radius: 30px;
+    margin-left: 11rem;
+    margin-right: 11rem;
+    margin-bottom: 5rem;
+    background: white;
   }
 
   .topContent .img1 {
     width: 70%;
     background-image: url("/src/assets/ph15.jpg");
-    border-radius: 44px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
     height: 30vw;
     background-position: center;
     background-size: cover;
@@ -268,40 +474,43 @@ export default {
   }
 
   .firstTitle {
-    margin-left: 5rem;
+    margin-left: 2rem;
     width: 40%;
+    margin-right: 2rem;
+    color: #010712;
   }
 
   .firstTitle p {
-    font-weight: 700;
     font-size: 12px;
-    color: rgba(217, 217, 217, 0.64);
+    color: #273350;
+    font-weight: 800;
+    letter-spacing: 0.5px;
     line-height: 1.33333;
-    letter-spacing: 1.5px;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .firstTitle .subtitle {
     font-size: 16px;
-    color: rgb(196, 184, 184);
-    line-height: 22px;
-    letter-spacing: 1.1px;
-    margin-bottom: 4rem;
+    color: #273350;
+    line-height: 20px;
+    margin-bottom: 3rem;
     margin-top: 1rem;
   }
 
   .firstTitle h2 {
-    color: white;
-    font-size: 40px;
-    line-height: 42px;
+    color: #010712;
+    font-size: 46px;
+    line-height: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
   }
 
   .firstTitle .btnRead {
-    border-top: solid 1px #23396275;
     padding-top: 2rem;
     color: #0062f5;
-    font-weight: 700;
+    font-weight: 800;
+    float: right;
     font-size: 12px;
     line-height: 1.33333;
     letter-spacing: 1.5px;
@@ -309,10 +518,8 @@ export default {
   }
 
   .secondPart {
-    background: white;
     padding-left: 11rem;
     padding-right: 11rem;
-    padding-bottom: 5rem;
   }
 
   .articles {
@@ -321,17 +528,30 @@ export default {
     margin-top: 0rem;
   }
 
+  .articles2 .article {
+    float: left;
+    margin-top: 3rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    width: 45% !important;
+    background: #fff;
+    border-radius: 25px;
+  }
+
   .articles .article {
     float: left;
-    margin-top: 6rem;
+    margin-top: 3rem;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
     width: 29%;
+    background: #fff;
+    border-radius: 25px;
   }
 
   .articles .article .image {
     background-image: url("/src/assets/ph15.jpg");
-    border-radius: 34px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     height: 15vw;
     background-position: center;
     background-size: cover;
@@ -363,7 +583,7 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 34px;
+    border-radius: 25px;
   }
 
   .article .image .date {
@@ -381,21 +601,33 @@ export default {
   .article .title {
     font-size: 24px;
     line-height: 28px;
-    letter-spacing: 0.5px;
-    margin-top: 2rem;
+    letter-spacing: -0.02em;
+    margin-top: 0.5rem;
+    font-weight: 600;
     color: #000;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .article .desctitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 1.5rem;
+    color: #6e6e73;
+    font-weight: 600;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    text-transform: uppercase;
   }
 
   .article .subtitle {
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: 0.5px;
     margin-top: 1rem;
     color: rgb(51, 51, 51);
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-bottom: 2rem;
   }
 
   .articlesButton {
@@ -422,7 +654,185 @@ export default {
   }
 
   .articlesButton:hover {
-    background: #003585;
+    background: #fff;
+    color: #0062f5;
+  }
+
+  .second {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #010712;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 9999px;
+    background-color: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+    border-radius: 9999px;
+    background-clip: padding-box;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    /*background: #555;*/
+  }
+  .partners ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  /* Track */
+  .partners ::-webkit-scrollbar-track {
+    border-radius: 9999px;
+    background-color: transparent;
+  }
+
+  /* Handle */
+  .partners ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+    border-radius: 9999px;
+    background-clip: padding-box;
+  }
+
+  /* Handle on hover */
+  .partners ::-webkit-scrollbar-thumb:hover {
+    /*background: #555;*/
+  }
+
+  .featured {
+  }
+
+  .featuredContent {
+    height: 100%;
+    width: 100%;
+    background-color: #010712;
+    display: flex;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+  }
+
+  .featuredContent.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+
+  .featureds .titles {
+    align-items: center;
+    display: flex;
+    margin-left: 11rem;
+    margin-right: 11rem;
+    margin-bottom: 2rem;
+  }
+
+  .featureds .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: fit-content;
+  }
+
+  .featureds .titles h2 {
+    width: fit-content;
+    font-size: 34px;
+    line-height: 38px;
+    color: #fff;
+    font-weight: 800;
+  }
+
+  .featureds .btnScrollR {
+    width: fit-content;
+    background: white;
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .featureds .btnScrollL {
+    margin-right: 1rem;
+    width: fit-content;
+    background: #fff;
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .featureds .featured {
+    border-radius: 30px;
+    background-color: #6398ef29;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
+      0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
+      0 22px 17px rgb(0 0 0 / 2%) !important;
+    background-image: url(/src/assets/ph17.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 65vw;
+    height: 35vw;
+    position: relative;
+  }
+  .featured .hover {
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #ada996
+    );
+    background: linear-gradient(
+      to top,
+      #000000d1,
+      #00000027,
+      #0000000a,
+      transparent
+    );
+    height: 100%;
+    border-radius: 30px;
+  }
+
+  .featured .text {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .featured h2 {
+    color: #fff;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 3.5rem;
+  }
+  .featured p {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

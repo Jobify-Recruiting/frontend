@@ -73,12 +73,43 @@ export default {
     </h2>
     <div class="" style="display: flex; align-items: center">
       <a href="#first"
-        ><button class="btn">Scopri di più <span>></span></button></a
-      >
+        ><button class="btn">
+          Scopri di più
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-arrow-right-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+              /></svg
+          ></span></button
+      ></a>
 
       <a href="#first"
-        ><button class="btn2">Chi siamo<span>></span></button></a
-      >
+        ><button class="btn2">
+          Chi siamo<span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-arrow-right-short"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+              />
+            </svg>
+          </span>
+        </button>
+      </a>
     </div>
     <!--<div class="" style="display: flex">
       <a href="#first">
@@ -88,19 +119,19 @@ export default {
     </div>-->
     <div class="datas">
       <div class="item">
-        <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
+        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
       <div class="item">
-        <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
+        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
       <div class="item">
-        <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
+        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
       <div class="item">
-        <p style="color: white; font-size: 24px; line-height: 18px">+ 100</p>
+        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
     </div>
@@ -111,10 +142,12 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
-  font-family: "planer", sans-serif;
+  /* font-family: "planer", sans-serif;*/
+  font-family: "Heebo", sans-serif;
 }
 
 @media (min-width: 1600px) {
@@ -186,10 +219,11 @@ export default {
 
   .mainTitle h2 {
     color: white;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
     margin-top: 5rem;
     width: 75%;
+    font-weight: 200;
   }
 
   .datas {
@@ -202,12 +236,13 @@ export default {
   .datas p {
     margin-bottom: 0 !important;
     letter-spacing: 1px;
+    font-family: "planer", sans-serif !important;
   }
 
   .datas .item {
     margin-right: 6rem;
     text-align: left;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   a {
@@ -298,7 +333,6 @@ export default {
     color: #ffffff;
     line-height: 20px;
     font-size: 12px;
-    font-family: "Planer";
     font-weight: 600;
     text-decoration: none;
     text-transform: uppercase;
@@ -333,7 +367,6 @@ export default {
     font-weight: 700;
     line-height: 20px;
     font-size: 12px;
-    font-family: "Planer";
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -362,7 +395,8 @@ export default {
     height: 50px;
     float: left;
     margin-right: 0.3em;
-    font-weight: 700;
+    font-weight: 500;
+    letter-spacing: -2.5px;
   }
   .Iam b {
     float: left;
@@ -373,7 +407,8 @@ export default {
   .Iam .innerIam {
     display: inline-block;
     color: #0062f5;
-    font-weight: 700;
+    font-weight: 500;
+    letter-spacing: -2.5px;
     position: relative;
     white-space: nowrap;
     top: 0;

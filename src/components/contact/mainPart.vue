@@ -45,6 +45,7 @@ export default {
   <div>
     <div class="main">
       <div class="first">
+        <!--<div class="titlePage">Sedi</div>-->
         <div class="cols">
           <div class="col col_1">
             <p>Sede Principale</p>
@@ -139,6 +140,7 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .transition {
   transform: translateY(150px);
@@ -153,7 +155,8 @@ export default {
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
-  font-family: "planer", sans-serif;
+  /*font-family: "planer", sans-serif;*/
+  font-family: "Heebo", sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -168,7 +171,6 @@ export default {
     border-radius: 25rem;
     margin-top: 3rem;
     cursor: pointer;
-    font-family: "Planer";
     margin-left: auto;
     margin-right: auto;
   }
@@ -178,7 +180,6 @@ export default {
     color: #fff;
     line-height: 20px;
     font-size: 12px;
-    font-family: "Planer";
     letter-spacing: 5px;
     font-weight: 600;
     z-index: 1;
@@ -225,7 +226,16 @@ export default {
 
   .first {
     padding: 5rem;
-    padding-top: 14rem;
+    padding-top: 10rem;
+  }
+
+  .first .titlePage {
+    font-size: 50px;
+    line-height: 54px;
+    color: #fff;
+    font-weight: 800;
+    margin-left: 3rem;
+    margin-bottom: 4rem;
   }
 
   .first .cols {
@@ -261,7 +271,7 @@ export default {
     font-size: 12px;
     line-height: 12px;
     align-items: center;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .cols .col h4 span {
@@ -282,7 +292,7 @@ export default {
   .cols .col .subtitle {
     color: rgb(211, 211, 211);
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 18px;
   }
 
@@ -319,7 +329,7 @@ export default {
     text-transform: none;
     color: rgb(211, 211, 211);
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 18px;
     border-bottom: 1px solid rgb(211, 211, 211);
     border-radius: 0 !important;

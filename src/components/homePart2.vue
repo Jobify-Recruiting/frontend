@@ -120,7 +120,7 @@ export default {
             </h2>
             <p>
               Jobify, la tua ricerca e selezione, la tua ricerca e selezione,
-              <span style="color: #010c18; font-weight: 700"
+              <span style="color: #010c18; font-weight: 500"
                 >la tua ricerca e selezione</span
               >, la tua ricerca e selezione, la tua ricerca e selezione
             </p>
@@ -144,15 +144,17 @@ export default {
         <div class="first">
           <div class="title">
             <h2>
-              Guarda il nostro workflow, come lavoriamo
-              <span>ogni giorno con i nostri clienti</span>
+              <span
+                >Guarda il nostro workflow, come lavoriamo ogni giorno con i
+                nostri clienti</span
+              >
             </h2>
             <p>
               Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
               tua ricerca e selezione, la tua ricerca e selezione, la tua
               ricerca e selezione
               <br />
-              <button
+              <!--<button
                 class="btn2"
                 style="
                   margin-left: auto;
@@ -161,7 +163,7 @@ export default {
                 "
               >
                 <a href="#">Entra ora nel mondo Jobify <span>></span></a>
-              </button>
+              </button>-->
             </p>
           </div>
         </div>
@@ -174,14 +176,34 @@ export default {
               </h2>
               <p>
                 Qui scriviamo la descrizione riferito al testo superiore,
-                <span style="color: #010c18; font-weight: 700"
+                <span style="color: #010c18; font-weight: 500"
                   >la tua ricerca e selezione Qui scriviamo la descrizione
                   riferito al testo superiore</span
                 >
               </p>
-              <button class="btn2">
+              <!--<button class="btn2">
                 <a href="#">Entra ora nel mondo Jobify <span>></span></a>
-              </button>
+              </button>-->
+              <a href="#first" class="flowSingleBtn">
+                <span
+                  >Scopri di più
+                  <span
+                    ><span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                        /></svg></span></span
+                ></span>
+                <div class="liquid"></div>
+              </a>
             </div>
             <div class="elemdx transition">
               <div class="image"></div>
@@ -242,7 +264,7 @@ export default {
                 >
               </h2>
               <p class="elemP transition">
-                <span style="color: #010c18; font-weight: 700"
+                <span style="color: #010c18; font-weight: 500"
                   >Qui scriviamo la descrizione riferito al testo
                   superiore,</span
                 >
@@ -289,13 +311,28 @@ export default {
                 <span class="flowSingleTitleSpan"
                   >lavoriamo ogni giorno con i nostri clienti</span
                 >
-                <br />
-                <button class="btn2">
+                <p>
+                  Jobify, la tua ricerca e selezione, la tua ricerca e
+                  selezione, la tua ricerca e selezione, la tua ricerca e
+                  selezione, la tua ricerca e selezione
+                  <br />
+                  <!--<button
+                class="btn2"
+                style="
+                  margin-left: auto;
+                  margin-right: auto;
+                  width: fit-content;
+                "
+              >
+                <a href="#">Entra ora nel mondo Jobify <span>></span></a>
+              </button>-->
+                </p>
+                <!---<button class="btn2">
                   <a href="#"
                     >Entra ora nel mondo Jobify
                     <span class="btnSpan">></span></a
                   >
-                </button>
+                </button>-->
               </h2>
             </div>
           </div>
@@ -585,28 +622,60 @@ export default {
               ricerca e selezione
             </p>
             <a href="#first" class="flowSingleBtn">
-              <span>Scopri di più <span>></span></span>
+              <span
+                >Scopri di più
+                <span
+                  ><span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      /></svg></span></span
+              ></span>
               <div class="liquid"></div>
             </a>
           </div>
         </div>
       </div>
     </div>
-    <div class="third">
+    <!--<div class="third">
       <div class="flowSingle">
         <div class="flowSingleContent">
           <h2 class="flowSingleTitle">
             <span class="flowSingleTitleSpan">Partners</span>
             <br />
             <button class="btn2">
-              <a href="#">Scopri di più <span class="btnSpan">></span></a>
+              <a href="#"
+                >Scopri di più
+                <span class="btnSpan"
+                  ><span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      /></svg></span></span
+              ></a>
             </button>
           </h2>
         </div>
       </div>
-    </div>
+    </div>-->
 
-    <div class="partners">
+    <!--<div class="partners">
       <div class="btnScrollR" @click="btnScrollDx()">></div>
       <div class="btnScrollL" @click="btnScrollSx()">></div>
       <div class="partnersContent">
@@ -743,11 +812,28 @@ export default {
           <div class="infoPartner">
             <h4>Atempo SpA</h4>
             <p class="desc">Descrizione del partner e cosa fa.</p>
-            <div class="btnPartner">Vedi Partner <span>></span></div>
+            <div class="btnPartner">
+              Vedi Partner
+              <span
+                ><span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-short"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    /></svg></span
+              ></span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <div class="feedbackDiv" id="feedback">
       <div class="content">
@@ -805,7 +891,23 @@ export default {
               ricerca e selezione
             </p>
             <a href="#first" class="flowSingleBtn2">
-              <span>Scopri di più <span>></span></span>
+              <span
+                >Scopri di più
+                <span
+                  ><span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      /></svg></span></span
+              ></span>
               <div class="liquid"></div>
             </a>
           </div>
@@ -829,6 +931,7 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .transition {
   transform: translateY(150px);
@@ -843,7 +946,8 @@ export default {
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
-  font-family: "planer", sans-serif;
+  /*font-family: "planer", sans-serif;*/
+  font-family: "Heebo", sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -874,19 +978,19 @@ export default {
   .mainTitle .title h2 {
     color: #010712;
     font-size: 64px;
-    font-weight: 700;
+    font-weight: 800;
     width: 90%;
-    line-height: 68px;
-    letter-spacing: -0.03em !important;
+    line-height: 64px;
+    letter-spacing: -0.06em !important;
   }
 
   .mainTitle .title p {
     margin-top: 1rem;
     color: #627597;
-    font-size: 24px;
+    font-size: 20px;
     width: 90%;
-    line-height: 32px;
-    font-weight: 700 !important;
+    line-height: 24px;
+    font-weight: 400 !important;
   }
 
   .first .video {
@@ -934,7 +1038,7 @@ export default {
     margin-right: auto;
     text-align: center;
     line-height: 68px;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.04em !important;
   }
 
   .secondDiv .title h2 span {
@@ -943,20 +1047,20 @@ export default {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.04em !important;
     font-weight: 800 !important;
   }
 
   .secondDiv .title p {
     margin-top: 1rem;
     color: #627597;
-    font-size: 24px;
+    font-size: 20px;
     width: 87%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    line-height: 32px;
-    font-weight: 700 !important;
+    line-height: 24px;
+    font-weight: 400 !important;
   }
 
   .second .flow {
@@ -1128,16 +1232,17 @@ export default {
     color: #010712;
     font-size: 64px;
     line-height: 68px;
-    font-weight: 700;
+    font-weight: 800;
     margin-right: 2rem;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.04em !important;
   }
 
   .second .flow .elemsx h2 span {
     color: white;
     font-size: 64px;
     line-height: 68px;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: -0.04em !important;
     background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -1149,10 +1254,10 @@ export default {
   .second .flow .elemsx p {
     margin-top: 1rem;
     color: #627597;
-    font-size: 24px;
+    font-size: 20px;
     width: 80%;
-    line-height: 32px;
-    font-weight: 700 !important;
+    line-height: 24px;
+    font-weight: 400 !important;
     letter-spacing: 0.2px;
   }
 
@@ -1160,10 +1265,10 @@ export default {
     color: #010712;
     font-size: 64px;
     line-height: 68px;
-    font-weight: 700;
+    font-weight: 800;
     margin-left: 2rem;
     transition: all 0.5s ease-out;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.04em !important;
   }
 
   .elemH2 span {
@@ -1174,9 +1279,9 @@ export default {
     -webkit-box-decoration-break: clone;
     font-size: 64px;
     line-height: 68px;
-    font-weight: 700;
+    font-weight: 800;
     transition: all 0.5s ease-out;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.04em !important;
   }
 
   .elemH2_v2 {
@@ -1195,7 +1300,7 @@ export default {
     -webkit-box-decoration-break: clone !important;
     font-size: 94px;
     line-height: 98px;
-    font-weight: 700;
+    font-weight: 800;
     transition: all 0.5s ease-out;
     padding-right: 1rem;
   }
@@ -1203,29 +1308,29 @@ export default {
   .elemP {
     margin-top: 0.5rem;
     color: #627597;
-    font-size: 22px;
+    font-size: 20px;
     width: 80%;
-    line-height: 32px;
+    line-height: 24px;
     margin-left: 2rem;
-    font-weight: 700 !important;
+    font-weight: 400 !important;
   }
 
   .elemP_image {
     margin-top: 18rem !important;
     color: #627597 !important;
-    font-size: 24px !important;
+    font-size: 20px !important;
     width: 90% !important;
-    line-height: 28px !important;
-    font-weight: 700 !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
   }
 
   .elemP_image span {
     margin-top: 15rem !important;
     color: #010c18 !important;
-    font-size: 24px !important;
+    font-size: 20px !important;
     width: 90% !important;
-    line-height: 28px !important;
-    font-weight: 700 !important;
+    line-height: 24px !important;
+    font-weight: 800 !important;
   }
 
   .elemP_point {
@@ -1433,10 +1538,11 @@ export default {
   .second .flow .elemdx p {
     margin-top: 1rem;
     color: #627597;
-    font-size: 24px;
+    font-size: 20px;
     width: 80%;
-    line-height: 28px;
+    line-height: 24px;
     letter-spacing: 0.5px;
+    font-weight: 400;
   }
 
   .image {
@@ -1539,6 +1645,7 @@ export default {
     color: #627597;
     font-size: 18px;
     letter-spacing: 0.5px;
+    font-weight: 300;
   }
 
   .second .flowSingle {
@@ -1559,14 +1666,15 @@ export default {
     width: 100%;
     text-align: center;
     line-height: 68px;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.04em !important;
   }
 
   .second .flowSingle .flowSingleContent .flowSingleTitle .flowSingleTitleSpan {
     color: #010712;
     font-size: 64px;
     line-height: 68px;
-    font-weight: 700;
+    letter-spacing: -0.04em !important;
+    font-weight: 800;
     background: -webkit-linear-gradient(-70deg, #67a3f0 0%, #4e54ed 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -1594,7 +1702,6 @@ export default {
     color: #fff;
     line-height: 20px;
     font-size: 12px;
-    font-family: "Planer";
     letter-spacing: 2px;
     font-weight: 600;
     z-index: 1;
@@ -1654,7 +1761,7 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
-    background-color: #fff;
+    background-color: #010c18;
     padding-top: 10rem;
     background-image: url(https://github.githubassets.com/images/modules/site/security/grid2.svg);
   }
@@ -1708,13 +1815,13 @@ export default {
   }
 
   .thirdDiv .title h2 {
-    color: #010712;
+    color: #fff;
     font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
     text-align: center;
     line-height: 68px;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.04em !important;
   }
 
   .thirdDiv .title h2 span {
@@ -1724,19 +1831,18 @@ export default {
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     font-feature-settings: "ss02" on, "ss01" on;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.04em !important;
     font-weight: 800 !important;
   }
 
   .thirdDiv .title p {
     margin-top: 0.5rem;
     color: #627597;
-    font-size: 22px;
+    font-size: 20px;
     width: 100%;
     text-align: center;
-    line-height: 32px;
-    font-weight: 700;
-    letter-spacing: 0.2px;
+    line-height: 24px;
+    font-weight: 400;
   }
 
   .partnersImgs {
@@ -1834,6 +1940,16 @@ export default {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
+  }
+
+  .second .flowSingle .flowSingleContent p {
+    margin-top: 1rem;
+    color: #627597;
+    font-size: 20px;
+    width: 100%;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
   }
 
   ::-webkit-scrollbar {
@@ -2023,7 +2139,7 @@ export default {
     width: 40%;
     text-align: left;
     line-height: 68px;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.04em !important;
   }
 
   .fourthDiv .title h2 span {
@@ -2032,19 +2148,18 @@ export default {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    letter-spacing: -0.03em !important;
+    letter-spacing: -0.04em !important;
     font-weight: 800 !important;
   }
 
   .fourthDiv .title p {
     margin-top: 0.5rem;
     color: #627597;
-    font-size: 24px;
+    font-size: 20px;
     width: 40%;
     text-align: left;
-    line-height: 28px;
-    font-weight: 700 !important;
-    letter-spacing: 0.2px;
+    line-height: 24px;
+    font-weight: 400 !important;
   }
 
   .contentImage {
@@ -2132,9 +2247,10 @@ export default {
   }
 
   .contentImage .rectangle p {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 22px;
+    line-height: 26px;
     margin-top: 2rem;
+    font-weight: 400;
   }
 
   .feedbackDiv {
@@ -2193,9 +2309,8 @@ export default {
 
   .feedbackDiv .feedbacks .feedback h3 {
     color: #fff;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 34px;
-    letter-spacing: 1.5px;
     line-height: 38px;
     margin-bottom: 2rem;
   }
@@ -2206,6 +2321,7 @@ export default {
     letter-spacing: 1px;
     line-height: 28px;
     margin-bottom: 0.1rem;
+    font-weight: 300;
   }
 
   .feedbackDiv .feedbacks .feedback .worktitle {
@@ -2214,6 +2330,7 @@ export default {
     letter-spacing: 1px;
     line-height: 18px;
     margin-bottom: 0rem;
+    font-weight: 300;
   }
 }
 

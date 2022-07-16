@@ -45,14 +45,82 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <div class="images">
-          <div class="img1">
-            <div class="hover"></div>
-            <h2>I nostri partners</h2>
+        <div class="glow"></div>
+        <div class="glow2"></div>
+        <div class="glow3"></div>
+        <div class="glow4"></div>
+        <div class="firstPart">
+          <div class="subtitle">Partnerships</div>
+          <h2>Costruiamo l'ecosistema del domani.</h2>
+          <div class="partners">
+            <div
+              class="partnerImg"
+              style="
+                background-image: url(/src/assets/partners/logo1.png);
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div
+              class="partnerImg"
+              style="
+                background-image: url(/src/assets/partners/logo2.png);
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div
+              class="partnerImg"
+              style="
+                background-image: url(/src/assets/partners/logo3.png);
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div
+              class="partnerImg"
+              style="
+                background-image: url(/src/assets/partners/logo4.png);
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div
+              class="partnerImg"
+              style="
+                background-image: url(/src/assets/partners/logo5.png);
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div
+              class="partnerImg"
+              style="
+                background-image: url(/src/assets/partners/logo6.png);
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div
+              class="partnerImg"
+              style="
+                background-image: url(/src/assets/partners/logo7.png);
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
+            <div
+              class="partnerImg"
+              style="
+                background-image: url(/src/assets/partners/logo8.png);
+                background-size: cover;
+                background-position: center;
+              "
+            ></div>
           </div>
         </div>
         <div class="cols">
-          <div class="col col_1 transition">
+          <div class="col col_1">
             <p>Partners</p>
             <h2>Diventa nostro partner</h2>
             <div class="subtitle">
@@ -126,7 +194,7 @@ export default {
               ></div>
             </div>
           </div>
-          <div class="col col_2 transition">
+          <div class="col col_2">
             <h3>Invia richiesta</h3>
             <div
               class="input"
@@ -192,6 +260,7 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .transition {
   transform: translateY(150px);
@@ -206,7 +275,8 @@ export default {
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
-  font-family: "planer", sans-serif;
+  /*font-family: "planer", sans-serif;*/
+  font-family: "Heebo", sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -280,15 +350,40 @@ export default {
 
   .first {
     padding: 5rem;
-    padding-top: 8rem;
+    padding-top: 3rem;
   }
 
   .first .cols {
     display: flex;
-    margin-top: 8rem;
+    margin-top: 20rem;
     margin-bottom: 3rem;
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .firstPart {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: center;
+    padding-top: 8rem;
+  }
+
+  .firstPart .subtitle {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .firstPart h2 {
+    color: #fff;
+    letter-spacing: -0.04em;
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 800;
+    margin-bottom: 2rem;
   }
 
   .cols .col_1 {
@@ -303,7 +398,6 @@ export default {
   .cols .col_3 {
     margin-top: 5rem;
   }
-
   .cols .col p {
     text-transform: uppercase;
     color: #fff;
@@ -333,83 +427,38 @@ export default {
 
   .cols .col h2 {
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: -0.04em;
     font-size: 64px;
-    line-height: 64px;
-    font-weight: 700;
+    line-height: 68px;
+    font-weight: 800;
     margin-bottom: 2rem;
   }
 
   .cols .col h3 {
     color: #fff;
-    letter-spacing: 1px;
-    font-size: 40px;
-    line-height: 40px;
-    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
     margin-bottom: 1.5rem;
   }
 
   .cols .col .subtitle {
     color: rgb(211, 211, 211);
-    letter-spacing: 1px;
     font-size: 18px;
-    line-height: 24px;
-  }
-
-  .images {
-    display: flex;
-  }
-
-  .images .img1 {
-    width: 100%;
-    background-image: url("/src/assets/ph15.jpg");
-    border-radius: 60px;
-    height: 50vw;
-    background-position: center;
-    background-size: cover;
-    padding: 20rem;
-  }
-
-  .img1 .hover {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.158);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 60px;
-  }
-
-  .img1 h2 {
-    text-align: center;
-    color: #fff;
-    font-size: 68px;
-  }
-
-  .mailto {
-    margin: 0;
-    padding: 0;
-    text-transform: none;
-    color: rgb(211, 211, 211);
-    letter-spacing: 1px;
-    font-size: 18px;
-    line-height: 18px;
-    border-bottom: 1px solid rgb(211, 211, 211);
-    border-radius: 0 !important;
-    margin-bottom: 0.5rem;
+    line-height: 22px;
   }
 
   .input {
     width: 95%;
     margin-right: 4rem;
     margin-left: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .input input {
-    font-size: 16px;
+    font-size: 14px;
     background-color: #1c1c1c;
-    border: 0;
     border-radius: 12px;
     color: #fff;
     box-shadow: none;
@@ -423,6 +472,7 @@ export default {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background: rgba(38, 43, 49, 0.486);
+    border: 2px solid #b3b3b326;
   }
 
   ::placeholder {
@@ -432,14 +482,18 @@ export default {
   }
 
   input:focus {
-    border: none;
     outline: none;
+    background-color: rgb(38 43 49 / 31%);
+    border-color: #0062f5;
   }
 
   .partners {
     display: flex;
     flex-wrap: wrap;
     margin-top: 3rem;
+    margin-left: auto;
+    width: fit-content;
+    margin-right: auto;
   }
 
   .partnerImg {
@@ -450,6 +504,53 @@ export default {
     float: left;
     margin-right: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .glow {
+    position: absolute;
+    width: 5vw;
+    opacity: 0.5;
+    transform: scale(3.5);
+    left: 3%;
+    top: 23%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
+    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
+  }
+
+  .glow2 {
+    position: absolute;
+    width: 5vw;
+    transform: scale(3.5);
+    top: 70%;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
+    box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
+  }
+
+  .glow3 {
+    position: absolute;
+    width: 5vw;
+    transform: scale(4.5);
+    top: 55%;
+    left: 105%;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.3);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.3);
+    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.3);
+  }
+
+  .glow4 {
+    position: absolute;
+    width: 5vw;
+    transform: scale(4.5);
+    top: 10%;
+    opacity: 0.5;
+    left: 110%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
+    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
   }
 }
 
