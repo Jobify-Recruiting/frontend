@@ -324,7 +324,7 @@ a:hover {
   .nav .logo {
     width: 170px;
     margin-top: 0.5rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
 
   .logo img {

@@ -53,8 +53,31 @@ export default {
         </div>
         <div class="col2 colPositions">
           <div class="title">
-            <h2>Posizioni aperte</h2>
-            <p>Cerca tra i lavori attuali</p>
+            <div class="titleDiv">
+              <h2>Posizioni aperte</h2>
+              <p>Cerca tra i lavori attuali</p>
+            </div>
+            <div class="btnDiv">
+              <a href="#positions"
+                ><button class="btn">
+                  Inizia
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-arrow-down"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"
+                      />
+                    </svg>
+                  </span></button
+              ></a>
+            </div>
           </div>
           <div class="search">
             <div class="searchKey">
@@ -65,7 +88,20 @@ export default {
                 name="searchbar"
                 placeholder="Cerca parola chiave"
               />
-              <span>Cerca</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </span>
             </div>
             <div class="searchLocation">
               <input
@@ -75,7 +111,20 @@ export default {
                 name="searchbar"
                 placeholder="Cerca luogo"
               />
-              <span>Cerca</span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-search"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </span>
             </div>
           </div>
           <div class="filters">
@@ -125,41 +174,36 @@ export default {
               </div>
             </div>
           </div>
-          <!--<div class="ctaCV">
-            <div class="cols">
-              <div class="col col-padding">
-                <h3>
-                  Non hai trovato <span>offerte in linea</span> con le tue
-                  aspettative?
-                </h3>
-                <a href=""
-                  ><div class="button">Manda il tuo CV <span>></span></div></a
-                >
-              </div>
-              <div
-                class="col"
-                style="
-                  background-image: url(/src/assets/img_h1.png);
-                  background-size: cover;
-                "
-              ></div>
-            </div>
-          </div>-->
-
           <div
             class="ctaCV transition"
             style="background: rgb(161 161 161 / 10%)"
           >
             <div class="blur"></div>
             <div class="cols">
-              <div class="col col-padding">
+              <div class="col col-padding" id="positions">
                 <h3 style="color: #fff">
                   Non hai trovato <span>offerte in linea</span> con le tue
                   aspettative?
                 </h3>
                 <a href=""
-                  ><div class="button">Manda il tuo CV <span>></span></div></a
-                >
+                  ><div class="button">
+                    Manda il tuo CV
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                        />
+                      </svg>
+                    </span></div
+                ></a>
               </div>
               <div
                 class="col"
@@ -175,20 +219,11 @@ export default {
             <h2>Tutti</h2>
             <div class="filtersPositions">
               <div class="blur"></div>
-              <div class="filterPosition">
-                Città
-                <p>></p>
-              </div>
-
-              <div class="filterPosition">
-                Data
-                <p>></p>
-              </div>
-
-              <div class="filterPosition">
-                Tipo di Contratto
-                <p>></p>
-              </div>
+              <div class="filterPosition">Città</div>
+              <div class="separetor"></div>
+              <div class="filterPosition">Data</div>
+              <div class="separetor"></div>
+              <div class="filterPosition">Tipo di Contratto</div>
             </div>
             <div class="content1">
               <div class="position">
@@ -210,8 +245,24 @@ export default {
                   <div class="right">
                     <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="button">Apri ora <span>></span></div></a
-                    >
+                      ><div class="button">
+                        Apri ora
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-arrow-right-short"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                            />
+                          </svg>
+                        </span></div
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -234,8 +285,24 @@ export default {
                   <div class="right">
                     <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="button">Apri ora <span>></span></div></a
-                    >
+                      ><div class="button">
+                        Apri ora
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-arrow-right-short"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                            />
+                          </svg>
+                        </span></div
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -258,8 +325,24 @@ export default {
                   <div class="right">
                     <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="button">Apri ora <span>></span></div></a
-                    >
+                      ><div class="button">
+                        Apri ora
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-arrow-right-short"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                            />
+                          </svg>
+                        </span></div
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -282,8 +365,24 @@ export default {
                   <div class="right">
                     <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="button">Apri ora <span>></span></div></a
-                    >
+                      ><div class="button">
+                        Apri ora
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-arrow-right-short"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                            />
+                          </svg>
+                        </span></div
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -306,8 +405,24 @@ export default {
                   <div class="right">
                     <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="button">Apri ora <span>></span></div></a
-                    >
+                      ><div class="button">
+                        Apri ora
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-arrow-right-short"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                            />
+                          </svg>
+                        </span></div
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -330,8 +445,24 @@ export default {
                   <div class="right">
                     <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="button">Apri ora <span>></span></div></a
-                    >
+                      ><div class="button">
+                        Apri ora
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-arrow-right-short"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                            />
+                          </svg>
+                        </span></div
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -354,8 +485,24 @@ export default {
                   <div class="right">
                     <div class="button2">Nuovo</div>
                     <a href=""
-                      ><div class="button">Apri ora <span>></span></div></a
-                    >
+                      ><div class="button">
+                        Apri ora
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-arrow-right-short"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                            />
+                          </svg>
+                        </span></div
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -370,6 +517,7 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .transition {
   transform: translateY(150px);
@@ -384,7 +532,8 @@ export default {
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
-  font-family: "planer", sans-serif;
+  /*font-family: "planer", sans-serif;*/
+  font-family: "Heebo", sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -470,6 +619,12 @@ export default {
 
   .title {
     text-align: left;
+    display: flex;
+  }
+
+  .title .btnDiv {
+    margin-left: auto;
+    margin-right: 5rem;
   }
 
   .title h2 {
@@ -477,11 +632,48 @@ export default {
     color: #fff;
     line-height: 48px;
     font-weight: 700;
+    letter-spacing: -2.5px;
   }
 
   .title p {
-    font-size: 18px;
-    color: #fff;
+    color: #627597;
+    font-size: 20px;
+    width: 90%;
+    line-height: 24px;
+    font-weight: 400 !important;
+  }
+
+  .btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 26px;
+    border-radius: 20px;
+    background: #0062f5;
+    color: #ffffff;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    margin-right: 1.5rem;
+  }
+
+  .btn:hover {
+    background: #ffffff;
+    color: #0062f5;
+    font-weight: 600;
+  }
+
+  .btn span {
+    padding-left: 0.4rem;
   }
 
   .main2 {
@@ -502,9 +694,11 @@ export default {
 
   .filters h2 {
     font-size: 34px;
+    line-height: 38px;
     margin-bottom: 1rem;
     font-weight: 700;
     color: #fff;
+    letter-spacing: -1px;
   }
 
   .filters .filter {
@@ -545,6 +739,7 @@ export default {
     width: 100%;
     font-weight: 700;
     margin-top: 2rem;
+    letter-spacing: -1px;
   }
   .filter h4 {
     font-size: 24px;
@@ -556,6 +751,7 @@ export default {
     width: 100%;
     text-align: right;
     margin-bottom: 1rem;
+    font-weight: 200;
   }
 
   .filter p {
@@ -579,6 +775,7 @@ export default {
     margin-bottom: 0.5rem;
     font-weight: 700;
     color: #fff;
+    letter-spacing: -1px;
   }
 
   .positions .content1 {
@@ -629,7 +826,7 @@ export default {
 
   .positions .position .content .info p {
     margin-right: 1rem;
-    font-weight: 700;
+    font-weight: 300;
     color: #fff;
     letter-spacing: 1px;
     margin-bottom: 0rem !important;
@@ -657,7 +854,8 @@ export default {
   }
 
   .positions .position .button:hover {
-    background: #003585;
+    background: #fff;
+    color: #0062f5;
   }
 
   .positions .position .button2 {
@@ -668,7 +866,7 @@ export default {
     background: #11ca00;
     color: #fff;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 300;
     border-radius: 12px;
     width: fit-content;
     transition: 0.5s all;
@@ -802,6 +1000,7 @@ export default {
     font-size: 34px;
     line-height: 38px;
     font-weight: 700;
+    letter-spacing: -1px;
   }
 
   .ctaCV .col h3 span {
@@ -838,7 +1037,8 @@ export default {
   }
 
   .ctaCV .button:hover {
-    background: #003585;
+    background: #0062f5;
+    color: #0062f5;
   }
 
   .filtersPositions {
@@ -859,10 +1059,17 @@ export default {
   .filtersPositions .filterPosition {
     color: white;
     font-size: 18px;
-    margin-right: 3rem;
     display: flex;
     cursor: pointer;
     align-items: center;
+  }
+
+  .filtersPositions .separetor {
+    width: 1px;
+    height: 2vw;
+    background: rgba(255, 255, 255, 0.13);
+    margin-right: 2rem;
+    margin-left: 2rem;
   }
 
   .filtersPositions .filterPosition p {

@@ -280,6 +280,7 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .transition {
   transform: translateY(150px);
@@ -294,7 +295,8 @@ export default {
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
-  font-family: "planer", sans-serif;
+  /*font-family: "planer", sans-serif;*/
+  font-family: "Heebo", sans-serif;
 }
 
 @media (min-width: 1024px) {

@@ -30,8 +30,8 @@ export default {
 
     function scrollFunction() {
       if (
-        document.body.scrollTop > 3000 ||
-        document.documentElement.scrollTop > 3000
+        document.body.scrollTop > 2700 ||
+        document.documentElement.scrollTop > 2700
       ) {
         //console.log(document.documentElement.scrollTop);
         document.getElementById("text2").style.fontSize = "64px";
@@ -53,7 +53,7 @@ export default {
       }
     }
 
-    const slider = document.querySelector(".partnersContent");
+    const slider = document.querySelector(".feedbacks");
     let isDown = false;
     let startX;
     let scrollLeft;
@@ -83,15 +83,15 @@ export default {
   },
   methods: {
     btnScrollSx() {
-      let content = document.querySelector(".partnersContent");
-      const itemWidth = content.querySelector(".partner").clientWidth;
+      let content = document.querySelector(".feedbacks");
+      const itemWidth = content.querySelector(".feedback").clientWidth;
       content.scrollBy({ left: -itemWidth * 4, top: 0, behavior: "smooth" });
       console.log(content);
     },
 
     btnScrollDx() {
-      let content = document.querySelector(".partnersContent");
-      const itemWidth = content.querySelector(".partner").clientWidth;
+      let content = document.querySelector(".feedbacks");
+      const itemWidth = content.querySelector(".feedback").clientWidth;
       content.scrollBy({ left: itemWidth * 4, top: 0, behavior: "smooth" });
     },
   },
@@ -191,8 +191,8 @@ export default {
                     ><span
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
+                        width="24"
+                        height="24"
                         fill="currentColor"
                         class="bi bi-arrow-right-short"
                         viewBox="0 0 16 16"
@@ -210,7 +210,7 @@ export default {
             </div>
           </div>
 
-          <div class="numbers transition">
+          <!--<div class="numbers transition">
             <div class="numbersHR_left"></div>
             <div class="number">
               <div class="num">+ &nbsp;</div>
@@ -225,20 +225,20 @@ export default {
               <div class="subtitle">ore di lavoro</div>
             </div>
             <div class="numbersHR_right"></div>
-          </div>
+          </div>-->
 
           <div class="flow">
             <div class="elemsx" style="padding-bottom: 10rem">
               <div class="image2 transition"></div>
               <div class="elemP_point2 transition"></div>
-              <p class="elemP_image transition">
+              <p class="elemP_image">
                 <span>Qui scriviamo la descrizione riferito</span> al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore, Qui scriviamo la descrizione riferito al testo
                 superiore
               </p>
 
-              <p class="elemP_image transition">
+              <p class="elemP_image">
                 <span
                   >Qui scriviamo la descrizione riferito al testo superiore, Qui
                   scriviamo la descrizione riferito al</span
@@ -247,7 +247,7 @@ export default {
                 superiore
               </p>
               <div class="elemP_point2 transition"></div>
-              <p class="elemP_image transition">
+              <p class="elemP_image">
                 <span
                   >Qui scriviamo la descrizione riferito al testo
                   superiore,</span
@@ -258,12 +258,12 @@ export default {
               <div class="elemP_point2 transition"></div>
             </div>
             <div class="elemdx">
-              <h2 class="elemH2 transition" id="text2">
+              <h2 class="elemH2" id="text2">
                 Guarda il nostro workflow, come lavoriamo ogni<span>
                   giorno con i nostri clienti</span
                 >
               </h2>
-              <p class="elemP transition">
+              <p class="elemP">
                 <span style="color: #010c18; font-weight: 500"
                   >Qui scriviamo la descrizione riferito al testo
                   superiore,</span
@@ -304,7 +304,7 @@ export default {
             </div>
           </div>
 
-          <div class="flowSingle">
+          <!--<div class="flowSingle">
             <div class="flowSingleContent">
               <h2 class="flowSingleTitle">
                 Guarda il nostro workflow, come
@@ -316,7 +316,7 @@ export default {
                   selezione, la tua ricerca e selezione, la tua ricerca e
                   selezione, la tua ricerca e selezione
                   <br />
-                  <!--<button
+                  <button
                 class="btn2"
                 style="
                   margin-left: auto;
@@ -325,14 +325,14 @@ export default {
                 "
               >
                 <a href="#">Entra ora nel mondo Jobify <span>></span></a>
-              </button>-->
+              </button>
                 </p>
-                <!---<button class="btn2">
+                <button class="btn2">
                   <a href="#"
                     >Entra ora nel mondo Jobify
                     <span class="btnSpan">></span></a
                   >
-                </button>-->
+                </button>
               </h2>
             </div>
           </div>
@@ -405,7 +405,7 @@ export default {
               </p>
               <div class="elemP_point transition"></div>
             </div>
-          </div>
+          </div>-->
           <!--<div class="flow">
             <div class="elemsx" style="padding-bottom: 10rem">
               <div class="image2 transition"></div>
@@ -484,88 +484,77 @@ export default {
       <div class="glow2"></div>
       <div class="glow3"></div>
       <div class="glow4"></div>
+      <div class="glow5"></div>
+      <div class="glow6"></div>
+      <div class="glow7"></div>
       <div class="content">
         <div class="partnersImgs">
           <div
             class="partnerImg transition"
             style="
-              left: 15%;
+              left: 25%;
+              top: -19%;
               background-image: url(/src/assets/partners/logo1.png);
-              background-size: cover;
-              background-position: center;
             "
           ></div>
           <div
             class="partnerImg transition"
             style="
-              right: 15%;
-              top: 20%;
+              right: 16%;
+              top: 4%;
               background-image: url(/src/assets/partners/logo2.png);
-              background-size: cover;
-              background-position: center;
             "
           ></div>
           <div
             class="partnerImg transition"
             style="
-              right: 3%;
+              right: 29%;
+              top: -22%;
               background-image: url(/src/assets/partners/logo3.png);
-              background-size: cover;
-              background-position: center;
             "
           ></div>
           <div
             class="partnerImg transition"
             style="
-              right: 0%;
+              right: 12%;
               top: 43%;
               background-image: url(/src/assets/partners/logo4.png);
-              background-size: cover;
-              background-position: center;
             "
           ></div>
           <div
             class="partnerImg transition"
             style="
-              right: 10%;
+              right: 22%;
               top: 75%;
               background-image: url(/src/assets/partners/logo5.png);
-              background-size: cover;
-              background-position: center;
             "
           ></div>
           <div
             class="partnerImg transition"
             style="
-              top: 55%;
+              top: 60%;
+              left: 18%;
               background-image: url(/src/assets/partners/logo6.png);
-              background-size: cover;
-              background-position: center;
             "
           ></div>
           <div
             class="partnerImg transition"
             style="
-              left: 5%;
-              top: 25%;
+              left: 13%;
+              top: 14%;
               background-image: url(/src/assets/partners/logo7.png);
-              background-size: cover;
-              background-position: center;
             "
           ></div>
           <div
             class="partnerImg transition"
             style="
-              left: 12%;
-              top: 75%;
+              left: 37%;
+              top: 90%;
               background-image: url(/src/assets/partners/logo8.png);
-              background-size: cover;
-              background-position: center;
             "
           ></div>
 
-          <div class="partnerImg3 transition" style="left: 0%"></div>
-          <!--<div class="partnerImg4" style="left: 0%"></div>-->
+          <!--<div class="partnerImg3 transition" style="left: 0%"></div>
 
           <div class="partnerImg5 transition" style="left: -5%; top: 30%"></div>
 
@@ -596,25 +585,17 @@ export default {
             style="left: 100%; top: 60%"
           ></div>
 
-          <div class="partnerImg5 transition" style="left: 85%; top: 95%"></div>
-
-          <!--<div class="partnerImg2" style="left: 15%"></div>
-          <div class="partnerImg2" style="right: 15%; top: 20%"></div>
-          <div class="partnerImg2" style="right: 3%"></div>
-          <div class="partnerImg2" style="right: 0%; top: 43%"></div>
-          <div class="partnerImg2" style="right: 10%; top: 75%"></div>
-          <div class="partnerImg2" style="top: 55%"></div>
-          <div class="partnerImg2" style="left: 5%; top: 25%"></div>
-          <div class="partnerImg2" style="left: 12%; top: 75%"></div>-->
+          <div class="partnerImg5 transition" style="left: 85%; top: 95%"></div>-->
         </div>
         <div class="first" style="display: inherit !important">
           <div class="title">
             <h2>Partners</h2>
             <p
               style="
-                width: 70% !important;
+                width: 50% !important;
                 margin-left: auto;
                 margin-right: auto;
+                color: #fff !important;
               "
             >
               Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
@@ -628,8 +609,8 @@ export default {
                   ><span
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       fill="currentColor"
                       class="bi bi-arrow-right-short"
                       viewBox="0 0 16 16"
@@ -658,8 +639,8 @@ export default {
                   ><span
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       fill="currentColor"
                       class="bi bi-arrow-right-short"
                       viewBox="0 0 16 16"
@@ -818,8 +799,8 @@ export default {
                 ><span
                   ><svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
+                    width="24"
+                    height="24"
                     fill="currentColor"
                     class="bi bi-arrow-right-short"
                     viewBox="0 0 16 16"
@@ -838,44 +819,108 @@ export default {
     <div class="feedbackDiv" id="feedback">
       <div class="content">
         <h2>I clienti dicono di noi</h2>
-        <div class="feedbacks">
-          <div class="feedback transition">
-            <p class="quote">"</p>
-            <h3>
-              Unreal—Codespaces had me running a server in minutes, and that
-              never happens as a new hire. What an awesome first week!
-            </h3>
-            <p class="author">Chris Westra</p>
-            <p class="worktitle">Senior Software Engineer</p>
+        <div class="buttons">
+          <div class="btnScrollL" @click="btnScrollSx()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="#010712"
+              class="bi bi-chevron-left"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+              />
+            </svg>
           </div>
-          <div class="feedback transition">
-            <p class="quote">"</p>
-            <h3>
-              Unreal—Codespaces had me running a server in minutes, and that
-              never happens as a new hire. What an awesome first week!
-            </h3>
-            <p class="author">Chris Westra</p>
-            <p class="worktitle">Senior Software Engineer</p>
+          <div class="btnScrollR" @click="btnScrollDx()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              fill="#010712"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
           </div>
         </div>
         <div class="feedbacks">
-          <div class="feedback transition">
+          <div class="feedback">
             <p class="quote">"</p>
             <h3>
               Unreal—Codespaces had me running a server in minutes, and that
               never happens as a new hire. What an awesome first week!
             </h3>
-            <p class="author">Chris Westra</p>
-            <p class="worktitle">Senior Software Engineer</p>
+            <div class="feedbackInfo">
+              <div class="feedbackInfoPhoto"></div>
+              <div class="feddbackData">
+                <p class="author">Chris Westra</p>
+                <p class="worktitle">Senior Software Engineer</p>
+              </div>
+            </div>
           </div>
-          <div class="feedback transition">
+          <div class="feedback">
             <p class="quote">"</p>
             <h3>
               Unreal—Codespaces had me running a server in minutes, and that
               never happens as a new hire. What an awesome first week!
             </h3>
-            <p class="author">Chris Westra</p>
-            <p class="worktitle">Senior Software Engineer</p>
+            <div class="feedbackInfo">
+              <div class="feedbackInfoPhoto"></div>
+              <div class="feddbackData">
+                <p class="author">Chris Westra</p>
+                <p class="worktitle">Senior Software Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Unreal—Codespaces had me running a server in minutes, and that
+              never happens as a new hire. What an awesome first week!
+            </h3>
+            <div class="feedbackInfo">
+              <div class="feedbackInfoPhoto"></div>
+              <div class="feddbackData">
+                <p class="author">Chris Westra</p>
+                <p class="worktitle">Senior Software Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Unreal—Codespaces had me running a server in minutes, and that
+              never happens as a new hire. What an awesome first week!
+            </h3>
+            <div class="feedbackInfo">
+              <div class="feedbackInfoPhoto"></div>
+              <div class="feddbackData">
+                <p class="author">Chris Westra</p>
+                <p class="worktitle">Senior Software Engineer</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Unreal—Codespaces had me running a server in minutes, and that
+              never happens as a new hire. What an awesome first week!
+            </h3>
+            <div class="feedbackInfo">
+              <div class="feedbackInfoPhoto"></div>
+              <div class="feddbackData">
+                <p class="author">Chris Westra</p>
+                <p class="worktitle">Senior Software Engineer</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -897,8 +942,8 @@ export default {
                   ><span
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       fill="currentColor"
                       class="bi bi-arrow-right-short"
                       viewBox="0 0 16 16"
@@ -917,10 +962,7 @@ export default {
           <div class="square2 transition"></div>
           <div class="square3 transition"></div>
           <div class="square4 transition"></div>
-          <div class="rectangle transition">
-            <h2>Assistenza H24</h2>
-            <p>Siamo a tua completa disposizione.</p>
-          </div>
+          <div class="rectangle transition"></div>
         </div>
       </div>
     </div>
@@ -952,7 +994,7 @@ export default {
 
 @media (min-width: 1024px) {
   .dynamicContent {
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
   .mainTitle {
     height: 100%;
@@ -1064,7 +1106,7 @@ export default {
   }
 
   .second .flow {
-    margin-top: 15rem;
+    margin-top: 20rem;
     display: flex;
     width: 100%;
   }
@@ -1224,7 +1266,6 @@ export default {
   .second .flow .elemsx {
     width: 60%;
     text-align: left;
-    margin: 2rem;
     padding-bottom: 4rem;
   }
 
@@ -1549,7 +1590,6 @@ export default {
     width: 34vw;
     height: 35vw;
     background: transparent;
-    margin-top: 5rem;
     border-radius: 60px;
     background-image: url(/src/assets/analysis.png);
     background-size: cover;
@@ -1763,15 +1803,19 @@ export default {
     width: 100%;
     background-color: #010c18;
     padding-top: 10rem;
-    background-image: url(https://github.githubassets.com/images/modules/site/security/grid2.svg);
+    background-image: url(/src/assets/glob.png);
+    background-size: cover;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
   }
 
   .glow {
     position: absolute;
     width: 5vw;
     opacity: 0.5;
-    left: 10%;
-    top: 30%;
+    left: -5%;
+    top: 10%;
     -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
     -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
     box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
@@ -1780,18 +1824,19 @@ export default {
   .glow2 {
     position: absolute;
     width: 5vw;
-    top: 70%;
+    top: 23%;
+    left: -5%;
     opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
   }
 
   .glow3 {
     position: absolute;
     width: 5vw;
-    top: 75%;
-    left: 80%;
+    top: 40%;
+    right: -4%;
     opacity: 0.5;
     -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
     -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
@@ -1801,12 +1846,45 @@ export default {
   .glow4 {
     position: absolute;
     width: 5vw;
-    top: 30%;
+    top: 55%;
     opacity: 0.5;
-    left: 85%;
+    right: -4%;
     -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
     -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
     box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+  }
+
+  .glow5 {
+    position: absolute;
+    width: 5vw;
+    bottom: 0%;
+    opacity: 0.5;
+    left: 50%;
+    -webkit-box-shadow: 0px 0px 105px 45px #2eff9de6;
+    -moz-box-shadow: 0px 0px 105px 45px #2eff9de6;
+    box-shadow: 0px 0px 105px 45px #2eff9de6;
+  }
+
+  .glow6 {
+    position: absolute;
+    width: 5vw;
+    top: 0%;
+    opacity: 0.5;
+    left: 50%;
+    -webkit-box-shadow: 0px 0px 105px 45px #2eff9de6;
+    -moz-box-shadow: 0px 0px 105px 45px #2eff9de6;
+    box-shadow: 0px 0px 105px 45px #2eff9de6;
+  }
+
+  .glow7 {
+    position: absolute;
+    width: 5vw;
+    top: 60%;
+    opacity: 0.5;
+    left: 50%;
+    -webkit-box-shadow: 0px 0px 105px 45px #2eff9de6;
+    -moz-box-shadow: 0px 0px 105px 45px #2eff9de6;
+    box-shadow: 0px 0px 105px 45px #2eff9de6;
   }
 
   .thirdDiv .content {
@@ -1854,11 +1932,24 @@ export default {
   }
 
   .partnerImg {
-    width: 100px;
-    height: 100px;
-    background: #010712;
-    border-radius: 16px;
+    width: 150px;
+    height: 150px;
+    /*background: rgba(162, 0, 255, 0.17);
+    -webkit-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
+    -moz-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
+    box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);*/
+    background: #005dff2b;
+    -webkit-box-shadow: 0px 0px 133px 17px #005dff2b;
+    -moz-box-shadow: 0px 0px 133px 17px #005dff2b;
+    box-shadow: 0px 0px 133px 17px #005dff2b;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 25rem;
     position: absolute;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
   }
 
   .partnerImg2 {
@@ -1871,10 +1962,10 @@ export default {
   }
 
   .partnerImg3 {
-    width: 75px;
-    height: 75px;
+    width: 45px;
+    height: 45px;
     background: #0107124a;
-    border-radius: 16px;
+    border-radius: 25rem;
     position: absolute;
     background: rgba(0, 140, 255, 0.17);
     -webkit-box-shadow: 0px 0px 133px 17px rgba(0, 140, 255, 0.17);
@@ -1883,14 +1974,14 @@ export default {
   }
 
   .partnerImg5 {
-    width: 75px;
-    height: 75px;
+    width: 45px;
+    height: 45px;
     background: #0107124a;
-    border-radius: 16px;
+    border-radius: 25rem;
     position: absolute;
     background: rgba(0, 255, 136, 0.17);
-    -webkit-box-shadow: 0px 0px 133px 17px rgba(0, 140, 255, 0.17);
-    -moz-box-shadow: 0px 0px 133px 17px rgba(0, 140, 255, 0.17);
+    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 174, 0, 0.17);
+    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 174, 0, 0.17);
     box-shadow: 0px 0px 133px 17px rgba(255, 174, 0, 0.17);
   }
 
@@ -1974,146 +2065,6 @@ export default {
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     /*background: #555;*/
-  }
-  .partners ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-  }
-
-  /* Track */
-  .partners ::-webkit-scrollbar-track {
-    border-radius: 9999px;
-    background-color: transparent;
-  }
-
-  /* Handle */
-  .partners ::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-    border-radius: 9999px;
-    background-clip: padding-box;
-  }
-
-  /* Handle on hover */
-  .partners ::-webkit-scrollbar-thumb:hover {
-    /*background: #555;*/
-  }
-
-  .partners {
-  }
-
-  .partnersContent {
-    height: 100%;
-    width: 100%;
-    padding-bottom: 10rem;
-    padding-right: 8rem;
-    background-color: #fff;
-    display: flex;
-    height: auto;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    position: relative;
-  }
-
-  .partnersContent.active {
-    cursor: grabbing;
-    cursor: -webkit-grabbing;
-  }
-
-  .partners .btnScrollR {
-    position: absolute;
-    right: 4%;
-    font-size: 30px;
-    border: 1px solid #020917;
-    font-weight: 700;
-    top: 25%;
-    background: white;
-    border-radius: 20px;
-    height: auto;
-    z-index: 10;
-    padding-top: 1.4rem;
-    padding-left: 0.9rem;
-    padding-right: 0.9rem;
-    padding-bottom: 1.4rem;
-    line-height: 0px;
-    cursor: pointer;
-  }
-
-  .partners .btnScrollL {
-    position: absolute;
-    left: 4%;
-    font-size: 30px;
-    border: 1px solid #020917;
-    font-weight: 700;
-    top: 25%;
-    background: white;
-    border-radius: 20px;
-    height: auto;
-    z-index: 10;
-    padding-top: 1.4rem;
-    padding-left: 0.9rem;
-    padding-right: 0.9rem;
-    padding-bottom: 1.4rem;
-    line-height: 0px;
-    cursor: pointer;
-    transform: rotate(180deg);
-  }
-
-  .partners .partner {
-    border-radius: 36px;
-    background-color: #6398ef29;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
-      0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
-      0 22px 17px rgb(0 0 0 / 2%) !important;
-  }
-
-  .partners .partner .imagePartner {
-    width: 18vw;
-    height: 17vw;
-    border-radius: 36px;
-    margin: 1rem;
-  }
-
-  .partners .partner .infoPartner {
-    padding: 2rem;
-    padding-top: 1rem;
-    border-radius: 46px;
-    padding-bottom: 5rem;
-  }
-
-  .partners .partner .infoPartner h4 {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 0.8rem;
-    letter-spacing: 0.5px;
-    color: #000;
-  }
-
-  .partners .partner .infoPartner .desc {
-    font-size: 18px;
-    line-height: 18px;
-    letter-spacing: 0.5px;
-    color: #35393d;
-    font-weight: 700;
-  }
-
-  .partners .partner .infoPartner .btnPartner {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.5px;
-    color: #000;
-    float: right;
-    cursor: pointer;
-    margin-top: 1.5rem;
-  }
-
-  .partners .partner .infoPartner .btnPartner span {
-    margin-left: 1rem;
   }
 
   .fourthDiv {
@@ -2226,18 +2177,16 @@ export default {
   }
 
   .contentImage .rectangle {
-    width: 400px;
+    width: 500px;
     height: fit-content;
-    background: #fff;
-    border: 2px solid #fff;
-    border-radius: 30px;
-    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
-    box-shadow: 0px 0px 133px 17px rgba(122, 122, 122, 0.089);
+    background: transparent;
+    background-image: url(/src/assets/assistant.png);
+    background-size: cover;
+    background-position: center;
     position: absolute;
-    top: 20%;
-    right: 10%;
-    padding: 5rem;
+    top: 10%;
+    right: 5%;
+    padding: 15rem;
   }
 
   .contentImage .rectangle h2 {
@@ -2257,15 +2206,9 @@ export default {
     height: 100%;
     width: 100%;
     padding-bottom: 10rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
     width: 100%;
     background-color: #fff;
     padding-top: 10rem;
-  }
-
-  .feedbackDiv .content {
-    padding: 2rem;
   }
 
   .feedbackDiv h2 {
@@ -2277,9 +2220,57 @@ export default {
     letter-spacing: -0.03em !important;
   }
 
+  .feedbackDiv .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: fit-content;
+    margin-right: 5rem;
+  }
+
+  .feedbackDiv .btnScrollR {
+    width: fit-content;
+    background: transparent;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .feedbackDiv .btnScrollL {
+    margin-right: 1rem;
+    width: fit-content;
+    background: transparent;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
   .feedbackDiv .feedbacks {
     display: flex;
-    margin-top: 4rem;
+    margin-top: 2rem;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 0rem;
+    padding-right: 8rem;
+    background-color: #fff;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+  }
+
+  .feedbacks.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
   }
 
   .feedbackDiv .feedbacks .feedback {
@@ -2288,9 +2279,7 @@ export default {
     padding: 2rem;
     margin-right: 1rem;
     margin-left: 1rem;
-    box-shadow: 0 0 0 1px #000, 0 30px 30px rgb(0 0 0 / 7%),
-      0 15px 15px rgb(0 0 0 / 6%), 0 10px 8px rgb(0 0 0 / 5%),
-      0 4px 4px rgb(0 0 0 / 4%), 0 2px 2px rgb(0 0 0 / 3%);
+    float: left;
   }
 
   .feedbackDiv .feedbacks .feedback .quote {
@@ -2313,6 +2302,7 @@ export default {
     font-size: 34px;
     line-height: 38px;
     margin-bottom: 2rem;
+    width: 40vw;
   }
 
   .feedbackDiv .feedbacks .feedback .author {
@@ -2332,15 +2322,26 @@ export default {
     margin-bottom: 0rem;
     font-weight: 300;
   }
+  .feedbackDiv .feedbacks .feedback .feedbackInfo {
+    display: flex;
+    align-items: center;
+  }
+
+  .feedbackDiv .feedbacks .feedback .feedbackInfo .feedbackInfoPhoto {
+    background-image: url(/src/assets/ph9.JPG);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+  }
 }
 
 @media (max-width: 1023px) {
 }
 
 @media (min-width: 1920px) {
-  .dynamicContent {
-    margin-top: 15rem;
-  }
   .elemsx .elemdx_rectangle1 {
     width: 450px;
     height: 250px;

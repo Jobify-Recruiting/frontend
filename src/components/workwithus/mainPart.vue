@@ -49,6 +49,56 @@ export default {
         <div class="glow2"></div>
         <div class="glow3"></div>
         <div class="glow4"></div>
+
+        <div class="firstPart">
+          <div class="people1" style="top: 60%"></div>
+          <div class="people2" style="top: 90%; left: 10%"></div>
+          <div class="people2" style="top: 10%; left: 5%"></div>
+
+          <div class="people1" style="top: 5%; right: 10%"></div>
+          <div class="people2" style="top: 45%; right: 0%"></div>
+          <div class="people2" style="top: 80%; right: 10%"></div>
+          <div class="people1" style="top: 100%; right: 0%"></div>
+          <div class="subtitle">Lavora con noi</div>
+          <h2>Il team al centro di tutti i processi umani.</h2>
+          <p>
+            Increase developer velocity. Secure every step. Automate entire
+            workflows. Redefine collaboration. Trusted by over 83 million
+            developers.
+          </p>
+          <a href="#first" class="flowSingleBtn2">
+            <span
+              >Scopri di più
+              <span
+                ><span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-short"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    /></svg></span></span
+            ></span>
+            <div class="liquid"></div>
+          </a>
+        </div>
+        <div class="values">
+          <div class="value1">
+            <span>Increase developer velocity.</span> Secure every step.
+            Automate entire workflows. Redefine collaboration. Trusted by over
+            83 million developers.
+          </div>
+          <div class="value2">
+            Increase developer velocity. Secure every step. Automate entire
+            workflows. Redefine collaboration.
+            <span>Trusted by over 83 million developers.</span>
+          </div>
+        </div>
         <div class="cols">
           <div class="col col_1">
             <p>Lavora con noi</p>
@@ -58,7 +108,7 @@ export default {
               creare il futuro, cerchiamo talenti per creare il futuro
             </div>
           </div>
-          <div class="col col_2">
+          <div class="col col_2 transition">
             <h3>Candidati qui</h3>
             <div
               class="input"
@@ -156,19 +206,22 @@ export default {
   .flowSingleBtn {
     margin-top: 15rem;
   }
+  .flowSingleBtn2 {
+    margin-right: auto !important;
+  }
   a {
     position: relative;
-    padding: 14px 22px;
+    padding: 14px 26px;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
     width: fit-content;
     overflow: hidden;
-    border-radius: 25rem;
+    border-radius: 20px;
     cursor: pointer;
-    font-family: "Planer";
     margin-left: auto;
-    margin-right: 2rem;
+    margin-top: 2rem;
+    letter-spacing: 2px;
   }
 
   a span {
@@ -221,14 +274,122 @@ export default {
     top: -120px;
   }
 
+  .people1 {
+    background-image: url(/src/assets/ph9.JPG);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+    width: 70px;
+    height: 70px;
+    margin-right: 1rem;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .people2 {
+    background-image: url(/src/assets/ph9.JPG);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25rem;
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .values {
+    display: flex;
+    width: 100%;
+    margin-top: 12rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .values .value1 {
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    color: #627597;
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+    width: 80%;
+    margin-left: 3rem;
+  }
+
+  .values .value2 {
+    margin-right: 2rem;
+    margin-top: 0.5rem;
+    color: #627597;
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+    width: 80%;
+    margin-left: 3rem;
+  }
+
+  .values span {
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 500;
+  }
+
   .first {
     padding: 8rem;
     padding-top: 3rem;
   }
 
+  .firstPart {
+    text-align: center;
+    padding-top: 8rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .firstPart .subtitle {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 1rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .firstPart h2 {
+    color: #fff;
+    letter-spacing: -0.04em;
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .firstPart p {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    color: #627597;
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
   .first .cols {
     display: flex;
-    margin-top: 8rem;
+    margin-top: 20rem;
     margin-bottom: 3rem;
     padding-left: 4rem;
     padding-right: 4rem;

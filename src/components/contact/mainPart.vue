@@ -241,7 +241,6 @@ export default {
   .first .cols {
     display: flex;
     padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .cols .col_1 {
@@ -250,6 +249,7 @@ export default {
 
   .cols .col_2 {
     margin-top: 5rem;
+    margin-left: 3rem;
   }
 
   .cols .col_3 {
@@ -268,8 +268,8 @@ export default {
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 3px;
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 14px;
+    line-height: 14px;
     align-items: center;
     font-weight: 600;
   }
@@ -292,8 +292,8 @@ export default {
   .cols .col .subtitle {
     color: rgb(211, 211, 211);
     letter-spacing: 1px;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .images {
@@ -329,8 +329,8 @@ export default {
     text-transform: none;
     color: rgb(211, 211, 211);
     letter-spacing: 1px;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 20px;
     border-bottom: 1px solid rgb(211, 211, 211);
     border-radius: 0 !important;
     margin-bottom: 0.5rem;

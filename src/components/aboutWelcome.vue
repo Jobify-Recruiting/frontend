@@ -66,76 +66,8 @@ export default {
         </div>
       </b>
     </div>
-    <h2>
-      Ricerca e selezione al servizio delle aziende e del candidato e selezione
-      al servizio delle aziende e del candidato e selezione al servizio delle
-      aziende e del candidato
-    </h2>
-    <div class="" style="display: flex; align-items: center">
-      <a href="#first"
-        ><button class="btn">
-          Scopri di più
-          <span
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="bi bi-arrow-right-short"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-              /></svg
-          ></span></button
-      ></a>
-
-      <a href="#first"
-        ><button class="btn2">
-          Chi siamo<span
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="bi bi-arrow-right-short"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-              />
-            </svg>
-          </span>
-        </button>
-      </a>
-    </div>
-    <!--<div class="" style="display: flex">
-      <a href="#first">
-        <span>Scopri di più <span>></span></span>
-        <div class="liquid"></div>
-      </a>
-    </div>-->
-    <div class="datas">
-      <div class="item">
-        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
-        <p style="color: #cdd4db; font-size: 16px">ore</p>
-      </div>
-      <div class="item">
-        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
-        <p style="color: #cdd4db; font-size: 16px">ore</p>
-      </div>
-      <div class="item">
-        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
-        <p style="color: #cdd4db; font-size: 16px">ore</p>
-      </div>
-      <div class="item">
-        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
-        <p style="color: #cdd4db; font-size: 16px">ore</p>
-      </div>
-    </div>
   </div>
+  <div class="gradient"></div>
 </template>
 
 <style scoped>
@@ -152,19 +84,25 @@ export default {
 
 @media (min-width: 1600px) {
   #globeViz {
-    left: 22% !important;
+    left: 10% !important;
   }
 
-  .mainTitle {
-    margin-left: 8rem !important;
+  .Iam {
+    padding-top: 3rem;
+    font: normal 40px/50px Planer, sans-serif;
+    color: #fff;
+    font-size: 90px !important;
+    margin-left: 10rem !important;
   }
 }
 
 @media (min-width: 1024px) {
   #globeViz {
     position: fixed;
-    left: 20%;
+    left: 0%;
+    top: 40%;
     cursor: pointer;
+    transform: scale(1.5);
   }
 
   .hover1 {
@@ -210,12 +148,13 @@ export default {
   }
 
   .mainTitle {
-    margin-left: 2rem;
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-top: 8rem;
-    width: 65%;
-    padding-bottom: 10rem;
+    padding-top: 10rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15rem;
   }
 
   .mainTitle h2 {
@@ -223,8 +162,8 @@ export default {
     font-size: 18px;
     line-height: 22px;
     margin-top: 5rem;
-    width: 75%;
     font-weight: 200;
+    text-align: center;
   }
 
   .datas {
@@ -392,7 +331,8 @@ export default {
     padding-top: 3rem;
     font: normal 40px/50px Planer, sans-serif;
     color: #fff;
-    font-size: 60px;
+    font-size: 80px;
+    margin-left: 5rem;
   }
   .Iam p {
     height: 50px;
@@ -435,6 +375,17 @@ export default {
     -ms-animation-delay: 1s;
     -o-animation-delay: 1s;
     animation-delay: 1s;
+  }
+
+  .gradient {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    background: #7474bf;
+    background: -webkit-linear-gradient(to right, #348ac7, #7474bf);
+    background: linear-gradient(to top, #030812, #7474bf00);
+    padding-top: 15rem;
   }
 }
 

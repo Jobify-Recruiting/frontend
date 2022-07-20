@@ -49,74 +49,100 @@ export default {
         <div class="glow2"></div>
         <div class="glow3"></div>
         <div class="glow4"></div>
+        <div class="glow5"></div>
         <div class="firstPart">
           <div class="subtitle">Partnerships</div>
           <h2>Costruiamo l'ecosistema del domani.</h2>
-          <div class="partners">
-            <div
-              class="partnerImg"
-              style="
-                background-image: url(/src/assets/partners/logo1.png);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
-            <div
-              class="partnerImg"
-              style="
-                background-image: url(/src/assets/partners/logo2.png);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
-            <div
-              class="partnerImg"
-              style="
-                background-image: url(/src/assets/partners/logo3.png);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
-            <div
-              class="partnerImg"
-              style="
-                background-image: url(/src/assets/partners/logo4.png);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
-            <div
-              class="partnerImg"
-              style="
-                background-image: url(/src/assets/partners/logo5.png);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
-            <div
-              class="partnerImg"
-              style="
-                background-image: url(/src/assets/partners/logo6.png);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
-            <div
-              class="partnerImg"
-              style="
-                background-image: url(/src/assets/partners/logo7.png);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
-            <div
-              class="partnerImg"
-              style="
-                background-image: url(/src/assets/partners/logo8.png);
-                background-size: cover;
-                background-position: center;
-              "
-            ></div>
+          <p>
+            Increase developer velocity. Secure every step. Automate entire
+            workflows. Redefine collaboration. Trusted by over 83 million
+            developers.
+          </p>
+          <a href="#first" class="flowSingleBtn2">
+            <span
+              >Scopri di più
+              <span
+                ><span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-short"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    /></svg></span></span
+            ></span>
+            <div class="liquid"></div>
+          </a>
+        </div>
+        <div class="secondPart">
+          <h2>Costruiamo l'ecosistema del domani.</h2>
+          <div class="cols">
+            <div class="col">
+              <div class="partners">
+                <div
+                  class="partnerImg transition"
+                  style="background-image: url(/src/assets/partners/logo1.png)"
+                ></div>
+                <div
+                  class="partnerImg transition"
+                  style="background-image: url(/src/assets/partners/logo2.png)"
+                ></div>
+                <div
+                  class="partnerImg transition"
+                  style="background-image: url(/src/assets/partners/logo3.png)"
+                ></div>
+              </div>
+              <div class="partners">
+                <div
+                  class="partnerImg transition"
+                  style="background-image: url(/src/assets/partners/logo4.png)"
+                ></div>
+                <div
+                  class="partnerImg transition"
+                  style="background-image: url(/src/assets/partners/logo5.png)"
+                ></div>
+                <div
+                  class="partnerImg transition"
+                  style="background-image: url(/src/assets/partners/logo6.png)"
+                ></div>
+              </div>
+              <div class="partners">
+                <div
+                  class="partnerImg transition"
+                  style="background-image: url(/src/assets/partners/logo7.png)"
+                ></div>
+                <div
+                  class="partnerImg transition"
+                  style="background-image: url(/src/assets/partners/logo8.png)"
+                ></div>
+              </div>
+            </div>
+            <div class="col col2">
+              <div class="text">
+                <span
+                  >Increase developer velocity. Secure every step. Automate
+                  entire workflows.</span
+                >
+                Redefine collaboration. Trusted by over 83 million developers.
+              </div>
+              <div class="text2">
+                Increase developer velocity. Secure every step. Automate entire
+                workflows. Redefine collaboration. Trusted by over 83 million
+                developers.
+              </div>
+              <div class="text">
+                Redefine collaboration. Trusted by over 83 million developers.
+                <span
+                  >Increase developer velocity. Secure every step. Automate
+                  entire workflows.</span
+                >
+              </div>
+            </div>
           </div>
         </div>
         <div class="cols">
@@ -127,74 +153,8 @@ export default {
               Cerchiamo talenti per creare il futuro, cerchiamo talenti per
               creare il futuro, cerchiamo talenti per creare il futuro
             </div>
-            <div class="partners">
-              <div
-                class="partnerImg"
-                style="
-                  background-image: url(/src/assets/partners/logo1.png);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div>
-              <div
-                class="partnerImg"
-                style="
-                  background-image: url(/src/assets/partners/logo2.png);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div>
-              <div
-                class="partnerImg"
-                style="
-                  background-image: url(/src/assets/partners/logo3.png);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div>
-              <div
-                class="partnerImg"
-                style="
-                  background-image: url(/src/assets/partners/logo4.png);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div>
-              <div
-                class="partnerImg"
-                style="
-                  background-image: url(/src/assets/partners/logo5.png);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div>
-              <div
-                class="partnerImg"
-                style="
-                  background-image: url(/src/assets/partners/logo6.png);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div>
-              <div
-                class="partnerImg"
-                style="
-                  background-image: url(/src/assets/partners/logo7.png);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div>
-              <div
-                class="partnerImg"
-                style="
-                  background-image: url(/src/assets/partners/logo8.png);
-                  background-size: cover;
-                  background-position: center;
-                "
-              ></div>
-            </div>
           </div>
-          <div class="col col_2">
+          <div class="col col_2 transition">
             <h3>Invia richiesta</h3>
             <div
               class="input"
@@ -283,19 +243,23 @@ export default {
   .flowSingleBtn {
     margin-top: 15rem;
   }
+
+  .flowSingleBtn2 {
+    margin-right: auto !important;
+  }
   a {
     position: relative;
-    padding: 14px 22px;
+    padding: 14px 26px;
     display: block;
     text-decoration: none;
     text-transform: uppercase;
     width: fit-content;
     overflow: hidden;
-    border-radius: 25rem;
+    border-radius: 20px;
     cursor: pointer;
-    font-family: "Planer";
     margin-left: auto;
-    margin-right: 2rem;
+    margin-top: 2rem;
+    letter-spacing: 2px;
   }
 
   a span {
@@ -349,23 +313,23 @@ export default {
   }
 
   .first {
-    padding: 5rem;
     padding-top: 3rem;
   }
 
   .first .cols {
     display: flex;
-    margin-top: 20rem;
-    margin-bottom: 3rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    margin-top: 8rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-bottom: 8rem;
   }
 
   .firstPart {
-    padding-left: 4rem;
-    padding-right: 4rem;
     text-align: center;
     padding-top: 8rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .firstPart .subtitle {
@@ -375,6 +339,9 @@ export default {
     font-size: 12px;
     line-height: 12px;
     margin-bottom: 1rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .firstPart h2 {
@@ -383,7 +350,22 @@ export default {
     font-size: 72px;
     line-height: 76px;
     font-weight: 800;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .firstPart p {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    color: #627597;
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 400;
   }
 
   .cols .col_1 {
@@ -449,6 +431,63 @@ export default {
     line-height: 22px;
   }
 
+  .secondPart {
+    margin-top: 25rem;
+    margin-bottom: 15rem;
+  }
+
+  .secondPart h2 {
+    color: #fff;
+    letter-spacing: -0.04em;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 800;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .secondPart .text {
+    margin-top: 0.5rem;
+    color: #627597;
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+    width: 80%;
+    margin-left: 3rem;
+  }
+
+  .secondPart .text span {
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 500;
+  }
+
+  .secondPart .text2 {
+    margin-top: 0.5rem;
+    color: #ffffff;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 3rem;
+    width: 80%;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .secondPart .cols {
+    padding-left: 0rem !important;
+    margin-top: 5rem !important;
+  }
+
+  .secondPart .cols .col2 {
+    width: 30%;
+  }
+
   .input {
     width: 95%;
     margin-right: 4rem;
@@ -490,20 +529,30 @@ export default {
   .partners {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 3rem;
     margin-left: auto;
     width: fit-content;
     margin-right: auto;
+    transform: rotate(-15deg);
   }
 
   .partnerImg {
-    width: 100px;
-    height: 100px;
-    background: #010712;
-    border-radius: 16px;
+    width: 150px;
+    height: 150px;
+    background: #005dff2b;
+    -webkit-box-shadow: 0px 0px 133px 17px #005dff2b;
+    -moz-box-shadow: 0px 0px 133px 17px #005dff2b;
+    box-shadow: 0px 0px 133px 17px #005dff2b;
+    border-radius: 25rem;
+    border: 1px solid #fff;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
     float: left;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
   }
 
   .glow {
@@ -546,6 +595,17 @@ export default {
     width: 5vw;
     transform: scale(4.5);
     top: 10%;
+    opacity: 0.5;
+    left: 110%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
+    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
+  }
+  .glow5 {
+    position: absolute;
+    width: 5vw;
+    transform: scale(4.5);
+    top: 90%;
     opacity: 0.5;
     left: 110%;
     -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);

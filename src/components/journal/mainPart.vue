@@ -37,6 +37,34 @@ export default {
     content.style.opacity = "0";
     content.style.visibility = "hidden";
     content.style.display = "unset";
+
+    const slider = document.querySelector(".featuredContent");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    if (slider) {
+      slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      slider.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mouseup", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+      });
+    }
   },
   methods: {
     btnScrollSx() {
@@ -73,8 +101,8 @@ export default {
               Leggi di più &nbsp;&nbsp;<span
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="24"
+                  height="24"
                   fill="currentColor"
                   class="bi bi-arrow-right-short"
                   viewBox="0 0 16 16"
@@ -231,8 +259,8 @@ export default {
               Carica altro<span
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
+                  width="24"
+                  height="24"
                   fill="currentColor"
                   class="bi bi-arrow-right-short"
                   viewBox="0 0 16 16"
@@ -289,31 +317,41 @@ export default {
             <div class="featured">
               <div class="hover"></div>
               <div class="text">
+                <p>April 22, 2022</p>
                 <h2>
                   Conserving mangroves to protect local livelihoods and the
                   planet
                 </h2>
-                <p>April 22, 2022</p>
               </div>
             </div>
             <div class="featured">
               <div class="hover"></div>
               <div class="text">
+                <p>April 22, 2022</p>
                 <h2>
                   Conserving mangroves to protect local livelihoods and the
                   planet
                 </h2>
-                <p>April 22, 2022</p>
               </div>
             </div>
             <div class="featured">
               <div class="hover"></div>
               <div class="text">
+                <p>April 22, 2022</p>
                 <h2>
                   Conserving mangroves to protect local livelihoods and the
                   planet
                 </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
                 <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
               </div>
             </div>
           </div>
@@ -687,41 +725,16 @@ export default {
   ::-webkit-scrollbar-thumb:hover {
     /*background: #555;*/
   }
-  .partners ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-  }
-
-  /* Track */
-  .partners ::-webkit-scrollbar-track {
-    border-radius: 9999px;
-    background-color: transparent;
-  }
-
-  /* Handle */
-  .partners ::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-    border-radius: 9999px;
-    background-clip: padding-box;
-  }
-
-  /* Handle on hover */
-  .partners ::-webkit-scrollbar-thumb:hover {
-    /*background: #555;*/
-  }
-
-  .featured {
-  }
 
   .featuredContent {
     height: 100%;
     width: 100%;
     background-color: #010712;
     display: flex;
-    height: auto;
     overflow-x: scroll;
     overflow-y: hidden;
+    flex-wrap: nowrap;
+    align-items: center;
     position: relative;
   }
 
@@ -788,21 +801,22 @@ export default {
     background-image: url(/src/assets/ph17.jpg);
     background-size: cover;
     background-position: center;
-    width: 65vw;
+    width: 75vw;
+    float: left;
     height: 35vw;
     position: relative;
   }
   .featured .hover {
     background: #ada996;
     background: -webkit-linear-gradient(
-      to right,
-      #eaeaea,
-      #dbdbdb,
-      #f2f2f2,
-      #ada996
+      to bottom,
+      #000000d1,
+      #00000027,
+      #0000000a,
+      transparent
     );
     background: linear-gradient(
-      to top,
+      to bottom,
       #000000d1,
       #00000027,
       #0000000a,
@@ -810,27 +824,29 @@ export default {
     );
     height: 100%;
     border-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 
   .featured .text {
-    position: absolute;
-    bottom: 0;
   }
 
   .featured h2 {
     color: #fff;
     padding: 2rem;
     padding-bottom: 0.5rem;
+    padding-top: 0;
     font-size: 38px;
     line-height: 42px;
-    margin-bottom: 3.5rem;
+    width: 30vw;
   }
   .featured p {
-    position: absolute;
-    bottom: 0;
     color: #fff;
     padding: 2rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 20px;
   }
