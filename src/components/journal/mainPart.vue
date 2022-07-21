@@ -279,7 +279,7 @@ export default {
       <div class="second">
         <div class="featureds">
           <div class="titles">
-            <h2>Featured</h2>
+            <h2>Storie</h2>
             <div class="buttons">
               <div class="btnScrollL" @click="btnScrollSx()">
                 <svg

@@ -128,7 +128,7 @@ export default {
             </div>
           </div>
           <div class="filters">
-            <h2>Esplora</h2>
+            <h2>Categorie</h2>
             <div class="content">
               <div class="filter" style="border-bottom: 4px solid #a100ff">
                 <div class="blur"></div>

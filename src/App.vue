@@ -43,9 +43,11 @@ export default {
       }"
     >
       <div class="content">
-        <div class="logo">
-          <img src="/src/assets/logo/white.png" />
-        </div>
+        <router-link to="/">
+          <div class="logo">
+            <img src="/src/assets/logo/white.png" />
+          </div>
+        </router-link>
         <div class="center">
           <router-link to="/"><div class="link">Home</div></router-link>
           <router-link to="/openposition"
@@ -325,10 +327,16 @@ a:hover {
     width: 170px;
     margin-top: 0.5rem;
     margin-left: 1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .logo img {
     width: 95px;
+  }
+
+  .logo:hover {
+    transform: scale(1.1);
   }
 
   .menu {

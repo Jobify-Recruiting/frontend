@@ -10,6 +10,17 @@ export default {
       scrollFunction();
     };
 
+    const flavoursContainer = document.getElementById("feedbacksContainer");
+    const flavoursScrollWidth = flavoursContainer.scrollWidth;
+
+    window.addEventListener("load", () => {
+      self.setInterval(() => {
+        if (flavoursContainer.scrollLeft !== flavoursScrollWidth) {
+          flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 1, 0);
+        }
+      }, 15);
+    });
+
     function reveal() {
       var reveals = document.querySelectorAll(".transition");
 
@@ -522,7 +533,7 @@ export default {
             "
           ></div>
           <div
-            class="partnerImg transition"
+            class="partnerImg"
             style="
               right: 22%;
               top: 75%;
@@ -530,7 +541,7 @@ export default {
             "
           ></div>
           <div
-            class="partnerImg transition"
+            class="partnerImg"
             style="
               top: 60%;
               left: 18%;
@@ -546,46 +557,13 @@ export default {
             "
           ></div>
           <div
-            class="partnerImg transition"
+            class="partnerImg"
             style="
               left: 37%;
               top: 90%;
               background-image: url(/src/assets/partners/logo8.png);
             "
           ></div>
-
-          <!--<div class="partnerImg3 transition" style="left: 0%"></div>
-
-          <div class="partnerImg5 transition" style="left: -5%; top: 30%"></div>
-
-          <div class="partnerImg3 transition" style="left: -5%; top: 80%"></div>
-
-          <div class="partnerImg3 transition" style="left: 80%; top: 50%"></div>
-
-          <div class="partnerImg5 transition" style="left: 70%"></div>
-
-          <div class="partnerImg5 transition" style="left: 95%; top: 25%"></div>
-
-          <div class="partnerImg3 transition" style="left: 95%; top: 80%"></div>
-
-          <div class="partnerImg5 transition" style="left: 15%; top: 55%"></div>
-
-          <div class="partnerImg5 transition" style="left: 10%; top: 95%"></div>
-
-          <div class="partnerImg5 transition" style="left: 25%; top: 75%"></div>
-
-          <div class="partnerImg3 transition" style="left: 30%; top: 15%"></div>
-
-          <div class="partnerImg3 transition" style="left: 70%; top: 75%"></div>
-
-          <div class="partnerImg3 transition" style="left: 100%; top: 5%"></div>
-
-          <div
-            class="partnerImg3 transition"
-            style="left: 100%; top: 60%"
-          ></div>
-
-          <div class="partnerImg5 transition" style="left: 85%; top: 95%"></div>-->
         </div>
         <div class="first" style="display: inherit !important">
           <div class="title">
@@ -626,196 +604,6 @@ export default {
         </div>
       </div>
     </div>
-    <!--<div class="third">
-      <div class="flowSingle">
-        <div class="flowSingleContent">
-          <h2 class="flowSingleTitle">
-            <span class="flowSingleTitleSpan">Partners</span>
-            <br />
-            <button class="btn2">
-              <a href="#"
-                >Scopri di più
-                <span class="btnSpan"
-                  ><span
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                      class="bi bi-arrow-right-short"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                      /></svg></span></span
-              ></a>
-            </button>
-          </h2>
-        </div>
-      </div>
-    </div>-->
-
-    <!--<div class="partners">
-      <div class="btnScrollR" @click="btnScrollDx()">></div>
-      <div class="btnScrollL" @click="btnScrollSx()">></div>
-      <div class="partnersContent">
-        <div class="partner">
-          <div class="bg1"></div>
-          <div
-            class="imagePartner"
-            style="
-              background-image: url(/src/assets/partners/logo1.png);
-              background-size: cover;
-              background-position: center;
-            "
-          ></div>
-          <div class="bg2"></div>
-          <div class="infoPartner">
-            <h4>Studio Felli</h4>
-            <p class="desc">Descrizione del partner e cosa fa.</p>
-            <div class="btnPartner">Vedi Partner <span>></span></div>
-          </div>
-        </div>
-        <div class="partner">
-          <div class="bg1"></div>
-          <div
-            class="imagePartner"
-            style="
-              background-image: url(/src/assets/partners/logo3.png);
-              background-size: cover;
-              background-position: center;
-            "
-          ></div>
-          <div class="bg2"></div>
-          <div class="infoPartner">
-            <h4>Sapienza Università di Roma</h4>
-            <p class="desc">Descrizione del partner e cosa fa.</p>
-            <div class="btnPartner">Vedi Partner <span>></span></div>
-          </div>
-        </div>
-        <div class="partner">
-          <div class="bg1"></div>
-          <div
-            class="imagePartner"
-            style="
-              background-image: url(/src/assets/partners/logo4.png);
-              background-size: cover;
-              background-position: center;
-            "
-          ></div>
-          <div class="bg2"></div>
-          <div class="infoPartner">
-            <h4>Talent.com</h4>
-            <p class="desc">Descrizione del partner e cosa fa.</p>
-            <div class="btnPartner">Vedi Partner <span>></span></div>
-          </div>
-        </div>
-        <div class="partner">
-          <div class="bg1"></div>
-          <div
-            class="imagePartner"
-            style="
-              background-image: url(/src/assets/partners/logo6.png);
-              background-size: cover;
-              background-position: center;
-            "
-          ></div>
-          <div class="bg2"></div>
-          <div class="infoPartner">
-            <h4>In-recruiting</h4>
-            <p class="desc">Descrizione del partner e cosa fa.</p>
-            <div class="btnPartner">Vedi Partner <span>></span></div>
-          </div>
-        </div>
-        <div class="partner">
-          <div class="bg1"></div>
-          <div
-            class="imagePartner"
-            style="
-              background-image: url(/src/assets/partners/logo7.png);
-              background-size: cover;
-              background-position: center;
-            "
-          ></div>
-          <div class="bg2"></div>
-          <div class="infoPartner">
-            <h4>UPCommunication</h4>
-            <p class="desc">Descrizione del partner e cosa fa.</p>
-            <div class="btnPartner">Vedi Partner <span>></span></div>
-          </div>
-        </div>
-        <div class="partner">
-          <div class="bg1"></div>
-          <div
-            class="imagePartner"
-            style="
-              background-image: url(/src/assets/partners/logo8.png);
-              background-size: cover;
-              background-position: center;
-            "
-          ></div>
-          <div class="bg2"></div>
-          <div class="infoPartner">
-            <h4>Cafiero Pezzali & Associati</h4>
-            <p class="desc">Descrizione del partner e cosa fa.</p>
-            <div class="btnPartner">Vedi Partner <span>></span></div>
-          </div>
-        </div>
-        <div class="partner">
-          <div class="bg1"></div>
-          <div
-            class="imagePartner"
-            style="
-              background-image: url(/src/assets/partners/logo5.png);
-              background-size: cover;
-              background-position: center;
-            "
-          ></div>
-          <div class="bg2"></div>
-          <div class="infoPartner">
-            <h4>Aidp</h4>
-            <p class="desc">Descrizione del partner e cosa fa.</p>
-            <div class="btnPartner">Vedi Partner <span>></span></div>
-          </div>
-        </div>
-        <div class="partner">
-          <div class="bg1"></div>
-          <div
-            class="imagePartner"
-            style="
-              background-image: url(/src/assets/partners/logo2.png);
-              background-size: cover;
-              background-position: center;
-            "
-          ></div>
-          <div class="bg2"></div>
-          <div class="infoPartner">
-            <h4>Atempo SpA</h4>
-            <p class="desc">Descrizione del partner e cosa fa.</p>
-            <div class="btnPartner">
-              Vedi Partner
-              <span
-                ><span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-short"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                    /></svg></span
-              ></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>-->
-
     <div class="feedbackDiv" id="feedback">
       <div class="content">
         <h2>I clienti dicono di noi</h2>
@@ -851,7 +639,7 @@ export default {
             </svg>
           </div>
         </div>
-        <div class="feedbacks">
+        <div class="feedbacks" id="feedbacksContainer">
           <div class="feedback">
             <p class="quote">"</p>
             <h3>
@@ -1059,7 +847,7 @@ export default {
   .secondDiv {
     height: 100%;
     width: 100%;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
@@ -1068,7 +856,6 @@ export default {
 
   .secondDiv .content {
     padding: 3rem;
-    padding-top: 10rem;
   }
 
   .secondDiv .title h2 {
@@ -1106,7 +893,7 @@ export default {
   }
 
   .second .flow {
-    margin-top: 20rem;
+    margin-top: 10rem;
     display: flex;
     width: 100%;
   }
@@ -2299,26 +2086,26 @@ export default {
   .feedbackDiv .feedbacks .feedback h3 {
     color: #fff;
     font-weight: 600;
-    font-size: 34px;
-    line-height: 38px;
+    font-size: 30px;
+    line-height: 34px;
     margin-bottom: 2rem;
     width: 40vw;
   }
 
   .feedbackDiv .feedbacks .feedback .author {
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
-    line-height: 28px;
-    margin-bottom: 0.1rem;
+    line-height: 24px;
+    margin-bottom: 0rem;
     font-weight: 300;
   }
 
   .feedbackDiv .feedbacks .feedback .worktitle {
     color: #8b949e;
-    font-size: 14px;
+    font-size: 12px;
     letter-spacing: 1px;
-    line-height: 18px;
+    line-height: 16px;
     margin-bottom: 0rem;
     font-weight: 300;
   }
