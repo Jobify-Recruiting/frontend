@@ -46,6 +46,9 @@ export default {
         <router-link to="/workwithus">
           <div class="link">Lavora con noi</div></router-link
         >
+        <router-link to="/newsletter">
+          <div class="link">Newsletter</div></router-link
+        >
         <router-link to="/contact">
           <div class="link">Contattaci</div></router-link
         >
@@ -97,6 +100,7 @@ export default {
     /*border-top-right-radius: 60px;
     border-top-left-radius: 60px;*/
     position: absolute;
+    z-index: 6;
   }
 
   .footer .content {

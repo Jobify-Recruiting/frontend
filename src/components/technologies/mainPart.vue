@@ -50,10 +50,27 @@ export default {
           functions in real-time, right from your editor.
         </p>
 
-        <a href="#first" class="flowSingleBtn">
-          <span>Inizia ora <span>></span></span>
-          <div class="liquid"></div>
-        </a>
+        <div class="mainButton">
+          <a href="#first"
+            ><button class="btn">
+              Invia
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </span></button
+          ></a>
+        </div>
       </div>
 
       <div class="second">
@@ -300,70 +317,42 @@ export default {
 }
 
 @media (min-width: 1024px) {
-  a {
-    position: relative;
-    padding: 14px 22px;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
+  .mainButton {
     width: fit-content;
-    overflow: hidden;
-    border-radius: 25rem;
-    margin-top: 3rem;
-    cursor: pointer;
-    font-family: "Planer";
     margin-left: auto;
     margin-right: auto;
   }
 
-  a span {
-    position: relative;
-    color: #fff;
-    line-height: 20px;
-    font-size: 12px;
-    font-family: "Planer";
-    letter-spacing: 2px;
-    font-weight: 600;
-    z-index: 1;
-  }
-
-  a .liquid {
-    position: absolute;
-    top: -80px;
-    left: 0;
-    width: 200px;
-    height: 200px;
+  .mainButton .btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 26px !important;
+    border-radius: 20px;
     background: #0062f5;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
+    color: #ffffff;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    z-index: 10;
   }
 
-  a .liquid::after,
-  a .liquid::before {
-    content: "";
-    width: 200%;
-    height: 200%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -75%);
-    background: #000;
+  .mainButton .btn:hover {
+    background: #ffffff;
+    color: #0062f5;
+    font-weight: 600;
   }
 
-  a .liquid::before {
-    border-radius: 45%;
-    background: rgba(20, 20, 20, 1);
-    animation: animate 5s linear infinite;
-  }
-
-  a .liquid::after {
-    border-radius: 40%;
-    background: rgba(20, 20, 20, 0.5);
-    animation: animate 10s linear infinite;
-  }
-
-  a:hover .liquid {
-    top: -120px;
+  .mainButton .btn span {
+    padding-left: 0.4rem;
   }
 
   .first {

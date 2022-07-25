@@ -17,6 +17,9 @@ export default {
       content.style.opacity = "1";
       content.style.visibility = "visible";
       content.style.display = "inline";
+
+      var htmlElement = document.querySelector("html");
+      htmlElement.style.overflowY = "hidden";
     },
 
     closeMenu() {

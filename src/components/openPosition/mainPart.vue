@@ -654,12 +654,11 @@ export default {
     border-radius: 20px;
     background: #0062f5;
     color: #ffffff;
-    line-height: 20px;
-    font-size: 12px;
-    font-weight: 600;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     margin-top: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -839,14 +838,15 @@ export default {
     padding-right: 1.6rem;
     background: #0062f5;
     color: #fff;
-    font-size: 12px;
-    font-weight: 600;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
     border-radius: 16px;
     width: fit-content;
     float: right;
     transition: 0.5s all;
-    letter-spacing: 2px;
-    text-transform: uppercase;
   }
 
   .positions .position .button span {
@@ -1022,14 +1022,15 @@ export default {
     padding-right: 1.6rem;
     background: #0062f5;
     color: #fff;
-    font-size: 12px;
-    font-weight: 600;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
     border-radius: 16px;
     width: fit-content;
     transition: 0.5s all;
-    letter-spacing: 2px;
     margin-top: 2rem;
-    text-transform: uppercase;
   }
 
   .ctaCV .button span {

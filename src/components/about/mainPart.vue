@@ -64,6 +64,22 @@ export default {
   <div>
     <div class="main">
       <welcome></welcome>
+      <div class="firstPart">
+        <!--<div class="col1">
+          <div class="subtitle">Chi siamo</div>
+          <h2>Jobify, l'azienda del domani</h2>
+          <p>
+            Increase developer velocity. Secure every step. Automate entire
+            workflows. Redefine collaboration.
+            <span>Trusted by over 83 million developers.</span>
+          </p>
+          <div class="" style="display: flex; align-items: center">
+            <a href="#first"><button class="btn">Scopri di più</button></a>
+          </div>
+          <div class="glow"></div>
+        </div>
+        <div class="col2"></div>-->
+      </div>
       <div class="secondPart">
         <div class="text1 bold">
           <span>Increase developer velocity. </span>Secure every step. Automate
@@ -85,22 +101,22 @@ export default {
           <span>Trusted by over 83 million developers.</span>
         </div>
       </div>
-
-      <div class="fourthPart">
-        <div class="flex">
-          <div class="image1 transition"></div>
-          <div class="image2 transition"></div>
-        </div>
-        <div class="image3 transition"></div>
-        <div class="quote bold">
-          <span>“We’re big on</span> developing technologies that go way beyond
-          what’s available commercially. We envision the perfect solution. Then
-          we build something even better!”
-          <div class="author">Davide Maggio</div>
-          <div class="jobtitle">Founder & CEO</div>
+      <div class="bg">
+        <div class="fourthPart">
+          <div class="flex">
+            <div class="image1 transition"></div>
+            <div class="image2 transition"></div>
+          </div>
+          <div class="image3 transition"></div>
+          <div class="quote bold">
+            <span>“We’re big on</span> developing technologies that go way
+            beyond what’s available commercially. We envision the perfect
+            solution. Then we build something even better!”
+            <div class="author">Davide Maggio</div>
+            <div class="jobtitle">Founder & CEO</div>
+          </div>
         </div>
       </div>
-
       <div class="bg">
         <div class="fifthPart">
           <div class="numbers">
@@ -112,13 +128,30 @@ export default {
             available commercially. We envision the perfect solution. Then we
             build something even better!”
           </div>
+
+          <div class="parallel_texts">
+            <div class="text4">
+              “We’re big on developing technologies that go way beyond what’s
+              available commercially. We envision the perfect solution. Then we
+              build something even better!”
+            </div>
+            <div class="text4">
+              “We’re big on developing technologies that go way beyond what’s
+              available commercially. We envision the perfect solution. Then we
+              build something even better!”
+            </div>
+            <div class="text4">
+              “We’re big on developing technologies that go way beyond what’s
+              available commercially. We envision the perfect solution. Then we
+              build something even better!”
+            </div>
+          </div>
         </div>
       </div>
-
       <div class="sixtPart">
         <h2>We are inventors, builders, and doers</h2>
         <div class="team1">
-          <div class="person">
+          <div class="person2">
             <div class="photo"></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
@@ -170,21 +203,20 @@ export default {
           </div>
         </div>
       </div>
-
       <div class="seventhPart">
         <div class="text">
           <h2>Lavora con noi in <span>Jobify</span></h2>
           <p>Come on board and grow more than you ever thought possible.</p>
 
-          <a href="#first" class="flowSingleBtn2">
-            <span
-              >Scopri di più
-              <span
-                ><span
-                  ><svg
+          <div class="formButton">
+            <a href="#first"
+              ><button class="btn">
+                Invia
+                <span>
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
+                    width="20"
+                    height="20"
                     fill="currentColor"
                     class="bi bi-arrow-right-short"
                     viewBox="0 0 16 16"
@@ -192,10 +224,11 @@ export default {
                     <path
                       fill-rule="evenodd"
                       d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                    /></svg></span></span
-            ></span>
-            <div class="liquid"></div>
-          </a>
+                    />
+                  </svg>
+                </span></button
+            ></a>
+          </div>
         </div>
         <div class="image transition"></div>
         <div class="image transition" style="margin-top: 8rem"></div>
@@ -240,68 +273,142 @@ export default {
   .flowSingleBtn {
     margin-top: 15rem;
   }
-  a {
-    position: relative;
+
+  .btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 14px 26px;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: fit-content;
-    overflow: hidden;
     border-radius: 20px;
+    background: #0062f5;
+    color: #ffffff;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
     cursor: pointer;
-    margin-top: 2rem;
-    letter-spacing: 2px;
+    transition: all 0.3s ease-out;
+    margin-right: 1.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 
-  a span {
-    position: relative;
-    color: #fff;
-    line-height: 20px;
-    font-size: 12px;
-    font-family: "Planer";
-    letter-spacing: 2px;
+  .btn:hover {
+    background: #ffffff;
+    color: #0062f5;
     font-weight: 600;
+  }
+
+  .btn span {
+    padding-left: 0.4rem;
+  }
+
+  .firstPart {
+    display: flex;
+  }
+
+  .firstPart .col1 {
+    width: 60%;
+    padding: 10rem;
+  }
+
+  .firstPart .col1 .subtitle {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 1rem;
+    width: fit-content;
+  }
+
+  .firstPart .col1 h2 {
+    color: #fff;
+    letter-spacing: -0.04em;
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+
+  .firstPart .col1 p {
+    margin-top: 0.5rem;
+    color: #627597;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .firstPart .col1 p span {
+    margin-top: 0.5rem;
+    color: #d3d3d3;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .firstPart .col2 {
+    width: 40%;
+    height: 40vw;
+    background: transparent;
+    border-bottom-left-radius: 60px;
+    background-image: url(/src/assets/technology.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 7rem;
+    z-index: 3;
+  }
+
+  .glow {
+    position: absolute;
+    width: 5vw;
+    opacity: 0.5;
+    left: -3%;
+    top: 30%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
     z-index: 1;
   }
 
-  a .liquid {
+  .glow2 {
     position: absolute;
-    top: -80px;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background: #0062f5;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
+    width: 5vw;
+    top: 70%;
+    right: 15%;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(0, 213, 255, 0.9);
+    z-index: 1;
   }
 
-  a .liquid::after,
-  a .liquid::before {
-    content: "";
-    width: 200%;
-    height: 200%;
+  .glow3 {
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -75%);
-    background: #000;
+    width: 5vw;
+    top: 30%;
+    right: 35%;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(255, 225, 0, 0.9);
+    z-index: 1;
   }
-
-  a .liquid::before {
-    border-radius: 45%;
-    background: rgba(20, 20, 20, 1);
-    animation: animate 5s linear infinite;
-  }
-
-  a .liquid::after {
-    border-radius: 40%;
-    background: rgba(20, 20, 20, 0.5);
-    animation: animate 10s linear infinite;
-  }
-
-  a:hover .liquid {
-    top: -120px;
+  .glow4 {
+    position: absolute;
+    width: 5vw;
+    top: 30%;
+    right: 20%;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(0, 157, 255, 0.9);
+    z-index: 1;
   }
 
   .secondPart {
@@ -314,7 +421,7 @@ export default {
   .secondPart .text1 {
     padding-top: 10rem;
     color: #627597;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 40px;
     font-weight: 400;
     width: 65%;
@@ -340,7 +447,7 @@ export default {
 
   .thirdPart .text1 {
     color: #627597;
-    font-size: 36px;
+    font-size: 40px;
     line-height: 40px;
     font-weight: 400;
     width: 65%;
@@ -361,7 +468,13 @@ export default {
     padding-right: 8rem;
     padding-top: 10rem;
     padding-bottom: 5rem;
-    background: #030812;
+    background-image: linear-gradient(
+      to top,
+      transparent 1%,
+      #7fc0f9 20%,
+      #3350af 55%,
+      transparent 100%
+    );
   }
 
   .flex {
@@ -489,6 +602,23 @@ export default {
     text-align: center;
   }
 
+  .fifthPart .text4 {
+    margin-top: 5rem;
+    width: 100%;
+    color: #344467;
+    width: 50%;
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 400;
+    margin-right: 3rem;
+    text-align: center;
+  }
+
+  .fifthPart .parallel_texts {
+    display: flex;
+    margin-top: 5rem;
+  }
+
   .sixtPart {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -541,16 +671,23 @@ export default {
     flex-wrap: wrap;
   }
 
-  .person {
+  .person2 {
     width: fit-content;
-    margin-right: 1.5rem;
     margin-left: 1.5rem;
     float: left;
     position: relative;
     margin-bottom: 3rem;
   }
 
-  .team1 .person .photo {
+  .person {
+    width: 23%;
+    margin-left: 1.5rem;
+    float: left;
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  .team1 .person2 .photo {
     width: 28vw;
     height: 25vw;
     background-image: url(/src/assets/ph9.JPG);
@@ -559,10 +696,11 @@ export default {
     border-radius: 20px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
   }
 
   .team2 .person .photo {
-    width: 17vw;
+    width: auto;
     height: 17vw;
     background-image: url(/src/assets/ph9.JPG);
     background-position: center;
@@ -570,6 +708,7 @@ export default {
     border-radius: 20px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
   }
 
   .photo:hover {
@@ -594,12 +733,30 @@ export default {
     margin-top: 0.2rem;
   }
 
+  .person2 .name {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .person2 .jobtitle {
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #627597;
+    margin-top: 0.2rem;
+  }
+
   .seventhPart {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 10rem;
     padding-bottom: 5rem;
-    background: #030812;
+    background: #fff;
     display: flex;
     align-items: center;
   }
@@ -608,7 +765,7 @@ export default {
   }
 
   .seventhPart .text h2 {
-    color: #fff;
+    color: #030812;
     font-size: 64px;
     font-weight: 800 !important;
     width: 70%;
@@ -627,8 +784,8 @@ export default {
 
   .seventhPart .text p {
     color: #627597;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 400;
     width: 70%;
     margin-bottom: 5rem;

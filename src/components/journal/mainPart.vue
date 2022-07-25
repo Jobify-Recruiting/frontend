@@ -675,14 +675,15 @@ export default {
     padding-right: 1.6rem;
     background: #0062f5;
     color: #fff;
-    font-size: 12px;
-    font-weight: 600;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
     border-radius: 16px;
     width: fit-content;
     transition: 0.5s all;
-    letter-spacing: 2px;
     margin-top: 6rem;
-    text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
   }

@@ -8,6 +8,7 @@ import WorkwithusView from "../views/WorkwithusView.vue";
 import ContactView from "../views/ContactView.vue";
 import WorkersView from "../views/WorkersView.vue";
 import CompaniesView from "../views/CompaniesView.vue";
+import NewsletterView from "../views/NewsletterView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -63,6 +64,11 @@ const router = createRouter({
       path: "/companies",
       name: "Companies",
       component: CompaniesView,
+    },
+    {
+      path: "/newsletter",
+      name: "Newsletter",
+      component: NewsletterView,
     },
   ],
 });

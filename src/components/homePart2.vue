@@ -41,8 +41,8 @@ export default {
 
     function scrollFunction() {
       if (
-        document.body.scrollTop > 2700 ||
-        document.documentElement.scrollTop > 2700
+        document.body.scrollTop > 2500 ||
+        document.documentElement.scrollTop > 2500
       ) {
         //console.log(document.documentElement.scrollTop);
         document.getElementById("text2").style.fontSize = "64px";
@@ -195,26 +195,25 @@ export default {
               <!--<button class="btn2">
                 <a href="#">Entra ora nel mondo Jobify <span>></span></a>
               </button>-->
-              <a href="#first" class="flowSingleBtn">
-                <span
-                  >Scopri di più
-                  <span
-                    ><span
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        fill="currentColor"
-                        class="bi bi-arrow-right-short"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                        /></svg></span></span
-                ></span>
-                <div class="liquid"></div>
-              </a>
+              <a href="#first"
+                ><button class="btn">
+                  Scopri di più
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span></button
+              ></a>
             </div>
             <div class="elemdx transition">
               <div class="image"></div>
@@ -283,6 +282,26 @@ export default {
                 scriviamo la descrizione riferito al testo superiore
               </p>
 
+              <a href="#first"
+                ><button class="btn" style="margin-left: 1.5rem">
+                  Scopri di più
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span></button
+              ></a>
+
               <div class="elemdx_rectangle1 transition"></div>
               <div class="elemdx_rectangle2 transition"></div>
               <div class="elemdx_rectangle3 transition">
@@ -314,179 +333,6 @@ export default {
               </div>
             </div>
           </div>
-
-          <!--<div class="flowSingle">
-            <div class="flowSingleContent">
-              <h2 class="flowSingleTitle">
-                Guarda il nostro workflow, come
-                <span class="flowSingleTitleSpan"
-                  >lavoriamo ogni giorno con i nostri clienti</span
-                >
-                <p>
-                  Jobify, la tua ricerca e selezione, la tua ricerca e
-                  selezione, la tua ricerca e selezione, la tua ricerca e
-                  selezione, la tua ricerca e selezione
-                  <br />
-                  <button
-                class="btn2"
-                style="
-                  margin-left: auto;
-                  margin-right: auto;
-                  width: fit-content;
-                "
-              >
-                <a href="#">Entra ora nel mondo Jobify <span>></span></a>
-              </button>
-                </p>
-                <button class="btn2">
-                  <a href="#"
-                    >Entra ora nel mondo Jobify
-                    <span class="btnSpan">></span></a
-                  >
-                </button>
-              </h2>
-            </div>
-          </div>
-          <div class="flow">
-            <div class="elemsx">
-              <h2 class="elemH2_v2 transition" id="text2">
-                Guarda il nostro workflow, come lavoriamo
-                <span class="elemH2_v2Span"
-                  >ogni giorno con i nostri clienti</span
-                >
-              </h2>
-              <p class="transition">
-                Qui scriviamo la descrizione riferito al testo superiore. Qui
-                scriviamo la descrizione riferito al testo superiore,
-                <span style="color: #010c18; font-weight: 700"
-                  >Qui scriviamo la descrizione riferito al testo superiore, Qui
-                  scriviamo la descrizione riferito al testo superiore</span
-                >
-              </p>
-
-              <div class="elemdx_rectangle1 transition"></div>
-              <div class="elemdx_rectangle3 transition">
-                <img src="/src/assets/img_h3.png" />
-              </div>
-
-              <div class="elemdx_rectangle4 transition"></div>
-              <div class="elemdx_rectangle6 transition">
-                <p class="elemdx_text">
-                  <span
-                    style="
-                      margin-right: 1rem !important;
-                      color: #b8002e !important;
-                    "
-                    >></span
-                  ><span>Al testo superiore,</span> qui scriviamo la descrizione
-                  riferito al testo superiore.
-                </p>
-                <p class="elemdx_text2">
-                  <span
-                    style="
-                      margin-right: 1rem !important;
-                      color: #b8002e !important;
-                    "
-                    >></span
-                  ><span>Al testo superiore,</span> qui scriviamo la descrizione
-                </p>
-              </div>
-            </div>
-            <div class="elemdx" style="padding-bottom: 10rem">
-              <div class="image3 transition"></div>
-              <p class="elemP_image transition">
-                <span>Qui scriviamo la descrizione riferito</span> al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore
-              </p>
-              <div class="elemP_point transition"></div>
-              <p class="elemP_image transition">
-                <span>Qui scriviamo la descrizione riferito</span> al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore
-              </p>
-              <div class="elemP_point transition"></div>
-              <p class="elemP_image transition">
-                <span>Qui scriviamo la descrizione riferito</span> al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore
-              </p>
-              <div class="elemP_point transition"></div>
-            </div>
-          </div>-->
-          <!--<div class="flow">
-            <div class="elemsx" style="padding-bottom: 10rem">
-              <div class="image2 transition"></div>
-              <p class="elemP_image transition">
-                <span>Qui scriviamo la descrizione riferito</span> al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore
-              </p>
-              <div class="elemP_point2 transition"></div>
-              <p class="elemP_image transition">
-                <span>Qui scriviamo la descrizione riferito</span> al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore
-              </p>
-              <div class="elemP_point2 transition"></div>
-              <p class="elemP_image transition">
-                <span>Qui scriviamo la descrizione riferito</span> al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore, Qui scriviamo la descrizione riferito al testo
-                superiore
-              </p>
-              <div class="elemP_point2 transition"></div>
-            </div>
-            <div class="elemdx">
-              <h2 class="elemH2" id="text3">
-                Guarda il nostro workflow, come lavoriamo ogni giorno con i
-                nostri clienti
-              </h2>
-              <p class="elemP">
-                Qui scriviamo la descrizione riferito al testo superiore, Qui
-                scriviamo la descrizione riferito al testo superiore,
-                <span style="color: #010c18; font-weight: 700"
-                  >Qui scriviamo la descrizione riferito al testo
-                  superiore</span
-                >
-              </p>
-
-              <div class="elemdx_rectangle1 transition"></div>
-              <div class="elemdx_rectangle2 transition"></div>
-              <div class="elemdx_rectangle3 transition">
-                <p class="elemdx_text3">
-                  <span
-                    style="
-                      margin-right: 1rem !important;
-                      color: #fff !important;
-                    "
-                    >></span
-                  ><span>Al testo superiore,</span> qui scriviamo la descrizione
-                  riferito al testo superiore.
-                </p>
-                <p class="elemdx_text4">
-                  <span
-                    style="
-                      margin-right: 1rem !important;
-                      color: #fff !important;
-                    "
-                    >></span
-                  ><span>Al testo superiore,</span> qui scriviamo la descrizione
-                </p>
-              </div>
-
-              <div class="elemdx_rectangle4 transition"></div>
-              <div class="elemdx_rectangle5"></div>
-              <div class="elemdx_rectangle6 transition">
-                <img src="/src/assets/img_h1.png" />
-              </div>
-            </div>
-          </div>-->
         </div>
       </div>
     </div>
@@ -503,8 +349,8 @@ export default {
           <div
             class="partnerImg transition"
             style="
-              left: 25%;
-              top: -19%;
+              left: 30%;
+              top: -15%;
               background-image: url(/src/assets/partners/logo1.png);
             "
           ></div>
@@ -520,7 +366,7 @@ export default {
             class="partnerImg transition"
             style="
               right: 29%;
-              top: -22%;
+              top: -15%;
               background-image: url(/src/assets/partners/logo3.png);
             "
           ></div>
@@ -559,8 +405,8 @@ export default {
           <div
             class="partnerImg"
             style="
-              left: 37%;
-              top: 90%;
+              left: 40%;
+              top: 85%;
               background-image: url(/src/assets/partners/logo8.png);
             "
           ></div>
@@ -580,15 +426,16 @@ export default {
               tua ricerca e selezione, la tua ricerca e selezione, la tua
               ricerca e selezione
             </p>
-            <a href="#first" class="flowSingleBtn">
-              <span
-                >Scopri di più
-                <span
-                  ><span
-                    ><svg
+
+            <div class="partnersButton">
+              <a href="#first"
+                ><button class="btn">
+                  Scopri di più
+                  <span>
+                    <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
+                      width="20"
+                      height="20"
                       fill="currentColor"
                       class="bi bi-arrow-right-short"
                       viewBox="0 0 16 16"
@@ -596,10 +443,11 @@ export default {
                       <path
                         fill-rule="evenodd"
                         d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                      /></svg></span></span
-              ></span>
-              <div class="liquid"></div>
-            </a>
+                      />
+                    </svg>
+                  </span></button
+              ></a>
+            </div>
           </div>
         </div>
       </div>
@@ -713,6 +561,36 @@ export default {
         </div>
       </div>
     </div>
+    <div class="fifthDiv">
+      <div class="adviser">
+        <div class="col">
+          <h3>
+            <span>Iscriviti oggi alla newsletter</span> di Jobify Recruiting per
+            restare aggiornato sul mondo hr
+          </h3>
+          <router-link to="/newsletter"
+            ><button class="btn">
+              Scopri di più
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </span></button
+          ></router-link>
+        </div>
+        <div class="col_image"></div>
+      </div>
+    </div>
     <div class="fourthDiv" id="fourth">
       <div class="content">
         <div class="first">
@@ -723,26 +601,25 @@ export default {
               tua ricerca e selezione, la tua ricerca e selezione, la tua
               ricerca e selezione
             </p>
-            <a href="#first" class="flowSingleBtn2">
-              <span
-                >Scopri di più
-                <span
-                  ><span
-                    ><svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                      class="bi bi-arrow-right-short"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                      /></svg></span></span
-              ></span>
-              <div class="liquid"></div>
-            </a>
+            <a href="#first"
+              ><button class="btn">
+                Scopri di più
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-short"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </span></button
+            ></a>
           </div>
         </div>
         <div class="contentImage">
@@ -914,6 +791,7 @@ export default {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     line-height: 35px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 
   .btn2 a {
@@ -1509,28 +1387,71 @@ export default {
     -webkit-box-decoration-break: clone;
   }
 
-  a {
+  .partnersButton {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 26px;
+    border-radius: 20px;
+    background: #0062f5;
+    color: #ffffff;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    z-index: 10;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .btn:hover {
+    background: #ffffff;
+    color: #0062f5;
+    font-weight: 600;
+  }
+
+  .btn span {
+    padding-left: 0.4rem;
+  }
+
+  /*a {
     position: relative;
     padding: 14px 26px;
     display: block;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
-    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: #0062f5;
     width: fit-content;
     overflow: hidden;
     border-radius: 20px;
     margin-top: 3rem;
     cursor: pointer;
-    font-family: "Planer";
-    letter-spacing: 2px;
+    transition: all 0.3s ease-out;
   }
 
   a span {
     position: relative;
     color: #fff;
-    line-height: 20px;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-weight: 600;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
     z-index: 1;
   }
 
@@ -1571,7 +1492,7 @@ export default {
 
   a:hover .liquid {
     top: -120px;
-  }
+  }*/
 
   .flowSingleBtn {
     margin-left: auto;
@@ -1719,13 +1640,13 @@ export default {
   }
 
   .partnerImg {
-    width: 150px;
-    height: 150px;
+    width: 135px;
+    height: 135px;
     /*background: rgba(162, 0, 255, 0.17);
     -webkit-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
     -moz-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
     box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);*/
-    background: #005dff2b;
+    background: #ffffff2b;
     -webkit-box-shadow: 0px 0px 133px 17px #005dff2b;
     -moz-box-shadow: 0px 0px 133px 17px #005dff2b;
     box-shadow: 0px 0px 133px 17px #005dff2b;
@@ -1737,6 +1658,11 @@ export default {
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center;
+    transition: all 0.3s ease-out;
+  }
+
+  .partnerImg:hover {
+    transform: scale(2);
   }
 
   .partnerImg2 {
@@ -1992,7 +1918,7 @@ export default {
   .feedbackDiv {
     height: 100%;
     width: 100%;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
     width: 100%;
     background-color: #fff;
     padding-top: 10rem;
@@ -2122,6 +2048,53 @@ export default {
     width: 50px;
     height: 50px;
     margin-right: 1rem;
+  }
+
+  .fifthDiv {
+    background: #fff;
+    padding: 3rem;
+    padding-bottom: 8rem;
+  }
+
+  .fifthDiv .adviser {
+    background: #161b22;
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .fifthDiv .adviser .col {
+    width: 50%;
+    padding: 6rem;
+  }
+  .fifthDiv .adviser .col h3 {
+    color: #fff;
+    width: 90%;
+    font-size: 44px;
+    line-height: 48px;
+    letter-spacing: -0.04em;
+    font-weight: 600;
+  }
+
+  .fifthDiv .adviser .col h3 span {
+    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+  }
+
+  .fifthDiv .adviser .col_image {
+    background: transparent;
+    border-radius: 60px;
+    background-image: url(/src/assets/searchimage.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
   }
 }
 

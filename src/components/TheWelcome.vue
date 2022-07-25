@@ -72,44 +72,7 @@ export default {
       aziende e del candidato
     </h2>
     <div class="" style="display: flex; align-items: center">
-      <a href="#first"
-        ><button class="btn">
-          Scopri di più
-          <span
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="bi bi-arrow-right-short"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-              /></svg
-          ></span></button
-      ></a>
-
-      <a href="#first"
-        ><button class="btn2">
-          Chi siamo<span
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="bi bi-arrow-right-short"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-              />
-            </svg>
-          </span>
-        </button>
-      </a>
+      <a href="#first"><button class="btn">Scopri di più</button></a>
     </div>
     <!--<div class="" style="display: flex">
       <a href="#first">
@@ -334,12 +297,11 @@ export default {
     border-radius: 20px;
     background: #0062f5;
     color: #ffffff;
-    line-height: 20px;
-    font-size: 12px;
-    font-weight: 600;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     margin-top: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
@@ -367,12 +329,11 @@ export default {
     border-radius: 20px;
     background: #fff;
     color: #0062f5;
-    font-weight: 700;
-    line-height: 20px;
-    font-size: 12px;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
     margin-top: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-out;

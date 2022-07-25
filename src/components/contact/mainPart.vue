@@ -1,7 +1,9 @@
 <script>
+import contactWorld from "@/components/contactWorld.vue";
+
 export default {
   name: "mainPart",
-  components: {},
+  components: { contactWorld },
   data() {
     return {};
   },
@@ -44,8 +46,8 @@ export default {
 <template>
   <div>
     <div class="main">
-      <div class="first">
-        <!--<div class="titlePage">Sedi</div>-->
+      <contactWorld></contactWorld>
+      <!--<div class="first">
         <div class="cols">
           <div class="col col_1">
             <p>Sede Principale</p>
@@ -61,7 +63,7 @@ export default {
               >davide.maggio@jobconsultinghr.it</a
             >
             <div class="subtitle">+39 340 763 6209</div>
-          </div>
+          </div> 
         </div>
 
         <div class="images">
@@ -132,7 +134,7 @@ export default {
             <img class="mainImage transition" src="/src/assets/ph20.jpg" />
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>

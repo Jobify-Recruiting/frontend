@@ -53,6 +53,9 @@ export default {
   <div class="glow"></div>
   <div class="glow2"></div>
   <div class="glow3"></div>
+  <div class="glow4"></div>
+  <div class="glow5"></div>
+  <div class="glow6"></div>
   <div class="mainTitle">
     <div class="Iam">
       <p>Jobify è</p>
@@ -84,7 +87,7 @@ export default {
 
 @media (min-width: 1600px) {
   #globeViz {
-    left: 10% !important;
+    left: 0% !important;
   }
 
   .Iam {
@@ -145,6 +148,43 @@ export default {
     -webkit-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.9);
     -moz-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.9);
     box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.9);
+  }
+
+  .glow4 {
+    position: fixed;
+    width: 5vw;
+    opacity: 0.5;
+    top: 30%;
+    left: 50%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+  }
+
+  .glow5 {
+    position: fixed;
+    width: 5vw;
+    right: 21%;
+    top: 70%;
+    width: 10vw;
+    transform: rotate(90deg);
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 255, 196, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 255, 196, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(46, 255, 196, 0.9);
+  }
+
+  .glow6 {
+    position: fixed;
+    width: 5vw;
+    left: 30%;
+    top: 60%;
+    width: 10vw;
+    transform: rotate(90deg);
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.4);
   }
 
   .mainTitle {
