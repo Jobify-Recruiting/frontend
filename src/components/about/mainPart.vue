@@ -15,6 +15,9 @@ export default {
     );
     document.head.appendChild(recaptchaScript);
 
+    var htmlElement = document.querySelector("html");
+    htmlElement.style.overflowY = "scroll";
+
     function reveal() {
       var reveals = document.querySelectorAll(".transition");
 

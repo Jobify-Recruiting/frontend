@@ -28,6 +28,9 @@ export default {
       content.style.opacity = "0";
       content.style.visibility = "hidden";
       content.style.display = "unset";
+
+      var htmlElement = document.querySelector("html");
+      htmlElement.style.overflowY = "scroll";
     },
     updateScroll() {
       this.scrollPosition = window.scrollY;

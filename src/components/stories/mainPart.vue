@@ -89,7 +89,7 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <div class="titlePage">News</div>
+        <!--<div class="titlePage">News</div>
         <div class="topContent">
           <div class="img1"></div>
           <div class="firstTitle">
@@ -118,118 +118,85 @@ export default {
               </span>
             </div>
           </div>
-        </div>
-        <div class="titlePage2">Temporary HR management</div>
-        <div class="secondPart">
-          <div class="articles articles2">
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-          </div>
-        </div>
+        </div>-->
 
-        <div class="titlePage2">Recruitment</div>
-        <div class="secondPart">
-          <div class="articles articles2">
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
+        <div class="second">
+          <div class="featureds">
+            <div class="titles">
+              <h2>Storie</h2>
+              <div class="buttons">
+                <div class="btnScrollL" @click="btnScrollSx()">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="#010712"
+                    class="bi bi-chevron-left"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="btnScrollR" @click="btnScrollDx()">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    fill="#010712"
+                    class="bi bi-chevron-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </div>
               </div>
             </div>
-            <div class="article">
-              <div class="image">
+            <div class="featuredContent">
+              <div class="featured">
                 <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
+                <div class="text">
+                  <p>April 22, 2022</p>
+                  <h2>
+                    Conserving mangroves to protect local livelihoods and the
+                    planet
+                  </h2>
+                </div>
               </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
+              <div class="featured">
+                <div class="hover"></div>
+                <div class="text">
+                  <p>April 22, 2022</p>
+                  <h2>
+                    Conserving mangroves to protect local livelihoods and the
+                    planet
+                  </h2>
+                </div>
               </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
+              <div class="featured">
+                <div class="hover"></div>
+                <div class="text">
+                  <p>April 22, 2022</p>
+                  <h2>
+                    Conserving mangroves to protect local livelihoods and the
+                    planet
+                  </h2>
+                </div>
+              </div>
+              <div class="featured">
+                <div class="hover"></div>
+                <div class="text">
+                  <p>April 22, 2022</p>
+                  <h2>
+                    Conserving mangroves to protect local livelihoods and the
+                    planet
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
@@ -261,88 +228,6 @@ export default {
           </div>
         </div>
       </div>
-
-      <!--<div class="second">
-        <div class="featureds">
-          <div class="titles">
-            <h2>Storie</h2>
-            <div class="buttons">
-              <div class="btnScrollL" @click="btnScrollSx()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#010712"
-                  class="bi bi-chevron-left"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                  />
-                </svg>
-              </div>
-              <div class="btnScrollR" @click="btnScrollDx()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#010712"
-                  class="bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="featuredContent">
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
     </div>
   </div>
 </template>
@@ -696,9 +581,7 @@ export default {
   }
 
   .second {
-    padding-top: 5rem;
     padding-bottom: 5rem;
-    background: #010712;
   }
 
   ::-webkit-scrollbar {
@@ -728,7 +611,6 @@ export default {
   .featuredContent {
     height: 100%;
     width: 100%;
-    background-color: #010712;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -758,11 +640,13 @@ export default {
   }
 
   .featureds .titles h2 {
-    width: fit-content;
-    font-size: 34px;
-    line-height: 38px;
+    font-size: 40px;
+    line-height: 42px;
     color: #fff;
     font-weight: 800;
+    margin-top: 3rem;
+    letter-spacing: -0.02em;
+    width: fit-content;
   }
 
   .featureds .btnScrollR {
@@ -836,8 +720,8 @@ export default {
     padding: 2rem;
     padding-bottom: 0.5rem;
     padding-top: 0;
-    font-size: 38px;
-    line-height: 42px;
+    font-size: 30px;
+    line-height: 34px;
     width: 30vw;
   }
   .featured p {

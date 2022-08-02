@@ -34,15 +34,16 @@ export default {
         <router-link to="/partnerships">
           <div class="link">Partnerships</div></router-link
         >
+        <router-link to="/journal">
+          <div class="link">Journal</div></router-link
+        >
       </div>
       <div class="col">
         <div class="title">Azienda</div>
         <router-link to="/about">
           <div class="link">Chi siamo</div></router-link
         >
-        <router-link to="/journal">
-          <div class="link">Journal</div></router-link
-        >
+        <router-link to="/stories"> <div class="link">Storie</div></router-link>
         <router-link to="/workwithus">
           <div class="link">Lavora con noi</div></router-link
         >
