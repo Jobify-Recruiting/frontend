@@ -902,7 +902,6 @@ export default {
 
   .steps {
     padding-top: 2rem;
-    margin-top: 3rem;
     padding-bottom: 2rem;
     padding-left: 4rem;
     padding-right: 4rem;
@@ -920,6 +919,7 @@ export default {
   .step {
     padding-left: 4rem;
     padding-right: 4rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
     text-align: center;
     background: #fff;
