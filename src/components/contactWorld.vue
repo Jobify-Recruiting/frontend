@@ -121,190 +121,286 @@ export default {
 </script>
 
 <template>
-  <div id="globeViz"></div>
-  <div class="hover1"></div>
-  <div class="glow"></div>
-  <div class="glow2"></div>
-  <div class="glow3"></div>
-  <div class="glow4"></div>
-  <div class="glow5"></div>
-  <div class="glow6"></div>
-  <div class="mainTitle">
-    <div class="Iam">
-      <p>Jobify Recruiting nel</p>
-    </div>
-  </div>
-  <div class="mainTitle2">mondo</div>
-  <div class="gradient"></div>
-
-  <div
-    class="office"
-    style="top: 40%; left: 52%"
-    id="officeMilan"
-    @click="openOffice(office1)"
-  >
-    <div class="image"></div>
-    <h4>Milan</h4>
-    <p>Sede principale</p>
-  </div>
-
-  <div
-    class="office"
-    style="top: 50%; left: 67%"
-    id="officeDubai"
-    @click="openOffice2(office2)"
-  >
-    <div class="image2"></div>
-    <h4>Dubai</h4>
-    <p>Sede</p>
-  </div>
-
-  <div
-    class="office"
-    style="top: 35%; left: 58%"
-    id="officeTrencin"
-    @click="openOffice3(office3)"
-  >
-    <div class="image3"></div>
-    <h4>Trencin</h4>
-    <p>Sede</p>
-  </div>
-
-  <div class="bgTransparent bg1">
-    <div class="closeMenu" @click="closePopup()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-x-lg"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-        />
-      </svg>
-    </div>
-    <div class="popup">
-      <div class="header">
-        <div class="col col_1">
-          <p>Sede Principale</p>
-          <h2>Milano, IT</h2>
-        </div>
-        <div class="col col_2">
-          <h4><span>•</span> Indirizzo</h4>
-          <div class="subtitle">Via copernico, 38 - 20125 Milano, Italia</div>
-        </div>
-        <div class="col col_3">
-          <h4><span>•</span> Contatti</h4>
-          <div class="subtitle">+39 340 763 6209</div>
-          <a href="mailto:davide.maggio@jobconsultinghr.it" class="mailto"
-            >davide.maggio@jobconsultinghr.it</a
-          >
-        </div>
-      </div>
-      <div class="body">
-        <div class="images">
-          <div class="img1">
-            <img class="mainImage" src="/src/assets/ph15.jpg" />
-          </div>
-          <div class="img2">
-            <img class="mainImage" src="/src/assets/ph16.jpg" />
-          </div>
-        </div>
+  <div class="first">
+    <div id="globeViz"></div>
+    <div class="hover1"></div>
+    <div class="glow"></div>
+    <div class="glow2"></div>
+    <div class="glow3"></div>
+    <div class="glow4"></div>
+    <div class="glow5"></div>
+    <div class="glow6"></div>
+    <div class="mainTitle">
+      <div class="Iam">
+        <p>Jobify Recruiting nel</p>
       </div>
     </div>
-  </div>
+    <div class="mainTitle2">mondo</div>
+    <div class="gradient"></div>
 
-  <div class="bgTransparent bg2">
-    <div class="closeMenu" @click="closePopup2()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-x-lg"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-        />
-      </svg>
+    <div
+      class="office"
+      style="top: 35%; left: 52%"
+      id="officeMilan"
+      @click="openOffice(office1)"
+    >
+      <div class="image"></div>
+      <h4>Milan</h4>
+      <p>Sede principale</p>
     </div>
-    <div class="popup">
-      <div class="header">
-        <div class="col col_1">
-          <p>Sede</p>
-          <h2>Dubai, EAU</h2>
-        </div>
-        <div class="col col_2">
-          <h4><span>•</span> Indirizzo</h4>
-          <div class="subtitle">
-            120 Sheikh Zayed Rd - Umm Al Sheiÿ Emirati Arabi Uniti
-          </div>
-        </div>
-        <div class="col col_3">
-          <h4><span>•</span> Contatti</h4>
-          <div class="subtitle">+971 52 892 5497</div>
-          <a href="mailto:davide.maggio@jobconsultinghr.it" class="mailto"
-            >davide.maggio@jobconsultinghr.it</a
-          >
-        </div>
+
+    <div
+      class="office"
+      style="top: 49%; left: 67%"
+      id="officeDubai"
+      @click="openOffice2(office2)"
+    >
+      <div class="image2"></div>
+      <h4>Dubai</h4>
+      <p>Sede</p>
+    </div>
+
+    <div
+      class="office"
+      style="top: 34%; left: 59%"
+      id="officeTrencin"
+      @click="openOffice3(office3)"
+    >
+      <div class="image3"></div>
+      <h4>Trencin</h4>
+      <p>Sede</p>
+    </div>
+
+    <div class="bgTransparent bg1">
+      <div class="closeMenu" @click="closePopup()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-x-lg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+          />
+        </svg>
       </div>
-      <div class="body">
-        <div class="images">
-          <div class="img1">
-            <img class="mainImage" src="/src/assets/ph17.jpg" />
+      <div class="popup">
+        <div class="header">
+          <div class="col col_1">
+            <p>Sede Principale</p>
+            <h2>Milano, IT</h2>
           </div>
-          <div class="img2">
-            <img class="mainImage" src="/src/assets/ph18.jpg" />
+          <div class="col col_2">
+            <h4><span>•</span> Indirizzo</h4>
+            <div class="subtitle">Via copernico, 38 - 20125 Milano, Italia</div>
+          </div>
+          <div class="col col_3">
+            <h4><span>•</span> Contatti</h4>
+            <div class="subtitle">+39 340 763 6209</div>
+            <a href="mailto:davide.maggio@jobconsultinghr.it" class="mailto"
+              >davide.maggio@jobconsultinghr.it</a
+            >
+          </div>
+        </div>
+        <div class="body">
+          <div class="images">
+            <div class="img1">
+              <img class="mainImage" src="/src/assets/ph15.jpg" />
+            </div>
+            <div class="img2">
+              <img class="mainImage" src="/src/assets/ph16.jpg" />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="bgTransparent bg3">
-    <div class="closeMenu" @click="closePopup3()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-x-lg"
-        viewBox="0 0 16 16"
-      >
-        <path
-          d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-        />
-      </svg>
-    </div>
-    <div class="popup">
-      <div class="header">
-        <div class="col col_1">
-          <p>Sede</p>
-          <h2>Trencin, SL</h2>
+    <div class="bgTransparent bg2">
+      <div class="closeMenu" @click="closePopup2()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-x-lg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+          />
+        </svg>
+      </div>
+      <div class="popup">
+        <div class="header">
+          <div class="col col_1">
+            <p>Sede</p>
+            <h2>Dubai, EAU</h2>
+          </div>
+          <div class="col col_2">
+            <h4><span>•</span> Indirizzo</h4>
+            <div class="subtitle">
+              120 Sheikh Zayed Rd - Umm Al Sheiÿ Emirati Arabi Uniti
+            </div>
+          </div>
+          <div class="col col_3">
+            <h4><span>•</span> Contatti</h4>
+            <div class="subtitle">+971 52 892 5497</div>
+            <a href="mailto:davide.maggio@jobconsultinghr.it" class="mailto"
+              >davide.maggio@jobconsultinghr.it</a
+            >
+          </div>
         </div>
-        <div class="col col_2">
-          <h4><span>•</span> Indirizzo</h4>
-          <div class="subtitle">Povazka, 36 - 91101 Slovacchia</div>
-        </div>
-        <div class="col col_3">
-          <h4><span>•</span> Contatti</h4>
-          <div class="subtitle">00421/902.505.385</div>
-          <a href="mailto:davide.maggio@jobconsultinghr.it" class="mailto"
-            >davide.maggio@jobconsultinghr.it</a
-          >
+        <div class="body">
+          <div class="images">
+            <div class="img1">
+              <img class="mainImage" src="/src/assets/ph17.jpg" />
+            </div>
+            <div class="img2">
+              <img class="mainImage" src="/src/assets/ph18.jpg" />
+            </div>
+          </div>
         </div>
       </div>
-      <div class="body">
-        <div class="images">
-          <div class="img1">
-            <img class="mainImage" src="/src/assets/ph15.jpg" />
+    </div>
+
+    <div class="bgTransparent bg3">
+      <div class="closeMenu" @click="closePopup3()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-x-lg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+          />
+        </svg>
+      </div>
+      <div class="popup">
+        <div class="header">
+          <div class="col col_1">
+            <p>Sede</p>
+            <h2>Trencin, SL</h2>
           </div>
-          <div class="img2">
-            <img class="mainImage" src="/src/assets/ph16.jpg" />
+          <div class="col col_2">
+            <h4><span>•</span> Indirizzo</h4>
+            <div class="subtitle">Povazka, 36 - 91101 Slovacchia</div>
           </div>
+          <div class="col col_3">
+            <h4><span>•</span> Contatti</h4>
+            <div class="subtitle">00421/902.505.385</div>
+            <a href="mailto:davide.maggio@jobconsultinghr.it" class="mailto"
+              >davide.maggio@jobconsultinghr.it</a
+            >
+          </div>
+        </div>
+        <div class="body">
+          <div class="images">
+            <div class="img1">
+              <img class="mainImage" src="/src/assets/ph15.jpg" />
+            </div>
+            <div class="img2">
+              <img class="mainImage" src="/src/assets/ph16.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gradient2"></div>
+    <div class="cols">
+      <div class="col col_1">
+        <p>Contattaci</p>
+        <h2>Cerchiamo talenti per creare il futuro</h2>
+        <div class="subtitle">
+          Cerchiamo talenti per creare il futuro, cerchiamo talenti per creare
+          il futuro, cerchiamo talenti per creare il futuro
+        </div>
+      </div>
+      <div class="col col_2 transition">
+        <h3>Contattaci</h3>
+        <div
+          class="input"
+          style="display: flex; width: 95%; margin: 0 0 1.5rem 0"
+        >
+          <input
+            style="width: 100%; margin: 0 1.5rem 0 0"
+            id="nav"
+            class="input"
+            type="text"
+            name="nickname"
+            placeholder="Nome"
+          />
+
+          <input
+            id="nav"
+            style="width: 100%; margin: 0"
+            class="input"
+            type="text"
+            name="nickname"
+            placeholder="Cognome"
+          />
+        </div>
+        <div class="input" style="display: flex; width: 100%; margin: 0">
+          <input
+            id="nav"
+            class="input"
+            type="text"
+            name="nickname"
+            placeholder="Email"
+          />
+        </div>
+        <div class="input" style="display: flex; width: 100%; margin: 0">
+          <input
+            id="nav"
+            class="input"
+            type="text"
+            name="nickname"
+            placeholder="Linkedin Url"
+          />
+        </div>
+        <div class="input" style="display: flex; width: 100%; margin: 0">
+          <input
+            id="nav"
+            class="input"
+            type="text"
+            name="nickname"
+            placeholder="Telefono"
+          />
+        </div>
+        <div class="input" style="display: flex; width: 100%; margin: 0">
+          <input
+            id="nav"
+            class="input"
+            type="text"
+            name="nickname"
+            placeholder="Dettagli"
+          />
+        </div>
+
+        <div class="formButton">
+          <a href="#first"
+            ><button class="btn">
+              Invia
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </span></button
+          ></a>
         </div>
       </div>
     </div>
@@ -338,6 +434,18 @@ export default {
 }
 
 @media (min-width: 1024px) {
+  .first {
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #ada996
+    );
+    background: linear-gradient(to top, #ffffff, #dbdbdb, #bebebe, #96a0ad);
+  }
+
   #globeViz {
     position: fixed;
     left: 0%;
@@ -436,6 +544,7 @@ export default {
     margin-right: auto;
     padding-bottom: 22rem;
     z-index: 1;
+    position: fixed;
   }
 
   .mainTitle h2 {
@@ -458,6 +567,9 @@ export default {
     line-height: 150px;
     letter-spacing: -0.04em;
     font-weight: 500;
+    position: fixed;
+    right: 5%;
+    bottom: 0;
   }
 
   .datas {
@@ -503,13 +615,13 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     background: #7474bf;
-    background: -webkit-linear-gradient(to right, #348ac7, #7474bf);
-    background: linear-gradient(to top, #030812, #7474bf00);
+    background: -webkit-linear-gradient(to top, #03081200, #7474bf00);
+    background: linear-gradient(to top, #03081200, #7474bf00);
     padding-top: 18rem;
   }
 
   .office {
-    position: absolute;
+    position: fixed;
     top: 10%;
     transition: all 0.3s ease-out;
     z-index: 3;
@@ -574,7 +686,6 @@ export default {
 
   .bgTransparent {
     position: fixed;
-    width: 100%;
     height: 100%;
     background-color: #26334285;
     backdrop-filter: blur(12px);
@@ -728,6 +839,171 @@ export default {
   .closeMenu:hover {
     border-color: white;
     transform: rotate(90deg);
+  }
+
+  .gradient2 {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    background: #7474bf;
+    background: -webkit-linear-gradient(to top, #c3c3c3, #7474bf00);
+    background: linear-gradient(to top, #c3c3c3, #7474bf00);
+    padding-top: 10rem;
+    margin-top: 25rem;
+    z-index: 10;
+  }
+
+  .cols {
+    display: flex;
+    margin-top: 0rem;
+    padding-bottom: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    z-index: 10;
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #c3c3c3
+    );
+    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #c3c3c3);
+  }
+
+  .cols .col_1 {
+    width: 120%;
+  }
+
+  .cols .col_2 {
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
+
+  .cols .col_3 {
+    margin-top: 5rem;
+  }
+
+  .cols .col {
+    padding-top: 5rem;
+  }
+
+  .cols .col p {
+    text-transform: uppercase;
+    color: #010b15;
+    letter-spacing: 3px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .cols .col h4 {
+    text-transform: uppercase;
+    color: #010b15;
+    letter-spacing: 3px;
+    font-size: 12px;
+    line-height: 12px;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  .cols .col h4 span {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .cols .col h2 {
+    color: #010b15;
+    letter-spacing: -0.04em;
+    font-size: 64px;
+    line-height: 68px;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+
+  .cols .col h3 {
+    color: #010b15;
+    letter-spacing: -0.04em;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+  }
+
+  .cols .col .subtitle {
+    color: #627597;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .input {
+    width: 95%;
+    margin-bottom: 1.5rem;
+  }
+
+  .input input {
+    font-size: 14px;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: none;
+    width: 95%;
+    float: right;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    height: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgba(38, 43, 49, 0.486);
+    border: 2px solid #b3b3b326;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+
+  input:focus {
+    outline: none;
+    background-color: rgb(38 43 49 / 31%);
+    border-color: #0062f5;
+  }
+
+  .btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 26px;
+    border-radius: 20px;
+    background: #0062f5;
+    color: #ffffff;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    z-index: 10;
+  }
+
+  .btn:hover {
+    background: #ffffff;
+    color: #0062f5;
+    font-weight: 600;
+  }
+
+  .btn span {
+    padding-left: 0.4rem;
   }
 }
 

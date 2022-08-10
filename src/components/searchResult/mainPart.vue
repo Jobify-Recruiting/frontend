@@ -56,34 +56,6 @@ export default {
     content.style.opacity = "0";
     content.style.visibility = "hidden";
     content.style.display = "unset";
-
-    const slider = document.querySelector(".filtersContent");
-    let isDown = false;
-    let startX;
-    let scrollLeft;
-    if (slider) {
-      slider.addEventListener("mousedown", (e) => {
-        isDown = true;
-        slider.classList.add("active");
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-      });
-      slider.addEventListener("mouseleave", () => {
-        isDown = false;
-        slider.classList.remove("active");
-      });
-      slider.addEventListener("mouseup", () => {
-        isDown = false;
-        slider.classList.remove("active");
-      });
-      slider.addEventListener("mousemove", (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - slider.offsetLeft;
-        const walk = (x - startX) * 3; //scroll-fast
-        slider.scrollLeft = scrollLeft - walk;
-      });
-    }
   },
   methods: {
     btnScrollSx() {
@@ -159,14 +131,10 @@ export default {
       <div class="glow"></div>
       <div class="glow2"></div>
       <div class="glow3"></div>
-      <div class="glow4"></div>
-      <div class="glow5"></div>
-      <div class="glow6"></div>
       <div class="first">
         <div class="title">
           <div class="titleDiv">
-            <h2>Posizioni aperte</h2>
-            <p>Cerca tra i lavori attuali</p>
+            <h2>Risultati</h2>
           </div>
         </div>
         <div class="search">
@@ -211,46 +179,6 @@ export default {
               <div class="keyWord">Farm</div>
               <div class="keyWord">Farm</div>
               <div class="keyWord">Farm</div>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#home">Farm</a></li>
-            <li><a data-toggle="tab" href="#menu1">Finance</a></li>
-            <li><a data-toggle="tab" href="#menu2">IT Tech</a></li>
-            <li><a data-toggle="tab" href="#menu3">Generalist</a></li>
-            <li @click="jobAlert()"><a href="#">Crea una Job Alert</a></li>
-          </ul>
-
-          <div class="tab-content">
-            <div id="home" class="tab-pane fade in active">
-              <h3>HOME</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div id="menu1" class="tab-pane fade">
-              <h3>Menu 1</h3>
-              <p>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-            <div id="menu2" class="tab-pane fade">
-              <h3>Menu 2</h3>
-              <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
-              </p>
-            </div>
-            <div id="menu3" class="tab-pane fade">
-              <h3>Menu 3</h3>
-              <p>
-                Eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                beatae vitae dicta sunt explicabo.
-              </p>
             </div>
           </div>
         </div>
@@ -623,38 +551,6 @@ export default {
                 </ul>
               </div>
             </div>
-            <div class="buttons" style="margin-left: unset !important">
-              <div class="btnScrollL" @click="btnScrollSx()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#fff"
-                  class="bi bi-chevron-left"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                  />
-                </svg>
-              </div>
-              <div class="btnScrollR" @click="btnScrollDx()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#fff"
-                  class="bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </div>
-            </div>
           </div>
 
           <div class="content filtersContent">
@@ -995,39 +891,16 @@ export default {
   }
 
   .glow4 {
-    position: absolute;
+    position: fixed;
+    width: 5vw;
     left: 45%;
-    top: 43%;
-    width: 50vw;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgb(46 222 255 / 50%);
-    -moz-box-shadow: 0px 0px 105px 45px rgb(46 222 255 / 50%);
-    box-shadow: 0px 0px 105px 45px rgb(46 222 255 / 50%);
-    z-index: 0;
-  }
-
-  .glow5 {
-    position: absolute;
-    left: 5%;
-    top: 43%;
-    width: 40vw;
+    top: 101%;
+    width: 10vw;
     opacity: 0.5;
     -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 137, 255, 0.5);
     -moz-box-shadow: 0px 0px 105px 45px rgba(46, 137, 255, 0.5);
     box-shadow: 0px 0px 105px 45px rgba(46, 137, 255, 0.5);
-    z-index: 0;
-  }
-
-  .glow6 {
-    position: absolute;
-    left: 5%;
-    top: 43%;
-    width: 16vw;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgb(255 166 46 / 50%);
-    -moz-box-shadow: 0px 0px 105px 45px rgb(255 166 46 / 50%);
-    box-shadow: 0px 0px 105px 45px rgb(255 166 46 / 50%);
-    z-index: 0;
+    z-index: 1;
   }
 
   .first {
@@ -1206,13 +1079,12 @@ export default {
   }
 
   .filters .filtersContent {
-    display: flex;
     width: 98vw;
-    height: 100%;
+    height: auto;
     padding-bottom: 0rem;
     padding-left: 3rem;
     padding-right: 1rem;
-    overflow-x: scroll;
+    overflow-x: hidden;
     overflow-y: hidden;
     flex-wrap: nowrap;
     align-items: center;
@@ -1312,7 +1184,6 @@ export default {
     background: rgba(38, 43, 49, 0.486);
     margin-bottom: 2rem;
     width: fit-content;
-    float: left;
     margin-right: 1.5rem;
     border-radius: 12px;
     padding: 1rem;
@@ -1320,11 +1191,11 @@ export default {
     border: 3px solid transparent;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    float: left;
   }
 
   .position:hover {
     border-color: #b3b3b326;
-    margin-bottom: 1rem;
   }
 
   .photoBlur p {
@@ -1620,7 +1491,7 @@ export default {
     background: rgb(161 161 161 / 10%);
     width: fit-content;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 3rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 0.7rem;

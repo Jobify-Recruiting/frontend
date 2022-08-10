@@ -46,6 +46,9 @@ export default {
 <template>
   <div>
     <div class="main">
+      <div class="glow"></div>
+      <div class="glow2"></div>
+      <div class="glow3"></div>
       <div class="first">
         <h2>La ricerca e selezione innovativa</h2>
         <p>
@@ -55,7 +58,7 @@ export default {
 
         <div class="mainButton">
           <a href="#first"
-            ><button class="btn">
+            ><button class="btn1">
               Invia
               <span>
                 <svg
@@ -73,6 +76,7 @@ export default {
                 </svg>
               </span></button
           ></a>
+          <a href="#first"><button class="btn2">Scopri di più</button></a>
         </div>
       </div>
 
@@ -86,7 +90,7 @@ export default {
           </div>
           <div class="rectangle-lg"></div>
         </div>
-        <div class="col-lg transition">
+        <div class="col-lg">
           <img class="mainImage" src="/src/assets/ph3.jpeg" />
           <div class="rectangle-md"></div>
         </div>
@@ -104,13 +108,18 @@ export default {
       <div class="third">
         <div class="cols">
           <div class="col-sx">
-            <h2 class="transition">The full power of Visual Studio Code</h2>
+            <h2 class="transition">
+              <span>The full power of Visual Studio Code</span>
+            </h2>
             <p class="transition">
               Use the full power of Visual Studio Code, including the editor,
               terminal, debugger, version control, settings sync, and the entire
-              ecosystem of extensions. Work in the browser or hand off to your
-              desktop.
+              ecosystem of extensions.
+              <span>Work in the browser or hand off to your desktop.</span>
             </p>
+            <a href="#first"
+              ><button class="btn1 transition">Scopri di più</button></a
+            >
           </div>
           <div class="col-dx">
             <img class="img transition" src="/src/assets/ph3.jpeg" />
@@ -121,13 +130,21 @@ export default {
 
       <div class="fourth">
         <div class="cols">
+          <div class="col-dx">
+            <img class="img transition" src="/src/assets/chip.png" />
+          </div>
           <div class="col-sx">
-            <h2 class="transition">The full power of Visual Studio Code</h2>
+            <h2 class="transition">
+              The <span>full power</span> of Visual Studio Code
+            </h2>
             <p class="transition">
               Use the full power of Visual Studio Code, including the editor,
               terminal, debugger, version control, settings sync, and the entire
-              ecosystem of extensions. Work in the browser or hand off to your
-              desktop.
+              ecosystem of
+              <span
+                >extensions. Work in the browser or hand off to your
+                desktop.</span
+              >
             </p>
             <div class="elementsFlex">
               <div class="element transition">
@@ -144,42 +161,107 @@ export default {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="third">
+        <div class="cols">
+          <div class="col-sx">
+            <h2 class="transition">
+              <span>The full power of Visual Studio Code</span>
+            </h2>
+            <p class="transition">
+              Use the full power of Visual Studio Code, including the editor,
+              terminal, debugger, version control, settings sync, and the entire
+              ecosystem of extensions.
+              <span>Work in the browser or hand off to your desktop.</span>
+            </p>
+            <a href="#first"
+              ><button class="btn1 transition">Scopri di più</button></a
+            >
+          </div>
           <div class="col-dx">
-            <img class="img transition" src="/src/assets/chip.png" />
+            <img class="img transition" src="/src/assets/ph3.jpeg" />
+            <img class="img2 transition" src="/src/assets/ph3.jpeg" />
           </div>
         </div>
       </div>
 
       <div class="fifth">
-        <div class="cols">
-          <div class="col-sx">
-            <h2 class="transition">The full power of Visual Studio Code</h2>
-            <p class="transition">
-              Use the full power of Visual Studio Code, including the editor,
-              terminal, debugger, version control, settings sync, and the entire
-              ecosystem of extensions. Work in the browser or hand off to your
-              desktop.
-            </p>
-          </div>
-          <div class="col-dx">
-            <img class="img transition" src="/src/assets/ph3.jpeg" />
-          </div>
+        <div class="col-sx">
+          <h2 class="transition">
+            The full power of Visual <span>Studio Code</span>
+          </h2>
+          <p class="transition">
+            Use the full power of Visual Studio Code,, version control, settings
+            sync, and the entire ecosystem of
+            <span
+              >extensions. Work in the browser or hand off to your
+              desktop.</span
+            >
+          </p>
+        </div>
+        <div class="col-dx">
+          <img class="img transition" src="/src/assets/ph3.jpeg" />
+          <img class="img transition" src="/src/assets/ph3.jpeg" />
+          <img class="img transition" src="/src/assets/ph3.jpeg" />
         </div>
       </div>
 
-      <div class="fifth">
+      <div class="quotes">
         <div class="cols">
-          <div class="col-sx">
-            <h2 class="transition">The full power of Visual Studio Code</h2>
-            <p class="transition">
-              Use the full power of Visual Studio Code, including the editor,
-              terminal, debugger, version control, settings sync, and the entire
-              ecosystem of extensions. Work in the browser or hand off to your
-              desktop.
+          <div class="col1">
+            <div class="title">Flight Reports</div>
+            <p>
+              Hundreds of engineers, including our own, use jobify Recruiting
+              every day.
             </p>
           </div>
-          <div class="col-dx">
-            <img class="img transition" src="/src/assets/ph3.jpeg" />
+          <div class="col2">
+            <div class="title">
+              " This is the single most mind-blowing application of machine
+              learning I’ve ever seen.
+            </div>
+            <p>Mike Krieger // Co-founder, Job</p>
+          </div>
+        </div>
+        <div class="cols">
+          <div class="col1">
+            <div class="title">Flight Reports</div>
+            <p>
+              Hundreds of engineers, including our own, use jobify Recruiting
+              every day.
+            </p>
+          </div>
+          <div class="col2">
+            <div class="title">
+              " This is the single most mind-blowing application of machine
+              learning I’ve ever seen.
+            </div>
+            <p>Mike Krieger // Co-founder, Job</p>
+          </div>
+        </div>
+        <div class="cols">
+          <div class="col3">
+            <div class="title">
+              " This is the single most mind-blowing application of machine
+              learning I’ve ever seen.
+            </div>
+            <p>Mike Krieger // Co-founder, Job</p>
+          </div>
+          <div class="col3">
+            <div class="title">
+              " This is the single most mind-blowing application of machine
+              learning I’ve ever seen.
+            </div>
+            <p>Mike Krieger // Co-founder, Job</p>
+          </div>
+          <div class="col3">
+            <div class="title">
+              " This is the single most mind-blowing application of machine
+              learning I’ve ever seen.
+            </div>
+            <p>Mike Krieger // Co-founder, Job</p>
           </div>
         </div>
       </div>
@@ -205,15 +287,15 @@ export default {
           <h2>Domande frequenti</h2>
           <div class="accordion" id="accordionExample">
             <div class="card transition">
-              <div class="card-header" id="headingOne">
+              <div class="card-header" id="heading1">
                 <h2 class="mb-0">
                   <button
                     class="btn btn-link btn-block text-left"
                     type="button"
                     data-toggle="collapse"
-                    data-target="#collapseOne"
+                    data-target="#collapse1"
                     aria-expanded="false"
-                    aria-controls="collapseOne"
+                    aria-controls="collapse1"
                   >
                     <p>></p>
                     Collapsible Group Item #1
@@ -222,9 +304,69 @@ export default {
               </div>
 
               <div
-                id="collapseOne"
+                id="collapse1"
                 class="collapse"
-                aria-labelledby="headingOne"
+                aria-labelledby="heading1"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  Some placeholder content for the first accordion panel. This
+                  panel is shown by default, thanks to the
+                  <code>.show</code> class.
+                </div>
+              </div>
+            </div>
+            <div class="card transition">
+              <div class="card-header" id="heading2">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse2"
+                    aria-expanded="false"
+                    aria-controls="collapse2"
+                  >
+                    <p>></p>
+                    Collapsible Group Item #1
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapse2"
+                class="collapse"
+                aria-labelledby="heading2"
+                data-parent="#accordionExample"
+              >
+                <div class="card-body">
+                  Some placeholder content for the first accordion panel. This
+                  panel is shown by default, thanks to the
+                  <code>.show</code> class.
+                </div>
+              </div>
+            </div>
+            <div class="card transition">
+              <div class="card-header" id="heading3">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse3"
+                    aria-expanded="false"
+                    aria-controls="collapse3"
+                  >
+                    <p>></p>
+                    Collapsible Group Item #1
+                  </button>
+                </h2>
+              </div>
+
+              <div
+                id="collapse3"
+                class="collapse"
+                aria-labelledby="heading3"
                 data-parent="#accordionExample"
               >
                 <div class="card-body">
@@ -320,13 +462,53 @@ export default {
 }
 
 @media (min-width: 1024px) {
+  .glow {
+    position: absolute;
+    width: 5vw;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    z-index: 10;
+  }
+
+  .glow2 {
+    position: absolute;
+    width: 5vw;
+    right: -8%;
+    top: 5%;
+    width: 10vw;
+    transform: rotate(90deg);
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 255, 196, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 255, 196, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(210, 255, 46, 0.9);
+    z-index: 10;
+  }
+
+  .glow3 {
+    position: absolute;
+    width: 5vw;
+    right: -8%;
+    top: 2%;
+    width: 10vw;
+    transform: rotate(90deg);
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.9);
+    z-index: 10;
+  }
+
   .mainButton {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
+    margin-top: 1.5rem;
   }
 
-  .mainButton .btn {
+  .btn1 {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -342,20 +524,49 @@ export default {
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 0.5px;
-    margin-top: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
     z-index: 10;
   }
 
-  .mainButton .btn:hover {
+  .btn1:hover {
     background: #ffffff;
     color: #0062f5;
     font-weight: 600;
   }
 
-  .mainButton .btn span {
+  .btn1 span {
     padding-left: 0.4rem;
+  }
+
+  .mainButton .btn2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 26px !important;
+    border-radius: 20px;
+    background: transparent;
+    color: #ffffff;
+    border-color: #fff;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    z-index: 10;
+  }
+
+  .mainButton .btn2:hover {
+    background: #ffffff;
+    color: #0062f5;
+    font-weight: 600;
   }
 
   .first {
@@ -365,22 +576,21 @@ export default {
   }
 
   .first h2 {
+    font-size: 68px;
     color: #fff;
-    font-size: 64px;
-    line-height: 68px;
+    line-height: 72px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: -2.5px;
   }
 
   .first p {
-    color: #c1c6cb;
-    font-size: 24px;
-    line-height: 28px;
-    margin-top: 1rem;
+    color: #627597;
+    font-size: 20px;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    letter-spacing: 0.5px;
+    line-height: 24px;
+    font-weight: 400 !important;
   }
 
   .first .button {
@@ -537,9 +747,9 @@ export default {
   .col-lg .mainImage {
     width: 100%;
     border-radius: 6px;
-    -webkit-box-shadow: 0px 0px 105px 39px rgb(46 81 255 / 44%);
-    -moz-box-shadow: 0px 0px 105px 39px rgba(46, 81, 255, 0.44);
-    box-shadow: 0px 0px 105px 39px rgb(46 91 255 / 44%);
+    -webkit-box-shadow: 0px 0px 105px 39px rgb(94 105 255 / 44%);
+    -moz-box-shadow: 0px 0px 105px 39px rgb(94 105 255 / 44%);
+    box-shadow: 0px 0px 105px 39px rgb(94 105 255 / 44%);
     border: 1px solid #0d0d0d;
     z-index: 1;
   }
@@ -556,7 +766,7 @@ export default {
   }
 
   .third {
-    margin-top: 10rem;
+    margin-top: 0rem;
   }
 
   .third .cols {
@@ -575,15 +785,29 @@ export default {
     font-size: 44px;
     line-height: 48px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: -2.5px;
+  }
+
+  .third .cols .col-sx h2 span {
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700;
   }
 
   .third .cols .col-sx p {
-    color: #c1c6cb;
-    font-size: 24px;
-    line-height: 28px;
-    margin-top: 1rem;
-    letter-spacing: 0.5px;
+    color: #627597;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400 !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .third .cols .col-sx p span {
+    color: #fff;
+    font-weight: 400 !important;
   }
 
   .cols .col-dx {
@@ -612,7 +836,7 @@ export default {
   }
 
   .fourth {
-    margin-top: 15rem;
+    margin-top: 10rem;
   }
 
   .fourth .cols {
@@ -631,15 +855,28 @@ export default {
     font-size: 44px;
     line-height: 48px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: -2.5px;
+  }
+
+  .fourth .cols .col-sx h2 span {
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700;
   }
 
   .fourth .cols .col-sx p {
-    color: #c1c6cb;
-    font-size: 24px;
-    line-height: 28px;
-    margin-top: 1rem;
-    letter-spacing: 0.5px;
+    color: #627597;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400 !important;
+  }
+
+  .fourth .cols .col-sx p span {
+    color: #fff;
+    font-weight: 400 !important;
   }
 
   .fourth .cols .col-dx {
@@ -659,7 +896,7 @@ export default {
 
   .elementsFlex {
     display: flex;
-    margin-top: 1rem;
+    margin-top: 3rem;
   }
 
   .elementsFlex .element {
@@ -672,6 +909,7 @@ export default {
     line-height: 22px !important;
     font-weight: 700;
     letter-spacing: 0.5px;
+    margin-bottom: 0 !important;
   }
 
   .elementsFlex .element h3 {
@@ -680,11 +918,11 @@ export default {
     line-height: 34px;
     font-weight: 700;
     margin-top: 0.2rem;
-    letter-spacing: 1px;
+    letter-spacing: -2.5px;
   }
 
   .fifth {
-    margin-top: 5rem;
+    margin-top: 20rem;
   }
 
   .fifth .cols {
@@ -693,46 +931,152 @@ export default {
     align-items: center;
   }
 
-  .fifth .cols .col-sx {
-    width: 50%;
-    padding: 7rem;
-  }
-
-  .fifth .cols .col-sx h2 {
-    color: #fff;
-    font-size: 44px;
-    line-height: 48px;
-    font-weight: 700;
-    letter-spacing: 1px;
-  }
-
-  .fifth .cols .col-sx p {
-    color: #c1c6cb;
-    font-size: 24px;
-    line-height: 28px;
-    margin-top: 1rem;
-    letter-spacing: 0.5px;
-  }
-
-  .fifth .cols .col-dx {
-    width: 50%;
-    padding: 7rem;
-  }
-
-  .fifth .cols .col-dx .img {
+  .fifth .col-sx {
     width: 90%;
+    padding-left: 7rem;
+    padding-bottom: 3rem;
+  }
+
+  .fifth .col-sx h2 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    text-align: center;
+  }
+
+  .fifth .col-sx h2 span {
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700;
+  }
+
+  .fifth .col-sx p {
+    color: #627597;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400 !important;
+    margin-top: 0.5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .fifth .col-sx p span {
+    color: #fff;
+    font-weight: 400 !important;
+  }
+
+  .fifth .col-dx {
+    width: 50%;
+    padding-left: 7rem;
+    display: flex;
+  }
+
+  .fifth .col-dx .img {
+    width: 60%;
     border-radius: 6px;
-    -webkit-box-shadow: 0px 0px 122px 10px rgba(46, 81, 255, 0.44);
-    -moz-box-shadow: 0px 0px 122px 10px rgba(46, 81, 255, 0.44);
-    box-shadow: 0px 0px 122px 10px rgba(46, 81, 255, 0.44);
+    -webkit-box-shadow: 0px 0px 105px 39px rgb(46 81 255 / 20%);
+    -moz-box-shadow: 0px 0px 105px 39px rgba(46, 81, 255, 20%);
+    box-shadow: 0px 0px 105px 39px rgb(46 91 255 / 20%);
     border: 1px solid #0d0d0d;
     z-index: 1;
+    margin-right: 2rem;
+  }
+
+  .quotes {
+    margin-top: 10rem;
+  }
+
+  .quotes .cols {
+    display: flex;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-top: 5rem;
+  }
+
+  .quotes .col1 {
+    margin-right: 3rem;
+    width: 30%;
+    border-top: 1px solid #62759734;
+    padding-top: 3rem;
+  }
+
+  .quotes .col1 .title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 34px;
+    letter-spacing: -0.04em;
+  }
+
+  .quotes .col1 p {
+    color: #627597;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400 !important;
+    margin-top: 0.9rem;
+  }
+
+  .quotes .col2 {
+    margin-left: 3rem;
+    width: 70%;
+    border-top: 1px solid #62759734;
+    padding-top: 3rem;
+  }
+
+  .quotes .col2 .title {
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 74px;
+    background: -webkit-linear-gradient(300deg, #93bef5 20%, #f37be3 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    letter-spacing: -0.04em;
+  }
+
+  .quotes .col2 p {
+    color: #627597;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400 !important;
+    margin-top: 0.9rem;
+  }
+
+  .quotes .col3 {
+    margin-right: 3rem;
+    width: 30%;
+    border-top: 1px solid #62759734;
+    padding-top: 3rem;
+  }
+
+  .quotes .col3 .title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -0.04em;
+  }
+
+  .quotes .col3 p {
+    color: #627597;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400 !important;
+    margin-top: 0.9rem;
   }
 
   .sixth {
     width: 100%;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 15rem;
   }
 
   .sixthContainer {
@@ -741,18 +1085,20 @@ export default {
 
   .sixth h2 {
     color: #fff;
-    font-size: 44px;
-    line-height: 48px;
+    font-size: 50px;
+    line-height: 54px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: -2.5px;
   }
 
   .sixth p {
-    color: #c1c6cb;
-    font-size: 24px;
-    line-height: 28px;
-    margin-top: 1rem;
-    letter-spacing: 0.5px;
+    color: #627597;
+    font-size: 20px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+    font-weight: 400 !important;
     margin-bottom: 7rem;
   }
 
@@ -810,11 +1156,12 @@ export default {
 
   .seventh .asks h2 {
     color: #fff;
-    font-size: 44px;
-    line-height: 48px;
+    font-size: 50px;
+    line-height: 54px;
     font-weight: 700;
     letter-spacing: 1px;
     text-align: center;
+    letter-spacing: -2.5px;
   }
 
   .seventh .accordion {
@@ -850,7 +1197,7 @@ export default {
     text-decoration: none;
   }
 
-  .btn {
+  .seventh .btn {
     padding: 0 !important;
   }
 
@@ -886,8 +1233,8 @@ export default {
 
   .card-body {
     font-size: 16px !important;
-    line-height: 24px !important;
-    color: #c1c6cb;
+    line-height: 20px !important;
+    color: #627597;
   }
 
   code {

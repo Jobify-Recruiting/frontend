@@ -52,11 +52,13 @@ export default {
         <div class="glow2"></div>
         <div class="glow3"></div>
         <div class="glow4"></div>
+        <div class="glow5"></div>
 
         <div class="firstPart">
           <div class="people1" style="top: 60%"></div>
           <div class="people2" style="top: 90%; left: 10%"></div>
           <div class="people2" style="top: 10%; left: 5%"></div>
+          <div class="people1" style="top: 40%; left: 12%"></div>
 
           <div class="people1" style="top: 5%; right: 10%"></div>
           <div class="people2" style="top: 45%; right: 0%"></div>
@@ -283,7 +285,6 @@ export default {
     height: 70px;
     margin-right: 1rem;
     position: absolute;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .people2 {
@@ -295,13 +296,12 @@ export default {
     height: 100px;
     margin-right: 1rem;
     position: absolute;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .values {
     display: flex;
     width: 100%;
-    margin-top: 12rem;
+    margin-top: 20rem;
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -340,6 +340,15 @@ export default {
   .first {
     padding: 8rem;
     padding-top: 3rem;
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #ada996
+    );
+    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad);
   }
 
   .firstPart {
@@ -389,10 +398,8 @@ export default {
 
   .first .cols {
     display: flex;
-    margin-top: 20rem;
+    margin-top: 15rem;
     margin-bottom: 3rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
 
   .cols .col_1 {
@@ -410,7 +417,7 @@ export default {
 
   .cols .col p {
     text-transform: uppercase;
-    color: #fff;
+    color: #010b15;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -419,7 +426,7 @@ export default {
 
   .cols .col h4 {
     text-transform: uppercase;
-    color: #fff;
+    color: #010b15;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -436,7 +443,7 @@ export default {
   }
 
   .cols .col h2 {
-    color: #fff;
+    color: #010b15;
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 68px;
@@ -445,7 +452,7 @@ export default {
   }
 
   .cols .col h3 {
-    color: #fff;
+    color: #010b15;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;
@@ -454,7 +461,7 @@ export default {
   }
 
   .cols .col .subtitle {
-    color: rgb(211, 211, 211);
+    color: #627597;
     font-size: 18px;
     line-height: 22px;
   }
@@ -558,9 +565,20 @@ export default {
     top: 30%;
     opacity: 0.5;
     left: 85%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
+  }
+
+  .glow5 {
+    position: absolute;
+    width: 5vw;
+    top: 10%;
+    opacity: 0.5;
+    left: 65%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.9);
   }
 }
 

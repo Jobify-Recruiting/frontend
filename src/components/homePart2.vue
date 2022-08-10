@@ -41,8 +41,8 @@ export default {
 
     function scrollFunction() {
       if (
-        document.body.scrollTop > 2500 ||
-        document.documentElement.scrollTop > 2500
+        document.body.scrollTop > 1950 ||
+        document.documentElement.scrollTop > 1950
       ) {
         //console.log(document.documentElement.scrollTop);
         document.getElementById("text2").style.fontSize = "64px";
@@ -376,70 +376,98 @@ export default {
       <div class="glow7"></div>
       <div class="content">
         <div class="partnersImgs">
-          <div
+          <a
+            href=""
             class="partnerImg transition"
             style="
-              left: 30%;
+              left: 32%;
               top: -15%;
               background-image: url(/src/assets/partners/logo1.png);
             "
-          ></div>
-          <div
+          >
+            <div class="" style=""></div>
+          </a>
+
+          <a
+            href=""
             class="partnerImg transition"
             style="
               right: 16%;
               top: 4%;
               background-image: url(/src/assets/partners/logo2.png);
             "
-          ></div>
-          <div
+          >
+            <div class="" style=""></div>
+          </a>
+
+          <a
+            href=""
             class="partnerImg transition"
             style="
-              right: 29%;
-              top: -15%;
+              right: 32%;
+              top: -18%;
               background-image: url(/src/assets/partners/logo3.png);
             "
-          ></div>
-          <div
+          >
+            <div class="" style=""></div>
+          </a>
+
+          <a
+            href=""
             class="partnerImg transition"
             style="
               right: 12%;
               top: 43%;
               background-image: url(/src/assets/partners/logo4.png);
             "
-          ></div>
-          <div
+          >
+            <div class="" style=""></div>
+          </a>
+
+          <a
+            href=""
             class="partnerImg"
             style="
               right: 22%;
-              top: 75%;
+              top: 77%;
               background-image: url(/src/assets/partners/logo5.png);
             "
-          ></div>
-          <div
+          >
+            <div class="" style=""></div>
+          </a>
+
+          <a
+            href=""
             class="partnerImg"
             style="
               top: 60%;
               left: 18%;
               background-image: url(/src/assets/partners/logo6.png);
             "
-          ></div>
-          <div
+            ><div class="" style=""></div
+          ></a>
+
+          <a
+            href=""
             class="partnerImg transition"
             style="
               left: 13%;
               top: 14%;
               background-image: url(/src/assets/partners/logo7.png);
             "
-          ></div>
-          <div
+            ><div class="" style=""></div
+          ></a>
+
+          <a
+            href=""
             class="partnerImg"
             style="
-              left: 40%;
-              top: 85%;
+              left: 41%;
+              top: 87%;
               background-image: url(/src/assets/partners/logo8.png);
             "
-          ></div>
+            ><div class="" style=""></div
+          ></a>
         </div>
         <div class="first" style="display: inherit !important">
           <div class="title">
@@ -598,25 +626,20 @@ export default {
             <span>Iscriviti oggi alla newsletter</span> di Jobify Recruiting per
             restare aggiornato sul mondo hr
           </h3>
-          <router-link to="/newsletter"
-            ><button class="btn">
-              Scopri di più
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-short"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                  />
-                </svg>
-              </span></button
-          ></router-link>
+          <div class="divInput">
+            <div class="input">
+              <input
+                id="nav"
+                class="input"
+                type="text"
+                name="nickname"
+                placeholder="Inserisci la tua email"
+              />
+            </div>
+            <router-link to="/newsletter"
+              ><button class="btn">Iscriviti</button></router-link
+            >
+          </div>
         </div>
         <div class="col_image"></div>
       </div>
@@ -754,7 +777,6 @@ export default {
   .secondDiv {
     height: 100%;
     width: 100%;
-    padding-bottom: 5rem;
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
@@ -856,6 +878,48 @@ export default {
 
   .btn2:hover {
     border-color: #2d2e2f;
+  }
+
+  .divInput {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .input {
+    width: 95%;
+    margin-right: 1rem;
+  }
+
+  .input input {
+    font-size: 14px;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: none;
+    width: 97%;
+    float: right;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    height: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgba(38, 43, 49, 0.486);
+    border: 2px solid #b3b3b326;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+
+  input:focus {
+    outline: none;
+    background-color: rgb(38 43 49 / 31%);
+    border-color: #0062f5;
   }
 
   .elemsx .elemdx_rectangle1 {
@@ -1439,7 +1503,6 @@ export default {
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 0.5px;
-    margin-top: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-out;
     z-index: 10;

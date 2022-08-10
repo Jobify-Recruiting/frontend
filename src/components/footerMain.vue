@@ -13,7 +13,23 @@ export default {
 <template>
   <div class="footer">
     <div class="content">
-      <div class="col-logo"><img src="/src/assets/logo/small_white.png" /></div>
+      <div class="col-logo">
+        <img src="/src/assets/logo/small_white.png" />
+        <div class="divInput">
+          <div class="input">
+            <input
+              id="nav"
+              class="input"
+              type="text"
+              name="nickname"
+              placeholder="Inserisci la tua email"
+            />
+          </div>
+          <router-link to="/newsletter"
+            ><button class="btn">Iscriviti</button></router-link
+          >
+        </div>
+      </div>
       <div class="col">
         <div class="title">Servizi</div>
         <router-link to="/openposition">
@@ -46,9 +62,6 @@ export default {
         <router-link to="/stories"> <div class="link">Storie</div></router-link>
         <router-link to="/workwithus">
           <div class="link">Lavora con noi</div></router-link
-        >
-        <router-link to="/newsletter">
-          <div class="link">Newsletter</div></router-link
         >
         <router-link to="/contact">
           <div class="link">Contattaci</div></router-link
@@ -122,6 +135,7 @@ export default {
 
   .footer .content .col {
     width: 25%;
+    margin-left: 5rem;
   }
 
   .content .col .title {
@@ -174,6 +188,78 @@ export default {
     font-weight: 400;
     letter-spacing: 1.5px;
     font-size: 12px;
+  }
+
+  .divInput {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .input {
+    width: fit-content;
+    margin-right: 0.5rem;
+  }
+
+  .input input {
+    font-size: 14px;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: none;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    height: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgba(38, 43, 49, 0.486);
+    border: 2px solid #b3b3b326;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+
+  input:focus {
+    outline: none;
+    background-color: rgb(38 43 49 / 31%);
+    border-color: #0062f5;
+  }
+
+  .btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 26px;
+    border-radius: 20px;
+    background: #0062f5;
+    color: #ffffff;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    z-index: 10;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .btn:hover {
+    background: #ffffff;
+    color: #0062f5;
+    font-weight: 600;
+  }
+
+  .btn span {
+    padding-left: 0.4rem;
   }
 }
 

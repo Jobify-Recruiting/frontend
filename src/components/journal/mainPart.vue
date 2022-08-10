@@ -119,7 +119,7 @@ export default {
             </div>
           </div>
         </div>
-        <div class="titlePage2">Temporary HR management</div>
+        <div class="titlePage2">Recruitment</div>
         <div class="secondPart">
           <div class="articles articles2">
             <div class="article">
@@ -177,7 +177,21 @@ export default {
           </div>
         </div>
 
-        <div class="titlePage2">Recruitment</div>
+        <div class="fifthDiv">
+          <div class="adviser">
+            <div class="col">
+              <h3><span>Segui le nostre storie</span> le nostre storie</h3>
+              <div class="divInput">
+                <router-link to="/stories"
+                  ><button class="btn">Storie</button></router-link
+                >
+              </div>
+            </div>
+            <div class="col_image"></div>
+          </div>
+        </div>
+
+        <div class="titlePage2">Temporary HR management</div>
         <div class="secondPart">
           <div class="articles articles2">
             <div class="article">
@@ -851,8 +865,9 @@ export default {
   }
 
   .fifthDiv {
-    padding: 3rem;
-    padding-bottom: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
   }
 
   .fifthDiv .adviser {
@@ -945,8 +960,8 @@ export default {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 18px 26px;
-    border-radius: 12px;
+    padding: 14px 26px;
+    border-radius: 20px;
     background: #0062f5;
     color: #ffffff;
     line-height: 18px;
@@ -958,7 +973,6 @@ export default {
     transition: all 0.3s ease-out;
     z-index: 10;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    font-weight: 600;
   }
 
   .btn:hover {

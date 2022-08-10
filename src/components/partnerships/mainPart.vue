@@ -44,6 +44,7 @@ export default {
   methods: {},
 };
 </script>
+
 <template>
   <div>
     <div class="main">
@@ -83,48 +84,74 @@ export default {
             ></a>
           </div>
         </div>
+        <div class="partners">
+          <div class="partnersPart">
+            <a href="">
+              <div
+                class="partnerImg2 transition"
+                style="background-image: url(/src/assets/partners/logo1.png)"
+              ></div>
+            </a>
+            <a href="">
+              <div
+                class="partnerImg2 transition"
+                style="background-image: url(/src/assets/partners/logo2.png)"
+              ></div>
+            </a>
+            <a href="">
+              <div
+                class="partnerImg2 transition"
+                style="background-image: url(/src/assets/partners/logo3.png)"
+              ></div
+            ></a>
+            <a href=""
+              ><div
+                class="partnerImg2 transition"
+                style="background-image: url(/src/assets/partners/logo4.png)"
+              ></div
+            ></a>
+            <a href="">
+              <div
+                class="partnerImg2 transition"
+                style="background-image: url(/src/assets/partners/logo5.png)"
+              ></div
+            ></a>
+            <a href="">
+              <div
+                class="partnerImg2 transition"
+                style="background-image: url(/src/assets/partners/logo6.png)"
+              ></div
+            ></a>
+            <a href="">
+              <div
+                class="partnerImg2 transition"
+                style="background-image: url(/src/assets/partners/logo7.png)"
+              ></div
+            ></a>
+            <a href="">
+              <div
+                class="partnerImg2 transition"
+                style="background-image: url(/src/assets/partners/logo8.png)"
+              ></div
+            ></a>
+          </div>
+        </div>
+
+        <!--<svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          style="position: absolute; top: 21%; z-index: 10"
+        >
+          <path
+            fill="#030812"
+            fill-opacity="1"
+            d="M0,64L40,58.7C80,53,160,43,240,48C320,53,400,75,480,96C560,117,640,139,720,144C800,149,880,139,960,117.3C1040,96,1120,64,1200,53.3C1280,43,1360,53,1400,58.7L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+          ></path>
+        </svg>-->
         <div class="secondPart">
-          <h2>Costruiamo l'ecosistema del domani.</h2>
           <div class="cols">
-            <div class="col">
-              <div class="partners">
-                <div
-                  class="partnerImg transition"
-                  style="background-image: url(/src/assets/partners/logo1.png)"
-                ></div>
-                <div
-                  class="partnerImg transition"
-                  style="background-image: url(/src/assets/partners/logo2.png)"
-                ></div>
-                <div
-                  class="partnerImg transition"
-                  style="background-image: url(/src/assets/partners/logo3.png)"
-                ></div>
-              </div>
-              <div class="partners">
-                <div
-                  class="partnerImg transition"
-                  style="background-image: url(/src/assets/partners/logo4.png)"
-                ></div>
-                <div
-                  class="partnerImg transition"
-                  style="background-image: url(/src/assets/partners/logo5.png)"
-                ></div>
-                <div
-                  class="partnerImg transition"
-                  style="background-image: url(/src/assets/partners/logo6.png)"
-                ></div>
-              </div>
-              <div class="partners">
-                <div
-                  class="partnerImg transition"
-                  style="background-image: url(/src/assets/partners/logo7.png)"
-                ></div>
-                <div
-                  class="partnerImg transition"
-                  style="background-image: url(/src/assets/partners/logo8.png)"
-                ></div>
-              </div>
+            <div class="col colImage">
+              <div class="image transition"></div>
             </div>
             <div class="col col2">
               <div class="text">
@@ -149,6 +176,45 @@ export default {
             </div>
           </div>
         </div>
+        <div class="secondPart">
+          <div class="cols">
+            <div class="col col2">
+              <div class="text">
+                <span
+                  >Increase developer velocity. Secure every step. Automate
+                  entire workflows.</span
+                >
+                Redefine collaboration. Trusted by over 83 million developers.
+              </div>
+              <div class="text2">
+                Increase developer velocity. Secure every step. Automate entire
+                workflows. Redefine collaboration. Trusted by over 83 million
+                developers.
+              </div>
+              <div class="text">
+                Redefine collaboration. Trusted by over 83 million developers.
+                <span
+                  >Increase developer velocity. Secure every step. Automate
+                  entire workflows.</span
+                >
+              </div>
+            </div>
+            <div class="col colImage">
+              <div class="image2 transition"></div>
+            </div>
+          </div>
+        </div>
+        <!--<svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          style="position: absolute; top: 60%; z-index: 10"
+        >
+          <path
+            fill="#030812"
+            fill-opacity="1"
+            d="M0,64L40,58.7C80,53,160,43,240,48C320,53,400,75,480,96C560,117,640,139,720,144C800,149,880,139,960,117.3C1040,96,1120,64,1200,53.3C1280,43,1360,53,1400,58.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+          ></path>
+        </svg>-->
         <div class="cols">
           <div class="col col_1">
             <p>Partners</p>
@@ -315,6 +381,15 @@ export default {
 
   .first {
     padding-top: 3rem;
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #ada996
+    );
+    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad);
   }
 
   .first .cols {
@@ -322,7 +397,7 @@ export default {
     margin-top: 8rem;
     padding-left: 9rem;
     padding-right: 9rem;
-    padding-bottom: 8rem;
+    padding-bottom: 3rem;
   }
 
   .firstPart {
@@ -383,7 +458,7 @@ export default {
   }
   .cols .col p {
     text-transform: uppercase;
-    color: #fff;
+    color: #010b15;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -409,7 +484,7 @@ export default {
   }
 
   .cols .col h2 {
-    color: #fff;
+    color: #010b15;
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 68px;
@@ -418,7 +493,7 @@ export default {
   }
 
   .cols .col h3 {
-    color: #fff;
+    color: #010b15;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;
@@ -427,18 +502,18 @@ export default {
   }
 
   .cols .col .subtitle {
-    color: rgb(211, 211, 211);
+    color: #627597;
     font-size: 18px;
     line-height: 22px;
   }
 
   .secondPart {
-    margin-top: 25rem;
-    margin-bottom: 15rem;
+    padding-top: 5rem;
+    margin-bottom: 0rem;
   }
 
   .secondPart h2 {
-    color: #fff;
+    color: #010b15;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -452,8 +527,8 @@ export default {
   .secondPart .text {
     margin-top: 0.5rem;
     color: #627597;
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 26px;
+    line-height: 30px;
     font-weight: 400;
     width: 80%;
     margin-left: 3rem;
@@ -466,11 +541,13 @@ export default {
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
   }
 
   .secondPart .text2 {
     margin-top: 0.5rem;
-    color: #ffffff;
+    color: #627597;
     font-size: 26px;
     line-height: 30px;
     font-weight: 400;
@@ -481,12 +558,37 @@ export default {
   }
 
   .secondPart .cols {
-    padding-left: 0rem !important;
     margin-top: 5rem !important;
   }
 
   .secondPart .cols .col2 {
     width: 30%;
+  }
+
+  .image {
+    width: 30vw;
+    height: 35vw;
+    margin-right: 2rem;
+    background-image: url(/src/assets/ph10.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-left: auto;
+  }
+
+  .image2 {
+    width: 30vw;
+    height: 35vw;
+    margin-right: 2rem;
+    background-image: url(/src/assets/ph10.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-right: auto;
   }
 
   .input {
@@ -528,23 +630,23 @@ export default {
   }
 
   .partners {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    width: fit-content;
-    margin-right: auto;
-    transform: rotate(-15deg);
+    width: 100%;
+    background: #010b15;
   }
 
-  .partnerImg {
+  .partnersPart {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+    background: #010b15;
+    padding-bottom: 2rem;
+  }
+
+  .partnerImg2 {
     width: 150px;
     height: 150px;
-    background: #005dff2b;
-    -webkit-box-shadow: 0px 0px 133px 17px #005dff2b;
-    -moz-box-shadow: 0px 0px 133px 17px #005dff2b;
-    box-shadow: 0px 0px 133px 17px #005dff2b;
-    border-radius: 25rem;
-    border: 1px solid #fff;
     margin-right: 1rem;
     margin-left: 1rem;
     margin-top: 2rem;
@@ -557,7 +659,6 @@ export default {
   }
 
   .glow {
-    position: absolute;
     width: 5vw;
     opacity: 0.5;
     transform: scale(3.5);
@@ -573,6 +674,7 @@ export default {
     width: 5vw;
     transform: scale(3.5);
     top: 70%;
+    z-index: 15;
     opacity: 0.5;
     -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
     -moz-box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);

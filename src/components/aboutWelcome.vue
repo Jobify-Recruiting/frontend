@@ -48,29 +48,31 @@ export default {
 </script>
 
 <template>
-  <div id="globeViz"></div>
-  <div class="hover1"></div>
-  <div class="glow"></div>
-  <div class="glow2"></div>
-  <div class="glow3"></div>
-  <div class="glow4"></div>
-  <div class="glow5"></div>
-  <div class="glow6"></div>
-  <div class="mainTitle">
-    <div class="Iam">
-      <p>Jobify è</p>
-      <b>
-        <div class="innerIam">
-          innovazione<br />
-          tecnologia<br />
-          progresso<br />
-          risorse umane<br />
-          etica
-        </div>
-      </b>
+  <div class="first">
+    <div id="globeViz"></div>
+    <div class="hover1"></div>
+    <div class="glow"></div>
+    <div class="glow2"></div>
+    <div class="glow3"></div>
+    <div class="glow4"></div>
+    <div class="glow5"></div>
+    <div class="glow6"></div>
+    <div class="mainTitle">
+      <div class="Iam">
+        <p>Jobify è</p>
+        <b>
+          <div class="innerIam">
+            innovazione<br />
+            tecnologia<br />
+            progresso<br />
+            risorse umane<br />
+            etica
+          </div>
+        </b>
+      </div>
     </div>
+    <div class="gradient"></div>
   </div>
-  <div class="gradient"></div>
 </template>
 
 <style scoped>
@@ -100,6 +102,18 @@ export default {
 }
 
 @media (min-width: 1024px) {
+  .first {
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #ada996
+    );
+    background: linear-gradient(to top, #ffffff, #dbdbdb, #bebebe, #96a0ad);
+  }
+
   #globeViz {
     position: fixed;
     left: 0%;
@@ -237,71 +251,6 @@ export default {
     cursor: pointer;
     font-family: "Planer";
   }
-
-  /*a {
-    position: relative;
-    padding: 14px 22px;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: fit-content;
-    overflow: hidden;
-    border-radius: 16px;
-    margin-top: 3rem;
-    cursor: pointer;
-    font-family: "Planer";
-  }
-
-  a span {
-    position: relative;
-    color: #fff;
-    line-height: 20px;
-    font-size: 12px;
-    font-family: "Planer";
-    letter-spacing: 5px;
-    font-weight: 600;
-    z-index: 1;
-  }
-
-  a .liquid {
-    position: absolute;
-    top: -80px;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background: #0062f5;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-  }
-
-  a .liquid::after,
-  a .liquid::before {
-    content: "";
-    width: 200%;
-    height: 200%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -75%);
-    background: #000;
-  }
-
-  a .liquid::before {
-    border-radius: 45%;
-    background: rgba(20, 20, 20, 1);
-    animation: animate 5s linear infinite;
-  }
-
-  a .liquid::after {
-    border-radius: 40%;
-    background: rgba(20, 20, 20, 0.5);
-    animation: animate 10s linear infinite;
-  }
-
-  a:hover .liquid {
-    top: -120px;
-  }*/
-
   .btn {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -424,7 +373,7 @@ export default {
     padding-right: 8rem;
     background: #7474bf;
     background: -webkit-linear-gradient(to right, #348ac7, #7474bf);
-    background: linear-gradient(to top, #030812, #7474bf00);
+    background: linear-gradient(to top, #ffffff, #ffffff00);
     padding-top: 15rem;
   }
 }

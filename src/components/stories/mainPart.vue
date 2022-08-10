@@ -89,37 +89,6 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <!--<div class="titlePage">News</div>
-        <div class="topContent">
-          <div class="img1"></div>
-          <div class="firstTitle">
-            <p>APR 22, 2022</p>
-            <h2>Sustainability at Jobify: the technology transformation</h2>
-            <div class="subtitle">
-              Sustainability at Jobify: the technology transformation, Jobify:
-              the technology transformation, Sustainability at : the technology
-              transformation
-            </div>
-            <div class="btnRead">
-              Leggi di più &nbsp;&nbsp;<span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-short"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                  />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </div>-->
-
         <div class="second">
           <div class="featureds">
             <div class="titles">
@@ -206,21 +175,12 @@ export default {
           <div class="adviser">
             <div class="col">
               <h3>
-                <span>Iscriviti oggi alla newsletter</span> di Jobify Recruiting
-                per restare aggiornato sul mondo HR
+                <span>CTA per le aziende</span> qui scriviamo un copy per
+                invitare l'azienda a contattarci
               </h3>
               <div class="divInput">
-                <div class="input">
-                  <input
-                    id="nav"
-                    class="input"
-                    type="text"
-                    name="nickname"
-                    placeholder="Inserisci la tua email"
-                  />
-                </div>
                 <router-link to="/newsletter"
-                  ><button class="btn">Iscriviti</button></router-link
+                  ><button class="btn">Contattaci</button></router-link
                 >
               </div>
             </div>
@@ -829,8 +789,8 @@ export default {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 18px 26px;
-    border-radius: 12px;
+    padding: 14px 26px;
+    border-radius: 20px;
     background: #0062f5;
     color: #ffffff;
     line-height: 18px;
@@ -842,7 +802,6 @@ export default {
     transition: all 0.3s ease-out;
     z-index: 10;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    font-weight: 600;
   }
 
   .btn:hover {

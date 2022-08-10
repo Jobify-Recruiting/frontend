@@ -13,6 +13,9 @@ export default {
     );
     document.head.appendChild(recaptchaScript);
 
+    var htmlElement = document.querySelector("html");
+    htmlElement.style.overflowY = "scroll";
+
     function reveal() {
       var reveals = document.querySelectorAll(".transition");
 
@@ -41,27 +44,314 @@ export default {
   methods: {},
 };
 </script>
+
 <template>
   <div>
     <div class="main">
       <div class="first">
-        <div class="images">
-          <div class="img1">
-            <div class="hover"></div>
-            <h2>Costruiamo il futuro insieme</h2>
+        <div class="glow"></div>
+        <div class="glow2"></div>
+        <div class="glow3"></div>
+        <div class="glow4"></div>
+        <div class="glow5"></div>
+        <div class="firstPart">
+          <div class="subtitle">Companies</div>
+          <h2>Costruiamo l'ecosistema del domani.</h2>
+          <p>
+            Increase developer velocity. Secure every step. Automate entire
+            workflows. Redefine collaboration. Trusted by over 83 million
+            developers.
+          </p>
+          <div class="mainButton">
+            <a href="#first"
+              ><button class="btn">
+                Scopri di più
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-short"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </span></button
+            ></a>
+          </div>
+          <div class="image"></div>
+        </div>
+        <div class="partners">
+          <div class="partnersPart">
+            <div class="col1">
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="background-image: url(/src/assets/partners/logo5.png)"
+                ></div
+              ></a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="background-image: url(/src/assets/partners/logo6.png)"
+                ></div
+              ></a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="background-image: url(/src/assets/partners/logo7.png)"
+                ></div
+              ></a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="background-image: url(/src/assets/partners/logo8.png)"
+                ></div
+              ></a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="background-image: url(/src/assets/partners/logo1.png)"
+                ></div>
+              </a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="background-image: url(/src/assets/partners/logo2.png)"
+                ></div>
+              </a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="background-image: url(/src/assets/partners/logo3.png)"
+                ></div
+              ></a>
+              <a href=""
+                ><div
+                  class="partnerImg2 transition"
+                  style="background-image: url(/src/assets/partners/logo4.png)"
+                ></div
+              ></a>
+            </div>
+            <div class="col1">
+              <h2>Costruiamo l'ecosistema del domani.</h2>
+              <p>
+                Increase developer velocity. Secure every step. Automate entire
+                workflows. Redefine collaboration. Trusted by over 83 million
+                developers.Redefine collaboration. Trusted collaboration over 83
+                milliocollaborationn developers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="secondPart">
+          <div class="cols">
+            <div class="col col2">
+              <div class="text">
+                <span
+                  >Increase developer velocity. Secure every step. Automate
+                  entire workflows.</span
+                >
+                Redefine collaboration. Trusted by over 83 million developers.
+              </div>
+              <div class="text2">
+                Increase developer velocity. Secure every step. Automate entire
+                workflows. Redefine collaboration. Trusted by over 83 million
+                developers.
+              </div>
+              <div class="text">
+                Redefine collaboration. Trusted by over 83 million developers.
+                <span
+                  >Increase developer velocity. Secure every step. Automate
+                  entire workflows.</span
+                >
+              </div>
+            </div>
+            <div class="col colImage">
+              <div class="image2 transition"></div>
+            </div>
+          </div>
+        </div>
+        <div class="secondPart">
+          <div class="cols">
+            <div class="col colImage">
+              <div class="image transition"></div>
+            </div>
+            <div class="col col2">
+              <div class="text">
+                <span
+                  >Increase developer velocity. Secure every step. Automate
+                  entire workflows.</span
+                >
+                Redefine collaboration. Trusted by over 83 million developers.
+              </div>
+              <div class="text2">
+                Increase developer velocity. Secure every step. Automate entire
+                workflows. Redefine collaboration. Trusted by over 83 million
+                developers.
+              </div>
+              <div class="text">
+                Redefine collaboration. Trusted by over 83 million developers.
+                <span
+                  >Increase developer velocity. Secure every step. Automate
+                  entire workflows.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="thirdPart">
+          <div class="thirdPartDiv">
+            <div class="first">
+              <div class="col1">
+                <h2>Be part of the world’s largest security community.</h2>
+                <p>
+                  Understand your dependence on the software supply chain, and
+                  how you can contribute back.
+                </p>
+                <p>
+                  Understand your dependence on the software supply chain, and
+                  how you can contribute back.
+                </p>
+                <p>
+                  Understand your dependence on the software supply chain, and
+                  how you can contribute back.
+                </p>
+              </div>
+              <div class="col2">
+                <div class="glow4"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="250"
+                  height="250"
+                  fill="#fff"
+                  class="bi bi-building transition"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"
+                  />
+                  <path
+                    d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="second">
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+            </div>
+            <div class="second">
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="numbersDiv">
+          <h2>I nostri numeri nei mesi precedenti</h2>
+          <div class="numbers">
+            <div class="number transition">
+              <h3>40%</h3>
+              <div class="subtitle">Reduction</div>
+              <p>in developer onboarding time</p>
+            </div>
+            <div class="number transition">
+              <h3>654%</h3>
+              <div class="subtitle">Return on investment</div>
+              <p>over 3 years</p>
+            </div>
+            <div class="number transition">
+              <h3>45</h3>
+              <div class="subtitle">Minutes saved</div>
+              <p>per developer, per day</p>
+            </div>
+          </div>
+          <div class="numbers">
+            <div class="number transition">
+              <h3>40%</h3>
+              <div class="subtitle">Reduction</div>
+              <p>in developer onboarding time</p>
+            </div>
+            <div class="number transition">
+              <h3>654%</h3>
+              <div class="subtitle">Return on investment</div>
+              <p>over 3 years</p>
+            </div>
+            <div class="number transition">
+              <h3>45</h3>
+              <div class="subtitle">Minutes saved</div>
+              <p>per developer, per day</p>
+            </div>
           </div>
         </div>
         <div class="cols">
-          <div class="col col_1 transition">
-            <p>Lavora con noi</p>
-            <h2>Cerchiamo talenti per creare il futuro</h2>
+          <div class="col col_1">
+            <p>Aziende</p>
+            <h2>Fissa un appuntamento</h2>
             <div class="subtitle">
               Cerchiamo talenti per creare il futuro, cerchiamo talenti per
               creare il futuro, cerchiamo talenti per creare il futuro
             </div>
           </div>
           <div class="col col_2 transition">
-            <h3>Candidati qui</h3>
+            <h3>Invia richiesta</h3>
             <div
               class="input"
               style="display: flex; width: 95%; margin: 0 0 1rem 0"
@@ -72,7 +362,7 @@ export default {
                 class="input"
                 type="text"
                 name="nickname"
-                placeholder="Nome"
+                placeholder="Nome azienda"
               />
 
               <input
@@ -81,7 +371,16 @@ export default {
                 class="input"
                 type="text"
                 name="nickname"
-                placeholder="Cognome"
+                placeholder="Città"
+              />
+            </div>
+            <div class="input">
+              <input
+                id="nav"
+                class="input"
+                type="text"
+                name="nickname"
+                placeholder="Via"
               />
             </div>
             <div class="input">
@@ -99,23 +398,61 @@ export default {
                 class="input"
                 type="text"
                 name="nickname"
-                placeholder="Linkedin Url"
-              />
-            </div>
-            <div class="input">
-              <input
-                id="nav"
-                class="input"
-                type="text"
-                name="nickname"
-                placeholder="Altro campo"
+                placeholder="Settore"
               />
             </div>
 
-            <a href="#first" class="flowSingleBtn">
-              <span>Inizia ora <span>></span></span>
-              <div class="liquid"></div>
-            </a>
+            <div class="formButton">
+              <a href="#first"
+                ><button class="btn">
+                  Invia
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span></button
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="fifthDiv">
+          <div class="adviser">
+            <div class="col">
+              <h3>
+                <span>Segui le Storie</span> di Jobify Recruiting per scoprire
+                tutte le esperienze dei nostri clienti
+              </h3>
+              <router-link to="/stories"
+                ><button class="btn">
+                  Storie
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span></button
+              ></router-link>
+            </div>
+            <div class="col_image"></div>
           </div>
         </div>
       </div>
@@ -126,6 +463,7 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .transition {
   transform: translateY(150px);
@@ -140,89 +478,129 @@ export default {
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
-  font-family: "planer", sans-serif;
+  /*font-family: "planer", sans-serif;*/
+  font-family: "Heebo", sans-serif;
 }
 
 @media (min-width: 1024px) {
   .flowSingleBtn {
     margin-top: 15rem;
   }
-  a {
-    position: relative;
-    padding: 14px 22px;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
+
+  .flowSingleBtn2 {
+    margin-right: auto !important;
+  }
+
+  .formButton {
     width: fit-content;
-    overflow: hidden;
-    border-radius: 25rem;
-    cursor: pointer;
-    font-family: "Planer";
     margin-left: auto;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
 
-  a span {
-    position: relative;
-    color: #fff;
-    line-height: 20px;
-    font-size: 12px;
-    font-family: "Planer";
-    letter-spacing: 2px;
-    font-weight: 600;
-    z-index: 1;
+  .mainButton {
+    width: fit-content;
   }
 
-  a .liquid {
-    position: absolute;
-    top: -80px;
-    left: 0;
-    width: 200px;
-    height: 200px;
+  .btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 26px;
+    border-radius: 20px;
     background: #0062f5;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
+    color: #ffffff;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    z-index: 10;
   }
 
-  a .liquid::after,
-  a .liquid::before {
-    content: "";
-    width: 200%;
-    height: 200%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -75%);
-    background: #000;
+  .btn:hover {
+    background: #ffffff;
+    color: #0062f5;
+    font-weight: 600;
   }
 
-  a .liquid::before {
-    border-radius: 45%;
-    background: rgba(20, 20, 20, 1);
-    animation: animate 5s linear infinite;
-  }
-
-  a .liquid::after {
-    border-radius: 40%;
-    background: rgba(20, 20, 20, 0.5);
-    animation: animate 10s linear infinite;
-  }
-
-  a:hover .liquid {
-    top: -120px;
+  .btn span {
+    padding-left: 0.4rem;
   }
 
   .first {
-    padding: 5rem;
-    padding-top: 8rem;
+    padding-top: 3rem;
+    background: #010b15;
   }
 
   .first .cols {
     display: flex;
     margin-top: 8rem;
-    margin-bottom: 3rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-bottom: 3rem;
+  }
+
+  .firstPart {
+    text-align: left;
+    width: 100%;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    margin-right: 0;
+  }
+
+  .firstPart .subtitle {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .firstPart h2 {
+    color: #fff;
+    letter-spacing: -0.04em;
+    font-size: 72px;
+    line-height: 76px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    width: 50%;
+  }
+
+  .firstPart p {
+    width: 50%;
+    margin-top: 0.5rem;
+    color: #627597;
+    font-size: 20px;
+    text-align: left;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .firstPart .image {
+    height: 100%;
+    width: 50%;
+    padding-bottom: 10rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 10rem;
+    background-image: url(/src/assets/glob2.png);
+    background-size: cover;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    margin-right: 0;
   }
 
   .cols .col_1 {
@@ -237,7 +615,6 @@ export default {
   .cols .col_3 {
     margin-top: 5rem;
   }
-
   .cols .col p {
     text-transform: uppercase;
     color: #fff;
@@ -267,83 +644,122 @@ export default {
 
   .cols .col h2 {
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: -0.04em;
     font-size: 64px;
-    line-height: 64px;
-    font-weight: 700;
+    line-height: 68px;
+    font-weight: 800;
     margin-bottom: 2rem;
   }
 
   .cols .col h3 {
     color: #fff;
-    letter-spacing: 1px;
-    font-size: 40px;
-    line-height: 40px;
-    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 300;
     margin-bottom: 1.5rem;
   }
 
   .cols .col .subtitle {
-    color: rgb(211, 211, 211);
-    letter-spacing: 1px;
+    color: #627597;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 22px;
   }
 
-  .images {
-    display: flex;
+  .secondPart {
+    padding-top: 5rem;
+    margin-bottom: 0rem;
   }
 
-  .images .img1 {
-    width: 100%;
-    background-image: url("/src/assets/ph15.jpg");
-    border-radius: 60px;
-    height: 50vw;
+  .secondPart h2 {
+    color: #010b15;
+    letter-spacing: -0.04em;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 800;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .secondPart .text {
+    margin-top: 0.5rem;
+    color: #627597;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 400;
+    width: 80%;
+    margin-left: 3rem;
+  }
+
+  .secondPart .text span {
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .secondPart .text2 {
+    margin-top: 0.5rem;
+    color: #627597;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-top: 3rem;
+    width: 80%;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  .secondPart .cols {
+    margin-top: 5rem !important;
+  }
+
+  .secondPart .cols .col2 {
+    width: 30%;
+  }
+
+  .image {
+    width: 30vw;
+    height: 35vw;
+    margin-right: 2rem;
+    background-image: url(/src/assets/ph10.png);
     background-position: center;
     background-size: cover;
-    padding: 20rem;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-left: auto;
   }
 
-  .img1 .hover {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.158);
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 60px;
-  }
-
-  .img1 h2 {
-    text-align: center;
-    color: #fff;
-    font-size: 68px;
-  }
-
-  .mailto {
-    margin: 0;
-    padding: 0;
-    text-transform: none;
-    color: rgb(211, 211, 211);
-    letter-spacing: 1px;
-    font-size: 18px;
-    line-height: 18px;
-    border-bottom: 1px solid rgb(211, 211, 211);
-    border-radius: 0 !important;
-    margin-bottom: 0.5rem;
+  .image2 {
+    width: 30vw;
+    height: 35vw;
+    margin-right: 2rem;
+    background-image: url(/src/assets/ph10.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-right: auto;
   }
 
   .input {
     width: 95%;
     margin-right: 4rem;
     margin-left: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 
   .input input {
-    font-size: 16px;
+    font-size: 14px;
     background-color: #1c1c1c;
-    border: 0;
     border-radius: 12px;
     color: #fff;
     box-shadow: none;
@@ -357,6 +773,7 @@ export default {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background: rgba(38, 43, 49, 0.486);
+    border: 2px solid #b3b3b326;
   }
 
   ::placeholder {
@@ -366,8 +783,320 @@ export default {
   }
 
   input:focus {
-    border: none;
     outline: none;
+    background-color: rgb(38 43 49 / 31%);
+    border-color: #0062f5;
+  }
+
+  .partners {
+    width: 100%;
+  }
+
+  .partnersPart {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 8rem;
+    align-items: center;
+  }
+
+  .partnersPart .col1 h2 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    text-align: left;
+    width: 80%;
+    margin-left: auto;
+  }
+
+  .partnersPart .col1 p {
+    color: #627597;
+    font-size: 20px;
+    text-align: left;
+    line-height: 24px;
+    font-weight: 400 !important;
+    width: 80%;
+    margin-left: auto;
+  }
+
+  .partnerImg2 {
+    width: 150px;
+    height: 150px;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    float: left;
+    margin-bottom: 0rem;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+  }
+
+  .numbersDiv {
+    margin-top: 10rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .numbersDiv h2 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+    width: 50%;
+    margin-left: 2rem;
+  }
+
+  .numbersDiv .numbers {
+    display: flex;
+    margin-top: 3rem;
+  }
+
+  .numbersDiv .numbers .number {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    background: #03111f;
+    border-radius: 30px;
+    z-index: 14;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    width: 35%;
+  }
+
+  .number h3 {
+    color: #fff;
+    font-size: 80px;
+    line-height: 84px;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+  }
+
+  .number .subtitle {
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .number p {
+    color: #627597;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .glow {
+    width: 5vw;
+    opacity: 0.5;
+    transform: scale(3.5);
+    left: 3%;
+    top: 23%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
+    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
+  }
+
+  .glow2 {
+    position: absolute;
+    width: 5vw;
+    transform: scale(3.5);
+    top: 80%;
+    z-index: 15;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
+    box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
+  }
+
+  .glow3 {
+    position: absolute;
+    width: 5vw;
+    transform: scale(4.5);
+    top: 55%;
+    left: 105%;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.3);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.3);
+    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.3);
+  }
+
+  .glow4 {
+    position: absolute;
+    width: 5vw;
+    transform: scale(4.5);
+    top: 10%;
+    opacity: 0.5;
+    left: 110%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
+    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
+  }
+  .glow5 {
+    position: absolute;
+    width: 5vw;
+    transform: scale(4.5);
+    top: 90%;
+    opacity: 0.5;
+    left: 110%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
+    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
+  }
+
+  .fifthDiv {
+    background: transparent;
+    padding: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .fifthDiv .adviser {
+    background: #03111f;
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .fifthDiv .adviser .col {
+    width: 50%;
+    padding: 6rem;
+  }
+  .fifthDiv .adviser .col h3 {
+    color: #fff;
+    width: 90%;
+    font-size: 44px;
+    line-height: 48px;
+    letter-spacing: -0.04em;
+    font-weight: 600;
+  }
+
+  .fifthDiv .adviser .col h3 span {
+    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+  }
+
+  .fifthDiv .adviser .col_image {
+    background: transparent;
+    border-radius: 60px;
+    background-image: url(/src/assets/searchimage.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+  }
+
+  .thirdPart {
+    margin-top: 10rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .thirdPartDiv {
+    background: #03111f;
+    border-radius: 30px;
+    padding: 5rem;
+  }
+
+  .thirdPartDiv .first {
+    background: transparent;
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    position: relative;
+  }
+
+  .thirdPartDiv .first h2 {
+    color: #fff;
+    width: 80%;
+    font-size: 54px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .thirdPartDiv .first p {
+    width: 60%;
+    color: #627597;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 3rem;
+  }
+
+  .first .col2 .building2 {
+    position: absolute;
+    top: 0%;
+    left: -10%;
+    top: 20%;
+    transform: rotate(20deg);
+  }
+
+  .thirdPartDiv .second {
+    background: transparent;
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 5rem;
+    display: flex;
+  }
+
+  .second .feature {
+    width: 25%;
+    margin-right: 8rem;
+  }
+
+  .second .feature h2 {
+    color: #fff;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+  }
+
+  .second .feature p {
+    color: #627597;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+  .second .feature .btn3 {
+    color: #0062f5;
+    cursor: pointer;
+    padding-bottom: 0.1rem;
+    width: fit-content;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid transparent;
+  }
+
+  .second .feature .btn3:hover {
+    border-bottom: 1px solid #0062f5;
   }
 }
 

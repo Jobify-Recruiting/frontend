@@ -67,22 +67,7 @@ export default {
   <div>
     <div class="main">
       <welcome></welcome>
-      <div class="firstPart">
-        <!--<div class="col1">
-          <div class="subtitle">Chi siamo</div>
-          <h2>Jobify, l'azienda del domani</h2>
-          <p>
-            Increase developer velocity. Secure every step. Automate entire
-            workflows. Redefine collaboration.
-            <span>Trusted by over 83 million developers.</span>
-          </p>
-          <div class="" style="display: flex; align-items: center">
-            <a href="#first"><button class="btn">Scopri di più</button></a>
-          </div>
-          <div class="glow"></div>
-        </div>
-        <div class="col2"></div>-->
-      </div>
+
       <div class="secondPart">
         <div class="text1 bold">
           <span>Increase developer velocity. </span>Secure every step. Automate
@@ -104,49 +89,52 @@ export default {
           <span>Trusted by over 83 million developers.</span>
         </div>
       </div>
-      <div class="bg">
-        <div class="fourthPart">
-          <div class="flex">
-            <div class="image1 transition"></div>
-            <div class="image2 transition"></div>
-          </div>
-          <div class="image3 transition"></div>
-          <div class="quote bold">
-            <span>“We’re big on</span> developing technologies that go way
-            beyond what’s available commercially. We envision the perfect
-            solution. Then we build something even better!”
-            <div class="author">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
-          </div>
+      <div class="fourthPart">
+        <div class="rowImages">
+          <div class="image1 transition"></div>
+          <div class="image2 transition" style="margin-top: 5rem"></div>
+          <div class="image1 transition"></div>
+          <div class="image2 transition" style="margin-top: 5rem"></div>
         </div>
       </div>
-      <div class="bg">
-        <div class="fifthPart">
-          <div class="numbers">
-            <div class="number transition">60</div>
-            <div class="subtitle transition">persone</div>
-          </div>
-          <div class="text3">
-            “We’re big on developing technologies that go way beyond what’s
-            available commercially. We envision the perfect solution. Then we
-            build something even better!”
-          </div>
-
-          <div class="parallel_texts">
-            <div class="text4">
-              “We’re big on developing technologies that go way beyond what’s
-              available commercially. We envision the perfect solution. Then we
-              build something even better!”
+      <div class="fifthPart">
+        <div class="quotesDiv">
+          <div class="quotes">
+            <div class="quote">
+              <div class="quoteh4">Cos'è <span>Jobify</span></div>
+              <div class="quoteh5">
+                Inserire descrizione o altro dell'azienda, descrizione o altro
+                dell'azienda, altro Inserire descrizione o altro dell'azienda.
+              </div>
             </div>
-            <div class="text4">
-              “We’re big on developing technologies that go way beyond what’s
-              available commercially. We envision the perfect solution. Then we
-              build something even better!”
+            <div class="quote">
+              <div class="quoteh4">
+                <span>Storia</span> di Jobify Recruiting
+              </div>
+              <div class="quoteh5">
+                Inserire descrizione o altro dell'azienda, descrizione o altro
+                dell'azienda, altro Inserire descrizione o altro dell'azienda,
+                descrizione o altro dell'azienda.
+              </div>
             </div>
-            <div class="text4">
-              “We’re big on developing technologies that go way beyond what’s
-              available commercially. We envision the perfect solution. Then we
-              build something even better!”
+          </div>
+          <div class="quotes">
+            <div class="quote">
+              <div class="quoteh4">
+                <span>Storia</span> di Jobify Recruiting
+              </div>
+              <div class="quoteh5">
+                Inserire descrizione o altro dell'azienda, descrizione o altro
+                dell'azienda, altro Inserire descrizione o altro dell'azienda,
+                descrizione o altro dell'azienda.
+              </div>
+            </div>
+            <div class="quote">
+              <div class="quoteh4">Cos'è <span>Jobify</span></div>
+              <div class="quoteh5">
+                Inserire descrizione o altro dell'azienda, descrizione o altro
+                dell'azienda, altro Inserire descrizione o altro dell'azienda.
+              </div>
             </div>
           </div>
         </div>
@@ -154,6 +142,16 @@ export default {
       <div class="sixtPart">
         <h2>We are inventors, builders, and doers</h2>
         <div class="team1">
+          <div class="person2">
+            <div class="photo"></div>
+            <div class="name">Davide Maggio</div>
+            <div class="jobtitle">Founder & CEO</div>
+          </div>
+          <div class="person2">
+            <div class="photo"></div>
+            <div class="name">Davide Maggio</div>
+            <div class="jobtitle">Founder & CEO</div>
+          </div>
           <div class="person2">
             <div class="photo"></div>
             <div class="name">Davide Maggio</div>
@@ -257,12 +255,12 @@ export default {
 }
 
 .bold {
-  color: #627597 !important;
+  color: #fff !important;
   transition: 1s all ease;
 }
 
 .bold.active {
-  color: #fff !important;
+  color: #627597 !important;
   opacity: 1;
 }
 
@@ -273,6 +271,18 @@ export default {
 }
 
 @media (min-width: 1024px) {
+  .main {
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #ada996
+    );
+    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad);
+  }
+
   .flowSingleBtn {
     margin-top: 15rem;
   }
@@ -418,7 +428,7 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-bottom: 5rem;
-    background: #030812;
+    background: #ffffff;
   }
 
   .secondPart .text1 {
@@ -445,7 +455,7 @@ export default {
     padding-right: 8rem;
     padding-top: 10rem;
     padding-bottom: 5rem;
-    background: #030812;
+    background: #ffffff;
   }
 
   .thirdPart .text1 {
@@ -471,13 +481,11 @@ export default {
     padding-right: 8rem;
     padding-top: 10rem;
     padding-bottom: 5rem;
-    background-image: linear-gradient(
-      to top,
-      transparent 1%,
-      #7fc0f9 20%,
-      #3350af 55%,
-      transparent 100%
-    );
+    background: #fff;
+  }
+
+  .rowImages {
+    display: flex;
   }
 
   .flex {
@@ -485,72 +493,23 @@ export default {
   }
 
   .fourthPart .image1 {
-    width: 50vw;
-    height: 30vw;
-    background-image: url(/src/assets/ph9.JPG);
+    width: 20vw;
+    height: 35vw;
+    background-image: url(/src/assets/ph10.png);
     background-position: center;
     background-size: cover;
     border-radius: 20px;
   }
 
   .fourthPart .image2 {
-    width: 25vw;
-    height: 30vw;
-    margin-left: 6rem;
-    margin-top: 3rem;
-    background-image: url(/src/assets/ph9.JPG);
+    width: 20vw;
+    height: 35vw;
+    background-image: url(/src/assets/ph10.png);
     background-position: center;
     background-size: cover;
     border-radius: 20px;
-  }
-
-  .fourthPart .image3 {
-    width: 40vw;
-    height: 30vw;
-    margin-left: 8rem;
-    margin-top: 3rem;
-    background-image: url(/src/assets/ph9.JPG);
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
-  }
-
-  .fourthPart .quote {
-    margin-top: 5rem;
-    width: 60%;
-    color: #fff;
-    font-size: 40px;
-    line-height: 44px;
-    font-weight: 400;
-    margin-left: auto;
-  }
-
-  .fourthPart .quote span {
-    margin-left: 5rem;
-  }
-
-  .fourthPart .quote .author {
-    margin-top: 2rem;
-    width: 60%;
-    color: #fff;
-    font-size: 30px;
-    line-height: 34px;
-    font-weight: 300;
-    margin-left: 2rem;
-  }
-
-  .fourthPart .quote .jobtitle {
-    margin-top: 0rem;
-    width: 60%;
-    color: #627597;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 300;
-    margin-left: 2rem;
-  }
-
-  .bg {
-    background: #030812;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   .fifthPart {
@@ -558,87 +517,73 @@ export default {
     padding-right: 8rem;
     padding-top: 10rem;
     padding-bottom: 5rem;
-    background-image: linear-gradient(
-      to top,
-      #e0c3fc 20%,
-      #8ec5fc 55%,
-      transparent 100%
-    );
+    background: #fff;
   }
 
-  .fifthPart .numbers {
+  .quotesDiv {
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .quote {
+    width: 65vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .quotes {
     display: flex;
-    align-items: center;
+    margin-bottom: 5rem;
   }
 
-  .fifthPart .number {
-    text-align: center;
-    font-size: 600px;
-    color: white;
-    margin-left: auto;
-    margin-right: 0;
-    font-weight: 600;
-    line-height: 500px;
-  }
-
-  .fifthPart .subtitle {
-    text-align: center;
-    font-size: 100px;
-    transform: rotate(-90deg);
-    color: white;
-    width: fit-content;
-    height: fit-content;
-    margin: 0;
-    margin-right: auto;
-    font-weight: 200;
-  }
-  .fifthPart .text3 {
-    margin-top: 5rem;
-    width: 100%;
-    color: #030812;
-    width: 50%;
-    font-size: 40px;
-    line-height: 44px;
-    font-weight: 400;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .fifthPart .text4 {
-    margin-top: 5rem;
-    width: 100%;
-    color: #344467;
-    width: 50%;
-    font-size: 30px;
-    line-height: 34px;
-    font-weight: 400;
+  .quotes .quote {
+    margin-left: 3rem;
     margin-right: 3rem;
-    text-align: center;
   }
 
-  .fifthPart .parallel_texts {
-    display: flex;
-    margin-top: 5rem;
+  .quotes .quoteh4 {
+    font-size: 54px;
+    line-height: 54px;
+    font-weight: 800;
+    color: #030812;
+    margin-bottom: 1rem;
+    text-align: left !important;
+    letter-spacing: -0.04em;
+  }
+  .quotes .quoteh4 span {
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800 !important;
+  }
+
+  .quotes .quoteh5 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #627597;
+    margin-bottom: 2rem;
   }
 
   .sixtPart {
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
-    background: #030812;
+    padding-top: 5rem;
+    padding-bottom: 0rem;
+    background: #fff;
   }
 
   .sixtPart h2 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #fff;
-    font-size: 64px;
+    color: #030812;
+    font-size: 54px;
     font-weight: 800 !important;
     width: 40%;
-    line-height: 68px;
+    line-height: 58px;
     letter-spacing: -0.04em !important;
   }
 
@@ -646,7 +591,7 @@ export default {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #fff;
+    color: #030812;
     font-size: 14px;
     font-weight: 500 !important;
     width: 40%;
@@ -654,7 +599,7 @@ export default {
     letter-spacing: 2px !important;
     text-transform: uppercase;
     margin-top: 3rem;
-    margin-bottom: 6rem;
+    margin-bottom: 0rem;
   }
 
   .team1 {
@@ -669,7 +614,7 @@ export default {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
   }
@@ -691,8 +636,8 @@ export default {
   }
 
   .team1 .person2 .photo {
-    width: 28vw;
-    height: 25vw;
+    width: 16vw;
+    height: 16vw;
     background-image: url(/src/assets/ph9.JPG);
     background-position: center;
     background-size: cover;
@@ -703,8 +648,8 @@ export default {
   }
 
   .team2 .person .photo {
-    width: auto;
-    height: 17vw;
+    width: 13vw;
+    height: 13vw;
     background-image: url(/src/assets/ph9.JPG);
     background-position: center;
     background-size: cover;
@@ -712,6 +657,8 @@ export default {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .photo:hover {
@@ -720,36 +667,38 @@ export default {
 
   .person .name {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    color: #fff;
+    font-size: 16px;
+    line-height: 16px;
+    color: #030812;
+    font-weight: 400;
   }
 
   .person .jobtitle {
     text-align: center;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 14px;
     color: #627597;
     margin-top: 0.2rem;
   }
 
   .person2 .name {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    color: #030812;
+    font-weight: 400;
   }
 
   .person2 .jobtitle {
     text-align: center;
     font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 14px;
     color: #627597;
     margin-top: 0.2rem;
   }
