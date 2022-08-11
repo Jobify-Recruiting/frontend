@@ -379,7 +379,7 @@ export default {
             style="
               left: 32%;
               top: -15%;
-              background-image: url(/src/assets/partners/logo1.png);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo1.png);
             "
           >
             <div class="" style=""></div>
@@ -391,7 +391,7 @@ export default {
             style="
               right: 16%;
               top: 4%;
-              background-image: url(/src/assets/partners/logo2.png);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo2.png);
             "
           >
             <div class="" style=""></div>
@@ -427,7 +427,7 @@ export default {
             style="
               right: 22%;
               top: 77%;
-              background-image: url(/src/assets/partners/logo5.png);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
             "
           >
             <div class="" style=""></div>
@@ -439,7 +439,7 @@ export default {
             style="
               top: 60%;
               left: 18%;
-              background-image: url(/src/assets/partners/logo6.png);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo6.png);
             "
             ><div class="" style=""></div
           ></a>
@@ -450,7 +450,7 @@ export default {
             style="
               left: 13%;
               top: 14%;
-              background-image: url(/src/assets/partners/logo7.png);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo7.png);
             "
             ><div class="" style=""></div
           ></a>
@@ -461,7 +461,7 @@ export default {
             style="
               left: 41%;
               top: 87%;
-              background-image: url(/src/assets/partners/logo8.png);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo8.png);
             "
             ><div class="" style=""></div
           ></a>

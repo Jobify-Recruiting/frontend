@@ -959,7 +959,7 @@ export default {
             <div
               class="col"
               style="
-                background-image: url(/src/assets/img_h1.png);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/img_h1.png);
                 background-size: cover;
               "
             ></div>

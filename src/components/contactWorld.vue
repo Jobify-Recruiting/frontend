@@ -634,7 +634,7 @@ export default {
   .office .image {
     width: 5vw;
     height: 5vw;
-    background-image: url(/src/assets/ph15.JPG);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph15.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 25rem;
@@ -646,7 +646,7 @@ export default {
   .office .image2 {
     width: 5vw;
     height: 5vw;
-    background-image: url(/src/assets/ph17.JPG);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph17.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 25rem;
@@ -658,7 +658,7 @@ export default {
   .office .image3 {
     width: 5vw;
     height: 5vw;
-    background-image: url(/src/assets/ph19.JPG);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph19.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 25rem;
