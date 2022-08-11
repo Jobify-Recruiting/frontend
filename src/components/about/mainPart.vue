@@ -143,17 +143,26 @@ export default {
         <h2>We are inventors, builders, and doers</h2>
         <div class="team1">
           <div class="person2">
-            <div class="photo"></div>
+            <div
+              class="photo"
+              style="background-image: url(/src/assets/pe4.JPeG)"
+            ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
           </div>
           <div class="person2">
-            <div class="photo"></div>
+            <div
+              class="photo"
+              style="background-image: url(/src/assets/pe3.JPG)"
+            ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
           </div>
           <div class="person2">
-            <div class="photo"></div>
+            <div
+              class="photo"
+              style="background-image: url(/src/assets/pe2.JPG)"
+            ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
           </div>
@@ -163,7 +172,39 @@ export default {
 
         <div class="team2">
           <div class="person">
+            <div
+              class="photo"
+              style="background-image: url(/src/assets/pe1.JPG)"
+            ></div>
+            <div class="name">Davide Maggio</div>
+            <div class="jobtitle">Founder & CEO</div>
+          </div>
+          <div class="person">
             <div class="photo"></div>
+            <div class="name">Davide Maggio</div>
+            <div class="jobtitle">Founder & CEO</div>
+          </div>
+          <div class="person">
+            <div
+              class="photo"
+              style="background-image: url(/src/assets/pe2.JPG)"
+            ></div>
+            <div class="name">Davide Maggio</div>
+            <div class="jobtitle">Founder & CEO</div>
+          </div>
+          <div class="person">
+            <div
+              class="photo"
+              style="background-image: url(/src/assets/pe3.JPG)"
+            ></div>
+            <div class="name">Davide Maggio</div>
+            <div class="jobtitle">Founder & CEO</div>
+          </div>
+          <div class="person">
+            <div
+              class="photo"
+              style="background-image: url(/src/assets/pe4.JPeG)"
+            ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
           </div>
@@ -178,27 +219,10 @@ export default {
             <div class="jobtitle">Founder & CEO</div>
           </div>
           <div class="person">
-            <div class="photo"></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
-          </div>
-          <div class="person">
-            <div class="photo"></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
-          </div>
-          <div class="person">
-            <div class="photo"></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
-          </div>
-          <div class="person">
-            <div class="photo"></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
-          </div>
-          <div class="person">
-            <div class="photo"></div>
+            <div
+              class="photo"
+              style="background-image: url(/src/assets/pe1.JPG)"
+            ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
           </div>

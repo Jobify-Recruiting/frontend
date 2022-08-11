@@ -148,6 +148,44 @@ export default {
             </div>
           </div>
         </div>
+        <div class="secondPart2">
+          <div class="title">
+            <h2>Come funziona il processo di selezione</h2>
+            <p>
+              Get updates on the GitHub activity you've subscribed to. Use the
+              notifications inbox to customize, triage, and manage your updates.
+            </p>
+          </div>
+          <div class="steps">
+            <div class="step transition">
+              <div class="number">1</div>
+              <div class="title">Crea profilo</div>
+              <div class="text">
+                Get updates on the GitHub activity you've subscribed to. Use the
+                notifications inbox to customize, triage, and manage your
+                updates.
+              </div>
+            </div>
+            <div class="step transition" style="margin-top: 3rem">
+              <div class="number">2</div>
+              <div class="title">Crea profilo</div>
+              <div class="text">
+                Get updates on the GitHub activity you've subscribed to. Use the
+                notifications inbox to customize, triage, and manage your
+                updates.
+              </div>
+            </div>
+            <div class="step transition" style="margin-top: 6rem">
+              <div class="number">3</div>
+              <div class="title">Crea profilo</div>
+              <div class="text">
+                Get updates on the GitHub activity you've subscribed to. Use the
+                notifications inbox to customize, triage, and manage your
+                updates.
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="secondPart">
           <div class="cols">
             <div class="col col2">
@@ -453,6 +491,160 @@ export default {
               ></router-link>
             </div>
             <div class="col_image"></div>
+          </div>
+        </div>
+
+        <div class="seventh">
+          <div class="asks">
+            <h2>Domande frequenti</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="card transition">
+                <div class="card-header" id="heading1">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapse1"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      <p>></p>
+                      Collapsible Group Item #1
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapse1"
+                  class="collapse"
+                  aria-labelledby="heading1"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Some placeholder content for the first accordion panel. This
+                    panel is shown by default, thanks to the
+                    <code>.show</code> class.
+                  </div>
+                </div>
+              </div>
+              <div class="card transition">
+                <div class="card-header" id="heading2">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapse2"
+                      aria-expanded="false"
+                      aria-controls="collapse2"
+                    >
+                      <p>></p>
+                      Collapsible Group Item #1
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapse2"
+                  class="collapse"
+                  aria-labelledby="heading2"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Some placeholder content for the first accordion panel. This
+                    panel is shown by default, thanks to the
+                    <code>.show</code> class.
+                  </div>
+                </div>
+              </div>
+              <div class="card transition">
+                <div class="card-header" id="heading3">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapse3"
+                      aria-expanded="false"
+                      aria-controls="collapse3"
+                    >
+                      <p>></p>
+                      Collapsible Group Item #1
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapse3"
+                  class="collapse"
+                  aria-labelledby="heading3"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Some placeholder content for the first accordion panel. This
+                    panel is shown by default, thanks to the
+                    <code>.show</code> class.
+                  </div>
+                </div>
+              </div>
+              <div class="card transition">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <p>></p>
+                      Collapsible Group Item #2
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Some placeholder content for the second accordion panel.
+                    This panel is hidden by default.
+                  </div>
+                </div>
+              </div>
+              <div class="card transition">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <p>></p>
+                      Collapsible Group Item #3
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    And lastly, the placeholder content for the third and final
+                    accordion panel. This panel is hidden by default.
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -955,6 +1147,111 @@ export default {
     box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
   }
 
+  .secondPart2 {
+    padding-top: 5rem;
+    margin-bottom: 0rem;
+  }
+
+  .secondPart2 h2 {
+    color: #fff;
+    letter-spacing: -0.04em;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 800;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .secondPart2 .title p {
+    color: #627597;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .secondPart2 .cols {
+    margin-top: 5rem !important;
+  }
+
+  .secondPart2 .cols .col2 {
+    width: 30%;
+  }
+
+  .steps {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+  }
+
+  .step {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    background: #03111f;
+    border-radius: 30px;
+    z-index: 14;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    float: left;
+    transition: all 0.3s ease-out;
+    text-align: left;
+    -webkit-box-shadow: 0px 0px 105px 39px rgb(46 81 255 / 20%);
+    -moz-box-shadow: 0px 0px 105px 39px rgba(46, 81, 255, 20%);
+    box-shadow: 0px 0px 105px 3px rgb(46 91 255 / 5%);
+  }
+
+  .step .number {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    background: linear-gradient(90.91deg, #027bfd -24.67%, #5162fb 53.55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    margin-bottom: 1rem;
+  }
+
+  .step .title {
+    color: #fff;
+    margin-left: 0 !important;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    letter-spacing: -0.04em !important;
+    width: 100% !important;
+    margin-bottom: 0.2rem;
+  }
+
+  .step .text {
+    color: #627597;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+  }
+
   .fifthDiv {
     background: transparent;
     padding: 3rem;
@@ -1097,6 +1394,105 @@ export default {
 
   .second .feature .btn3:hover {
     border-bottom: 1px solid #0062f5;
+  }
+
+  .seventh {
+    width: 100%;
+    margin-top: 6rem;
+    padding-bottom: 10rem;
+  }
+
+  .seventh .asks h2 {
+    color: #fff;
+    font-size: 50px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    letter-spacing: -2.5px;
+  }
+
+  .seventh .accordion {
+    margin-top: 3rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seventh .accordion .card {
+    background: transparent;
+    border-bottom: 2px solid #111925 !important;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0;
+  }
+
+  .seventh .accordion .card:hover {
+    border-bottom: 2px solid #233144 !important;
+  }
+
+  .seventh .accordion .card .btn:focus-visible {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  .seventh .accordion .card .btn:focus {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  .seventh .btn {
+    padding: 0 !important;
+  }
+
+  .btn-link {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-link:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .btn-link p {
+    color: rgb(96, 133, 255);
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 2rem;
+    width: fit-content;
+    transform: rotate(90deg);
+    margin-bottom: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .collapsed p {
+    transform: rotate(0deg);
+  }
+
+  .card-body {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #627597;
+  }
+
+  code {
+    font-size: 87.5%;
+    color: #fff;
+    word-wrap: break-word;
+  }
+
+  .seventh .btn {
+    background: transparent !important;
   }
 }
 

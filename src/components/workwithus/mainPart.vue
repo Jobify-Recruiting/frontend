@@ -55,15 +55,67 @@ export default {
         <div class="glow5"></div>
 
         <div class="firstPart">
-          <div class="people1" style="top: 60%"></div>
-          <div class="people2" style="top: 90%; left: 10%"></div>
-          <div class="people2" style="top: 10%; left: 5%"></div>
-          <div class="people1" style="top: 40%; left: 12%"></div>
+          <div
+            class="people1"
+            style="top: 60%; background-image: url(/src/assets/pe2.jpg)"
+          ></div>
+          <div
+            class="people2"
+            style="
+              top: 90%;
+              left: 10%;
+              background-image: url(/src/assets/pe1.jpg);
+            "
+          ></div>
+          <div
+            class="people2"
+            style="
+              top: 10%;
+              left: 5%;
+              background-image: url(/src/assets/pe3.jpg);
+            "
+          ></div>
+          <div
+            class="people1"
+            style="
+              top: 40%;
+              left: 12%;
+              background-image: url(/src/assets/ph9.jpg);
+            "
+          ></div>
 
-          <div class="people1" style="top: 5%; right: 10%"></div>
-          <div class="people2" style="top: 45%; right: 0%"></div>
-          <div class="people2" style="top: 80%; right: 10%"></div>
-          <div class="people1" style="top: 100%; right: 0%"></div>
+          <div
+            class="people1"
+            style="
+              top: 5%;
+              right: 10%;
+              background-image: url(/src/assets/pe1.jpg);
+            "
+          ></div>
+          <div
+            class="people2"
+            style="
+              top: 45%;
+              right: 0%;
+              background-image: url(/src/assets/pe4.jpeg);
+            "
+          ></div>
+          <div
+            class="people2"
+            style="
+              top: 80%;
+              right: 10%;
+              background-image: url(/src/assets/pe2.jpg);
+            "
+          ></div>
+          <div
+            class="people1"
+            style="
+              top: 100%;
+              right: 0%;
+              background-image: url(/src/assets/pe3.jpg);
+            "
+          ></div>
           <div class="subtitle">Lavora con noi</div>
           <h2>Il team al centro di tutti i processi umani.</h2>
           <p>
@@ -277,7 +329,6 @@ export default {
   }
 
   .people1 {
-    background-image: url(/src/assets/ph9.JPG);
     background-size: cover;
     background-position: center;
     border-radius: 25rem;
@@ -288,7 +339,6 @@ export default {
   }
 
   .people2 {
-    background-image: url(/src/assets/ph9.JPG);
     background-size: cover;
     background-position: center;
     border-radius: 25rem;

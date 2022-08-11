@@ -155,10 +155,7 @@ export default {
         <div class="first">
           <div class="title">
             <h2>
-              <span
-                >Guarda il nostro workflow, come lavoriamo ogni giorno con i
-                nostri clienti</span
-              >
+              <span>Che servizi offre Jobify</span>
             </h2>
             <p>
               Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
@@ -406,7 +403,7 @@ export default {
             style="
               right: 32%;
               top: -18%;
-              background-image: url(/src/assets/partners/logo3.png);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo3.png);
             "
           >
             <div class="" style=""></div>
@@ -418,7 +415,7 @@ export default {
             style="
               right: 12%;
               top: 43%;
-              background-image: url(/src/assets/partners/logo4.png);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo4.png);
             "
           >
             <div class="" style=""></div>

@@ -106,7 +106,15 @@ export default {
       content.style.visibility = "visible";
       content.style.display = "inline";
       var overlay = document.getElementById("suggestWordsOverlay");
-      overlay.style.display = "inline";
+      overlay.style.display = "block";
+    },
+
+    closeSuggestWords() {
+      let content = document.querySelector(".suggestWords");
+      content.style.width = "0%";
+      content.style.opacity = "0";
+      content.style.visibility = "hidden";
+      content.style.display = "none";
     },
 
     jobAlert() {
@@ -196,7 +204,24 @@ export default {
           </div>
           <div class="suggestWords">
             <div id="suggestWordsOverlay"></div>
-            <h5>Parole chiave</h5>
+            <div class="suggestTopDiv">
+              <h5>Parole chiave</h5>
+              <div class="closesuggestWords" @click="closeSuggestWords()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-x-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
             <div class="keyWords">
               <div class="keyWord">Farm</div>
               <div class="keyWord">Farm</div>
@@ -661,7 +686,10 @@ export default {
             <div class="position">
               <div class="blur"></div>
               <div class="topPosition">
-                <div class="photo">
+                <div
+                  class="photo"
+                  style="background-image: url(/src/assets/pe1.JPG)"
+                >
                   <div class="photoBlur">
                     <p>
                       Inserire la descrizione della posizione del progetto, la
@@ -719,7 +747,10 @@ export default {
             <div class="position">
               <div class="blur"></div>
               <div class="topPosition">
-                <div class="photo">
+                <div
+                  class="photo"
+                  style="background-image: url(/src/assets/pe2.JPG)"
+                >
                   <div class="photoBlur">
                     <p>
                       Inserire la descrizione della posizione del progetto, la
@@ -777,7 +808,10 @@ export default {
             <div class="position">
               <div class="blur"></div>
               <div class="topPosition">
-                <div class="photo">
+                <div
+                  class="photo"
+                  style="background-image: url(/src/assets/pe3.JPG)"
+                >
                   <div class="photoBlur">
                     <p>
                       Inserire la descrizione della posizione del progetto, la
@@ -835,7 +869,10 @@ export default {
             <div class="position">
               <div class="blur"></div>
               <div class="topPosition">
-                <div class="photo">
+                <div
+                  class="photo"
+                  style="background-image: url(/src/assets/pe4.JPeG)"
+                >
                   <div class="photoBlur">
                     <p>
                       Inserire la descrizione della posizione del progetto, la
@@ -1349,7 +1386,7 @@ export default {
   .topPosition .photo {
     width: 24vw;
     height: 22vw;
-    background-image: url(/src/assets/ph9.JPG);
+
     background-position: center;
     background-size: cover;
     border-radius: 12px;
@@ -1740,7 +1777,7 @@ export default {
     box-shadow: none;
     padding-left: 1rem;
     padding-top: 1rem;
-    padding-right: 3rem;
+    padding-right: 1rem;
     padding-bottom: 1rem;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -1750,6 +1787,17 @@ export default {
     visibility: hidden;
     opacity: 0;
     display: unset;
+  }
+
+  .closesuggestWords {
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .suggestTopDiv {
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   #suggestWordsOverlay {
@@ -1766,6 +1814,7 @@ export default {
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
     line-height: 14px;
+    margin-bottom: 0 !important;
   }
 
   .suggestWords .keyWords {
