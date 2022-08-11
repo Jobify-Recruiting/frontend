@@ -145,7 +145,9 @@ export default {
           <div class="person2">
             <div
               class="photo"
-              style="background-image: url(/src/assets/pe4.JPeG)"
+              style="
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+              "
             ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
@@ -153,7 +155,9 @@ export default {
           <div class="person2">
             <div
               class="photo"
-              style="background-image: url(/src/assets/pe3.JPG)"
+              style="
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+              "
             ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
@@ -161,7 +165,9 @@ export default {
           <div class="person2">
             <div
               class="photo"
-              style="background-image: url(/src/assets/pe2.JPG)"
+              style="
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+              "
             ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
@@ -174,7 +180,9 @@ export default {
           <div class="person">
             <div
               class="photo"
-              style="background-image: url(/src/assets/pe1.JPG)"
+              style="
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+              "
             ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
@@ -187,7 +195,9 @@ export default {
           <div class="person">
             <div
               class="photo"
-              style="background-image: url(/src/assets/pe2.JPG)"
+              style="
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+              "
             ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
@@ -195,7 +205,9 @@ export default {
           <div class="person">
             <div
               class="photo"
-              style="background-image: url(/src/assets/pe3.JPG)"
+              style="
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+              "
             ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
@@ -203,7 +215,9 @@ export default {
           <div class="person">
             <div
               class="photo"
-              style="background-image: url(/src/assets/pe4.JPeG)"
+              style="
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+              "
             ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
@@ -221,7 +235,9 @@ export default {
           <div class="person">
             <div
               class="photo"
-              style="background-image: url(/src/assets/pe1.JPG)"
+              style="
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+              "
             ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>

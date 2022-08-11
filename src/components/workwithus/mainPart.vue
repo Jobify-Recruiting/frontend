@@ -57,14 +57,17 @@ export default {
         <div class="firstPart">
           <div
             class="people1"
-            style="top: 60%; background-image: url(/src/assets/pe2.jpg)"
+            style="
+              top: 60%;
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+            "
           ></div>
           <div
             class="people2"
             style="
               top: 90%;
               left: 10%;
-              background-image: url(/src/assets/pe1.jpg);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
             "
           ></div>
           <div
@@ -72,7 +75,7 @@ export default {
             style="
               top: 10%;
               left: 5%;
-              background-image: url(/src/assets/pe3.jpg);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
             "
           ></div>
           <div
@@ -80,7 +83,7 @@ export default {
             style="
               top: 40%;
               left: 12%;
-              background-image: url(/src/assets/ph9.jpg);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
             "
           ></div>
 
@@ -89,7 +92,7 @@ export default {
             style="
               top: 5%;
               right: 10%;
-              background-image: url(/src/assets/pe1.jpg);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
             "
           ></div>
           <div
@@ -97,7 +100,7 @@ export default {
             style="
               top: 45%;
               right: 0%;
-              background-image: url(/src/assets/pe4.jpeg);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
             "
           ></div>
           <div
@@ -105,7 +108,7 @@ export default {
             style="
               top: 80%;
               right: 10%;
-              background-image: url(/src/assets/pe2.jpg);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
             "
           ></div>
           <div
@@ -113,7 +116,7 @@ export default {
             style="
               top: 100%;
               right: 0%;
-              background-image: url(/src/assets/pe3.jpg);
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
             "
           ></div>
           <div class="subtitle">Lavora con noi</div>

@@ -91,49 +91,65 @@ export default {
               <a href="">
                 <div
                   class="partnerImg2 transition"
-                  style="background-image: url(/src/assets/partners/logo5.png)"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
+                  "
                 ></div
               ></a>
               <a href="">
                 <div
                   class="partnerImg2 transition"
-                  style="background-image: url(/src/assets/partners/logo6.png)"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo6.png);
+                  "
                 ></div
               ></a>
               <a href="">
                 <div
                   class="partnerImg2 transition"
-                  style="background-image: url(/src/assets/partners/logo7.png)"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo7.png);
+                  "
                 ></div
               ></a>
               <a href="">
                 <div
                   class="partnerImg2 transition"
-                  style="background-image: url(/src/assets/partners/logo8.png)"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo8.png);
+                  "
                 ></div
               ></a>
               <a href="">
                 <div
                   class="partnerImg2 transition"
-                  style="background-image: url(/src/assets/partners/logo1.png)"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo1.png);
+                  "
                 ></div>
               </a>
               <a href="">
                 <div
                   class="partnerImg2 transition"
-                  style="background-image: url(/src/assets/partners/logo2.png)"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo2.png);
+                  "
                 ></div>
               </a>
               <a href="">
                 <div
                   class="partnerImg2 transition"
-                  style="background-image: url(/src/assets/partners/logo3.png)"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo3.png);
+                  "
                 ></div
               ></a>
               <a href=""
                 ><div
                   class="partnerImg2 transition"
-                  style="background-image: url(/src/assets/partners/logo4.png)"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo4.png);
+                  "
                 ></div
               ></a>
             </div>
