@@ -148,18 +148,33 @@ export default {
             ></a>
           </div>
         </div>
-        <div class="values">
+        <div class="values" style="margin-top: 20rem">
           <div class="value1">
+            <h2>Valori</h2>
             <span>Increase developer velocity.</span> Secure every step.
             Automate entire workflows. Redefine collaboration. Trusted by over
             83 million developers.
           </div>
-          <div class="value2">
+          <div class="value2" style="margin-top: 3rem">
+            <h2>Valori</h2>
             Increase developer velocity. Secure every step. Automate entire
             workflows. Redefine collaboration.
             <span>Trusted by over 83 million developers.</span>
           </div>
         </div>
+
+        <div class="secondPart">
+          <div class="teamPhoto transition"></div>
+          <div class="text">
+            <h2>Il team al centro</h2>
+            <p>
+              Increase developer velocity. Secure every step. Automate entire
+              workflows. Redefine collaboration. Trusted by over 83 million
+              developers.
+            </p>
+          </div>
+        </div>
+
         <div class="cols">
           <div class="col col_1">
             <p>Lavora con noi</p>
@@ -354,17 +369,25 @@ export default {
   .values {
     display: flex;
     width: 100%;
-    margin-top: 20rem;
+    margin-top: 10rem;
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .values h2 {
+    color: #010b15;
+    letter-spacing: -0.04em;
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 800;
   }
 
   .values .value1 {
     margin-right: 2rem;
     margin-top: 0.5rem;
     color: #627597;
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 400;
     width: 80%;
     margin-left: 3rem;
@@ -374,8 +397,8 @@ export default {
     margin-right: 2rem;
     margin-top: 0.5rem;
     color: #627597;
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 400;
     width: 80%;
     margin-left: 3rem;
@@ -451,7 +474,7 @@ export default {
 
   .first .cols {
     display: flex;
-    margin-top: 15rem;
+    margin-top: 10rem;
     margin-bottom: 3rem;
   }
 
@@ -515,8 +538,8 @@ export default {
 
   .cols .col .subtitle {
     color: #627597;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .images {
@@ -578,6 +601,46 @@ export default {
     outline: none;
     background-color: rgb(38 43 49 / 31%);
     border-color: #0062f5;
+  }
+
+  .teamPhoto {
+    background-image: url(/src/assets/team.jpg);
+    background-position: center;
+    width: 100%;
+    height: 40vw;
+    border-radius: 30px;
+  }
+
+  .secondPart {
+    padding-top: 5rem;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .secondPart .text {
+    margin-left: 5rem;
+  }
+
+  .secondPart h2 {
+    color: #010b15;
+    letter-spacing: -0.04em;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 800;
+    width: 90%;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .secondPart p {
+    color: #627597;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 90%;
+    margin-right: auto;
+    text-align: left;
   }
 
   .glow {

@@ -162,20 +162,39 @@ export default {
               tua ricerca e selezione, la tua ricerca e selezione, la tua
               ricerca e selezione
               <br />
-              <!--<button
-                class="btn2"
-                style="
-                  margin-left: auto;
-                  margin-right: auto;
-                  width: fit-content;
-                "
-              >
-                <a href="#">Entra ora nel mondo Jobify <span>></span></a>
-              </button>-->
             </p>
+            <div class="steps">
+              <div class="feature transition">
+                <div class="number">1</div>
+                <div class="title">Servizio 1</div>
+                <div class="text">
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </div>
+              </div>
+              <div class="feature transition">
+                <div class="number">2</div>
+                <div class="title">Servizio 2</div>
+                <div class="text">
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </div>
+              </div>
+              <div class="feature transition">
+                <div class="number">3</div>
+                <div class="title">Servizio 3</div>
+                <div class="text">
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="second">
+        <!--<div class="second">
           <div class="flow">
             <div class="elemsx">
               <h2>
@@ -189,9 +208,6 @@ export default {
                   riferito al testo superiore</span
                 >
               </p>
-              <!--<button class="btn2">
-                <a href="#">Entra ora nel mondo Jobify <span>></span></a>
-              </button>-->
               <a href="#first"
                 ><button class="btn">
                   Scopri di più
@@ -216,23 +232,6 @@ export default {
               <div class="image"></div>
             </div>
           </div>
-
-          <!--<div class="numbers transition">
-            <div class="numbersHR_left"></div>
-            <div class="number">
-              <div class="num">+ &nbsp;</div>
-              <div class="subtitle">ore di lavoro</div>
-            </div>
-            <div class="number">
-              <div class="num">+ &nbsp;</div>
-              <div class="subtitle">ore di lavoro</div>
-            </div>
-            <div class="number">
-              <div class="num">+ &nbsp;</div>
-              <div class="subtitle">ore di lavoro</div>
-            </div>
-            <div class="numbersHR_right"></div>
-          </div>-->
 
           <div class="flow">
             <div class="elemsx" style="padding-bottom: 10rem">
@@ -330,11 +329,286 @@ export default {
               </div>
             </div>
           </div>
+        </div>-->
+      </div>
+    </div>
+
+    <div class="clients">
+      <div class="secondDiv" id="second">
+        <div class="content">
+          <div class="first">
+            <div class="title">
+              <h2>
+                <span>I nostri clienti</span>
+              </h2>
+              <p>
+                Qui inseriamo una frase che possa descrivere i valori dei nostri
+                clienti
+                <br />
+              </p>
+              <div class="steps">
+                <div class="step transition">
+                  <div class="imageStep"></div>
+                  <div class="title">Azienda</div>
+                  <div class="text">Descrizione del tipo di cliente</div>
+                </div>
+                <div class="step transition">
+                  <div class="imageStep"></div>
+                  <div class="title">Candidati</div>
+                  <div class="text">Descrizione del tipo di cliente</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="workflow" id="workflow">
+      <div class="workflowTitle">
+        <h2>Il nostro workflow</h2>
+      </div>
+      <div class="columns">
+        <div class="column br">
+          <div class="background transition">
+            <div class="number">1</div>
+            <h2>Intervista al cliente</h2>
+            <p>
+              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
+              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
+              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
+              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
+              la tua ricerca e selezione, la tua ricerca e selezione
+            </p>
+          </div>
+          <div class="circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#161b22"
+              class="bi bi-arrow-left-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="column mt10">
+          <div class="circle2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#161b22"
+              class="bi bi-arrow-right-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+              />
+            </svg>
+          </div>
+          <div class="background transition">
+            <div class="number">2</div>
+            <h2>Job description</h2>
+            <p>
+              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
+              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
+              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
+              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
+              la tua ricerca e selezione, la tua ricerca e selezione
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column br">
+          <div class="background transition">
+            <div class="number">3</div>
+            <h2>Lancio annuncio & Head Hunting</h2>
+            <p>
+              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
+              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
+              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
+              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
+              <span
+                >la tua ricerca e selezione, la tua ricerca e selezione</span
+              >
+            </p>
+          </div>
+          <div class="circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#161b22"
+              class="bi bi-arrow-left-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="column mt10">
+          <div class="circle2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#161b22"
+              class="bi bi-arrow-right-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+              />
+            </svg>
+          </div>
+          <div class="background transition">
+            <div class="number">4</div>
+            <h2>Screening CV</h2>
+            <p>
+              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
+              ricerca e selezione, la tua ricerca e selezione,
+              <span
+                >la tua ricerca e selezione, la tua ricerca e selezione</span
+              >
+              Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
+              tua ricerca e selezione, la tua ricerca e selezione, la tua
+              ricerca e selezione
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column br">
+          <div class="background transition">
+            <div class="number">5</div>
+            <h2>Screening telefonico</h2>
+            <p>
+              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
+              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
+              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
+              selezione,
+              <span
+                >la tua ricerca e selezione, la tua ricerca e selezione</span
+              >
+              la tua ricerca e selezione, la tua ricerca e selezione
+            </p>
+          </div>
+          <div class="circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#161b22"
+              class="bi bi-arrow-left-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="column mt10">
+          <div class="circle2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#161b22"
+              class="bi bi-arrow-right-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+              />
+            </svg>
+          </div>
+          <div class="background transition">
+            <div class="number">6</div>
+            <h2>Videocolloquio</h2>
+            <p>
+              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
+              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
+              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
+              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
+              <span
+                >la tua ricerca e selezione, la tua ricerca e selezione</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column br">
+          <div class="background transition">
+            <div class="number">7</div>
+            <h2>Presentazione Short list</h2>
+            <p>
+              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
+              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
+              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
+              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
+              <span
+                >la tua ricerca e selezione, la tua ricerca e selezione</span
+              >
+            </p>
+          </div>
+          <div class="circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#161b22"
+              class="bi bi-arrow-left-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="column mt10">
+          <div class="circle2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="#161b22"
+              class="bi bi-arrow-right-circle-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
+              />
+            </svg>
+          </div>
+          <div class="background transition">
+            <div class="number">8</div>
+            <h2>Colloqui one-toone con l'azienda</h2>
+            <p>
+              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
+              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
+              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
+              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
+              <span
+                >la tua ricerca e selezione, la tua ricerca e selezione</span
+              >
+            </p>
+          </div>
         </div>
       </div>
     </div>
     <div class="fifthDiv">
-      <div class="adviser">
+      <div class="adviser transition">
         <div class="col">
           <h3>
             <span>Segui le Storie</span> di Jobify Recruiting per scoprire tutte
@@ -426,7 +700,7 @@ export default {
             class="partnerImg"
             style="
               right: 22%;
-              top: 77%;
+              top: 84%;
               background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
             "
           >
@@ -460,7 +734,7 @@ export default {
             class="partnerImg"
             style="
               left: 41%;
-              top: 87%;
+              top: 98%;
               background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo8.png);
             "
             ><div class="" style=""></div
@@ -617,7 +891,7 @@ export default {
       </div>
     </div>
     <div class="fifthDiv">
-      <div class="adviser">
+      <div class="adviser transition">
         <div class="col">
           <h3>
             <span>Iscriviti oggi alla newsletter</span> di Jobify Recruiting per
@@ -714,7 +988,7 @@ export default {
   .mainTitle {
     height: 100%;
     width: 100%;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
@@ -729,7 +1003,7 @@ export default {
   .content .first {
     display: flex;
     align-items: center;
-    padding-bottom: 5rem;
+    z-index: 5;
   }
 
   .mainTitle .title h2 {
@@ -776,12 +1050,9 @@ export default {
     width: 100%;
     padding-left: 8rem;
     padding-right: 8rem;
+    padding-top: 10rem;
     width: 100%;
     background-color: #fff;
-  }
-
-  .secondDiv .content {
-    padding: 3rem;
   }
 
   .secondDiv .title h2 {
@@ -822,6 +1093,260 @@ export default {
     margin-top: 10rem;
     display: flex;
     width: 100%;
+  }
+
+  .steps {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+  }
+
+  .step {
+    text-align: center;
+    background: #161b22;
+    border-radius: 30px;
+    z-index: 14;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    float: left;
+    transition: all 0.3s ease-out;
+    text-align: left;
+    -webkit-box-shadow: 0px 0px 105px 39px rgb(46 81 255 / 20%);
+    -moz-box-shadow: 0px 0px 105px 39px rgba(46, 81, 255, 20%);
+    box-shadow: 0px 0px 105px 3px rgb(46 91 255 / 5%);
+    cursor: pointer;
+  }
+
+  .step:hover {
+    transform: scale(1.1);
+  }
+
+  .step .number {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    background: linear-gradient(90.91deg, #027bfd -24.67%, #5162fb 53.55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    margin-bottom: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+  }
+
+  .step .title {
+    color: #fff;
+    margin-left: 0 !important;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    letter-spacing: -0.04em !important;
+    width: 100% !important;
+    margin-bottom: 0.2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .step .text {
+    color: #627597;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .feature {
+    text-align: center;
+    background: #161b22;
+    border-radius: 30px;
+    z-index: 14;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    float: left;
+    transition: all 0.3s ease-out;
+    text-align: left;
+    -webkit-box-shadow: 0px 0px 105px 39px rgb(46 81 255 / 20%);
+    -moz-box-shadow: 0px 0px 105px 39px rgba(46, 81, 255, 20%);
+    box-shadow: 0px 0px 105px 3px rgb(46 91 255 / 5%);
+    cursor: pointer;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .feature:hover {
+    transform: scale(1.1);
+  }
+
+  .feature .number {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    background: linear-gradient(90.91deg, #027bfd -24.67%, #5162fb 53.55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    margin-bottom: 1rem;
+  }
+
+  .feature .title {
+    color: #fff;
+    margin-left: 0 !important;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    letter-spacing: -0.04em !important;
+    width: 100% !important;
+    margin-bottom: 0.2rem;
+  }
+
+  .feature .text {
+    color: #627597;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    width: 100% !important;
+  }
+
+  .imageStep {
+    width: 37vw;
+    height: 20vw;
+    margin-right: 2rem;
+    background-image: url(/src/assets/candidato.jpg);
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 3rem;
+    margin-right: 0;
+  }
+
+  .workflow {
+    background: #fff;
+    padding: 10rem;
+    padding-bottom: 0;
+  }
+
+  .workflow .workflowTitle h2 {
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    letter-spacing: -0.04em !important;
+    font-weight: 800 !important;
+    font-size: 64px;
+    line-height: 68px;
+    font-weight: 800 !important;
+    letter-spacing: -0.04em !important;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+  }
+
+  .workflow .columns {
+    display: flex;
+  }
+
+  .workflow .columns .column {
+    padding: 3rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .workflow .columns .column .background {
+    background: #161b22;
+    padding: 3rem;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .workflow .columns .column .circle {
+    position: absolute;
+    right: -1%;
+  }
+
+  .workflow .columns .column .circle2 {
+    position: absolute;
+    left: -1%;
+  }
+
+  .workflow .columns .mt10 {
+    margin-top: 15rem;
+  }
+
+  .workflow .columns .br {
+    border-right: 4px solid #dbd7d78a;
+
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .workflow .columns .number {
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    letter-spacing: -0.04em !important;
+    color: #010712;
+    font-size: 74px;
+    font-weight: 800 !important;
+    line-height: 78px;
+    letter-spacing: -0.04em !important;
+    margin-bottom: 1rem;
+  }
+
+  .workflow .columns .column h2 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 800 !important;
+    line-height: 42px;
+    letter-spacing: -0.04em !important;
+  }
+
+  .workflow p {
+    color: #627597;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400 !important;
+  }
+
+  .br .background {
+    margin-left: auto;
+  }
+
+  .workflow p span {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400 !important;
   }
 
   .btn2 {
@@ -875,6 +1400,25 @@ export default {
 
   .btn2:hover {
     border-color: #2d2e2f;
+  }
+
+  .header {
+  }
+
+  .progress-container {
+    background-color: rgba(150, 150, 150, 0.6);
+    height: 10px;
+    width: 100%;
+  }
+
+  .progress-bar {
+    background-color: #2196f3;
+    height: 10px;
+    width: 0%;
+  }
+
+  .content {
+    padding: 2em;
   }
 
   .divInput {
@@ -1914,6 +2458,7 @@ export default {
     text-align: left;
     line-height: 24px;
     font-weight: 400 !important;
+    margin-bottom: 1rem;
   }
 
   .contentImage {
@@ -2061,7 +2606,7 @@ export default {
     margin-top: 2rem;
     height: 100%;
     width: 100%;
-    padding-bottom: 0rem;
+    padding-bottom: 2rem;
     padding-right: 8rem;
     background-color: #fff;
     overflow-x: scroll;
@@ -2077,12 +2622,13 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback {
-    background: #161b22;
+    background: #eeeeee;
     border-radius: 30px;
     padding: 2rem;
     margin-right: 1rem;
     margin-left: 1rem;
     float: left;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
   }
 
   .feedbackDiv .feedbacks .feedback .quote {
@@ -2100,8 +2646,8 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback h3 {
-    color: #fff;
-    font-weight: 600;
+    color: #010712;
+    font-weight: 500;
     font-size: 30px;
     line-height: 34px;
     margin-bottom: 2rem;
@@ -2109,7 +2655,7 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback .author {
-    color: #fff;
+    color: #010712;
     font-size: 20px;
     letter-spacing: 1px;
     line-height: 24px;
@@ -2118,7 +2664,7 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback .worktitle {
-    color: #8b949e;
+    color: #3e3f40;
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 16px;
