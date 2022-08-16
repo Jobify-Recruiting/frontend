@@ -41,28 +41,7 @@ export default {
     content.style.visibility = "hidden";
     content.style.display = "unset";
   },
-  methods: {
-    sendCV() {
-      let content = document.querySelector(".bg2");
-      content.style.width = "100%";
-      content.style.opacity = "1";
-      content.style.visibility = "visible";
-      content.style.display = "inline";
-      var htmlElement = document.querySelector("html");
-      htmlElement.style.overflowY = "hidden";
-    },
-
-    closePopup2() {
-      let content = document.querySelector(".bg2");
-      content.style.width = "0%";
-      content.style.opacity = "0";
-      content.style.visibility = "hidden";
-      content.style.display = "unset";
-
-      var htmlElement = document.querySelector("html");
-      htmlElement.style.overflowY = "scroll";
-    },
-  },
+  methods: {},
 };
 </script>
 
@@ -70,162 +49,6 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <div class="bgTransparent bg2">
-          <div class="closeMenu" @click="closePopup2()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-x-lg"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-              />
-            </svg>
-          </div>
-          <div class="popup">
-            <div class="body">
-              <div class="jobAlertHeader">
-                <div class="subtitle">Manda il tuo cv</div>
-                <h2>
-                  Qui potrai inviare il tuo CV direttamente a Jobify Recruiting
-                </h2>
-
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="150"
-                    height="150"
-                    fill="#fff"
-                    class="bi bi-file-earmark-richtext bell"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"
-                    />
-                    <path
-                      d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208zM6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"
-                    />
-                  </svg>
-                </span>
-
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="150"
-                    height="150"
-                    fill="#0062f5"
-                    class="bi bi-file-earmark-richtext bell2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"
-                    />
-                    <path
-                      d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208zM6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"
-                    />
-                  </svg>
-                </span>
-              </div>
-              <div class="jobAlert">
-                <div
-                  class="input"
-                  style="display: flex; width: 95%; margin: 0 0 1.5rem 0"
-                >
-                  <input
-                    style="width: 100%; margin: 0 1.5rem 0 0"
-                    id="nav"
-                    class="input"
-                    type="text"
-                    name="nickname"
-                    placeholder="Nome"
-                  />
-
-                  <input
-                    id="nav"
-                    style="width: 100%; margin: 0"
-                    class="input"
-                    type="text"
-                    name="nickname"
-                    placeholder="Cognome"
-                  />
-                </div>
-                <div
-                  class="input"
-                  style="display: flex; width: 100%; margin: 0"
-                >
-                  <input
-                    id="nav"
-                    class="input"
-                    type="text"
-                    name="nickname"
-                    placeholder="Email"
-                  />
-                </div>
-                <div
-                  class="input"
-                  style="display: flex; width: 100%; margin: 0"
-                >
-                  <input
-                    id="nav"
-                    class="input"
-                    type="text"
-                    name="nickname"
-                    placeholder="Linkedin Url"
-                  />
-                </div>
-                <div
-                  class="input"
-                  style="display: flex; width: 100%; margin: 0"
-                >
-                  <input
-                    id="nav"
-                    class="input"
-                    type="text"
-                    name="nickname"
-                    placeholder="Telefono"
-                  />
-                </div>
-                <div
-                  class="input"
-                  style="display: flex; width: 100%; margin: 0"
-                >
-                  <input
-                    id="nav"
-                    class="input"
-                    type="text"
-                    name="nickname"
-                    placeholder="Dettagli"
-                  />
-                </div>
-
-                <div class="formButton">
-                  <a href="#first"
-                    ><button class="btn">
-                      Invia
-                      <span>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          fill="currentColor"
-                          class="bi bi-arrow-right-short"
-                          viewBox="0 0 16 16"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                          />
-                        </svg>
-                      </span></button
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
         <div class="glow"></div>
         <div class="glow2"></div>
         <div class="glow3"></div>
@@ -233,7 +56,7 @@ export default {
         <div class="glow5"></div>
         <div class="firstPart">
           <div class="subtitle">Lavoratori</div>
-          <h2>Costruiamo l'ecosistema del domani.</h2>
+          <h2>Qui inseriamo il servizio che descriviamo</h2>
           <p>
             Increase developer velocity. Secure every step. Automate entire
             workflows. Redefine collaboration. Trusted by over 83 million
@@ -453,17 +276,71 @@ export default {
           </div>
         </div>
 
-        <div class="beforeFooter">
-          <div class="ctaCV" style="background: rgb(161 161 161 / 10%)">
-            <div class="blur"></div>
-            <div class="cols2">
-              <div class="col col-padding" id="positions">
-                <h3 style="color: #fff">
-                  Non hai trovato <span>offerte in linea</span> con le tue
-                  aspettative?
-                </h3>
-                <div class="button" @click="sendCV()">
-                  Manda il tuo CV
+        <div class="cols">
+          <div class="col col_1">
+            <p>Partners</p>
+            <h2>Diventa nostro partner</h2>
+            <div class="subtitle">
+              Cerchiamo talenti per creare il futuro, cerchiamo talenti per
+              creare il futuro, cerchiamo talenti per creare il futuro
+            </div>
+          </div>
+          <div class="col col_2 transition">
+            <h3>Invia richiesta</h3>
+            <div
+              class="input"
+              style="display: flex; width: 95%; margin: 0 0 1rem 0"
+            >
+              <input
+                style="width: 100%; margin: 0 1rem 0 0"
+                id="nav"
+                class="input"
+                type="text"
+                name="nickname"
+                placeholder="Nome azienda"
+              />
+
+              <input
+                id="nav"
+                style="width: 100%; margin: 0"
+                class="input"
+                type="text"
+                name="nickname"
+                placeholder="Città"
+              />
+            </div>
+            <div class="input">
+              <input
+                id="nav"
+                class="input"
+                type="text"
+                name="nickname"
+                placeholder="Via"
+              />
+            </div>
+            <div class="input">
+              <input
+                id="nav"
+                class="input"
+                type="text"
+                name="nickname"
+                placeholder="Email"
+              />
+            </div>
+            <div class="input">
+              <input
+                id="nav"
+                class="input"
+                type="text"
+                name="nickname"
+                placeholder="Settore"
+              />
+            </div>
+
+            <div class="formButton">
+              <a href="#first"
+                ><button class="btn">
+                  Invia
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -478,16 +355,8 @@ export default {
                         d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
                       />
                     </svg>
-                  </span>
-                </div>
-              </div>
-              <div
-                class="col"
-                style="
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/img_h1.png);
-                  background-size: cover;
-                "
-              ></div>
+                  </span></button
+              ></a>
             </div>
           </div>
         </div>
@@ -1142,206 +1011,6 @@ export default {
     outline: none;
     background-color: rgb(38 43 49 / 31%);
     border-color: #0062f5;
-  }
-
-  .ctaCV {
-    width: 90%;
-    height: 300px;
-    background-color: white;
-    border-radius: 12px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5rem;
-  }
-
-  .ctaCV .cols2 {
-    height: 100%;
-    display: flex;
-  }
-
-  .ctaCV .col-padding {
-    padding: 5rem;
-  }
-
-  .ctaCV .col h3 {
-    font-size: 34px;
-    line-height: 38px;
-    font-weight: 700;
-    letter-spacing: -1px;
-  }
-
-  .ctaCV .col h3 span {
-    font-size: 34px;
-    line-height: 38px;
-    font-weight: 700;
-    color: #0062f5;
-  }
-
-  .ctaCV .col {
-    width: 50%;
-    height: 100%;
-  }
-
-  .ctaCV .button {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-    background: #0062f5;
-    color: #fff;
-    line-height: 18px;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    border-radius: 16px;
-    width: fit-content;
-    transition: 0.5s all;
-    margin-top: 2rem;
-    cursor: pointer;
-  }
-
-  .ctaCV .button span {
-    margin-left: 0.4rem;
-  }
-
-  .ctaCV .button:hover {
-    background: #fff;
-    color: #0062f5;
-  }
-
-  .bg2 {
-    width: 0%;
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .bgTransparent {
-    position: fixed;
-    height: 100%;
-    background-color: #26334285;
-    backdrop-filter: blur(12px);
-    z-index: 15;
-    top: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    width: 100%;
-  }
-
-  .popup {
-    position: fixed;
-    z-index: 10;
-    background: #0308129f;
-    backdrop-filter: blur(12px);
-    width: 80%;
-    border-radius: 40px;
-    padding: 4rem;
-    left: 10%;
-    top: 5%;
-    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px,
-      rgb(0 0 0 / 30%) 0px 8px 16px -8px;
-  }
-
-  .popup .body {
-    display: flex;
-  }
-
-  .popup .body .jobAlertHeader {
-    width: 50%;
-    padding: 2rem;
-  }
-
-  .popup .body .jobAlertHeader h2 {
-    color: #fff;
-    font-size: 28px;
-    line-height: 32px;
-    margin-bottom: 3rem;
-  }
-
-  .popup .body .jobAlertHeader .subtitle {
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 3px;
-    font-size: 12px;
-    line-height: 12px;
-    margin-bottom: 1rem;
-  }
-
-  .popup .body .jobAlertHeader .bell {
-    margin-top: 5rem;
-    margin-left: 5rem;
-    transform: rotate(-20deg);
-  }
-
-  .popup .body .jobAlertHeader .bell2 {
-    position: absolute;
-    transform: rotate(20deg);
-  }
-
-  .closeMenu {
-    margin-left: auto;
-    margin-right: 2rem;
-    margin-top: 2rem;
-    width: fit-content;
-    padding: 1rem;
-    border-radius: 16px;
-    border: 2px solid #0a1e4375;
-    color: white;
-    font-size: 18px;
-    line-height: 0;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .jobAlert .input {
-    width: 95%;
-    margin-bottom: 1.5rem;
-  }
-
-  .jobAlert .input input {
-    font-size: 14px;
-    background-color: #1c1c1c;
-    border-radius: 12px;
-    color: #fff;
-    box-shadow: none;
-    width: 95%;
-    float: right;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    padding-right: 3rem;
-    padding-bottom: 1rem;
-    height: 50%;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background: rgba(38, 43, 49, 0.486);
-    border: 2px solid #b3b3b326;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .jobAlert::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #fff;
-    opacity: 1; /* Firefox */
-  }
-
-  .jobAlert input:focus {
-    outline: none;
-    background-color: rgb(38 43 49 / 31%);
-    border-color: #0062f5;
-  }
-
-  .closeMenu:hover {
-    border-color: white;
-    transform: rotate(90deg);
-  }
-
-  .beforeFooter {
-    padding-bottom: 3rem;
   }
 
   .glow {

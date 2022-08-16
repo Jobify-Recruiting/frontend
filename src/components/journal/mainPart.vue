@@ -275,88 +275,6 @@ export default {
           </div>
         </div>
       </div>
-
-      <!--<div class="second">
-        <div class="featureds">
-          <div class="titles">
-            <h2>Storie</h2>
-            <div class="buttons">
-              <div class="btnScrollL" @click="btnScrollSx()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#010712"
-                  class="bi bi-chevron-left"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                  />
-                </svg>
-              </div>
-              <div class="btnScrollR" @click="btnScrollDx()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#010712"
-                  class="bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="featuredContent">
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>-->
     </div>
   </div>
 </template>
@@ -383,6 +301,17 @@ export default {
   font-family: "Heebo", sans-serif;
 }
 
+@media (min-width: 1024px) and (max-width: 1312px) {
+  .articles2 .article[data-v-c1d84998] {
+    float: left;
+    margin-top: 3rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    width: 40% !important;
+    background: #fff;
+    border-radius: 25px;
+  }
+}
 @media (min-width: 1024px) {
   .flowSingleBtn {
     margin-top: 15rem;
