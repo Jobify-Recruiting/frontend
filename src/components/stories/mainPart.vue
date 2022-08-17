@@ -73,14 +73,14 @@ export default {
     btnScrollSx() {
       let content = document.querySelector(".featuredContent");
       const itemWidth = content.querySelector(".featured").clientWidth;
-      content.scrollBy({ left: -itemWidth * 4, top: 0, behavior: "smooth" });
+      content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
       console.log(content);
     },
 
     btnScrollDx() {
       let content = document.querySelector(".featuredContent");
       const itemWidth = content.querySelector(".featured").clientWidth;
-      content.scrollBy({ left: itemWidth * 4, top: 0, behavior: "smooth" });
+      content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
     },
   },
 };
@@ -670,9 +670,6 @@ export default {
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
-
-  .featured .text {
   }
 
   .featured h2 {

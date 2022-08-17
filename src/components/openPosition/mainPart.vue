@@ -378,32 +378,23 @@ export default {
                     class="input"
                     type="text"
                     name="nickname"
-                    placeholder="Linkedin Url"
+                    placeholder="Nome del Job Alert"
                   />
                 </div>
                 <div
-                  class="input"
+                  class="select"
                   style="display: flex; width: 100%; margin: 0"
                 >
-                  <input
-                    id="nav"
-                    class="input"
-                    type="text"
-                    name="nickname"
-                    placeholder="Telefono"
-                  />
-                </div>
-                <div
-                  class="input"
-                  style="display: flex; width: 100%; margin: 0"
-                >
-                  <input
-                    id="nav"
-                    class="input"
-                    type="text"
-                    name="nickname"
-                    placeholder="Dettagli"
-                  />
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Categoria</option>
+                    <option value="1">Farm</option>
+                    <option value="2">Finance</option>
+                    <option value="3">IT Tech</option>
+                    <option value="3">Generalist</option>
+                  </select>
                 </div>
 
                 <div class="formButton">
@@ -937,6 +928,49 @@ export default {
             </div>
           </div>
         </div>
+
+        <div class="secondPart2">
+          <div class="title">
+            <h2>Titolo da inserire e poi il workflow sotto</h2>
+            <p>
+              una frase in cui spieghiamo che crediamo ad una Selezione umana
+              che ha come obiettivo quello di capire le aspettative del
+              candidato come uomo e donna prima di tutto e poi come
+              professionista, analizzando i valori e quello che si aspetta
+              dall’azienda in cui va a lavorare (scrivimi questo testo )
+            </p>
+          </div>
+          <div class="steps">
+            <div class="step transition">
+              <div class="number">1</div>
+              <div class="title">Crea profilo</div>
+              <div class="text">
+                Get updates on the GitHub activity you've subscribed to. Use the
+                notifications inbox to customize, triage, and manage your
+                updates.
+              </div>
+            </div>
+            <div class="step transition" style="margin-top: 3rem">
+              <div class="number">2</div>
+              <div class="title">Crea profilo</div>
+              <div class="text">
+                Get updates on the GitHub activity you've subscribed to. Use the
+                notifications inbox to customize, triage, and manage your
+                updates.
+              </div>
+            </div>
+            <div class="step transition" style="margin-top: 6rem">
+              <div class="number">3</div>
+              <div class="title">Crea profilo</div>
+              <div class="text">
+                Get updates on the GitHub activity you've subscribed to. Use the
+                notifications inbox to customize, triage, and manage your
+                updates.
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="ctaCV" style="background: rgb(161 161 161 / 10%)">
           <div class="blur"></div>
           <div class="cols">
@@ -1988,6 +2022,140 @@ export default {
     outline: none;
     background-color: rgb(38 43 49 / 31%);
     border-color: #0062f5;
+  }
+
+  .jobAlert .select select {
+    font-size: 14px;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: none;
+    width: 95%;
+    float: right;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    height: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgba(38, 43, 49, 0.486);
+    border: 2px solid #b3b3b326;
+  }
+
+  .jobAlert select:focus {
+    outline: none;
+    background-color: rgb(38 43 49 / 31%);
+    border-color: #0062f5;
+  }
+
+  .secondPart2 {
+    padding-top: 5rem;
+    margin-bottom: 0rem;
+  }
+
+  .secondPart2 .title {
+    display: inline !important;
+  }
+
+  .secondPart2 h2 {
+    color: #fff;
+    letter-spacing: -0.04em;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 800;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .secondPart2 .title p {
+    color: #627597;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .secondPart2 .cols {
+    margin-top: 5rem !important;
+  }
+
+  .secondPart2 .cols .col2 {
+    width: 30%;
+  }
+
+  .steps {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+  }
+
+  .step {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    background: #03111f;
+    border-radius: 30px;
+    z-index: 14;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    float: left;
+    transition: all 0.3s ease-out;
+    text-align: left;
+    -webkit-box-shadow: 0px 0px 105px 39px rgb(46 81 255 / 20%);
+    -moz-box-shadow: 0px 0px 105px 39px rgba(46, 81, 255, 20%);
+    box-shadow: 0px 0px 105px 3px rgb(46 91 255 / 5%);
+  }
+
+  .step .number {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    background: linear-gradient(90.91deg, #027bfd -24.67%, #5162fb 53.55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    margin-bottom: 1rem;
+  }
+
+  .step .title {
+    color: #fff;
+    margin-left: 0 !important;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    letter-spacing: -0.04em !important;
+    width: 100% !important;
+    margin-bottom: 0.2rem;
+  }
+
+  .step .text {
+    color: #627597;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    width: 100% !important;
   }
 }
 

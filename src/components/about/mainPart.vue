@@ -106,8 +106,11 @@ export default {
                 Inserire descrizione o altro dell'azienda, descrizione o altro
                 dell'azienda, altro Inserire descrizione o altro dell'azienda.
               </div>
+              <a href="/newsletter" class=""
+                ><button class="btn">Scopri di più</button></a
+              >
             </div>
-            <div class="quote">
+            <div class="quote" style="margin-top: 8rem">
               <div class="quoteh4">
                 <span>Storia</span> di Jobify Recruiting
               </div>
@@ -121,7 +124,7 @@ export default {
           <div class="quotes">
             <div class="quote">
               <div class="quoteh4">
-                <span>Storia</span> di Jobify Recruiting
+                <span>Visione</span> di Jobify Recruiting
               </div>
               <div class="quoteh5">
                 Inserire descrizione o altro dell'azienda, descrizione o altro
@@ -129,8 +132,8 @@ export default {
                 descrizione o altro dell'azienda.
               </div>
             </div>
-            <div class="quote">
-              <div class="quoteh4">Cos'è <span>Jobify</span></div>
+            <div class="quote" style="margin-top: 8rem">
+              <div class="quoteh4">La <span>Missione</span></div>
               <div class="quoteh5">
                 Inserire descrizione o altro dell'azienda, descrizione o altro
                 dell'azienda, altro Inserire descrizione o altro dell'azienda.
@@ -242,6 +245,66 @@ export default {
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
           </div>
+        </div>
+      </div>
+      <div class="secondPart">
+        <div class="title">
+          <h2>Come funziona il processo di selezione</h2>
+          <p>
+            Get updates on the GitHub activity you've subscribed to. Use the
+            notifications inbox to customize, triage, and manage your updates.
+          </p>
+        </div>
+        <div class="steps">
+          <div class="step transition">
+            <div class="number">1</div>
+            <div class="title">Crea profilo</div>
+            <div class="text">
+              Get updates on the GitHub activity you've subscribed to. Use the
+              notifications inbox to customize, triage, and manage your updates.
+            </div>
+          </div>
+          <div class="step transition" style="margin-top: 3rem">
+            <div class="number">2</div>
+            <div class="title">Crea profilo</div>
+            <div class="text">
+              Get updates on the GitHub activity you've subscribed to. Use the
+              notifications inbox to customize, triage, and manage your updates.
+            </div>
+          </div>
+          <div class="step transition" style="margin-top: 6rem">
+            <div class="number">3</div>
+            <div class="title">Crea profilo</div>
+            <div class="text">
+              Get updates on the GitHub activity you've subscribed to. Use the
+              notifications inbox to customize, triage, and manage your updates.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fifthDiv">
+        <div class="adviser transition">
+          <div class="col">
+            <h3>
+              <span>Iscriviti oggi alla newsletter</span> di Jobify Recruiting
+              per restare aggiornato sul mondo hr
+            </h3>
+            <div class="divInput">
+              <div class="input">
+                <input
+                  id="nav"
+                  class="input"
+                  type="text"
+                  name="nickname"
+                  placeholder="Inserisci la tua email"
+                />
+              </div>
+              <router-link to="/newsletter"
+                ><button class="btn">Iscriviti</button></router-link
+              >
+            </div>
+          </div>
+          <div class="col_image"></div>
         </div>
       </div>
       <div class="seventhPart">
@@ -573,7 +636,7 @@ export default {
 
   .quotes {
     display: flex;
-    margin-bottom: 5rem;
+    margin-bottom: 12rem;
   }
 
   .quotes .quote {
@@ -604,7 +667,6 @@ export default {
     line-height: 24px;
     font-weight: 400;
     color: #627597;
-    margin-bottom: 2rem;
   }
 
   .sixtPart {
@@ -794,6 +856,194 @@ export default {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     margin-left: auto;
+  }
+
+  .fifthDiv {
+    background: #fff;
+    padding: 3rem;
+    padding-bottom: 8rem;
+  }
+
+  .fifthDiv .adviser {
+    background: #161b22;
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .fifthDiv .adviser .col {
+    width: 50%;
+    padding: 6rem;
+  }
+  .fifthDiv .adviser .col h3 {
+    color: #fff;
+    width: 90%;
+    font-size: 44px;
+    line-height: 48px;
+    letter-spacing: -0.04em;
+    font-weight: 600;
+  }
+
+  .fifthDiv .btn {
+    margin-top: 0 !important;
+  }
+
+  .fifthDiv .adviser .col h3 span {
+    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+  }
+
+  .fifthDiv .adviser .col_image {
+    background: transparent;
+    border-radius: 60px;
+    background-image: url(/src/assets/searchimage.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+  }
+
+  .divInput {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  .input {
+    width: 95%;
+    margin-right: 1rem;
+  }
+
+  .input input {
+    font-size: 14px;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: none;
+    width: 97%;
+    float: right;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+    height: 50%;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: rgba(38, 43, 49, 0.486);
+    border: 2px solid #b3b3b326;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+  }
+
+  input:focus {
+    outline: none;
+    background-color: rgb(38 43 49 / 31%);
+    border-color: #0062f5;
+  }
+
+  .secondPart {
+    padding-top: 8rem;
+  }
+
+  .secondPart .title h2 {
+    color: #010b15;
+    width: 80%;
+    font-size: 54px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .secondPart .title p {
+    color: #627597;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .steps {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+  }
+
+  .step {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    background: #fff;
+    border-radius: 30px;
+    z-index: 14;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    float: left;
+    transition: all 0.3s ease-out;
+    text-align: left;
+    -webkit-box-shadow: 0px 0px 105px 39px rgb(46 81 255 / 20%);
+    -moz-box-shadow: 0px 0px 105px 39px rgba(46, 81, 255, 20%);
+    box-shadow: 0px 0px 105px 3px rgb(46 91 255 / 5%);
+  }
+
+  .step .number {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 40px;
+    background: linear-gradient(90.91deg, #027bfd -24.67%, #5162fb 53.55%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    margin-bottom: 1rem;
+  }
+
+  .step .title {
+    color: #010b15;
+    margin-left: 0 !important;
+    font-size: 38px;
+    line-height: 42px;
+    font-weight: 700;
+    letter-spacing: -0.04em !important;
+    width: 100% !important;
+    margin-bottom: 0.2rem;
+  }
+
+  .step .text {
+    color: #627597;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    width: 100% !important;
   }
 }
 

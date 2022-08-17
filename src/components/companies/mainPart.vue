@@ -32,6 +32,21 @@ export default {
       }
     }
 
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    const flavoursContainer = document.getElementById("feedbacksContainer");
+    const flavoursScrollWidth = flavoursContainer.scrollWidth;
+
+    window.addEventListener("load", () => {
+      self.setInterval(() => {
+        if (flavoursContainer.scrollLeft !== flavoursScrollWidth) {
+          flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 1, 0);
+        }
+      }, 15);
+    });
+
     window.addEventListener("scroll", reveal);
     window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -40,8 +55,62 @@ export default {
     content.style.opacity = "0";
     content.style.visibility = "hidden";
     content.style.display = "unset";
+
+    const slider = document.querySelector(".feedbacks");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    if (slider) {
+      slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      slider.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mouseup", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+      });
+    }
   },
-  methods: {},
+  methods: {
+    btnScrollSx() {
+      let content = document.querySelector(".feedbacks");
+      const itemWidth = content.querySelector(".feedback").clientWidth;
+      content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
+      console.log(content);
+    },
+
+    btnScrollDx() {
+      let content = document.querySelector(".feedbacks");
+      const itemWidth = content.querySelector(".feedback").clientWidth;
+      content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
+    },
+
+    btnScrollSx2() {
+      let content = document.querySelector(".featuredContent");
+      const itemWidth = content.querySelector(".featured").clientWidth;
+      content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
+      console.log(content);
+    },
+
+    btnScrollDx2() {
+      let content = document.querySelector(".featuredContent");
+      const itemWidth = content.querySelector(".featured").clientWidth;
+      content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
+    },
+  },
 };
 </script>
 
@@ -85,138 +154,57 @@ export default {
           </div>
           <div class="image"></div>
         </div>
-        <div class="partners">
-          <div class="partnersPart">
-            <div class="col1">
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
-                  "
-                ></div
-              ></a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo6.png);
-                  "
-                ></div
-              ></a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo7.png);
-                  "
-                ></div
-              ></a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo8.png);
-                  "
-                ></div
-              ></a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo1.png);
-                  "
-                ></div>
-              </a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo2.png);
-                  "
-                ></div>
-              </a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo3.png);
-                  "
-                ></div
-              ></a>
-              <a href=""
-                ><div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo4.png);
-                  "
-                ></div
-              ></a>
+        <div class="numbersDiv">
+          <h2>I nostri numeri nei mesi precedenti</h2>
+          <div class="numbers">
+            <div class="number transition">
+              <h3>40%</h3>
+              <div class="subtitle">Reduction</div>
+              <p>in developer onboarding time</p>
             </div>
-            <div class="col1">
-              <h2>Costruiamo l'ecosistema del domani.</h2>
-              <p>
-                Increase developer velocity. Secure every step. Automate entire
-                workflows. Redefine collaboration. Trusted by over 83 million
-                developers.Redefine collaboration. Trusted collaboration over 83
-                milliocollaborationn developers.
-              </p>
+            <div class="number transition">
+              <h3>654%</h3>
+              <div class="subtitle">Return on investment</div>
+              <p>over 3 years</p>
+            </div>
+            <div class="number transition">
+              <h3>45</h3>
+              <div class="subtitle">Minutes saved</div>
+              <p>per developer, per day</p>
+            </div>
+          </div>
+          <div class="numbers">
+            <div class="number transition">
+              <h3>40%</h3>
+              <div class="subtitle">Reduction</div>
+              <p>in developer onboarding time</p>
+            </div>
+            <div class="number transition">
+              <h3>654%</h3>
+              <div class="subtitle">Return on investment</div>
+              <p>over 3 years</p>
+            </div>
+            <div class="number transition">
+              <h3>45</h3>
+              <div class="subtitle">Minutes saved</div>
+              <p>per developer, per day</p>
             </div>
           </div>
         </div>
-        <div class="secondPart2">
-          <div class="title">
-            <h2>Come funziona il processo di selezione</h2>
-            <p>
-              Get updates on the GitHub activity you've subscribed to. Use the
-              notifications inbox to customize, triage, and manage your updates.
-            </p>
-          </div>
-          <div class="steps">
-            <div class="step transition">
-              <div class="number">1</div>
-              <div class="title">Crea profilo</div>
-              <div class="text">
-                Get updates on the GitHub activity you've subscribed to. Use the
-                notifications inbox to customize, triage, and manage your
-                updates.
-              </div>
-            </div>
-            <div class="step transition" style="margin-top: 3rem">
-              <div class="number">2</div>
-              <div class="title">Crea profilo</div>
-              <div class="text">
-                Get updates on the GitHub activity you've subscribed to. Use the
-                notifications inbox to customize, triage, and manage your
-                updates.
-              </div>
-            </div>
-            <div class="step transition" style="margin-top: 6rem">
-              <div class="number">3</div>
-              <div class="title">Crea profilo</div>
-              <div class="text">
-                Get updates on the GitHub activity you've subscribed to. Use the
-                notifications inbox to customize, triage, and manage your
-                updates.
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div class="secondPart">
           <div class="cols">
             <div class="col col2">
+              <div class="titleH3">Perchè scegliere Jobify?</div>
               <div class="text">
+                Redefine collaboration. Trusted by over 83 million developers.
                 <span
                   >Increase developer velocity. Secure every step. Automate
                   entire workflows.</span
                 >
-                Redefine collaboration. Trusted by over 83 million developers.
               </div>
-              <div class="text2">
-                Increase developer velocity. Secure every step. Automate entire
-                workflows. Redefine collaboration. Trusted by over 83 million
-                developers.
-              </div>
+
+              <div class="titleH3">Perchè scegliere Jobify?</div>
               <div class="text">
                 Redefine collaboration. Trusted by over 83 million developers.
                 <span
@@ -236,18 +224,16 @@ export default {
               <div class="image transition"></div>
             </div>
             <div class="col col2">
+              <div class="titleH3">Perchè scegliere Jobify?</div>
               <div class="text">
+                Redefine collaboration. Trusted by over 83 million developers.
                 <span
                   >Increase developer velocity. Secure every step. Automate
                   entire workflows.</span
                 >
-                Redefine collaboration. Trusted by over 83 million developers.
               </div>
-              <div class="text2">
-                Increase developer velocity. Secure every step. Automate entire
-                workflows. Redefine collaboration. Trusted by over 83 million
-                developers.
-              </div>
+
+              <div class="titleH3">Perchè scegliere Jobify?</div>
               <div class="text">
                 Redefine collaboration. Trusted by over 83 million developers.
                 <span
@@ -258,7 +244,244 @@ export default {
             </div>
           </div>
         </div>
-
+        <div class="feedbackDiv" id="feedback">
+          <div class="content">
+            <h2>I clienti dicono di noi</h2>
+            <div class="buttons">
+              <div class="btnScrollL" @click="btnScrollSx()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#fff"
+                  class="bi bi-chevron-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </div>
+              <div class="btnScrollR" @click="btnScrollDx()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#fff"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="feedbacks" id="feedbacksContainer">
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Dal nostro primo incontro ho riconosciuto in Davide volontà,
+                  dedizione e una importante preparazione culturale.Doti
+                  preziose nel contesto lavorativo di riferimento.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Stefano Ruscito</p>
+                    <p class="worktitle">Sales Account presso Umana spa</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Con Davide portiamo avanti da tempo diverse iniziative in
+                  ambito HR. La sua voglia di ridisegnare il futuro del settore
+                  con approcci innovativi lo rende un esempio da seguire.
+                  Cultura, competenza, serietà e tanta voglia di fare sono solo
+                  alcune delle qualità che contraddistinguono Davide.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-10-at-18.01.29-1-1.jpeg);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Fabio Panella</p>
+                    <p class="worktitle">
+                      Director of Sales & Operations SEUR - Talent.com
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Posso descrivere Davide semplicemente in due parole:
+                  “competenza” e “voglia di fare”. La sua spiccata
+                  professionalità gli consente di muoversi in qualsiasi
+                  contesto.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-17-at-19.19.22-2-1-1.jpeg);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Marco Calabrese</p>
+                    <p class="worktitle">
+                      Direttore delle Risorse Umane e Organizzazione AG Group
+                      Italy
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Lavoro con Davide in ambito associativo AIDP ed è un vero
+                  piacere. Davide è un vero appassionato di tutte le diverse
+                  sfaccettature del mondo HR e la sua principale dote direi che
+                  è la curiosità. Ascolta ed approfondisce.È generoso e si mette
+                  sempre a disposizione. I suoi punti di forza direi problem
+                  solving e forte competenza nei processi di selezione e
+                  sviluppo delle risorse umane.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-21-at-19.47.39-1-1.jpeg);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Marco Micaroni</p>
+                    <p class="worktitle">
+                      Responsabile relazioni sindacali e contenzioso del lavoro
+                      AUTOSTRADE PER L’ITALIA SPA
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Ho avuto modo di conoscere Davide all'interno della community
+                  AIDP. E ne ho subito tratto un'ottima impressione. Dinamico,
+                  aperto a capire il mondo HR che gli sta intorno e capace di
+                  portare contributi professionali di valore. Tutto questo
+                  supportato da una gran voglia e volontà di fare cose
+                  innovative e con grande competenza.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-22-at-11.14.00-1-1.jpeg);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Nicola Rossi</p>
+                    <p class="worktitle">
+                      Senior Director, Managing Director Italy at Monster Italia
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="featureds">
+          <div class="titles">
+            <h2>Storie</h2>
+            <div class="buttons">
+              <div class="btnScrollL" @click="btnScrollSx2()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#fff"
+                  class="bi bi-chevron-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </div>
+              <div class="btnScrollR" @click="btnScrollDx2()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#fff"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="featuredContent">
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="thirdPart">
           <div class="thirdPartDiv">
             <div class="first">
@@ -357,41 +580,82 @@ export default {
             </div>
           </div>
         </div>
-
-        <div class="numbersDiv">
-          <h2>I nostri numeri nei mesi precedenti</h2>
-          <div class="numbers">
-            <div class="number transition">
-              <h3>40%</h3>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
+        <div class="partners">
+          <div class="partnersPart">
+            <div class="col1">
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
+                  "
+                ></div
+              ></a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo6.png);
+                  "
+                ></div
+              ></a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo7.png);
+                  "
+                ></div
+              ></a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo8.png);
+                  "
+                ></div
+              ></a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo1.png);
+                  "
+                ></div>
+              </a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo2.png);
+                  "
+                ></div>
+              </a>
+              <a href="">
+                <div
+                  class="partnerImg2 transition"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo3.png);
+                  "
+                ></div
+              ></a>
+              <a href=""
+                ><div
+                  class="partnerImg2 transition"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo4.png);
+                  "
+                ></div
+              ></a>
             </div>
-            <div class="number transition">
-              <h3>654%</h3>
-              <div class="subtitle">Return on investment</div>
-              <p>over 3 years</p>
-            </div>
-            <div class="number transition">
-              <h3>45</h3>
-              <div class="subtitle">Minutes saved</div>
-              <p>per developer, per day</p>
-            </div>
-          </div>
-          <div class="numbers">
-            <div class="number transition">
-              <h3>40%</h3>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-            <div class="number transition">
-              <h3>654%</h3>
-              <div class="subtitle">Return on investment</div>
-              <p>over 3 years</p>
-            </div>
-            <div class="number transition">
-              <h3>45</h3>
-              <div class="subtitle">Minutes saved</div>
-              <p>per developer, per day</p>
+            <div class="col1">
+              <h2>Costruiamo l'ecosistema del domani.</h2>
+              <p>
+                Increase developer velocity. Secure every step. Automate entire
+                workflows. Redefine collaboration. Trusted by over 83 million
+                developers.Redefine collaboration. Trusted collaboration over 83
+                milliocollaborationn developers.
+              </p>
             </div>
           </div>
         </div>
@@ -479,190 +743,6 @@ export default {
             </div>
           </div>
         </div>
-        <div class="fifthDiv">
-          <div class="adviser">
-            <div class="col">
-              <h3>
-                <span>Segui le Storie</span> di Jobify Recruiting per scoprire
-                tutte le esperienze dei nostri clienti
-              </h3>
-              <router-link to="/stories"
-                ><button class="btn">
-                  Storie
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="currentColor"
-                      class="bi bi-arrow-right-short"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                      />
-                    </svg>
-                  </span></button
-              ></router-link>
-            </div>
-            <div class="col_image"></div>
-          </div>
-        </div>
-
-        <div class="seventh">
-          <div class="asks">
-            <h2>Domande frequenti</h2>
-            <div class="accordion" id="accordionExample">
-              <div class="card transition">
-                <div class="card-header" id="heading1">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapse1"
-                      aria-expanded="false"
-                      aria-controls="collapse1"
-                    >
-                      <p>></p>
-                      Collapsible Group Item #1
-                    </button>
-                  </h2>
-                </div>
-
-                <div
-                  id="collapse1"
-                  class="collapse"
-                  aria-labelledby="heading1"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    Some placeholder content for the first accordion panel. This
-                    panel is shown by default, thanks to the
-                    <code>.show</code> class.
-                  </div>
-                </div>
-              </div>
-              <div class="card transition">
-                <div class="card-header" id="heading2">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapse2"
-                      aria-expanded="false"
-                      aria-controls="collapse2"
-                    >
-                      <p>></p>
-                      Collapsible Group Item #1
-                    </button>
-                  </h2>
-                </div>
-
-                <div
-                  id="collapse2"
-                  class="collapse"
-                  aria-labelledby="heading2"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    Some placeholder content for the first accordion panel. This
-                    panel is shown by default, thanks to the
-                    <code>.show</code> class.
-                  </div>
-                </div>
-              </div>
-              <div class="card transition">
-                <div class="card-header" id="heading3">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapse3"
-                      aria-expanded="false"
-                      aria-controls="collapse3"
-                    >
-                      <p>></p>
-                      Collapsible Group Item #1
-                    </button>
-                  </h2>
-                </div>
-
-                <div
-                  id="collapse3"
-                  class="collapse"
-                  aria-labelledby="heading3"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    Some placeholder content for the first accordion panel. This
-                    panel is shown by default, thanks to the
-                    <code>.show</code> class.
-                  </div>
-                </div>
-              </div>
-              <div class="card transition">
-                <div class="card-header" id="headingTwo">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      <p>></p>
-                      Collapsible Group Item #2
-                    </button>
-                  </h2>
-                </div>
-                <div
-                  id="collapseTwo"
-                  class="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    Some placeholder content for the second accordion panel.
-                    This panel is hidden by default.
-                  </div>
-                </div>
-              </div>
-              <div class="card transition">
-                <div class="card-header" id="headingThree">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      <p>></p>
-                      Collapsible Group Item #3
-                    </button>
-                  </h2>
-                </div>
-                <div
-                  id="collapseThree"
-                  class="collapse"
-                  aria-labelledby="headingThree"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    And lastly, the placeholder content for the third and final
-                    accordion panel. This panel is hidden by default.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -673,6 +753,29 @@ export default {
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 9999px;
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+  border-radius: 9999px;
+  background-clip: padding-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /*background: #555;*/
+}
 .transition {
   transform: translateY(150px);
   opacity: 0;
@@ -891,14 +994,25 @@ export default {
     text-align: center;
   }
 
+  .secondPart .titleH3 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: 44px;
+    line-height: 48px;
+    width: 80%;
+    margin-left: 3rem;
+    font-weight: 700;
+    letter-spacing: -2.5px;
+  }
+
   .secondPart .text {
-    margin-top: 0.5rem;
     color: #627597;
-    font-size: 26px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 24px;
     font-weight: 400;
     width: 80%;
     margin-left: 3rem;
+    margin-bottom: 10rem;
   }
 
   .secondPart .text span {
@@ -908,20 +1022,6 @@ export default {
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     font-weight: 500;
-    font-size: 26px;
-    line-height: 30px;
-  }
-
-  .secondPart .text2 {
-    margin-top: 0.5rem;
-    color: #627597;
-    font-size: 26px;
-    line-height: 30px;
-    font-weight: 400;
-    margin-top: 3rem;
-    width: 80%;
-    margin-left: 5rem;
-    margin-bottom: 3rem;
   }
 
   .secondPart .cols {
@@ -1049,7 +1149,7 @@ export default {
 
   .numbersDiv {
     margin-top: 10rem;
-    padding-bottom: 2rem;
+    padding-bottom: 8rem;
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -1268,52 +1368,140 @@ export default {
     width: 100% !important;
   }
 
-  .fifthDiv {
-    background: transparent;
-    padding: 3rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+  .feedbackDiv {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 8rem;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 10rem;
   }
 
-  .fifthDiv .adviser {
+  .feedbackDiv h2 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 800 !important;
+    text-align: center;
+    line-height: 68px;
+    letter-spacing: -0.03em !important;
+  }
+
+  .feedbackDiv .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: fit-content;
+    margin-right: 5rem;
+  }
+
+  .feedbackDiv .btnScrollR {
+    width: fit-content;
+    background: transparent;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .feedbackDiv .btnScrollL {
+    margin-right: 1rem;
+    width: fit-content;
+    background: transparent;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .feedbackDiv .feedbacks {
+    display: flex;
+    margin-top: 2rem;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-right: 8rem;
+    background-color: transparent;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+  }
+
+  .feedbacks.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+
+  .feedbackDiv .feedbacks .feedback {
     background: #03111f;
     border-radius: 30px;
-    display: flex;
+    padding: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    float: left;
+    box-shadow: rgb(0 35 117 / 20%) 0px 8px 24px;
   }
 
-  .fifthDiv .adviser .col {
-    width: 50%;
-    padding: 6rem;
-  }
-  .fifthDiv .adviser .col h3 {
-    color: #fff;
-    width: 90%;
-    font-size: 44px;
-    line-height: 48px;
-    letter-spacing: -0.04em;
-    font-weight: 600;
-  }
-
-  .fifthDiv .adviser .col h3 span {
-    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+  .feedbackDiv .feedbacks .feedback .quote {
+    background: -webkit-linear-gradient(-70deg, #67a3f0 0%, #4e54ed 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-size: 44px;
-    line-height: 44px;
-    letter-spacing: -0.04em;
     font-weight: 700;
+    font-size: 80px;
+    letter-spacing: 1.5px;
+    line-height: 38px;
+    margin-bottom: 0;
+    padding-top: 1rem;
   }
 
-  .fifthDiv .adviser .col_image {
-    background: transparent;
-    border-radius: 60px;
-    background-image: url(/src/assets/searchimage.png);
-    background-size: 50%;
-    background-repeat: no-repeat;
+  .feedbackDiv .feedbacks .feedback h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 2rem;
+    width: 40vw;
+  }
+
+  .feedbackDiv .feedbacks .feedback .author {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    margin-bottom: 0rem;
+    font-weight: 300;
+  }
+
+  .feedbackDiv .feedbacks .feedback .worktitle {
+    color: #c1c1c1;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 16px;
+    margin-bottom: 0rem;
+    font-weight: 300;
+  }
+  .feedbackDiv .feedbacks .feedback .feedbackInfo {
+    display: flex;
+    align-items: center;
+  }
+
+  .feedbackDiv .feedbacks .feedback .feedbackInfo .feedbackInfoPhoto {
+    background-image: url(/src/assets/ph9.JPG);
+    background-size: cover;
     background-position: center;
-    width: 50%;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
   }
 
   .thirdPart {
@@ -1509,6 +1697,134 @@ export default {
 
   .seventh .btn {
     background: transparent !important;
+  }
+
+  .featuredContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+  }
+
+  .featuredContent.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+
+  .featureds .titles {
+    align-items: center;
+    display: flex;
+    margin-left: 11rem;
+    margin-right: 11rem;
+    margin-bottom: 2rem;
+  }
+
+  .featureds .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: fit-content;
+  }
+
+  .featureds .titles h2 {
+    font-size: 50px;
+    line-height: 54px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 3rem;
+    letter-spacing: -2.5px;
+    width: fit-content;
+  }
+
+  .featureds .btnScrollR {
+    width: fit-content;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .featureds .btnScrollL {
+    margin-right: 1rem;
+    width: fit-content;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .featureds .featured {
+    border-radius: 30px;
+    background-color: #6398ef29;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
+      0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
+      0 22px 17px rgb(0 0 0 / 2%) !important;
+    background-image: url(/src/assets/ph17.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 75vw;
+    float: left;
+    height: 35vw;
+    position: relative;
+  }
+  .featured .hover {
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to bottom,
+      #000000d1,
+      #00000027,
+      #0000000a,
+      transparent
+    );
+    background: linear-gradient(
+      to bottom,
+      #000000d1,
+      #00000027,
+      #0000000a,
+      transparent
+    );
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .featured .text {
+  }
+
+  .featured h2 {
+    color: #fff;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0;
+    font-size: 30px;
+    line-height: 34px;
+    width: 30vw;
+  }
+  .featured p {
+    color: #fff;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

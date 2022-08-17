@@ -327,7 +327,7 @@ export default {
           <div class="thirdPartDiv">
             <div class="first">
               <div class="col1">
-                <h2>Be part of the world’s largest security community.</h2>
+                <h2>Trova con noi il tuo prossimo lavoro.</h2>
                 <p>
                   Understand your dependence on the software supply chain, and
                   how you can contribute back.
@@ -355,7 +355,7 @@ export default {
             </div>
             <div class="second">
               <div class="feature">
-                <h2>Notifications</h2>
+                <h2>Il Curriculum Vitae</h2>
                 <p>
                   Get updates on the GitHub activity you've subscribed to. Use
                   the notifications inbox to customize, triage, and manage your
@@ -364,7 +364,7 @@ export default {
                 <div class="btn3">Learn more</div>
               </div>
               <div class="feature">
-                <h2>Notifications</h2>
+                <h2>Il colloquio</h2>
                 <p>
                   Get updates on the GitHub activity you've subscribed to. Use
                   the notifications inbox to customize, triage, and manage your
@@ -373,7 +373,7 @@ export default {
                 <div class="btn3">Learn more</div>
               </div>
               <div class="feature">
-                <h2>Notifications</h2>
+                <h2>La lettera di presentazione</h2>
                 <p>
                   Get updates on the GitHub activity you've subscribed to. Use
                   the notifications inbox to customize, triage, and manage your
@@ -384,7 +384,7 @@ export default {
             </div>
             <div class="second">
               <div class="feature">
-                <h2>Notifications</h2>
+                <h2>Social Media Policy</h2>
                 <p>
                   Get updates on the GitHub activity you've subscribed to. Use
                   the notifications inbox to customize, triage, and manage your
@@ -458,7 +458,7 @@ export default {
             <div class="blur"></div>
             <div class="cols2">
               <div class="col col-padding" id="positions">
-                <h3 style="color: #fff">
+                <h3>
                   Non hai trovato <span>offerte in linea</span> con le tue
                   aspettative?
                 </h3>
@@ -488,6 +488,160 @@ export default {
                   background-size: cover;
                 "
               ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="seventh">
+          <div class="asks">
+            <h2>Domande frequenti</h2>
+            <div class="accordion" id="accordionExample">
+              <div class="card transition">
+                <div class="card-header" id="heading1">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapse1"
+                      aria-expanded="false"
+                      aria-controls="collapse1"
+                    >
+                      <p>></p>
+                      Collapsible Group Item #1
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapse1"
+                  class="collapse"
+                  aria-labelledby="heading1"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Some placeholder content for the first accordion panel. This
+                    panel is shown by default, thanks to the
+                    <code>.show</code> class.
+                  </div>
+                </div>
+              </div>
+              <div class="card transition">
+                <div class="card-header" id="heading2">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapse2"
+                      aria-expanded="false"
+                      aria-controls="collapse2"
+                    >
+                      <p>></p>
+                      Collapsible Group Item #1
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapse2"
+                  class="collapse"
+                  aria-labelledby="heading2"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Some placeholder content for the first accordion panel. This
+                    panel is shown by default, thanks to the
+                    <code>.show</code> class.
+                  </div>
+                </div>
+              </div>
+              <div class="card transition">
+                <div class="card-header" id="heading3">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapse3"
+                      aria-expanded="false"
+                      aria-controls="collapse3"
+                    >
+                      <p>></p>
+                      Collapsible Group Item #1
+                    </button>
+                  </h2>
+                </div>
+
+                <div
+                  id="collapse3"
+                  class="collapse"
+                  aria-labelledby="heading3"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Some placeholder content for the first accordion panel. This
+                    panel is shown by default, thanks to the
+                    <code>.show</code> class.
+                  </div>
+                </div>
+              </div>
+              <div class="card transition">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <p>></p>
+                      Collapsible Group Item #2
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseTwo"
+                  class="collapse"
+                  aria-labelledby="headingTwo"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    Some placeholder content for the second accordion panel.
+                    This panel is hidden by default.
+                  </div>
+                </div>
+              </div>
+              <div class="card transition">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <p>></p>
+                      Collapsible Group Item #3
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    And lastly, the placeholder content for the third and final
+                    accordion panel. This panel is hidden by default.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1168,6 +1322,7 @@ export default {
     line-height: 38px;
     font-weight: 700;
     letter-spacing: -1px;
+    color: #010b15;
   }
 
   .ctaCV .col h3 span {
@@ -1342,6 +1497,111 @@ export default {
 
   .beforeFooter {
     padding-bottom: 3rem;
+  }
+
+  .seventh {
+    width: 100%;
+    margin-top: 6rem;
+    padding-bottom: 10rem;
+  }
+
+  .seventh .asks h2 {
+    color: #010b15;
+    font-size: 50px;
+    line-height: 54px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    letter-spacing: -2.5px;
+  }
+
+  .seventh .accordion {
+    margin-top: 3rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .seventh .card-header {
+    background: transparent;
+    border: 0;
+  }
+
+  .seventh .accordion .card {
+    background: transparent;
+    border-bottom: 2px solid #1119251e !important;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0;
+    border: 0;
+  }
+
+  .seventh .accordion .card:hover {
+    border-bottom: 2px solid #233144 !important;
+  }
+
+  .seventh .accordion .card .btn:focus-visible {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  .seventh .accordion .card .btn:focus {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
+
+  .seventh .btn {
+    padding: 0 !important;
+  }
+
+  .btn-link {
+    color: #010b15;
+    font-weight: 700;
+    font-size: 24px;
+    align-items: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-link:hover {
+    color: #010b15;
+    text-decoration: none;
+  }
+
+  .btn-link p {
+    color: rgb(96, 133, 255);
+    font-weight: 700;
+    font-size: 18px;
+    margin-right: 2rem;
+    width: fit-content;
+    transform: rotate(90deg);
+    margin-bottom: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .collapsed p {
+    transform: rotate(0deg);
+  }
+
+  .card-body {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: #627597;
+  }
+
+  code {
+    font-size: 87.5%;
+    color: #03172b;
+    word-wrap: break-word;
+  }
+
+  .seventh .btn {
+    background: transparent !important;
   }
 
   .glow {

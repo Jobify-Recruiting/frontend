@@ -96,14 +96,14 @@ export default {
     btnScrollSx() {
       let content = document.querySelector(".feedbacks");
       const itemWidth = content.querySelector(".feedback").clientWidth;
-      content.scrollBy({ left: -itemWidth * 4, top: 0, behavior: "smooth" });
+      content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
       console.log(content);
     },
 
     btnScrollDx() {
       let content = document.querySelector(".feedbacks");
       const itemWidth = content.querySelector(".feedback").clientWidth;
-      content.scrollBy({ left: itemWidth * 4, top: 0, behavior: "smooth" });
+      content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
     },
 
     workflowScrollSx() {
@@ -1043,70 +1043,118 @@ export default {
           <div class="feedback">
             <p class="quote">"</p>
             <h3>
-              Unreal—Codespaces had me running a server in minutes, and that
-              never happens as a new hire. What an awesome first week!
+              Dal nostro primo incontro ho riconosciuto in Davide volontà,
+              dedizione e una importante preparazione culturale.Doti preziose
+              nel contesto lavorativo di riferimento.
             </h3>
             <div class="feedbackInfo">
-              <div class="feedbackInfoPhoto"></div>
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                "
+              ></div>
               <div class="feddbackData">
-                <p class="author">Chris Westra</p>
-                <p class="worktitle">Senior Software Engineer</p>
+                <p class="author">Stefano Ruscito</p>
+                <p class="worktitle">Sales Account presso Umana spa</p>
               </div>
             </div>
           </div>
           <div class="feedback">
             <p class="quote">"</p>
             <h3>
-              Unreal—Codespaces had me running a server in minutes, and that
-              never happens as a new hire. What an awesome first week!
+              Con Davide portiamo avanti da tempo diverse iniziative in ambito
+              HR. La sua voglia di ridisegnare il futuro del settore con
+              approcci innovativi lo rende un esempio da seguire. Cultura,
+              competenza, serietà e tanta voglia di fare sono solo alcune delle
+              qualità che contraddistinguono Davide.
             </h3>
             <div class="feedbackInfo">
-              <div class="feedbackInfoPhoto"></div>
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-10-at-18.01.29-1-1.jpeg);
+                "
+              ></div>
               <div class="feddbackData">
-                <p class="author">Chris Westra</p>
-                <p class="worktitle">Senior Software Engineer</p>
+                <p class="author">Fabio Panella</p>
+                <p class="worktitle">
+                  Director of Sales & Operations SEUR - Talent.com
+                </p>
               </div>
             </div>
           </div>
           <div class="feedback">
             <p class="quote">"</p>
             <h3>
-              Unreal—Codespaces had me running a server in minutes, and that
-              never happens as a new hire. What an awesome first week!
+              Posso descrivere Davide semplicemente in due parole: “competenza”
+              e “voglia di fare”. La sua spiccata professionalità gli consente
+              di muoversi in qualsiasi contesto.
             </h3>
             <div class="feedbackInfo">
-              <div class="feedbackInfoPhoto"></div>
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-17-at-19.19.22-2-1-1.jpeg);
+                "
+              ></div>
               <div class="feddbackData">
-                <p class="author">Chris Westra</p>
-                <p class="worktitle">Senior Software Engineer</p>
+                <p class="author">Marco Calabrese</p>
+                <p class="worktitle">
+                  Direttore delle Risorse Umane e Organizzazione AG Group Italy
+                </p>
               </div>
             </div>
           </div>
           <div class="feedback">
             <p class="quote">"</p>
             <h3>
-              Unreal—Codespaces had me running a server in minutes, and that
-              never happens as a new hire. What an awesome first week!
+              Lavoro con Davide in ambito associativo AIDP ed è un vero piacere.
+              Davide è un vero appassionato di tutte le diverse sfaccettature
+              del mondo HR e la sua principale dote direi che è la curiosità.
+              Ascolta ed approfondisce.È generoso e si mette sempre a
+              disposizione. I suoi punti di forza direi problem solving e forte
+              competenza nei processi di selezione e sviluppo delle risorse
+              umane.
             </h3>
             <div class="feedbackInfo">
-              <div class="feedbackInfoPhoto"></div>
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-21-at-19.47.39-1-1.jpeg);
+                "
+              ></div>
               <div class="feddbackData">
-                <p class="author">Chris Westra</p>
-                <p class="worktitle">Senior Software Engineer</p>
+                <p class="author">Marco Micaroni</p>
+                <p class="worktitle">
+                  Responsabile relazioni sindacali e contenzioso del lavoro
+                  AUTOSTRADE PER L’ITALIA SPA
+                </p>
               </div>
             </div>
           </div>
           <div class="feedback">
             <p class="quote">"</p>
             <h3>
-              Unreal—Codespaces had me running a server in minutes, and that
-              never happens as a new hire. What an awesome first week!
+              Ho avuto modo di conoscere Davide all'interno della community
+              AIDP. E ne ho subito tratto un'ottima impressione. Dinamico,
+              aperto a capire il mondo HR che gli sta intorno e capace di
+              portare contributi professionali di valore. Tutto questo
+              supportato da una gran voglia e volontà di fare cose innovative e
+              con grande competenza.
             </h3>
             <div class="feedbackInfo">
-              <div class="feedbackInfoPhoto"></div>
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-22-at-11.14.00-1-1.jpeg);
+                "
+              ></div>
               <div class="feddbackData">
-                <p class="author">Chris Westra</p>
-                <p class="worktitle">Senior Software Engineer</p>
+                <p class="author">Nicola Rossi</p>
+                <p class="worktitle">
+                  Senior Director, Managing Director Italy at Monster Italia
+                </p>
               </div>
             </div>
           </div>
