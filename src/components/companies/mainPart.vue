@@ -191,7 +191,6 @@ export default {
             </div>
           </div>
         </div>
-
         <div class="secondPart">
           <div class="cols">
             <div class="col col2">
@@ -242,6 +241,33 @@ export default {
                 >
               </div>
             </div>
+          </div>
+        </div>
+        <div class="fifthDiv">
+          <div class="adviser transition">
+            <div class="col">
+              <h3>Trova il candidato giusto <span>per la tua azienda</span></h3>
+              <router-link to="/stories"
+                ><button class="btn">
+                  Scopri di più
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span></button
+              ></router-link>
+            </div>
+            <div class="col_image"></div>
           </div>
         </div>
         <div class="feedbackDiv" id="feedback">
@@ -1366,6 +1392,52 @@ export default {
     margin-left: 0 !important;
     margin-top: 0 !important;
     width: 100% !important;
+  }
+
+  .fifthDiv {
+    background: transparent;
+    padding: 3rem;
+  }
+
+  .fifthDiv .adviser {
+    background: #03111f;
+    border-radius: 30px;
+    display: flex;
+  }
+
+  .fifthDiv .adviser .col {
+    width: 50%;
+    padding: 6rem;
+  }
+  .fifthDiv .adviser .col h3 {
+    color: #fff;
+    width: 72%;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    font-weight: 600;
+  }
+
+  .fifthDiv .adviser .col h3 span {
+    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+  }
+
+  .fifthDiv .adviser .col_image {
+    background: transparent;
+    border-radius: 30px;
+    background-image: url(/src/assets/storie.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 42%;
   }
 
   .feedbackDiv {

@@ -240,7 +240,7 @@ export default {
             developers.
           </p>
           <div class="mainButton">
-            <a href="#first"
+            <router-link to="/openposition"
               ><button class="btn">
                 Scopri di più
                 <span>
@@ -258,7 +258,7 @@ export default {
                     />
                   </svg>
                 </span></button
-            ></a>
+            ></router-link>
           </div>
           <div class="image"></div>
         </div>
@@ -453,45 +453,6 @@ export default {
           </div>
         </div>
 
-        <div class="beforeFooter">
-          <div class="ctaCV" style="background: rgb(161 161 161 / 10%)">
-            <div class="blur"></div>
-            <div class="cols2">
-              <div class="col col-padding" id="positions">
-                <h3>
-                  Non hai trovato <span>offerte in linea</span> con le tue
-                  aspettative?
-                </h3>
-                <div class="button" @click="sendCV()">
-                  Manda il tuo CV
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="currentColor"
-                      class="bi bi-arrow-right-short"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                      />
-                    </svg>
-                  </span>
-                </div>
-              </div>
-              <div
-                class="col"
-                style="
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/img_h1.png);
-                  background-size: cover;
-                "
-              ></div>
-            </div>
-          </div>
-        </div>
-
         <div class="seventh">
           <div class="asks">
             <h2>Domande frequenti</h2>
@@ -642,6 +603,44 @@ export default {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="beforeFooter">
+          <div class="ctaCV" style="background: rgb(161 161 161 / 10%)">
+            <div class="blur"></div>
+            <div class="cols2">
+              <div class="col col-padding" id="positions">
+                <h3>
+                  Non hai trovato <span>offerte in linea</span> con le tue
+                  aspettative?
+                </h3>
+                <div class="button" @click="sendCV()">
+                  Manda il tuo CV
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div
+                class="col"
+                style="
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/img_h1.png);
+                  background-size: cover;
+                "
+              ></div>
             </div>
           </div>
         </div>
@@ -1502,7 +1501,7 @@ export default {
   .seventh {
     width: 100%;
     margin-top: 6rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
   }
 
   .seventh .asks h2 {

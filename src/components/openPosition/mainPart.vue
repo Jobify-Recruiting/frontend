@@ -170,6 +170,7 @@ export default {
       <div class="glow4"></div>
       <div class="glow5"></div>
       <div class="glow6"></div>
+      <div class="glow7"></div>
       <div class="first">
         <div class="title">
           <div class="titleDiv">
@@ -298,41 +299,10 @@ export default {
           <div class="popup">
             <div class="body">
               <div class="jobAlertHeader">
-                <div class="subtitle">Job Alert</div>
-                <h2>
-                  Attiva la job alert per ricevere notifiche solo delle
-                  posizioni aperte che preferisci
-                </h2>
+                <div class="subtitle">Job alert</div>
+                <h2>Attiva la job alert per le posizioni più interessanti</h2>
 
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="150"
-                    height="150"
-                    fill="#fff"
-                    class="bi bi-bell bell"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
-                    />
-                  </svg>
-                </span>
-
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="150"
-                    height="150"
-                    fill="#0062f5"
-                    class="bi bi-bell bell2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"
-                    />
-                  </svg>
-                </span>
+                <div class="photo"></div>
               </div>
               <div class="jobAlert">
                 <div
@@ -378,23 +348,32 @@ export default {
                     class="input"
                     type="text"
                     name="nickname"
-                    placeholder="Nome del Job Alert"
+                    placeholder="Linkedin Url"
                   />
                 </div>
                 <div
-                  class="select"
+                  class="input"
                   style="display: flex; width: 100%; margin: 0"
                 >
-                  <select
-                    class="form-select"
-                    aria-label="Default select example"
-                  >
-                    <option selected>Categoria</option>
-                    <option value="1">Farm</option>
-                    <option value="2">Finance</option>
-                    <option value="3">IT Tech</option>
-                    <option value="3">Generalist</option>
-                  </select>
+                  <input
+                    id="nav"
+                    class="input"
+                    type="text"
+                    name="nickname"
+                    placeholder="Telefono"
+                  />
+                </div>
+                <div
+                  class="input"
+                  style="display: flex; width: 100%; margin: 0"
+                >
+                  <input
+                    id="nav"
+                    class="input"
+                    type="text"
+                    name="nickname"
+                    placeholder="Dettagli"
+                  />
                 </div>
 
                 <div class="formButton">
@@ -446,41 +425,7 @@ export default {
                   Qui potrai inviare il tuo CV direttamente a Jobify Recruiting
                 </h2>
 
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="150"
-                    height="150"
-                    fill="#fff"
-                    class="bi bi-file-earmark-richtext bell"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"
-                    />
-                    <path
-                      d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208zM6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"
-                    />
-                  </svg>
-                </span>
-
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="150"
-                    height="150"
-                    fill="#0062f5"
-                    class="bi bi-file-earmark-richtext bell2"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h-2z"
-                    />
-                    <path
-                      d="M4.5 12.5A.5.5 0 0 1 5 12h3a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm0-2A.5.5 0 0 1 5 10h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm1.639-3.708 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047l1.888.974V8.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5V8s1.54-1.274 1.639-1.208zM6.25 6a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5z"
-                    />
-                  </svg>
-                </span>
+                <div class="photo"></div>
               </div>
               <div class="jobAlert">
                 <div
@@ -931,7 +876,7 @@ export default {
 
         <div class="secondPart2">
           <div class="title">
-            <h2>Titolo da inserire e poi il workflow sotto</h2>
+            <h2>Jobify ricerca e seleziona talenti con umanità</h2>
             <p>
               una frase in cui spieghiamo che crediamo ad una Selezione umana
               che ha come obiettivo quello di capire le aspettative del
@@ -1048,28 +993,28 @@ export default {
   .glow2 {
     position: absolute;
     width: 5vw;
-    right: -8%;
+    right: 0%;
     top: 8%;
     width: 10vw;
     transform: rotate(90deg);
     opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 255, 196, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 255, 196, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(210, 255, 46, 0.9);
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(210, 255, 46, 0.2);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(210, 255, 46, 0.2);
+    box-shadow: 0px 0px 105px 45px rgba(210, 255, 46, 0.2);
     z-index: 10;
   }
 
   .glow3 {
     position: absolute;
     width: 5vw;
-    right: -8%;
+    right: 0%;
     top: 18%;
     width: 10vw;
     transform: rotate(90deg);
     opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.9);
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.2);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.2);
+    box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.2);
     z-index: 10;
   }
 
@@ -1107,6 +1052,19 @@ export default {
     -moz-box-shadow: 0px 0px 105px 45px rgb(255 166 46 / 50%);
     box-shadow: 0px 0px 105px 45px rgb(255 166 46 / 50%);
     z-index: 0;
+  }
+
+  .glow7 {
+    position: absolute;
+    width: 5vw;
+    transform: scale(3.5);
+    top: 10%;
+    left: 50%;
+    z-index: 1;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.2);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.2);
+    box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.2);
   }
 
   .first {
@@ -1954,6 +1912,17 @@ export default {
     font-size: 12px;
     line-height: 12px;
     margin-bottom: 1rem;
+  }
+
+  .popup .body .jobAlertHeader .photo {
+    background: transparent;
+    border-radius: 30px;
+    background-image: url(/src/assets/storie.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 70%;
   }
 
   .popup .body .jobAlertHeader .bell {

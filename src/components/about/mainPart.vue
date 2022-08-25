@@ -101,24 +101,24 @@ export default {
         <div class="quotesDiv">
           <div class="quotes">
             <div class="quote">
-              <div class="quoteh4">Cos'è <span>Jobify</span></div>
-              <div class="quoteh5">
-                Inserire descrizione o altro dell'azienda, descrizione o altro
-                dell'azienda, altro Inserire descrizione o altro dell'azienda.
-              </div>
-              <a href="/newsletter" class=""
-                ><button class="btn">Scopri di più</button></a
-              >
-            </div>
-            <div class="quote" style="margin-top: 8rem">
               <div class="quoteh4">
                 <span>Storia</span> di Jobify Recruiting
               </div>
               <div class="quoteh5">
                 Inserire descrizione o altro dell'azienda, descrizione o altro
+                dell'azienda, altro Inserire descrizione o altro dell'azienda.
+              </div>
+            </div>
+            <div class="quote" style="margin-top: 8rem">
+              <div class="quoteh4"><span>In che modo</span> lo facciamo</div>
+              <div class="quoteh5">
+                Inserire descrizione o altro dell'azienda, descrizione o altro
                 dell'azienda, altro Inserire descrizione o altro dell'azienda,
                 descrizione o altro dell'azienda.
               </div>
+              <a href="/newsletter" class=""
+                ><button class="btn">Scopri di più</button></a
+              >
             </div>
           </div>
           <div class="quotes">
@@ -636,7 +636,7 @@ export default {
 
   .quotes {
     display: flex;
-    margin-bottom: 12rem;
+    margin-bottom: 6rem;
   }
 
   .quotes .quote {

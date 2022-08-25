@@ -18,6 +18,10 @@ export default {
         if (flavoursContainer.scrollLeft !== flavoursScrollWidth) {
           flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 1, 0);
         }
+
+        if (flavoursContainer.scrollLeft > 3400) {
+          flavoursContainer.scrollTo(0, 0);
+        }
       }, 15);
     });
 
@@ -39,7 +43,7 @@ export default {
 
     window.addEventListener("scroll", reveal);
 
-    function scrollFunction() {
+    /*function scrollFunction() {
       if (
         document.body.scrollTop > 1950 ||
         document.documentElement.scrollTop > 1950
@@ -62,7 +66,7 @@ export default {
         document.getElementById("text3").style.fontSize = "94px";
         document.getElementById("text3").style.lineHeight = "98px";
       }
-    }
+    }*/
 
     const slider = document.querySelector(".feedbacks");
     let isDown = false;
@@ -659,8 +663,7 @@ export default {
                 Descrizione dello step, Jobify, la tua ricerca e selezione, la
                 tua ricerca e selezione, la tua ricerca e selezione, la tua
                 ricerca e selezione, la tua ricerca e selezione, Jobify, la tua
-                ricerca e selezione, la tua ricerca e selezione, la tua ricerca
-                e selezione,
+                ricerca e selezione,
                 <span
                   >la tua ricerca e selezione, la tua ricerca e selezione</span
                 >
@@ -787,8 +790,7 @@ export default {
                 Descrizione dello step, Jobify, la tua ricerca e selezione, la
                 tua ricerca e selezione, la tua ricerca e selezione, la tua
                 ricerca e selezione, la tua ricerca e selezione, Jobify, la tua
-                ricerca e selezione, la tua ricerca e selezione, la tua ricerca
-                e selezione,
+                ricerca e selezione,
                 <span
                   >la tua ricerca e selezione, la tua ricerca e selezione</span
                 >
@@ -818,8 +820,7 @@ export default {
                 Descrizione dello step, Jobify, la tua ricerca e selezione, la
                 tua ricerca e selezione, la tua ricerca e selezione, la tua
                 ricerca e selezione, la tua ricerca e selezione, Jobify, la tua
-                ricerca e selezione, la tua ricerca e selezione, la tua ricerca
-                e selezione,
+                ricerca e selezione,
                 <span
                   >la tua ricerca e selezione, la tua ricerca e selezione</span
                 >
@@ -968,7 +969,7 @@ export default {
             <h2>Partners</h2>
             <p
               style="
-                width: 50% !important;
+                width: 40% !important;
                 margin-left: auto;
                 margin-right: auto;
                 color: #fff !important;
@@ -1158,6 +1159,50 @@ export default {
               </div>
             </div>
           </div>
+          <div class="feedback is-clone">
+            <p class="quote">"</p>
+            <h3>
+              Dal nostro primo incontro ho riconosciuto in Davide volontà,
+              dedizione e una importante preparazione culturale.Doti preziose
+              nel contesto lavorativo di riferimento.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Stefano Ruscito</p>
+                <p class="worktitle">Sales Account presso Umana spa</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback is-clone">
+            <p class="quote">"</p>
+            <h3>
+              Con Davide portiamo avanti da tempo diverse iniziative in ambito
+              HR. La sua voglia di ridisegnare il futuro del settore con
+              approcci innovativi lo rende un esempio da seguire. Cultura,
+              competenza, serietà e tanta voglia di fare sono solo alcune delle
+              qualità che contraddistinguono Davide.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-10-at-18.01.29-1-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Fabio Panella</p>
+                <p class="worktitle">
+                  Director of Sales & Operations SEUR - Talent.com
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1259,7 +1304,6 @@ export default {
   .mainTitle {
     height: 100%;
     width: 100%;
-    padding-bottom: 4rem;
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
@@ -1321,7 +1365,7 @@ export default {
     width: 100%;
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-top: 10rem;
+    padding-top: 8rem;
     width: 100%;
     background-color: #fff;
   }
@@ -1450,6 +1494,7 @@ export default {
     margin-right: 2rem;
     margin-left: 2rem;
     margin-bottom: 3rem;
+    height: 22vw;
     float: left;
     transition: all 0.3s ease-out;
     text-align: left;
@@ -1486,7 +1531,7 @@ export default {
     line-height: 32px;
     font-weight: 700;
     letter-spacing: -0.04em !important;
-    width: 100% !important;
+    width: 70% !important;
     margin-bottom: 1rem;
   }
 
@@ -1504,7 +1549,7 @@ export default {
     width: 37vw;
     height: 20vw;
     margin-right: 2rem;
-    background-image: url(/src/assets/candidato.jpg);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/candidato.jpg);
     background-position: center;
     background-size: cover;
     border-top-left-radius: 20px;
@@ -1517,7 +1562,7 @@ export default {
 
   .workflow {
     background: #fff;
-    padding: 10rem;
+    padding-top: 10rem;
     padding-bottom: 0;
   }
 
@@ -2721,7 +2766,7 @@ export default {
   .fourthDiv {
     height: 100%;
     width: 100%;
-    padding-bottom: 3rem;
+    padding-bottom: 8rem;
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
@@ -2863,6 +2908,10 @@ export default {
     padding-top: 10rem;
   }
 
+  .feedbackDiv .content {
+    padding: 0rem !important;
+  }
+
   .feedbackDiv h2 {
     color: #010712;
     font-size: 64px;
@@ -2933,6 +2982,7 @@ export default {
     margin-left: 1rem;
     float: left;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    height: 24vw;
   }
 
   .feedbackDiv .feedbacks .feedback .quote {
@@ -2952,17 +3002,17 @@ export default {
   .feedbackDiv .feedbacks .feedback h3 {
     color: #010712;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 22px;
+    line-height: 26px;
     margin-bottom: 2rem;
     width: 40vw;
   }
 
   .feedbackDiv .feedbacks .feedback .author {
     color: #010712;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
-    line-height: 24px;
+    line-height: 22px;
     margin-bottom: 0rem;
     font-weight: 300;
   }
@@ -3008,9 +3058,9 @@ export default {
   }
   .fifthDiv .adviser .col h3 {
     color: #fff;
-    width: 90%;
-    font-size: 44px;
-    line-height: 48px;
+    width: 72%;
+    font-size: 36px;
+    line-height: 40px;
     letter-spacing: -0.04em;
     font-weight: 600;
   }
@@ -3021,20 +3071,20 @@ export default {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-size: 44px;
-    line-height: 44px;
+    font-size: 36px;
+    line-height: 40px;
     letter-spacing: -0.04em;
     font-weight: 700;
   }
 
   .fifthDiv .adviser .col_image {
     background: transparent;
-    border-radius: 60px;
-    background-image: url(/src/assets/searchimage.png);
-    background-size: 50%;
+    border-radius: 30px;
+    background-image: url(/src/assets/storie.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    width: 50%;
+    width: 42%;
   }
 }
 

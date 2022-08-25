@@ -58,11 +58,11 @@ export default {
       <p>Jobify è</p>
       <b>
         <div class="innerIam">
-          innovazione<br />
-          tecnologia<br />
-          progresso<br />
-          risorse umane<br />
-          etica
+          umana<br />
+          rapida<br />
+          competitiva<br />
+          scientifica<br />
+          tecnologica
         </div>
       </b>
     </div>
