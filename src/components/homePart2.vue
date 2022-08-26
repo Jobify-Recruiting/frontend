@@ -662,8 +662,7 @@ export default {
               <p>
                 Descrizione dello step, Jobify, la tua ricerca e selezione, la
                 tua ricerca e selezione, la tua ricerca e selezione, la tua
-                ricerca e selezione, la tua ricerca e selezione, Jobify, la tua
-                ricerca e selezione,
+                ricerca e selezione, la tua ricerca e selezione, Jobify,
                 <span
                   >la tua ricerca e selezione, la tua ricerca e selezione</span
                 >
@@ -789,8 +788,7 @@ export default {
               <p>
                 Descrizione dello step, Jobify, la tua ricerca e selezione, la
                 tua ricerca e selezione, la tua ricerca e selezione, la tua
-                ricerca e selezione, la tua ricerca e selezione, Jobify, la tua
-                ricerca e selezione,
+                ricerca e selezione, la tua ricerca e selezione, Jobify,
                 <span
                   >la tua ricerca e selezione, la tua ricerca e selezione</span
                 >
@@ -819,8 +817,7 @@ export default {
               <p>
                 Descrizione dello step, Jobify, la tua ricerca e selezione, la
                 tua ricerca e selezione, la tua ricerca e selezione, la tua
-                ricerca e selezione, la tua ricerca e selezione, Jobify, la tua
-                ricerca e selezione,
+                ricerca e selezione, la tua ricerca e selezione, Jobify,
                 <span
                   >la tua ricerca e selezione, la tua ricerca e selezione</span
                 >
@@ -1494,7 +1491,7 @@ export default {
     margin-right: 2rem;
     margin-left: 2rem;
     margin-bottom: 3rem;
-    height: 22vw;
+    min-height: 22vw;
     float: left;
     transition: all 0.3s ease-out;
     text-align: left;
@@ -1633,6 +1630,7 @@ export default {
     padding: 3rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 35vw;
   }
 
   .workflow .columns .column .circle {
@@ -3014,7 +3012,7 @@ export default {
     letter-spacing: 1px;
     line-height: 22px;
     margin-bottom: 0rem;
-    font-weight: 300;
+    font-weight: 500;
   }
 
   .feedbackDiv .feedbacks .feedback .worktitle {
