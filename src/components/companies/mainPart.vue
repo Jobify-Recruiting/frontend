@@ -114,14 +114,14 @@ export default {
     btnScrollSx3() {
       let content = document.querySelector(".clientsCoBody");
       const itemWidth = content.querySelector(".logoClient").clientWidth;
-      content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
+      content.scrollBy({ left: -itemWidth * 7, top: 0, behavior: "smooth" });
       console.log(content);
     },
 
     btnScrollDx3() {
       let content = document.querySelector(".clientsCoBody");
       const itemWidth = content.querySelector(".logoClient").clientWidth;
-      content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
+      content.scrollBy({ left: itemWidth * 7, top: 0, behavior: "smooth" });
     },
 
     workflowScrollSx() {
@@ -1476,24 +1476,103 @@ export default {
 
             <div class="logoClient">
               <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/athena_logo.png"
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/studio-felli-1-1.jpg"
               />
             </div>
 
             <div class="logoClient">
               <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-etwo.png"
-              />
-            </div>
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-border-white-1-1.png"
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-07-at-22.44.28-1.jpeg"
               />
             </div>
 
             <div class="logoClient">
               <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-OrfinSito.png"
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/06/logo_bit4id.png"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-5.png"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-3-1.png"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/10/logo.png"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-2.png"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-autoscuole-furia-3-1.jpg"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logoaziendavisibile300.jpg"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo20white.png"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/LOGO_ESTESO_FIRMA-300x74-1.jpg"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Schermata-2020-07-10-alle-16.59.13-1-1.png"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo_irec-1.png"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/AG_LOGO_CLAIM_BIANCO-1.png"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/PentaFinanziamentiItalia.png"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Cattura-4.png"
+              />
+            </div>
+
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Unione-professionisti-1.jpg"
               />
             </div>
           </div>
