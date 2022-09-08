@@ -19,7 +19,7 @@ export default {
           flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 1, 0);
         }
 
-        if (flavoursContainer.scrollLeft > 3400) {
+        if (flavoursContainer.scrollLeft > 13500) {
           flavoursContainer.scrollTo(0, 0);
         }
       }, 15);
@@ -138,6 +138,53 @@ export default {
     >
       <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
     </svg>
+
+    <div class="clientsCo">
+      <div class="clientsCoBorder">
+        <div class="clientsCoLink">
+          <h2>I clienti di Jobify Recruiting</h2>
+          <router-link to="/companies#clients">
+            <p>Visualizza tutti i clienti</p></router-link
+          >
+        </div>
+        <div class="clientsCoBody">
+          <div
+            class="logoClient"
+            style="
+              background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-4.png);
+            "
+          ></div>
+
+          <div
+            class="logoClient"
+            style="
+              background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/athena_logo.png);
+            "
+          ></div>
+
+          <div
+            class="logoClient"
+            style="
+              background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-etwo.png);
+            "
+          ></div>
+          <div
+            class="logoClient"
+            style="
+              background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-border-white-1-1.png);
+            "
+          ></div>
+
+          <div
+            class="logoClient"
+            style="
+              background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-OrfinSito.png);
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+
     <div class="mainTitle" id="first">
       <div class="content">
         <div class="first">
@@ -167,6 +214,7 @@ export default {
         </div>
       </div>
     </div>
+
     <div class="secondDiv" id="second">
       <div class="content">
         <div class="first">
@@ -300,7 +348,7 @@ export default {
       </div>
     </div>
 
-    <div class="workflow" id="workflow">
+    <!--<div class="workflow" id="workflow">
       <div class="workflowTitle">
         <h2>Il nostro workflow</h2>
       </div>
@@ -542,288 +590,187 @@ export default {
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <div class="workflow" id="workflow">
       <div class="workflowTitle">
-        <h2 style="margin-bottom: 0rem !important">Il nostro workflow</h2>
-      </div>
-      <div class="buttons">
-        <div class="btnScrollL" @click="workflowScrollSx()">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            fill="#010712"
-            class="bi bi-chevron-left"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-            />
-          </svg>
-        </div>
-        <div class="btnScrollR" @click="workflowScrollDx()">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="22"
-            height="22"
-            fill="#010712"
-            class="bi bi-chevron-right"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-            />
-          </svg>
-        </div>
+        <h2 style="margin-bottom: 0rem !important">
+          Creiamo un processo di ricerca e selezione
+        </h2>
       </div>
       <div
         class="workflowFlex"
         style="
           display: flex;
           height: 100%;
-          width: 100%;
           background-color: #fff;
-          overflow-x: scroll;
-          overflow-y: hidden;
-          flex-wrap: nowrap;
           align-items: center;
           position: relative;
         "
       >
-        <div class="columns">
-          <div class="column workflowColumn" style="width: 35vw !important">
-            <div class="background transition">
-              <div class="number">1</div>
-              <h2>Intervista al cliente</h2>
-              <p>
-                Descrizione dello step, Jobify, la tua ricerca e selezione, la
-                tua ricerca e selezione, la tua ricerca e selezione, la tua
-                ricerca e selezione, la tua ricerca e selezione, Jobify, la tua
-                ricerca e selezione, la tua ricerca e selezione, la tua ricerca
-                e selezione, la tua ricerca e selezione, la tua ricerca e
-                selezione
-              </p>
-            </div>
+        <div class="step_workflow">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="#0062f5"
+              class="bi bi-graph-up-arrow"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
+              />
+            </svg>
           </div>
-          <div class="column workflowColumn" style="width: 35vw !important">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#161b22"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
-            <div class="background transition">
-              <div class="number">2</div>
-              <h2>Job description</h2>
-              <p>
-                Descrizione dello step, Jobify, la tua ricerca e selezione, la
-                tua ricerca e selezione, la tua ricerca e selezione, la tua
-                ricerca e selezione, la tua ricerca e selezione, Jobify, la tua
-                ricerca e selezione, la tua ricerca e selezione, la tua ricerca
-                e selezione, la tua ricerca e selezione, la tua ricerca e
-                selezione
-              </p>
-            </div>
-          </div>
+          <div class="text">Efficenza</div>
         </div>
-        <div class="columns">
-          <div class="column workflowColumn" style="width: 35vw !important">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#161b22"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
-            <div class="background transition">
-              <div class="number">3</div>
-              <h2>Lancio annuncio & Head Hunting</h2>
-              <p>
-                Descrizione dello step, Jobify, la tua ricerca e selezione, la
-                tua ricerca e selezione, la tua ricerca e selezione, la tua
-                ricerca e selezione, la tua ricerca e selezione, Jobify,
-                <span
-                  >la tua ricerca e selezione, la tua ricerca e selezione</span
-                >
-              </p>
-            </div>
-          </div>
-          <div class="column workflowColumn" style="width: 35vw !important">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#161b22"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
-            <div class="background transition">
-              <div class="number">4</div>
-              <h2>Screening CV</h2>
-              <p>
-                Descrizione dello step, Jobify, la tua ricerca e selezione, la
-                tua ricerca e selezione, la tua ricerca e selezione,
-                <span
-                  >la tua ricerca e selezione, la tua ricerca e selezione</span
-                >
-                Jobify, la tua ricerca e selezione, la tua ricerca e selezione,
-                la tua ricerca e selezione, la tua ricerca e selezione, la tua
-                ricerca e selezione
-              </p>
-            </div>
-          </div>
+
+        <div class="circle2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#161b22"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
         </div>
-        <div class="columns">
-          <div class="column workflowColumn" style="width: 35vw !important">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#161b22"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
-            <div class="background transition">
-              <div class="number">5</div>
-              <h2>Screening telefonico</h2>
-              <p>
-                Descrizione dello step, Jobify, la tua ricerca e selezione, la
-                tua ricerca e selezione, la tua ricerca e selezione, la tua
-                ricerca e selezione, la tua ricerca e selezione, Jobify, la tua
-                ricerca e selezione,
-                <span
-                  >la tua ricerca e selezione, la tua ricerca e selezione</span
-                >
-                la tua ricerca e selezione, la tua ricerca e selezione
-              </p>
-            </div>
+
+        <div class="step_workflow">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="#0062f5"
+              class="bi bi-alarm"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"
+              />
+              <path
+                d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"
+              />
+            </svg>
           </div>
-          <div class="column workflowColumn" style="width: 35vw !important">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#161b22"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
-            <div class="background transition">
-              <div class="number">6</div>
-              <h2>Videocolloquio</h2>
-              <p>
-                Descrizione dello step, Jobify, la tua ricerca e selezione, la
-                tua ricerca e selezione, la tua ricerca e selezione, la tua
-                ricerca e selezione, la tua ricerca e selezione, Jobify, la tua
-                ricerca e selezione, la tua ricerca e selezione, la tua ricerca
-                e selezione,
-                <span
-                  >la tua ricerca e selezione, la tua ricerca e selezione</span
-                >
-              </p>
-            </div>
-          </div>
+          <div class="text">Scientifico</div>
         </div>
-        <div class="columns">
-          <div class="column workflowColumn" style="width: 35vw">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#161b22"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
-            <div class="background transition">
-              <div class="number">7</div>
-              <h2>Presentazione Short list</h2>
-              <p>
-                Descrizione dello step, Jobify, la tua ricerca e selezione, la
-                tua ricerca e selezione, la tua ricerca e selezione, la tua
-                ricerca e selezione, la tua ricerca e selezione, Jobify,
-                <span
-                  >la tua ricerca e selezione, la tua ricerca e selezione</span
-                >
-              </p>
-            </div>
+
+        <div class="circle2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#161b22"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </div>
+
+        <div class="step_workflow">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="#0062f5"
+              class="bi bi-bullseye"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
+              />
+              <path
+                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+              />
+              <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+            </svg>
           </div>
-          <div class="column workflowColumn" style="width: 35vw">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#161b22"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
-            <div class="background transition">
-              <div class="number">8</div>
-              <h2>Colloqui one-toone con l'azienda</h2>
-              <p>
-                Descrizione dello step, Jobify, la tua ricerca e selezione, la
-                tua ricerca e selezione, la tua ricerca e selezione, la tua
-                ricerca e selezione, la tua ricerca e selezione, Jobify,
-                <span
-                  >la tua ricerca e selezione, la tua ricerca e selezione</span
-                >
-              </p>
-            </div>
+          <div class="text">Rapido</div>
+        </div>
+
+        <div class="circle2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#161b22"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </div>
+
+        <div class="step_workflow">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="#0062f5"
+              class="bi bi-person"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+              />
+            </svg>
           </div>
+          <div class="text">Umano</div>
+        </div>
+
+        <div class="circle2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#161b22"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </div>
+
+        <div class="step_workflow">
+          <div class="icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              fill="#0062f5"
+              class="bi bi-trophy"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"
+              />
+            </svg>
+          </div>
+          <div class="text">Competitivo</div>
         </div>
       </div>
     </div>
@@ -1156,6 +1103,445 @@ export default {
               </div>
             </div>
           </div>
+
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Un profilo a 360 gradi già raggiunto in giovane età. Davide è un
+              professionista che ha maturato competenze importanti in diversi
+              ambiti culturali, produttivi e geografici. A tutto questo si
+              aggiunge energia e attenzione elementi dimostrati dalla sua
+              attività di commentatore in diversi ambiti multimediali.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/david-trotti-2.jpg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Davide Tratti</p>
+                <p class="worktitle">Presidente regionale AIDP Lazio</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Ho conosciuto Davide Maggio e ho avuto l’opportunità di apprezzare
+              le sue competenze specifiche, nell’area HR, nella più estesa
+              accezione dell’espressione, collaborando su specifici incarichi
+              professionali e su altri fronti, non ultimo quello della
+              pubblicistica e della editoria divulgativa e di approfondimento.
+              Ho apprezzato le sue qualità umane e professionali, in termini di
+              efficace ed efficiente risposta alle necessità informative e
+              problematiche del mio Studio.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/1517557072323.jpg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Pasquale Dui</p>
+                <p class="worktitle">
+                  Avvocato e Docente presso Università Bicocca
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Ogni volta che entro in contatto con Davide c'è sempre qualcosa di
+              nuovo da scoprire ed una opportunità da cogliere. Poche
+              chiacchiere, dritto al punto, focus e sempre con il sorriso.
+              Difficile non entrare in sintonia. Per un settore come il nostro,
+              quello delle Risorse Umane, l'affidabilità, la preparazione, le
+              relazioni e la concretezza sono i quattro elementi cardine che
+              creano la differenza tra dilettanti e professionisti. Davide è al
+              top in tutti e quattro.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-12-at-16.03.00-1-2-1-1-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Marco Fattizio</p>
+                <p class="worktitle">CEO di Euspert- Bianco lavoro</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Davide Maggio è una persona da cui puoi apprendere qualcosa
+              conversando di fronte ad un tavolo di lavoro o sorseggiando un
+              caffè amichevole ad un bar. È un professionista di ampie vedute e
+              con un acuto spirito di osservazione che mi ha trasmesso molto,
+              sia professionalmente sia umanamente.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Serena-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Serena Di Maria</p>
+                <p class="worktitle">
+                  Dottoressa in Lingue Orientali e content creator
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              “Davide, professionale, attento, intuitivo e travolgente.
+              Innamorato del suo lavoro al punto da trasmettere tale passione
+              anche a chi come me, opera in un settore differente. Lo definirei
+              un “Freccia Rossa”.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/foto_ylenia_muratore-Ottimizzata.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Ylenia Muratore</p>
+                <p class="worktitle">
+                  Transfer Pricing Consultant presso Deloitte spa
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Davide Maggio è un giovane talento del mondo HR e unisce a una
+              solida preparazione a 360° in questo settore, una cultura generale
+              ampia e un modo di lavorare improntato al raggiungimento di
+              obiettivi specifici. Ha una ottima conoscenza delle best pratices
+              americane e del mondo aziendale italiano. Una rara profondità
+              psicologica e dei valori etici "antichi" ne fanno un
+              professionista estremamente affidabile e performante. Ho avuto la
+              fortuna di collaborare in vari contesti e si è sempre dimostrato
+              un leader giovane, con esperienza di oltre 7 anni nel ruolo di HR
+              Manager, e una persona per bene. Se avete un'azienda e volete fare
+              la differenza nelle Risorse Umane, Davide Maggio fa al caso
+              vostro.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Albino.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Albino Ruberti</p>
+                <p class="worktitle">Project Manager e Business Coach</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Problem solver e consulenza risorse Umane sono i principi che
+              caratterizzano Davide. Professionista attento alla cura dei
+              dettagli.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Antonio-Signorello.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Antonio Signorello</p>
+                <p class="worktitle">
+                  HR recruiter service, fives Interlogistics spa
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Ho il piacere di conoscere e collaborare con Davide il quale
+              dimostra in ogni occasione di confronto e scambio di idee di
+              essere non solo un professionista centrato sul pezzo in ciò che
+              fa, ma fa della sua umiltà personale e fame di sapere il perno in
+              cui ruota la sua essenza di HR manager.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-19.20.29-1-1-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Cinzia Calzavara</p>
+                <p class="worktitle">
+                  Formatore soft skills e HR, Consulente delle Politiche Attive
+                  del lavoro. Presso Adecco & Randstad
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Dimenticate i pregiudizi sul ruolo dell’HR. Davide Maggio è una
+              vera e necessaria rivoluzione nel settore delle risorse umane.
+              Lavorare con Davide comporta un arricchimento umano e
+              professionale. Un talento giovane, determinato, pieno di risorse
+              creative e innovative, ma soprattutto dedito all’ascolto attivo
+              del cliente, è una necessaria rivoluzione nelle RU.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-13-at-12.15.45-1-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Marta De Prezzo</p>
+                <p class="worktitle">Junior HR recruiter randstand</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Attendo, acuto e dal profondo spessore umano e professionale,
+              Davide Maggio ha più volte dato modo di creare valore e
+              opportunità al network di professionisti che lo circondano.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Gianluca-Caputo.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Gianluca Caputo</p>
+                <p class="worktitle">CEO Softmine Srl</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Davide è un HR manager che stimo profondamente. Nonostante la
+              giovane età - grazie alle sue competenze e alla sua
+              determinazione- ha già raggiunto importanti traguardi
+              professionali. Dialogando con lui traspare fin da subito la forte
+              passione e dedizione verso il proprio lavoro. Ha inoltre spiccate
+              doti d’ascolto e osservazione. Davide è un esempio per tutti i
+              giovani che voglio intraprendere un percorso professionale in un
+              settore ad alta competitività come quello delle risorse umane.
+              Lavorare con Davide ti arricchisce come professionista e come
+              individuo.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-22.41.13-1-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Marika Orlandi</p>
+                <p class="worktitle">
+                  Talent Acquisition Specialist di Facile.it
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Ho trovato in Davide un giovane professionista entusiasta del
+              proprio lavoro che si impegna sempre a svolgere al meglio. Ha già
+              una buona esperienza acquisita, ma al contempo sa ascoltare ed è
+              sempre pronto a migliorarsi. Da un anno è in partnership con
+              Kekyjob e si è rivelato un elemento utile ed efficace per la
+              crescita dell'azienda.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-13-at-00.20.13-1-1-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Francesco Margreth</p>
+                <p class="worktitle">CEO di kekyjob Srl</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Davide è un esperto HR Manager, estremamente professionale,
+              flessibile e sensibile alle esigenze del cliente capace di offrire
+              sempre un servizio di qualità.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/NOme-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Pasquale De Luca bossa</p>
+                <p class="worktitle">HR Manager</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Ho conosciuto Davide in occasione della nostra collaborazione per
+              la Rubrica HR di Bianco Lavoro. Da subito mi ha colpito la sua
+              professionalità e il suo entusiasmo. Davide è un manager
+              determinato, preparato, intraprendente con la voglia costante di
+              migliorarsi e aggiornarsi. Ottimo problem solver, svolge il suo
+              lavoro con impegno e dedizione per trovare la migliore soluzione
+              al problema. Un professionista completo a 360°, un talento che
+              tutte le aziende vorrebbero on-board.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Francesca.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Francesca Sardella</p>
+                <p class="worktitle">HR Business presso IVI RMA GLOBAL</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Ho conosciuto Davide non molto tempo fa,subito ho percepito la sua
+              voglia di fare bene e la sua grande determinazione nel raggiungere
+              obiettivi. Oggi sto conoscendo oltre al professionista anche una
+              persona vera e sincera che vuole condividere relazioni umane
+              propio come me. Vi consiglio Davide come persona di valori e come
+              professionista.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-19-at-09.39.21-5-1-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Alessandro Gian Maria Ferri</p>
+                <p class="worktitle">CEO edicole &100</p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Davide Maggio è un nuovo e vero amico. Giovane intraprendente e
+              brillante, capace di vedere il vero potenziale nelle persone e di
+              valorizzarlo, è un leader capace e un talentuoso manager. Ciò che
+              ha colpito profondamente la mia attenzione di lui, il giorno in
+              cui ci siamo conosciuti, è stata la forza del suo carattere e come
+              questa fosse indirizzata naturalmente verso la cura e l'attenzione
+              presso gli altri. Un grande uomo e professionista, un altruista e
+              solidale amico
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Laurent-otimizzato-e1617780132679.jpg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Laurent Vercken de Vreuschmen</p>
+                <p class="worktitle">
+                  Professore Presso i Ministeri dell'Economia e Finanza e della
+                  Difesa. Direttore e editore di Edizioni &100
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Ho avuto modo di collaborare con Davide Maggio, persona di grande
+              competenza, capacità e talento. Puntuale, brillante e affidabile,
+              ha saputo cogliere l'esigenza della nostra azienda, fornendo
+              soluzioni efficaci e vincenti. A ciò si aggiunge una forte
+              connotazione empatica e un vivo entusiasmo, che caratterizzano
+              piacevolmente l'esperienza professionale, aggiungendone valore.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Piace-ELena.-ottimizzata.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Elena Piave</p>
+                <p class="worktitle">
+                  Coordinatore Nazionale - Consorzio Progresso
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Lavorare con David è sinonimo di professionalità e affidabilità, a
+              tal punto che il suo modus operandi riesce a rendere semplice ogni
+              processo. Mirabile è l'abilità nel cercare soluzioni adatte al
+              contesto o anche solo far notare prospettive alternative e
+              innovative.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/05/WhatsApp-Image-2021-05-02-at-23.46.37-1-1-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Chiara Temperanza</p>
+                <p class="worktitle">
+                  HR Assistant & Recruiter, KOHLER Engines EMEA
+                </p>
+              </div>
+            </div>
+          </div>
+
           <div class="feedback is-clone">
             <p class="quote">"</p>
             <h3>
@@ -1271,6 +1657,12 @@ export default {
   </div>
 </template>
 
+<!-- Calendly badge widget begin -->
+
+<style
+  href="https://assets.calendly.com/assets/external/widget.css"
+  rel="stylesheet"
+></style>
 <style scoped>
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
@@ -1309,7 +1701,7 @@ export default {
 
   .mainTitle .content {
     padding: 5rem;
-    padding-top: 10rem;
+    padding-top: 4rem;
   }
 
   .content .first {
@@ -1355,6 +1747,76 @@ export default {
     line-height: 68px;
     padding-right: 0.05rem;
     letter-spacing: -0.03em !important;
+  }
+
+  .clientsCo {
+    height: 100%;
+    width: 100%;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .clientsCoBorder {
+    display: flex;
+    align-items: center;
+    border: 2px solid #80808038;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .clientsCoLink h2 {
+    width: fit-content;
+    margin-left: 6rem;
+    background: -webkit-linear-gradient(-70deg, #7346db 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: -0.04em !important;
+  }
+
+  .clientsCoLink p {
+    width: fit-content;
+    margin-left: 6rem;
+    color: #010712;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.01em !important;
+    border: 2px solid #80808038;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+  }
+
+  .clientsCoBody {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .logoClient {
+    width: 135px;
+    height: 135px;
+    padding: 1rem;
+    border-radius: 25rem;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    transition: all 0.3s ease-out;
   }
 
   .secondDiv {
@@ -1694,6 +2156,35 @@ export default {
     font-size: 16px;
     line-height: 20px;
     font-weight: 400 !important;
+  }
+
+  .workflowFlex {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin-top: 5rem;
+    padding-bottom: 10rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .workflowFlex .step_workflow {
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+
+  .step_workflow .icon {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .step_workflow .text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #010712;
+    padding-top: 0.5rem;
   }
 
   .btn2 {
@@ -2954,10 +3445,8 @@ export default {
 
   .feedbackDiv .feedbacks {
     display: flex;
-    margin-top: 2rem;
     height: 100%;
     width: 100%;
-    padding-bottom: 2rem;
     padding-right: 8rem;
     background-color: #fff;
     overflow-x: scroll;
@@ -2980,7 +3469,7 @@ export default {
     margin-left: 1rem;
     float: left;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    height: 24vw;
+    height: auto;
   }
 
   .feedbackDiv .feedbacks .feedback .quote {
