@@ -319,7 +319,7 @@ export default {
           <div class="first">
             <div class="title">
               <h2>
-                <span>I nostri clienti</span>
+                <span>A chi ci rivolgiamo</span>
               </h2>
               <p>
                 Qui inseriamo una frase che possa descrivere i valori dei nostri
