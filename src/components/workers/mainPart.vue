@@ -62,6 +62,19 @@ export default {
       var htmlElement = document.querySelector("html");
       htmlElement.style.overflowY = "scroll";
     },
+
+    workflowScrollSx() {
+      let content = document.querySelector(".workflowFlex");
+      const itemWidth = content.querySelector(".workflowColumn").clientWidth;
+      content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
+      console.log(content);
+    },
+
+    workflowScrollDx() {
+      let content = document.querySelector(".workflowFlex");
+      const itemWidth = content.querySelector(".workflowColumn").clientWidth;
+      content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
+    },
   },
 };
 </script>
@@ -233,7 +246,7 @@ export default {
         <div class="glow5"></div>
         <div class="firstPart">
           <div class="subtitle">Lavoratori</div>
-          <h2>Costruiamo l'ecosistema del domani.</h2>
+          <h2>Un nuovo modo per ricercare talenti</h2>
           <p>
             Increase developer velocity. Secure every step. Automate entire
             workflows. Redefine collaboration. Trusted by over 83 million
@@ -262,7 +275,8 @@ export default {
           </div>
           <div class="image"></div>
         </div>
-        <div class="fourthPart">
+
+        <!--<div class="fourthPart">
           <div class="title">
             <h2>Costruiamo l'ecosistema del domani.</h2>
           </div>
@@ -321,7 +335,7 @@ export default {
               <p>in developer onboarding time</p>
             </div>
           </div>
-        </div>
+        </div>-->
 
         <div class="thirdPart">
           <div class="thirdPartDiv">
@@ -355,6 +369,12 @@ export default {
             </div>
             <div class="second">
               <div class="feature">
+                <div
+                  class="img_feature"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/curriculum.jpg);
+                  "
+                ></div>
                 <h2>Il Curriculum Vitae</h2>
                 <p>
                   Get updates on the GitHub activity you've subscribed to. Use
@@ -364,6 +384,12 @@ export default {
                 <div class="btn3">Learn more</div>
               </div>
               <div class="feature">
+                <div
+                  class="img_feature"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/colloquio.jpg);
+                  "
+                ></div>
                 <h2>Il colloquio</h2>
                 <p>
                   Get updates on the GitHub activity you've subscribed to. Use
@@ -373,6 +399,12 @@ export default {
                 <div class="btn3">Learn more</div>
               </div>
               <div class="feature">
+                <div
+                  class="img_feature"
+                  style="
+                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/lettera.jpg);
+                  "
+                ></div>
                 <h2>La lettera di presentazione</h2>
                 <p>
                   Get updates on the GitHub activity you've subscribed to. Use
@@ -414,40 +446,290 @@ export default {
           </div>
         </div>
 
-        <div class="secondPart">
-          <div class="title">
-            <h2>Come funziona il processo di selezione</h2>
-            <p>
-              Get updates on the GitHub activity you've subscribed to. Use the
-              notifications inbox to customize, triage, and manage your updates.
-            </p>
+        <div class="workflow" id="workflow">
+          <div class="workflowTitle">
+            <h2 style="margin-bottom: 0rem !important">Il nostro workflow</h2>
           </div>
-          <div class="steps">
-            <div class="step transition">
-              <div class="number">1</div>
-              <div class="title">Crea profilo</div>
-              <div class="text">
-                Get updates on the GitHub activity you've subscribed to. Use the
-                notifications inbox to customize, triage, and manage your
-                updates.
+          <div class="buttons">
+            <div class="btnScrollL" @click="workflowScrollSx()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="#03111f"
+                class="bi bi-chevron-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                />
+              </svg>
+            </div>
+            <div class="btnScrollR" @click="workflowScrollDx()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="#03111f"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="workflowFlex"
+            style="
+              display: flex;
+              height: 100%;
+              width: 100%;
+              overflow-x: scroll;
+              overflow-y: hidden;
+              flex-wrap: nowrap;
+              align-items: center;
+              position: relative;
+            "
+          >
+            <div class="columns">
+              <div class="column workflowColumn" style="width: 35vw !important">
+                <div class="background transition">
+                  <div class="number">1</div>
+                  <h2>Intervista al cliente</h2>
+                  <p>
+                    Descrizione dello step, Jobify, la tua ricerca e selezione,
+                    la tua ricerca e selezione, la tua ricerca e selezione, la
+                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
+                    la tua ricerca e selezione, la tua ricerca e selezione, la
+                    tua ricerca e selezione, la tua ricerca e selezione, la tua
+                    ricerca e selezione
+                  </p>
+                </div>
+              </div>
+              <div class="column workflowColumn" style="width: 35vw !important">
+                <div class="circle2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#03111f"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+                <div class="background transition">
+                  <div class="number">2</div>
+                  <h2>Job description</h2>
+                  <p>
+                    Descrizione dello step, Jobify, la tua ricerca e selezione,
+                    la tua ricerca e selezione, la tua ricerca e selezione, la
+                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
+                    la tua ricerca e selezione, la tua ricerca e selezione, la
+                    tua ricerca e selezione, la tua ricerca e selezione, la tua
+                    ricerca e selezione
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="step transition" style="margin-top: 3rem">
-              <div class="number">2</div>
-              <div class="title">Crea profilo</div>
-              <div class="text">
-                Get updates on the GitHub activity you've subscribed to. Use the
-                notifications inbox to customize, triage, and manage your
-                updates.
+            <div class="columns">
+              <div class="column workflowColumn" style="width: 35vw !important">
+                <div class="circle2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#03111f"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+                <div class="background transition">
+                  <div class="number">3</div>
+                  <h2>Lancio annuncio & Head Hunting</h2>
+                  <p>
+                    Descrizione dello step, Jobify, la tua ricerca e selezione,
+                    la tua ricerca e selezione, la tua ricerca e selezione, la
+                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
+                    <span
+                      >la tua ricerca e selezione, la tua ricerca e
+                      selezione</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="column workflowColumn" style="width: 35vw !important">
+                <div class="circle2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#03111f"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+                <div class="background transition">
+                  <div class="number">4</div>
+                  <h2>Screening CV</h2>
+                  <p>
+                    Descrizione dello step, Jobify, la tua ricerca e selezione,
+                    la tua ricerca e selezione, la tua ricerca e selezione,
+                    <span
+                      >la tua ricerca e selezione, la tua ricerca e
+                      selezione</span
+                    >
+                    Jobify, la tua ricerca e selezione, la tua ricerca e
+                    selezione, la tua ricerca e selezione, la tua ricerca e
+                    selezione, la tua ricerca e selezione
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="step transition" style="margin-top: 6rem">
-              <div class="number">3</div>
-              <div class="title">Crea profilo</div>
-              <div class="text">
-                Get updates on the GitHub activity you've subscribed to. Use the
-                notifications inbox to customize, triage, and manage your
-                updates.
+            <div class="columns">
+              <div class="column workflowColumn" style="width: 35vw !important">
+                <div class="circle2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#03111f"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+                <div class="background transition">
+                  <div class="number">5</div>
+                  <h2>Screening telefonico</h2>
+                  <p>
+                    Descrizione dello step, Jobify, la tua ricerca e selezione,
+                    la tua ricerca e selezione, la tua ricerca e selezione, la
+                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
+                    la tua ricerca e selezione,
+                    <span
+                      >la tua ricerca e selezione, la tua ricerca e
+                      selezione</span
+                    >
+                    la tua ricerca e selezione, la tua ricerca e selezione
+                  </p>
+                </div>
+              </div>
+              <div class="column workflowColumn" style="width: 35vw !important">
+                <div class="circle2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#03111f"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+                <div class="background transition">
+                  <div class="number">6</div>
+                  <h2>Videocolloquio</h2>
+                  <p>
+                    Descrizione dello step, Jobify, la tua ricerca e selezione,
+                    la tua ricerca e selezione, la tua ricerca e selezione, la
+                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
+                    la tua ricerca e selezione, la tua ricerca e selezione, la
+                    tua ricerca e selezione,
+                    <span
+                      >la tua ricerca e selezione, la tua ricerca e
+                      selezione</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="columns">
+              <div class="column workflowColumn" style="width: 35vw">
+                <div class="circle2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#03111f"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+                <div class="background transition">
+                  <div class="number">7</div>
+                  <h2>Presentazione Short list</h2>
+                  <p>
+                    Descrizione dello step, Jobify, la tua ricerca e selezione,
+                    la tua ricerca e selezione, la tua ricerca e selezione, la
+                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
+                    <span
+                      >la tua ricerca e selezione, la tua ricerca e
+                      selezione</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="column workflowColumn" style="width: 35vw">
+                <div class="circle2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#03111f"
+                    class="bi bi-arrow-right"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                    />
+                  </svg>
+                </div>
+                <div class="background transition">
+                  <div class="number">8</div>
+                  <h2>Colloqui one-toone con l'azienda</h2>
+                  <p>
+                    Descrizione dello step, Jobify, la tua ricerca e selezione,
+                    la tua ricerca e selezione, la tua ricerca e selezione, la
+                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
+                    <span
+                      >la tua ricerca e selezione, la tua ricerca e
+                      selezione</span
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -653,6 +935,30 @@ export default {
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 9999px;
+  background-color: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+  border-radius: 9999px;
+  background-clip: padding-box;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /*background: #555;*/
+}
 
 .transition {
   transform: translateY(150px);
@@ -1108,12 +1414,20 @@ export default {
     margin-right: 8rem;
   }
 
+  .second .feature .img_feature {
+    background-size: cover;
+    width: 100%;
+    height: 10vw;
+    border-radius: 25px;
+  }
+
   .second .feature h2 {
     color: #010b15;
     font-size: 30px;
     line-height: 34px;
     letter-spacing: -0.04em;
     font-weight: 700;
+    margin-top: 2rem;
   }
 
   .second .feature p {
@@ -1162,6 +1476,144 @@ export default {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+
+  .workflow {
+    padding-top: 10rem;
+    padding-bottom: 0;
+  }
+
+  .workflow .workflowTitle h2 {
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    letter-spacing: -0.04em !important;
+    font-weight: 800 !important;
+    font-size: 50px;
+    line-height: 54px;
+    font-weight: 800 !important;
+    letter-spacing: -0.04em !important;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+  }
+
+  .workflow .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: fit-content;
+    margin-right: 5rem;
+  }
+
+  .workflow .btnScrollR {
+    width: fit-content;
+    background: transparent;
+    border: 2px solid #03111f;
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .workflow .btnScrollL {
+    margin-right: 1rem;
+    width: fit-content;
+    background: transparent;
+    border: 2px solid #03111f;
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .workflow .columns {
+    display: flex;
+  }
+
+  .workflow .columns .column {
+    padding: 3rem;
+    width: 70%;
+    display: flex;
+    align-items: center;
+  }
+
+  .workflow .columns .column .background {
+    background: #03111f;
+    padding: 3rem;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 35vw;
+  }
+
+  .workflow .columns .column .circle {
+    position: absolute;
+    right: -1%;
+  }
+
+  .workflow .columns .column .circle2 {
+    position: absolute;
+    left: -1%;
+  }
+
+  .workflow .columns .mt10 {
+    margin-top: 15rem;
+  }
+
+  .workflow .columns .br {
+    border-right: 4px solid #dbd7d78a;
+
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .workflow .columns .number {
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    letter-spacing: -0.04em !important;
+    color: #010712;
+    font-size: 74px;
+    font-weight: 800 !important;
+    line-height: 78px;
+    letter-spacing: -0.04em !important;
+    margin-bottom: 1rem;
+  }
+
+  .workflow .columns .column h2 {
+    color: #fff;
+    font-size: 38px;
+    font-weight: 800 !important;
+    line-height: 42px;
+    letter-spacing: -0.04em !important;
+  }
+
+  .workflow p {
+    color: #627597;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400 !important;
+  }
+
+  .br .background {
+    margin-left: auto;
+  }
+
+  .workflow p span {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400 !important;
   }
 
   .steps {

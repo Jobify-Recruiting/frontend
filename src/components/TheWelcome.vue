@@ -42,6 +42,31 @@ export default {
     content.style.display = "unset";
 
     window.scrollTo({ top: 0, behavior: "smooth" });
+
+    function animateValue(obj, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (start - end) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+
+    const obj = document.getElementById("value");
+    animateValue(obj, 200, -200, 20000);
+
+    const obj2 = document.getElementById("value2");
+    animateValue(obj2, 200, -200, 20000);
+
+    const obj3 = document.getElementById("value3");
+    animateValue(obj3, 200, -200, 20000);
+
+    const obj4 = document.getElementById("value4");
+    animateValue(obj4, 200, -200, 20000);
   },
   methods: {},
 };
@@ -67,12 +92,12 @@ export default {
       </b>
     </div>
     <h2>
-      Ricerca e selezione al servizio delle aziende e del candidato e selezione
-      al servizio delle aziende e del candidato e selezione al servizio delle
-      aziende e del candidato
+      Digitalazziamo ed umanizziamo il processo di Ricerca & Selezione, mettendo
+      a servizio dei nostri Head Hunter strumenti di Intelligenza Artificiale ed
+      HR Tech.
     </h2>
     <div class="" style="display: flex; align-items: center">
-      <a href="#first"><button class="btn">Scopri di più</button></a>
+      <a href="#second"><button class="btn">Scopri di più</button></a>
     </div>
     <!--<div class="" style="display: flex">
       <a href="#first">
@@ -82,19 +107,27 @@ export default {
     </div>-->
     <div class="datas">
       <div class="item">
-        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
+        <p style="color: white; font-size: 22px; line-height: 18px" id="value">
+          0
+        </p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
       <div class="item">
-        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
+        <p style="color: white; font-size: 22px; line-height: 18px" id="value2">
+          0
+        </p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
       <div class="item">
-        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
+        <p style="color: white; font-size: 22px; line-height: 18px" id="value3">
+          0
+        </p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
       <div class="item">
-        <p style="color: white; font-size: 22px; line-height: 18px">+ 100</p>
+        <p style="color: white; font-size: 22px; line-height: 18px" id="value4">
+          0
+        </p>
         <p style="color: #cdd4db; font-size: 16px">ore</p>
       </div>
     </div>
@@ -209,6 +242,7 @@ export default {
     margin-right: 6rem;
     text-align: left;
     margin-top: 1.5rem;
+    width: 50px;
   }
 
   a {

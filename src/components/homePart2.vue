@@ -122,6 +122,39 @@ export default {
       const itemWidth = content.querySelector(".workflowColumn").clientWidth;
       content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
     },
+
+    call_btn() {
+      document.querySelector(".calendly-badge-content").click();
+    },
+
+    show_more(x1) {
+      let content = document.querySelector("." + x1);
+      content.style.height = "100%";
+      content.style.opacity = "1";
+      content.style.visibility = "visible";
+      content.style.display = "inline";
+
+      let content2 = document.querySelector("." + x1 + "_show");
+      content2.style.display = "none";
+
+      const fruits = ["step1", "step2", "step3", "step4", "step5"];
+      fruits.forEach(myFunction);
+
+      function myFunction(item) {
+        if (item != x1) {
+          let content = document.querySelector("." + item);
+          content.style.height = "0%";
+          content.style.opacity = "0";
+          content.style.visibility = "hidden";
+          content.style.display = "none";
+        }
+
+        if ("." + x1 + "_show" != "." + item + "_show") {
+          let content2 = document.querySelector("." + item + "_show");
+          content2.style.display = "block";
+        }
+      }
+    },
   },
 };
 </script>
@@ -138,6 +171,36 @@ export default {
     >
       <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
     </svg>
+
+    <div class="mainTitle" id="second">
+      <div class="content">
+        <div class="first">
+          <div class="title">
+            <h2>
+              <span class="gradientTitle">Jobify</span>, la tua ricerca e
+              selezione
+            </h2>
+            <p>
+              Jobify, la tua ricerca e selezione, la tua ricerca e selezione,
+              <span style="color: #010c18; font-weight: 500"
+                >la tua ricerca e selezione</span
+              >, la tua ricerca e selezione, la tua ricerca e selezione
+            </p>
+          </div>
+          <div class="video transition">
+            <iframe
+              width="600"
+              height="350"
+              src="https://www.youtube.com/embed/-VmEWZsUIGY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="clientsCo">
       <div class="clientsCoBorder">
@@ -185,36 +248,6 @@ export default {
       </div>
     </div>
 
-    <div class="mainTitle" id="first">
-      <div class="content">
-        <div class="first">
-          <div class="title">
-            <h2>
-              <span class="gradientTitle">Jobify</span>, la tua ricerca e
-              selezione
-            </h2>
-            <p>
-              Jobify, la tua ricerca e selezione, la tua ricerca e selezione,
-              <span style="color: #010c18; font-weight: 500"
-                >la tua ricerca e selezione</span
-              >, la tua ricerca e selezione, la tua ricerca e selezione
-            </p>
-          </div>
-          <div class="video transition">
-            <iframe
-              width="600"
-              height="350"
-              src="https://www.youtube.com/embed/-VmEWZsUIGY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="secondDiv" id="second">
       <div class="content">
         <div class="first">
@@ -229,7 +262,7 @@ export default {
               <br />
             </p>
             <div class="steps">
-              <router-link to="/feature1">
+              <router-link to="/companies">
                 <div class="feature transition">
                   <div class="number">
                     <svg
@@ -254,8 +287,8 @@ export default {
                 </div></router-link
               >
 
-              <router-link to="/feature2">
-                <div class="feature transition">
+              <router-link to="/">
+                <div class="feature transition" @click="call_btn()">
                   <div class="number">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -282,8 +315,8 @@ export default {
                 </div></router-link
               >
 
-              <router-link to="/feature3">
-                <div class="feature transition">
+              <router-link to="/">
+                <div class="feature transition" @click="call_btn()">
                   <div class="number">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -313,7 +346,7 @@ export default {
       </div>
     </div>
 
-    <div class="clients">
+    <!--<div class="clients">
       <div class="secondDiv" id="second">
         <div class="content">
           <div class="first">
@@ -346,7 +379,7 @@ export default {
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
     <!--<div class="workflow" id="workflow">
       <div class="workflowTitle">
@@ -598,357 +631,231 @@ export default {
           Creiamo un processo di ricerca e selezione
         </h2>
       </div>
-      <div
-        class="workflowFlex"
-        style="
-          display: flex;
-          height: 100%;
-          background-color: #fff;
-          align-items: center;
-          position: relative;
-        "
-      >
+      <div class="workflowFlex">
         <div class="step_workflow">
-          <div class="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="#0062f5"
-              class="bi bi-graph-up-arrow"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
-              />
-            </svg>
-          </div>
-          <div class="text">Efficenza</div>
-        </div>
-
-        <div class="circle2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="#161b22"
-            class="bi bi-arrow-right"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-            />
-          </svg>
-        </div>
-
-        <div class="step_workflow">
-          <div class="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="#0062f5"
-              class="bi bi-alarm"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"
-              />
-              <path
-                d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"
-              />
-            </svg>
-          </div>
-          <div class="text">Scientifico</div>
-        </div>
-
-        <div class="circle2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="#161b22"
-            class="bi bi-arrow-right"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-            />
-          </svg>
-        </div>
-
-        <div class="step_workflow">
-          <div class="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="#0062f5"
-              class="bi bi-bullseye"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
-              />
-              <path
-                d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
-              />
-              <path
-                d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
-              />
-              <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
-            </svg>
-          </div>
-          <div class="text">Rapido</div>
-        </div>
-
-        <div class="circle2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="#161b22"
-            class="bi bi-arrow-right"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-            />
-          </svg>
-        </div>
-
-        <div class="step_workflow">
-          <div class="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="#0062f5"
-              class="bi bi-person"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
-              />
-            </svg>
-          </div>
-          <div class="text">Umano</div>
-        </div>
-
-        <div class="circle2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="#161b22"
-            class="bi bi-arrow-right"
-            viewBox="0 0 16 16"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-            />
-          </svg>
-        </div>
-
-        <div class="step_workflow">
-          <div class="icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="40"
-              height="40"
-              fill="#0062f5"
-              class="bi bi-trophy"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"
-              />
-            </svg>
-          </div>
-          <div class="text">Competitivo</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="fifthDiv">
-      <div class="adviser transition">
-        <div class="col">
-          <h3>
-            <span>Segui le Storie</span> di Jobify Recruiting per scoprire tutte
-            le esperienze dei nostri clienti
-          </h3>
-          <router-link to="/stories"
-            ><button class="btn">
-              Storie
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-short"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                  />
-                </svg>
-              </span></button
-          ></router-link>
-        </div>
-        <div class="col_image"></div>
-      </div>
-    </div>
-    <div class="thirdDiv" id="third">
-      <div class="glow"></div>
-      <div class="glow2"></div>
-      <div class="glow3"></div>
-      <div class="glow4"></div>
-      <div class="glow5"></div>
-      <div class="glow6"></div>
-      <div class="glow7"></div>
-      <div class="content">
-        <div class="partnersImgs">
-          <a
-            href=""
-            class="partnerImg transition"
-            style="
-              left: 32%;
-              top: -15%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo1.png);
-            "
-          >
-            <div class="" style=""></div>
-          </a>
-
-          <a
-            href=""
-            class="partnerImg transition"
-            style="
-              right: 16%;
-              top: 4%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo2.png);
-            "
-          >
-            <div class="" style=""></div>
-          </a>
-
-          <a
-            href=""
-            class="partnerImg transition"
-            style="
-              right: 32%;
-              top: -18%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo3.png);
-            "
-          >
-            <div class="" style=""></div>
-          </a>
-
-          <a
-            href=""
-            class="partnerImg transition"
-            style="
-              right: 12%;
-              top: 43%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo4.png);
-            "
-          >
-            <div class="" style=""></div>
-          </a>
-
-          <a
-            href=""
-            class="partnerImg"
-            style="
-              right: 22%;
-              top: 84%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
-            "
-          >
-            <div class="" style=""></div>
-          </a>
-
-          <a
-            href=""
-            class="partnerImg"
-            style="
-              top: 60%;
-              left: 18%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo6.png);
-            "
-            ><div class="" style=""></div
-          ></a>
-
-          <a
-            href=""
-            class="partnerImg transition"
-            style="
-              left: 13%;
-              top: 14%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo7.png);
-            "
-            ><div class="" style=""></div
-          ></a>
-
-          <a
-            href=""
-            class="partnerImg"
-            style="
-              left: 41%;
-              top: 98%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo8.png);
-            "
-            ><div class="" style=""></div
-          ></a>
-        </div>
-        <div class="first" style="display: inherit !important">
-          <div class="title">
-            <h2>Partners</h2>
-            <p
-              style="
-                width: 40% !important;
-                margin-left: auto;
-                margin-right: auto;
-                color: #fff !important;
-              "
-            >
-              Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
-              tua ricerca e selezione, la tua ricerca e selezione, la tua
-              ricerca e selezione
-            </p>
-
-            <div class="partnersButton">
-              <a href="#first"
-                ><button class="btn">
-                  Scopri di più
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="currentColor"
-                      class="bi bi-arrow-right-short"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                      />
-                    </svg>
-                  </span></button
-              ></a>
+          <div class="header">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#0062f5"
+                class="bi bi-graph-up-arrow"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
+                />
+              </svg>
             </div>
+            <div class="text">Efficenza</div>
+          </div>
+          <div class="show_more step1_show" @click="show_more('step1')">
+            Scopri di più
+          </div>
+
+          <div class="body step1">
+            Analizza i bisogni dell’azienda e del candidato, con lo scopo di
+            ricercare la perfetta compatibilità tra la risorsa da assumere e i
+            bisogni e le aspettative dell’azienda. Questo crea un rapporto di
+            lavoro più stabile e duraturo nel tempo.
+          </div>
+        </div>
+
+        <div class="circle2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#161b22"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </div>
+
+        <div class="step_workflow">
+          <div class="header">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#0062f5"
+                class="bi bi-alarm"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"
+                />
+                <path
+                  d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"
+                />
+              </svg>
+            </div>
+            <div class="text">Scientifico</div>
+          </div>
+          <div class="show_more step2_show" @click="show_more('step2')">
+            Scopri di più
+          </div>
+
+          <div class="body step2">
+            Tutto il processo viene monitorato da dati specifici. Questi ci
+            aiutano a prendere decisioni in maniera consapevole.
+          </div>
+        </div>
+
+        <div class="circle2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#161b22"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </div>
+
+        <div class="step_workflow">
+          <div class="header">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#0062f5"
+                class="bi bi-bullseye"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
+                />
+                <path
+                  d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+                />
+                <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+              </svg>
+            </div>
+            <div class="text">Rapido</div>
+          </div>
+          <div class="show_more step3_show" @click="show_more('step3')">
+            Scopri di più
+          </div>
+
+          <div class="body step3">
+            Ricorre a tecnologie A.I. e HR Tech. Assolve l’uomo da tutte quelle
+            azioni ripetute nel tempo che non richiedono intelletto umano.
+            Velocizza la ricerca e ci rende più competitivi sul mercato
+          </div>
+        </div>
+
+        <div class="circle2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#161b22"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </div>
+
+        <div class="step_workflow">
+          <div class="header">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#0062f5"
+                class="bi bi-person"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                />
+              </svg>
+            </div>
+            <div class="text">Umano</div>
+          </div>
+
+          <div class="show_more step4_show" @click="show_more('step4')">
+            Scopri di più
+          </div>
+
+          <div class="body step4">
+            Il tempo risparmiato grazie all'utilizzo dell'intelligenza
+            artificiale, consente ai nostri head hunter di instaurare un
+            rapporto con i candidati e comprendere i loro valori, le loro
+            aspettative ed i loro bisogni.
+          </div>
+        </div>
+
+        <div class="circle2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="#161b22"
+            class="bi bi-arrow-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+            />
+          </svg>
+        </div>
+
+        <div class="step_workflow">
+          <div class="header">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="#0062f5"
+                class="bi bi-trophy"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"
+                />
+              </svg>
+            </div>
+            <div class="text">Competitivo</div>
+          </div>
+
+          <div class="show_more step5_show" @click="show_more('step5')">
+            Scopri di più
+          </div>
+
+          <div class="body step5">
+            Essendo dei nativi digitali riusciamo a contenere i costi fissi ed
+            essere tra i più competitivi sul mercato
           </div>
         </div>
       </div>
     </div>
+
     <div class="feedbackDiv" id="feedback">
       <div class="content">
         <h2>I clienti dicono di noi</h2>
@@ -1589,6 +1496,183 @@ export default {
         </div>
       </div>
     </div>
+
+    <div class="fifthDiv">
+      <div class="adviser transition">
+        <div class="col">
+          <h3>
+            <span>Fissa un appuntamento</span> per lavorare con Jobify
+            Recruiting
+          </h3>
+          <router-link to="/stories"
+            ><button class="btn">
+              Fissa appuntamento
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </span></button
+          ></router-link>
+        </div>
+        <div class="col_image"></div>
+      </div>
+    </div>
+
+    <div class="thirdDiv" id="third">
+      <div class="glow"></div>
+      <div class="glow2"></div>
+      <div class="glow3"></div>
+      <div class="glow4"></div>
+      <div class="glow5"></div>
+      <div class="glow6"></div>
+      <div class="glow7"></div>
+      <div class="content">
+        <div class="partnersImgs">
+          <a
+            href="https://studiofelli.com/"
+            class="partnerImg transition"
+            style="
+              left: 32%;
+              top: -15%;
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo1.png);
+            "
+          >
+            <div class="" style=""></div>
+          </a>
+
+          <a
+            href="https://www.atempospa.it/"
+            class="partnerImg transition"
+            style="
+              right: 16%;
+              top: 4%;
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo2.png);
+            "
+          >
+            <div class="" style=""></div>
+          </a>
+
+          <a
+            href="https://www.uniroma1.it/it/pagina-strutturale/home"
+            class="partnerImg transition"
+            style="
+              right: 32%;
+              top: -18%;
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo3.png);
+            "
+          >
+            <div class="" style=""></div>
+          </a>
+
+          <a
+            href="https://it.talent.com/"
+            class="partnerImg transition"
+            style="
+              right: 12%;
+              top: 43%;
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo4.png);
+            "
+          >
+            <div class="" style=""></div>
+          </a>
+
+          <a
+            href="https://www.aidp.it/gruppo/lazio.php"
+            class="partnerImg"
+            style="
+              right: 22%;
+              top: 84%;
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
+            "
+          >
+            <div class="" style=""></div>
+          </a>
+
+          <a
+            href="https://www.in-recruiting.com/it/"
+            class="partnerImg"
+            style="
+              top: 60%;
+              left: 18%;
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo6.png);
+            "
+            ><div class="" style=""></div
+          ></a>
+
+          <a
+            href="https://www.up-communication.com/"
+            class="partnerImg transition"
+            style="
+              left: 13%;
+              top: 14%;
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo7.png);
+            "
+            ><div class="" style=""></div
+          ></a>
+
+          <a
+            href="https://www.cafieropezzalieassociati.it/"
+            class="partnerImg"
+            style="
+              left: 41%;
+              top: 98%;
+              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo8.png);
+            "
+            ><div class="" style=""></div
+          ></a>
+        </div>
+        <div class="first" style="display: inherit !important">
+          <div class="title">
+            <h2>Partners</h2>
+            <p
+              style="
+                width: 40% !important;
+                margin-left: auto;
+                margin-right: auto;
+                color: #fff !important;
+              "
+            >
+              Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
+              tua ricerca e selezione, la tua ricerca e selezione, la tua
+              ricerca e selezione
+            </p>
+
+            <div class="partnersButton">
+              <a href="#first"
+                ><button class="btn">
+                  Scopri di più
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span></button
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="fifthDiv">
       <div class="adviser transition">
         <div class="col">
@@ -2159,32 +2243,80 @@ export default {
   }
 
   .workflowFlex {
-    padding-left: 8rem;
-    padding-right: 8rem;
     margin-top: 5rem;
     padding-bottom: 10rem;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    height: 100%;
+    background-color: #fff;
+    align-items: center;
+    position: relative;
   }
 
   .workflowFlex .step_workflow {
-    margin-right: 3rem;
-    margin-left: 3rem;
+    margin-right: 2em;
+    margin-left: 2rem;
+    width: fit-content;
+    background: #161b22;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 25px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
-  .step_workflow .icon {
+  .step_workflow .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .step_workflow .show_more {
+    color: #0062f5;
+    font-size: 14px;
+    line-height: 18px;
+    cursor: pointer;
+    font-weight: 500;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .step_workflow .show_more:hover {
+    color: #0045ad;
+  }
+
+  .step_workflow .body {
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    display: none;
+    opacity: 0;
+    height: 0%;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .step_workflow .icon {
+    width: fit-content;
+  }
+
   .step_workflow .text {
     text-align: center;
-    font-size: 18px;
+    font-size: 22px;
+    line-height: 24px;
     font-weight: 600;
-    color: #010712;
+    color: #fff;
     padding-top: 0.5rem;
+    margin-left: 0.8rem;
   }
 
   .btn2 {
@@ -3391,10 +3523,10 @@ export default {
   .feedbackDiv {
     height: 100%;
     width: 100%;
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
     width: 100%;
     background-color: #fff;
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
 
   .feedbackDiv .content {
@@ -3529,8 +3661,8 @@ export default {
 
   .fifthDiv {
     background: #fff;
-    padding: 3rem;
-    padding-bottom: 8rem;
+    padding: 5rem;
+    padding-bottom: 5rem;
   }
 
   .fifthDiv .adviser {

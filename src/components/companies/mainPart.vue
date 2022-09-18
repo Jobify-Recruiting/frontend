@@ -153,12 +153,15 @@ export default {
           <div class="subtitle">Companies</div>
           <h2>Costruiamo l'ecosistema del domani.</h2>
           <p>
-            Increase developer velocity. Secure every step. Automate entire
-            workflows. Redefine collaboration. Trusted by over 83 million
-            developers.
+            Jobify Recruiting utilizza tecnologie che assolvono l'uomo da tutte
+            quelle azioni ripetute nel tempo che non richiedono intelletto
+            umano. Questo velocizza il processo di ricerca, ci rende più
+            competitivi sul mercato e lascia più tempo all'Head Hunter nella
+            fase di ricerca e selezione.
           </p>
+
           <div class="mainButton">
-            <a href="#first"
+            <a href="#whyJobify"
               ><button class="btn">
                 Scopri di più
                 <span>
@@ -178,7 +181,87 @@ export default {
                 </span></button
             ></a>
           </div>
-          <div class="image"></div>
+          <div class="image">
+            <div class="desc">
+              <div
+                class="photo"
+                style="
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                "
+              ></div>
+              <p>
+                L'obiettivo è quello di investire il tempo risparmiato ponendo
+                il rapporto umano al centro tra domanda e offerta, per creare il
+                match “perfetto” tra azienda e candidato.
+              </p>
+            </div>
+
+            <div class="desc" style="margin-left: 3rem">
+              <div
+                class="photo"
+                style="
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                "
+              ></div>
+              <p>
+                Per fare questo, intervistiamo l'azienda, approfondendo la
+                cultura ed il clima aziendale, l'organigramma ed il
+                funzionigramma, e l'eventuale riporto diretto della risorsa da
+                inserire.
+              </p>
+            </div>
+
+            <div class="desc">
+              <div
+                class="photo"
+                style="
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                "
+              ></div>
+              <p>
+                Anche il candidato, approfondendo i suoi valori e le sue
+                aspettative da un punto di vista professionale.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="numbersDiv">
+          <h2>I nostri numeri nei mesi precedenti</h2>
+          <div class="numbers">
+            <div class="number transition">
+              <h3>40%</h3>
+              <div class="subtitle">Reduction</div>
+              <p>in developer onboarding time</p>
+            </div>
+            <div class="number transition">
+              <h3>654%</h3>
+              <div class="subtitle">Return on investment</div>
+              <p>over 3 years</p>
+            </div>
+            <div class="number transition">
+              <h3>45</h3>
+              <div class="subtitle">Minutes saved</div>
+              <p>per developer, per day</p>
+            </div>
+          </div>
+          <div class="numbers">
+            <div class="number transition">
+              <h3>40%</h3>
+              <div class="subtitle">Reduction</div>
+              <p>in developer onboarding time</p>
+            </div>
+            <div class="number transition">
+              <h3>654%</h3>
+              <div class="subtitle">Return on investment</div>
+              <p>over 3 years</p>
+            </div>
+            <div class="number transition">
+              <h3>45</h3>
+              <div class="subtitle">Minutes saved</div>
+              <p>per developer, per day</p>
+            </div>
+          </div>
         </div>
         <div class="workflow" id="workflow">
           <div class="workflowTitle">
@@ -468,44 +551,8 @@ export default {
             </div>
           </div>
         </div>
-        <div class="numbersDiv">
-          <h2>I nostri numeri nei mesi precedenti</h2>
-          <div class="numbers">
-            <div class="number transition">
-              <h3>40%</h3>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-            <div class="number transition">
-              <h3>654%</h3>
-              <div class="subtitle">Return on investment</div>
-              <p>over 3 years</p>
-            </div>
-            <div class="number transition">
-              <h3>45</h3>
-              <div class="subtitle">Minutes saved</div>
-              <p>per developer, per day</p>
-            </div>
-          </div>
-          <div class="numbers">
-            <div class="number transition">
-              <h3>40%</h3>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-            <div class="number transition">
-              <h3>654%</h3>
-              <div class="subtitle">Return on investment</div>
-              <p>over 3 years</p>
-            </div>
-            <div class="number transition">
-              <h3>45</h3>
-              <div class="subtitle">Minutes saved</div>
-              <p>per developer, per day</p>
-            </div>
-          </div>
-        </div>
-        <div class="secondPart">
+
+        <!--<div class="secondPart">
           <div class="cols">
             <div class="col col2">
               <div class="titleH3">Perchè scegliere Jobify?</div>
@@ -530,8 +577,9 @@ export default {
               <div class="image2 transition"></div>
             </div>
           </div>
-        </div>
-        <div class="secondPart">
+        </div>-->
+
+        <!--<div class="secondPart">
           <div class="cols">
             <div class="col colImage">
               <div class="image transition"></div>
@@ -556,7 +604,107 @@ export default {
               </div>
             </div>
           </div>
+        </div>-->
+
+        <div class="thirdPart" id="whyJobify">
+          <div class="thirdPartDiv">
+            <div class="first">
+              <div class="col1">
+                <h2>Perchè scegliere Jobify?</h2>
+                <p>
+                  Understand your dependence on the software supply chain, and
+                  how you can contribute back.
+                </p>
+                <p>
+                  Understand your dependence on the software supply chain, and
+                  how you can contribute back.
+                </p>
+                <p>
+                  Understand your dependence on the software supply chain, and
+                  how you can contribute back.
+                </p>
+              </div>
+              <div class="col2">
+                <div class="glow4"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="250"
+                  height="250"
+                  fill="#fff"
+                  class="bi bi-building transition"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"
+                  />
+                  <path
+                    d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="second">
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+            </div>
+            <div class="second">
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+              <div class="feature">
+                <h2>Notifications</h2>
+                <p>
+                  Get updates on the GitHub activity you've subscribed to. Use
+                  the notifications inbox to customize, triage, and manage your
+                  updates.
+                </p>
+                <div class="btn3">Learn more</div>
+              </div>
+            </div>
+          </div>
         </div>
+
         <div class="fifthDiv">
           <div class="adviser transition">
             <div class="col">
@@ -584,6 +732,87 @@ export default {
             <div class="col_image"></div>
           </div>
         </div>
+
+        <div class="featureds">
+          <div class="titles">
+            <h2>Storie</h2>
+            <div class="buttons">
+              <div class="btnScrollL" @click="btnScrollSx2()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#fff"
+                  class="bi bi-chevron-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </div>
+              <div class="btnScrollR" @click="btnScrollDx2()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#fff"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="featuredContent">
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="feedbackDiv" id="feedback">
           <div class="content">
             <h2>I clienti dicono di noi</h2>
@@ -1230,183 +1459,7 @@ export default {
             </div>
           </div>
         </div>
-        <div class="featureds">
-          <div class="titles">
-            <h2>Storie</h2>
-            <div class="buttons">
-              <div class="btnScrollL" @click="btnScrollSx2()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#fff"
-                  class="bi bi-chevron-left"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                  />
-                </svg>
-              </div>
-              <div class="btnScrollR" @click="btnScrollDx2()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#fff"
-                  class="bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="featuredContent">
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="thirdPart">
-          <div class="thirdPartDiv">
-            <div class="first">
-              <div class="col1">
-                <h2>Be part of the world’s largest security community.</h2>
-                <p>
-                  Understand your dependence on the software supply chain, and
-                  how you can contribute back.
-                </p>
-                <p>
-                  Understand your dependence on the software supply chain, and
-                  how you can contribute back.
-                </p>
-                <p>
-                  Understand your dependence on the software supply chain, and
-                  how you can contribute back.
-                </p>
-              </div>
-              <div class="col2">
-                <div class="glow4"></div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="250"
-                  height="250"
-                  fill="#fff"
-                  class="bi bi-building transition"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"
-                  />
-                  <path
-                    d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="second">
-              <div class="feature">
-                <h2>Notifications</h2>
-                <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
-                </p>
-                <div class="btn3">Learn more</div>
-              </div>
-              <div class="feature">
-                <h2>Notifications</h2>
-                <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
-                </p>
-                <div class="btn3">Learn more</div>
-              </div>
-              <div class="feature">
-                <h2>Notifications</h2>
-                <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
-                </p>
-                <div class="btn3">Learn more</div>
-              </div>
-            </div>
-            <div class="second">
-              <div class="feature">
-                <h2>Notifications</h2>
-                <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
-                </p>
-                <div class="btn3">Learn more</div>
-              </div>
-              <div class="feature">
-                <h2>Notifications</h2>
-                <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
-                </p>
-                <div class="btn3">Learn more</div>
-              </div>
-              <div class="feature">
-                <h2>Notifications</h2>
-                <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
-                </p>
-                <div class="btn3">Learn more</div>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div class="clientsCo" id="clients">
           <div class="titles">
             <h2>Clienti</h2>
@@ -1577,7 +1630,7 @@ export default {
             </div>
           </div>
         </div>
-        <div class="partners">
+        <!--<div class="partners">
           <div class="partnersPart">
             <div class="col1">
               <a href="">
@@ -1655,14 +1708,40 @@ export default {
               </p>
             </div>
           </div>
-        </div>
+        </div>-->
         <div class="cols">
+          <div class="glow2"></div>
+          <div class="glow3"></div>
+          <div class="glow4"></div>
+          <div class="glow5"></div>
           <div class="col col_1">
             <p>Aziende</p>
             <h2>Fissa un appuntamento</h2>
             <div class="subtitle">
               Cerchiamo talenti per creare il futuro, cerchiamo talenti per
               creare il futuro, cerchiamo talenti per creare il futuro
+            </div>
+            <div class="images">
+              <div
+                class="photo"
+                style="
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                "
+              ></div>
+
+              <div
+                class="photo"
+                style="
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                "
+              ></div>
+
+              <div
+                class="photo"
+                style="
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                "
+              ></div>
             </div>
           </div>
           <div class="col col_2 transition">
@@ -1854,6 +1933,23 @@ export default {
     padding-bottom: 3rem;
   }
 
+  .cols .images {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .images .photo {
+    width: 8vw;
+    height: 8vw;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-right: 1.5rem;
+  }
+
   .firstPart {
     text-align: left;
     width: 100%;
@@ -1909,6 +2005,41 @@ export default {
     top: 5%;
     right: 0;
     margin-right: 0;
+  }
+
+  .firstPart .image .desc {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #00225e8f;
+    backdrop-filter: blur(3px);
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-bottom: 1.5rem;
+  }
+
+  .firstPart .image .desc .photo {
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 25rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-right: 1rem;
+  }
+
+  .firstPart .image .desc p {
+    width: 80%;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 !important;
   }
 
   .cols .col_1 {
@@ -2399,10 +2530,10 @@ export default {
   }
 
   .numbersDiv .numbers .number {
-    padding-left: 4rem;
-    padding-right: 4rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     text-align: center;
     background: #03111f;
     border-radius: 30px;
@@ -2414,23 +2545,23 @@ export default {
 
   .number h3 {
     color: #fff;
-    font-size: 80px;
-    line-height: 84px;
+    font-size: 58px;
+    line-height: 62px;
     font-weight: 700;
     letter-spacing: -2.5px;
   }
 
   .number .subtitle {
     color: #fff;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 700;
   }
 
   .number p {
     color: #627597;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 700;
   }
 
