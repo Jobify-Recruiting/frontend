@@ -151,13 +151,13 @@ export default {
         <div class="glow5"></div>
         <div class="firstPart">
           <div class="subtitle">Companies</div>
-          <h2>Costruiamo l'ecosistema del domani.</h2>
+          <h2>Creiamo il match perfetto tra azienda e candidato.</h2>
           <p>
-            Jobify Recruiting utilizza tecnologie che assolvono l'uomo da tutte
-            quelle azioni ripetute nel tempo che non richiedono intelletto
-            umano. Questo velocizza il processo di ricerca, ci rende più
-            competitivi sul mercato e lascia più tempo all'Head Hunter nella
-            fase di ricerca e selezione.
+            Jobify Recruiting utilizza <span>tecnologie</span> che assolvono
+            l'uomo da tutte quelle azioni ripetute nel tempo che non richiedono
+            intelletto umano. Questo <span>velocizza</span> il processo di
+            ricerca, ci rende più competitivi sul mercato e lascia più tempo
+            all'Head Hunter nella fase di ricerca e selezione.
           </p>
 
           <div class="mainButton">
@@ -227,7 +227,10 @@ export default {
         </div>
 
         <div class="numbersDiv">
-          <h2>I nostri numeri nei mesi precedenti</h2>
+          <h2>
+            Le statistiche: ci aiutano a prendere decisioni in maniera
+            consapevole
+          </h2>
           <div class="numbers">
             <div class="number transition">
               <h3>40%</h3>
@@ -265,7 +268,7 @@ export default {
         </div>
         <div class="workflow" id="workflow">
           <div class="workflowTitle">
-            <h2 style="margin-bottom: 0rem !important">Il nostro workflow</h2>
+            <h2 style="margin-bottom: 0rem !important">Schema del processo</h2>
           </div>
           <div class="buttons">
             <div class="btnScrollL" @click="workflowScrollSx()">
@@ -552,76 +555,34 @@ export default {
           </div>
         </div>
 
-        <!--<div class="secondPart">
-          <div class="cols">
-            <div class="col col2">
-              <div class="titleH3">Perchè scegliere Jobify?</div>
-              <div class="text">
-                Redefine collaboration. Trusted by over 83 million developers.
-                <span
-                  >Increase developer velocity. Secure every step. Automate
-                  entire workflows.</span
-                >
-              </div>
-
-              <div class="titleH3">Perchè scegliere Jobify?</div>
-              <div class="text">
-                Redefine collaboration. Trusted by over 83 million developers.
-                <span
-                  >Increase developer velocity. Secure every step. Automate
-                  entire workflows.</span
-                >
-              </div>
-            </div>
-            <div class="col colImage">
-              <div class="image2 transition"></div>
-            </div>
-          </div>
-        </div>-->
-
-        <!--<div class="secondPart">
-          <div class="cols">
-            <div class="col colImage">
-              <div class="image transition"></div>
-            </div>
-            <div class="col col2">
-              <div class="titleH3">Perchè scegliere Jobify?</div>
-              <div class="text">
-                Redefine collaboration. Trusted by over 83 million developers.
-                <span
-                  >Increase developer velocity. Secure every step. Automate
-                  entire workflows.</span
-                >
-              </div>
-
-              <div class="titleH3">Perchè scegliere Jobify?</div>
-              <div class="text">
-                Redefine collaboration. Trusted by over 83 million developers.
-                <span
-                  >Increase developer velocity. Secure every step. Automate
-                  entire workflows.</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>-->
-
         <div class="thirdPart" id="whyJobify">
           <div class="thirdPartDiv">
             <div class="first">
               <div class="col1">
-                <h2>Perchè scegliere Jobify?</h2>
+                <h2>Perchè scegliere Jobify Recruiting?</h2>
                 <p>
-                  Understand your dependence on the software supply chain, and
-                  how you can contribute back.
+                  <span>Jobify Recruiting</span> utilizza tecnologie che
+                  assolvono l'uomo da tutte quelle azioni ripetute nel tempo che
+                  non richiedono intelletto umano. Questo
+                  <span>velocizza</span> il processo di ricerca, ci rende più
+                  competitivi sul mercato e lascia più tempo all'Head Hunter
+                  nella fase di ricerca e selezione.
                 </p>
                 <p>
-                  Understand your dependence on the software supply chain, and
-                  how you can contribute back.
+                  L'obiettivo è quello di investire il tempo risparmiato ponendo
+                  il <span>rapporto umano</span> al centro tra
+                  <span>domanda e offerta</span>, per creare il
+                  <span>match “perfetto”</span> tra <span>azienda</span> e
+                  <span>candidato</span>. Per fare questo, intervistiamo:
                 </p>
                 <p>
-                  Understand your dependence on the software supply chain, and
-                  how you can contribute back.
+                  L'azienda, approfondendo la cultura ed il clima aziendale,
+                  l'organigramma ed il funzionigramma, e l'eventuale riporto
+                  diretto della risorsa da inserire;
+                </p>
+                <p>
+                  Il candidato, approfondendo i suoi valori e le sue aspettative
+                  da un punto di vista professionale.
                 </p>
               </div>
               <div class="col2">
@@ -646,60 +607,47 @@ export default {
             </div>
             <div class="second">
               <div class="feature">
-                <h2>Notifications</h2>
+                <h2>Efficace</h2>
                 <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
+                  Analizza i bisogni dell’azienda e del candidato, con lo scopo
+                  di ricercare la perfetta compatibilità tra la risorsa da
+                  assumere e i bisogni e le aspettative dell’azienda. Questo
+                  crea un rapporto di lavoro più stabile e duraturo nel tempo.
                 </p>
-                <div class="btn3">Learn more</div>
               </div>
               <div class="feature">
-                <h2>Notifications</h2>
+                <h2>Scientifico</h2>
                 <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
+                  Tutto il processo viene monitorato da dati specifici. Questi
+                  ci aiutano a prendere decisioni in maniera consapevole
                 </p>
-                <div class="btn3">Learn more</div>
               </div>
               <div class="feature">
-                <h2>Notifications</h2>
+                <h2>Rapido</h2>
                 <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
+                  Ricorre a tecnologie A.I. e HR Tech. Assolve l’uomo da tutte
+                  quelle azioni ripetute nel tempo che non richiedono intelletto
+                  umano. Velocizza la ricerca e ci rende più competitivi sul
+                  mercato
                 </p>
-                <div class="btn3">Learn more</div>
               </div>
             </div>
             <div class="second">
               <div class="feature">
-                <h2>Notifications</h2>
+                <h2>Umano</h2>
                 <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
+                  Il tempo risparmiato grazie all'utilizzo dell'intelligenza
+                  artificiale, consente ai nostri head hunter di instaurare un
+                  rapporto con i candidati e comprendere i loro valori, le loro
+                  aspettative ed i loro bisogni.
                 </p>
-                <div class="btn3">Learn more</div>
               </div>
               <div class="feature">
-                <h2>Notifications</h2>
+                <h2>Competitivo</h2>
                 <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
+                  Essendo dei nativi digitali riusciamo a contenere i costi
+                  fissi ed essere tra i più competitivi sul mercato
                 </p>
-                <div class="btn3">Learn more</div>
-              </div>
-              <div class="feature">
-                <h2>Notifications</h2>
-                <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
-                </p>
-                <div class="btn3">Learn more</div>
               </div>
             </div>
           </div>
@@ -708,7 +656,7 @@ export default {
         <div class="fifthDiv">
           <div class="adviser transition">
             <div class="col">
-              <h3>Trova il candidato giusto <span>per la tua azienda</span></h3>
+              <h3>Trova il candidato <span>ideale</span> per la tua azienda</h3>
               <router-link to="/stories"
                 ><button class="btn">
                   Scopri di più
@@ -730,86 +678,6 @@ export default {
               ></router-link>
             </div>
             <div class="col_image"></div>
-          </div>
-        </div>
-
-        <div class="featureds">
-          <div class="titles">
-            <h2>Storie</h2>
-            <div class="buttons">
-              <div class="btnScrollL" @click="btnScrollSx2()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#fff"
-                  class="bi bi-chevron-left"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                  />
-                </svg>
-              </div>
-              <div class="btnScrollR" @click="btnScrollDx2()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#fff"
-                  class="bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="featuredContent">
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -1462,7 +1330,7 @@ export default {
 
         <div class="clientsCo" id="clients">
           <div class="titles">
-            <h2>Clienti</h2>
+            <h2>I nostri clienti</h2>
             <div class="buttons">
               <div class="btnScrollL" @click="btnScrollSx3()">
                 <svg
@@ -1630,85 +1498,87 @@ export default {
             </div>
           </div>
         </div>
-        <!--<div class="partners">
-          <div class="partnersPart">
-            <div class="col1">
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
-                  "
-                ></div
-              ></a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo6.png);
-                  "
-                ></div
-              ></a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo7.png);
-                  "
-                ></div
-              ></a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo8.png);
-                  "
-                ></div
-              ></a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo1.png);
-                  "
-                ></div>
-              </a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo2.png);
-                  "
-                ></div>
-              </a>
-              <a href="">
-                <div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo3.png);
-                  "
-                ></div
-              ></a>
-              <a href=""
-                ><div
-                  class="partnerImg2 transition"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo4.png);
-                  "
-                ></div
-              ></a>
-            </div>
-            <div class="col1">
-              <h2>Costruiamo l'ecosistema del domani.</h2>
-              <p>
-                Increase developer velocity. Secure every step. Automate entire
-                workflows. Redefine collaboration. Trusted by over 83 million
-                developers.Redefine collaboration. Trusted collaboration over 83
-                milliocollaborationn developers.
-              </p>
+
+        <div class="featureds">
+          <div class="titles">
+            <h2>Storie dei talenti</h2>
+            <div class="buttons">
+              <div class="btnScrollL" @click="btnScrollSx2()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#fff"
+                  class="bi bi-chevron-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </div>
+              <div class="btnScrollR" @click="btnScrollDx2()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#fff"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
             </div>
           </div>
-        </div>-->
+          <div class="featuredContent">
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="cols">
           <div class="glow2"></div>
           <div class="glow3"></div>
@@ -1718,8 +1588,8 @@ export default {
             <p>Aziende</p>
             <h2>Fissa un appuntamento</h2>
             <div class="subtitle">
-              Cerchiamo talenti per creare il futuro, cerchiamo talenti per
-              creare il futuro, cerchiamo talenti per creare il futuro
+              Ricerchiamo il candidato perfetto rispetto le vostre esigenze,
+              creiamo un rapporto più stabile e duraturo.
             </div>
             <div class="images">
               <div
@@ -1967,6 +1837,10 @@ export default {
     font-size: 12px;
     line-height: 12px;
     margin-bottom: 1rem;
+  }
+
+  .firstPart p span {
+    color: #0062f5;
   }
 
   .firstPart h2 {
@@ -2415,6 +2289,7 @@ export default {
 
   .clientsCo {
     width: 100%;
+    padding-bottom: 10rem;
   }
 
   .clientsCoBody {
@@ -2930,6 +2805,10 @@ export default {
     position: relative;
   }
 
+  .thirdPartDiv .first span {
+    color: #0062f5;
+  }
+
   .thirdPartDiv .first h2 {
     color: #fff;
     width: 80%;
@@ -3208,9 +3087,6 @@ export default {
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
-
-  .featured .text {
   }
 
   .featured h2 {

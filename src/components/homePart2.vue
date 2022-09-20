@@ -177,14 +177,14 @@ export default {
         <div class="first">
           <div class="title">
             <h2>
-              <span class="gradientTitle">Jobify</span>, la tua ricerca e
-              selezione
+              <span class="gradientTitle">Jobify Recruiting</span>, la tua
+              ricerca e selezione
             </h2>
             <p>
-              Jobify, la tua ricerca e selezione, la tua ricerca e selezione,
+              Siamo un’agenzia per la ricerca di talenti,
               <span style="color: #010c18; font-weight: 500"
-                >la tua ricerca e selezione</span
-              >, la tua ricerca e selezione, la tua ricerca e selezione
+                >digitale e dinamica</span
+              >, formata da persone giovani e multilingue.
             </p>
           </div>
           <div class="video transition">
@@ -256,9 +256,8 @@ export default {
               <span>Che servizi offre Jobify</span>
             </h2>
             <p>
-              Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
-              tua ricerca e selezione, la tua ricerca e selezione, la tua
-              ricerca e selezione
+              Siamo convinti che l’affidabilita e la competenza possano creare
+              rapporti e valore professionale, con le nostre aziende clienti.
               <br />
             </p>
             <div class="steps">
@@ -346,289 +345,62 @@ export default {
       </div>
     </div>
 
-    <!--<div class="clients">
-      <div class="secondDiv" id="second">
-        <div class="content">
-          <div class="first">
-            <div class="title">
-              <h2>
-                <span>A chi ci rivolgiamo</span>
-              </h2>
-              <p>
-                Qui inseriamo una frase che possa descrivere i valori dei nostri
-                clienti
-                <br />
-              </p>
-              <div class="steps">
-                <router-link to="/companies">
-                  <div class="step transition">
-                    <div class="imageStep"></div>
-                    <div class="title">Azienda</div>
-                    <div class="text">Descrizione del tipo di cliente</div>
-                  </div>
-                </router-link>
-                <router-link to="/workers">
-                  <div class="step transition">
-                    <div class="imageStep"></div>
-                    <div class="title">Lavoratori</div>
-                    <div class="text">Descrizione del tipo di cliente</div>
-                  </div></router-link
-                >
-              </div>
-            </div>
+    <div class="thirdPart" id="whyJobify">
+      <div class="thirdPartDiv">
+        <div class="first">
+          <div class="col1">
+            <h2>Perchè scegliere Jobify Recruiting?</h2>
+            <p>
+              <span>Jobify Recruiting</span> utilizza tecnologie che assolvono
+              l'uomo da tutte quelle azioni ripetute nel tempo che non
+              richiedono intelletto umano. Questo <span>velocizza</span> il
+              processo di ricerca, ci rende più competitivi sul mercato e lascia
+              più tempo all'Head Hunter nella fase di ricerca e selezione.
+            </p>
+            <p>
+              L'obiettivo è quello di investire il tempo risparmiato ponendo il
+              <span>rapporto umano</span> al centro tra
+              <span>domanda e offerta</span>, per creare il
+              <span>match “perfetto”</span> tra <span>azienda</span> e
+              <span>candidato</span>. Per fare questo, intervistiamo:
+            </p>
+            <p>
+              L'azienda, approfondendo la cultura ed il clima aziendale,
+              l'organigramma ed il funzionigramma, e l'eventuale riporto diretto
+              della risorsa da inserire;
+            </p>
+            <p>
+              Il candidato, approfondendo i suoi valori e le sue aspettative da
+              un punto di vista professionale.
+            </p>
+          </div>
+          <div class="col2">
+            <div class="glow9"></div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="250"
+              height="250"
+              fill="#fff"
+              class="bi bi-building transition"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"
+              />
+              <path
+                d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"
+              />
+            </svg>
           </div>
         </div>
       </div>
-    </div>-->
-
-    <!--<div class="workflow" id="workflow">
-      <div class="workflowTitle">
-        <h2>Il nostro workflow</h2>
-      </div>
-      <div class="columns">
-        <div class="column br">
-          <div class="background transition">
-            <div class="number">1</div>
-            <h2>Intervista al cliente</h2>
-            <p>
-              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
-              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
-              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
-              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
-              la tua ricerca e selezione, la tua ricerca e selezione
-            </p>
-          </div>
-          <div class="circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="#161b22"
-              class="bi bi-arrow-left-circle-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="column mt10">
-          <div class="circle2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="#161b22"
-              class="bi bi-arrow-right-circle-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
-              />
-            </svg>
-          </div>
-          <div class="background transition">
-            <div class="number">2</div>
-            <h2>Job description</h2>
-            <p>
-              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
-              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
-              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
-              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
-              la tua ricerca e selezione, la tua ricerca e selezione
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column br">
-          <div class="background transition">
-            <div class="number">3</div>
-            <h2>Lancio annuncio & Head Hunting</h2>
-            <p>
-              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
-              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
-              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
-              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
-              <span
-                >la tua ricerca e selezione, la tua ricerca e selezione</span
-              >
-            </p>
-          </div>
-          <div class="circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="#161b22"
-              class="bi bi-arrow-left-circle-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="column mt10">
-          <div class="circle2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="#161b22"
-              class="bi bi-arrow-right-circle-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
-              />
-            </svg>
-          </div>
-          <div class="background transition">
-            <div class="number">4</div>
-            <h2>Screening CV</h2>
-            <p>
-              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
-              ricerca e selezione, la tua ricerca e selezione,
-              <span
-                >la tua ricerca e selezione, la tua ricerca e selezione</span
-              >
-              Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
-              tua ricerca e selezione, la tua ricerca e selezione, la tua
-              ricerca e selezione
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column br">
-          <div class="background transition">
-            <div class="number">5</div>
-            <h2>Screening telefonico</h2>
-            <p>
-              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
-              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
-              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
-              selezione,
-              <span
-                >la tua ricerca e selezione, la tua ricerca e selezione</span
-              >
-              la tua ricerca e selezione, la tua ricerca e selezione
-            </p>
-          </div>
-          <div class="circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="#161b22"
-              class="bi bi-arrow-left-circle-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="column mt10">
-          <div class="circle2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="#161b22"
-              class="bi bi-arrow-right-circle-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
-              />
-            </svg>
-          </div>
-          <div class="background transition">
-            <div class="number">6</div>
-            <h2>Videocolloquio</h2>
-            <p>
-              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
-              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
-              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
-              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
-              <span
-                >la tua ricerca e selezione, la tua ricerca e selezione</span
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="columns">
-        <div class="column br">
-          <div class="background transition">
-            <div class="number">7</div>
-            <h2>Presentazione Short list</h2>
-            <p>
-              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
-              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
-              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
-              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
-              <span
-                >la tua ricerca e selezione, la tua ricerca e selezione</span
-              >
-            </p>
-          </div>
-          <div class="circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="#161b22"
-              class="bi bi-arrow-left-circle-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="column mt10">
-          <div class="circle2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="#161b22"
-              class="bi bi-arrow-right-circle-fill"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"
-              />
-            </svg>
-          </div>
-          <div class="background transition">
-            <div class="number">8</div>
-            <h2>Colloqui one-toone con l'azienda</h2>
-            <p>
-              Descrizione dello step, Jobify, la tua ricerca e selezione, la tua
-              ricerca e selezione, la tua ricerca e selezione, la tua ricerca e
-              selezione, la tua ricerca e selezione, Jobify, la tua ricerca e
-              selezione, la tua ricerca e selezione, la tua ricerca e selezione,
-              <span
-                >la tua ricerca e selezione, la tua ricerca e selezione</span
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>-->
+    </div>
 
     <div class="workflow" id="workflow">
       <div class="workflowTitle">
         <h2 style="margin-bottom: 0rem !important">
-          Creiamo un processo di ricerca e selezione
+          Creiamo un processo di ricerca e selezione:
         </h2>
       </div>
       <div class="workflowFlex">
@@ -1501,8 +1273,8 @@ export default {
       <div class="adviser transition">
         <div class="col">
           <h3>
-            <span>Fissa un appuntamento</span> per lavorare con Jobify
-            Recruiting
+            <span>Jobify Recruiting crea il matching</span> perfetto tra azienda
+            e candidato
           </h3>
           <router-link to="/stories"
             ><button class="btn">
@@ -1702,6 +1474,10 @@ export default {
       <div class="content">
         <div class="first">
           <div class="title">
+            <div class="subtitle">
+              Milano &nbsp;&nbsp;•&nbsp;&nbsp; Dubai &nbsp;&nbsp;•&nbsp;&nbsp;
+              Trencin
+            </div>
             <h2>Resta in <span>contatto</span> con noi</h2>
             <p>
               Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
@@ -1888,7 +1664,7 @@ export default {
   .clientsCoBody {
     padding-left: 6rem;
     padding-right: 6rem;
-    display: flex;
+    display: contents;
     align-items: center;
   }
 
@@ -2029,6 +1805,73 @@ export default {
     padding-bottom: 3rem;
   }
 
+  .thirdPart {
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background: white;
+  }
+
+  .thirdPartDiv {
+    background: #03111f;
+    border-radius: 30px;
+    padding: 5rem;
+  }
+
+  .thirdPartDiv .first {
+    background: transparent;
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    position: relative;
+  }
+
+  .thirdPartDiv .first span {
+    color: #0062f5;
+  }
+
+  .thirdPartDiv .first h2 {
+    color: #fff;
+    width: 80%;
+    font-size: 54px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .thirdPartDiv .first p {
+    width: 60%;
+    color: #627597;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-top: 3rem;
+  }
+
+  .first .col2 .building2 {
+    position: absolute;
+    top: 0%;
+    left: -10%;
+    top: 20%;
+    transform: rotate(20deg);
+  }
+
+  .thirdPartDiv .second {
+    background: transparent;
+    display: flex;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-top: 5rem;
+    display: flex;
+  }
+
   .feature {
     text-align: center;
     background: #161b22;
@@ -2037,7 +1880,7 @@ export default {
     margin-right: 2rem;
     margin-left: 2rem;
     margin-bottom: 3rem;
-    min-height: 22vw;
+    min-height: 26vw;
     float: left;
     transition: all 0.3s ease-out;
     text-align: left;
@@ -2074,7 +1917,7 @@ export default {
     line-height: 32px;
     font-weight: 700;
     letter-spacing: -0.04em !important;
-    width: 70% !important;
+    width: 100% !important;
     margin-bottom: 1rem;
   }
 
@@ -3199,6 +3042,17 @@ export default {
     box-shadow: 0px 0px 105px 45px #2eff9de6;
   }
 
+  .glow9 {
+    position: absolute;
+    width: 5vw;
+    top: 25%;
+    opacity: 0.5;
+    right: 10%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+  }
+
   .thirdDiv .content {
     padding: 5rem;
     padding-top: 10rem;
@@ -3398,6 +3252,15 @@ export default {
   .fourthDiv .content {
     padding: 5rem;
     padding-top: 10rem;
+  }
+
+  .fourthDiv .title .subtitle {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 2.5rem;
   }
 
   .fourthDiv .title h2 {
@@ -3782,6 +3645,21 @@ export default {
     background: white;
     border: 3px solid #e8ebf1;
     border-radius: 25rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .workflowFlex {
+    flex-wrap: wrap;
+  }
+
+  .workflowFlex .step_workflow {
+    float: left;
+    margin-bottom: 2rem;
+  }
+
+  .steps {
+    display: inherit !important;
   }
 }
 

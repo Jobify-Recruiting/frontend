@@ -247,11 +247,7 @@ export default {
         <div class="firstPart">
           <div class="subtitle">Lavoratori</div>
           <h2>Un nuovo modo per ricercare talenti</h2>
-          <p>
-            Increase developer velocity. Secure every step. Automate entire
-            workflows. Redefine collaboration. Trusted by over 83 million
-            developers.
-          </p>
+          <p>Crediamo che ogni persona abbia un talento, basta scoprirlo.</p>
           <div class="mainButton">
             <router-link to="/openposition"
               ><button class="btn">
@@ -343,12 +339,15 @@ export default {
               <div class="col1">
                 <h2>Trova con noi il tuo prossimo lavoro.</h2>
                 <p>
-                  Understand your dependence on the software supply chain, and
-                  how you can contribute back.
+                  Il nostro obiettivo è creare il macthing perfetto tra
+                  candidato e azienda.
                 </p>
                 <p>
-                  Understand your dependence on the software supply chain, and
-                  how you can contribute back.
+                  Siamo convinti che non sia più sufficiente trovare le giuste
+                  competenze, rispetto al profilo ricercato dall’azienda. È
+                  fondamentale invece capire le aspettative professionali e i
+                  valori di ogni persona, al fine di creare la perfetta
+                  compatibilità con la cultura e i valori dell’azienda.
                 </p>
               </div>
               <div class="col2">
@@ -381,7 +380,7 @@ export default {
                   the notifications inbox to customize, triage, and manage your
                   updates.
                 </p>
-                <div class="btn3">Learn more</div>
+                <div class="btn3">Scarica</div>
               </div>
               <div class="feature">
                 <div
@@ -414,41 +413,14 @@ export default {
                 <div class="btn3">Learn more</div>
               </div>
             </div>
-            <div class="second">
-              <div class="feature">
-                <h2>Social Media Policy</h2>
-                <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
-                </p>
-                <div class="btn3">Learn more</div>
-              </div>
-              <div class="feature">
-                <h2>Notifications</h2>
-                <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
-                </p>
-                <div class="btn3">Learn more</div>
-              </div>
-              <div class="feature">
-                <h2>Notifications</h2>
-                <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
-                </p>
-                <div class="btn3">Learn more</div>
-              </div>
-            </div>
           </div>
         </div>
 
         <div class="workflow" id="workflow">
           <div class="workflowTitle">
-            <h2 style="margin-bottom: 0rem !important">Il nostro workflow</h2>
+            <h2 style="margin-bottom: 0rem !important">
+              Scopri ogni step del processo di ricerca e selezione
+            </h2>
           </div>
           <div class="buttons">
             <div class="btnScrollL" @click="workflowScrollSx()">
@@ -894,33 +866,34 @@ export default {
             <div class="cols2">
               <div class="col col-padding" id="positions">
                 <h3>
-                  Non hai trovato <span>offerte in linea</span> con le tue
-                  aspettative?
+                  Scopri le <span>posizioni aperte</span> di Jobify recruiting
                 </h3>
-                <div class="button" @click="sendCV()">
-                  Manda il tuo CV
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="currentColor"
-                      class="bi bi-arrow-right-short"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                      />
-                    </svg>
-                  </span>
-                </div>
+                <router-link to="/openposition">
+                  <div class="button">
+                    Posizioni aperte
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                        />
+                      </svg>
+                    </span></div
+                ></router-link>
               </div>
               <div
                 class="col"
                 style="
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/img_h1.png);
+                  background-image: url(/src/assets/storie.jpg);
                   background-size: cover;
+                  border-radius: 30px;
                 "
               ></div>
             </div>
@@ -1093,7 +1066,7 @@ export default {
 
   .firstPart .subtitle {
     text-transform: uppercase;
-    color: #fff;
+    color: #0047b3;
     letter-spacing: 4px;
     font-size: 12px;
     line-height: 12px;

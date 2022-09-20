@@ -59,11 +59,11 @@ export default {
           <router-link to="/openposition"
             ><div class="link">Posizioni aperte</div></router-link
           >
-          <router-link to="/companies"
-            ><div class="link">Aziende</div></router-link
-          >
           <router-link to="/workers"
             ><div class="link">Lavoratori</div></router-link
+          >
+          <router-link to="/companies"
+            ><div class="link">Aziende</div></router-link
           >
         </div>
         <div class="left">
@@ -123,11 +123,11 @@ export default {
             </h3>
           </div>
         </router-link>
-        <router-link to="/technologies">
+        <router-link to="/stories">
           <div class="link">
             <h3>
               <p class="icon">03</p>
-              Tecnologie
+              Storie dei talenti
             </h3>
           </div>
         </router-link>
@@ -179,14 +179,13 @@ export default {
     <div class="footer">
       <div class="menuFooterSx">
         <p>
-          Made by 2022. &nbsp;&nbsp;•&nbsp;&nbsp; Tutti i diritti riservati.
+          © 2022 &nbsp;&nbsp;•&nbsp;&nbsp; Jobify Recruiting Srl. (Aut. Min.
+          Prot. N.F205S530526 del 26.07.2022)
         </p>
       </div>
       <div class="socialFooter">
         <div class="link">Facebook</div>
         <div class="link">Linkedin</div>
-        <div class="link">Instagram</div>
-        <div class="link">Twitter</div>
       </div>
     </div>
   </div>

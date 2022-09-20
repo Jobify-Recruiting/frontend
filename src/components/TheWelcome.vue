@@ -110,25 +110,25 @@ export default {
         <p style="color: white; font-size: 22px; line-height: 18px" id="value">
           0
         </p>
-        <p style="color: #cdd4db; font-size: 16px">ore</p>
+        <p style="color: #cdd4db; font-size: 16px">r&s</p>
       </div>
       <div class="item">
         <p style="color: white; font-size: 22px; line-height: 18px" id="value2">
           0
         </p>
-        <p style="color: #cdd4db; font-size: 16px">ore</p>
+        <p style="color: #cdd4db; font-size: 16px">assunti</p>
       </div>
       <div class="item">
         <p style="color: white; font-size: 22px; line-height: 18px" id="value3">
           0
         </p>
-        <p style="color: #cdd4db; font-size: 16px">ore</p>
+        <p style="color: #cdd4db; font-size: 16px">consulenze</p>
       </div>
       <div class="item">
         <p style="color: white; font-size: 22px; line-height: 18px" id="value4">
           0
         </p>
-        <p style="color: #cdd4db; font-size: 16px">ore</p>
+        <p style="color: #cdd4db; font-size: 16px">ricerche</p>
       </div>
     </div>
   </div>
@@ -148,7 +148,7 @@ export default {
 
 @media (min-width: 1600px) {
   #globeViz {
-    left: 22% !important;
+    left: 35% !important;
   }
 
   .mainTitle {
@@ -210,7 +210,7 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 8rem;
-    width: 65%;
+    width: 50%;
     padding-bottom: 10rem;
   }
 
@@ -437,6 +437,9 @@ export default {
 }
 
 @media (min-width: 1920px) {
+  #globeViz {
+    left: 20% !important;
+  }
 }
 
 @keyframes move {

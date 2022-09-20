@@ -44,9 +44,6 @@ export default {
       </div>
       <div class="col">
         <div class="title">Piattaforma</div>
-        <router-link to="/technologies">
-          <div class="link">Tecnologie</div></router-link
-        >
         <router-link to="/partnerships">
           <div class="link">Partnerships</div></router-link
         >
@@ -59,7 +56,9 @@ export default {
         <router-link to="/about">
           <div class="link">Chi siamo</div></router-link
         >
-        <router-link to="/stories"> <div class="link">Storie</div></router-link>
+        <router-link to="/stories">
+          <div class="link">Storie dei talenti</div></router-link
+        >
         <router-link to="/workwithus">
           <div class="link">Lavora con noi</div></router-link
         >
@@ -67,11 +66,20 @@ export default {
           <div class="link">Contattaci</div></router-link
         >
       </div>
+      <div class="col">
+        <div class="title">Sedi</div>
+        <router-link to="/about"> <div class="link">Milano</div></router-link>
+        <router-link to="/stories"> <div class="link">Dubai</div></router-link>
+        <router-link to="/workwithus">
+          <div class="link">Trencin</div></router-link
+        >
+      </div>
     </div>
     <div class="bottom">
       <div class="left">
         <div class="link">
-          Made by 2022. &nbsp;&nbsp;•&nbsp;&nbsp; Tutti i diritti riservati.
+          © 2022 &nbsp;&nbsp;•&nbsp;&nbsp; Jobify Recruiting Srl. (Aut. Min.
+          Prot. N.F205S530526 del 26.07.2022)
         </div>
         <div class="link">Privacy Policy</div>
         <div class="link">Termini & Condizioni</div>
@@ -79,8 +87,6 @@ export default {
       <div class="right">
         <div class="link">Facebook</div>
         <div class="link">Linkedin</div>
-        <div class="link">Instagram</div>
-        <div class="link">Twitter</div>
       </div>
     </div>
   </div>

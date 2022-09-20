@@ -138,34 +138,19 @@ export default {
     <div class="mainTitle2">mondo</div>
     <div class="gradient"></div>
 
-    <div
-      class="office"
-      style="top: 35%; left: 52%"
-      id="officeMilan"
-      @click="openOffice(office1)"
-    >
+    <div class="office" id="officeMilan" @click="openOffice(office1)">
       <div class="image"></div>
       <h4>Milan</h4>
       <p>Sede principale</p>
     </div>
 
-    <div
-      class="office"
-      style="top: 49%; left: 67%"
-      id="officeDubai"
-      @click="openOffice2(office2)"
-    >
+    <div class="office" id="officeDubai" @click="openOffice2(office2)">
       <div class="image2"></div>
       <h4>Dubai</h4>
       <p>Sede</p>
     </div>
 
-    <div
-      class="office"
-      style="top: 34%; left: 59%"
-      id="officeTrencin"
-      @click="openOffice3(office3)"
-    >
+    <div class="office" id="officeTrencin" @click="openOffice3(office3)">
       <div class="image3"></div>
       <h4>Trencin</h4>
       <p>Sede</p>
@@ -314,10 +299,10 @@ export default {
     <div class="cols">
       <div class="col col_1">
         <p>Contattaci</p>
-        <h2>Cerchiamo talenti per creare il futuro</h2>
+        <h2>Fissa un appuntamento</h2>
         <div class="subtitle">
-          Cerchiamo talenti per creare il futuro, cerchiamo talenti per creare
-          il futuro, cerchiamo talenti per creare il futuro
+          Ricerchiamo il candidato perfetto rispetto le vostre esigenze, creiamo
+          un rapporto più stabile e duraturo.
         </div>
       </div>
       <div class="col col_2 transition">
@@ -423,17 +408,41 @@ export default {
   #globeViz {
     left: 0% !important;
   }
+}
 
-  .Iam {
-    padding-top: 3rem;
-    font: normal 40px/50px Planer, sans-serif;
-    color: #fff;
-    font-size: 90px !important;
-    margin-left: 10rem !important;
+@media (min-width: 1440px) {
+  #officeMilan {
+    top: 35%;
+    left: 52%;
+  }
+
+  #officeDubai {
+    top: 49%;
+    left: 67%;
+  }
+
+  #officeTrencin {
+    top: 34%;
+    left: 59%;
   }
 }
 
 @media (min-width: 1024px) {
+  #officeMilan {
+    top: 35%;
+    left: 52%;
+  }
+
+  #officeDubai {
+    top: 49%;
+    left: 67%;
+  }
+
+  #officeTrencin {
+    top: 34%;
+    left: 59%;
+  }
+
   .first {
     background: #ada996;
     background: -webkit-linear-gradient(
@@ -601,6 +610,7 @@ export default {
     letter-spacing: -0.04em;
     margin-left: 5rem;
   }
+
   .Iam p {
     height: 50px;
     float: left;
@@ -1011,6 +1021,49 @@ export default {
 }
 
 @media (min-width: 1920px) {
+  #globeViz {
+    left: 10% !important;
+  }
+
+  #officeMilan {
+    top: 34%;
+    left: 51%;
+  }
+
+  #officeDubai {
+    top: 49%;
+    left: 64%;
+  }
+
+  #officeTrencin {
+    top: 34%;
+    left: 57%;
+  }
+
+  .Iam {
+    font: normal 40px/50px Planer, sans-serif;
+    color: #fff;
+    font-size: 230px;
+    line-height: 230px;
+    letter-spacing: -0.04em;
+    margin-left: 5rem;
+  }
+
+  .mainTitle2 {
+    width: fit-content;
+    float: right;
+    margin-top: 3rem;
+    margin-right: 5rem;
+    z-index: 4;
+    color: #fff;
+    font-size: 150px;
+    line-height: 150px;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    position: fixed;
+    right: 10%;
+    bottom: 20%;
+  }
 }
 
 @keyframes move {

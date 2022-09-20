@@ -93,160 +93,59 @@ export default {
         <div class="topContent">
           <div class="img1"></div>
           <div class="firstTitle">
-            <p>APR 22, 2022</p>
-            <h2>Sustainability at Jobify: the technology transformation</h2>
+            <p>AGO 23, 2022</p>
+            <h2>
+              Talent Attraction e Talent Retention: le nuove tendenze
+              dell’employer branding
+            </h2>
             <div class="subtitle">
-              Sustainability at Jobify: the technology transformation, Jobify:
-              the technology transformation, Sustainability at : the technology
-              transformation
+              Uno degli obiettivi che hanno in comune le aziende è quello di
+              entrare in contatto con persone di valore.
             </div>
-            <div class="btnRead">
-              Leggi di più &nbsp;&nbsp;<span
-                ><svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-short"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                  />
-                </svg>
-              </span>
-            </div>
+            <router-link to="/article1">
+              <div class="btnRead">
+                Leggi di più &nbsp;&nbsp;<span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-short"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </span>
+              </div>
+            </router-link>
           </div>
         </div>
         <div class="titlePage2">Recruitment</div>
         <div class="secondPart">
           <div class="articles articles2">
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
+            <router-link to="/article2">
+              <div class="article">
+                <div class="image">
+                  <div class="hover"></div>
+                  <div class="date">SEPT 07, 2022</div>
+                </div>
+                <div class="desctitle">Update</div>
+                <div class="title">Ricerca e selezione umana</div>
+                <div class="subtitle">
+                  Le fasi di ricerca e di selezione del personale possono
+                  rivelarsi piuttosto aride
+                </div>
               </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="fifthDiv">
-          <div class="adviser">
-            <div class="col">
-              <h3><span>Segui le nostre storie</span> le nostre storie</h3>
-              <div class="divInput">
-                <router-link to="/stories"
-                  ><button class="btn">Storie</button></router-link
-                >
-              </div>
-            </div>
-            <div class="col_image"></div>
+            </router-link>
           </div>
         </div>
 
         <div class="titlePage2">Temporary HR management</div>
         <div class="secondPart">
-          <div class="articles articles2">
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-            <div class="article">
-              <div class="image">
-                <div class="hover"></div>
-                <div class="date">APR 22, 2022</div>
-              </div>
-              <div class="desctitle">Update</div>
-              <div class="title">
-                Sustainability at Jobify: the technology transformation
-              </div>
-              <div class="subtitle">
-                Sustainability at Jobify: the technology transformation
-              </div>
-            </div>
-          </div>
+          <div class="articles articles2"></div>
         </div>
 
         <div class="fifthDiv">
@@ -506,12 +405,16 @@ export default {
     margin-top: 0rem;
   }
 
+  .articles2 a {
+    width: 50%;
+  }
+
   .articles2 .article {
     float: left;
     margin-top: 3rem;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
-    width: 45% !important;
+    width: 90% !important;
     background: #fff;
     border-radius: 25px;
   }

@@ -99,6 +99,19 @@ export default {
       content.scrollBy({ left: itemWidth * 4, top: 0, behavior: "smooth" });
     },
 
+    btnScrollSx2() {
+      let content = document.querySelector(".featuredContent");
+      const itemWidth = content.querySelector(".featured").clientWidth;
+      content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
+      console.log(content);
+    },
+
+    btnScrollDx2() {
+      let content = document.querySelector(".featuredContent");
+      const itemWidth = content.querySelector(".featured").clientWidth;
+      content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
+    },
+
     suggestWords() {
       let content = document.querySelector(".suggestWords");
       content.style.width = "40%";
@@ -171,6 +184,7 @@ export default {
       <div class="glow5"></div>
       <div class="glow6"></div>
       <div class="glow7"></div>
+      <div class="glow8"></div>
       <div class="first">
         <div class="title">
           <div class="titleDiv">
@@ -242,20 +256,20 @@ export default {
         </div>
         <div class="container2">
           <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#home">Farm</a></li>
-            <li><a data-toggle="tab" href="#menu1">Finance</a></li>
-            <li><a data-toggle="tab" href="#menu2">IT Tech</a></li>
-            <li><a data-toggle="tab" href="#menu3">Generalist</a></li>
+            <li class="active"><a data-toggle="tab" href="#Farm">Farm</a></li>
+            <li><a data-toggle="tab" href="#Finance">Finance</a></li>
+            <li><a data-toggle="tab" href="#IT">IT Tech</a></li>
+            <li><a data-toggle="tab" href="#Generalist">Generalist</a></li>
             <li @click="jobAlert()" class="btn">
               <a href="#">Crea una Job Alert</a>
             </li>
           </ul>
 
           <div class="tab-content">
-            <div id="home" class="tab-pane in active">
+            <div id="Farm" class="tab-pane in active">
               <div class="filters" style="margin-top: 7rem">
                 <div class="filtersTop">
-                  <h2>Posizioni aperte Farm</h2>
+                  <h2>Posizioni aperte <span>Farm</span></h2>
                   <div class="filtersPositions">
                     <div class="blur"></div>
                     <div class="dropdown">
@@ -614,10 +628,10 @@ export default {
                 </div>
               </div>
             </div>
-            <div id="menu1" class="tab-pane fade">
+            <div id="Finance" class="tab-pane fade">
               <div class="filters" style="margin-top: 7rem">
                 <div class="filtersTop">
-                  <h2>Posizioni aperte Finance</h2>
+                  <h2>Posizioni aperte <span>Finance</span></h2>
                   <div class="filtersPositions">
                     <div class="blur"></div>
                     <div class="dropdown">
@@ -976,10 +990,10 @@ export default {
                 </div>
               </div>
             </div>
-            <div id="menu2" class="tab-pane fade">
+            <div id="IT" class="tab-pane fade">
               <div class="filters" style="margin-top: 7rem">
                 <div class="filtersTop">
-                  <h2>Posizioni aperte IT Tech</h2>
+                  <h2>Posizioni aperte <span>IT Tech</span></h2>
                   <div class="filtersPositions">
                     <div class="blur"></div>
                     <div class="dropdown">
@@ -1338,10 +1352,10 @@ export default {
                 </div>
               </div>
             </div>
-            <div id="menu3" class="tab-pane fade">
+            <div id="Generalist" class="tab-pane fade">
               <div class="filters" style="margin-top: 7rem">
                 <div class="filtersTop">
-                  <h2>Posizioni aperte Generalist</h2>
+                  <h2>Posizioni aperte <span>Generalist</span></h2>
                   <div class="filtersPositions">
                     <div class="blur"></div>
                     <div class="dropdown">
@@ -1949,41 +1963,33 @@ export default {
 
         <div class="secondPart2">
           <div class="title">
-            <h2>Jobify ricerca e seleziona talenti con umanità</h2>
+            <h2>
+              Jobify recruiting, ricerca e selezione talenti con
+              <span>umanità</span>
+            </h2>
             <p>
-              una frase in cui spieghiamo che crediamo ad una Selezione umana
-              che ha come obiettivo quello di capire le aspettative del
-              candidato come uomo e donna prima di tutto e poi come
-              professionista, analizzando i valori e quello che si aspetta
-              dall’azienda in cui va a lavorare (scrivimi questo testo )
+              Poniamo il <span>rapporto umano</span> al centro tra
+              <span>domanda e offerta</span>, per creare il
+              <span>match “perfetto”</span> tra <span>azienda</span> e
+              <span>candidato</span>. Intervistiamo:
             </p>
           </div>
           <div class="steps">
             <div class="step transition">
               <div class="number">1</div>
-              <div class="title">Crea profilo</div>
+              <div class="title">Intervista azienda</div>
               <div class="text">
-                Get updates on the GitHub activity you've subscribed to. Use the
-                notifications inbox to customize, triage, and manage your
-                updates.
+                L'azienda, approfondendo la cultura ed il clima aziendale,
+                l'organigramma ed il funzionigramma, e l'eventuale riporto
+                diretto della risorsa da inserire;
               </div>
             </div>
-            <div class="step transition" style="margin-top: 3rem">
+            <div class="step transition">
               <div class="number">2</div>
-              <div class="title">Crea profilo</div>
+              <div class="title">Intervista talento</div>
               <div class="text">
-                Get updates on the GitHub activity you've subscribed to. Use the
-                notifications inbox to customize, triage, and manage your
-                updates.
-              </div>
-            </div>
-            <div class="step transition" style="margin-top: 6rem">
-              <div class="number">3</div>
-              <div class="title">Crea profilo</div>
-              <div class="text">
-                Get updates on the GitHub activity you've subscribed to. Use the
-                notifications inbox to customize, triage, and manage your
-                updates.
+                Il candidato, approfondendo i suoi valori e le sue aspettative
+                da un punto di vista professionale
               </div>
             </div>
           </div>
@@ -2019,10 +2025,91 @@ export default {
             <div
               class="col"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/img_h1.png);
+                background-image: url(/src/assets/storie.jpg);
                 background-size: cover;
+                border-radius: 30px;
               "
             ></div>
+          </div>
+        </div>
+
+        <div class="featureds">
+          <div class="titles">
+            <h2>Storie dei talenti</h2>
+            <div class="buttons">
+              <div class="btnScrollL" @click="btnScrollSx2()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#fff"
+                  class="bi bi-chevron-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                  />
+                </svg>
+              </div>
+              <div class="btnScrollR" @click="btnScrollDx2()">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  fill="#fff"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="featuredContent">
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
+            <div class="featured">
+              <div class="hover"></div>
+              <div class="text">
+                <p>April 22, 2022</p>
+                <h2>
+                  Conserving mangroves to protect local livelihoods and the
+                  planet
+                </h2>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -2138,6 +2225,19 @@ export default {
     -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.2);
     -moz-box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.2);
     box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.2);
+  }
+
+  .glow8 {
+    position: absolute;
+    width: 20vw;
+    transform: scale(3.5);
+    top: 0%;
+    left: 42%;
+    z-index: 1;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.4);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.4);
+    box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.4);
   }
 
   .first {
@@ -2350,6 +2450,11 @@ export default {
     margin-bottom: 0;
   }
 
+  .filters h2 span {
+    color: #0062f5;
+    font-weight: 700;
+  }
+
   .filters .filter {
     padding: 0rem;
     background: rgb(161 161 161 / 10%);
@@ -2378,7 +2483,7 @@ export default {
     position: absolute;
     backdrop-filter: blur(12px);
     top: 0;
-    border-radius: 10px;
+    border-radius: 30px;
   }
 
   .filter h3 {
@@ -2667,7 +2772,7 @@ export default {
     width: 90%;
     height: 300px;
     background-color: white;
-    border-radius: 12px;
+    border-radius: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
@@ -3128,6 +3233,11 @@ export default {
     text-align: center;
   }
 
+  .secondPart2 span {
+    color: #0062f5;
+    font-weight: 700;
+  }
+
   .secondPart2 .title p {
     color: #627597;
     font-size: 18px;
@@ -3176,6 +3286,7 @@ export default {
     margin-left: 2rem;
     margin-bottom: 3rem;
     float: left;
+    width: 50%;
     transition: all 0.3s ease-out;
     text-align: left;
     -webkit-box-shadow: 0px 0px 105px 39px rgb(46 81 255 / 20%);
@@ -3214,6 +3325,131 @@ export default {
     margin-left: 0 !important;
     margin-top: 0 !important;
     width: 100% !important;
+  }
+
+  .featuredContent {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+  }
+
+  .featuredContent.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+  }
+
+  .featureds .titles {
+    align-items: center;
+    display: flex;
+    margin-left: 11rem;
+    margin-right: 11rem;
+    margin-bottom: 2rem;
+  }
+
+  .featureds .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: fit-content;
+  }
+
+  .featureds .titles h2 {
+    font-size: 50px;
+    line-height: 54px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 3rem;
+    letter-spacing: -2.5px;
+    width: fit-content;
+  }
+
+  .featureds .btnScrollR {
+    width: fit-content;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .featureds .btnScrollL {
+    margin-right: 1rem;
+    width: fit-content;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .featureds .featured {
+    border-radius: 30px;
+    background-color: #6398ef29;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
+      0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
+      0 22px 17px rgb(0 0 0 / 2%) !important;
+    background-image: url(/src/assets/ph17.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 75vw;
+    float: left;
+    height: 35vw;
+    position: relative;
+  }
+  .featured .hover {
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to bottom,
+      #000000d1,
+      #00000027,
+      #0000000a,
+      transparent
+    );
+    background: linear-gradient(
+      to bottom,
+      #000000d1,
+      #00000027,
+      #0000000a,
+      transparent
+    );
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .featured h2 {
+    color: #fff;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0;
+    font-size: 30px;
+    line-height: 34px;
+    width: 30vw;
+  }
+  .featured p {
+    color: #fff;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

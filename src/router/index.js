@@ -10,6 +10,8 @@ import WorkersView from "../views/WorkersView.vue";
 import CompaniesView from "../views/CompaniesView.vue";
 import StoriesView from "../views/StoriesView.vue";
 import searchResultView from "../views/searchResultView.vue";
+import article1View from "../views/article1View.vue";
+import article2View from "../views/article2View.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -75,6 +77,16 @@ const router = createRouter({
       path: "/searchResult",
       name: "SearchResult",
       component: searchResultView,
+    },
+    {
+      path: "/article1",
+      name: "Article1",
+      component: article1View,
+    },
+    {
+      path: "/article2",
+      name: "Article2",
+      component: article2View,
     },
   ],
 });
