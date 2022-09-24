@@ -399,6 +399,80 @@ export default {
 
     <div class="workflow" id="workflow">
       <div class="workflowTitle">
+        <h2 style="margin-bottom: 0rem !important">Schema del processo</h2>
+      </div>
+      <div class="workflowFlex">
+        <!--
+        <div class="workflowLogo">
+          <img src="/src/assets/logo/white.png" />
+        </div>
+        -->
+        <div class="flowScheme">
+          <div class="flowElement">
+            <div class="flowElementMB5">
+              <span class="flowElementNumber">1</span>
+            </div>
+            <p><span class="flowElementTitle">Intervista cliente</span></p>
+          </div>
+          <div class="flowElement" style="left: 12%">
+            <div class="flowElementMB5">
+              <span class="flowElementTitle">Job description</span>
+            </div>
+            <p><span class="flowElementNumber">2</span></p>
+          </div>
+          <div class="flowElement" style="left: 24%">
+            <div class="flowElementMB5">
+              <span class="flowElementNumber">3</span>
+            </div>
+            <p>
+              <span class="flowElementTitle"
+                >Lancio Annuncio & Head Hunting</span
+              >
+            </p>
+          </div>
+          <div class="flowElement" style="left: 36%">
+            <div class="flowElementMB5">
+              <span class="flowElementTitle">Screening CV</span>
+            </div>
+            <p><span class="flowElementNumber">4</span></p>
+          </div>
+          <div class="flowElement" style="left: 48%">
+            <div class="flowElementMB5">
+              <span class="flowElementNumber">5</span>
+            </div>
+            <p>
+              <span class="flowElementTitle">Screening Telefonico</span>
+            </p>
+          </div>
+          <div class="flowElement" style="left: 60%">
+            <div class="flowElementMB5">
+              <span class="flowElementTitle">Videocolloquio</span>
+            </div>
+            <p><span class="flowElementNumber">6</span></p>
+          </div>
+          <div class="flowElement" style="left: 72%">
+            <div class="flowElementMB5">
+              <span class="flowElementNumber">7</span>
+            </div>
+            <p>
+              <span class="flowElementTitle">Presentazione Short list</span>
+            </p>
+          </div>
+          <div class="flowElement" style="left: 84%">
+            <div class="flowElementMB5">
+              <span class="flowElementTitle"
+                >Colloqui one-to-one con l'azienda</span
+              >
+            </div>
+            <p><span class="flowElementNumber">8</span></p>
+          </div>
+          <div class="hr"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="workflow" id="workflow">
+      <div class="workflowTitle">
         <h2 style="margin-bottom: 0rem !important">
           Creiamo un processo di ricerca e selezione:
         </h2>
@@ -2086,7 +2160,7 @@ export default {
   }
 
   .workflowFlex {
-    margin-top: 5rem;
+    margin-top: 8rem;
     padding-bottom: 10rem;
     width: fit-content;
     margin-left: auto;
@@ -2096,6 +2170,68 @@ export default {
     background-color: #fff;
     align-items: center;
     position: relative;
+  }
+
+  .workflowFlex .workflowLogo {
+    width: 170px;
+    margin-top: 0.5rem;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #0062f5;
+  }
+
+  .workflowLogo img {
+    width: 100%;
+  }
+
+  .workflowFlex .hr {
+    width: 85vw;
+    height: 5px;
+    background: #0062f5;
+    top: 15%;
+  }
+
+  .flowScheme {
+    position: relative;
+    height: 5vw;
+  }
+
+  .flowScheme .flowElement {
+    position: absolute;
+    bottom: -25%;
+    width: fit-content;
+  }
+
+  .flowElement .flowElementMB5 {
+    margin-bottom: 5rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .flowElement .flowElementNumber {
+    font-size: 24px;
+    line-height: 24px;
+    color: #0062f5;
+    font-weight: 700 !important;
+  }
+
+  .flowElement .flowElementTitle {
+    font-size: 20px;
+    line-height: 20px;
+    color: #0062f5 !important;
+    font-weight: 700 !important;
+    width: 10px;
+  }
+
+  .flowElement p {
+    margin-bottom: 0 !important;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    text-align: center;
   }
 
   .workflowFlex .step_workflow {

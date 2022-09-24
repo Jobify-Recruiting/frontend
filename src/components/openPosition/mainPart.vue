@@ -2180,9 +2180,9 @@ export default {
 
   .glow4 {
     position: absolute;
-    left: 45%;
-    top: 43%;
-    width: 50vw;
+    left: 55%;
+    top: 52%;
+    width: 38vw;
     opacity: 0.5;
     -webkit-box-shadow: 0px 0px 105px 45px rgb(46 222 255 / 50%);
     -moz-box-shadow: 0px 0px 105px 45px rgb(46 222 255 / 50%);
@@ -2193,24 +2193,12 @@ export default {
   .glow5 {
     position: absolute;
     left: 5%;
-    top: 43%;
+    top: 52%;
     width: 40vw;
     opacity: 0.5;
     -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 137, 255, 0.5);
     -moz-box-shadow: 0px 0px 105px 45px rgba(46, 137, 255, 0.5);
     box-shadow: 0px 0px 105px 45px rgba(46, 137, 255, 0.5);
-    z-index: 0;
-  }
-
-  .glow6 {
-    position: absolute;
-    left: 5%;
-    top: 43%;
-    width: 16vw;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgb(255 166 46 / 50%);
-    -moz-box-shadow: 0px 0px 105px 45px rgb(255 166 46 / 50%);
-    box-shadow: 0px 0px 105px 45px rgb(255 166 46 / 50%);
     z-index: 0;
   }
 
@@ -2776,6 +2764,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5rem;
+    margin-bottom: 5rem;
   }
 
   .ctaCV .cols {
@@ -3243,7 +3232,7 @@ export default {
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
-    width: 80%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
