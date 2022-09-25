@@ -2831,8 +2831,8 @@ export default {
   .thirdPart {
     margin-top: 10rem;
     padding-bottom: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .thirdPartDiv {

@@ -464,6 +464,7 @@ export default {
                 >Colloqui one-to-one con l'azienda</span
               >
             </div>
+            <div class="ball"></div>
             <p><span class="flowElementNumber">8</span></p>
           </div>
           <div class="hr"></div>
@@ -2187,8 +2188,9 @@ export default {
   .workflowFlex .hr {
     width: 85vw;
     height: 5px;
-    background: #0062f5;
+    background: #0047b3;
     top: 15%;
+    border-radius: 15px;
   }
 
   .flowScheme {
@@ -2198,7 +2200,7 @@ export default {
 
   .flowScheme .flowElement {
     position: absolute;
-    bottom: -25%;
+    bottom: -20%;
     width: fit-content;
   }
 
@@ -2213,16 +2215,23 @@ export default {
   .flowElement .flowElementNumber {
     font-size: 24px;
     line-height: 24px;
-    color: #0062f5;
+    color: #0047b3;
     font-weight: 700 !important;
+    border: 2px solid #0047b3;
+    padding: 1rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    border-radius: 25rem;
   }
 
   .flowElement .flowElementTitle {
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 18px;
     color: #0062f5 !important;
     font-weight: 700 !important;
     width: 10px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
   }
 
   .flowElement p {
