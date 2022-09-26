@@ -397,9 +397,9 @@ export default {
       </div>
     </div>
 
-    <div class="workflow" id="workflow">
+    <div class="workflow">
       <div class="workflowTitle">
-        <h2 style="margin-bottom: 0rem !important">Schema del processo</h2>
+        <h2 class="workflowFlexTitle">Schema del processo</h2>
       </div>
       <div class="workflowFlex">
         <!--
@@ -474,7 +474,7 @@ export default {
 
     <div class="workflow" id="workflow">
       <div class="workflowTitle">
-        <h2 style="margin-bottom: 0rem !important">
+        <h2 class="workflowTitle2" style="margin-bottom: 0rem !important">
           Creiamo un processo di ricerca e selezione:
         </h2>
       </div>
@@ -2027,7 +2027,7 @@ export default {
     padding-bottom: 0;
   }
 
-  .workflow .workflowTitle h2 {
+  .workflow .workflowTitle2 {
     background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -2160,8 +2160,20 @@ export default {
     font-weight: 400 !important;
   }
 
+  .workflowFlexTitle {
+    margin-bottom: 0rem !important;
+    color: #010712 !important;
+    font-size: 64px !important;
+    font-weight: 800 !important;
+    text-align: center !important;
+    line-height: 68px !important;
+    letter-spacing: -0.03em !important;
+    background: transparent !important;
+    -webkit-text-fill-color: none !important;
+  }
+
   .workflowFlex {
-    margin-top: 8rem;
+    margin-top: 10rem;
     padding-bottom: 10rem;
     width: fit-content;
     margin-left: auto;
@@ -2188,7 +2200,7 @@ export default {
   .workflowFlex .hr {
     width: 85vw;
     height: 5px;
-    background: #0047b3;
+    background: #0e3f70;
     top: 15%;
     border-radius: 15px;
   }
@@ -2215,19 +2227,28 @@ export default {
   .flowElement .flowElementNumber {
     font-size: 24px;
     line-height: 24px;
-    color: #0047b3;
+    color: #0062f5;
     font-weight: 700 !important;
-    border: 2px solid #0047b3;
+    background: #74acff71; /* fallback for old browsers */
+    /*-webkit-clip-path: polygon(
+      50% 0%,
+      95% 25%,
+      95% 75%,
+      50% 100%,
+      5% 75%,
+      5% 25%
+    );
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);*/
     padding: 1rem;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
-    border-radius: 25rem;
+    border-radius: 30px;
   }
 
   .flowElement .flowElementTitle {
     font-size: 18px;
     line-height: 18px;
-    color: #0062f5 !important;
+    color: #627597 !important;
     font-weight: 700 !important;
     width: 10px;
     text-transform: uppercase;
@@ -3707,7 +3728,7 @@ export default {
   .fifthDiv .adviser .col_image {
     background: transparent;
     border-radius: 30px;
-    background-image: url(/src/assets/storie.jpg);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/storie.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;

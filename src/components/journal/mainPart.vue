@@ -643,7 +643,7 @@ export default {
     box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
       0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
       0 22px 17px rgb(0 0 0 / 2%) !important;
-    background-image: url(/src/assets/ph17.jpg);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph17.jpg);
     background-size: cover;
     background-position: center;
     width: 75vw;

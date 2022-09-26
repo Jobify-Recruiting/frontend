@@ -240,10 +240,16 @@ export default {
         <div class="body">
           <div class="images">
             <div class="img1">
-              <img class="mainImage" src="/src/assets/ph17.jpg" />
+              <img
+                class="mainImage"
+                src="https://thingsss.s3.eu-central-1.amazonaws.com/ph17.jpg"
+              />
             </div>
             <div class="img2">
-              <img class="mainImage" src="/src/assets/ph18.jpg" />
+              <img
+                class="mainImage"
+                src="https://thingsss.s3.eu-central-1.amazonaws.com/ph18.jpg"
+              />
             </div>
           </div>
         </div>

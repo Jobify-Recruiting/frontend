@@ -891,7 +891,7 @@ export default {
               <div
                 class="col"
                 style="
-                  background-image: url(/src/assets/storie.jpg);
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/storie.jpg);
                   background-size: cover;
                   border-radius: 30px;
                 "
@@ -1100,10 +1100,10 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 10rem;
-    background-image: url(/src/assets/avatartech.png);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/avatartech.png);
     background-size: cover;
     background-position: center;
-    background-size: 70%;
+    background-size: 60%;
     background-repeat: no-repeat;
     position: absolute;
     top: 5%;
