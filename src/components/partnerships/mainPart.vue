@@ -53,7 +53,6 @@ export default {
         <div class="glow2"></div>
         <div class="glow3"></div>
         <div class="glow4"></div>
-        <div class="glow5"></div>
         <div class="firstPart">
           <div class="subtitle">Partnerships</div>
           <h2>Costruiamo l'ecosistema del domani.</h2>
@@ -84,86 +83,157 @@ export default {
             ></a>
           </div>
         </div>
-        <div class="partners">
-          <div class="partnersPart">
-            <a href="">
-              <div
-                class="partnerImg2 transition"
+
+        <div class="thirdDiv" id="third">
+          <div class="glow"></div>
+          <div class="glow2"></div>
+          <div class="glow3"></div>
+          <div class="glow4"></div>
+          <div class="glow6"></div>
+          <div class="glow7"></div>
+          <div class="content">
+            <div class="partnersImgs">
+              <a
+                href="https://studiofelli.com/"
+                class="partnerImg transition"
                 style="
+                  left: 32%;
+                  top: -15%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo1.png);
                 "
-              ></div>
-            </a>
-            <a href="">
-              <div
-                class="partnerImg2 transition"
+              >
+                <div class="" style=""></div>
+              </a>
+
+              <a
+                href="https://www.atempospa.it/"
+                class="partnerImg transition"
                 style="
+                  right: 16%;
+                  top: 4%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo2.png);
                 "
-              ></div>
-            </a>
-            <a href="">
-              <div
-                class="partnerImg2 transition"
+              >
+                <div class="" style=""></div>
+              </a>
+
+              <a
+                href="https://www.uniroma1.it/it/pagina-strutturale/home"
+                class="partnerImg transition"
                 style="
+                  right: 32%;
+                  top: -18%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo3.png);
                 "
-              ></div
-            ></a>
-            <a href=""
-              ><div
-                class="partnerImg2 transition"
+              >
+                <div class="" style=""></div>
+              </a>
+
+              <a
+                href="https://it.talent.com/"
+                class="partnerImg transition"
                 style="
+                  right: 12%;
+                  top: 43%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo4.png);
                 "
-              ></div
-            ></a>
-            <a href="">
-              <div
-                class="partnerImg2 transition"
+              >
+                <div class="" style=""></div>
+              </a>
+
+              <a
+                href="https://www.aidp.it/gruppo/lazio.php"
+                class="partnerImg"
                 style="
+                  right: 22%;
+                  top: 84%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
                 "
-              ></div
-            ></a>
-            <a href="">
-              <div
-                class="partnerImg2 transition"
+              >
+                <div class="" style=""></div>
+              </a>
+
+              <a
+                href="https://www.in-recruiting.com/it/"
+                class="partnerImg"
                 style="
+                  top: 60%;
+                  left: 18%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo6.png);
                 "
-              ></div
-            ></a>
-            <a href="">
-              <div
-                class="partnerImg2 transition"
+                ><div class="" style=""></div
+              ></a>
+
+              <a
+                href="https://www.up-communication.com/"
+                class="partnerImg transition"
                 style="
+                  left: 13%;
+                  top: 14%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo7.png);
                 "
-              ></div
-            ></a>
-            <a href="">
-              <div
-                class="partnerImg2 transition"
+                ><div class="" style=""></div
+              ></a>
+
+              <a
+                href="https://www.cafieropezzalieassociati.it/"
+                class="partnerImg"
                 style="
+                  left: 41%;
+                  top: 98%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo8.png);
                 "
-              ></div
-            ></a>
+                ><div class="" style=""></div
+              ></a>
+            </div>
+            <div
+              class="first"
+              style="
+                display: inherit !important;
+                background: transparent !important;
+              "
+            >
+              <div class="title">
+                <h2>Partners</h2>
+                <p
+                  style="
+                    width: 40% !important;
+                    margin-left: auto;
+                    margin-right: auto;
+                    color: #fff !important;
+                  "
+                >
+                  Jobify, la tua ricerca e selezione, la tua ricerca e
+                  selezione, la tua ricerca e selezione, la tua ricerca e
+                  selezione, la tua ricerca e selezione
+                </p>
+
+                <div class="partnersButton">
+                  <a href="#first"
+                    ><button class="btn">
+                      Scopri di più
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          class="bi bi-arrow-right-short"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                          />
+                        </svg>
+                      </span></button
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!--<svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-          style="position: absolute; top: 21%; z-index: 10"
-        >
-          <path
-            fill="#030812"
-            fill-opacity="1"
-            d="M0,64L40,58.7C80,53,160,43,240,48C320,53,400,75,480,96C560,117,640,139,720,144C800,149,880,139,960,117.3C1040,96,1120,64,1200,53.3C1280,43,1360,53,1400,58.7L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
-          ></path>
-        </svg>-->
         <div class="secondPart">
           <div class="cols">
             <div class="col colImage">
@@ -581,6 +651,218 @@ export default {
     width: 30%;
   }
 
+  .thirdDiv {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    margin-top: 15rem;
+    width: 100%;
+    background-color: #010c18;
+    padding-top: 10rem;
+    background-image: url(/src/assets/glob.png);
+    background-size: cover;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  }
+
+  .glow {
+    position: absolute;
+    width: 5vw;
+    opacity: 0.5;
+    left: -5%;
+    top: 10%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+  }
+
+  .glow2 {
+    position: absolute;
+    width: 5vw;
+    top: 23%;
+    left: -5%;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+  }
+
+  .glow3 {
+    position: absolute;
+    width: 5vw;
+    top: 40%;
+    right: -4%;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+  }
+
+  .glow4 {
+    position: absolute;
+    width: 5vw;
+    top: 55%;
+    opacity: 0.5;
+    right: -4%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+  }
+
+  .glow6 {
+    position: absolute;
+    width: 5vw;
+    top: 0%;
+    opacity: 0.5;
+    left: 50%;
+    -webkit-box-shadow: 0px 0px 105px 45px #2eff9de6;
+    -moz-box-shadow: 0px 0px 105px 45px #2eff9de6;
+    box-shadow: 0px 0px 105px 45px #2eff9de6;
+  }
+
+  .glow7 {
+    position: absolute;
+    width: 5vw;
+    top: 60%;
+    opacity: 0.5;
+    left: 50%;
+    -webkit-box-shadow: 0px 0px 105px 45px #2eff9de6;
+    -moz-box-shadow: 0px 0px 105px 45px #2eff9de6;
+    box-shadow: 0px 0px 105px 45px #2eff9de6;
+  }
+
+  .glow9 {
+    position: absolute;
+    width: 5vw;
+    top: 25%;
+    opacity: 0.5;
+    right: 10%;
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
+  }
+
+  .thirdDiv .content {
+    padding: 5rem;
+    padding-top: 10rem;
+  }
+
+  .thirdDiv .title h2 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 800 !important;
+    width: 100%;
+    text-align: center;
+    line-height: 68px;
+    letter-spacing: -0.04em !important;
+  }
+
+  .thirdDiv .title h2 span {
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-feature-settings: "ss02" on, "ss01" on;
+    letter-spacing: -0.04em !important;
+    font-weight: 800 !important;
+  }
+
+  .thirdDiv .title p {
+    margin-top: 0.5rem;
+    color: #627597;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  .partnersButton {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .partnersImgs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .partnerImg {
+    width: 135px;
+    height: 135px;
+    /*background: rgba(162, 0, 255, 0.17);
+    -webkit-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
+    -moz-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
+    box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);*/
+    background: #ffffff2b;
+    -webkit-box-shadow: 0px 0px 133px 17px #005dff2b;
+    -moz-box-shadow: 0px 0px 133px 17px #005dff2b;
+    box-shadow: 0px 0px 133px 17px #005dff2b;
+    border: 1px solid #fff;
+    padding: 1rem;
+    border-radius: 25rem;
+    position: absolute;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    transition: all 0.3s ease-out;
+  }
+
+  .partnerImg:hover {
+    transform: scale(2);
+  }
+
+  .partnerImg2 {
+    width: 105px;
+    height: 105px;
+    background: transparent;
+    border: 2px solid #0a1e4375;
+    border-radius: 16px;
+    position: absolute;
+  }
+
+  .partnerImg3 {
+    width: 45px;
+    height: 45px;
+    background: #0107124a;
+    border-radius: 25rem;
+    position: absolute;
+    background: rgba(0, 140, 255, 0.17);
+    -webkit-box-shadow: 0px 0px 133px 17px rgba(0, 140, 255, 0.17);
+    -moz-box-shadow: 0px 0px 133px 17px rgba(0, 140, 255, 0.17);
+    box-shadow: 0px 0px 133px 17px rgba(0, 140, 255, 0.17);
+  }
+
+  .partnerImg5 {
+    width: 45px;
+    height: 45px;
+    background: #0107124a;
+    border-radius: 25rem;
+    position: absolute;
+    background: rgba(0, 255, 136, 0.17);
+    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 174, 0, 0.17);
+    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 174, 0, 0.17);
+    box-shadow: 0px 0px 133px 17px rgba(255, 174, 0, 0.17);
+  }
+
+  .partnerImg4 {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    border: 2px solid #b5b7ba;
+    border-radius: 16px;
+    position: absolute;
+  }
+
   .image {
     width: 30vw;
     height: 35vw;
@@ -643,35 +925,6 @@ export default {
     outline: none;
     background-color: rgb(38 43 49 / 31%);
     border-color: #0062f5;
-  }
-
-  .partners {
-    width: 100%;
-    background: #010b15;
-  }
-
-  .partnersPart {
-    display: flex;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15rem;
-    background: #010b15;
-    padding-bottom: 2rem;
-  }
-
-  .partnerImg2 {
-    width: 150px;
-    height: 150px;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-top: 2rem;
-    padding: 1rem;
-    float: left;
-    margin-bottom: 0rem;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: center;
   }
 
   .glow {

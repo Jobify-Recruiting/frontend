@@ -315,7 +315,7 @@ export default {
         <h3>Contattaci</h3>
         <div
           class="input"
-          style="display: flex; width: 95%; margin: 0 0 1.5rem 0"
+          style="display: flex; width: 100%; margin: 0 0 1.5rem 0"
         >
           <input
             style="width: 100%; margin: 0 1.5rem 0 0"
@@ -342,15 +342,6 @@ export default {
             type="text"
             name="nickname"
             placeholder="Email"
-          />
-        </div>
-        <div class="input" style="display: flex; width: 100%; margin: 0">
-          <input
-            id="nav"
-            class="input"
-            type="text"
-            name="nickname"
-            placeholder="Linkedin Url"
           />
         </div>
         <div class="input" style="display: flex; width: 100%; margin: 0">
@@ -955,7 +946,7 @@ export default {
   }
 
   .input {
-    width: 95%;
+    width: 100%;
     margin-bottom: 1.5rem;
   }
 
@@ -965,7 +956,7 @@ export default {
     border-radius: 12px;
     color: #fff;
     box-shadow: none;
-    width: 95%;
+    width: 100%;
     float: right;
     padding-left: 1rem;
     padding-top: 1rem;
@@ -1020,6 +1011,13 @@ export default {
 
   .btn span {
     padding-left: 0.4rem;
+  }
+
+  .formButton {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    width: fit-content;
   }
 }
 

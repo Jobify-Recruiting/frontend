@@ -15,6 +15,7 @@ export default {
     <div class="content">
       <div class="col-logo">
         <img src="/src/assets/logo/small_white.png" />
+        <div class="title2">Iscriviti alla newsletter</div>
         <div class="divInput">
           <div class="input">
             <input
@@ -144,12 +145,22 @@ export default {
     margin-left: 5rem;
   }
 
+  .col-logo .title2 {
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
+
   .content .col .title {
     color: white;
     font-weight: 600;
     font-size: 12px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     margin-bottom: 1.5rem;
   }
 
@@ -199,7 +210,7 @@ export default {
   .divInput {
     display: flex;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
   }
 
   .input {

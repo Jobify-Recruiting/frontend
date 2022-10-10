@@ -98,6 +98,7 @@ export default {
         </div>
       </div>
       <div class="fifthPart">
+        <h2>We are inventors, builders, and doers</h2>
         <div class="quotesDiv">
           <div class="quotes">
             <div class="quote">
@@ -247,7 +248,7 @@ export default {
           </div>
         </div>
       </div>
-      <div class="secondPart">
+      <!--<div class="secondPart">
         <div class="title">
           <h2>Come funziona il processo di selezione</h2>
           <p>
@@ -281,32 +282,7 @@ export default {
             </div>
           </div>
         </div>
-      </div>
-      <div class="fifthDiv">
-        <div class="adviser transition">
-          <div class="col">
-            <h3>
-              <span>Iscriviti oggi alla newsletter</span> di Jobify Recruiting
-              per restare aggiornato sul mondo hr
-            </h3>
-            <div class="divInput">
-              <div class="input">
-                <input
-                  id="nav"
-                  class="input"
-                  type="text"
-                  name="nickname"
-                  placeholder="Inserisci la tua email"
-                />
-              </div>
-              <router-link to="/newsletter"
-                ><button class="btn">Iscriviti</button></router-link
-              >
-            </div>
-          </div>
-          <div class="col_image"></div>
-        </div>
-      </div>
+      </div>-->
       <div class="seventhPart">
         <div class="text">
           <h2>Lavora con noi in <span>Jobify</span></h2>
@@ -618,9 +594,21 @@ export default {
   .fifthPart {
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-top: 10rem;
+    padding-top: 5rem;
     padding-bottom: 5rem;
     background: #fff;
+  }
+
+  .fifthPart h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #030812;
+    font-size: 54px;
+    font-weight: 800 !important;
+    width: 40%;
+    line-height: 58px;
+    letter-spacing: -0.04em !important;
   }
 
   .quotesDiv {
@@ -645,9 +633,10 @@ export default {
   }
 
   .quotes .quoteh4 {
-    font-size: 54px;
-    line-height: 54px;
+    font-size: 44px;
+    line-height: 44px;
     font-weight: 800;
+    width: 70%;
     color: #030812;
     margin-bottom: 1rem;
     text-align: left !important;
@@ -694,11 +683,11 @@ export default {
     margin-left: auto;
     margin-right: auto;
     color: #030812;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500 !important;
     width: 40%;
     line-height: 18px;
-    letter-spacing: 2px !important;
+    letter-spacing: 1.5px !important;
     text-transform: uppercase;
     margin-top: 3rem;
     margin-bottom: 0rem;
@@ -730,7 +719,7 @@ export default {
   }
 
   .person {
-    width: 23%;
+    width: 22%;
     margin-left: 1.5rem;
     float: left;
     position: relative;

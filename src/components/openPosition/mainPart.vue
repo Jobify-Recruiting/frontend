@@ -1979,23 +1979,25 @@ export default {
               <div class="number">1</div>
               <div class="title">Intervista azienda</div>
               <div class="text">
-                L'azienda, approfondendo la cultura ed il clima aziendale,
-                l'organigramma ed il funzionigramma, e l'eventuale riporto
-                diretto della risorsa da inserire;
+                Approfondendo la cultura ed il clima aziendale, l'organigramma
+                ed il funzionigramma, e l'eventuale riporto diretto della
+                risorsa da inserire.
               </div>
             </div>
             <div class="step transition">
               <div class="number">2</div>
               <div class="title">Intervista talento</div>
               <div class="text">
-                Il candidato, approfondendo i suoi valori e le sue aspettative
-                da un punto di vista professionale
+                Approfondendo i suoi valori e le sue aspettative da un punto di
+                vista professionale.
               </div>
             </div>
           </div>
         </div>
 
-        <div class="ctaCV" style="background: rgb(161 161 161 / 10%)">
+        <h2 class="ctaTitle">Jobify recruiting, ricerca e selezione talenti</h2>
+
+        <div class="ctaCV" style="background: #0c142c">
           <div class="blur"></div>
           <div class="cols">
             <div class="col col-padding" id="positions">
@@ -2176,30 +2178,6 @@ export default {
     -moz-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.2);
     box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.2);
     z-index: 10;
-  }
-
-  .glow4 {
-    position: absolute;
-    left: 55%;
-    top: 52%;
-    width: 38vw;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgb(46 222 255 / 50%);
-    -moz-box-shadow: 0px 0px 105px 45px rgb(46 222 255 / 50%);
-    box-shadow: 0px 0px 105px 45px rgb(46 222 255 / 50%);
-    z-index: 0;
-  }
-
-  .glow5 {
-    position: absolute;
-    left: 5%;
-    top: 52%;
-    width: 40vw;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 137, 255, 0.5);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 137, 255, 0.5);
-    box-shadow: 0px 0px 105px 45px rgba(46, 137, 255, 0.5);
-    z-index: 0;
   }
 
   .glow7 {
@@ -2464,16 +2442,6 @@ export default {
     background: rgb(255 255 255 / 0%);
   }
 
-  .blur {
-    width: 100%;
-    left: 0;
-    height: 100%;
-    position: absolute;
-    backdrop-filter: blur(12px);
-    top: 0;
-    border-radius: 30px;
-  }
-
   .filter h3 {
     font-size: 28px;
     color: #fff;
@@ -2542,7 +2510,7 @@ export default {
     line-height: 14px !important;
   }
 
-  .position:hover >>> .photoBlur {
+  .position:hover :deep(.photoBlur) {
     width: 100%;
     height: 100%;
     padding: 1.5rem;
@@ -2552,7 +2520,7 @@ export default {
     background: linear-gradient(to top, #348ac700, #141c24c7);
   }
 
-  .position:hover >>> .photoBlur p {
+  .position:hover :deep(.photoBlur) p {
     display: inline;
   }
 
@@ -2582,9 +2550,10 @@ export default {
   }
 
   .position .right {
-    margin-left: 0rem;
+    margin-left: auto;
     display: flex;
     align-items: center;
+    width: fit-content;
   }
 
   .position h2 {
@@ -2754,6 +2723,19 @@ export default {
 
   .searchLocation span:hover {
     background-color: rgba(27, 36, 46, 0.9);
+  }
+
+  .ctaTitle {
+    color: #fff;
+    letter-spacing: -0.04em;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 800;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 4rem;
   }
 
   .ctaCV {
@@ -3230,7 +3212,7 @@ export default {
   .secondPart2 .title p {
     color: #627597;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 26px;
     font-weight: 400;
     width: 65%;
     margin-left: auto;
@@ -3258,7 +3240,6 @@ export default {
     overflow-x: hidden;
     overflow-y: hidden;
     flex-wrap: nowrap;
-    align-items: center;
     position: relative;
   }
 
@@ -3268,7 +3249,7 @@ export default {
     padding-top: 3rem;
     padding-bottom: 3rem;
     text-align: center;
-    background: #03111f;
+    background: #0c142c;
     border-radius: 30px;
     z-index: 14;
     margin-right: 2rem;
@@ -3280,7 +3261,7 @@ export default {
     text-align: left;
     -webkit-box-shadow: 0px 0px 105px 39px rgb(46 81 255 / 20%);
     -moz-box-shadow: 0px 0px 105px 39px rgba(46, 81, 255, 20%);
-    box-shadow: 0px 0px 105px 3px rgb(46 91 255 / 5%);
+    box-shadow: 0px 0px 0px 2px rgb(116 141 255 / 26%);
   }
 
   .step .number {
@@ -3391,7 +3372,7 @@ export default {
     box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
       0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
       0 22px 17px rgb(0 0 0 / 2%) !important;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph17.jpg);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/story.jpg);
     background-size: cover;
     background-position: center;
     width: 75vw;

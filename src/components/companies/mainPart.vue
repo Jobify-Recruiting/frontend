@@ -653,34 +653,6 @@ export default {
           </div>
         </div>
 
-        <div class="fifthDiv">
-          <div class="adviser transition">
-            <div class="col">
-              <h3>Trova il candidato <span>ideale</span> per la tua azienda</h3>
-              <router-link to="/stories"
-                ><button class="btn">
-                  Scopri di più
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="currentColor"
-                      class="bi bi-arrow-right-short"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                      />
-                    </svg>
-                  </span></button
-              ></router-link>
-            </div>
-            <div class="col_image"></div>
-          </div>
-        </div>
-
         <div class="feedbackDiv" id="feedback">
           <div class="content">
             <h2>I clienti dicono di noi</h2>
@@ -1539,86 +1511,6 @@ export default {
               <img
                 src="https://www.lostrillonecasa.it/assets/frontend/newlayout21/logo_nuovo_grande_nero.png"
               />
-            </div>
-          </div>
-        </div>
-
-        <div class="featureds">
-          <div class="titles">
-            <h2>Storie dei talenti</h2>
-            <div class="buttons">
-              <div class="btnScrollL" @click="btnScrollSx2()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#fff"
-                  class="bi bi-chevron-left"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                  />
-                </svg>
-              </div>
-              <div class="btnScrollR" @click="btnScrollDx2()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#fff"
-                  class="bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="featuredContent">
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
-            </div>
-            <div class="featured">
-              <div class="hover"></div>
-              <div class="text">
-                <p>April 22, 2022</p>
-                <h2>
-                  Conserving mangroves to protect local livelihoods and the
-                  planet
-                </h2>
-              </div>
             </div>
           </div>
         </div>
@@ -2836,9 +2728,8 @@ export default {
   }
 
   .thirdPartDiv {
-    background: #03111f;
+    background: transparent;
     border-radius: 30px;
-    padding: 5rem;
   }
 
   .thirdPartDiv .first {
@@ -2895,8 +2786,12 @@ export default {
   }
 
   .second .feature {
-    width: 25%;
-    margin-right: 8rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    width: 35%;
+    background: #03111f;
+    border-radius: 30px;
+    padding: 3rem;
   }
 
   .second .feature h2 {

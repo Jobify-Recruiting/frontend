@@ -153,7 +153,6 @@ export default {
             <div class="col">
               <h3>
                 <span>Iscriviti oggi alla newsletter</span> di Jobify Recruiting
-                per restare aggiornato sul mondo HR
               </h3>
               <div class="divInput">
                 <div class="input">
@@ -237,8 +236,8 @@ export default {
   }
 
   .titlePage {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 54px;
+    line-height: 58px;
     color: #fff;
     font-weight: 800;
     margin-left: 11rem;
@@ -359,7 +358,7 @@ export default {
   .firstTitle p {
     font-size: 12px;
     color: #273350;
-    font-weight: 800;
+    font-weight: 500;
     letter-spacing: 0.5px;
     line-height: 1.33333;
     text-transform: uppercase;
@@ -380,6 +379,10 @@ export default {
     line-height: 50px;
     font-weight: 700;
     letter-spacing: -0.04em;
+    width: 95%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .firstTitle .btnRead {

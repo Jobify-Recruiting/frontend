@@ -1203,7 +1203,7 @@ export default {
     line-height: 14px !important;
   }
 
-  .position:hover >>> .photoBlur {
+  .position:hover :deep(.photoBlur) {
     width: 100%;
     height: 100%;
     padding: 1.5rem;
@@ -1213,7 +1213,7 @@ export default {
     background: linear-gradient(to top, #348ac700, #141c24c7);
   }
 
-  .position:hover >>> .photoBlur p {
+  .position:hover :deep(.photoBlur) p {
     display: inline;
   }
 

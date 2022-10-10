@@ -35,6 +35,9 @@ export default {
     updateScroll() {
       this.scrollPosition = window.scrollY;
     },
+    call_btn() {
+      document.querySelector(".calendly-badge-content").click();
+    },
   },
 };
 </script>
@@ -65,6 +68,7 @@ export default {
           <router-link to="/companies"
             ><div class="link">Aziende</div></router-link
           >
+          <div class="link" @click="call_btn()">Prenota un appuntamento</div>
         </div>
         <div class="left">
           <div class="link menuBtn" @click="openMenu()">

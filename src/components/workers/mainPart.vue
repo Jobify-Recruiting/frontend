@@ -1377,14 +1377,21 @@ export default {
     background: transparent;
     display: flex;
     padding-left: 3rem;
-    padding-right: 3rem;
     margin-top: 5rem;
     display: flex;
   }
 
   .second .feature {
-    width: 25%;
-    margin-right: 8rem;
+    width: 35%;
+    margin-right: 3rem;
+    background: #fff;
+    border: 2px solid #80808038;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    border-radius: 30px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .second .feature .img_feature {
@@ -1418,6 +1425,7 @@ export default {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     border-bottom: 1px solid transparent;
+    margin-left: auto;
   }
 
   .second .feature .btn3:hover {

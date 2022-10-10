@@ -43,31 +43,6 @@ export default {
 
     window.addEventListener("scroll", reveal);
 
-    /*function scrollFunction() {
-      if (
-        document.body.scrollTop > 1950 ||
-        document.documentElement.scrollTop > 1950
-      ) {
-        //console.log(document.documentElement.scrollTop);
-        document.getElementById("text2").style.fontSize = "64px";
-        document.getElementById("text2").style.lineHeight = "68px";
-      } else {
-        document.getElementById("text2").style.fontSize = "94px";
-        document.getElementById("text2").style.lineHeight = "98px";
-      }
-
-      if (
-        document.body.scrollTop > 8500 ||
-        document.documentElement.scrollTop > 8500
-      ) {
-        document.getElementById("text3").style.fontSize = "74px";
-        document.getElementById("text3").style.lineHeight = "68px";
-      } else {
-        document.getElementById("text3").style.fontSize = "94px";
-        document.getElementById("text3").style.lineHeight = "98px";
-      }
-    }*/
-
     const slider = document.querySelector(".feedbacks");
     let isDown = false;
     let startX;
@@ -206,9 +181,9 @@ export default {
       <div class="clientsCoBorder">
         <div class="clientsCoLink">
           <h2>I clienti di Jobify Recruiting</h2>
-          <router-link to="/companies#clients">
+          <!--<router-link to="/companies#clients">
             <p>Visualizza tutti i clienti</p></router-link
-          >
+          >-->
         </div>
         <div class="clientsCoBody">
           <div
@@ -268,7 +243,7 @@ export default {
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
                       height="30"
-                      fill="#fff"
+                      fill="#0062f5"
                       class="bi bi-search"
                       viewBox="0 0 16 16"
                     >
@@ -293,7 +268,7 @@ export default {
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
                       height="30"
-                      fill="#fff"
+                      fill="#0062f5"
                       class="bi bi-calendar-check"
                       viewBox="0 0 16 16"
                     >
@@ -321,7 +296,7 @@ export default {
                       xmlns="http://www.w3.org/2000/svg"
                       width="30"
                       height="30"
-                      fill="#fff"
+                      fill="#0062f5"
                       class="bi bi-person-rolodex"
                       viewBox="0 0 16 16"
                     >
@@ -364,15 +339,6 @@ export default {
               <span>match “perfetto”</span> tra <span>azienda</span> e
               <span>candidato</span>. Per fare questo, intervistiamo:
             </p>
-            <p>
-              L'azienda, approfondendo la cultura ed il clima aziendale,
-              l'organigramma ed il funzionigramma, e l'eventuale riporto diretto
-              della risorsa da inserire;
-            </p>
-            <p>
-              Il candidato, approfondendo i suoi valori e le sue aspettative da
-              un punto di vista professionale.
-            </p>
           </div>
           <div class="col2">
             <div class="glow9"></div>
@@ -393,81 +359,6 @@ export default {
               />
             </svg>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="workflow">
-      <div class="workflowTitle">
-        <h2 class="workflowFlexTitle">Schema del processo</h2>
-      </div>
-      <div class="workflowFlex">
-        <!--
-        <div class="workflowLogo">
-          <img src="/src/assets/logo/white.png" />
-        </div>
-        -->
-        <div class="flowScheme">
-          <div class="flowElement">
-            <div class="flowElementMB5">
-              <span class="flowElementNumber">1</span>
-            </div>
-            <p><span class="flowElementTitle">Intervista cliente</span></p>
-          </div>
-          <div class="flowElement" style="left: 12%">
-            <div class="flowElementMB5">
-              <span class="flowElementTitle">Job description</span>
-            </div>
-            <p><span class="flowElementNumber">2</span></p>
-          </div>
-          <div class="flowElement" style="left: 24%">
-            <div class="flowElementMB5">
-              <span class="flowElementNumber">3</span>
-            </div>
-            <p>
-              <span class="flowElementTitle"
-                >Lancio Annuncio & Head Hunting</span
-              >
-            </p>
-          </div>
-          <div class="flowElement" style="left: 36%">
-            <div class="flowElementMB5">
-              <span class="flowElementTitle">Screening CV</span>
-            </div>
-            <p><span class="flowElementNumber">4</span></p>
-          </div>
-          <div class="flowElement" style="left: 48%">
-            <div class="flowElementMB5">
-              <span class="flowElementNumber">5</span>
-            </div>
-            <p>
-              <span class="flowElementTitle">Screening Telefonico</span>
-            </p>
-          </div>
-          <div class="flowElement" style="left: 60%">
-            <div class="flowElementMB5">
-              <span class="flowElementTitle">Videocolloquio</span>
-            </div>
-            <p><span class="flowElementNumber">6</span></p>
-          </div>
-          <div class="flowElement" style="left: 72%">
-            <div class="flowElementMB5">
-              <span class="flowElementNumber">7</span>
-            </div>
-            <p>
-              <span class="flowElementTitle">Presentazione Short list</span>
-            </p>
-          </div>
-          <div class="flowElement" style="left: 84%">
-            <div class="flowElementMB5">
-              <span class="flowElementTitle"
-                >Colloqui one-to-one con l'azienda</span
-              >
-            </div>
-            <div class="ball"></div>
-            <p><span class="flowElementNumber">8</span></p>
-          </div>
-          <div class="hr"></div>
         </div>
       </div>
     </div>
@@ -700,6 +591,37 @@ export default {
             essere tra i più competitivi sul mercato
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="fifthDiv">
+      <div class="adviser transition">
+        <div class="col">
+          <h3>
+            <span>Jobify Recruiting crea il matching</span> perfetto tra azienda
+            e candidato
+          </h3>
+          <router-link to="/stories"
+            ><button class="btn">
+              Fissa appuntamento
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </span></button
+          ></router-link>
+        </div>
+        <div class="col_image"></div>
       </div>
     </div>
 
@@ -1344,207 +1266,6 @@ export default {
       </div>
     </div>
 
-    <div class="fifthDiv">
-      <div class="adviser transition">
-        <div class="col">
-          <h3>
-            <span>Jobify Recruiting crea il matching</span> perfetto tra azienda
-            e candidato
-          </h3>
-          <router-link to="/stories"
-            ><button class="btn">
-              Fissa appuntamento
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-short"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                  />
-                </svg>
-              </span></button
-          ></router-link>
-        </div>
-        <div class="col_image"></div>
-      </div>
-    </div>
-
-    <div class="thirdDiv" id="third">
-      <div class="glow"></div>
-      <div class="glow2"></div>
-      <div class="glow3"></div>
-      <div class="glow4"></div>
-      <div class="glow5"></div>
-      <div class="glow6"></div>
-      <div class="glow7"></div>
-      <div class="content">
-        <div class="partnersImgs">
-          <a
-            href="https://studiofelli.com/"
-            class="partnerImg transition"
-            style="
-              left: 32%;
-              top: -15%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo1.png);
-            "
-          >
-            <div class="" style=""></div>
-          </a>
-
-          <a
-            href="https://www.atempospa.it/"
-            class="partnerImg transition"
-            style="
-              right: 16%;
-              top: 4%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo2.png);
-            "
-          >
-            <div class="" style=""></div>
-          </a>
-
-          <a
-            href="https://www.uniroma1.it/it/pagina-strutturale/home"
-            class="partnerImg transition"
-            style="
-              right: 32%;
-              top: -18%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo3.png);
-            "
-          >
-            <div class="" style=""></div>
-          </a>
-
-          <a
-            href="https://it.talent.com/"
-            class="partnerImg transition"
-            style="
-              right: 12%;
-              top: 43%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo4.png);
-            "
-          >
-            <div class="" style=""></div>
-          </a>
-
-          <a
-            href="https://www.aidp.it/gruppo/lazio.php"
-            class="partnerImg"
-            style="
-              right: 22%;
-              top: 84%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
-            "
-          >
-            <div class="" style=""></div>
-          </a>
-
-          <a
-            href="https://www.in-recruiting.com/it/"
-            class="partnerImg"
-            style="
-              top: 60%;
-              left: 18%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo6.png);
-            "
-            ><div class="" style=""></div
-          ></a>
-
-          <a
-            href="https://www.up-communication.com/"
-            class="partnerImg transition"
-            style="
-              left: 13%;
-              top: 14%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo7.png);
-            "
-            ><div class="" style=""></div
-          ></a>
-
-          <a
-            href="https://www.cafieropezzalieassociati.it/"
-            class="partnerImg"
-            style="
-              left: 41%;
-              top: 98%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo8.png);
-            "
-            ><div class="" style=""></div
-          ></a>
-        </div>
-        <div class="first" style="display: inherit !important">
-          <div class="title">
-            <h2>Partners</h2>
-            <p
-              style="
-                width: 40% !important;
-                margin-left: auto;
-                margin-right: auto;
-                color: #fff !important;
-              "
-            >
-              Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
-              tua ricerca e selezione, la tua ricerca e selezione, la tua
-              ricerca e selezione
-            </p>
-
-            <div class="partnersButton">
-              <a href="#first"
-                ><button class="btn">
-                  Scopri di più
-                  <span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="currentColor"
-                      class="bi bi-arrow-right-short"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                      />
-                    </svg>
-                  </span></button
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="fifthDiv">
-      <div class="adviser transition">
-        <div class="col">
-          <h3>
-            <span>Iscriviti oggi alla newsletter</span> di Jobify Recruiting per
-            restare aggiornato sul mondo hr
-          </h3>
-          <div class="divInput">
-            <div class="input">
-              <input
-                id="nav"
-                class="input"
-                type="text"
-                name="nickname"
-                placeholder="Inserisci la tua email"
-              />
-            </div>
-            <router-link to="/newsletter"
-              ><button class="btn">Iscriviti</button></router-link
-            >
-          </div>
-        </div>
-        <div class="col_image"></div>
-      </div>
-    </div>
     <div class="fourthDiv" id="fourth">
       <div class="content">
         <div class="first">
@@ -1759,7 +1480,7 @@ export default {
     width: 100%;
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-top: 8rem;
+    padding-top: 4rem;
     width: 100%;
     background-color: #fff;
   }
@@ -1790,7 +1511,7 @@ export default {
     margin-top: 1rem;
     color: #627597;
     font-size: 20px;
-    width: 87%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -1881,7 +1602,7 @@ export default {
   }
 
   .thirdPart {
-    padding-top: 10rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
     padding-left: 4rem;
     padding-right: 4rem;
@@ -1949,7 +1670,9 @@ export default {
 
   .feature {
     text-align: center;
-    background: #161b22;
+    background: #fff;
+    border: 2px solid #80808038;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
     border-radius: 30px;
     z-index: 14;
     margin-right: 2rem;
@@ -1959,9 +1682,6 @@ export default {
     float: left;
     transition: all 0.3s ease-out;
     text-align: left;
-    -webkit-box-shadow: 0px 0px 105px 39px rgb(46 81 255 / 20%);
-    -moz-box-shadow: 0px 0px 105px 39px rgba(46, 81, 255, 20%);
-    box-shadow: 0px 0px 105px 3px rgb(46 91 255 / 5%);
     cursor: pointer;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1986,7 +1706,7 @@ export default {
   }
 
   .feature .title {
-    color: #fff;
+    color: #010712;
     margin-left: 0 !important;
     font-size: 30px;
     line-height: 32px;
@@ -2268,7 +1988,9 @@ export default {
     margin-right: 2em;
     margin-left: 2rem;
     width: fit-content;
-    background: #161b22;
+    background: #fff;
+    border: 2px solid #80808038;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 2rem;
@@ -2303,9 +2025,9 @@ export default {
 
   .step_workflow .body {
     margin-top: 1rem;
-    color: #fff;
+    color: #010712;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 14px;
     display: none;
     opacity: 0;
     height: 0%;
@@ -2323,7 +2045,7 @@ export default {
     font-size: 22px;
     line-height: 24px;
     font-weight: 600;
-    color: #fff;
+    color: #010712;
     padding-top: 0.5rem;
     margin-left: 0.8rem;
   }
@@ -3039,296 +2761,9 @@ export default {
     padding-left: 0.4rem;
   }
 
-  /*a {
-    position: relative;
-    padding: 14px 26px;
-    display: block;
-    line-height: 18px;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    background: #0062f5;
-    width: fit-content;
-    overflow: hidden;
-    border-radius: 20px;
-    margin-top: 3rem;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-  }
-
-  a span {
-    position: relative;
-    color: #fff;
-    line-height: 18px;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    z-index: 1;
-  }
-
-  a .liquid {
-    position: absolute;
-    top: -80px;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background: #0062f5;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-  }
-
-  a .liquid::after,
-  a .liquid::before {
-    content: "";
-    width: 200%;
-    height: 200%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -75%);
-    background: #000;
-  }
-
-  a .liquid::before {
-    border-radius: 45%;
-    background: rgba(20, 20, 20, 1);
-    animation: animate 5s linear infinite;
-  }
-
-  a .liquid::after {
-    border-radius: 40%;
-    background: rgba(20, 20, 20, 0.5);
-    animation: animate 10s linear infinite;
-  }
-
-  a:hover .liquid {
-    top: -120px;
-  }*/
-
   .flowSingleBtn {
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .flowSingleBtn2 {
-  }
-
-  .thirdDiv {
-    height: 100%;
-    width: 100%;
-    padding-bottom: 10rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    width: 100%;
-    background-color: #010c18;
-    padding-top: 10rem;
-    background-image: url(/src/assets/glob.png);
-    background-size: cover;
-    background-position: center;
-    background-size: 60%;
-    background-repeat: no-repeat;
-  }
-
-  .glow {
-    position: absolute;
-    width: 5vw;
-    opacity: 0.5;
-    left: -5%;
-    top: 10%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-  }
-
-  .glow2 {
-    position: absolute;
-    width: 5vw;
-    top: 23%;
-    left: -5%;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-  }
-
-  .glow3 {
-    position: absolute;
-    width: 5vw;
-    top: 40%;
-    right: -4%;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-  }
-
-  .glow4 {
-    position: absolute;
-    width: 5vw;
-    top: 55%;
-    opacity: 0.5;
-    right: -4%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-  }
-
-  .glow5 {
-    position: absolute;
-    width: 5vw;
-    bottom: 0%;
-    opacity: 0.5;
-    left: 50%;
-    -webkit-box-shadow: 0px 0px 105px 45px #2eff9de6;
-    -moz-box-shadow: 0px 0px 105px 45px #2eff9de6;
-    box-shadow: 0px 0px 105px 45px #2eff9de6;
-  }
-
-  .glow6 {
-    position: absolute;
-    width: 5vw;
-    top: 0%;
-    opacity: 0.5;
-    left: 50%;
-    -webkit-box-shadow: 0px 0px 105px 45px #2eff9de6;
-    -moz-box-shadow: 0px 0px 105px 45px #2eff9de6;
-    box-shadow: 0px 0px 105px 45px #2eff9de6;
-  }
-
-  .glow7 {
-    position: absolute;
-    width: 5vw;
-    top: 60%;
-    opacity: 0.5;
-    left: 50%;
-    -webkit-box-shadow: 0px 0px 105px 45px #2eff9de6;
-    -moz-box-shadow: 0px 0px 105px 45px #2eff9de6;
-    box-shadow: 0px 0px 105px 45px #2eff9de6;
-  }
-
-  .glow9 {
-    position: absolute;
-    width: 5vw;
-    top: 25%;
-    opacity: 0.5;
-    right: 10%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-  }
-
-  .thirdDiv .content {
-    padding: 5rem;
-    padding-top: 10rem;
-  }
-
-  .thirdDiv .title h2 {
-    color: #fff;
-    font-size: 64px;
-    font-weight: 800 !important;
-    width: 100%;
-    text-align: center;
-    line-height: 68px;
-    letter-spacing: -0.04em !important;
-  }
-
-  .thirdDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
-    font-feature-settings: "ss02" on, "ss01" on;
-    letter-spacing: -0.04em !important;
-    font-weight: 800 !important;
-  }
-
-  .thirdDiv .title p {
-    margin-top: 0.5rem;
-    color: #627597;
-    font-size: 20px;
-    width: 100%;
-    text-align: center;
-    line-height: 24px;
-    font-weight: 400;
-  }
-
-  .partnersImgs {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-
-  .partnerImg {
-    width: 135px;
-    height: 135px;
-    /*background: rgba(162, 0, 255, 0.17);
-    -webkit-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
-    -moz-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
-    box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);*/
-    background: #ffffff2b;
-    -webkit-box-shadow: 0px 0px 133px 17px #005dff2b;
-    -moz-box-shadow: 0px 0px 133px 17px #005dff2b;
-    box-shadow: 0px 0px 133px 17px #005dff2b;
-    border: 1px solid #fff;
-    padding: 1rem;
-    border-radius: 25rem;
-    position: absolute;
-    z-index: 10;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: center;
-    transition: all 0.3s ease-out;
-  }
-
-  .partnerImg:hover {
-    transform: scale(2);
-  }
-
-  .partnerImg2 {
-    width: 105px;
-    height: 105px;
-    background: transparent;
-    border: 2px solid #0a1e4375;
-    border-radius: 16px;
-    position: absolute;
-  }
-
-  .partnerImg3 {
-    width: 45px;
-    height: 45px;
-    background: #0107124a;
-    border-radius: 25rem;
-    position: absolute;
-    background: rgba(0, 140, 255, 0.17);
-    -webkit-box-shadow: 0px 0px 133px 17px rgba(0, 140, 255, 0.17);
-    -moz-box-shadow: 0px 0px 133px 17px rgba(0, 140, 255, 0.17);
-    box-shadow: 0px 0px 133px 17px rgba(0, 140, 255, 0.17);
-  }
-
-  .partnerImg5 {
-    width: 45px;
-    height: 45px;
-    background: #0107124a;
-    border-radius: 25rem;
-    position: absolute;
-    background: rgba(0, 255, 136, 0.17);
-    -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 174, 0, 0.17);
-    -moz-box-shadow: 0px 0px 133px 17px rgba(255, 174, 0, 0.17);
-    box-shadow: 0px 0px 133px 17px rgba(255, 174, 0, 0.17);
-  }
-
-  .partnerImg4 {
-    width: 80px;
-    height: 80px;
-    background: transparent;
-    border: 2px solid #b5b7ba;
-    border-radius: 16px;
-    position: absolute;
   }
 
   .third {
@@ -3623,7 +3058,7 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback {
-    background: #eeeeee;
+    background: #f4f5f6;
     border-radius: 30px;
     padding: 2rem;
     margin-right: 1rem;

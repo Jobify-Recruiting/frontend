@@ -217,7 +217,7 @@ export default {
   .mainTitle h2 {
     color: white;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 26px;
     margin-top: 5rem;
     width: 75%;
     font-weight: 200;

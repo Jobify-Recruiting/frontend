@@ -391,6 +391,14 @@ export default {
     font-weight: 400;
     width: 80%;
     margin-left: 3rem;
+    background: #fff;
+    border: 2px solid #80808038;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    border-radius: 30px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
 
   .values .value2 {
@@ -402,6 +410,14 @@ export default {
     font-weight: 400;
     width: 80%;
     margin-left: 3rem;
+    background: #fff;
+    border: 2px solid #80808038;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    border-radius: 30px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
   }
 
   .values span {
