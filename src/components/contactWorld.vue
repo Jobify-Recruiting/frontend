@@ -575,7 +575,7 @@ export default {
     font-weight: 500;
     position: fixed;
     right: 5%;
-    bottom: 0;
+    bottom: 15%;
   }
 
   .datas {
