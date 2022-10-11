@@ -289,7 +289,7 @@ export default {
           <p>Come on board and grow more than you ever thought possible.</p>
 
           <div class="formButton">
-            <a href="#first"
+            <router-link to="/workwithus"
               ><button class="btn">
                 Invia
                 <span>
@@ -307,7 +307,7 @@ export default {
                     />
                   </svg>
                 </span></button
-            ></a>
+            ></router-link>
           </div>
         </div>
         <div class="image transition"></div>

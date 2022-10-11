@@ -38,6 +38,32 @@ export default {
     call_btn() {
       document.querySelector(".calendly-badge-content").click();
     },
+    openWorkers() {
+      let content = document.querySelector(".menuWorkers");
+      content.style.width = "10%";
+      content.style.opacity = "1";
+      content.style.visibility = "visible";
+      content.style.display = "inline";
+
+      let content2 = document.querySelector(".menuWorkersBG");
+      content2.style.width = "100%";
+      content2.style.opacity = "1";
+      content2.style.visibility = "visible";
+      content2.style.display = "inline";
+    },
+    closeWorkers() {
+      let content = document.querySelector(".menuWorkers");
+      content.style.width = "0%";
+      content.style.opacity = "0";
+      content.style.visibility = "hidden";
+      content.style.display = "unset";
+
+      let content2 = document.querySelector(".menuWorkersBG");
+      content2.style.width = "0%";
+      content2.style.opacity = "0";
+      content2.style.visibility = "hidden";
+      content2.style.display = "unset";
+    },
   },
 };
 </script>
@@ -59,12 +85,28 @@ export default {
         </router-link>
         <div class="center">
           <router-link to="/"><div class="link">Home</div></router-link>
+          <router-link to="/about"
+            ><div class="link">Chi siamo</div></router-link
+          >
           <router-link to="/openposition"
             ><div class="link">Posizioni aperte</div></router-link
           >
-          <router-link to="/workers"
-            ><div class="link">Lavoratori</div></router-link
-          >
+          <div class="link" @click="openWorkers()">
+            Lavoratori &nbsp;
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </div>
           <router-link to="/companies"
             ><div class="link">Aziende</div></router-link
           >
@@ -90,6 +132,17 @@ export default {
       </div>
     </div>
   </header>
+
+  <div class="menuWorkersBG" @click="closeWorkers()">
+    <div class="menuWorkers">
+      <router-link to="/workers">
+        <div class="link">Lavoratori</div>
+      </router-link>
+      <router-link to="/workwithus">
+        <div class="link">Lavora con noi</div>
+      </router-link>
+    </div>
+  </div>
 
   <div class="menu">
     <div class="top">
@@ -300,6 +353,7 @@ a:hover {
     cursor: pointer;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    align-items: center;
   }
 
   .nav .link:hover {
@@ -346,6 +400,71 @@ a:hover {
 
   .logo:hover {
     transform: scale(1.1);
+  }
+
+  .menuWorkersBG {
+    position: fixed;
+    z-index: 14;
+    width: 0%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    visibility: hidden;
+    display: inline;
+  }
+
+  .menuWorkers {
+    position: fixed;
+    z-index: 15;
+    width: 0%;
+    height: fit-content;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    display: inline;
+    left: 48%;
+    top: 10%;
+    /*background: #131b23;
+    border: 2px solid #b3b3b326;*/
+
+    background-color: #010c18d4;
+    backdrop-filter: blur(12px);
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .menuWorkers .link {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+    padding-top: 0.8rem !important;
+    padding-bottom: 0.8rem !important;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  .menuWorkers .menuClose {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+    padding-bottom: 0.4rem;
+    color: #fff;
+    width: fit-content;
+    margin-left: auto;
+    cursor: pointer;
+  }
+
+  .menuWorkers .link:hover {
+    color: #fff;
+    background: #3e455052;
   }
 
   .menu {

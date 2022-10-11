@@ -161,6 +161,27 @@ export default {
                 >digitale e dinamica</span
               >, formata da persone giovani e multilingue.
             </p>
+            <div class="" style="display: flex; align-items: center">
+              <router-link to="/companies"
+                ><button class="btn">
+                  Scopri di più
+                  <span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span></button
+              ></router-link>
+            </div>
           </div>
           <div class="video transition">
             <iframe
@@ -258,6 +279,9 @@ export default {
                     the notifications inbox to customize, triage, and manage
                     your updates.
                   </div>
+                  <div class="featureShowMore" @click="show_more('step1')">
+                    Scopri di più
+                  </div>
                 </div></router-link
               >
 
@@ -286,31 +310,8 @@ export default {
                     the notifications inbox to customize, triage, and manage
                     your updates.
                   </div>
-                </div></router-link
-              >
-
-              <router-link to="/">
-                <div class="feature transition" @click="call_btn()">
-                  <div class="number">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      fill="#0062f5"
-                      class="bi bi-person-rolodex"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M8 9.05a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
-                      <path
-                        d="M1 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h.5a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5.5.5 0 0 1 1 0 .5.5 0 0 0 .5.5h.5a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6.707L6 1.293A1 1 0 0 0 5.293 1H1Zm0 1h4.293L6 2.707A1 1 0 0 0 6.707 3H15v10h-.085a1.5 1.5 0 0 0-2.4-.63C11.885 11.223 10.554 10 8 10c-2.555 0-3.886 1.224-4.514 2.37a1.5 1.5 0 0 0-2.4.63H1V2Z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="title">Consulenza HR</div>
-                  <div class="text">
-                    Get updates on the GitHub activity you've subscribed to. Use
-                    the notifications inbox to customize, triage, and manage
-                    your updates.
+                  <div class="featureShowMore" @click="show_more('step1')">
+                    Fissa un appuntamento
                   </div>
                 </div></router-link
               >
@@ -601,25 +602,24 @@ export default {
             <span>Jobify Recruiting crea il matching</span> perfetto tra azienda
             e candidato
           </h3>
-          <router-link to="/stories"
-            ><button class="btn">
-              Fissa appuntamento
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right-short"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                  />
-                </svg>
-              </span></button
-          ></router-link>
+          <button class="btn" @click="call_btn()">
+            Fissa appuntamento
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-arrow-right-short"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                />
+              </svg>
+            </span>
+          </button>
         </div>
         <div class="col_image"></div>
       </div>
@@ -1280,9 +1280,9 @@ export default {
               tua ricerca e selezione, la tua ricerca e selezione, la tua
               ricerca e selezione
             </p>
-            <a href="#first"
+            <router-link to="/contact"
               ><button class="btn">
-                Scopri di più
+                Contattaci
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -1298,7 +1298,7 @@ export default {
                     />
                   </svg>
                 </span></button
-            ></a>
+            ></router-link>
           </div>
         </div>
         <div class="contentImage">
@@ -1531,6 +1531,7 @@ export default {
     width: fit-content;
     display: flex;
     margin-left: auto;
+    margin-right: auto;
     height: auto;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -1687,6 +1688,7 @@ export default {
     padding-right: 3rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    width: 25vw;
   }
 
   .feature:hover {
@@ -1724,6 +1726,15 @@ export default {
     margin-left: 0 !important;
     margin-top: 0 !important;
     width: 100% !important;
+  }
+
+  .featureShowMore {
+    color: #0062f5;
+    cursor: pointer;
+    font-weight: 500;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-top: 2rem;
   }
 
   .imageStep {
@@ -2101,9 +2112,6 @@ export default {
 
   .btn2:hover {
     border-color: #2d2e2f;
-  }
-
-  .header {
   }
 
   .progress-container {

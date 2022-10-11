@@ -259,7 +259,7 @@ export default {
             <li class="active"><a data-toggle="tab" href="#Farm">Farm</a></li>
             <li><a data-toggle="tab" href="#Finance">Finance</a></li>
             <li><a data-toggle="tab" href="#IT">IT Tech</a></li>
-            <li><a data-toggle="tab" href="#Generalist">Generalist</a></li>
+            <li><a data-toggle="tab" href="#Hr">HR</a></li>
             <li @click="jobAlert()" class="btn">
               <a href="#">Crea una Job Alert</a>
             </li>
@@ -1352,10 +1352,10 @@ export default {
                 </div>
               </div>
             </div>
-            <div id="Generalist" class="tab-pane fade">
+            <div id="Hr" class="tab-pane fade">
               <div class="filters" style="margin-top: 7rem">
                 <div class="filtersTop">
-                  <h2>Posizioni aperte <span>Generalist</span></h2>
+                  <h2>Posizioni aperte <span>HR</span></h2>
                   <div class="filtersPositions">
                     <div class="blur"></div>
                     <div class="dropdown">

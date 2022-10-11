@@ -69,9 +69,9 @@ export default {
       </div>
       <div class="col">
         <div class="title">Sedi</div>
-        <router-link to="/about"> <div class="link">Milano</div></router-link>
-        <router-link to="/stories"> <div class="link">Dubai</div></router-link>
-        <router-link to="/workwithus">
+        <router-link to="/contact"> <div class="link">Milano</div></router-link>
+        <router-link to="/contact"> <div class="link">Dubai</div></router-link>
+        <router-link to="/contact">
           <div class="link">Trencin</div></router-link
         >
       </div>

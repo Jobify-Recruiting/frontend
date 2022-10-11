@@ -179,7 +179,7 @@ export default {
                 invitare l'azienda a contattarci
               </h3>
               <div class="divInput">
-                <router-link to="/newsletter"
+                <router-link to="/contact"
                   ><button class="btn">Contattaci</button></router-link
                 >
               </div>
