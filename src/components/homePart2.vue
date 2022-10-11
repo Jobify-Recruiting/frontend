@@ -202,9 +202,6 @@ export default {
       <div class="clientsCoBorder">
         <div class="clientsCoLink">
           <h2>I clienti di Jobify Recruiting</h2>
-          <!--<router-link to="/companies#clients">
-            <p>Visualizza tutti i clienti</p></router-link
-          >-->
         </div>
         <div class="clientsCoBody">
           <div
