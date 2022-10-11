@@ -152,7 +152,7 @@ export default {
           <div class="adviser">
             <div class="col">
               <h3>
-                <span>Iscriviti oggi alla newsletter</span> di Jobify Recruiting
+                <span>Iscriviti alla newsletter</span>
               </h3>
               <div class="divInput">
                 <div class="input">
@@ -169,7 +169,15 @@ export default {
                 >
               </div>
             </div>
-            <div class="col_image"></div>
+            <div
+              class="col"
+              style="
+                background-image: url(/src/assets/storie.jpg);
+                background-size: cover;
+                background-position: center;
+                border-radius: 30px;
+              "
+            ></div>
           </div>
         </div>
       </div>

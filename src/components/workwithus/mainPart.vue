@@ -126,7 +126,7 @@ export default {
             workflows. Redefine collaboration. Trusted by over 83 million
             developers.
           </p>
-          <div class="mainButton">
+          <!--<div class="mainButton">
             <a href="#first"
               ><button class="btn">
                 Invia
@@ -146,7 +146,7 @@ export default {
                   </svg>
                 </span></button
             ></a>
-          </div>
+          </div>-->
         </div>
         <div class="values" style="margin-top: 20rem">
           <div class="value1">
@@ -477,7 +477,7 @@ export default {
   }
 
   .firstPart p {
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.5rem;

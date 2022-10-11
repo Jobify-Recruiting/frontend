@@ -246,7 +246,7 @@ export default {
 
     <div class="secondDiv" id="second">
       <div class="content">
-        <div class="first">
+        <div class="first" style="display: inline !important">
           <div class="title">
             <h2>
               <span>Che servizi offre Jobify</span>

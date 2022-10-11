@@ -219,7 +219,7 @@ export default {
     font-size: 18px;
     line-height: 26px;
     margin-top: 5rem;
-    width: 75%;
+    width: 80%;
     font-weight: 200;
   }
 

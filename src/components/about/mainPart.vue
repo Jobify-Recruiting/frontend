@@ -117,7 +117,7 @@ export default {
                 dell'azienda, altro Inserire descrizione o altro dell'azienda,
                 descrizione o altro dell'azienda.
               </div>
-              <a href="/newsletter" class=""
+              <a href="/companies" class=""
                 ><button class="btn">Scopri di più</button></a
               >
             </div>
