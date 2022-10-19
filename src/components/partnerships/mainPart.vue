@@ -97,8 +97,8 @@ export default {
                 href="https://studiofelli.com/"
                 class="partnerImg transition"
                 style="
-                  left: 32%;
-                  top: -15%;
+                  left: 31%;
+                  top: -18%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo1.png);
                 "
               >
@@ -110,7 +110,7 @@ export default {
                 class="partnerImg transition"
                 style="
                   right: 16%;
-                  top: 4%;
+                  top: 15%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo2.png);
                 "
               >
@@ -133,8 +133,8 @@ export default {
                 href="https://it.talent.com/"
                 class="partnerImg transition"
                 style="
-                  right: 12%;
-                  top: 43%;
+                  right: 18%;
+                  top: 60%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo4.png);
                 "
               >
@@ -145,8 +145,8 @@ export default {
                 href="https://www.aidp.it/gruppo/lazio.php"
                 class="partnerImg"
                 style="
-                  right: 22%;
-                  top: 84%;
+                  right: 45%;
+                  top: 94%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
                 "
               >
@@ -171,17 +171,6 @@ export default {
                   left: 13%;
                   top: 14%;
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo7.png);
-                "
-                ><div class="" style=""></div
-              ></a>
-
-              <a
-                href="https://www.cafieropezzalieassociati.it/"
-                class="partnerImg"
-                style="
-                  left: 41%;
-                  top: 98%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo8.png);
                 "
                 ><div class="" style=""></div
               ></a>
