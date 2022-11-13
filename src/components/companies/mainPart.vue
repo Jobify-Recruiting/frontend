@@ -83,6 +83,49 @@ export default {
         slider.scrollLeft = scrollLeft - walk;
       });
     }
+
+    const flavoursContainer2 = document.getElementById("clients2");
+    const flavoursScrollWidth2 = flavoursContainer2.scrollWidth;
+
+    window.addEventListener("load", () => {
+      self.setInterval(() => {
+        if (flavoursContainer2.scrollLeft !== flavoursScrollWidth2) {
+          flavoursContainer2.scrollTo(flavoursContainer2.scrollLeft + 1, 0);
+        }
+
+        if (flavoursContainer2.scrollLeft > 5780) {
+          flavoursContainer2.scrollTo(0, 0);
+        }
+      }, 15);
+    });
+
+    const slider2 = document.querySelector(".clientsCoBody");
+    let isDown2 = false;
+    let startX2;
+    let scrollLeft2;
+    if (slider2) {
+      slider2.addEventListener("mousedown", (e) => {
+        isDown2 = true;
+        slider2.classList.add("active");
+        startX2 = e.pageX - slider2.offsetLeft2;
+        scrollLeft2 = slider2.scrollLeft2;
+      });
+      slider2.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider2.classList.remove("active");
+      });
+      slider2.addEventListener("mouseup", () => {
+        isDown2 = false;
+        slider2.classList.remove("active");
+      });
+      slider2.addEventListener("mousemove", (e) => {
+        if (!isDown2) return;
+        e.preventDefault();
+        const x = e.pageX - slider2.offsetLeft2;
+        const walk2 = (x - startX2) * 3; //scroll-fast
+        slider2.scrollLeft2 = scrollLeft2 - walk2;
+      });
+    }
   },
   methods: {
     btnScrollSx() {
@@ -109,19 +152,6 @@ export default {
       let content = document.querySelector(".featuredContent");
       const itemWidth = content.querySelector(".featured").clientWidth;
       content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
-    },
-
-    btnScrollSx3() {
-      let content = document.querySelector(".clientsCoBody");
-      const itemWidth = content.querySelector(".logoClient").clientWidth;
-      content.scrollBy({ left: -itemWidth * 7, top: 0, behavior: "smooth" });
-      console.log(content);
-    },
-
-    btnScrollDx3() {
-      let content = document.querySelector(".clientsCoBody");
-      const itemWidth = content.querySelector(".logoClient").clientWidth;
-      content.scrollBy({ left: itemWidth * 7, top: 0, behavior: "smooth" });
     },
 
     workflowScrollSx() {
@@ -228,7 +258,7 @@ export default {
 
         <div class="numbersDiv">
           <h2>
-            Le statistiche: ci aiutano a prendere decisioni in maniera
+            Le statistiche: ci aiutano a <span>prendere decisioni</span> in maniera
             consapevole
           </h2>
           <div class="numbers">
@@ -1303,40 +1333,9 @@ export default {
         <div class="clientsCo" id="clients">
           <div class="titles">
             <h2>I nostri clienti</h2>
-            <div class="buttons">
-              <div class="btnScrollL" @click="btnScrollSx3()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#fff"
-                  class="bi bi-chevron-left"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                  />
-                </svg>
-              </div>
-              <div class="btnScrollR" @click="btnScrollDx3()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#fff"
-                  class="bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </div>
-            </div>
           </div>
-          <div class="clientsCoBody">
+          
+          <div class="clientsCoBody" id="clients2">
             <div class="logoClient">
               <img
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-4.png"
@@ -1776,14 +1775,15 @@ export default {
   }
 
   .firstPart p span {
-    color: #0062f5;
+    color: #c554a0;
+    font-weight: 600;
   }
 
   .firstPart h2 {
     color: #fff;
     letter-spacing: -0.04em;
-    font-size: 72px;
-    line-height: 76px;
+    font-size: 64px;
+    line-height: 64px;
     font-weight: 800;
     margin-bottom: 1rem;
     width: 50%;
@@ -1792,11 +1792,12 @@ export default {
   .firstPart p {
     width: 50%;
     margin-top: 0.5rem;
-    color: #627597;
-    font-size: 20px;
+    color: #fff;
+    font-size: 18px;
     text-align: left;
-    line-height: 24px;
-    font-weight: 400;
+    line-height: 22px;
+    font-weight: 300;
+    margin-bottom: 2rem;
   }
 
   .firstPart .image {
@@ -1806,7 +1807,8 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 10rem;
-    background-image: url(/src/assets/glob2.png);
+    /*background-image: url(/src/assets/glob2.png);*/
+    background-image: none;
     background-size: cover;
     background-position: center;
     background-size: 80%;
@@ -1910,7 +1912,7 @@ export default {
   }
 
   .cols .col .subtitle {
-    color: #627597;
+    color: #cccccc;
     font-size: 18px;
     line-height: 22px;
   }
@@ -1954,7 +1956,7 @@ export default {
   }
 
   .secondPart .text span {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2040,7 +2042,7 @@ export default {
   }
 
   .workflow .workflowTitle h2 {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2132,7 +2134,7 @@ export default {
   }
 
   .workflow .columns .number {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2245,53 +2247,16 @@ export default {
   }
 
   .clientsCo .titles {
-    align-items: center;
-    display: flex;
-    margin-left: 11rem;
-    margin-right: 11rem;
     margin-bottom: 2rem;
   }
 
-  .clientsCo .buttons {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    width: fit-content;
-  }
-
   .clientsCo .titles h2 {
-    font-size: 50px;
-    line-height: 54px;
     color: #fff;
-    font-weight: 700;
-    margin-top: 3rem;
-    letter-spacing: -2.5px;
-    width: fit-content;
-  }
-
-  .clientsCo .btnScrollR {
-    width: fit-content;
-    background: transparent;
-    border: 1px solid #fff;
-    border-radius: 25rem;
-    height: auto;
-    z-index: 10;
-    padding: 0.7rem;
-    line-height: 0px;
-    cursor: pointer;
-  }
-
-  .clientsCo .btnScrollL {
-    margin-right: 1rem;
-    width: fit-content;
-    background: transparent;
-    border: 1px solid #fff;
-    border-radius: 25rem;
-    height: auto;
-    z-index: 10;
-    padding: 0.7rem;
-    line-height: 0px;
-    cursor: pointer;
+    font-size: 64px;
+    font-weight: 800 !important;
+    text-align: center;
+    line-height: 68px;
+    letter-spacing: -0.03em !important;
   }
 
   .clientsCo .part {
@@ -2302,20 +2267,16 @@ export default {
     width: 135px;
     height: 135px;
     padding: 1rem;
-    border-radius: 25rem;
-    background-repeat: no-repeat;
-    background-size: 80%;
-    background-position: center;
-    transition: all 0.3s ease-out;
-    margin-right: 3rem;
     margin-left: 3rem;
     float: left;
-    position: relative;
+    padding-right: 3rem;
+    display: contents;
   }
 
   .logoClient img {
     width: 135px;
     height: auto;
+    margin-right: 5rem;
   }
 
   .numbersDiv {
@@ -2327,12 +2288,21 @@ export default {
 
   .numbersDiv h2 {
     color: #fff;
-    font-size: 50px;
-    line-height: 54px;
-    font-weight: 700;
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 600;
     letter-spacing: -2.5px;
     width: 50%;
     margin-left: 2rem;
+  }
+
+  .numbersDiv h2 span{
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 600;
   }
 
   .numbersDiv .numbers {
@@ -2356,10 +2326,15 @@ export default {
 
   .number h3 {
     color: #fff;
-    font-size: 58px;
-    line-height: 62px;
+    font-size: 50px;
+    line-height: 50px;
     font-weight: 700;
     letter-spacing: -2.5px;
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
   }
 
   .number .subtitle {
@@ -2564,7 +2539,7 @@ export default {
   }
 
   .fifthDiv .adviser .col h3 span {
-    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2666,7 +2641,7 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback .quote {
-    background: -webkit-linear-gradient(-70deg, #67a3f0 0%, #4e54ed 100%);
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2680,8 +2655,8 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback h3 {
-    color: #fff;
-    font-weight: 500;
+    color: #cccccc;
+    font-weight: 300;
     font-size: 22px;
     line-height: 26px;
     margin-bottom: 2rem;
@@ -2741,7 +2716,8 @@ export default {
   }
 
   .thirdPartDiv .first span {
-    color: #0062f5;
+    color: #c554a0;
+    font-weight: 600;
   }
 
   .thirdPartDiv .first h2 {
@@ -2752,7 +2728,7 @@ export default {
     letter-spacing: -0.04em;
     font-weight: 700;
     margin-bottom: 5rem;
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2761,10 +2737,10 @@ export default {
 
   .thirdPartDiv .first p {
     width: 60%;
-    color: #627597;
-    font-size: 20px;
-    line-height: 24px;
-    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
     margin-top: 3rem;
   }
 
@@ -2781,14 +2757,13 @@ export default {
     display: flex;
     padding-left: 3rem;
     padding-right: 3rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: flex;
   }
 
   .second .feature {
     margin-right: 2rem;
-    margin-left: 2rem;
-    width: 35%;
+    width: 30%;
     background: #03111f;
     border-radius: 30px;
     padding: 3rem;
@@ -2803,10 +2778,10 @@ export default {
   }
 
   .second .feature p {
-    color: #627597;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 400;
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300 !important;
   }
 
   .second .feature .btn3 {

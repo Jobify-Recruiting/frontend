@@ -146,14 +146,7 @@ export default {
   font-family: "Heebo", sans-serif;
 }
 
-@media (min-width: 1600px) {
-  #globeViz {
-    left: 35% !important;
-  }
-
-  .mainTitle {
-    margin-left: 8rem !important;
-  }
+@media (max-width: 1023px) {
 }
 
 @media (min-width: 1024px) {
@@ -217,7 +210,7 @@ export default {
   .mainTitle h2 {
     color: white;
     font-size: 18px;
-    line-height: 26px;
+    line-height: 22px;
     margin-top: 5rem;
     width: 80%;
     font-weight: 200;
@@ -255,71 +248,6 @@ export default {
     cursor: pointer;
     font-family: "Planer";
   }
-
-  /*a {
-    position: relative;
-    padding: 14px 22px;
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    width: fit-content;
-    overflow: hidden;
-    border-radius: 16px;
-    margin-top: 3rem;
-    cursor: pointer;
-    font-family: "Planer";
-  }
-
-  a span {
-    position: relative;
-    color: #fff;
-    line-height: 20px;
-    font-size: 12px;
-    font-family: "Planer";
-    letter-spacing: 5px;
-    font-weight: 600;
-    z-index: 1;
-  }
-
-  a .liquid {
-    position: absolute;
-    top: -80px;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background: #0062f5;
-    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
-    transition: 0.5s;
-  }
-
-  a .liquid::after,
-  a .liquid::before {
-    content: "";
-    width: 200%;
-    height: 200%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -75%);
-    background: #000;
-  }
-
-  a .liquid::before {
-    border-radius: 45%;
-    background: rgba(20, 20, 20, 1);
-    animation: animate 5s linear infinite;
-  }
-
-  a .liquid::after {
-    border-radius: 40%;
-    background: rgba(20, 20, 20, 0.5);
-    animation: animate 10s linear infinite;
-  }
-
-  a:hover .liquid {
-    top: -120px;
-  }*/
-
   .btn {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -433,7 +361,20 @@ export default {
   }
 }
 
-@media (max-width: 1023px) {
+@media(max-width: 1400px){
+  .mainTitle h2 {
+    margin-top: 11rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  #globeViz {
+    left: 35% !important;
+  }
+
+  .mainTitle {
+    margin-left: 8rem !important;
+  }
 }
 
 @media (min-width: 1920px) {

@@ -5,7 +5,11 @@ export default {
   data() {
     return {};
   },
-  mounted() {},
+  mounted() {
+    const d = new Date();
+    let year = d.getFullYear();
+    document.getElementById("year").innerHTML = year;
+  },
   methods: {},
 };
 </script>
@@ -29,6 +33,13 @@ export default {
           <router-link to="/newsletter"
             ><button class="btn">Iscriviti</button></router-link
           >
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" />
+          <p>
+            Accetto i
+            <router-link to="">&nbsp;termini e condizioni.</router-link>
+          </p>
         </div>
       </div>
       <div class="col">
@@ -79,7 +90,7 @@ export default {
     <div class="bottom">
       <div class="left">
         <div class="link">
-          © 2022 &nbsp;&nbsp;•&nbsp;&nbsp; Jobify Recruiting Srl. (Aut. Min.
+          <span id="year"></span> &nbsp;&nbsp;•&nbsp;&nbsp; Jobify Recruiting Srl. (Aut. Min.
           Prot. N.F205S530526 del 26.07.2022)
         </div>
         <div class="link">Privacy Policy</div>
@@ -141,8 +152,26 @@ export default {
   }
 
   .footer .content .col {
-    width: 25%;
-    margin-left: 5rem;
+    width: 27%;
+    margin-left: 2rem;
+  }
+
+  .footer .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .footer .checkbox input {
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+
+  .footer .checkbox p {
+    margin-bottom: 0 !important;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .col-logo .title2 {
@@ -166,7 +195,7 @@ export default {
 
   .content .col .link {
     color: rgb(222 222 222);
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 0.8rem;
     margin-bottom: 0.8rem;
     letter-spacing: 1px;

@@ -109,10 +109,15 @@ export default {
                 Inserire descrizione o altro dell'azienda, descrizione o altro
                 dell'azienda, altro Inserire descrizione o altro dell'azienda.
               </div>
+              <a href="/companies" class=""
+                ><button class="btn">Scopri di più</button></a
+              >
             </div>
-            <div class="quote" style="margin-top: 8rem">
-              <div class="quoteh4"><span>In che modo</span> lo facciamo</div>
-              <div class="quoteh5">
+            <div class="quote" style="text-align: right !important;
+              float: right !important; margin-top: 8rem">
+              <div class="quoteh4" style="text-align: right !important;
+              float: right !important">In che <span>modo</span> lo facciamo</div>
+              <div class="quoteh5" style="float: right !important">
                 Inserire descrizione o altro dell'azienda, descrizione o altro
                 dell'azienda, altro Inserire descrizione o altro dell'azienda,
                 descrizione o altro dell'azienda.
@@ -132,13 +137,21 @@ export default {
                 dell'azienda, altro Inserire descrizione o altro dell'azienda,
                 descrizione o altro dell'azienda.
               </div>
+              <a href="/companies" class=""
+                ><button class="btn">Scopri di più</button></a
+              >
             </div>
-            <div class="quote" style="margin-top: 8rem">
-              <div class="quoteh4">La <span>Missione</span></div>
-              <div class="quoteh5">
+            <div class="quote" style="text-align: right !important;
+              float: right !important; margin-top: 10rem">
+              <div class="quoteh4" style="text-align: right !important;
+              float: right !important">La <span>missione</span></div>
+              <div class="quoteh5" style="float: right !important">
                 Inserire descrizione o altro dell'azienda, descrizione o altro
                 dell'azienda, altro Inserire descrizione o altro dell'azienda.
               </div>
+              <a href="/companies" class=""
+                ><button class="btn">Scopri di più</button></a
+              >
             </div>
           </div>
         </div>
@@ -513,11 +526,17 @@ export default {
   .secondPart .text1 {
     padding-top: 10rem;
     color: #627597;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 400;
     width: 65%;
     margin-left: 3rem;
+  }
+
+  .secondPart .text1 h3{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
   }
 
   .secondPart .text1 span {
@@ -539,8 +558,8 @@ export default {
 
   .thirdPart .text1 {
     color: #627597;
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 400;
     width: 65%;
     margin-left: 3rem;
@@ -603,9 +622,13 @@ export default {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #030812;
-    font-size: 54px;
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
     font-weight: 800 !important;
+    font-size: 54px;
     width: 40%;
     line-height: 58px;
     letter-spacing: -0.04em !important;
@@ -809,10 +832,10 @@ export default {
 
   .seventhPart .text h2 {
     color: #030812;
-    font-size: 64px;
+    font-size: 56px;
     font-weight: 800 !important;
     width: 70%;
-    line-height: 68px;
+    line-height: 56px;
     letter-spacing: -0.04em !important;
   }
 
@@ -827,11 +850,11 @@ export default {
 
   .seventhPart .text p {
     color: #627597;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 400;
     width: 70%;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 
   .seventhPart .image {

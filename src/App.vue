@@ -88,9 +88,6 @@ export default {
           <router-link to="/about"
             ><div class="link">Chi siamo</div></router-link
           >
-          <router-link to="/openposition"
-            ><div class="link">Posizioni aperte</div></router-link
-          >
           <div class="link" @click="openWorkers()">
             Lavoratori &nbsp;
             <svg
@@ -108,12 +105,11 @@ export default {
             </svg>
           </div>
           <router-link to="/companies"
-            ><div class="link">Aziende</div></router-link
+            ><div class="link">Sei un'Azienda?</div></router-link
           >
-          <div class="link" @click="call_btn()">Prenota un appuntamento</div>
         </div>
         <div class="left">
-          <div class="link menuBtn" @click="openMenu()">
+          <!--<div class="link menuBtn" @click="openMenu()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="26"
@@ -127,7 +123,8 @@ export default {
                 d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
               />
             </svg>
-          </div>
+          </div>-->
+          <div class="link" @click="call_btn()">Prenota un appuntamento</div>
         </div>
       </div>
     </div>
@@ -135,12 +132,12 @@ export default {
 
   <div class="menuWorkersBG" @click="closeWorkers()">
     <div class="menuWorkers">
-      <router-link to="/workers">
-        <div class="link">Lavoratori</div>
-      </router-link>
-      <router-link to="/workwithus">
-        <div class="link">Lavora con noi</div>
-      </router-link>
+      <router-link to="/openposition"
+            ><div class="link">Ricerca talenti</div></router-link
+          >
+      <router-link to="/openposition"
+            ><div class="link">Posizioni aperte</div></router-link
+          >
     </div>
   </div>
 
@@ -263,6 +260,10 @@ export default {
   font-family: "Heebo", sans-serif;
 }
 
+.calendly-badge-content{
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -324,7 +325,7 @@ a:hover {
 
   .nav .left {
     display: flex;
-    margin-right: 4rem;
+    margin-right: 1rem;
     align-items: center;
   }
 
