@@ -943,7 +943,7 @@ export default {
   }
 
   .main {
-    background: #010b15;
+    background: #1e213d;
     padding-top: 8rem;
     position: relative;
   }
@@ -1006,7 +1006,7 @@ export default {
   }
 
   .main2 {
-    background: #010b15;
+    background: #1e213d;
     padding-top: 1rem;
   }
 
@@ -1700,7 +1700,7 @@ export default {
   .popup {
     position: fixed;
     z-index: 10;
-    background: #0308129f;
+    background: #1e213d9f;
     backdrop-filter: blur(12px);
     width: 80%;
     border-radius: 40px;

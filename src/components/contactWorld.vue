@@ -441,15 +441,7 @@ export default {
   }
 
   .first {
-    background: #ada996;
-    background: -webkit-linear-gradient(
-      to right,
-      #eaeaea,
-      #dbdbdb,
-      #f2f2f2,
-      #ada996
-    );
-    background: linear-gradient(to top, #ffffff, #dbdbdb, #bebebe, #96a0ad);
+    background: #1e213d;
   }
 
   #globeViz {
@@ -621,9 +613,7 @@ export default {
     padding-right: 8rem;
     padding-left: 8rem;
     padding-right: 8rem;
-    background: #7474bf;
-    background: -webkit-linear-gradient(to top, #03081200, #7474bf00);
-    background: linear-gradient(to top, #03081200, #7474bf00);
+    background: transparent;
     padding-top: 18rem;
   }
 
@@ -707,7 +697,7 @@ export default {
   .popup {
     position: fixed;
     z-index: 10;
-    background: #0308129f;
+    background: #1e213d;
     backdrop-filter: blur(12px);
     width: 80%;
     border-radius: 40px;
@@ -851,9 +841,9 @@ export default {
   .gradient2 {
     padding-left: 8rem;
     padding-right: 8rem;
-    background: #7474bf;
-    background: -webkit-linear-gradient(to top, #c3c3c3, #7474bf00);
-    background: linear-gradient(to top, #c3c3c3, #7474bf00);
+    background: transparent;
+    background: -webkit-linear-gradient(to top, #1e213d, #ffffff00);
+    background: linear-gradient(to top, #1e213d, #ffffff00);
     padding-top: 10rem;
     margin-top: 25rem;
     z-index: 10;
@@ -863,18 +853,10 @@ export default {
     display: flex;
     margin-top: 0rem;
     padding-bottom: 5rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     z-index: 10;
-    background: #ada996;
-    background: -webkit-linear-gradient(
-      to right,
-      #eaeaea,
-      #dbdbdb,
-      #f2f2f2,
-      #c3c3c3
-    );
-    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #c3c3c3);
+    background: #fff;
   }
 
   .cols .col_1 {
@@ -896,7 +878,7 @@ export default {
 
   .cols .col p {
     text-transform: uppercase;
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -905,7 +887,7 @@ export default {
 
   .cols .col h4 {
     text-transform: uppercase;
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -922,7 +904,7 @@ export default {
   }
 
   .cols .col h2 {
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 68px;
@@ -931,7 +913,7 @@ export default {
   }
 
   .cols .col h3 {
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;
@@ -1004,8 +986,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
     font-weight: 600;
   }
 

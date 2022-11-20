@@ -361,7 +361,7 @@ export default {
   .article h3 {
     font-size: 28px;
     line-height: 32px;
-    color: #010b15;
+    color: #1e213d;
     font-weight: 800;
     padding-bottom: 1rem;
     letter-spacing: -0.02em;

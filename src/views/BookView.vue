@@ -1,5 +1,5 @@
 <script>
-import mainPart from "@/components/openPosition/mainPart.vue";
+import mainPart from "@/components/book/mainPart.vue";
 import footerMain from "@/components/footerMain.vue";
 
 export default {
@@ -7,7 +7,24 @@ export default {
     mainPart,
     footerMain,
   },
-  methods: {},
+  methods: {
+    updateScroll() {
+      this.scrollPosition = window.scrollY;
+    },
+    openMenu() {
+      let content = document.querySelector(".menu");
+      content.style.width = "100%";
+      content.style.opacity = "1";
+      content.style.visibility = "visible";
+      content.style.display = "inline";
+    },
+    closeMenu() {
+      let content = document.querySelector(".menu");
+      content.style.width = "0%";
+      content.style.opacity = "0";
+      content.style.visibility = "hidden";
+    },
+  },
 };
 </script>
 

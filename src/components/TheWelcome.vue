@@ -35,6 +35,8 @@ export default {
       document.getElementById("globeViz")
     );
 
+    console.log(Globe().arcDashAnimateTime())
+
     let content = document.querySelector(".menu");
     content.style.width = "0%";
     content.style.opacity = "0";
@@ -218,7 +220,7 @@ export default {
 
   .datas {
     display: flex;
-    border-top: 2px solid #0a1e4375;
+    border-top: 2px solid #2d3152;
     margin-top: 0;
     width: fit-content;
     position: absolute;
@@ -271,8 +273,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
     font-weight: 600;
   }
 

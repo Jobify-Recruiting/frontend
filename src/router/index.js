@@ -12,6 +12,7 @@ import StoriesView from "../views/StoriesView.vue";
 import searchResultView from "../views/searchResultView.vue";
 import article1View from "../views/article1View.vue";
 import article2View from "../views/article2View.vue";
+import BookView from "../views/BookView.vue"; 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -87,6 +88,11 @@ const router = createRouter({
       path: "/article2",
       name: "Article2",
       component: article2View,
+    },
+    {
+      path: "/book",
+      name: "Book",
+      component: BookView,
     },
   ],
 });

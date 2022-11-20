@@ -109,6 +109,7 @@ export default {
           >
         </div>
         <div class="left">
+          <!-- @click="call_btn()" -->
           <!--<div class="link menuBtn" @click="openMenu()">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +125,9 @@ export default {
               />
             </svg>
           </div>-->
-          <div class="link" @click="call_btn()">Prenota un appuntamento</div>
+          <router-link to="/book"
+            ><div class="link menuBtn">Prenota un appuntamento</div>
+          </router-link>
         </div>
       </div>
     </div>
@@ -132,7 +135,7 @@ export default {
 
   <div class="menuWorkersBG" @click="closeWorkers()">
     <div class="menuWorkers">
-      <router-link to="/openposition"
+      <router-link to="/workers"
             ><div class="link">Ricerca talenti</div></router-link
           >
       <router-link to="/openposition"
@@ -289,7 +292,7 @@ a:hover {
 
 @media (min-width: 1024px) {
   .change_color {
-    background-color: #010c18d4;
+    background-color: #1e213dba;
     backdrop-filter: blur(12px);
     width: fit-content;
     -webkit-transition: all 0.3s ease-in-out;
@@ -325,7 +328,6 @@ a:hover {
 
   .nav .left {
     display: flex;
-    margin-right: 1rem;
     align-items: center;
   }
 
@@ -368,23 +370,24 @@ a:hover {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 8px 16px;
-    border-radius: 15px;
+    padding: 14px 26px;
+    border-radius: 20px;
     background: #0062f5;
     color: #ffffff;
     line-height: 16px;
-    font-size: 12px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
     font-weight: 500;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     cursor: pointer;
     transition: all 0.3s ease-out;
+    margin-left: 0 !important;
+    margin-right: 3rem !important;
   }
 
   .nav .menuBtn:hover {
-    background: #fff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
   }
 
   .nav .logo {
@@ -429,7 +432,7 @@ a:hover {
     /*background: #131b23;
     border: 2px solid #b3b3b326;*/
 
-    background-color: #010c18d4;
+    background-color: #1e213dd4;
     backdrop-filter: blur(12px);
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 
@@ -473,7 +476,7 @@ a:hover {
     z-index: 20;
     width: 0%;
     height: 100%;
-    background-color: #010c18d4;
+    background-color: #1e213dd4;
     backdrop-filter: blur(12px);
     padding: 7rem;
     opacity: 0;

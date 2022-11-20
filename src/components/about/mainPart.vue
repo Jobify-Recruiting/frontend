@@ -403,8 +403,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
     font-weight: 600;
   }
 
@@ -540,7 +540,7 @@ export default {
   }
 
   .secondPart .text1 span {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -566,7 +566,7 @@ export default {
   }
 
   .thirdPart .text1 span {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -660,7 +660,7 @@ export default {
     line-height: 44px;
     font-weight: 800;
     width: 70%;
-    color: #030812;
+    color: #1e213d;
     margin-bottom: 1rem;
     text-align: left !important;
     letter-spacing: -0.04em;
@@ -693,7 +693,7 @@ export default {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #030812;
+    color: #1e213d;
     font-size: 54px;
     font-weight: 800 !important;
     width: 40%;
@@ -705,7 +705,7 @@ export default {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #030812;
+    color: #1e213d;
     font-size: 18px;
     font-weight: 500 !important;
     width: 40%;
@@ -785,7 +785,7 @@ export default {
     font-weight: 300;
     font-size: 16px;
     line-height: 16px;
-    color: #030812;
+    color: #1e213d;
     font-weight: 400;
   }
 
@@ -804,7 +804,7 @@ export default {
     font-weight: 300;
     font-size: 18px;
     line-height: 18px;
-    color: #030812;
+    color: #1e213d;
     font-weight: 400;
   }
 
@@ -831,7 +831,7 @@ export default {
   }
 
   .seventhPart .text h2 {
-    color: #030812;
+    color: #1e213d;
     font-size: 56px;
     font-weight: 800 !important;
     width: 70%;
@@ -877,7 +877,7 @@ export default {
   }
 
   .fifthDiv .adviser {
-    background: #161b22;
+    background: #1e213d;
     border-radius: 30px;
     display: flex;
   }
@@ -968,7 +968,7 @@ export default {
   }
 
   .secondPart .title h2 {
-    color: #010b15;
+    color: #1e213d;
     width: 80%;
     font-size: 54px;
     line-height: 58px;
@@ -1038,7 +1038,7 @@ export default {
   }
 
   .step .title {
-    color: #010b15;
+    color: #1e213d;
     margin-left: 0 !important;
     font-size: 38px;
     line-height: 42px;

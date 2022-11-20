@@ -186,76 +186,79 @@ export default {
       <div class="glow7"></div>
       <div class="glow8"></div>
       <div class="first">
-        <div class="title">
+        <div style="background: #1e213d; padding-top: 10rem;">
+          <div class="title">
           <div class="titleDiv">
             <h2>Posizioni aperte</h2>
             <p>Cerca tra i lavori attuali</p>
           </div>
-        </div>
-        <div class="search">
-          <div class="searchKey" @click="suggestWords()">
-            <input
-              id="nav"
-              class="input searchBar"
-              type="text"
-              name="searchbar"
-              autocomplete="off"
-              placeholder="Cerca parola chiave"
-            />
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-search"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                />
-              </svg>
-            </span>
           </div>
-          <div class="suggestWords">
-            <div id="suggestWordsOverlay"></div>
-            <div class="suggestTopDiv">
-              <h5>Parole chiave</h5>
-              <div class="closesuggestWords" @click="closeSuggestWords()">
+          <div class="search">
+            <div class="searchKey" @click="suggestWords()">
+              <input
+                id="nav"
+                class="input searchBar"
+                type="text"
+                name="searchbar"
+                autocomplete="off"
+                placeholder="Cerca parola chiave"
+              />
+              <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-x-lg"
+                  class="bi bi-search"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-                  ></path>
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
                 </svg>
-              </div>
+              </span>
             </div>
+            <div class="suggestWords">
+              <div id="suggestWordsOverlay"></div>
+              <div class="suggestTopDiv">
+                <h5>Parole chiave</h5>
+                <div class="closesuggestWords" @click="closeSuggestWords()">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-x-lg"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
 
-            <div class="keyWords">
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
-              <div class="keyWord">Farm</div>
+              <div class="keyWords">
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+                <div class="keyWord">Farm</div>
+              </div>
             </div>
           </div>
         </div>
+        
         <div class="container2">
-          <ul class="nav nav-tabs">
+          <div class="navMain"><ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#Farm">Farm</a></li>
             <li><a data-toggle="tab" href="#Finance">Finance</a></li>
             <li><a data-toggle="tab" href="#IT">IT Tech</a></li>
@@ -263,11 +266,11 @@ export default {
             <li @click="jobAlert()" class="btn">
               <a href="#">Crea una Job Alert</a>
             </li>
-          </ul>
+          </ul></div>
 
           <div class="tab-content">
             <div id="Farm" class="tab-pane in active">
-              <div class="filters" style="margin-top: 7rem">
+              <div class="filters">
                 <div class="filtersTop">
                   <h2>Posizioni aperte <span>Farm</span></h2>
                   <div class="filtersPositions">
@@ -344,7 +347,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#fff"
+                        fill="#1e213d"
                         class="bi bi-chevron-left"
                         viewBox="0 0 16 16"
                       >
@@ -359,7 +362,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#fff"
+                        fill="#1e213d"
                         class="bi bi-chevron-right"
                         viewBox="0 0 16 16"
                       >
@@ -706,7 +709,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#fff"
+                        fill="#1e213d"
                         class="bi bi-chevron-left"
                         viewBox="0 0 16 16"
                       >
@@ -721,7 +724,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#fff"
+                        fill="#1e213d"
                         class="bi bi-chevron-right"
                         viewBox="0 0 16 16"
                       >
@@ -1068,7 +1071,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#fff"
+                        fill="#1e213d"
                         class="bi bi-chevron-left"
                         viewBox="0 0 16 16"
                       >
@@ -1083,7 +1086,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#fff"
+                        fill="#1e213d"
                         class="bi bi-chevron-right"
                         viewBox="0 0 16 16"
                       >
@@ -1430,7 +1433,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#fff"
+                        fill="#1e213d"
                         class="bi bi-chevron-left"
                         viewBox="0 0 16 16"
                       >
@@ -1445,7 +1448,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#fff"
+                        fill="#1e213d"
                         class="bi bi-chevron-right"
                         viewBox="0 0 16 16"
                       >
@@ -1976,7 +1979,6 @@ export default {
           </div>
           <div class="steps">
             <div class="step transition">
-              <div class="number">1</div>
               <div class="title">Intervista azienda</div>
               <div class="text">
                 Approfondendo la cultura ed il clima aziendale, l'organigramma
@@ -1985,7 +1987,6 @@ export default {
               </div>
             </div>
             <div class="step transition">
-              <div class="number">2</div>
               <div class="title">Intervista talento</div>
               <div class="text">
                 Approfondendo i suoi valori e le sue aspettative da un punto di
@@ -1997,7 +1998,7 @@ export default {
 
         <h2 class="ctaTitle">Jobify recruiting, ricerca e selezione talenti</h2>
 
-        <div class="ctaCV" style="background: #0c142c">
+        <div class="ctaCV" style="background: #1e213d">
           <div class="blur"></div>
           <div class="cols">
             <div class="col col-padding" id="positions">
@@ -2030,6 +2031,8 @@ export default {
                 background-image: url(/src/assets/storie.jpg);
                 background-size: cover;
                 border-radius: 30px;
+                background-repeat: no-repeat;
+                background-position: center;
               "
             ></div>
           </div>
@@ -2044,7 +2047,7 @@ export default {
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
-                  fill="#fff"
+                  fill="#1e213d"
                   class="bi bi-chevron-left"
                   viewBox="0 0 16 16"
                 >
@@ -2059,7 +2062,7 @@ export default {
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
-                  fill="#fff"
+                  fill="#1e213d"
                   class="bi bi-chevron-right"
                   viewBox="0 0 16 16"
                 >
@@ -2246,8 +2249,7 @@ export default {
   }
 
   .main {
-    background: #010b15;
-    padding-top: 8rem;
+    background: #fff;
     position: relative;
   }
 
@@ -2309,7 +2311,7 @@ export default {
   }
 
   .main2 {
-    background: #010b15;
+    background: #1e213d;
     padding-top: 1rem;
   }
 
@@ -2352,7 +2354,7 @@ export default {
   .filtersTop {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .filters .buttons {
@@ -2412,7 +2414,7 @@ export default {
     line-height: 34px;
     margin-left: 3rem;
     font-weight: 700;
-    color: #fff;
+    color: #1e213d;
     margin-bottom: 0;
   }
 
@@ -2487,15 +2489,15 @@ export default {
   }
 
   .position {
-    background: rgba(38, 43, 49, 0.486);
+    background: #fff;
     margin-bottom: 2rem;
     width: fit-content;
     float: left;
     margin-right: 1.5rem;
-    border-radius: 12px;
+    border-radius: 30px;
     padding: 1rem;
-    border-bottom: 4px solid #008cff;
-    border: 3px solid transparent;
+    border: 2px solid #80808038;
+    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
@@ -2542,7 +2544,7 @@ export default {
   }
 
   .position .subtitle {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgb(25 35 45);
     font-size: 14px;
     line-height: 14px;
     margin-bottom: 0.5rem;
@@ -2561,7 +2563,7 @@ export default {
     line-height: 26px;
     margin-left: 0 !important;
     font-weight: 700;
-    color: #fff;
+    color: rgb(25 35 45);
     padding-left: 0.5rem;
   }
 
@@ -2577,14 +2579,15 @@ export default {
     display: flex;
     align-items: center;
     margin-bottom: 0rem !important;
-    background: #19232d;
+    background: #fff;
     border-radius: 12px;
+    border: 2px solid #80808038;
   }
 
   .position .content .infos p {
     margin-right: 1.5rem;
     font-weight: 300;
-    color: #fff;
+    color: rgb(25 35 45);
     margin-bottom: 0rem !important;
     font-size: 14px;
     line-height: 14px;
@@ -2615,8 +2618,8 @@ export default {
   }
 
   .position .button:hover {
-    background: #fff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
   }
 
   .search {
@@ -2726,7 +2729,7 @@ export default {
   }
 
   .ctaTitle {
-    color: #fff;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -2768,7 +2771,11 @@ export default {
     font-size: 34px;
     line-height: 38px;
     font-weight: 700;
-    color: #0062f5;
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
   }
 
   .ctaCV .col {
@@ -2800,8 +2807,8 @@ export default {
   }
 
   .ctaCV .button:hover {
-    background: #fff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
   }
 
   .filtersPositions {
@@ -2809,7 +2816,7 @@ export default {
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background: rgb(161 161 161 / 10%);
+    background: #1e213d;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -2884,11 +2891,16 @@ export default {
     margin-bottom: 0rem !important;
   }
 
+  .navMain{
+    background: #1e213d;
+  }
+
   .nav {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     border-bottom: none;
+    padding-bottom: 17rem;
   }
 
   .nav .btn {
@@ -2915,6 +2927,17 @@ export default {
 
   .nav li:hover {
     background: #3e455052;
+  }
+
+  .nav li .active {
+    background: #3e455052;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-radius: 12px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
   }
 
   .nav li:hover ::v-deep(a) {
@@ -3043,7 +3066,7 @@ export default {
   .popup {
     position: fixed;
     z-index: 10;
-    background: #0308129f;
+    background: #1e213d9f;
     backdrop-filter: blur(12px);
     width: 80%;
     border-radius: 40px;
@@ -3193,7 +3216,11 @@ export default {
   }
 
   .secondPart2 h2 {
-    color: #fff;
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -3204,20 +3231,29 @@ export default {
     text-align: center;
   }
 
-  .secondPart2 span {
-    color: #0062f5;
+  .secondPart2 h2 span {
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
     font-weight: 700;
   }
 
   .secondPart2 .title p {
     color: #627597;
     font-size: 18px;
-    line-height: 26px;
-    font-weight: 400;
+    line-height: 22px;
+    font-weight: 300 !important;
     width: 65%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+
+  .secondPart2 .title p span {
+    color: #c554a0;
+    font-weight: 600;
   }
 
   .secondPart2 .cols {
@@ -3249,7 +3285,6 @@ export default {
     padding-top: 3rem;
     padding-bottom: 3rem;
     text-align: center;
-    background: #0c142c;
     border-radius: 30px;
     z-index: 14;
     margin-right: 2rem;
@@ -3259,9 +3294,8 @@ export default {
     width: 50%;
     transition: all 0.3s ease-out;
     text-align: left;
-    -webkit-box-shadow: 0px 0px 105px 39px rgb(46 81 255 / 20%);
-    -moz-box-shadow: 0px 0px 105px 39px rgba(46, 81, 255, 20%);
-    box-shadow: 0px 0px 0px 2px rgb(116 141 255 / 26%);
+    background: #1e213d;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   }
 
   .step .number {
@@ -3288,13 +3322,13 @@ export default {
   }
 
   .step .text {
-    color: #627597;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 400;
     margin-left: 0 !important;
-    margin-top: 0 !important;
     width: 100% !important;
+    color: #cccccc;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300 !important;
+    margin-top: 0.5rem;
   }
 
   .featuredContent {
@@ -3331,7 +3365,7 @@ export default {
   .featureds .titles h2 {
     font-size: 50px;
     line-height: 54px;
-    color: #fff;
+    color: #1e213d;
     font-weight: 700;
     margin-top: 3rem;
     letter-spacing: -2.5px;
@@ -3341,7 +3375,7 @@ export default {
   .featureds .btnScrollR {
     width: fit-content;
     background: transparent;
-    border: 1px solid #fff;
+    border: 2px solid rgb(209, 209, 209);
     border-radius: 25rem;
     height: auto;
     z-index: 10;
@@ -3354,7 +3388,7 @@ export default {
     margin-right: 1rem;
     width: fit-content;
     background: transparent;
-    border: 1px solid #fff;
+    border: 2px solid rgb(209, 209, 209);
     border-radius: 25rem;
     height: auto;
     z-index: 10;

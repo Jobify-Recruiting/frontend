@@ -196,7 +196,7 @@ export default {
             </h2>
             <p>
               Siamo un’agenzia per la ricerca di talenti,
-              <span style="color: #010c18; font-weight: 500"
+              <span style="color: #c554a0; font-weight: 500"
                 >digitale e dinamica</span
               >, formata da persone giovani e multilingue.
             </p>
@@ -587,7 +587,7 @@ export default {
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            fill="#161b22"
+            fill="#1e213d"
             class="bi bi-arrow-right"
             viewBox="0 0 16 16"
           >
@@ -634,7 +634,7 @@ export default {
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            fill="#161b22"
+            fill="#1e213d"
             class="bi bi-arrow-right"
             viewBox="0 0 16 16"
           >
@@ -686,7 +686,7 @@ export default {
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            fill="#161b22"
+            fill="#1e213d"
             class="bi bi-arrow-right"
             viewBox="0 0 16 16"
           >
@@ -733,7 +733,7 @@ export default {
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            fill="#161b22"
+            fill="#1e213d"
             class="bi bi-arrow-right"
             viewBox="0 0 16 16"
           >
@@ -777,7 +777,7 @@ export default {
 
     <div class="workflow" id="workflow">
       <div class="workflowTitle">
-        <h2 class="workflowTitle2" style="margin-bottom: 0rem !important">
+        <h2 class="workflowTitle2" style="margin-bottom: 2rem !important">
           Creiamo un processo di ricerca e selezione che sia:
         </h2>
       </div>
@@ -787,7 +787,7 @@ export default {
             xmlns="http://www.w3.org/2000/svg"
             width="22"
             height="22"
-            fill="#010712"
+            fill="#1e213d"
             class="bi bi-chevron-left"
             viewBox="0 0 16 16"
           >
@@ -802,7 +802,7 @@ export default {
             xmlns="http://www.w3.org/2000/svg"
             width="22"
             height="22"
-            fill="#010712"
+            fill="#1e213d"
             class="bi bi-chevron-right"
             viewBox="0 0 16 16"
           >
@@ -861,7 +861,7 @@ export default {
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                fill="#010712"
+                fill="#1e213d"
                 class="bi bi-arrow-right"
                 viewBox="0 0 16 16"
               >
@@ -906,7 +906,7 @@ export default {
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                fill="#010712"
+                fill="#1e213d"
                 class="bi bi-arrow-right"
                 viewBox="0 0 16 16"
               >
@@ -955,7 +955,7 @@ export default {
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                fill="#010712"
+                fill="#1e213d"
                 class="bi bi-arrow-right"
                 viewBox="0 0 16 16"
               >
@@ -1003,7 +1003,7 @@ export default {
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                fill="#010712"
+                fill="#1e213d"
                 class="bi bi-arrow-right"
                 viewBox="0 0 16 16"
               >
@@ -1080,7 +1080,7 @@ export default {
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="22"
-              fill="#010712"
+              fill="#1e213d"
               class="bi bi-chevron-left"
               viewBox="0 0 16 16"
             >
@@ -1095,7 +1095,7 @@ export default {
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="22"
-              fill="#010712"
+              fill="#1e213d"
               class="bi bi-chevron-right"
               viewBox="0 0 16 16"
             >
@@ -1813,7 +1813,7 @@ export default {
   }
 
   .mainTitle .title h2 {
-    color: #010712;
+    color: #1e213d;
     font-size: 56px;
     font-weight: 800;
     width: 90%;
@@ -1833,12 +1833,12 @@ export default {
   .first .video {
     width: fit-content;
     height: fit-content;
-    background: #010712;
+    background: #1e213d;
     border-radius: 30px;
   }
 
   .gradientTitle {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1878,7 +1878,7 @@ export default {
 
   .clientsCoLink h2 {
     width: fit-content;
-    background: -webkit-linear-gradient(-70deg, #7346db 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1892,7 +1892,7 @@ export default {
   .clientsCoLink p {
     width: fit-content;
     margin-left: 6rem;
-    color: #010712;
+    color: #1e213d;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -1951,7 +1951,7 @@ export default {
   }
 
   .secondDiv .title h2 {
-    color: #010712;
+    color: #1e213d;
     font-size: 64px;
     font-weight: 800 !important;
     width: 87%;
@@ -1963,7 +1963,7 @@ export default {
   }
 
   .secondDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2007,7 +2007,7 @@ export default {
 
   .step {
     text-align: center;
-    background: #161b22;
+    background: #1e213d;
     border-radius: 30px;
     z-index: 14;
     margin-right: 2rem;
@@ -2076,7 +2076,7 @@ export default {
   }
 
   .thirdPartDiv {
-    background: #03111f;
+    background: #1e213d;
     border-radius: 30px;
     padding: 5rem;
   }
@@ -2174,7 +2174,7 @@ export default {
   }
 
   .feature .title {
-    color: #010712;
+    color: #1e213d;
     margin-left: 0 !important;
     font-size: 30px;
     line-height: 32px;
@@ -2225,7 +2225,7 @@ export default {
   }
 
   .workflow .workflowTitle2 {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2288,7 +2288,7 @@ export default {
   }
 
   .workflow .columns .column .background {
-    background: #161b22;
+    background: #1e213d;
     padding: 3rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -2324,7 +2324,7 @@ export default {
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     letter-spacing: -0.04em !important;
-    color: #010712;
+    color: #1e213d;
     font-size: 74px;
     font-weight: 800 !important;
     line-height: 78px;
@@ -2360,7 +2360,7 @@ export default {
 
   .workflowFlexTitle {
     margin-bottom: 0rem !important;
-    color: #010712 !important;
+    color: #1e213d !important;
     font-size: 64px !important;
     font-weight: 800 !important;
     text-align: center !important;
@@ -2497,12 +2497,12 @@ export default {
   }
 
   .step_workflow .show_more:hover {
-    color: #0045ad;
+    color: #ed3fb4;
   }
 
   .step_workflow .body {
     margin-top: 1rem;
-    color: #010712;
+    color: #1e213d;
     font-size: 14px;
     line-height: 14px;
     display: none;
@@ -2522,7 +2522,7 @@ export default {
     font-size: 22px;
     line-height: 24px;
     font-weight: 600;
-    color: #010712;
+    color: #1e213d;
     padding-top: 0.5rem;
     margin-left: 0.8rem;
   }
@@ -2684,8 +2684,8 @@ export default {
   .elemsx .elemdx_rectangle6 {
     width: 350px;
     height: 400px;
-    background: #010712;
-    border: 2px solid #010712;
+    background: #1e213d;
+    border: 2px solid #1e213d;
     border-radius: 30px;
     -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
@@ -2745,7 +2745,7 @@ export default {
   }
 
   .second .flow .elemsx h2 {
-    color: #010712;
+    color: #1e213d;
     font-size: 64px;
     line-height: 68px;
     font-weight: 800;
@@ -2778,7 +2778,7 @@ export default {
   }
 
   .elemH2 {
-    color: #010712;
+    color: #1e213d;
     font-size: 64px;
     line-height: 68px;
     font-weight: 800;
@@ -2801,7 +2801,7 @@ export default {
   }
 
   .elemH2_v2 {
-    color: #010712;
+    color: #1e213d;
   }
 
   .elemH2_v2 .elemH2_v2Span {
@@ -2842,7 +2842,7 @@ export default {
 
   .elemP_image span {
     margin-top: 15rem !important;
-    color: #010c18 !important;
+    color: #1e213d !important;
     font-size: 20px !important;
     width: 90% !important;
     line-height: 24px !important;
@@ -2906,7 +2906,7 @@ export default {
   .elemdx .elemdx_rectangle3 {
     width: 450px;
     height: 250px;
-    background: #010712;
+    background: #1e213d;
     border: 3px solid #324567;
     border-radius: 30px;
     -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
@@ -3175,7 +3175,7 @@ export default {
   }
 
   .second .flowSingle .flowSingleContent .flowSingleTitle {
-    color: #010712;
+    color: #1e213d;
     font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
@@ -3185,7 +3185,7 @@ export default {
   }
 
   .second .flowSingle .flowSingleContent .flowSingleTitle .flowSingleTitleSpan {
-    color: #010712;
+    color: #1e213d;
     font-size: 64px;
     line-height: 68px;
     letter-spacing: -0.04em !important;
@@ -3226,8 +3226,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
     font-weight: 600;
   }
 
@@ -3258,7 +3258,7 @@ export default {
   }
 
   .third .flowSingle .flowSingleContent .flowSingleTitle {
-    color: #010712;
+    color: #1e213d;
     font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
@@ -3268,7 +3268,7 @@ export default {
   }
 
   .third .flowSingle .flowSingleContent .flowSingleTitle .flowSingleTitleSpan {
-    color: #010712;
+    color: #1e213d;
     font-size: 64px;
     line-height: 68px;
     font-weight: 700;
@@ -3320,7 +3320,7 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     width: 100%;
-    background-color: #010c18;
+    background-color: #1e213d;
     padding-top: 8rem;
   }
 
@@ -3472,7 +3472,7 @@ export default {
   }
 
   .feedbackDiv h2 {
-    color: #010712;
+    color: #1e213d;
     font-size: 64px;
     font-weight: 800 !important;
     text-align: center;
@@ -3558,7 +3558,7 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback h3 {
-    color: #010712;
+    color: #1e213d;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
@@ -3567,7 +3567,7 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback .author {
-    color: #010712;
+    color: #1e213d;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 22px;
@@ -3605,7 +3605,7 @@ export default {
   }
 
   .fifthDiv .adviser {
-    background: #161b22;
+    background: #1e213d;
     border-radius: 30px;
     display: flex;
   }
@@ -3693,7 +3693,7 @@ export default {
   .elemsx .elemdx_rectangle6 {
     width: 350px;
     height: 400px;
-    background: #010712;
+    background: #1e213d;
     border: 3px solid #324567;
     border-radius: 30px;
     -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);

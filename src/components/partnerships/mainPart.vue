@@ -190,7 +190,7 @@ export default {
                     width: 40% !important;
                     margin-left: auto;
                     margin-right: auto;
-                    color: #fff !important;
+                    color: #627597 !important;
                   "
                 >
                   Jobify, la tua ricerca e selezione, la tua ricerca e
@@ -264,7 +264,7 @@ export default {
           style="position: absolute; top: 60%; z-index: 10"
         >
           <path
-            fill="#030812"
+            fill="#1e213d"
             fill-opacity="1"
             d="M0,64L40,58.7C80,53,160,43,240,48C320,53,400,75,480,96C560,117,640,139,720,144C800,149,880,139,960,117.3C1040,96,1120,64,1200,53.3C1280,43,1360,53,1400,58.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
           ></path>
@@ -424,8 +424,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
     font-weight: 600;
   }
 
@@ -434,16 +434,7 @@ export default {
   }
 
   .first {
-    padding-top: 3rem;
-    background: #ada996;
-    background: -webkit-linear-gradient(
-      to right,
-      #eaeaea,
-      #dbdbdb,
-      #f2f2f2,
-      #ada996
-    );
-    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad);
+    background: #fff;
   }
 
   .first .cols {
@@ -456,10 +447,12 @@ export default {
 
   .firstPart {
     text-align: center;
-    padding-top: 8rem;
+    padding-top: 11rem;
+    padding-bottom: 15rem;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background: #1e213d;
   }
 
   .firstPart .subtitle {
@@ -512,7 +505,7 @@ export default {
   }
   .cols .col p {
     text-transform: uppercase;
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -538,7 +531,7 @@ export default {
   }
 
   .cols .col h2 {
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 68px;
@@ -547,7 +540,7 @@ export default {
   }
 
   .cols .col h3 {
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;
@@ -567,7 +560,7 @@ export default {
   }
 
   .secondPart h2 {
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -589,7 +582,7 @@ export default {
   }
 
   .secondPart .text span {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -625,9 +618,8 @@ export default {
     padding-bottom: 10rem;
     padding-left: 8rem;
     padding-right: 8rem;
-    margin-top: 15rem;
     width: 100%;
-    background-color: #010c18;
+    background-color: #fff;
     padding-top: 10rem;
     background-image: url(/src/assets/glob.png);
     background-size: cover;
@@ -719,7 +711,7 @@ export default {
   }
 
   .thirdDiv .title h2 {
-    color: #fff;
+    color: #1e213d;
     font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
@@ -770,7 +762,7 @@ export default {
     -webkit-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
     -moz-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
     box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);*/
-    background: #ffffff2b;
+    background: #1e213d;
     -webkit-box-shadow: 0px 0px 133px 17px #005dff2b;
     -moz-box-shadow: 0px 0px 133px 17px #005dff2b;
     box-shadow: 0px 0px 133px 17px #005dff2b;
@@ -801,7 +793,7 @@ export default {
   .partnerImg3 {
     width: 45px;
     height: 45px;
-    background: #0107124a;
+    background: #1e213d4a;
     border-radius: 25rem;
     position: absolute;
     background: rgba(0, 140, 255, 0.17);
@@ -813,7 +805,7 @@ export default {
   .partnerImg5 {
     width: 45px;
     height: 45px;
-    background: #0107124a;
+    background: #1e213d4a;
     border-radius: 25rem;
     position: absolute;
     background: rgba(0, 255, 136, 0.17);

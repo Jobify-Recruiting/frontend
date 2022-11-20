@@ -65,15 +65,15 @@ export default {
           <div
             class="people2"
             style="
-              top: 90%;
-              left: 10%;
+              top: 80%;
+              left: 15%;
               background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
             "
           ></div>
           <div
             class="people2"
             style="
-              top: 10%;
+              top: 20%;
               left: 5%;
               background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
             "
@@ -90,7 +90,7 @@ export default {
           <div
             class="people1"
             style="
-              top: 5%;
+              top: 25%;
               right: 10%;
               background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
             "
@@ -98,8 +98,8 @@ export default {
           <div
             class="people2"
             style="
-              top: 45%;
-              right: 0%;
+                top: 41%;
+                right: 2%;
               background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
             "
           ></div>
@@ -114,12 +114,12 @@ export default {
           <div
             class="people1"
             style="
-              top: 100%;
-              right: 0%;
+              top: 60%;
+              right: 10%;
               background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
             "
           ></div>
-          <div class="subtitle">Lavora con noi</div>
+          <div class="subtitle">Lavoratori</div>
           <h2>Il team al centro di tutti i processi umani.</h2>
           <p>
             Increase developer velocity. Secure every step. Automate entire
@@ -148,14 +148,14 @@ export default {
             ></a>
           </div>-->
         </div>
-        <div class="values" style="margin-top: 20rem">
+        <div class="values">
           <div class="value1">
             <h2>Valori</h2>
             <span>Increase developer velocity.</span> Secure every step.
             Automate entire workflows. Redefine collaboration. Trusted by over
             83 million developers.
           </div>
-          <div class="value2" style="margin-top: 3rem">
+          <div class="value2">
             <h2>Valori</h2>
             Increase developer velocity. Secure every step. Automate entire
             workflows. Redefine collaboration.
@@ -337,8 +337,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
     font-weight: 600;
   }
 
@@ -369,13 +369,14 @@ export default {
   .values {
     display: flex;
     width: 100%;
-    margin-top: 10rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    margin-top: 5rem;
+    z-index: 2;
   }
 
   .values h2 {
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 48px;
     line-height: 52px;
@@ -421,35 +422,25 @@ export default {
   }
 
   .values span {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
+    color:#c554a0;
     font-weight: 500;
   }
 
   .first {
-    padding: 8rem;
-    padding-top: 3rem;
-    background: #ada996;
-    background: -webkit-linear-gradient(
-      to right,
-      #eaeaea,
-      #dbdbdb,
-      #f2f2f2,
-      #ada996
-    );
-    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad);
+    background: #fff;
   }
 
   .firstPart {
     text-align: center;
-    padding-top: 8rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 15rem;
+    padding-top: 15rem;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    background: #1e213d;
   }
 
   .firstPart .subtitle {
@@ -481,17 +472,16 @@ export default {
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.5rem;
-    color: #627597;
-    font-size: 20px;
     text-align: center;
-    line-height: 24px;
-    font-weight: 400;
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 200;
   }
 
   .first .cols {
     display: flex;
-    margin-top: 10rem;
-    margin-bottom: 3rem;
+    padding: 8rem;
   }
 
   .cols .col_1 {
@@ -509,7 +499,7 @@ export default {
 
   .cols .col p {
     text-transform: uppercase;
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -518,7 +508,7 @@ export default {
 
   .cols .col h4 {
     text-transform: uppercase;
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -535,7 +525,7 @@ export default {
   }
 
   .cols .col h2 {
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 68px;
@@ -544,7 +534,7 @@ export default {
   }
 
   .cols .col h3 {
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;
@@ -632,6 +622,7 @@ export default {
     margin-top: 5rem;
     display: flex;
     align-items: center;
+    padding: 8rem;
   }
 
   .secondPart .text {
@@ -639,7 +630,7 @@ export default {
   }
 
   .secondPart h2 {
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -668,6 +659,7 @@ export default {
     -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
     -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
     box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
+    z-index: 1;
   }
 
   .glow2 {
@@ -678,6 +670,7 @@ export default {
     -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
     -moz-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
     box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
+    z-index: 1;
   }
 
   .glow3 {
@@ -689,6 +682,7 @@ export default {
     -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
     -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
     box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
+    z-index: 1;
   }
 
   .glow4 {
@@ -700,6 +694,7 @@ export default {
     -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
     -moz-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
     box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
+    z-index: 1;
   }
 
   .glow5 {
@@ -711,6 +706,7 @@ export default {
     -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
     -moz-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
     box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.9);
+    z-index: 1;
   }
 }
 

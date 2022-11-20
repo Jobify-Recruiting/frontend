@@ -89,38 +89,41 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <div class="titlePage">News</div>
-        <div class="topContent">
-          <div class="img1"></div>
-          <div class="firstTitle">
-            <p>AGO 23, 2022</p>
-            <h2>
-              Talent Attraction e Talent Retention: le nuove tendenze
-              dell’employer branding
-            </h2>
-            <div class="subtitle">
-              Uno degli obiettivi che hanno in comune le aziende è quello di
-              entrare in contatto con persone di valore.
-            </div>
-            <router-link to="/article1">
-              <div class="btnRead">
-                Leggi di più &nbsp;&nbsp;<span
-                  ><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-short"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                    />
-                  </svg>
-                </span>
+        <div style="background: #1e213d; padding-top: 8rem;
+    padding-bottom: 2rem;">
+          <div class="titlePage">News</div>
+          <div class="topContent">
+            <div class="img1"></div>
+            <div class="firstTitle">
+              <p>AGO 23, 2022</p>
+              <h2>
+                Talent Attraction e Talent Retention: le nuove tendenze
+                dell’employer branding
+              </h2>
+              <div class="subtitle">
+                Uno degli obiettivi che hanno in comune le aziende è quello di
+                entrare in contatto con persone di valore.
               </div>
-            </router-link>
+              <router-link to="/article1">
+                <div class="btnRead">
+                  Leggi di più &nbsp;&nbsp;<span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      fill="currentColor"
+                      class="bi bi-arrow-right-short"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                      />
+                    </svg>
+                  </span>
+                </div>
+              </router-link>
+            </div>
           </div>
         </div>
         <div class="titlePage2">Recruitment</div>
@@ -224,16 +227,7 @@ export default {
   }
 
   .first {
-    padding-top: 5rem;
-    background: #ada996;
-    background: -webkit-linear-gradient(
-      to right,
-      #eaeaea,
-      #dbdbdb,
-      #f2f2f2,
-      #ada996
-    );
-    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad);
+    background: #fff;
   }
 
   .first .cols {
@@ -249,14 +243,13 @@ export default {
     color: #fff;
     font-weight: 800;
     margin-left: 11rem;
-    margin-top: 3rem;
     letter-spacing: -0.02em;
   }
 
   .titlePage2 {
     font-size: 34px;
     line-height: 38px;
-    color: #010712;
+    color: #1e213d;
     font-weight: 800;
     margin-left: 12.5rem;
     margin-top: 3rem;
@@ -360,7 +353,7 @@ export default {
     margin-left: 2rem;
     width: 40%;
     margin-right: 2rem;
-    color: #010712;
+    color: #1e213d;
   }
 
   .firstTitle p {
@@ -382,7 +375,7 @@ export default {
   }
 
   .firstTitle h2 {
-    color: #010712;
+    color: #1e213d;
     font-size: 46px;
     line-height: 50px;
     font-weight: 700;
@@ -437,7 +430,7 @@ export default {
     margin-right: 1.5rem;
     margin-left: 1.5rem;
     width: 29%;
-    background: #fff;
+    background: #f9f9f9;
     border-radius: 25px;
   }
 
@@ -548,14 +541,14 @@ export default {
   }
 
   .articlesButton:hover {
-    background: #fff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
   }
 
   .second {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background: #010712;
+    background: #1e213d;
   }
 
   ::-webkit-scrollbar {
@@ -585,7 +578,7 @@ export default {
   .featuredContent {
     height: 100%;
     width: 100%;
-    background-color: #010712;
+    background-color: #1e213d;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -714,7 +707,7 @@ export default {
   }
 
   .fifthDiv .adviser {
-    background: #161b22;
+    background: rgba(161, 161, 161, 0.1);
     border-radius: 30px;
     display: flex;
   }
@@ -819,8 +812,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
   }
 
   .btn span {

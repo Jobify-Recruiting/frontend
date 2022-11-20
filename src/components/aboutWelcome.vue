@@ -103,15 +103,7 @@ export default {
 
 @media (min-width: 1024px) {
   .first {
-    background: #ada996;
-    background: -webkit-linear-gradient(
-      to right,
-      #eaeaea,
-      #dbdbdb,
-      #f2f2f2,
-      #ada996
-    );
-    background: linear-gradient(to top, #ffffff, #dbdbdb, #bebebe, #96a0ad);
+    background: #1e213d;
   }
 
   #globeViz {
@@ -275,8 +267,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
     font-weight: 600;
   }
 
@@ -307,7 +299,7 @@ export default {
   }
 
   .btn2:hover {
-    background: #0062f5;
+    background: #ed3fb4;
     color: #fff;
     font-weight: 600;
   }
@@ -372,8 +364,8 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     background: #7474bf;
-    background: -webkit-linear-gradient(to right, #348ac7, #7474bf);
-    background: linear-gradient(to top, #ffffff, #ffffff00);
+    background: -webkit-linear-gradient(to right, #1e213d, #ffffff00);
+    background: linear-gradient(to top, #1e213d, #ffffff00);
     padding-top: 15rem;
   }
 }

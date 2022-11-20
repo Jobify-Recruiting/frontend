@@ -306,7 +306,7 @@ export default {
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
                 height="22"
-                fill="#fff"
+                fill="#1e213d"
                 class="bi bi-chevron-left"
                 viewBox="0 0 16 16"
               >
@@ -321,7 +321,7 @@ export default {
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
                 height="22"
-                fill="#fff"
+                fill="#1e213d"
                 class="bi bi-chevron-right"
                 viewBox="0 0 16 16"
               >
@@ -692,7 +692,7 @@ export default {
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
-                  fill="#fff"
+                  fill="#1e213d"
                   class="bi bi-chevron-left"
                   viewBox="0 0 16 16"
                 >
@@ -707,7 +707,7 @@ export default {
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
-                  fill="#fff"
+                  fill="#1e213d"
                   class="bi bi-chevron-right"
                   viewBox="0 0 16 16"
                 >
@@ -1716,8 +1716,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
     font-weight: 600;
   }
 
@@ -1725,9 +1725,8 @@ export default {
     padding-left: 0.4rem;
   }
 
-  .first {
-    padding-top: 3rem;
-    background: #010b15;
+  .first { 
+    background: #fff;
   }
 
   .first .cols {
@@ -1761,8 +1760,9 @@ export default {
     padding-left: 10rem;
     padding-right: 10rem;
     padding-bottom: 6rem;
-    padding-top: 6rem;
+    padding-top: 9rem;
     margin-right: 0;
+    background:#1e213d;
   }
 
   .firstPart .subtitle {
@@ -1796,7 +1796,7 @@ export default {
     font-size: 18px;
     text-align: left;
     line-height: 22px;
-    font-weight: 300;
+    font-weight: 200;
     margin-bottom: 2rem;
   }
 
@@ -1894,7 +1894,7 @@ export default {
   }
 
   .cols .col h2 {
-    color: #fff;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 68px;
@@ -1912,7 +1912,7 @@ export default {
   }
 
   .cols .col .subtitle {
-    color: #cccccc;
+    color: #627597;
     font-size: 18px;
     line-height: 22px;
   }
@@ -1923,7 +1923,7 @@ export default {
   }
 
   .secondPart h2 {
-    color: #010b15;
+    color: #1e213d;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -2104,7 +2104,7 @@ export default {
   }
 
   .workflow .columns .column .background {
-    background: #03111f;
+    background: #1e213d;
     padding: 3rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -2140,7 +2140,7 @@ export default {
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     letter-spacing: -0.04em !important;
-    color: #010712;
+    color: #1e213d;
     font-size: 74px;
     font-weight: 800 !important;
     line-height: 78px;
@@ -2157,10 +2157,10 @@ export default {
   }
 
   .workflow p {
-    color: #627597;
+    color: #cccccc;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400 !important;
+    font-weight: 300 !important;
   }
 
   .br .background {
@@ -2168,10 +2168,10 @@ export default {
   }
 
   .workflow p span {
-    color: #fff;
+    color: #c554a0;
     font-size: 16px;
     line-height: 20px;
-    font-weight: 400 !important;
+    font-weight: 600 !important;
   }
 
   .partners {
@@ -2251,7 +2251,7 @@ export default {
   }
 
   .clientsCo .titles h2 {
-    color: #fff;
+    color: #1e213d;
     font-size: 64px;
     font-weight: 800 !important;
     text-align: center;
@@ -2287,7 +2287,7 @@ export default {
   }
 
   .numbersDiv h2 {
-    color: #fff;
+    color: #1e213d;
     font-size: 56px;
     line-height: 56px;
     font-weight: 600;
@@ -2316,7 +2316,7 @@ export default {
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
-    background: #03111f;
+    background: #1e213d;
     border-radius: 30px;
     z-index: 14;
     margin-right: 2rem;
@@ -2467,7 +2467,7 @@ export default {
     padding-top: 3rem;
     padding-bottom: 3rem;
     text-align: center;
-    background: #03111f;
+    background: #1e213d;
     border-radius: 30px;
     z-index: 14;
     margin-right: 2rem;
@@ -2520,7 +2520,7 @@ export default {
   }
 
   .fifthDiv .adviser {
-    background: #03111f;
+    background: #1e213d;
     border-radius: 30px;
     display: flex;
   }
@@ -2570,7 +2570,7 @@ export default {
   }
 
   .feedbackDiv h2 {
-    color: #fff;
+    color: #1e213d;
     font-size: 64px;
     font-weight: 800 !important;
     text-align: center;
@@ -2630,7 +2630,7 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback {
-    background: #03111f;
+    background: #1e213d;
     border-radius: 30px;
     padding: 2rem;
     margin-right: 1rem;
@@ -2737,7 +2737,7 @@ export default {
 
   .thirdPartDiv .first p {
     width: 60%;
-    color: #fff;
+    color: #627597;
     font-size: 18px;
     line-height: 22px;
     font-weight: 300;
@@ -2764,7 +2764,7 @@ export default {
   .second .feature {
     margin-right: 2rem;
     width: 30%;
-    background: #03111f;
+    background: #1e213d;
     border-radius: 30px;
     padding: 3rem;
   }

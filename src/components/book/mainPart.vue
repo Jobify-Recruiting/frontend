@@ -244,31 +244,14 @@ export default {
         <div class="glow4"></div>
         <div class="glow5"></div>
         <div class="firstPart">
-          <div class="subtitle">Lavoratori</div>
-          <h2>Un nuovo modo per ricercare talenti</h2>
+          <div class="subtitle">Prenota appuntamento</div>
+          <h2>Prenota una call one-to-one con noi</h2>
           <p>Crediamo che ogni persona abbia un talento, basta scoprirlo.</p>
-          <div class="mainButton">
-            <router-link to="/openposition"
-              ><button class="btn">
-                Scopri di più
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-short"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                    />
-                  </svg>
-                </span></button
-            ></router-link>
+          <div class="image">
+            <!-- Calendly inline widget begin -->
+              <div class="calendly-inline-widget" data-url="https://calendly.com/loris-caputo" style="min-width:320px;height:630px;"></div>
+            <!-- Calendly inline widget end -->
           </div>
-          <div class="image"></div>
         </div>
 
         <!--<div class="fourthPart">
@@ -1093,7 +1076,6 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 10rem;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/avatartech.png);
     background-size: cover;
     background-position: center;
     background-size: 60%;
@@ -1679,7 +1661,6 @@ export default {
     width: 30vw;
     height: 35vw;
     margin-right: 2rem;
-    background-image: url(/src/assets/ph10.png);
     background-position: center;
     background-size: cover;
     border-radius: 20px;

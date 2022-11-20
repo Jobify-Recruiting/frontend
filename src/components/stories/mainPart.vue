@@ -99,7 +99,7 @@ export default {
                     xmlns="http://www.w3.org/2000/svg"
                     width="22"
                     height="22"
-                    fill="#010712"
+                    fill="#1e213d"
                     class="bi bi-chevron-left"
                     viewBox="0 0 16 16"
                   >
@@ -114,7 +114,7 @@ export default {
                     xmlns="http://www.w3.org/2000/svg"
                     width="22"
                     height="22"
-                    fill="#010712"
+                    fill="#1e213d"
                     class="bi bi-chevron-right"
                     viewBox="0 0 16 16"
                   >
@@ -184,7 +184,7 @@ export default {
                 >
               </div>
             </div>
-            <div class="col_image"></div>
+            <div class="col" data-v-1672ca76="" style="background-image: url(&quot;https://thingsss.s3.eu-central-1.amazonaws.com/storie.jpg&quot;); background-size: cover; border-radius: 30px;"></div>
           </div>
         </div>
       </div>
@@ -222,14 +222,8 @@ export default {
   .first {
     padding-top: 5rem;
     background: #ada996;
-    background: -webkit-linear-gradient(
-      to right,
-      #eaeaea,
-      #dbdbdb,
-      #f2f2f2,
-      #ada996
-    );
-    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad);
+    background: -webkit-linear-gradient(to top, #eaeaea, #ffffff, #ffffff47, #1e213d);
+    background: linear-gradient(to top, #eaeaea, #ffffff, #ffffff47, #1e213d);
   }
 
   .first .cols {
@@ -252,7 +246,7 @@ export default {
   .titlePage2 {
     font-size: 34px;
     line-height: 38px;
-    color: #010712;
+    color: #1e213d;
     font-weight: 800;
     margin-left: 12.5rem;
     margin-top: 3rem;
@@ -356,7 +350,7 @@ export default {
     margin-left: 2rem;
     width: 40%;
     margin-right: 2rem;
-    color: #010712;
+    color: #1e213d;
   }
 
   .firstTitle p {
@@ -378,7 +372,7 @@ export default {
   }
 
   .firstTitle h2 {
-    color: #010712;
+    color: #1e213d;
     font-size: 46px;
     line-height: 50px;
     font-weight: 700;
@@ -697,7 +691,7 @@ export default {
   }
 
   .fifthDiv .adviser {
-    background: #161b22;
+    background: rgba(161, 161, 161, 0.1);
     border-radius: 30px;
     display: flex;
   }
@@ -707,23 +701,22 @@ export default {
     padding: 6rem;
   }
   .fifthDiv .adviser .col h3 {
-    color: #fff;
-    width: 90%;
-    font-size: 44px;
-    line-height: 48px;
-    letter-spacing: -0.04em;
-    font-weight: 600;
+    font-size: 34px;
+    line-height: 38px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #1e213d;
   }
 
   .fifthDiv .adviser .col h3 span {
-    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-size: 44px;
-    line-height: 44px;
-    letter-spacing: -0.04em;
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: -1px;
     font-weight: 700;
   }
 
@@ -802,8 +795,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
   }
 
   .btn span {

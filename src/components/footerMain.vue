@@ -119,10 +119,10 @@ export default {
     width: 100%;
     background: linear-gradient(
       211deg,
-      #010712,
+      #1e213d,
       #071b38,
       rgb(1 10 20),
-      #010712
+      #1e213d
     );
     background-size: 300%;
     overflow: visible;
@@ -136,8 +136,8 @@ export default {
   }
 
   .footer .content {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
     display: flex;
@@ -211,8 +211,8 @@ export default {
   .footer .bottom {
     padding-bottom: 4rem;
     padding-top: 2rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
     display: flex;
     border-top: 2px solid #0a1e4375;
     font-size: 13px;
@@ -299,8 +299,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
     font-weight: 600;
   }
 
