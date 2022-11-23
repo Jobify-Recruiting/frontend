@@ -144,17 +144,17 @@ export default {
       <p>Sede principale</p>
     </div>
 
-    <div class="office" id="officeDubai" @click="openOffice2(office2)">
+    <!--<div class="office" id="officeDubai" @click="openOffice2(office2)">
       <div class="image2"></div>
       <h4>Dubai</h4>
       <p>Sede</p>
-    </div>
+    </div>-->
 
-    <div class="office" id="officeTrencin" @click="openOffice3(office3)">
+    <!--<div class="office" id="officeTrencin" @click="openOffice3(office3)">
       <div class="image3"></div>
       <h4>Trencin</h4>
       <p>Sede</p>
-    </div>
+    </div>-->
 
     <div class="bgTransparent bg1">
       <div class="closeMenu" @click="closePopup()">

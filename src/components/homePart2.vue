@@ -1700,8 +1700,7 @@ export default {
         <div class="first" style="margin-bottom: 5rem;">
           <div class="title">
             <div class="subtitle">
-              Milano &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; Dubai &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
-              Trencin
+              Milano
             </div>
             <h2><span>Resta in contatto con noi</span></h2>
             <p>

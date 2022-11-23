@@ -125,9 +125,9 @@ export default {
               />
             </svg>
           </div>-->
-          <router-link to="/book"
+          <a href="https://jobifyrecruiting.netlify.app/book"
             ><div class="link menuBtn">Prenota un appuntamento</div>
-          </router-link>
+        </a>
         </div>
       </div>
     </div>
