@@ -188,7 +188,7 @@ export default {
 
     <div class="mainTitle" id="second">
       <div class="content">
-        <div class="first">
+        <div class="first" style="width: 100% !important;">
           <div class="title">
             <h2>
               <span class="gradientTitle">Jobify Recruiting</span>, la tua
@@ -521,24 +521,7 @@ export default {
               <span>candidato</span>. Per fare questo, intervistiamo:
             </p>
           </div>
-          <div class="col2">
-            <div class="glow9"></div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="250"
-              height="250"
-              fill="#fff"
-              class="bi bi-building transition"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"
-              />
-              <path
-                d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"
-              />
-            </svg>
+          <div class="col2" >
           </div>
         </div>
       </div>
@@ -1714,7 +1697,7 @@ export default {
 
     <div class="fourthDiv" id="fourth">
       <div class="content">
-        <div class="first">
+        <div class="first" style="margin-bottom: 5rem;">
           <div class="title">
             <div class="subtitle">
               Milano &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp; Dubai &nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1748,11 +1731,7 @@ export default {
           </div>
         </div>
         <div class="contentImage">
-          <div class="square transition"></div>
-          <div class="square2 transition"></div>
-          <div class="square3 transition"></div>
-          <div class="square4 transition"></div>
-          <div class="rectangle transition"></div>
+          <div class="rectangle "></div>
         </div>
       </div>
     </div>
@@ -1810,6 +1789,7 @@ export default {
     display: flex;
     align-items: center;
     z-index: 5;
+    width: 50%;
   }
 
   .mainTitle .title h2 {
@@ -2079,13 +2059,13 @@ export default {
     background: #1e213d;
     border-radius: 30px;
     padding: 5rem;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 
   .thirdPartDiv .first {
     background: transparent;
     display: flex;
-    padding-left: 3rem;
-    padding-right: 3rem;
     position: relative;
   }
 
@@ -2096,7 +2076,7 @@ export default {
 
   .thirdPartDiv .first h2 {
     color: #fff;
-    width: 80%;
+    width: 100%;
     font-size: 54px;
     line-height: 58px;
     letter-spacing: -0.04em;
@@ -2110,7 +2090,7 @@ export default {
   }
 
   .thirdPartDiv .first p {
-    width: 60%;
+    width: 100%;
     color: #fff;
     font-size: 20px;
     line-height: 24px;
@@ -2118,12 +2098,19 @@ export default {
     margin-top: 3rem;
   }
 
-  .first .col2 .building2 {
-    position: absolute;
-    top: 0%;
-    left: -10%;
-    top: 20%;
-    transform: rotate(20deg);
+  .first .col1{
+    width: 50%;
+    margin-bottom: 5rem;
+  }
+
+  .first .col2  {
+    background-image: url(/src/assets/whyJobify.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 78%;
+    height: auto;
+    border-bottom-right-radius: 30px;
   }
 
   .thirdPartDiv .second {
@@ -3316,17 +3303,16 @@ export default {
   .fourthDiv {
     height: 100%;
     width: 100%;
-    padding-bottom: 8rem;
     padding-left: 8rem;
-    padding-right: 8rem;
     width: 100%;
     background-color: #1e213d;
     padding-top: 8rem;
   }
 
   .fourthDiv .content {
-    padding: 5rem;
-    padding-top: 10rem;
+    padding: 0;
+    padding-right: 0rem;
+    display: flex;
   }
 
   .fourthDiv .title .subtitle {
@@ -3342,7 +3328,7 @@ export default {
     color: #fff;
     font-size: 56px;
     font-weight: 800 !important;
-    width: 40%;
+    width: 60%;
     text-align: left;
     line-height: 56px;
     letter-spacing: -0.04em !important;
@@ -3362,7 +3348,7 @@ export default {
     margin-top: 0.5rem;
     color: #fff;
     font-size: 18px;
-    width: 40%;
+    width: 80%;
     text-align: left;
     line-height: 22px;
     font-weight: 200 !important;
@@ -3370,13 +3356,10 @@ export default {
   }
 
   .contentImage {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
+    width: 60%;
   }
 
-  .contentImage .square {
+  /*.contentImage .square {
     width: 350px;
     height: 470px;
     background: rgba(0, 119, 255, 0.17);
@@ -3430,18 +3413,18 @@ export default {
     position: absolute;
     top: 50%;
     right: 5%;
-  }
+  }*/
 
   .contentImage .rectangle {
-    width: 500px;
+    width: 100%;
     height: fit-content;
     background: transparent;
-    background-image: url(/src/assets/assistant.png);
-    background-size: cover;
+    background-image: url(/src/assets/contactus.png);
+    background-size: contain;
     background-position: center;
-    position: absolute;
-    top: 10%;
-    right: 5%;
+    top: 0%;
+    background-repeat: no-repeat;
+    right: 0%;
     padding: 15rem;
   }
 
