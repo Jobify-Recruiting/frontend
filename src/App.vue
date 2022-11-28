@@ -89,7 +89,7 @@ export default {
             ><div class="link">Chi siamo</div></router-link
           >
           <div class="link" @click="openWorkers()">
-            Lavoratori &nbsp;
+            Cerchi lavoro? &nbsp;
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="14"
@@ -136,10 +136,10 @@ export default {
   <div class="menuWorkersBG" @click="closeWorkers()">
     <div class="menuWorkers">
       <router-link to="/workers"
-            ><div class="link">Ricerca talenti</div></router-link
+            ><div class="link">Servizi offerti</div></router-link
           >
       <router-link to="/openposition"
-            ><div class="link">Posizioni aperte</div></router-link
+            ><div class="link">Offerte di lavoro</div></router-link
           >
     </div>
   </div>
@@ -256,11 +256,12 @@ export default {
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
   /*font-family: "planer", sans-serif;*/
-  font-family: "Heebo", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .calendly-badge-content{

@@ -589,30 +589,34 @@ export default {
           <div class="thirdPartDiv">
             <div class="first">
               <div class="col1">
-                <h2>Perchè scegliere Jobify Recruiting?</h2>
+                <h2>Qual è il problema?</h2>
                 <p>
-                  <span>Jobify Recruiting</span> utilizza tecnologie che
-                  assolvono l'uomo da tutte quelle azioni ripetute nel tempo che
-                  non richiedono intelletto umano. Questo
-                  <span>velocizza</span> il processo di ricerca, ci rende più
-                  competitivi sul mercato e lascia più tempo all'Head Hunter
-                  nella fase di ricerca e selezione.
+                  Le aziende hanno difficoltà a trovare i <span>giusti talenti</span>,
+                  avendo come primo e unico elemento di
+                  valutazione il CV (Hard & Soft Skills). Nasce sempre di più la necessità di valutare:
                 </p>
                 <p>
-                  L'obiettivo è quello di investire il tempo risparmiato ponendo
-                  il <span>rapporto umano</span> al centro tra
-                  <span>domanda e offerta</span>, per creare il
-                  <span>match “perfetto”</span> tra <span>azienda</span> e
-                  <span>candidato</span>. Per fare questo, intervistiamo:
+                  I <span>valori</span> e le <span>aspettative</span> del candidato
+                  da un punto di vista professionale;
                 </p>
                 <p>
                   L'azienda, approfondendo la cultura ed il clima aziendale,
                   l'organigramma ed il funzionigramma, e l'eventuale riporto
                   diretto della risorsa da inserire;
+                  La <span>cultura</span> ed i <span>valori aziendali.</span>
                 </p>
                 <p>
-                  Il candidato, approfondendo i suoi valori e le sue aspettative
-                  da un punto di vista professionale.
+                  Esistono ben <span>1074 società di R&S in Italia.</span>
+                  Poche, tuttavia, sono caratterizzate da un
+                  approccio consulenziale e dall’attenzione
+                  ad umanizzare il processo di selezione.
+                </p>
+                <p>
+                  Jobify Recruiting, invece, offre tutto in un’unica soluzione:<br>
+                  ❖ Umano<br>
+                ❖ Scientifico<br>
+                ❖ Trasparente<br>
+                ❖ Consulenziale<br>
                 </p>
               </div>
               <div class="col2">
@@ -1632,7 +1636,7 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -1671,7 +1675,7 @@ export default {
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
   /*font-family: "planer", sans-serif;*/
-  font-family: "Heebo", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 @media (min-width: 1024px) {

@@ -237,6 +237,41 @@ export default {
       </div>
     </div>
 
+    <div class="mainTitle" id="second">
+      <div class="content">
+        <div class="first" style="width: 100% !important;">
+          <div class="video transition">
+            <iframe
+              width="600"
+              height="350"
+              src="https://www.youtube.com/embed/-VmEWZsUIGY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="title" style="margin-left: 2rem;">
+            <h2>I punti di forza di 
+              <span class="gradientTitle"> Jobify Recruiting</span>
+            </h2>
+            <p>
+              Head Hunting <span style="color: #c554a0; font-weight: 500"
+                >consapevole.</span>
+            </p>
+            <p>Tutto in un’<span style="color: #c554a0; font-weight: 500"
+                >unica soluzione:</span></p>
+            <p>❖ Umano<br>
+                ❖ Scientifico<br>
+                ❖ Trasparente<br>
+                ❖ Consulenziale<br></p>
+                <p>Team di <span style="color: #c554a0; font-weight: 500"
+                >talento, giovane e dinamico.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="clientsCo">
       <div class="clientsCoBorder">
         <div class="clientsCoLink">
@@ -464,37 +499,25 @@ export default {
                   </div>
                 </div></router-link
               >
-
-              <router-link to="/">
-                <div class="feature transition" @click="call_btn()">
+                <div class="feature transition">
                   <div class="number">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      fill="#0062f5"
-                      class="bi bi-calendar-check"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"
-                      />
-                      <path
-                        d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
-                      />
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#0062f5" class="bi bi-patch-check" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M10.354 6.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                      <path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"/>
                     </svg>
                   </div>
-                  <div class="title">Servizio somministrazione di lavoro</div>
+                  <div class="title">Personale specializzato</div>
                   <div class="text">
-                    Get updates on the GitHub activity you've subscribed to. Use
-                    the notifications inbox to customize, triage, and manage
-                    your updates.
+                    Divisioni presenti in azienda:
                   </div>
-                  <div class="featureShowMore" @click="show_more('step1')">
-                    Fissa un appuntamento
+                  <div class="text">
+                    ❖ It<br>
+                ❖ Hr<br>
+                ❖ Farm<br>
+                ❖ Digital<br>
+                ❖ Finance<br>
                   </div>
-                </div></router-link
-              >
+                </div>
             </div>
           </div>
         </div>
@@ -518,7 +541,7 @@ export default {
               <span>rapporto umano</span> al centro tra
               <span>domanda e offerta</span>, per creare il
               <span>match “perfetto”</span> tra <span>azienda</span> e
-              <span>candidato</span>. Per fare questo, intervistiamo:
+              <span>candidato</span>. 
             </p>
           </div>
           <div class="col2" >
@@ -829,7 +852,7 @@ export default {
                   </svg>
                 </div>
               </div>
-              <h2>Efficienza</h2>
+              <h2>Efficace</h2>
               <p>
                 Analizza i bisogni dell’azienda e del candidato, con lo scopo di
                 ricercare la perfetta compatibilità tra la risorsa da assumere e
@@ -1051,6 +1074,31 @@ export default {
           </button>
         </div>
         <div class="col_image"></div>
+      </div>
+    </div>
+
+    <div class="thirdPart" id="whyJobify">
+      <div class="thirdPartDiv">
+        <div class="first">
+          <div class="col1">
+            <h2>Il metodo</h2>
+            <p>
+              Siamo una società di Head Hunting che utilizza un <span>metodo scientifico</span> con un <span>approccio consulenziale</span>:
+              tutto il processo viene monitorato da dati specifici che ci aiutano a prendere decisioni in maniera
+              consapevole, puntando sulla trasparenza di queste ultime al fine di lavorare in sinergia con l’azienda.
+            </p>
+            <p><span>Per fare questo, intervistiamo:</span></p>
+            <p>
+              L'azienda, approfondendo la cultura ed il clima aziendale, l'organigramma ed il funzionigramma,
+              e l'eventuale riporto diretto della risorsa da inserire;
+            </p>
+            <p>
+              Il candidato, approfondendo i suoi valori e le sue aspettative da un punto di vista professionale.
+            </p>
+          </div>
+          <div class="col2" >
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1747,7 +1795,7 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .transition {
   transform: translateY(150px);
@@ -1763,7 +1811,7 @@ export default {
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
   /*font-family: "planer", sans-serif;*/
-  font-family: "Heebo", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -2135,7 +2183,6 @@ export default {
     float: left;
     transition: all 0.3s ease-out;
     text-align: left;
-    cursor: pointer;
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 2rem;
@@ -2143,9 +2190,9 @@ export default {
     width: 25vw;
   }
 
-  .feature:hover {
+  /*.feature:hover {
     transform: scale(1.1);
-  }
+  }*/
 
   .feature .number {
     font-size: 36px;
@@ -3345,13 +3392,13 @@ export default {
 
   .fourthDiv .title p {
     margin-top: 0.5rem;
-    color: #fff;
-    font-size: 18px;
     width: 80%;
     text-align: left;
-    line-height: 22px;
-    font-weight: 200 !important;
     margin-bottom: 2rem;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 300;
   }
 
   .contentImage {

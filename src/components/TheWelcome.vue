@@ -75,6 +75,9 @@ export default {
 </script>
 
 <template>
+  <div class="logo_globe">
+    <img src="/src/assets/logo/white.png" />
+  </div>
   <div id="globeViz"></div>
   <div class="hover1"></div>
   <div class="glow"></div>
@@ -87,9 +90,9 @@ export default {
         <div class="innerIam">
           umana<br />
           rapida<br />
+          consulenziale<br />
           competitiva<br />
-          scientifica<br />
-          tecnologica
+          scientifica
         </div>
       </b>
     </div>
@@ -101,12 +104,6 @@ export default {
     <div class="" style="display: flex; align-items: center">
       <a href="#second"><button class="btn">Scopri di più</button></a>
     </div>
-    <!--<div class="" style="display: flex">
-      <a href="#first">
-        <span>Scopri di più <span>></span></span>
-        <div class="liquid"></div>
-      </a>
-    </div>-->
     <div class="datas">
       <div class="item">
         <p style="color: white; font-size: 22px; line-height: 18px" id="value">
@@ -140,12 +137,12 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
   /* font-family: "planer", sans-serif;*/
-  font-family: "Heebo", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 @media (max-width: 1023px) {
@@ -156,6 +153,17 @@ export default {
     position: fixed;
     left: 20%;
     cursor: pointer;
+  }
+
+  .logo_globe{
+    position: fixed;
+    z-index: 5;
+    right: 14%;
+    top: 37%;
+  }
+
+  .logo_globe img{
+    width: 30vw;
   }
 
   .hover1 {

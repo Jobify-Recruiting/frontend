@@ -333,7 +333,7 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .transition {
   transform: translateY(150px);
@@ -359,7 +359,7 @@ export default {
 * {
   /*font-family: "Alliance No.1", sans-serif;*/
   /*font-family: "planer", sans-serif;*/
-  font-family: "Heebo", sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 @media (min-width: 1024px) {
