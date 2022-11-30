@@ -180,7 +180,7 @@ export default {
         <div class="glow4"></div>
         <div class="glow5"></div>
         <div class="firstPart">
-          <div class="subtitle">Companies</div>
+          <div class="subtitle">Aziende</div>
           <h2>Creiamo il match perfetto tra azienda e candidato.</h2>
           <p>
             Jobify Recruiting utilizza <span>tecnologie</span> che assolvono
@@ -1962,7 +1962,7 @@ export default {
   }
   .cols .col p {
     text-transform: uppercase;
-    color: #fff;
+    color: #1e213d;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
