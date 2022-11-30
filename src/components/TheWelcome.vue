@@ -75,9 +75,6 @@ export default {
 </script>
 
 <template>
-  <div class="logo_globe">
-    <img src="/src/assets/logo/white.png" />
-  </div>
   <div id="globeViz"></div>
   <div class="hover1"></div>
   <div class="glow"></div>
@@ -154,18 +151,6 @@ export default {
     left: 20%;
     cursor: pointer;
   }
-
-  .logo_globe{
-    position: fixed;
-    z-index: 5;
-    right: 14%;
-    top: 37%;
-  }
-
-  .logo_globe img{
-    width: 30vw;
-  }
-
   .hover1 {
     position: absolute;
     height: 100%;

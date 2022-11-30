@@ -240,16 +240,8 @@ export default {
     <div class="mainTitle" id="second">
       <div class="content">
         <div class="first" style="width: 100% !important;">
-          <div class="video transition">
-            <iframe
-              width="600"
-              height="350"
-              src="https://www.youtube.com/embed/-VmEWZsUIGY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+          <div class="imageContent">
+            
           </div>
           <div class="title" style="margin-left: 2rem;">
             <h2>I punti di forza di 
@@ -339,14 +331,14 @@ export default {
               />
             </div>
 
-            <div class="logoClient">
-              <img
+            <div class="logoClient" >
+              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/10/logo.png"
               />
             </div>
 
             <div class="logoClient">
-              <img
+              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-2.png"
               />
             </div>
@@ -364,7 +356,7 @@ export default {
             </div>
 
             <div class="logoClient">
-              <img
+              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo20white.png"
               />
             </div>
@@ -388,13 +380,13 @@ export default {
             </div>
 
             <div class="logoClient">
-              <img
+              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/04/AG_LOGO_CLAIM_BIANCO-1.png"
               />
             </div>
 
             <div class="logoClient">
-              <img
+              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/04/PentaFinanziamentiItalia.png"
               />
             </div>
@@ -432,7 +424,8 @@ export default {
               <img src="https://www.autosystemspa.it/img/logo-autosystem.png" />
             </div>
             <div class="logoClient">
-              <img src="http://www.casconehome.com/img/logo-cascone-home.png" />
+              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;" 
+                    src="http://www.casconehome.com/img/logo-cascone-home.png" />
             </div>
             <div class="logoClient">
               <img
@@ -440,7 +433,7 @@ export default {
               />
             </div>
             <div class="logoClient">
-              <img
+              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxOTAuMiA1My4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOTAuMiA1My4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+Cjx0aXRsZT5Bc3NldCA1PC90aXRsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI1LjYsNDAuOGMtMywwLjEtNi0wLjgtOC41LTIuNWMtMi4xLTEuNS0zLjQtMy45LTMuNi02LjVoNy42YzAuMSwxLDAuNiwyLDEuNSwyLjZjMC45LDAuNiwyLDAuOSwzLjEsMC45CgljMi4zLDAsMy41LTAuNywzLjUtMi4xYzAtMC42LTAuMy0xLjItMC44LTEuNmMtMC44LTAuNS0xLjctMC44LTIuNi0xbC01LTEuM2MtMi0wLjQtMy44LTEuNS01LjEtMy4xYy0xLjEtMS41LTEuNy0zLjMtMS43LTUuMgoJYzAtMi4zLDEtNC40LDIuOS01LjdjMi4zLTEuNiw1LTIuMyw3LjgtMi4yYzIuNy0wLjEsNS4zLDAuNyw3LjUsMi4zYzIsMS41LDMuMiwzLjcsMy4zLDYuMWgtNy40Yy0wLjMtMS44LTEuNS0yLjctMy41LTIuNwoJYy0wLjgsMC0xLjYsMC4xLTIuMywwLjVjLTAuNSwwLjMtMC45LDAuOS0wLjksMS41YzAsMS4yLDEsMiwzLDIuNWw0LjcsMS4zYzIuMSwwLjQsNC4xLDEuNCw1LjYsM2MxLjIsMS41LDEuOCwzLjMsMS44LDUuMwoJYzAsMi40LTEuMSw0LjYtMy4xLDUuOUMzMS4yLDQwLjEsMjguNCw0MC45LDI1LjYsNDAuOCIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDguNyw1MS4zaC03LjNWMTMuNmg3LjN2M2MwLjgtMS4xLDEuOS0xLjksMy4xLTIuNWMxLjQtMC43LDMtMS4xLDQuNi0xLjFjMy40LDAsNi43LDEuNSw4LjksNC4xCgljMi40LDIuNywzLjcsNi4yLDMuNyw5LjhjMC4xLDMuNi0xLjIsNy4xLTMuNiw5LjhjLTIuMiwyLjYtNS41LDQuMS04LjksNC4xYy0xLjYsMC0zLjItMC4zLTQuNi0xLjFjLTEuMi0wLjYtMi4zLTEuNC0zLjEtMi41CglMNDguNyw1MS4zTDQ4LjcsNTEuM3ogTTUwLDMyLjFjMi43LDIuNyw3LDIuNyw5LjcsMGMwLDAsMCwwLDAsMGMxLjMtMS40LDEuOS0zLjMsMS44LTUuMmMwLjEtMS45LTAuNi0zLjgtMS44LTUuMgoJYy0yLjctMi43LTcuMS0yLjctOS43LDBjMCwwLDAsMCwwLDBjLTEuMywxLjQtMS45LDMuMy0xLjgsNS4yQzQ4LjEsMjguOCw0OC43LDMwLjcsNTAsMzIuMSIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNODcuNSw0MC4yVjEzLjZoNy4zdjNjMS42LTIuNCw0LjItMy42LDcuNi0zLjZjMi45LTAuMiw1LjYsMSw3LjYsMy4xYzEuOSwyLjQsMi45LDUuNCwyLjcsOC40djE1LjZoLTcuM1YyNS44CgljMC4xLTEuNi0wLjMtMy4yLTEuMi00LjVjLTAuOC0xLjEtMi4xLTEuNy0zLjUtMS42Yy0xLjctMC4xLTMuMiwwLjctNC4zLDEuOWMtMS4yLDEuNi0xLjgsMy42LTEuNiw1LjZ2MTNIODcuNXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEyOC42LDQwLjhjLTIuOCwwLjItNS42LTEtNy40LTMuMmMtMS45LTIuNS0yLjgtNS41LTIuNi04LjZWMTMuNmg3LjN2MTQuMmMwLDQuMiwxLjUsNi4zLDQuNSw2LjMKCWMxLjYsMC4xLDMuMS0wLjcsNC0xLjljMS4xLTEuNywxLjYtMy43LDEuNS01LjZ2LTEzaDcuM3YyNi42aC03LjN2LTNDMTM0LjMsMzkuNiwxMzEuNSw0MSwxMjguNiw0MC44Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNTcsNTEuM2gtNy4zVjEzLjZoNy4zdjNjMC44LTEuMSwxLjktMS45LDMuMS0yLjVjMS40LTAuNywzLTEuMSw0LjYtMS4xYzMuNCwwLDYuNywxLjUsOC45LDQuMQoJYzIuNCwyLjcsMy43LDYuMiwzLjYsOS44YzAuMSwzLjYtMS4yLDcuMS0zLjYsOS44Yy0yLjIsMi42LTUuNSw0LjEtOC45LDQuMWMtMS42LDAtMy4yLTAuMy00LjYtMS4xYy0xLjItMC42LTIuMy0xLjQtMy4xLTIuNVY1MS4zegoJIE0xNTguMiwzMi4xYzIuNywyLjcsNywyLjcsOS43LDBjMCwwLDAsMCwwLDBjMS4zLTEuNCwxLjktMy4zLDEuOC01LjJjMC4xLTEuOS0wLjYtMy44LTEuOC01LjJjLTIuNy0yLjctNy4xLTIuNy05LjcsMGMwLDAsMCwwLDAsMAoJYy0xLjMsMS40LTEuOSwzLjMtMS44LDUuMkMxNTYuMywyOC44LDE1NywzMC43LDE1OC4yLDMyLjEiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI3My44LDQwLjIgODEuMSw0MC4yIDgxLjEsMjkuMyA3My44LDI5LjMgNzMuOCw0MC4yICIvPgo8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjgxLjEsMTMuNiA3My44LDEzLjYgNzMuOCwyNC41IDgxLjEsMjQuNSA4MS4xLDEzLjYgIi8+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMCw1My4yIDAsMCAxMS44LDAgMTEuOCw1LjcgNy4zLDUuNyA3LjMsNDcuNSAxMS44LDQ3LjUgMTEuOCw1My4yIDAsNTMuMiAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxOTAuMiwwIDE5MC4yLDUzLjIgMTc4LjQsNTMuMiAxNzguNCw0Ny41IDE4Mi45LDQ3LjUgMTgyLjksNS43IDE3OC40LDUuNyAxNzguNCwwIDE5MC4yLDAgIi8+Cjwvc3ZnPgo="
               />
             </div>
@@ -2234,6 +2227,16 @@ export default {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     margin-top: 2rem;
+  }
+
+  .imageContent{
+    width: 60vw;
+    height: 25vw;
+    margin-right: 2rem;
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/candidato.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
   }
 
   .imageStep {

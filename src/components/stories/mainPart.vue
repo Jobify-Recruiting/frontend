@@ -3,7 +3,52 @@ export default {
   name: "mainPart",
   components: {},
   data() {
-    return {};
+    return {
+      storie: [
+                {
+                  nickname: "Mattia Musumeci",
+                  ruolo: "Sviluppatore PHP",
+                  azienda: "CONTAQ",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "L’approccio umano è stato una componente fondamentale di tutto il processo. E’ stato molto importante per me il supporto, non solo dal punto di vista tecnico, durante tutta la durata della selezione. Ogni mia domanda o richiesta è stata accolta mettendo sempre in primo piano le mie necessità senza avere alcuna forzatura o costrizione di alcun tipo. Del servizio offerto mi hanno colpito la serietà, l’empatia e la cura del cliente. Molte aziende spesso trattano le risorse che cercano come numeri mentre qui ho notato un approccio completamente diverso e di totale cura della persona. Non sono mai stato lasciato solo ed ho sempre ricevuto l’appoggio di Chiara (la ragazza che ha curato il tutto) e questo è stato di grande aiuto per me. Per ultimo ma ovviamente non meno importante, la possibilità di ricevere un’offerta molto più alta della mia attuale RAL grazie all’intermediazione di Chiara, nel mio caso ho ricevuto un’offerta superiore di 10k alla mia attuale retribuzione",
+                },
+                {
+                  nickname: "Stefano Binucci",
+                  ruolo: "Consulente Commerciale in P.Iva",
+                  azienda: "STUDIO FELLI",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito a mio agio nel potermi presentare in un clima sereno, dove sentirmi veramente ascoltato. Mi sono sentito seguito e sostenuto dall’inizio dell’iter di selezione, dal primo contatto telefonico, sino alle fasi successive, dove ho avuto un contatto e aggiornamento costante avendo un professionista a cui fare sempre riferimento .  Ho apprezzato la tempestività delle comunicazioni e il clima distensivo creato in mio favore per arrivare sereno e preparato sull’azienda al colloquio finale.",
+                },
+                {
+                  nickname: "Valeria Peluso",
+                  ruolo: "Segretaria Commerciale",
+                  azienda: "STRAGROUP ",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia candidatura. In qualità di candidata sono stata scrupolosamente seguita in tutte le fasi del processo di selezione dall' Head Hunter Martina Di Palma che ha ascoltato le mie aspettative lavorative, professionali e personali, incrociandole con le esigenze dell'azienda. Doppio ringraziamento per lo svolgimento della selezione interamente da remoto, che ha azzerato completamente i costi economici e temporali. Che dire finalmente un'agenzia di recruiting al passo con i tempi e soprattutto attenta al capitale umano!",
+                },
+                {
+                  nickname: "Gavina Fadda",
+                  ruolo: "Car Rental Agent (BS)",
+                  azienda: "AUTOSYSTEM",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "Rispetto alle agenzie di recruiting sono spesso stata molto diffidente, mi sono ricreduta durante la mia esperienza con Jobify Recruiting. Questo soprattutto grazie alla professionalità di Martina che ha gestito il processo di selezione con un approccio umano, oltre che professionale e con molta chiarezza in tutti gli step. Quindi chiarezza e professionalità contraddistinguono la Jobify Recruiting. ",
+                },
+                {
+                  nickname: "Giulia Miccoli",
+                  ruolo: "Inside Sales",
+                  azienda: "DOTSTAY ",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "L'esperienza vissuta con Jobify è stata molto positiva, l'azienda è stata un tramite perfetto tra me e il mio attuale datore di lavoro. Hanno seguito con molta attenzione tutta la fase di assunzione: dalla prima telefonata orientativa fino alla firma del contratto, tutto sempre con estrema umanità e professionalità",
+                },
+                {
+                  nickname: "Marco G.",
+                  ruolo: "Addetto alle vendite (Malta)",
+                  azienda: "CASCONE HOME ",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio targhetizzato, chiaro e per nulla impersonale. Le mie precedenti esperienze con le apl non sono state positive, in quanto non avevo questo costante rapporto di condivisione e aggiornamento con la parte hr. Ho riscontrato in jobify l’attenzione nel mettere il candidato al centro del processo di r&s , dove essere considerato una persona con le proprie ambizioni e talento da far incrociare perfettamente con le richieste dell’azienda. La chiarezza a partire dall’annuncio, sino all’orientamento verso il colloquio finale con l’azienda mi ha fatto sentire sicuro e seguito.",
+                },
+              ],
+    };
   },
   mounted() {
     let recaptchaScript = document.createElement("script");
@@ -82,6 +127,31 @@ export default {
       const itemWidth = content.querySelector(".featured").clientWidth;
       content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
     },
+
+    story(x){
+      let content = document.querySelector(".story");
+      content.style.display = "inline";
+
+      var nickname = document.getElementById("nickname");
+      nickname.textContent = this.storie[x-1].nickname;
+
+      var azienda = document.getElementById("azienda");
+      azienda.textContent = this.storie[x-1].azienda;
+
+      var data = document.getElementById("data");
+      data.textContent = this.storie[x-1].data;
+
+      var ruolo = document.getElementById("ruolo");
+      ruolo.textContent = this.storie[x-1].ruolo;
+
+      var storia_testo = document.getElementById("storia_testo");
+      storia_testo.textContent = this.storie[x-1].storia_testo;
+    },
+
+    close_story(x){
+      let close_story = document.getElementById(x);
+      close_story.style.display = "none";
+    }
   },
 };
 </script>
@@ -127,45 +197,77 @@ export default {
               </div>
             </div>
             <div class="featuredContent">
-              <div class="featured">
+              <div class="featured" @click="story(1)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>April 22, 2022</p>
+                  <p>Dicembre 1, 2022</p>
                   <h2>
-                    Conserving mangroves to protect local livelihoods and the
-                    planet
+                    L’approccio umano è stato una componente fondamentale di tutto il processo...
                   </h2>
                 </div>
               </div>
-              <div class="featured">
+              <div class="featured" @click="story(2)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>April 22, 2022</p>
+                  <p>Dicembre 1, 2022</p>
                   <h2>
-                    Conserving mangroves to protect local livelihoods and the
-                    planet
+                    Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito...
                   </h2>
                 </div>
               </div>
-              <div class="featured">
+              <div class="featured" @click="story(3)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>April 22, 2022</p>
+                  <p>Dicembre 1, 2022</p>
                   <h2>
-                    Conserving mangroves to protect local livelihoods and the
-                    planet
+                    Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia...
                   </h2>
                 </div>
               </div>
-              <div class="featured">
+              <div class="featured" @click="story(4)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>April 22, 2022</p>
+                  <p>Dicembre 1, 2022</p>
                   <h2>
-                    Conserving mangroves to protect local livelihoods and the
-                    planet
+                    Rispetto alle agenzie di recruiting sono spesso stata molto diffidente...
                   </h2>
                 </div>
+              </div>
+              <div class="featured" @click="story(5)">
+                <div class="hover"></div>
+                <div class="text">
+                  <p>Dicembre 1, 2022</p>
+                  <h2>
+                    L'esperienza vissuta con Jobify è stata molto positiva...
+                  </h2>
+                </div>
+              </div>
+              <div class="featured" @click="story(6)">
+                <div class="hover"></div>
+                <div class="text">
+                  <p>Dicembre 1, 2022</p>
+                  <h2>
+                    Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="story" id="1">
+              <div class="content">
+                <div class="close_story" @click="close_story(1)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                height="22"
+                                fill="#1e213d" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
+                </div>
+                <div class="nickname" id="nickname"></div>
+                <div style="display: flex; align-items: center; width: 100%; text-align: center;">
+                  <div class="ruolo" id="ruolo"></div> 
+                  <div class="azienda" id="azienda"></div> 
+                  <div class="data" id="data"></div>
+                </div>
+                <div class="storia_testo" id="storia_testo"></div>
               </div>
             </div>
           </div>
@@ -215,9 +317,6 @@ export default {
 }
 
 @media (min-width: 1024px) {
-  .flowSingleBtn {
-    margin-top: 15rem;
-  }
 
   .first {
     padding-top: 5rem;
@@ -396,142 +495,77 @@ export default {
     margin-bottom: 5rem;
   }
 
-  .articles {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0rem;
-  }
-
-  .articles2 .article {
-    float: left;
-    margin-top: 3rem;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    width: 45% !important;
-    background: #fff;
-    border-radius: 25px;
-  }
-
-  .articles .article {
-    float: left;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    width: 29%;
-    background: #fff;
-    border-radius: 25px;
-  }
-
-  .articles .article .image {
-    background-image: url("/src/assets/ph15.jpg");
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    height: 15vw;
-    background-position: center;
-    background-size: cover;
-    padding: 2rem;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-  }
-
-  .articles .article .image:hover {
-    transform: scale(1.02);
-  }
-
-  .article .image .hover {
+  .story{
+    display: none;
+    position: fixed;
+    top: 0;
+    background: #0000008a;
     width: 100%;
     height: 100%;
-    background: #00000093; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to bottom,
-      #00000093,
-      transparent
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to bottom,
-      #00000093,
-      transparent
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 25px;
+    z-index: 15;
   }
 
-  .article .image .date {
-    font-weight: 700;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 1);
-    line-height: 1.33333;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    margin-left: auto;
+  .story .content{
+    display: inline;
+    position: fixed;
+    top: 15%;
+    background: white;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-top: 7rem;
+  }
+
+  .story .content .close_story{
+    cursor: pointer;
     width: fit-content;
+    margin-left: auto;
   }
 
-  .article .title {
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
-    margin-top: 0.5rem;
+  .story .content .nickname{
+    width: 100%;
+    text-align: center;
     font-weight: 600;
-    color: #000;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  .article .desctitle {
-    font-size: 14px;
-    line-height: 20px;
-    margin-top: 1.5rem;
-    color: #6e6e73;
-    font-weight: 600;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    text-transform: uppercase;
-  }
-
-  .article .subtitle {
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 1rem;
-    color: rgb(51, 51, 51);
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-    padding-bottom: 2rem;
-  }
-
-  .articlesButton {
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-    background: #0062f5;
-    color: #fff;
+    font-size: 18px;
     line-height: 18px;
+  }
+
+  .story .content .azienda{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 0.5rem;
+  }
+  .story .content .data{
+    font-weight: 300;
     font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    border-radius: 16px;
-    width: fit-content;
-    transition: 0.5s all;
-    margin-top: 6rem;
-    margin-left: auto;
+    line-height: 14px;
+    margin-top: 0.5rem;
+    color: #273350;
     margin-right: auto;
+    width: fit-content;
+    margin-left: 1rem;
   }
 
-  .articlesButton span {
-    margin-left: 0.4rem;
+  .story .content .ruolo{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 0.5rem;
+    color: #273350;
+    margin-right: 1rem;
+    margin-left: auto;
+    width: fit-content;
   }
 
-  .articlesButton:hover {
-    background: #fff;
-    color: #0062f5;
+  .story .content .storia_testo{
+    padding-left: 20rem;
+    padding-right: 20rem;
+    margin-top: 3rem;
+    overflow-y: scroll;
+    height: 65%;
   }
 
   .second {
