@@ -1152,6 +1152,96 @@ export default {
             </div>
           </div>
           <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Consiglierei jobify recruiting per la perseveranza, bravura, con cui sono stato seguito nell’aggiornamento costante della ricerca affidatagli. Soprattuto con la mia referente elisa con cui si e’ istaurato da subito un rapporto di affinita’, empatia e accoglienza nel capire le mie esigenze di trovare una risorsa valida da far crescere nella mia realta’ professionale. Se dovessi effettuare nuove ricerche di personale mi rivolgerei di nuovo a jobify che ha saputo consigliarmi e orientarmi nella scelta del miglior candidato, e tutto questo svolto dall’italia , visto la mia attivita’ si trova a malta. Sono molto contento di come abbiano lavorato con attenzione e costanza per la mia azienda.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Simone Cascone</p>
+                    <p class="worktitle">SAddetto alle vendite (Malta) presso CASCONE HOME</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Sono mesi che ormai collaboro strettamente con JOBIFY e devo dire che sono pienamente soddisfatto del servizio di recruiting per la mia azienda. Ci tengo a sottolineare la massima disponibilità fornita nell’ascoltare al meglio le mie esigenze per la ricerca dei candidati adatti. In particolare, ho apprezzato molto poter avere un contatto diretto ed un supporto costante nella delicata fase di assunzione di nuovo personale. Questo per me è motivo di grande fiducia nei confronti dell’azienda, che si è sempre dimostrata eccellente sia a livello umano che professionale, affiancandomi pienamente nel processo di selezione di nuovo personale.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Alessandro Adamo</p>
+                    <p class="worktitle">Inside Sales (generale) presso DOTSTAY</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Il feedback sulla collaborazione con Jobify Recruiting non può essere che positivo. Siamo stati veloci a trovare, valutare ed assumere la risorsa come anche in altri processi di R&S portati avanti insieme. Non c’è nulla da appuntare e ringrazio l'Head Hunter di riferimento per il supporto e la presenza: Martina ha capito al volo di cosa avevamo bisogno ed i suoi commenti sui candidati in short list sono stati preziosi.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Ivan Rallo</p>
+                    <p class="worktitle">Car Rental Agent (BS) presso AUTOSYSTEM</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Consiglio Jobify per il loro approccio di profonda umanità e professionalità verso le esigenze dei loro clienti, per la loro capacità di ascoltare e orientare le esigenze aziendali verso il candidato migliore, in maniera chiara e puntuale. Ho apprezzato gli aggiornamenti costanti sulla posizione affidatagli, la capacità di saper cogliere sfumature, offrire riflessioni nel momento dell’intervista conoscitiva con noi aziende, in cui si crea subito un clima di reciproca fiducia. Quest’ultima non è stata un mero raccogliere dati, ma un capire davvero le mie esigenze , offrendo al tempo stesso una consulenza di valore , da cui traspare la grande competenza nel settore della ricerca e selezione e la passione, di Jobify , per il loro impegno professionale che diviene una vera e propria missione, per far incontrare aziende e candidati , in un clima sereno , dove generare una reciproca opportunità.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Roberto Felli</p>
+                    <p class="worktitle">Consulente Commerciale P.IVA presso STUDIO FELLI</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Innanzitutto ci ha stupite l'intervista di approfondimento con attenzione non solo alle esigenze tecniche della figura richiesta ma anche e soprattutto umane, con domande mirate e approfondite, per riuscire a trovare una figura compatibile a 360 gardi. Un approccio che non ci aspettavamo. Apprezzata non solo la disponibilità e l'aggiornamento costante ma anche la professionalità che portava alla condivisione di candidati mirati, con un'attenzione alla qualità piuttosto che alla quantità, che riduce la perdita di tempo. Interpretazione dei nostri desideri con consapevolezza del e sul mercato.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Pamela Solitario</p>
+                    <p class="worktitle">Sviluppatore PHP presso CONTAQ</p>
+                  </div>
+                </div>
+              </div>
+          <div class="feedback">
             <p class="quote">"</p>
             <h3>
               Con Davide portiamo avanti da tempo diverse iniziative in ambito
