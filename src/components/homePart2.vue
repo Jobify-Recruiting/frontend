@@ -1178,12 +1178,12 @@ export default {
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/adamo.jpeg);
                     "
                   ></div>
                   <div class="feddbackData">
                     <p class="author">Alessandro Adamo</p>
-                    <p class="worktitle">Inside Sales (generale) presso DOTSTAY</p>
+                    <p class="worktitle">CEO & Founder presso Dotstay.com</p>
                   </div>
                 </div>
               </div>
@@ -1201,7 +1201,7 @@ export default {
                   ></div>
                   <div class="feddbackData">
                     <p class="author">Ivan Rallo</p>
-                    <p class="worktitle">Car Rental Agent (BS) presso AUTOSYSTEM</p>
+                    <p class="worktitle">Operations Manager presso AUTOSYSTEM Società di servizi S.p.a.</p>
                   </div>
                 </div>
               </div>
@@ -1214,12 +1214,12 @@ export default {
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/roberto.jpg);
                     "
                   ></div>
                   <div class="feddbackData">
                     <p class="author">Roberto Felli</p>
-                    <p class="worktitle">Consulente Commerciale P.IVA presso STUDIO FELLI</p>
+                    <p class="worktitle">Titolare presso Studio Felli</p>
                   </div>
                 </div>
               </div>
@@ -1232,12 +1232,12 @@ export default {
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pamela.jpeg);
                     "
                   ></div>
                   <div class="feddbackData">
                     <p class="author">Pamela Solitario</p>
-                    <p class="worktitle">Sviluppatore PHP presso CONTAQ</p>
+                    <p class="worktitle">HR Manager presso Quality Lab Srl (ContaQ)</p>
                   </div>
                 </div>
               </div>

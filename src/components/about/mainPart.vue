@@ -162,9 +162,6 @@ export default {
           <div class="person2">
             <div
               class="photo"
-              style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-              "
             ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
@@ -173,21 +170,11 @@ export default {
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/marcofattizzo.jpeg);
               "
             ></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
-          </div>
-          <div class="person2">
-            <div
-              class="photo"
-              style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-              "
-            ></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
+            <div class="name">Marco Fattizzo</div>
+            <div class="jobtitle">Responsabile Pubbliche Relazioni & Co-Founder</div>
           </div>
         </div>
 
@@ -198,66 +185,48 @@ export default {
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/martinadipalma.jpg);
               "
             ></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
+            <div class="name">Martina Di Palma</div>
+            <div class="jobtitle">Head Hunter</div>
           </div>
           <div class="person">
-            <div class="photo"></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
+            <div class="photo" style="
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ceciliadondi.jpg);
+              "></div>
+            <div class="name">Cecilia Dondi</div>
+            <div class="jobtitle">HR Consultant</div>
           </div>
           <div class="person">
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/chiaraluciagraziano.png);
               "
             ></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
+            <div class="name">Chiara Lucia Graziano</div>
+            <div class="jobtitle">HR Consultant & Career Coach</div>
           </div>
           <div class="person">
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/elisasevera.png);
               "
             ></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
+            <div class="name">Elisa Severa</div>
+            <div class="jobtitle">HR Consultant</div>
           </div>
           <div class="person">
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/alessiocinao.jpeg);
               "
             ></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
-          </div>
-          <div class="person">
-            <div class="photo"></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
-          </div>
-          <div class="person">
-            <div class="photo"></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
-          </div>
-          <div class="person">
-            <div
-              class="photo"
-              style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-              "
-            ></div>
-            <div class="name">Davide Maggio</div>
-            <div class="jobtitle">Founder & CEO</div>
+            <div class="name">Alessio Cinao</div>
+            <div class="jobtitle">Direttore Marketing</div>
           </div>
         </div>
       </div>
@@ -735,7 +704,7 @@ export default {
 
   .person2 {
     width: fit-content;
-    margin-left: 1.5rem;
+    margin-left: 2.5rem;
     float: left;
     position: relative;
     margin-bottom: 3rem;
@@ -806,6 +775,7 @@ export default {
     line-height: 18px;
     color: #1e213d;
     font-weight: 400;
+    width: 16vw;
   }
 
   .person2 .jobtitle {
@@ -815,6 +785,7 @@ export default {
     line-height: 14px;
     color: #627597;
     margin-top: 0.2rem;
+    width: 16vw;
   }
 
   .seventhPart {

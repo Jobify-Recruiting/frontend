@@ -113,6 +113,14 @@ export default {
         slider.scrollLeft = scrollLeft - walk;
       });
     }
+
+    for (let i = 0; i < this.storie.length; i++) {
+      var nickname = document.getElementById("username"+i);
+      nickname.textContent = this.storie[i].nickname;
+
+      var ruolo = document.getElementById("jobtitle"+i);
+      ruolo.textContent = this.storie[i].ruolo;
+    }
   },
   methods: {
     btnScrollSx() {
@@ -205,6 +213,10 @@ export default {
                     L’approccio umano è stato una componente fondamentale di tutto il processo...
                   </h2>
                 </div>
+                <div class="info_story">
+                  <div class="username" id="username0"></div>
+                  <div class="jobtitle" id="jobtitle0"></div>
+                </div>
               </div>
               <div class="featured" @click="story(2)">
                 <div class="hover"></div>
@@ -213,6 +225,10 @@ export default {
                   <h2>
                     Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito...
                   </h2>
+                </div>
+                <div class="info_story">
+                  <div class="username" id="username1"></div>
+                  <div class="jobtitle" id="jobtitle1"></div>
                 </div>
               </div>
               <div class="featured" @click="story(3)">
@@ -223,6 +239,10 @@ export default {
                     Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia...
                   </h2>
                 </div>
+                <div class="info_story">
+                  <div class="username" id="username2"></div>
+                  <div class="jobtitle" id="jobtitle2"></div>
+                </div>
               </div>
               <div class="featured" @click="story(4)">
                 <div class="hover"></div>
@@ -231,6 +251,10 @@ export default {
                   <h2>
                     Rispetto alle agenzie di recruiting sono spesso stata molto diffidente...
                   </h2>
+                </div>
+                <div class="info_story">
+                  <div class="username" id="username3"></div>
+                  <div class="jobtitle" id="jobtitle3"></div>
                 </div>
               </div>
               <div class="featured" @click="story(5)">
@@ -241,6 +265,10 @@ export default {
                     L'esperienza vissuta con Jobify è stata molto positiva...
                   </h2>
                 </div>
+                <div class="info_story">
+                  <div class="username" id="username4"></div>
+                  <div class="jobtitle" id="jobtitle4"></div>
+                </div>
               </div>
               <div class="featured" @click="story(6)">
                 <div class="hover"></div>
@@ -250,8 +278,12 @@ export default {
                     Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
                   </h2>
                 </div>
+                <div class="info_story">
+                  <div class="username" id="username5"></div>
+                  <div class="jobtitle" id="jobtitle5"></div>
+                </div>
               </div>
-            </div>
+          </div>
             <div class="story" id="1">
               <div class="content">
                 <div class="close_story" @click="close_story(1)">
@@ -677,6 +709,31 @@ export default {
     height: 35vw;
     position: relative;
   }
+
+  .featured .info_story{
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    width: 100%;
+    background: #ada996;
+    background: -webkit-linear-gradient( to top, #000000d1, #00000075, #0000000f, transparent );
+    background: linear-gradient( to top, #000000d1, #00000075, #0000000f, transparent );
+    border-radius: 30px;
+    width: 100%;
+  }
+
+  .featured .info_story .username{
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .featured .info_story .jobtitle{
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
   .featured .hover {
     background: #ada996;
     background: -webkit-linear-gradient(

@@ -40,7 +40,7 @@ export default {
     },
     openWorkers() {
       let content = document.querySelector(".menuWorkers");
-      content.style.width = "10%";
+      content.style.width = "12%";
       content.style.opacity = "1";
       content.style.visibility = "visible";
       content.style.display = "inline";
