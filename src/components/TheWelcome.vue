@@ -59,16 +59,16 @@ export default {
     }
 
     const obj = document.getElementById("value");
-    animateValue(obj, 200, -200, 20000);
+    animateValue(obj, 0, -4000, 7000);
 
     const obj2 = document.getElementById("value2");
-    animateValue(obj2, 200, -200, 20000);
+    animateValue(obj2, 0, -2000, 7000);
 
     const obj3 = document.getElementById("value3");
-    animateValue(obj3, 200, -200, 20000);
+    animateValue(obj3, 0, -150, 7000);
 
     const obj4 = document.getElementById("value4");
-    animateValue(obj4, 200, -200, 20000);
+    animateValue(obj4, 0, -100, 7000);
   },
   methods: {},
 };
@@ -106,25 +106,25 @@ export default {
         <p style="color: white; font-size: 22px; line-height: 18px" id="value">
           0
         </p>
-        <p style="color: #cdd4db; font-size: 16px">r&s</p>
+        <p style="color: #cdd4db; font-size: 16px; line-height: 20px;">Screening telefonici</p>
       </div>
       <div class="item">
         <p style="color: white; font-size: 22px; line-height: 18px" id="value2">
           0
         </p>
-        <p style="color: #cdd4db; font-size: 16px">assunti</p>
+        <p style="color: #cdd4db; font-size: 16px; line-height: 20px;">Talenti colloquiati</p>
       </div>
       <div class="item">
         <p style="color: white; font-size: 22px; line-height: 18px" id="value3">
           0
         </p>
-        <p style="color: #cdd4db; font-size: 16px">consulenze</p>
+        <p style="color: #cdd4db; font-size: 16px; line-height: 20px;">Progetti di R&S gestiti</p>
       </div>
       <div class="item">
         <p style="color: white; font-size: 22px; line-height: 18px" id="value4">
           0
         </p>
-        <p style="color: #cdd4db; font-size: 16px">ricerche</p>
+        <p style="color: #cdd4db; font-size: 16px; line-height: 20px;">Talenti assunti</p>
       </div>
     </div>
   </div>

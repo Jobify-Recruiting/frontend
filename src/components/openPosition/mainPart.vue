@@ -61,6 +61,10 @@ export default {
     var htmlElement = document.querySelector("html");
     htmlElement.style.overflowY = "scroll";
 
+    if (this.$route.query.jobalert == "open"){
+      this.jobAlert();
+    }
+
     function reveal() {
       var reveals = document.querySelectorAll(".transition");
 
@@ -2509,8 +2513,8 @@ export default {
   }
 
   .btn:hover {
-    background: #ffffff;
-    color: #0062f5;
+    background: #ed3fb4;
+    color: #fff;
     font-weight: 600;
   }
 
