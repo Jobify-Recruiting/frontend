@@ -132,10 +132,9 @@ export default {
     <div class="glow6"></div>
     <div class="mainTitle">
       <div class="Iam">
-        <p>Jobify Recruiting nel</p>
+        <p>Jobify Recruiting </p>
       </div>
     </div>
-    <div class="mainTitle2">mondo</div>
     <div class="gradient"></div>
 
     <div class="office" id="officeMilan" @click="openOffice(office1)">
