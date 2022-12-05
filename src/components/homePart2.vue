@@ -465,7 +465,7 @@ export default {
               <br />
             </p>
             <div class="steps">
-              <router-link to='/openposition/?jobalert=open'>
+              <router-link to='/companies'>
                 <div class="feature transition">
                   <div class="number">
                     <svg

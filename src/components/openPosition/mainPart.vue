@@ -1825,6 +1825,18 @@ export default {
               <div class="jobAlert">
                 <div
                   class="input"
+                  style="display: flex; width: 100%; margin: 0"
+                >
+                  <input
+                    id="nav"
+                    class="input"
+                    type="text"
+                    name="nickname"
+                    placeholder="Nome della job alert (es. hr manager)"
+                  />
+                </div>
+                <div
+                  class="input"
                   style="display: flex; width: 95%; margin: 0 0 1.5rem 0"
                 >
                   <input
@@ -1878,20 +1890,16 @@ export default {
                     class="input"
                     type="text"
                     name="nickname"
-                    placeholder="Telefono"
-                  />
-                </div>
-                <div
-                  class="input"
-                  style="display: flex; width: 100%; margin: 0"
-                >
-                  <input
-                    id="nav"
-                    class="input"
-                    type="text"
-                    name="nickname"
                     placeholder="Dettagli"
                   />
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" />
+                  <p>
+                    Accetto i
+                    <router-link to="">&nbsp;termini e condizioni.</router-link>
+                  </p>
                 </div>
 
                 <div class="formButton">
@@ -3416,6 +3424,24 @@ export default {
     outline: none;
     background-color: rgb(38 43 49 / 31%);
     border-color: #0062f5;
+  }
+
+  .jobAlert .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .jobAlert .checkbox input {
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+
+  .jobAlert .checkbox p {
+    margin-bottom: 0 !important;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .secondPart2 {

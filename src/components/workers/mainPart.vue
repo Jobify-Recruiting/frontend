@@ -248,9 +248,9 @@ export default {
           <h2>Un nuovo modo per ricercare talenti</h2>
           <p>Crediamo che ogni persona abbia un talento, basta scoprirlo.</p>
           <div class="mainButton">
-            <router-link to="/openposition"
+            <router-link to='/openposition/?jobalert=open'
               ><button class="btn">
-                Scopri di più
+                Crea una job alert
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
