@@ -184,7 +184,7 @@ export default {
             <h4><span>•</span> Contatti</h4>
             <div class="subtitle">+39 340 763 6209</div>
             <a href="mailto:davide.maggio@jobconsultinghr.it" class="mailto"
-              >davide.maggio@jobconsultinghr.it</a
+              >info@jobifyrecruiting.it</a
             >
           </div>
         </div>
@@ -613,7 +613,7 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     background: transparent;
-    padding-top: 18rem;
+    padding-top: 15rem;
   }
 
   .office {
@@ -843,7 +843,7 @@ export default {
     background: transparent;
     background: -webkit-linear-gradient(to top, #1e213d, #ffffff00);
     background: linear-gradient(to top, #1e213d, #ffffff00);
-    padding-top: 10rem;
+    padding-top: 0rem;
     margin-top: 25rem;
     z-index: 10;
   }
