@@ -221,16 +221,16 @@ export default {
   }
 
   .datas p {
-    margin-bottom: 0 !important;
+    margin-bottom: 0.5rem !important;
     letter-spacing: 1px;
     font-family: "planer", sans-serif !important;
   }
 
   .datas .item {
-    margin-right: 6rem;
+    margin-right: 3rem;
     text-align: left;
     margin-top: 1.5rem;
-    width: 50px;
+    width: 100px;
   }
 
   a {

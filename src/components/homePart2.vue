@@ -504,12 +504,17 @@ export default {
                     Divisioni presenti in azienda:
                   </div>
                   <div class="text">
-                    ❖ It<br>
-                ❖ Hr<br>
-                ❖ Farm<br>
-                ❖ Digital<br>
-                ❖ Finance<br>
+                        ❖ It<br>
+                    ❖ Hr<br>
+                    ❖ Farm<br>
+                    ❖ Digital<br>
+                    ❖ Finance<br>
                   </div>
+                  <router-link to='/openposition'>
+                    <div class="featureShowMore">
+                      Scopri di più
+                    </div>
+                  </router-link>
                 </div>
             </div>
           </div>
@@ -773,6 +778,31 @@ export default {
         </div>
       </div>
     </div>-->
+
+    <div class="thirdPart" id="whyJobify">
+      <div class="thirdPartDiv">
+        <div class="first">
+          <div class="col1">
+            <h2>Il metodo</h2>
+            <p>
+              Siamo una società di Head Hunting che utilizza un <span>metodo scientifico</span> con un <span>approccio consulenziale</span>:
+              tutto il processo viene monitorato da dati specifici che ci aiutano a prendere decisioni in maniera
+              consapevole, puntando sulla trasparenza di queste ultime al fine di lavorare in sinergia con l’azienda.
+            </p>
+            <p><span>Per fare questo, intervistiamo:</span></p>
+            <p>
+              L'azienda, approfondendo la cultura ed il clima aziendale, l'organigramma ed il funzionigramma,
+              e l'eventuale riporto diretto della risorsa da inserire;
+            </p>
+            <p>
+              Il candidato, approfondendo i suoi valori e le sue aspettative da un punto di vista professionale.
+            </p>
+          </div>
+          <div class="col2" >
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="workflow" id="workflow">
       <div class="workflowTitle">
@@ -1070,30 +1100,7 @@ export default {
       </div>
     </div>
 
-    <div class="thirdPart" id="whyJobify">
-      <div class="thirdPartDiv">
-        <div class="first">
-          <div class="col1">
-            <h2>Il metodo</h2>
-            <p>
-              Siamo una società di Head Hunting che utilizza un <span>metodo scientifico</span> con un <span>approccio consulenziale</span>:
-              tutto il processo viene monitorato da dati specifici che ci aiutano a prendere decisioni in maniera
-              consapevole, puntando sulla trasparenza di queste ultime al fine di lavorare in sinergia con l’azienda.
-            </p>
-            <p><span>Per fare questo, intervistiamo:</span></p>
-            <p>
-              L'azienda, approfondendo la cultura ed il clima aziendale, l'organigramma ed il funzionigramma,
-              e l'eventuale riporto diretto della risorsa da inserire;
-            </p>
-            <p>
-              Il candidato, approfondendo i suoi valori e le sue aspettative da un punto di vista professionale.
-            </p>
-          </div>
-          <div class="col2" >
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <div class="feedbackDiv" id="feedback">
       <div class="content">
@@ -2497,7 +2504,7 @@ export default {
   }
 
   .workflowFlex {
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;

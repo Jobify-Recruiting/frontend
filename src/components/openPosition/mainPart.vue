@@ -1869,30 +1869,6 @@ export default {
                     placeholder="Email"
                   />
                 </div>
-                <div
-                  class="input"
-                  style="display: flex; width: 100%; margin: 0"
-                >
-                  <input
-                    id="nav"
-                    class="input"
-                    type="text"
-                    name="nickname"
-                    placeholder="Linkedin Url"
-                  />
-                </div>
-                <div
-                  class="input"
-                  style="display: flex; width: 100%; margin: 0"
-                >
-                  <input
-                    id="nav"
-                    class="input"
-                    type="text"
-                    name="nickname"
-                    placeholder="Dettagli"
-                  />
-                </div>
 
                 <div class="checkbox">
                   <input type="checkbox" />
