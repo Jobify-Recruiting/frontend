@@ -746,6 +746,24 @@ export default {
               <div class="feedback">
                 <p class="quote">"</p>
                 <h3>
+                  Consiglierei assolutamente il servizio di livello della Jobify Recruiting. Mi ha colpito la velocità di esecuzione dell’incarico affidatogli , la continua costanza di feedback ricevuti sull’andamento della selezione. E’ stata trovata in poco tempo la risorsa di cui aveva bisogno il mio studio , corrispondente esattamente a quanto da me richiesto. Ho apprezzato la trasparenza e la preparazione della selezionatrice che mi ha seguito Elisa, con la quale si è creato subito una connessione umana e professionale, comprendendo la mia richiesta sia per le competenze tecniche richieste che trasversali, così da venirmi presentati tutti candidati in linea.  
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/Riccardo_Camillo.png);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Riccardo di Camillo</p>
+                    <p class="worktitle">Titolare presso Celda 2000 Servizi Integrati srls</p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
                   Consiglierei jobify recruiting per la perseveranza, bravura, con cui sono stato seguito nell’aggiornamento costante della ricerca affidatagli. Soprattuto con la mia referente elisa con cui si e’ istaurato da subito un rapporto di affinita’, empatia e accoglienza nel capire le mie esigenze di trovare una risorsa valida da far crescere nella mia realta’ professionale. Se dovessi effettuare nuove ricerche di personale mi rivolgerei di nuovo a jobify che ha saputo consigliarmi e orientarmi nella scelta del miglior candidato, e tutto questo svolto dall’italia , visto la mia attivita’ si trova a malta. Sono molto contento di come abbiano lavorato con attenzione e costanza per la mia azienda.
                 </h3>
                 <div class="feedbackInfo">
@@ -757,7 +775,7 @@ export default {
                   ></div>
                   <div class="feddbackData">
                     <p class="author">Simone Cascone</p>
-                    <p class="worktitle">SAddetto alle vendite (Malta) presso CASCONE HOME</p>
+                    <p class="worktitle">Addetto alle vendite (Malta) presso CASCONE HOME</p>
                   </div>
                 </div>
               </div>
@@ -788,7 +806,7 @@ export default {
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/Ivan_Rallo.jpg);
                     "
                   ></div>
                   <div class="feddbackData">

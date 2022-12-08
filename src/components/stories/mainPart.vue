@@ -47,6 +47,13 @@ export default {
                   data: "1 Dicembre 2022",
                   storia_testo: "Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio targhetizzato, chiaro e per nulla impersonale. Le mie precedenti esperienze con le apl non sono state positive, in quanto non avevo questo costante rapporto di condivisione e aggiornamento con la parte hr. Ho riscontrato in jobify l’attenzione nel mettere il candidato al centro del processo di r&s , dove essere considerato una persona con le proprie ambizioni e talento da far incrociare perfettamente con le richieste dell’azienda. La chiarezza a partire dall’annuncio, sino all’orientamento verso il colloquio finale con l’azienda mi ha fatto sentire sicuro e seguito.",
                 },
+                {
+                  nickname: "K.R.",
+                  ruolo: "Impiegata Contabile",
+                  azienda: "Celda 2000 Servizi Integrati srls",
+                  data: "8 Dicembre 2022",
+                  storia_testo: "Mi sono sentita da subito a mio agio, capita e compresa, ho avuto addirittura, nel momento del colloquio con la mia referente Elisa, dei suggerimenti per migliorare il mio cv e la mia presentazione, non mi era mai capitato. Ho apprezzato in Jobify Recruiting la serietà, e umanità, mi sono sentita trattata alla pari, e sostenuta per tutto l’iter di selezione, per affrontare al meglio il colloquio finale con l’azienda.",
+                },
               ],
     };
   },
@@ -276,6 +283,19 @@ export default {
                   <p>Dicembre 1, 2022</p>
                   <h2>
                     Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
+                  </h2>
+                </div>
+                <div class="info_story">
+                  <div class="username" id="username5"></div>
+                  <div class="jobtitle" id="jobtitle5"></div>
+                </div>
+              </div>
+              <div class="featured" @click="story(7)">
+                <div class="hover"></div>
+                <div class="text">
+                  <p>Dicembre 8, 2022</p>
+                  <h2>
+                    Mi sono sentita da subito a mio agio, capita e compresa...
                   </h2>
                 </div>
                 <div class="info_story">

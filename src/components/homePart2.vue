@@ -83,33 +83,39 @@ export default {
       }, 15);
     });
 
+
     const slider2 = document.querySelector(".clientsCoBody");
-    let isDown2 = false;
-    let startX2;
-    let scrollLeft2;
-    if (slider2) {
-      slider2.addEventListener("mousedown", (e) => {
-        isDown2 = true;
-        slider2.classList.add("active");
-        startX2 = e.pageX - slider2.offsetLeft2;
-        scrollLeft2 = slider2.scrollLeft2;
+
+    if(slider2 != 0){
+      const slider = document.querySelector(".clientsCoBody");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    if (slider) {
+      slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
       });
-      slider2.addEventListener("mouseleave", () => {
+      slider.addEventListener("mouseleave", () => {
         isDown = false;
-        slider2.classList.remove("active");
+        slider.classList.remove("active");
       });
-      slider2.addEventListener("mouseup", () => {
-        isDown2 = false;
-        slider2.classList.remove("active");
+      slider.addEventListener("mouseup", () => {
+        isDown = false;
+        slider.classList.remove("active");
       });
-      slider2.addEventListener("mousemove", (e) => {
-        if (!isDown2) return;
+      slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
         e.preventDefault();
-        const x = e.pageX - slider2.offsetLeft2;
-        const walk2 = (x - startX2) * 3; //scroll-fast
-        slider2.scrollLeft2 = scrollLeft2 - walk2;
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
       });
     }
+    }
+    
   },
   methods: {
     btnScrollSx() {
@@ -134,6 +140,19 @@ export default {
     workflowScrollDx() {
       let content = document.querySelector(".workflowFlex");
       const itemWidth = content.querySelector(".workflowColumn").clientWidth;
+      content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
+    },
+
+    btnScrollSxClients() {
+      let content = document.querySelector(".clientsCoBody");
+      const itemWidth = "150px";
+      content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
+      
+    },
+
+    btnScrollDxClients() {
+      let content = document.querySelector(".clientsCoBody");
+      const itemWidth = "150px";
       content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
     },
 
@@ -268,6 +287,38 @@ export default {
       <div class="clientsCoBorder">
         <div class="clientsCoLink">
           <h2>I clienti di Jobify Recruiting</h2>
+          <!--<div class="buttons">
+            <div class="btnScrollL" @click="btnScrollSxClients()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="#1e213d"
+                class="bi bi-chevron-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                />
+              </svg>
+            </div>
+            <div class="btnScrollR" @click="btnScrollDxClients()">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="#1e213d"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+          </div>-->
         </div>
         <div class="clientsCoDiv">
           <div class="clientsCoBody" id="clientsCoBodyId">
@@ -275,6 +326,10 @@ export default {
               <img
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-4.png"
               />
+            </div>
+
+            <div class="logoClient">
+              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/celda.jpeg" />
             </div>
 
             <div class="logoClient">
@@ -2021,6 +2076,39 @@ export default {
     padding-bottom: 0.7rem;
     border-radius: 30px;
     margin-top: 1rem;
+  }
+
+  .clientsCoLink .buttons{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+  .clientsCoLink .btnScrollR {
+    width: fit-content;
+    background: transparent;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .clientsCoLink .btnScrollL {
+    margin-right: 1rem;
+    width: fit-content;
+    background: transparent;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
   }
 
   .clientsCoDiv {
