@@ -148,7 +148,7 @@ export default {
 @media (min-width: 1024px) {
   #globeViz {
     position: fixed;
-    left: 15%;
+    left: 20%;
     cursor: pointer;
   }
   .hover1 {

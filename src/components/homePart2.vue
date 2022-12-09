@@ -424,12 +424,6 @@ export default {
             </div>
 
             <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logoaziendavisibile300.jpg"
-              />
-            </div>
-
-            <div class="logoClient">
               <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo20white.png"
               />
@@ -902,7 +896,7 @@ offerta, per creare il match “perfetto” tra azienda e candidato.
           position: relative;
         "
       >
-        <div class="columns">
+      <div class="columns">
           <div class="column workflowColumn" style="width: 35vw !important">
             <div class="background transition">
               <div class="number">
@@ -912,68 +906,23 @@ offerta, per creare il match “perfetto” tra azienda e candidato.
                     width="50"
                     height="50"
                     fill="#0062f5"
-                    class="bi bi-graph-up-arrow"
+                    class="bi bi-person"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      fill-rule="evenodd"
-                      d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
+                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
                     />
                   </svg>
                 </div>
               </div>
-              <h2>Maggiore efficacia</h2>
+              <h2>Maggiore umanizzazione</h2>
               <p>
-                Le persone e i talenti inseriti in azienda assicurano prestazioni migliori, il turnover si
-abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l’azienda.
+                L’azienda che funziona è un’azienda che ha al suo interno dipendenti felici. Per
+questo Jobify Recruiting trova il candidato giusto per ogni azienda, in linea non solo in termini di
+competenze e preparazione professionale, ma anche di valori e ideali
               </p>
             </div>
           </div>
-          <div class="column workflowColumn" style="width: 35vw !important">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#1e213d"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
-            <div class="background transition">
-              <div class="number">
-                <div class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="50"
-                    height="50"
-                    fill="#0062f5"
-                    class="bi bi-alarm"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"
-                    />
-                    <path
-                      d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <h2>Maggiore scientificità</h2>
-              <p>
-                Lavoriamo con la migliore tecnologia per prendere decisioni consapevoli e basate sui
-                dati in modo da garantire un approccio scientifico alla ricerca risorse umane.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="columns">
           <div class="column workflowColumn" style="width: 35vw !important">
             <div class="circle2">
               <svg
@@ -1021,6 +970,8 @@ si riducono errori di valutazione, spese extra e tempo per trovare la giusta ris
               </p>
             </div>
           </div>
+        </div>
+        <div class="columns">
           <div class="column workflowColumn" style="width: 35vw !important">
             <div class="circle2">
               <svg
@@ -1045,20 +996,63 @@ si riducono errori di valutazione, spese extra e tempo per trovare la giusta ris
                     width="50"
                     height="50"
                     fill="#0062f5"
-                    class="bi bi-person"
+                    class="bi bi-alarm"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                      d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"
+                    />
+                    <path
+                      d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"
                     />
                   </svg>
                 </div>
               </div>
-              <h2>Maggiore umanizzazione</h2>
+              <h2>Maggiore scientificità</h2>
               <p>
-                L’azienda che funziona è un’azienda che ha al suo interno dipendenti felici. Per
-questo Jobify Recruiting trova il candidato giusto per ogni azienda, in linea non solo in termini di
-competenze e preparazione professionale, ma anche di valori e ideali
+                Lavoriamo con la migliore tecnologia per prendere decisioni consapevoli e basate sui
+                dati in modo da garantire un approccio scientifico alla ricerca risorse umane.
+              </p>
+            </div>
+          </div>
+          <div class="column workflowColumn" style="width: 35vw !important">
+            <div class="circle2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#1e213d"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                />
+              </svg>
+            </div>
+            <div class="background transition">
+              <div class="number">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="#0062f5"
+                    class="bi bi-graph-up-arrow"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h2>Maggiore efficacia</h2>
+              <p>
+                Le persone e i talenti inseriti in azienda assicurano prestazioni migliori, il turnover si
+abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l’azienda.
               </p>
             </div>
           </div>
