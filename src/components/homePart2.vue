@@ -210,19 +210,18 @@ export default {
         <div class="first" style="width: 100% !important;">
           <div class="title">
             <h2>
-              <span class="gradientTitle">Jobify Recruiting</span>, la tua
-              ricerca e selezione
+              <span class="gradientTitle">Jobify Recruiting: </span>la tua agenzia di head hunting
             </h2>
             <p>
-              Siamo un’agenzia per la ricerca di talenti,
-              <span style="color: #c554a0; font-weight: 500"
-                >digitale e dinamica</span
-              >, formata da persone giovani e multilingue.
+              Trovare, valorizzare e trattenere i <span style="color: #c554a0; font-weight: 500"
+                >talenti</span> è compito di ogni azienda e per questo puoi affidarti a Jobify
+              Recruiting, la tua agenzia di head hunting digitale e dinamica, formata da persone giovani che lavorano in
+              un contesto nazionale
             </p>
             <div class="" style="display: flex; align-items: center">
               <router-link to="/companies"
                 ><button class="btn">
-                  Scopri di più
+                  Scopri chi siamo
                   <span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -262,22 +261,19 @@ export default {
           <div class="imageContent">
             
           </div>
-          <div class="title" style="margin-left: 2rem;">
-            <h2>I punti di forza di 
-              <span class="gradientTitle"> Jobify Recruiting</span>
+          <div class="title" style="margin-left: 2rem; width: 60vw;">
+            <h2>I nostri punti di <span class="gradientTitle">forza</span>
             </h2>
             <p>
-              Head Hunting <span style="color: #c554a0; font-weight: 500"
-                >consapevole.</span>
+              <!--<span style="color: #c554a0; font-weight: 500"></span>-->
+                Jobify Recruiting fa head hunting in modo consapevole e mette a disposizione di candidati e aziende un
+                  team caratterizzato da energia e passione. Lavorare con Jobify Recruiting significa poter contare su un
+                  approccio:
             </p>
-            <p>Tutto in un’<span style="color: #c554a0; font-weight: 500"
-                >unica soluzione:</span></p>
             <p>❖ Umano<br>
                 ❖ Scientifico<br>
                 ❖ Trasparente<br>
                 ❖ Consulenziale<br></p>
-                <p>Team di <span style="color: #c554a0; font-weight: 500"
-                >talento, giovane e dinamico.</span></p>
           </div>
         </div>
       </div>
@@ -512,11 +508,13 @@ export default {
         <div class="first" style="display: inline !important">
           <div class="title">
             <h2>
-              <span>Che servizi offre Jobify</span>
+              <span>I servizi offerti da Jobify Recruiting</span>
             </h2>
             <p>
-              Siamo convinti che l’affidabilita e la competenza possano creare
-              rapporti e valore professionale, con le nostre aziende clienti.
+              Jobify Recruiting è un’agenzia affidabile e competente che supporta le aziende nella ricerca del giusto
+candidato e i candidati nel proporsi al meglio alle aziende grazie al supporto nella redazione CV e lettera di
+presentazione. Si tratta di un lavoro complesso, che affrontiamo ogni giorno mettendo al centro potenziali
+e talenti.
               <br />
             </p>
             <div class="steps">
@@ -538,12 +536,11 @@ export default {
                   </div>
                   <div class="title">Ricerca e selezione del personale</div>
                   <div class="text">
-                    Get updates on the GitHub activity you've subscribed to. Use
-                    the notifications inbox to customize, triage, and manage
-                    your updates.
+                    lavoriamo ogni giorno per creare il match perfetto tra azienda e
+                    candidato e aiutare le aziende a trovare la risorsa migliore.
                   </div>
                   <div class="featureShowMore" @click="show_more('step1')">
-                    Scopri di più
+                    Scopri i servizi per le aziende
                   </div>
                 </div></router-link
               >
@@ -554,20 +551,14 @@ export default {
                       <path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"/>
                     </svg>
                   </div>
-                  <div class="title">Personale specializzato</div>
+                  <div class="title">Le divisioni che trattiamo</div>
                   <div class="text">
-                    Divisioni presenti in azienda:
-                  </div>
-                  <div class="text">
-                        ❖ It<br>
-                    ❖ Hr<br>
-                    ❖ Farm<br>
-                    ❖ Digital<br>
-                    ❖ Finance<br>
+                    In Jobify Recruiting offriamo consulenza alle aziende che cercano figure impiegatizie, white collars e middle
+e top management. Le divisioni che trattiamo sono IT, HR, FARM, DIGITAL, FINANCE.
                   </div>
                   <router-link to='/openposition'>
                     <div class="featureShowMore">
-                      Scopri di più
+                      Scopri le offerte di lavoro
                     </div>
                   </router-link>
                 </div>
@@ -583,18 +574,15 @@ export default {
           <div class="col1">
             <h2>Perchè scegliere Jobify Recruiting?</h2>
             <p>
-              <span>Jobify Recruiting</span> utilizza tecnologie che assolvono
-              l'uomo da tutte quelle azioni ripetute nel tempo che non
-              richiedono intelletto umano. Questo <span>velocizza</span> il
-              processo di ricerca, ci rende più competitivi sul mercato e lascia
-              più tempo all'Head Hunter nella fase di ricerca e selezione.
+              <!--<span>Jobify Recruiting</span>-->
+              Jobify Recruiting nasce per umanizzare il processo di Ricerca &amp; Selezione e si propone sul mercato come
+agenzia qualificata di Head Hunting che punta alla ricerca di talenti e alla valorizzazione del potenziale delle
+persone con un metodo e un approccio consulenziale ben diverso da quello delle tradizionali agenzie del
+lavoro.
             </p>
             <p>
-              L'obiettivo è quello di investire il tempo risparmiato ponendo il
-              <span>rapporto umano</span> al centro tra
-              <span>domanda e offerta</span>, per creare il
-              <span>match “perfetto”</span> tra <span>azienda</span> e
-              <span>candidato</span>. 
+              L&#39;obiettivo è quello di investire il tempo risparmiato ponendo il rapporto umano al centro tra domanda e
+offerta, per creare il match “perfetto” tra azienda e candidato.
             </p>
           </div>
           <div class="col2" >
@@ -840,17 +828,15 @@ export default {
           <div class="col1">
             <h2>Il metodo</h2>
             <p>
-              Siamo una società di Head Hunting che utilizza un <span>metodo scientifico</span> con un <span>approccio consulenziale</span>:
-              tutto il processo viene monitorato da dati specifici che ci aiutano a prendere decisioni in maniera
-              consapevole, puntando sulla trasparenza di queste ultime al fine di lavorare in sinergia con l’azienda.
+              Jobify Recruiting è molto diversa dalle agenzie di ricerca personale. Siamo una società di Head Hunting che
+              utilizza un metodo scientifico con un approccio consulenziale. Il processo di selezione è umano e studiato
+              nei minimi dettagli per prendere decisioni in modo consapevole e trasparente al fine di lavorare in perfetta
+              sinergia con l’azienda. 
             </p>
-            <p><span>Per fare questo, intervistiamo:</span></p>
-            <p>
-              L'azienda, approfondendo la cultura ed il clima aziendale, l'organigramma ed il funzionigramma,
-              e l'eventuale riporto diretto della risorsa da inserire;
-            </p>
-            <p>
-              Il candidato, approfondendo i suoi valori e le sue aspettative da un punto di vista professionale.
+            <p>Per questo il nostro metodo di ricerca talenti si basa su: Interviste all’azienda per
+              comprendere e approfondire la cultura aziendale, il clima aziendale, l&#39;organigramma ed il funzionigramma,
+              oltre al riporto diretto della risorsa da inserire, Interviste al candidato per comprendere ed approfondire i
+              valori e le aspettative dal punto di vista professionale
             </p>
           </div>
           <div class="col2" >
@@ -862,8 +848,12 @@ export default {
     <div class="workflow" id="workflow">
       <div class="workflowTitle">
         <h2 class="workflowTitle2" style="margin-bottom: 2rem !important">
-          Creiamo un processo di ricerca e selezione che sia:
+          I vantaggi
         </h2>
+        <p>
+          Il nostro processo di selezione si caratterizza per il fatto di garantire:
+              <br />
+            </p>
       </div>
       <div class="buttons">
         <div class="btnScrollL" @click="workflowScrollSx()">
@@ -930,12 +920,10 @@ export default {
                   </svg>
                 </div>
               </div>
-              <h2>Efficace</h2>
+              <h2>Maggiore efficacia</h2>
               <p>
-                Analizza i bisogni dell’azienda e del candidato, con lo scopo di
-                ricercare la perfetta compatibilità tra la risorsa da assumere e
-                i bisogni e le aspettative dell’azienda. Questo crea un rapporto
-                di lavoro più stabile e duraturo nel tempo.
+                Le persone e i talenti inseriti in azienda assicurano prestazioni migliori, il turnover si
+abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l’azienda.
               </p>
             </div>
           </div>
@@ -975,10 +963,10 @@ export default {
                   </svg>
                 </div>
               </div>
-              <h2>Scientifico</h2>
+              <h2>Maggiore scientificità</h2>
               <p>
-                Tutto il processo viene monitorato da dati specifici. Questi ci
-                aiutano a prendere decisioni in maniera consapevole.
+                Lavoriamo con la migliore tecnologia per prendere decisioni consapevoli e basate sui
+                dati in modo da garantire un approccio scientifico alla ricerca risorse umane.
               </p>
             </div>
           </div>
@@ -1024,12 +1012,10 @@ export default {
                   </svg>
                 </div>
               </div>
-              <h2>Rapido</h2>
+              <h2>Maggiore rapidità</h2>
               <p>
-                <span>Ricorre a tecnologie A.I. e HR Tech.</span> Assolve l’uomo
-                da tutte quelle azioni ripetute nel tempo che non richiedono
-                intelletto umano. Velocizza la ricerca e ci rende più
-                competitivi sul mercato.
+                Il processo di ricerca e selezione fatto con le moderne tecnologie è rapido ed efficiente e
+si riducono errori di valutazione, spese extra e tempo per trovare la giusta risorsa.
               </p>
             </div>
           </div>
@@ -1066,58 +1052,11 @@ export default {
                   </svg>
                 </div>
               </div>
-              <h2>Umano</h2>
+              <h2>Maggiore umanizzazione</h2>
               <p>
-                Il tempo risparmiato grazie all'utilizzo dell'intelligenza
-                artificiale,
-                <span
-                  >consente ai nostri head hunter di instaurare un rapporto con
-                  i candidati</span
-                >
-                e comprendere i loro valori, le loro aspettative ed i loro
-                bisogni.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="columns">
-          <div class="column workflowColumn" style="width: 35vw !important">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#1e213d"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
-            <div class="background transition">
-              <div class="number">
-                <div class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="50"
-                    height="50"
-                    fill="#0062f5"
-                    class="bi bi-trophy"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"
-                    />
-                  </svg>
-                </div>
-              </div>
-              <h2>Competitivo</h2>
-              <p>
-                Essendo dei nativi digitali riusciamo a contenere i costi fissi
-                ed essere tra i più competitivi sul mercato.
+                L’azienda che funziona è un’azienda che ha al suo interno dipendenti felici. Per
+questo Jobify Recruiting trova il candidato giusto per ogni azienda, in linea non solo in termini di
+competenze e preparazione professionale, ma anche di valori e ideali
               </p>
             </div>
           </div>
@@ -1893,17 +1832,16 @@ export default {
         <div class="first" style="margin-bottom: 5rem;">
           <div class="title">
             <div class="subtitle">
-              Milano
+              Agenzia Head Hunting Jobify Recruiting
             </div>
-            <h2><span>Resta in contatto con noi</span></h2>
+            <h2><span>Contattaci per un appuntamento gratuito</span></h2>
             <p>
-              Jobify, la tua ricerca e selezione, la tua ricerca e selezione, la
-              tua ricerca e selezione, la tua ricerca e selezione, la tua
-              ricerca e selezione
+              Jobify Recruiting offre alle aziende una prima consulenza e appuntamento gratuito per aiutarle a trovare la
+              persona giusta e il talento giusto.
             </p>
             <router-link to="/contact"
               ><button class="btn">
-                Contattaci
+                Contattaci ora
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -2443,6 +2381,18 @@ export default {
     background: #fff;
     padding-top: 10rem;
     padding-bottom: 0;
+  }
+
+  .workflow .workflowTitle p{
+    margin-top: 1rem;
+    color: #627597;
+    font-size: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 400 !important;
   }
 
   .workflow .workflowTitle2 {
@@ -3562,7 +3512,7 @@ export default {
     color: #fff;
     font-size: 56px;
     font-weight: 800 !important;
-    width: 60%;
+    width: 80%;
     text-align: left;
     line-height: 56px;
     letter-spacing: -0.04em !important;

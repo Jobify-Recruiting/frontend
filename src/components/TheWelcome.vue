@@ -94,9 +94,9 @@ export default {
       </b>
     </div>
     <h2>
-      Digitalazziamo ed umanizziamo il processo di Ricerca & Selezione, mettendo
-      a servizio dei nostri Head Hunter strumenti di Intelligenza Artificiale ed
-      HR Tech.
+      In Jobify Recruiting digitalizziamo e umanizziamo il processo di Ricerca &amp; Selezione mettendo a disposizione
+      delle aziende i nostri Head Hunter e i migliori strumenti di Intelligenza Artificiale ed HR Tech. Questo ci
+      permette di essere consulenziali, competitivi, scientifici, umani e rapidi.
     </h2>
     <div class="" style="display: flex; align-items: center">
       <a href="#second"><button class="btn">Scopri di più</button></a>
@@ -148,7 +148,7 @@ export default {
 @media (min-width: 1024px) {
   #globeViz {
     position: fixed;
-    left: 20%;
+    left: 15%;
     cursor: pointer;
   }
   .hover1 {
@@ -311,6 +311,7 @@ export default {
     font: normal 40px/50px Planer, sans-serif;
     color: #fff;
     font-size: 60px;
+    width: 50vw;
   }
   .Iam p {
     height: 50px;
@@ -364,7 +365,7 @@ export default {
 
 @media (min-width: 1600px) {
   #globeViz {
-    left: 35% !important;
+    left: 20% !important;
   }
 
   .mainTitle {
@@ -374,7 +375,7 @@ export default {
 
 @media (min-width: 1920px) {
   #globeViz {
-    left: 20% !important;
+    left: 10% !important;
   }
 }
 
