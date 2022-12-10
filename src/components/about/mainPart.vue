@@ -98,7 +98,7 @@ export default {
         </div>
       </div>
       <div class="fifthPart">
-        <h2>We are inventors, builders, and doers</h2>
+        <h2>Jobify Recruiting: chi siamo e il nostro metodo</h2>
         <div class="quotesDiv">
           <div class="quotes">
             <div class="quote">
@@ -106,58 +106,62 @@ export default {
                 <span>Storia</span> di Jobify Recruiting
               </div>
               <div class="quoteh5">
-                Inserire descrizione o altro dell'azienda, descrizione o altro
-                dell'azienda, altro Inserire descrizione o altro dell'azienda.
+                Jobify Recruiting è l’agenzia di head hunting digitale e dinamica che punta a trovare talenti da inserire nella
+tua azienda grazie a un processo di ricerca e selezione consulenziale, umano, efficace, scientifico e rapido.
+</div>
+<div class="quoteh5">Il nome “Jobify” nasce dall’unione di “job” e “identify” e proprio perché crediamo che siamo prima persone
+e professionisti e proprio questo diventa il fulcro del nostro lavoro di ogni giorno.
               </div>
               <a href="/companies" class=""
-                ><button class="btn">Scopri di più</button></a
+                ><button class="btn">Prenota una consulenza</button></a
               >
             </div>
             <div class="quote" style="text-align: right !important;
               float: right !important; margin-top: 8rem">
               <div class="quoteh4" style="text-align: right !important;
-              float: right !important">In che <span>modo</span> lo facciamo</div>
+              float: right !important">Il <span>team</span> di Jobify Recruiting</div>
               <div class="quoteh5" style="float: right !important">
-                Inserire descrizione o altro dell'azienda, descrizione o altro
-                dell'azienda, altro Inserire descrizione o altro dell'azienda,
-                descrizione o altro dell'azienda.
+                A differenza della tradizionale agenzia di ricerca e selezione personale, Jobify Recruiting è un’agenzia di
+                head hunting dinamica ed energica, snella e rapida nel fornire la soluzione ideale al candidato che cerca
+                lavoro e all’azienda che cerca candidati.
+                </div>
+                <div class="quoteh5" style="float: right !important">
+                Il nostro team è composto da persone giovani ma altamente competenti, che svolgono il lavoro quotidiano
+                di ricerca e selezione talenti con passione e impegno. Amiamo quello che facciamo, ma ancora di più
+                amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende con una risorsa ideale.
               </div>
-              <a href="/companies" class=""
-                ><button class="btn">Scopri di più</button></a
-              >
             </div>
           </div>
           <div class="quotes">
             <div class="quote">
               <div class="quoteh4">
-                <span>Visione</span> di Jobify Recruiting
+                <span>Vision</span> di Jobify Recruiting
               </div>
               <div class="quoteh5">
-                Inserire descrizione o altro dell'azienda, descrizione o altro
-                dell'azienda, altro Inserire descrizione o altro dell'azienda,
-                descrizione o altro dell'azienda.
+                La nostra vision parla di un mondo HR sempre più human e digital, in cui competenze personali incontrano
+le moderne tecnologie per un processo di ricerca e selezione dei candidati ottimizzato. Vogliamo trovare la
+persona ideale per ogni azienda e dare al candidato la posizione lavorativa che cerca e sogna da sempre.
               </div>
               <a href="/companies" class=""
-                ><button class="btn">Scopri di più</button></a
+                ><button class="btn">Scopri i servizi per le aziende</button></a
               >
             </div>
             <div class="quote" style="text-align: right !important;
               float: right !important; margin-top: 10rem">
               <div class="quoteh4" style="text-align: right !important;
-              float: right !important">La <span>missione</span></div>
+              float: right !important"><span>Mission</span> di Jobify Recruiting</div>
               <div class="quoteh5" style="float: right !important">
-                Inserire descrizione o altro dell'azienda, descrizione o altro
-                dell'azienda, altro Inserire descrizione o altro dell'azienda.
+                La nostra Mission è creare il match perfetto umano tra aspettative e valori del candidato. Dal punto di visra
+dell’azienda si tratta di trovare una persona compatibile con la cultura aziendale, dal punto di vista del
+candidato inserire la risorsa in un’azienda con cui condivide valori e ideali.
               </div>
-              <a href="/companies" class=""
-                ><button class="btn">Scopri di più</button></a
-              >
+              
             </div>
           </div>
         </div>
       </div>
       <div class="sixtPart">
-        <h2>We are inventors, builders, and doers</h2>
+        <h2>Non più candidati, ma persone da mettere al centro del processo di selezione</h2>
         <div class="team1">
           <div class="person2">
             <div
@@ -267,8 +271,10 @@ export default {
       </div>-->
       <div class="seventhPart">
         <div class="text">
-          <h2>Lavora con noi in <span>Jobify</span></h2>
-          <p>Come on board and grow more than you ever thought possible.</p>
+          <h2>Lavora con <span>noi</span></h2>
+          <p>Le persone che fanno parte della famiglia Jobify Recruiting.
+            La squadra di Jobify Recruiting è giovane, dinamica e competente. Scopri le persone che ne fanno parte e
+contattaci se anche tu vuoi entrare nel nostro team.</p>
 
           <div class="formButton">
             <router-link to="/workwithus"
@@ -648,6 +654,7 @@ export default {
     line-height: 24px;
     font-weight: 400;
     color: #627597;
+    margin-bottom: 1rem;
   }
 
   .sixtPart {
@@ -789,8 +796,8 @@ export default {
   }
 
   .seventhPart {
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
     padding-top: 10rem;
     padding-bottom: 5rem;
     background: #fff;

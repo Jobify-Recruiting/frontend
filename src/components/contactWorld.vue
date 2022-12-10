@@ -131,8 +131,8 @@ export default {
     <div class="glow5"></div>
     <div class="glow6"></div>
     <div class="mainTitle">
-      <div class="Iam">
-        <p>Jobify Recruiting </p>
+      <div class="titleFirst">
+        Jobify Recruiting: il tuo partner per la ricerca talenti In Italia
       </div>
     </div>
     <div class="gradient"></div>
@@ -306,8 +306,11 @@ export default {
         <p>Contattaci</p>
         <h2>Fissa un appuntamento</h2>
         <div class="subtitle">
-          Ricerchiamo il candidato perfetto rispetto le vostre esigenze, creiamo
-          un rapporto più stabile e duraturo.
+          Contattare Jobify Recruiting, agenzia di head hunting con sede a Milano, significa trovare la persona giusta
+da inserire al giusto posto in azienda. Da sempre siamo specializzati nella ricerca e valorizzazione di talenti e
+troviamo il candidato perfetto per rispondere alle esigenze aziendali. Il risultato? Un rapporto azienda-
+talento duraturo ed efficace, per la piena soddisfazione della persona e il raggiungimento degli obiettivi di
+business.
         </div>
       </div>
       <div class="col col_2 transition">
@@ -402,14 +405,14 @@ export default {
 
 @media (min-width: 1600px) {
   #globeViz {
-    left: 0% !important;
+    left: 25% !important;
   }
 }
 
 @media (min-width: 1440px) {
   #officeMilan {
-    top: 35%;
-    left: 52%;
+    top: 32% !important;
+    left: 78% !important;
   }
 
   #officeDubai {
@@ -425,8 +428,8 @@ export default {
 
 @media (min-width: 1024px) {
   #officeMilan {
-    top: 35%;
-    left: 52%;
+    top: 32%;
+    left: 77%;
   }
 
   #officeDubai {
@@ -445,7 +448,7 @@ export default {
 
   #globeViz {
     position: fixed;
-    left: 0%;
+    left: 25%;
     top: 28%;
     cursor: pointer;
     transform: scale(1.5);
@@ -590,21 +593,14 @@ export default {
     margin-top: 1.5rem;
   }
 
-  .Iam {
-    font: normal 40px/50px Planer, sans-serif;
-    color: #fff;
-    font-size: 150px;
-    line-height: 150px;
+  .titleFirst {
+    font-size: 84px;
+    line-height: 84px;
     letter-spacing: -0.04em;
     margin-left: 5rem;
-  }
-
-  .Iam p {
-    height: 50px;
-    float: left;
-    margin-right: 0.3em;
-    font-weight: 500;
-    letter-spacing: -0.04em;
+    color: #fff;
+    font-weight: 600 !important;
+    width: 50%;
   }
 
   .gradient {
@@ -637,6 +633,8 @@ export default {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .office .image2 {
@@ -649,6 +647,8 @@ export default {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .office .image3 {
@@ -661,6 +661,8 @@ export default {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .office h4 {
@@ -843,7 +845,7 @@ export default {
     background: transparent;
     background: -webkit-linear-gradient(to top, #1e213d, #ffffff00);
     background: linear-gradient(to top, #1e213d, #ffffff00);
-    padding-top: 0rem;
+    padding-top: 6rem;
     margin-top: 25rem;
     z-index: 10;
   }
@@ -1007,12 +1009,13 @@ export default {
 
 @media (min-width: 1920px) {
   #globeViz {
-    left: 10% !important;
+    left: 25% !important;
+    top: 12%;
   }
 
   #officeMilan {
-    top: 34%;
-    left: 51%;
+    top: 17% !important;
+    left: 78% !important;
   }
 
   #officeDubai {
@@ -1027,11 +1030,16 @@ export default {
 
   .Iam {
     font: normal 40px/50px Planer, sans-serif;
-    color: #fff;
     font-size: 230px;
     line-height: 230px;
     letter-spacing: -0.04em;
     margin-left: 5rem;
+    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800 !important;
   }
 
   .mainTitle2 {

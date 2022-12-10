@@ -89,7 +89,24 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <div style="background: #1e213d; padding-top: 8rem;
+        <div style="background: #1e213d; padding-top: 8rem; padding-bottom: 2rem;">
+          <div class="firstColumns">
+            <div class="firstColumn">
+              <h1>
+                Il <span>blog di Jobify Recruiting</span> esplora il mercato del lavoro e le opportunità per talenti e aziende
+              </h1>
+            </div>
+            <div class="firstColumn transition" style="margin-top: 20rem;">
+              <p>Molto più di un semplice blog: il Journal di Jobify Recruiting è studiato per esplorare i mille temi connessi al
+mondo del lavoro e delle risorse umane e pensato per offrire a clienti e aziende spunti di riflessione sulla
+ricerca di lavoro, selezione dei migliori talenti e valorizzazione delle potenzialità dei candidati. L’invito è a
+leggere, commentare e condividere i contenuti proposti in queste pagine e a contattarci per un
+appuntamento se sei un’azienda che cerca persone o una persona che cerca aziende in cui lavorare.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: #1e213d; padding-top: 5rem;
     padding-bottom: 2rem;">
           <div class="titlePage">News</div>
           <div class="topContent">
@@ -230,6 +247,45 @@ export default {
     background: #fff;
   }
 
+  .first .firstColumns{
+    display: flex;
+    margin-top: 2rem;
+    border-radius: 30px;
+    margin-left: 11rem;
+    margin-right: 11rem;
+  }
+
+  .firstColumns .firstColumn span{
+    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+  }
+
+  .firstColumns .firstColumn h1{
+    font-size: 54px;
+    line-height: 58px;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+
+  .firstColumns .firstColumn p{
+    font-size: 20px;
+    color: #fff;
+    line-height: 24px;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .firstColumns .firstColumn{
+    width: 50%;
+  }
+
   .first .cols {
     display: flex;
     margin-top: 5rem;
@@ -241,7 +297,7 @@ export default {
     font-size: 54px;
     line-height: 58px;
     color: #fff;
-    font-weight: 800;
+    font-weight: 600;
     margin-left: 11rem;
     letter-spacing: -0.02em;
   }
