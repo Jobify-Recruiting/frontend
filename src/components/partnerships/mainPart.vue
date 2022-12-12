@@ -55,16 +55,16 @@ export default {
         <div class="glow4"></div>
         <div class="firstPart">
           <div class="subtitle">Partnerships</div>
-          <h2>Costruiamo l'ecosistema del domani.</h2>
+          <h2>Una crescita solida con chi crede nei valori di Jobify Recruiting</h2>
           <p>
-            Increase developer velocity. Secure every step. Automate entire
-            workflows. Redefine collaboration. Trusted by over 83 million
-            developers.
+            Da sempre Jobify Recruiting seleziona partner strategici per la crescita del business. Il nostro partner ideale
+crede nei valori dell’agenzia di head hunting ed è pronto a mettersi a disposizione per contribuire al
+successo suo e nostro.
           </p>
           <div class="mainButton">
             <a href="#first"
               ><button class="btn">
-                Scopri di più
+                Contattaci per diventare nostro partner
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +184,7 @@ export default {
               "
             >
               <div class="title">
-                <h2>Partners</h2>
+                <h2>Le partnership attive</h2>
                 <p
                   style="
                     width: 40% !important;
@@ -193,9 +193,8 @@ export default {
                     color: #627597 !important;
                   "
                 >
-                  Jobify, la tua ricerca e selezione, la tua ricerca e
-                  selezione, la tua ricerca e selezione, la tua ricerca e
-                  selezione, la tua ricerca e selezione
+                Pochi partner di qualità eccellente: è questo il modo di lavorare di Jobify Recruiting, l’agenzia di head
+hunting fatta dalle persone per le persone.
                 </p>
               </div>
             </div>
@@ -209,23 +208,14 @@ export default {
             </div>
             <div class="col col2">
               <div class="text">
-                <span
-                  >Increase developer velocity. Secure every step. Automate
-                  entire workflows.</span
-                >
-                Redefine collaboration. Trusted by over 83 million developers.
+                <span>Un partner è un’azienda che collabora con un’altra e ne condivide mission, vision e valori</span> in vista di un
+obiettivo comune. Nel nostro caso Jobify Recruiting collabora con enti, aziende e associazioni per diventare
+un punto di riferimento nel settore della selezione, ricerca e valorizzazione dei talenti.
               </div>
               <div class="text2">
-                Increase developer velocity. Secure every step. Automate entire
-                workflows. Redefine collaboration. Trusted by over 83 million
-                developers.
-              </div>
-              <div class="text">
-                Redefine collaboration. Trusted by over 83 million developers.
-                <span
-                  >Increase developer velocity. Secure every step. Automate
-                  entire workflows.</span
-                >
+                Ogni persona ha un talento e ogni talento può essere valorizzato dalla giusta azienda. Questo è il nostro
+modo di pensare e lavorare e il modo di pensare e lavorare che chiediamo a chi <span>sceglie di collaborare con
+noi diventando partner di Jobify Recruiting.</span>
               </div>
             </div>
           </div>
@@ -234,23 +224,16 @@ export default {
           <div class="cols">
             <div class="col col2">
               <div class="text">
-                <span
-                  >Increase developer velocity. Secure every step. Automate
-                  entire workflows.</span
-                >
-                Redefine collaboration. Trusted by over 83 million developers.
+                <span>La nostra missione e quella di chi decide di diventare nostro partner è quella di creare il punto di incontro
+tra la persona che cerca lavoro</span> e l’azienda disposta ad assumerla. Si tratta di un match che deve essere
+perfetto e corrispondere alle esigenze di entrambe le parti, che decidono di unirsi nel nome degli stessi
+valori e ideali andando oltre la tradizionale visione del candidato come risorsa umana da “sfruttare” sulla
+base di un dato job title ed esperienza.
               </div>
               <div class="text2">
-                Increase developer velocity. Secure every step. Automate entire
-                workflows. Redefine collaboration. Trusted by over 83 million
-                developers.
-              </div>
-              <div class="text">
-                Redefine collaboration. Trusted by over 83 million developers.
-                <span
-                  >Increase developer velocity. Secure every step. Automate
-                  entire workflows.</span
-                >
+                In Jobify Recruiting quelle che per la classica agenzia di recruiting sono risorse umane diventano persone e
+talenti e ai nostri partner chiediamo la stessa visione innovativa di <span>un mercato del lavoro in continua
+evoluzione e cambiamento.</span>
               </div>
             </div>
             <div class="col colImage">
@@ -274,12 +257,12 @@ export default {
             <p>Partners</p>
             <h2>Diventa nostro partner</h2>
             <div class="subtitle">
-              Cerchiamo talenti per creare il futuro, cerchiamo talenti per
-              creare il futuro, cerchiamo talenti per creare il futuro
+              Cerchiamo talenti per creare il futuro, persone disposte a mettersi in gioco e aziende innovative pronte a
+offrire opportunità di lavoro e crescita personale e professionale. Diventa nostro partner!
             </div>
           </div>
           <div class="col col_2 transition">
-            <h3>Invia richiesta</h3>
+            <h3>Invia la richiesta</h3>
             <div
               class="input"
               style="display: flex; width: 95%; margin: 0 0 1rem 0"

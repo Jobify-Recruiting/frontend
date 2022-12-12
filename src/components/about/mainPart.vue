@@ -69,24 +69,20 @@ export default {
       <welcome></welcome>
 
       <div class="secondPart">
-        <div class="text1 bold">
-          <span>Increase developer velocity. </span>Secure every step. Automate
-          entire workflows. Redefine collaboration. Trusted by over 83 million
-          developers.
+        <div class="text1 bold text1H1">
+          <span>Jobify Recruiting:</span> chi siamo e il nostro metodo
+        </div>
+      </div>
+      <div class="thirdPart">
+        <div class="text1 bold ">
+          <span>Jobify Recruiting è l’agenzia di head hunting digitale e dinamica</span> che punta a trovare talenti da inserire nella
+tua azienda grazie a un processo di ricerca e selezione consulenziale, umano, efficace, scientifico e rapido.
         </div>
       </div>
       <div class="thirdPart">
         <div class="text1 bold">
-          Increase developer velocity. Secure every step. Automate entire
-          workflows. <span>Redefine collaboration.</span> Trusted by over 83
-          million developers.
-        </div>
-      </div>
-      <div class="thirdPart">
-        <div class="text1 bold">
-          Increase developer velocity. Secure every step. Automate entire
-          workflows. Redefine collaboration.
-          <span>Trusted by over 83 million developers.</span>
+          Il nome “Jobify” nasce dall’unione di <span>“job” e “identify”</span> e proprio perché crediamo che siamo prima persone
+e professionisti e proprio questo diventa il fulcro del nostro lavoro di ogni giorno.
         </div>
       </div>
       <div class="fourthPart">
@@ -97,71 +93,96 @@ export default {
           <div class="image2 transition" style="margin-top: 5rem"></div>
         </div>
       </div>
+      <div class="secondPart">
+        <div class="text1 bold text1H1">
+          <span>Il team</span> di Jobify Recruiting
+        </div>
+      </div>
+      <div class="thirdPart">
+        <div class="text1 bold ">
+          A differenza della tradizionale agenzia di ricerca e selezione personale, Jobify Recruiting è un’agenzia di
+head hunting <span>dinamica ed energica,</span> snella e rapida nel fornire la soluzione ideale al candidato che cerca
+lavoro e all’azienda che cerca candidati.
+        </div>
+      </div>
+      <div class="thirdPart">
+        <div class="text1 bold">
+          Il nostro team è composto da <span>persone giovani</span> ma altamente competenti, che svolgono il lavoro quotidiano
+di ricerca e selezione talenti con passione e impegno. Amiamo quello che facciamo, ma ancora di più
+amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende con una risorsa ideale.
+        </div>
+      </div>
       <div class="fifthPart">
-        <h2>Jobify Recruiting: chi siamo e il nostro metodo</h2>
         <div class="quotesDiv">
           <div class="quotes">
             <div class="quote">
               <div class="quoteh4">
-                <span>Storia</span> di Jobify Recruiting
+                <span>Mission</span> di Jobify Recruiting
               </div>
               <div class="quoteh5">
-                Jobify Recruiting è l’agenzia di head hunting digitale e dinamica che punta a trovare talenti da inserire nella
-tua azienda grazie a un processo di ricerca e selezione consulenziale, umano, efficace, scientifico e rapido.
-</div>
-<div class="quoteh5">Il nome “Jobify” nasce dall’unione di “job” e “identify” e proprio perché crediamo che siamo prima persone
-e professionisti e proprio questo diventa il fulcro del nostro lavoro di ogni giorno.
-              </div>
-              <a href="/companies" class=""
-                ><button class="btn">Prenota una consulenza</button></a
-              >
-            </div>
-            <div class="quote" style="text-align: right !important;
-              float: right !important; margin-top: 8rem">
-              <div class="quoteh4" style="text-align: right !important;
-              float: right !important">Il <span>team</span> di Jobify Recruiting</div>
-              <div class="quoteh5" style="float: right !important">
-                A differenza della tradizionale agenzia di ricerca e selezione personale, Jobify Recruiting è un’agenzia di
-                head hunting dinamica ed energica, snella e rapida nel fornire la soluzione ideale al candidato che cerca
-                lavoro e all’azienda che cerca candidati.
-                </div>
-                <div class="quoteh5" style="float: right !important">
-                Il nostro team è composto da persone giovani ma altamente competenti, che svolgono il lavoro quotidiano
-                di ricerca e selezione talenti con passione e impegno. Amiamo quello che facciamo, ma ancora di più
-                amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende con una risorsa ideale.
-              </div>
-            </div>
-          </div>
-          <div class="quotes">
-            <div class="quote">
-              <div class="quoteh4">
-                <span>Vision</span> di Jobify Recruiting
-              </div>
-              <div class="quoteh5">
-                La nostra vision parla di un mondo HR sempre più human e digital, in cui competenze personali incontrano
-le moderne tecnologie per un processo di ricerca e selezione dei candidati ottimizzato. Vogliamo trovare la
-persona ideale per ogni azienda e dare al candidato la posizione lavorativa che cerca e sogna da sempre.
-              </div>
-              <a href="/companies" class=""
-                ><button class="btn">Scopri i servizi per le aziende</button></a
-              >
-            </div>
-            <div class="quote" style="text-align: right !important;
-              float: right !important; margin-top: 10rem">
-              <div class="quoteh4" style="text-align: right !important;
-              float: right !important"><span>Mission</span> di Jobify Recruiting</div>
-              <div class="quoteh5" style="float: right !important">
                 La nostra Mission è creare il match perfetto umano tra aspettative e valori del candidato. Dal punto di visra
-dell’azienda si tratta di trovare una persona compatibile con la cultura aziendale, dal punto di vista del
-candidato inserire la risorsa in un’azienda con cui condivide valori e ideali.
-              </div>
-              
+                dell’azienda si tratta di trovare una persona compatibile con la cultura aziendale, dal punto di vista del
+                candidato inserire la risorsa in un’azienda con cui condivide valori e ideali.
+                </div>
+            </div>
+            <div class="quote" style="text-align: right !important;
+              float: right !important; margin-top: 20rem">
+              <div class="quoteh4" style="text-align: right !important;
+              float: right !important"><span>Vision</span> di Jobify Recruiting</div>
+              <div class="quoteh5" style="float: right !important">
+                La nostra vision parla di un mondo HR sempre più human e digital, in cui competenze personali incontrano
+                le moderne tecnologie per un processo di ricerca e selezione dei candidati ottimizzato. Vogliamo trovare la
+                persona ideale per ogni azienda e dare al candidato la posizione lavorativa che cerca e sogna da sempre.
+                </div>
             </div>
           </div>
         </div>
       </div>
       <div class="sixtPart">
         <h2>Non più candidati, ma persone da mettere al centro del processo di selezione</h2>
+        <div class="description">
+          In Jobify Recruiting il candidato diventa una persona da mettere al centro del processo di selezione. Con un
+          metodo scientifico e rigoroso basato sui dati valutiamo valori e aspettative di ciascuno per trovare il suo
+          talento e metterlo a disposizione delle aziende. L’azienda giusta diventa quella di cui il candidato si rivede
+          nei valori ed è soddisfatto delle sue aspettative personali e questo modo di lavorare porta a persone felici e
+          pronte a svolgere al meglio il loro lavoro.
+        </div>
+
+        <div class="sixtPartButton">
+          <a href="/workwithus" class="">
+            <button class="btn"> Scopri i servizi per il candidato <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16" data-v-3f1ba09e=""><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" data-v-3f1ba09e=""></path></svg></span></button></a></div>
+      </div>
+      <div class="secondPart">
+        <div class="text1 bold text1H1">
+          Jobify Recruiting: <span>la storia</span>
+        </div>
+      </div>
+      <div class="thirdPart">
+        <div class="text1 bold ">
+          Jobify Recruiting nasce a Milano nel 2021 da un’idea di Davide Maggio Ceo e Founder esperto nella
+          direzione personale da oltre 10 anni e attivo nel settore della gestione, organizzazione e sviluppo del
+          personale. Davide Maggio è HR Manager certificato Aicq Sicev con una laurea in Psicologia e 3 Master in HR
+
+          Management. Da questo bagaglio di competenze è nata l’idea di <span>mettere l’esperienza alla servizio delle
+          aziende</span> per colmare un gap esistente nel mondo della ricerca e selezione.
+        </div>
+      </div>
+      <div class="thirdPart">
+        <div class="text1 bold">
+          Il settore della Ricerca &amp; Selezione e dell’ HR Tech in Italia è fermo da 10 anni: le aziende faticano ancora a
+          trovare i talenti giusti, ed i talenti a trovare le aziende giuste. Jobify Recruiting ha come obiettivo primario
+          quello di <span>umanizzare il processo di Ricerca &amp; Selezione,</span> mettendo a servizio dei nostri Head Hunter
+          strumenti di Intelligenza Artificiale ed HR Tech.
+        </div>
+      </div>
+      <div class="thirdPart">
+        <div class="text1 bold">
+          Un team capace di umanizzare la ricerca e selezione.
+          Crediamo fortemente che <span>siamo persone prima che professionisti.</span>
+        </div>
+      </div>
+      <div class="sixtPart" style="padding-top: 10rem;">
+        <h2>Le persone che fanno parte della famiglia Jobify Recruiting</h2>
         <div class="team1">
           <div class="person2">
             <div
@@ -272,8 +293,7 @@ candidato inserire la risorsa in un’azienda con cui condivide valori e ideali.
       <div class="seventhPart">
         <div class="text">
           <h2>Lavora con <span>noi</span></h2>
-          <p>Le persone che fanno parte della famiglia Jobify Recruiting.
-            La squadra di Jobify Recruiting è giovane, dinamica e competente. Scopri le persone che ne fanno parte e
+          <p>La squadra di Jobify Recruiting è giovane, dinamica e competente. Scopri le persone che ne fanno parte e
 contattaci se anche tu vuoi entrare nel nostro team.</p>
 
           <div class="formButton">
@@ -508,6 +528,12 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
     margin-left: 3rem;
   }
 
+  .secondPart .text1H1{
+    font-size: 54px !important;
+    line-height: 54px !important;
+    font-weight: 500 !important;
+  }
+
   .secondPart .text1 h3{
     font-size: 30px;
     line-height: 30px;
@@ -526,7 +552,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   .thirdPart {
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 5rem;
     background: #ffffff;
   }
@@ -631,10 +657,10 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   }
 
   .quotes .quoteh4 {
-    font-size: 44px;
-    line-height: 44px;
+    font-size: 54px;
+    line-height: 58px;
     font-weight: 800;
-    width: 70%;
+    width: 100%;
     color: #1e213d;
     margin-bottom: 1rem;
     text-align: left !important;
@@ -672,9 +698,27 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
     color: #1e213d;
     font-size: 54px;
     font-weight: 800 !important;
-    width: 40%;
+    width: 60%;
     line-height: 58px;
     letter-spacing: -0.04em !important;
+  }
+  
+  .sixtPart .description{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #627597;
+    padding-bottom: 2rem;
+    width: 80%;
+  }
+
+  .sixtPart .sixtPartButton{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sixtPart h4 {

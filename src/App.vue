@@ -394,7 +394,7 @@ a:hover {
   .nav .logo {
     width: 170px;
     margin-top: 0.5rem;
-    margin-left: 1rem;
+    margin-left: 3rem;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }

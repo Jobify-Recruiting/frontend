@@ -180,14 +180,19 @@ export default {
         <div class="glow4"></div>
         <div class="glow5"></div>
         <div class="firstPart">
-          <div class="subtitle">Aziende</div>
-          <h2>Creiamo il match perfetto tra azienda e candidato.</h2>
+          <div class="subtitle">Sei un'azienda</div>
+          <h2>Jobify Recruiting trova il candidato giusto per l’azienda giusta</h2>
           <p>
-            Jobify Recruiting utilizza <span>tecnologie</span> che assolvono
-            l'uomo da tutte quelle azioni ripetute nel tempo che non richiedono
-            intelletto umano. Questo <span>velocizza</span> il processo di
-            ricerca, ci rende più competitivi sul mercato e lascia più tempo
-            all'Head Hunter nella fase di ricerca e selezione.
+            Jobify Recruiting è molto diversa dalle agenzie di ricerca personale. Siamo una società di Head Hunting che
+            utilizza un metodo <span>scientifico</span> con un approccio <span>consulenziale</span>. Il processo di selezione è umano e studiato
+            nei minimi dettagli per prendere decisioni in modo consapevole e trasparente al fine di lavorare in perfetta
+            sinergia con l’azienda.
+          </p>
+
+          <p>
+            Usiamo strumenti e tecnologia avanzate e ci affidiamo all’intelligenza artificiale per velocizzare il processo
+di ricerca, in modo da soddisfare le esigenze delle diverse aziende che si rivolgono a noi e avere più tempo
+da dedicare alla ricerca e selezione vera e propria dei talenti.
           </p>
 
           <div class="mainButton">
@@ -258,44 +263,128 @@ export default {
 
         <div class="numbersDiv">
           <h2>
-            Le statistiche: ci aiutano a <span>prendere decisioni</span> in maniera
-            consapevole
+            Human + Digital: usare i dati per prendere <span>decisioni migliori</span>
           </h2>
           <div class="numbers">
             <div class="number transition">
-              <h3>40%</h3>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
+              <h3>+50%</h3>
+              <div class="subtitle">Umanizzazione</div>
+              <p>match tra azienda e candidato</p>
             </div>
             <div class="number transition">
-              <h3>654%</h3>
-              <div class="subtitle">Return on investment</div>
-              <p>over 3 years</p>
+              <h3>-30%</h3>
+              <div class="subtitle">Rapidità</div>
+              <p>tempo risparmiato per la ricerca e selezione e tempo medio di ricerca candidati di 26 gg</p>
             </div>
             <div class="number transition">
               <h3>45</h3>
-              <div class="subtitle">Minutes saved</div>
-              <p>per developer, per day</p>
+              <div class="subtitle">Aumenta clima aziendale</div>
+              <p>grazie al match di valori tra azienda e candidato</p>
             </div>
           </div>
           <div class="numbers">
             <div class="number transition">
-              <h3>40%</h3>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
+              <h3>+20%</h3>
+              <div class="subtitle">Talent retention</div>
+              <p>il candidato trova un’azienda che soddisfa le sue aspettative
+professionali e si riflette nella cultura aziendale</p>
             </div>
             <div class="number transition">
-              <h3>654%</h3>
-              <div class="subtitle">Return on investment</div>
-              <p>over 3 years</p>
-            </div>
-            <div class="number transition">
-              <h3>45</h3>
-              <div class="subtitle">Minutes saved</div>
-              <p>per developer, per day</p>
+              <h3>-40%</h3>
+              <div class="subtitle">Costi azienda</div>
+              <p>di turnover grazie alla capacità di Jobify Recruiting di creare il match perfetto tra talento e azienda</p>
             </div>
           </div>
         </div>
+
+        <div class="thirdPart" id="whyJobify">
+          <div class="thirdPartDiv">
+            <div class="first">
+              <div class="col1">
+                <h2>Il problema delle aziende…</h2>
+                <p>
+                  Oggi le aziende hanno difficoltà a trovare i giusti talenti dato che spesso si basano unicamente sulla
+                  valutazione del CV e delle Hard &amp; Soft Skills. Per questo Jobify Recruiting propone un approccio che punta a
+                  mettere al centro valori e aspettative del candidato dal punto di vista professionale per creare i match con
+                  la cultura e i valori aziendali alla base di una proficua relazione candidato-azienda. 4 IL PROBLEMA: Oggi in
+                  Italia esistono ben 1074 società di Ricerca &amp; Selezione del personale, ma poche si caratterizzano per
+                  l’approccio consulenziale e la volontà di umanizzare il processo di selezione. Questo è quello che fa Jobify
+                  Recruiting con un metodo: Umano, Scientifico, Trasparente, Consulenziale.
+                </p>
+
+                <h2>
+                  I punti di forza del nostro metodo
+                </h2>
+                <p>
+                  Jobify Recruiting è molto diversa dalle agenzie di ricerca personale. Siamo una società di Head Hunting che
+                  utilizza un metodo scientifico con un approccio consulenziale. Il processo di selezione è umano e studiato
+                  nei minimi dettagli per prendere decisioni in modo consapevole e trasparente al fine di lavorare in perfetta
+                  sinergia con l’azienda. Per questo il nostro metodo di ricerca talenti si basa su: Interviste all’azienda per
+                  comprendere e approfondire la cultura aziendale, il clima aziendale, l&#39;organigramma ed il funzionigramma,
+                  oltre al riporto diretto della risorsa da inserire, Interviste al candidato per comprendere ed approfondire i
+                  valori e le aspettative dal punto di vista professionale.
+                </p>
+
+                <h2>
+                  I vantaggi per le aziende
+                </h2>
+                <p>
+                  La situazione di emergenza sanitaria ha fatto riscoprire alle persone il valore della vita e le ha portate a
+                  rivedere le priorità, dando maggior importanza al nostro tempo e al nostro benessere personale.
+                  Il settore della Ricerca &amp; Selezione e dell’ HR Tech in Italia è fermo da 10 anni: le aziende faticano ancora a
+                  trovare i talenti giusti, ed i talenti a trovare le aziende giuste.
+                  Jobify Recruiting ha come obiettivo primario quello di umanizzare il processo di Ricerca &amp; Selezione,
+                  mettendo a servizio dei nostri Head Hunter strumenti di Intelligenza Artificiale ed HR Tech.
+                </p>
+                
+              </div>
+              <div class="col2">
+                <div class="glow4"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="250"
+                  height="250"
+                  fill="#fff"
+                  class="bi bi-building transition"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"
+                  />
+                  <path
+                    d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="second">
+              <div class="feature">
+                <h2>Efficacia</h2>
+                <p>
+                  Il giusto candidato permette di ottenere prestazioni migliori, il turnover si riduce e aumenta il
+                  tasso di retention. Questo si traduce in una riduzione dei costi per l’azienda.
+                </p>
+              </div>
+              <div class="feature">
+                <h2>Rapidità</h2>
+                <p>
+                  Le moderne tecnologie velocizzano il processo di selezione e riducono errori di valutazione,
+                  tempo e spese extra per la ricerca della migliore risorsa.
+                </p>
+              </div>
+              <div class="feature">
+                <h2>Umanizzazione</h2>
+                <p>
+                  Le aziende di successo hanno al loro interno dipendenti felici e per questo lo scopo di Jobify
+                  Recruiting è creare il match ideale tra talento e azienda. Si tratta di andare oltre le competenze
+                  professionali e tenere conto di valori e ideali della risorsa da inserire in azienda.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="workflow" id="workflow">
           <div class="workflowTitle">
             <h2 style="margin-bottom: 0rem !important">Schema del processo</h2>
@@ -580,108 +669,6 @@ export default {
                     >
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="thirdPart" id="whyJobify">
-          <div class="thirdPartDiv">
-            <div class="first">
-              <div class="col1">
-                <h2>Qual è il problema?</h2>
-                <p>
-                  Le aziende hanno difficoltà a trovare i <span>giusti talenti</span>,
-                  avendo come primo e unico elemento di
-                  valutazione il CV (Hard & Soft Skills). Nasce sempre di più la necessità di valutare:
-                </p>
-                <p>
-                  I <span>valori</span> e le <span>aspettative</span> del candidato
-                  da un punto di vista professionale;
-                </p>
-                <p>
-                  L'azienda, approfondendo la cultura ed il clima aziendale,
-                  l'organigramma ed il funzionigramma, e l'eventuale riporto
-                  diretto della risorsa da inserire;
-                  La <span>cultura</span> ed i <span>valori aziendali.</span>
-                </p>
-                <p>
-                  Esistono ben <span>1074 società di R&S in Italia.</span>
-                  Poche, tuttavia, sono caratterizzate da un
-                  approccio consulenziale e dall’attenzione
-                  ad umanizzare il processo di selezione.
-                </p>
-                <p>
-                  Jobify Recruiting, invece, offre tutto in un’unica soluzione:<br>
-                  ❖ Umano<br>
-                ❖ Scientifico<br>
-                ❖ Trasparente<br>
-                ❖ Consulenziale<br>
-                </p>
-              </div>
-              <div class="col2">
-                <div class="glow4"></div>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="250"
-                  height="250"
-                  fill="#fff"
-                  class="bi bi-building transition"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"
-                  />
-                  <path
-                    d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="second">
-              <div class="feature">
-                <h2>Efficace</h2>
-                <p>
-                  Analizza i bisogni dell’azienda e del candidato, con lo scopo
-                  di ricercare la perfetta compatibilità tra la risorsa da
-                  assumere e i bisogni e le aspettative dell’azienda. Questo
-                  crea un rapporto di lavoro più stabile e duraturo nel tempo.
-                </p>
-              </div>
-              <div class="feature">
-                <h2>Scientifico</h2>
-                <p>
-                  Tutto il processo viene monitorato da dati specifici. Questi
-                  ci aiutano a prendere decisioni in maniera consapevole
-                </p>
-              </div>
-              <div class="feature">
-                <h2>Rapido</h2>
-                <p>
-                  Ricorre a tecnologie A.I. e HR Tech. Assolve l’uomo da tutte
-                  quelle azioni ripetute nel tempo che non richiedono intelletto
-                  umano. Velocizza la ricerca e ci rende più competitivi sul
-                  mercato
-                </p>
-              </div>
-            </div>
-            <div class="second">
-              <div class="feature">
-                <h2>Umano</h2>
-                <p>
-                  Il tempo risparmiato grazie all'utilizzo dell'intelligenza
-                  artificiale, consente ai nostri head hunter di instaurare un
-                  rapporto con i candidati e comprendere i loro valori, le loro
-                  aspettative ed i loro bisogni.
-                </p>
-              </div>
-              <div class="feature">
-                <h2>Competitivo</h2>
-                <p>
-                  Essendo dei nativi digitali riusciamo a contenere i costi
-                  fissi ed essere tra i più competitivi sul mercato
-                </p>
               </div>
             </div>
           </div>
@@ -1632,11 +1619,11 @@ export default {
           <div class="glow4"></div>
           <div class="glow5"></div>
           <div class="col col_1">
-            <p>Aziende</p>
+            <p>Sei un'azienda?</p>
             <h2>Fissa un appuntamento</h2>
             <div class="subtitle">
-              Ricerchiamo il candidato perfetto rispetto le vostre esigenze,
-              creiamo un rapporto più stabile e duraturo.
+              Se anche tu stai cercando il candidato perfetto per la posizione aperta nella tua azienda fissa un
+appuntamento con Jobify Recruiting.
             </div>
             <div class="images">
               <div
@@ -2839,7 +2826,7 @@ export default {
     line-height: 58px;
     letter-spacing: -0.04em;
     font-weight: 700;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -2853,7 +2840,7 @@ export default {
     font-size: 18px;
     line-height: 22px;
     font-weight: 300;
-    margin-top: 3rem;
+    margin-bottom: 5rem;
   }
 
   .first .col2 .building2 {

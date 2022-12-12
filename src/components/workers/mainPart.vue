@@ -245,8 +245,8 @@ export default {
         <div class="glow5"></div>
         <div class="firstPart">
           <div class="subtitle">Cerchi lavoro?</div>
-          <h2>Un nuovo modo per ricercare talenti</h2>
-          <p>Crediamo che ogni persona abbia un talento, basta scoprirlo.</p>
+          <h2>Jobify Recruiting è la risposta giusta!</h2>
+          <p>Su Jobify Recruiting trovi ogni giorno nuove offerte in ambito Farm, Finance, IT, Tech, HR.</p>
           <div class="mainButton">
             <router-link to='/openposition/?jobalert=open'
               ><button class="btn">
@@ -338,15 +338,15 @@ export default {
               <div class="col1">
                 <h2>Trova con noi il tuo prossimo lavoro.</h2>
                 <p>
-                  Il nostro obiettivo è creare il macthing perfetto tra
-                  candidato e azienda.
+                  Se sei un candidato in cerca di lavoro e cerchi nuove opportunità professionali Jobify Recruiting ti mette in
+                  contatto con l’azienda giusta per te. Il nostro obiettivo è creare il match perfetto tra risorse umane e
+                  aziende che assumono, andando oltre una visione tradizionale basata su job title e competenze tecniche,
+                  hard e soft skill.
                 </p>
                 <p>
-                  Siamo convinti che non sia più sufficiente trovare le giuste
-                  competenze, rispetto al profilo ricercato dall’azienda. È
-                  fondamentale invece capire le aspettative professionali e i
-                  valori di ogni persona, al fine di creare la perfetta
-                  compatibilità con la cultura e i valori dell’azienda.
+                  Quello che ti aiutiamo a fare in modo rapido e efficace è collocarti in una realtà imprenditoriale con cui
+                  condividi valori e ideali, perché il dipendente migliore è quello felice di contribuire al successo e alla crescita
+                  aziendale.
                 </p>
               </div>
               <div class="col2">
@@ -365,7 +365,7 @@ export default {
                 </svg>
               </div>
             </div>
-            <h3>Cosa puoi fare</h3>
+            <h3>Gli strumenti che mettiamo a tua disposizione</h3>
             <div class="second">
               
               <div class="feature">
@@ -377,9 +377,9 @@ export default {
                 ></div>
                 <h2>Il Curriculum Vitae</h2>
                 <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
+                  Creare un CV efficace non è semplice e per questo nella ricerca del tuo prossimo lavoro puoi affidarti a
+                  Jobify Recruiting. Troverai un team che sa tradurre le tue competenze e i tuoi talenti in un documento
+                  professionale con cui presentarti alle aziende.
                 </p>
                 <div class="btn3">Scarica</div>
               </div>
@@ -392,9 +392,9 @@ export default {
                 ></div>
                 <h2>Il colloquio</h2>
                 <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
+                  Il segreto per arrivare preparati al colloquio è conoscere l’azienda che offre la posizione per cui ci si
+                  candida. Tanti sono gli accorgimenti da tenere a mente e i dettagli da non trascurare e per questo in Jobify
+                  Recruiting trovi un consulente che ti accompagna in questa fase delicata della ricerca lavoro.
                 </p>
                 <div class="btn3">Learn more</div>
               </div>
@@ -407,9 +407,9 @@ export default {
                 ></div>
                 <h2>La lettera di presentazione</h2>
                 <p>
-                  Get updates on the GitHub activity you've subscribed to. Use
-                  the notifications inbox to customize, triage, and manage your
-                  updates.
+                  Le aziende non amano lettere di presentazione standardizzate e semplici copia e incolla inviati in massa.
+                  Una lettera di presentazione efficace è centrata sulla posizione e sull’azienda per cui ci si candida e
+                  prepararla è sicuramente più semplice se si può contare sul supporto di Jobify Recruiting.
                 </p>
                 <div class="btn3">Learn more</div>
               </div>
@@ -420,7 +420,7 @@ export default {
         <div class="workflow" id="workflow">
           <div class="workflowTitle">
             <h2 style="margin-bottom: 0rem !important">
-              Scopri ogni step del processo di ricerca e selezione
+              Gli step del processo di ricerca e selezione
             </h2>
           </div>
           <div class="buttons">
@@ -474,12 +474,9 @@ export default {
                   <div class="number">1</div>
                   <h2>Intervista al cliente</h2>
                   <p>
-                    Descrizione dello step, Jobify, la tua ricerca e selezione,
-                    la tua ricerca e selezione, la tua ricerca e selezione, la
-                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
-                    la tua ricerca e selezione, la tua ricerca e selezione, la
-                    tua ricerca e selezione, la tua ricerca e selezione, la tua
-                    ricerca e selezione
+                    Trovare lavoro rapidamente significa avere le idee chiare non solo sull’azienda per cui ci si candida e sulla
+                    posizione, ma anche sulle proprie esigenze, valori e ideali e aspettative. Per questo in Jobify Recruiting
+                    intervistiamo i candidati in modo da proporre solo annunci in linea con quello che si vuole dal nuovo lavoro.
                   </p>
                 </div>
               </div>
@@ -503,12 +500,10 @@ export default {
                   <div class="number">2</div>
                   <h2>Job description</h2>
                   <p>
-                    Descrizione dello step, Jobify, la tua ricerca e selezione,
-                    la tua ricerca e selezione, la tua ricerca e selezione, la
-                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
-                    la tua ricerca e selezione, la tua ricerca e selezione, la
-                    tua ricerca e selezione, la tua ricerca e selezione, la tua
-                    ricerca e selezione
+                    Chi cerca lavoro lo fa a partire da una determinata Job Description: sapere chi si è e cosa si sa fare, quali
+                    sono i propri talenti e potenzialità significa presentarsi alle aziende con una marcia in più rispetto agli altri
+                    candidati. Per questo in Jobify Recruiting conoscendo le soft e hard skills troviamo l’annuncio per mettere
+                    la persona giusta nell’azienda giusta.
                   </p>
                 </div>
               </div>
@@ -532,15 +527,11 @@ export default {
                 </div>
                 <div class="background transition">
                   <div class="number">3</div>
-                  <h2>Lancio annuncio & Head Hunting</h2>
+                  <h2>Head Hunting e incontro con l’azienda</h2>
                   <p>
-                    Descrizione dello step, Jobify, la tua ricerca e selezione,
-                    la tua ricerca e selezione, la tua ricerca e selezione, la
-                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
-                    <span
-                      >la tua ricerca e selezione, la tua ricerca e
-                      selezione</span
-                    >
+                    Dopo l’intervista e l’analisi della job description abbiamo in mano gli strumenti per cominciare la ricerca del
+                    lavoro e le basi per creare il match vincente tra azienda e candidato. Fare Head Hunting significa trovare la
+                    soluzione migliore per entrambe le parti e portare a un rapporto di lavoro proficuo e che dura nel tempo.
                   </p>
                 </div>
               </div>
@@ -724,7 +715,7 @@ export default {
                       aria-controls="collapse1"
                     >
                       <p>></p>
-                      Collapsible Group Item #1
+                      Cosa devo fare per trovare lavoro con Jobify Recruiting
                     </button>
                   </h2>
                 </div>
@@ -736,9 +727,9 @@ export default {
                   data-parent="#accordionExample"
                 >
                   <div class="card-body">
-                    Some placeholder content for the first accordion panel. This
-                    panel is shown by default, thanks to the
-                    <code>.show</code> class.
+                    La prima cosa da fare è <code>contattarci</code> per ottenere supporto nella redazione del CV e della lettera di
+                    presentazione. Successivamente verrai intervistato in modo da farci capire chi sei e cosa desideri e sulla
+                    base dell’analisi del tuo potenziale ti proporremo offerte di lavoro in linea con le tue aspettative.
                   </div>
                 </div>
               </div>
@@ -754,7 +745,7 @@ export default {
                       aria-controls="collapse2"
                     >
                       <p>></p>
-                      Collapsible Group Item #1
+                      In quanto tempo posso trovare lavoro con Jobify Recruiting
                     </button>
                   </h2>
                 </div>
@@ -766,9 +757,8 @@ export default {
                   data-parent="#accordionExample"
                 >
                   <div class="card-body">
-                    Some placeholder content for the first accordion panel. This
-                    panel is shown by default, thanks to the
-                    <code>.show</code> class.
+                    In media la ricerca di lavoro dura dai XX ai XX mesi, ma si tratta di un periodo di <code>tempo variabile</code> che
+                    dipende dalle competenze del candidato e dalla disponibilità di offerte da parte delle aziende.
                   </div>
                 </div>
               </div>
@@ -784,7 +774,7 @@ export default {
                       aria-controls="collapse3"
                     >
                       <p>></p>
-                      Collapsible Group Item #1
+                      In quali settori posso trovare lavoro con Jobify Recruiting?
                     </button>
                   </h2>
                 </div>
@@ -796,65 +786,9 @@ export default {
                   data-parent="#accordionExample"
                 >
                   <div class="card-body">
-                    Some placeholder content for the first accordion panel. This
-                    panel is shown by default, thanks to the
-                    <code>.show</code> class.
-                  </div>
-                </div>
-              </div>
-              <div class="card transition">
-                <div class="card-header" id="headingTwo">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      <p>></p>
-                      Collapsible Group Item #2
-                    </button>
-                  </h2>
-                </div>
-                <div
-                  id="collapseTwo"
-                  class="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    Some placeholder content for the second accordion panel.
-                    This panel is hidden by default.
-                  </div>
-                </div>
-              </div>
-              <div class="card transition">
-                <div class="card-header" id="headingThree">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left collapsed"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      <p>></p>
-                      Collapsible Group Item #3
-                    </button>
-                  </h2>
-                </div>
-                <div
-                  id="collapseThree"
-                  class="collapse"
-                  aria-labelledby="headingThree"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    And lastly, the placeholder content for the third and final
-                    accordion panel. This panel is hidden by default.
+                    La nostra agenzia di head hunting è attiva nei settori <code>Farm, Finance, IT, Tech, HR.</code> In particolare ci
+                    occupiamo di trovare nuove opportunità di carriera a chi occupa una posizione di middle e top
+                    management.
                   </div>
                 </div>
               </div>
@@ -867,11 +801,11 @@ export default {
             <div class="cols2">
               <div class="col col-padding" id="positions">
                 <h3>
-                  Scopri le <span>posizioni aperte</span> di Jobify recruiting
+                  Scopri le <span>posizioni aperte</span> su Jobify recruiting
                 </h3>
                 <router-link to="/openposition">
                   <div class="button">
-                    Posizioni aperte
+                    Guarda le offerte di lavoro
                     <span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"

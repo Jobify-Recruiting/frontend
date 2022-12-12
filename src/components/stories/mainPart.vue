@@ -325,12 +325,26 @@ export default {
           </div>
         </div>
 
+        <div class="sixtPart">
+        <h2>Ogni persona ha un talento e ogni talento racchiude in sé un’opportunità di lavoro</h2>
+        <div class="description">
+          Il compito di Jobify
+          Recruiting è proprio questo: creare il match perfetto tra persona e azienda, talento e impresa per collocare
+          le persone giuste al posto giusto. Un compito che da sempre svolgiamo con la massima cura e attenzione
+          come testimoniano le storie dei talenti che abbiamo raccolto in questa pagina.
+          Perché nessuna persona è priva di talento e ciascuno può e deve trovare l’azienda capace di valorizzarlo.
+        </div>
+
+        <div class="sixtPartButton">
+          <a href="/workwithus" class="">
+            <button class="btn"> Scopri i servizi per il candidato <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16" data-v-3f1ba09e=""><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" data-v-3f1ba09e=""></path></svg></span></button></a></div>
+      </div>
+
         <div class="fifthDiv">
           <div class="adviser">
             <div class="col">
               <h3>
-                <span>CTA per le aziende</span> qui scriviamo un copy per
-                invitare l'azienda a contattarci
+                <span>Contattaci e prenota un appuntamento</span> per trovare i migliori talenti per la tua azienda.
               </h3>
               <div class="divInput">
                 <router-link to="/contact"
@@ -839,6 +853,59 @@ export default {
     background-repeat: no-repeat;
     background-position: center;
     width: 50%;
+  }
+
+  .sixtPart {
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: transparent;
+  }
+
+  .sixtPart h2 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1e213d;
+    font-size: 54px;
+    font-weight: 800 !important;
+    width: 60%;
+    line-height: 58px;
+    letter-spacing: -0.04em !important;
+  }
+  
+  .sixtPart .description{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #627597;
+    padding-bottom: 2rem;
+    width: 80%;
+  }
+
+  .sixtPart .sixtPartButton{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sixtPart h4 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1e213d;
+    font-size: 18px;
+    font-weight: 500 !important;
+    width: 40%;
+    line-height: 18px;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 0rem;
   }
 
   .divInput {

@@ -268,8 +268,8 @@ export default {
         <div style="background: #1e213d; padding-top: 10rem;">
           <div class="title">
           <div class="titleDiv">
-            <h2>Posizioni aperte</h2>
-            <p>Cerca tra i lavori attuali</p>
+            <h2>Cerchi Lavoro?</h2>
+            <p>Offerte di lavoro</p>
           </div>
           </div>
           <div class="search">
@@ -2030,47 +2030,46 @@ export default {
         <div class="secondPart2">
           <div class="title">
             <h2>
-              Jobify recruiting, ricerca e selezione talenti con
-              <span>umanità</span>
+              Jobify Recruiting: mettiamo il <span>talento</span> al servizio delle aziende
+              
             </h2>
             <p>
-              Poniamo il <span>rapporto umano</span> al centro tra
-              <span>domanda e offerta</span>, per creare il
-              <span>match “perfetto”</span> tra <span>azienda</span> e
-              <span>candidato</span>. Intervistiamo:
+              Tante sono le aziende che cercano candidati nel settore <span>Farm, Finance, IT Tech e HR</span> e tanti i candidati che
+cercano l’azienda ideale in cui collocarsi per una carriera professionale ricca di soddisfazioni. In tutto questo
+Jobify Recruiting ha il compito di creare il match perfetto tra talento e azienda, cercando profili di medio e
+alto livello che condividono valori e ideali con l’azienda in cui andranno a lavorare.
             </p>
           </div>
           <div class="steps">
             <div class="step transition">
               <div class="title">Intervista azienda</div>
               <div class="text">
-                Approfondendo la cultura ed il clima aziendale, l'organigramma
-                ed il funzionigramma, e l'eventuale riporto diretto della
-                risorsa da inserire.
+                In Jobify Recruiting approfondiamo il clima aziendale, l’organigramma e il funzionigramma dell’azienda per
+trovare la migliore risorsa da inserire con un rapporto consulenziale e diretto.
               </div>
             </div>
             <div class="step transition">
               <div class="title">Intervista talento</div>
               <div class="text">
-                Approfondendo i suoi valori e le sue aspettative da un punto di
-                vista professionale.
+                Jobify Recruiting va oltre il job title, le hard skill e le soft skill e lavora in modo da approfondire il mondo di
+valori, le attese e le aspettative del candidato, che diventa non più risorsa umana ma potenziale da
+sviluppare in azienda.
               </div>
             </div>
           </div>
         </div>
 
-        <h2 class="ctaTitle">Jobify recruiting, ricerca e selezione talenti</h2>
+        <h2 class="ctaTitle">Jobify Recruiting: ricerca e selezione talenti</h2>
 
         <div class="ctaCV" style="background: #1e213d">
           <div class="blur"></div>
           <div class="cols">
             <div class="col col-padding" id="positions">
               <h3 style="color: #fff">
-                Non hai trovato <span>offerte in linea</span> con le tue
-                aspettative?
+                Jobify Recruiting ti permette di inserire in azienda <span>la risorsa giusta</span> nei settori Farm, Finance, IT, Tech e HR.
               </h3>
               <div class="button" @click="sendCV()">
-                Manda il tuo CV
+                Contattaci per un appuntamento
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -119,12 +119,12 @@ export default {
               background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
             "
           ></div>
-          <div class="subtitle">Lavoratori</div>
-          <h2>Il team al centro di tutti i processi umani.</h2>
+          <div class="subtitle">Lavora con noi</div>
+          <h2>Un team fatto di persone per le persone</h2>
           <p>
-            Increase developer velocity. Secure every step. Automate entire
-            workflows. Redefine collaboration. Trusted by over 83 million
-            developers.
+            Jobify Recruiting lavora con passione e impegno e mette competenza, tecnologia e umanità al servizio di
+clienti che possono essere di volta in volta candidati e aziende. Se pensi di possedere queste qualità entra
+nel nostro team.
           </p>
           <!--<div class="mainButton">
             <a href="#first"
@@ -150,27 +150,24 @@ export default {
         </div>
         <div class="values">
           <div class="value1">
-            <h2>Valori</h2>
-            <span>Increase developer velocity.</span> Secure every step.
-            Automate entire workflows. Redefine collaboration. Trusted by over
-            83 million developers.
+            <h2>I nostri valori</h2>
+            <span>Jobify Recruiting crede nei valori</span> delle persone e seleziona per l’arricchimento costante del team chi ama
+migliorarsi e crescere personalmente e professionalmente.
           </div>
           <div class="value2">
-            <h2>Valori</h2>
-            Increase developer velocity. Secure every step. Automate entire
-            workflows. Redefine collaboration.
-            <span>Trusted by over 83 million developers.</span>
+            <h2>I nostri ideali</h2>
+            Creare il match perfetto tra aziende e persone è la nostra mission e per questo lavoriamo mettendo al
+centro ideali come <span>etica, professionalità e trasparenza.</span>
           </div>
         </div>
 
         <div class="secondPart">
           <div class="teamPhoto transition"></div>
           <div class="text">
-            <h2>Il team al centro</h2>
+            <h2>Entra nel nostro team</h2>
             <p>
-              Increase developer velocity. Secure every step. Automate entire
-              workflows. Redefine collaboration. Trusted by over 83 million
-              developers.
+              Se cerchi un’azienda giovane, flessibile e dinamica con cui lavorare sei nel posto giusto. Entra nel nostro
+team e scopri le opportunità aperte nella nostra squadra!
             </p>
           </div>
         </div>
@@ -180,8 +177,8 @@ export default {
             <p>Lavora con noi</p>
             <h2>Cerchiamo talenti per creare il futuro</h2>
             <div class="subtitle">
-              Cerchiamo talenti per creare il futuro, cerchiamo talenti per
-              creare il futuro, cerchiamo talenti per creare il futuro
+              Le posizioni di lavoro del team Jobify Recruiting sono tante e diverse e la nostra azienda è costantemente
+alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
             </div>
           </div>
           <div class="col col_2 transition">
