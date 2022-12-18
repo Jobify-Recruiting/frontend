@@ -5,7 +5,59 @@ export default {
   name: "mainPart",
   components: { welcome },
   data() {
-    return {};
+    return {
+      storie: [
+                {
+                  nickname: "Davide Maggio",
+                  ruolo: "Sviluppatore PHP",
+                  azienda: "CONTAQ",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "L’approccio umano è stato una componente fondamentale di tutto il processo. E’ stato molto importante per me il supporto, non solo dal punto di vista tecnico, durante tutta la durata della selezione. Ogni mia domanda o richiesta è stata accolta mettendo sempre in primo piano le mie necessità senza avere alcuna forzatura o costrizione di alcun tipo. Del servizio offerto mi hanno colpito la serietà, l’empatia e la cura del cliente. Molte aziende spesso trattano le risorse che cercano come numeri mentre qui ho notato un approccio completamente diverso e di totale cura della persona. Non sono mai stato lasciato solo ed ho sempre ricevuto l’appoggio di Chiara (la ragazza che ha curato il tutto) e questo è stato di grande aiuto per me. Per ultimo ma ovviamente non meno importante, la possibilità di ricevere un’offerta molto più alta della mia attuale RAL grazie all’intermediazione di Chiara, nel mio caso ho ricevuto un’offerta superiore di 10k alla mia attuale retribuzione",
+                },
+                {
+                  nickname: "Marco Fattizzo",
+                  ruolo: "Consulente Commerciale in P.Iva",
+                  azienda: "STUDIO FELLI",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito a mio agio nel potermi presentare in un clima sereno, dove sentirmi veramente ascoltato. Mi sono sentito seguito e sostenuto dall’inizio dell’iter di selezione, dal primo contatto telefonico, sino alle fasi successive, dove ho avuto un contatto e aggiornamento costante avendo un professionista a cui fare sempre riferimento .  Ho apprezzato la tempestività delle comunicazioni e il clima distensivo creato in mio favore per arrivare sereno e preparato sull’azienda al colloquio finale.",
+                },
+                {
+                  nickname: "Martina Di Palma",
+                  ruolo: "Segretaria Commerciale",
+                  azienda: "STRAGROUP ",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia candidatura. In qualità di candidata sono stata scrupolosamente seguita in tutte le fasi del processo di selezione dall' Head Hunter Martina Di Palma che ha ascoltato le mie aspettative lavorative, professionali e personali, incrociandole con le esigenze dell'azienda. Doppio ringraziamento per lo svolgimento della selezione interamente da remoto, che ha azzerato completamente i costi economici e temporali. Che dire finalmente un'agenzia di recruiting al passo con i tempi e soprattutto attenta al capitale umano!",
+                },
+                {
+                  nickname: "Cecilia Dondi",
+                  ruolo: "Car Rental Agent (BS)",
+                  azienda: "AUTOSYSTEM",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "Rispetto alle agenzie di recruiting sono spesso stata molto diffidente, mi sono ricreduta durante la mia esperienza con Jobify Recruiting. Questo soprattutto grazie alla professionalità di Martina che ha gestito il processo di selezione con un approccio umano, oltre che professionale e con molta chiarezza in tutti gli step. Quindi chiarezza e professionalità contraddistinguono la Jobify Recruiting. ",
+                },
+                {
+                  nickname: "Chiara Lucia Graziano",
+                  ruolo: "Inside Sales",
+                  azienda: "DOTSTAY ",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "L'esperienza vissuta con Jobify è stata molto positiva, l'azienda è stata un tramite perfetto tra me e il mio attuale datore di lavoro. Hanno seguito con molta attenzione tutta la fase di assunzione: dalla prima telefonata orientativa fino alla firma del contratto, tutto sempre con estrema umanità e professionalità",
+                },
+                {
+                  nickname: "Elisa Severa",
+                  ruolo: "Addetto alle vendite (Malta)",
+                  azienda: "CASCONE HOME ",
+                  data: "1 Dicembre 2022",
+                  storia_testo: "Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio targhetizzato, chiaro e per nulla impersonale. Le mie precedenti esperienze con le apl non sono state positive, in quanto non avevo questo costante rapporto di condivisione e aggiornamento con la parte hr. Ho riscontrato in jobify l’attenzione nel mettere il candidato al centro del processo di r&s , dove essere considerato una persona con le proprie ambizioni e talento da far incrociare perfettamente con le richieste dell’azienda. La chiarezza a partire dall’annuncio, sino all’orientamento verso il colloquio finale con l’azienda mi ha fatto sentire sicuro e seguito.",
+                },
+                {
+                  nickname: "Alessio Cinao",
+                  ruolo: "Impiegata Contabile",
+                  azienda: "Celda 2000 Servizi Integrati srls",
+                  data: "8 Dicembre 2022",
+                  storia_testo: "Mi sono sentita da subito a mio agio, capita e compresa, ho avuto addirittura, nel momento del colloquio con la mia referente Elisa, dei suggerimenti per migliorare il mio cv e la mia presentazione, non mi era mai capitato. Ho apprezzato in Jobify Recruiting la serietà, e umanità, mi sono sentita trattata alla pari, e sostenuta per tutto l’iter di selezione, per affrontare al meglio il colloquio finale con l’azienda.",
+                },
+              ],
+    };
   },
   mounted() {
     let recaptchaScript = document.createElement("script");
@@ -59,8 +111,41 @@ export default {
     content.style.opacity = "0";
     content.style.visibility = "hidden";
     content.style.display = "unset";
+
+    /*for (let i = 0; i < this.storie.length; i++) {
+      var nickname = document.getElementById("username"+i);
+      nickname.textContent = this.storie[i].nickname;
+
+      var ruolo = document.getElementById("jobtitle"+i);
+      ruolo.textContent = this.storie[i].ruolo;
+    }*/
   },
-  methods: {},
+  methods: {
+    story(x){
+      let content = document.querySelector(".story");
+      content.style.display = "inline";
+
+      var nickname = document.getElementById("nickname");
+      nickname.textContent = this.storie[x-1].nickname;
+
+      var azienda = document.getElementById("azienda");
+      azienda.textContent = this.storie[x-1].azienda;
+
+      var data = document.getElementById("data");
+      data.textContent = this.storie[x-1].data;
+
+      var ruolo = document.getElementById("ruolo");
+      ruolo.textContent = this.storie[x-1].ruolo;
+
+      var storia_testo = document.getElementById("storia_testo");
+      storia_testo.textContent = this.storie[x-1].storia_testo;
+    },
+
+    close_story(x){
+      let close_story = document.getElementById(x);
+      close_story.style.display = "none";
+    }
+  },
 };
 </script>
 <template>
@@ -184,14 +269,14 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
       <div class="sixtPart" style="padding-top: 10rem;">
         <h2>Le persone che fanno parte della famiglia Jobify Recruiting</h2>
         <div class="team1">
-          <div class="person2">
+          <div class="person2" @click="story(1)">
             <div
               class="photo"
             ></div>
             <div class="name">Davide Maggio</div>
             <div class="jobtitle">Founder & CEO</div>
           </div>
-          <div class="person2">
+          <div class="person2" @click="story(2)">
             <div
               class="photo"
               style="
@@ -206,7 +291,7 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
         <h4>Team esecutivo</h4>
 
         <div class="team2">
-          <div class="person">
+          <div class="person" @click="story(3)">
             <div
               class="photo"
               style="
@@ -216,14 +301,14 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
             <div class="name">Martina Di Palma</div>
             <div class="jobtitle">Head Hunter</div>
           </div>
-          <div class="person">
+          <div class="person" @click="story(4)">
             <div class="photo" style="
                 background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ceciliadondi.jpg);
               "></div>
             <div class="name">Cecilia Dondi</div>
             <div class="jobtitle">HR Consultant</div>
           </div>
-          <div class="person">
+          <div class="person" @click="story(5)">
             <div
               class="photo"
               style="
@@ -233,7 +318,7 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
             <div class="name">Chiara Lucia Graziano</div>
             <div class="jobtitle">HR Consultant & Career Coach</div>
           </div>
-          <div class="person">
+          <div class="person" @click="story(6)">
             <div
               class="photo"
               style="
@@ -243,7 +328,7 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
             <div class="name">Elisa Severa</div>
             <div class="jobtitle">HR Consultant</div>
           </div>
-          <div class="person">
+          <div class="person" @click="story(7)">
             <div
               class="photo"
               style="
@@ -255,6 +340,24 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
           </div>
         </div>
       </div>
+      <div class="story" id="1">
+              <div class="content">
+                <div class="close_story" @click="close_story(1)">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="22"
+                                height="22"
+                                fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                  </svg>
+                </div>
+                <div class="nickname" id="nickname"></div>
+                <div style="display: flex; align-items: center; width: 100%; text-align: center;">
+                  <div class="ruolo" id="ruolo"></div> 
+                  <div class="azienda" id="azienda"></div> 
+                  <div class="data" id="data"></div>
+                </div>
+                <div class="storia_testo" id="storia_testo"></div>
+              </div>
+            </div>
       <!--<div class="secondPart">
         <div class="title">
           <h2>Come funziona il processo di selezione</h2>
@@ -290,6 +393,14 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
           </div>
         </div>
       </div>-->
+      <div class="seventhPart">
+        <div class="imageJobifyLogo transition"></div>
+        <div class="imageSapienza transition"></div>
+        <div class="text" style="text-align: right;">
+          <h2 style="margin-left: auto;">Jobify Recruiting come <span>Stakeholder</span></h2>
+          <p style="margin-left: auto;">Jobify Recruiting è stakeholder Sapienza per i tirocini del 2 e 3 anno di Scienze del Turismo.</p>
+        </div>
+      </div>
       <div class="seventhPart">
         <div class="text">
           <h2>Lavora con <span>noi</span></h2>
@@ -330,6 +441,30 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 9999px;
+    background-color: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+    border-radius: 9999px;
+    background-clip: padding-box;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    /*background: #555;*/
+  }
+
 .transition {
   transform: translateY(150px);
   opacity: 0;
@@ -358,6 +493,88 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
 }
 
 @media (min-width: 1024px) {
+
+  .story{
+    display: none;
+    position: fixed;
+    top: 0;
+    background: #0000008a;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+  }
+
+  .story .content{
+    display: inline;
+    position: fixed;
+    top: 15%;
+    background-color: #1e213dba;
+    backdrop-filter: blur(12px);
+    width: fit-content;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-top: 7rem;
+  }
+
+  .story .content .close_story{
+    cursor: pointer;
+    width: fit-content;
+    margin-left: auto;
+  }
+
+  .story .content .nickname{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+  }
+
+  .story .content .azienda{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 0.5rem;
+    color: #fff;
+  }
+  .story .content .data{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 0.5rem;
+    color: #fff;
+    margin-right: auto;
+    width: fit-content;
+    margin-left: 1rem;
+  }
+
+  .story .content .ruolo{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: 0.5rem;
+    color: #fff;
+    margin-right: 1rem;
+    margin-left: auto;
+    width: fit-content;
+  }
+
+  .story .content .storia_testo{
+    padding-left: 20rem;
+    padding-right: 20rem;
+    margin-top: 3rem;
+    overflow-y: scroll;
+    height: 65%;
+    color: #fff;
+    font-weight: 300;
+  }
   .main {
     background: #ada996;
     background: -webkit-linear-gradient(
@@ -842,7 +1059,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   .seventhPart {
     padding-left: 11rem;
     padding-right: 11rem;
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 5rem;
     background: #fff;
     display: flex;
@@ -886,6 +1103,34 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
     background-image: url(/src/assets/ph10.png);
     background-position: center;
     background-size: cover;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-left: auto;
+  }
+
+  .seventhPart .imageSapienza {
+    width: 30vw;
+    height: 30vw;
+    margin-right: 2rem;
+    background-image: url(https://www.uniroma1.it/sites/default/files/images/logo/sapienza-big.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-left: auto;
+  }
+
+  .seventhPart .imageJobifyLogo {
+    width: 30vw;
+    height: 30vw;
+    margin-right: 2rem;
+    background-image: url(/src/assets/logo/blue.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     border-radius: 20px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;

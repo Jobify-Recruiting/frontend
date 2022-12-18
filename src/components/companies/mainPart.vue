@@ -775,7 +775,7 @@ professionali e si riflette nella cultura aziendale</p>
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/adamo.jpeg);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -811,7 +811,7 @@ professionali e si riflette nella cultura aziendale</p>
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/roberto.jpg);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -829,7 +829,7 @@ professionali e si riflette nella cultura aziendale</p>
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pamela.jpeg);
                     "
                   ></div>
                   <div class="feddbackData">

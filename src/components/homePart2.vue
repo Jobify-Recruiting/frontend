@@ -55,6 +55,9 @@ export default {
         isDown = false;
         slider.classList.remove("active");
       });
+      slider.addEventListener("mouseover", () => {
+        scrollLeft = slider.scrollLeft;
+      });
       slider.addEventListener("mouseup", () => {
         isDown = false;
         slider.classList.remove("active");
@@ -82,7 +85,6 @@ export default {
         }
       }, 15);
     });
-
 
     const slider2 = document.querySelector(".clientsCoBody");
 

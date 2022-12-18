@@ -2938,7 +2938,6 @@ sviluppare in azienda.
 
   .ctaCV {
     width: 90%;
-    height: 300px;
     background-color: white;
     border-radius: 30px;
     margin-left: auto;
@@ -2975,7 +2974,6 @@ sviluppare in azienda.
 
   .ctaCV .col {
     width: 50%;
-    height: 100%;
   }
 
   .ctaCV .button {

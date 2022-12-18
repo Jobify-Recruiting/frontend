@@ -97,7 +97,7 @@ export default {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  fill="#fff"
+                  fill="#1e213d"
                   class="bi bi-arrow-left"
                   viewBox="0 0 16 16"
                 >
@@ -116,7 +116,6 @@ export default {
         <div class="dateDiv">
           Data di pubblicazione: <span id="datePage">23 agosto 2022</span>
         </div>
-        <div class="imageArticle"></div>
 
         <div class="article">
           <p>
@@ -323,7 +322,7 @@ export default {
   .titlePage {
     font-size: 40px;
     line-height: 44px;
-    color: #fff;
+    color: #1e213d;
     font-weight: 800;
     width: 70%;
     margin-left: 11rem;
@@ -334,7 +333,7 @@ export default {
   .dateDiv {
     font-size: 16px;
     line-height: 20px;
-    color: #fff;
+    color: #1e213d;
     font-weight: 400;
     margin-left: 11rem;
     margin-top: 1rem;
@@ -354,8 +353,8 @@ export default {
 
   .article {
     margin-top: 3rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
   }
 
   .article h3 {

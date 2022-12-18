@@ -132,8 +132,8 @@ export default {
   }
 
   .footer .content {
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
     display: flex;
@@ -144,7 +144,7 @@ export default {
   }
 
   .col-logo img {
-    width: 60px;
+    width: 35px;
   }
 
   .footer .content .col {
@@ -207,8 +207,8 @@ export default {
   .footer .bottom {
     padding-bottom: 4rem;
     padding-top: 2rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     display: flex;
     border-top: 2px solid #0a1e4375;
     font-size: 13px;

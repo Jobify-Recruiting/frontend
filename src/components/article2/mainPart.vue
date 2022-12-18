@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "mainPart",
+  name: "article2",
   components: {},
   data() {
     return {};
@@ -15,6 +15,11 @@ export default {
 
     var htmlElement = document.querySelector("html");
     htmlElement.style.overflowY = "scroll";
+    htmlElement.style.background = "linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad)";
+
+    var image = document.querySelector(".imageArticle");
+    image.style.backgroundUrl= this.$route.params.img;
+    image.style.backgroundImage = "url('"+this.$route.params.Image +"')";
 
     function reveal() {
       var reveals = document.querySelectorAll(".transition");
@@ -68,6 +73,12 @@ export default {
         slider.scrollLeft = scrollLeft - walk;
       });
     }
+
+    var xmlString = this.$route.params.Text;
+    var doc = new DOMParser().parseFromString(xmlString, "text/xml");
+    console.log(doc); 
+    var date = document.getElementById("article");
+    date.innerHTML = this.$route.params.Text;
   },
   methods: {
     btnScrollSx() {
@@ -97,7 +108,7 @@ export default {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  fill="#fff"
+                  fill="#1e213d"
                   class="bi bi-arrow-left"
                   viewBox="0 0 16 16"
                 >
@@ -110,163 +121,26 @@ export default {
             </div>
           </router-link>
 
-          Ricerca e selezione umana
-        </div>
-        <div class="dateDiv">
-          Data di pubblicazione: <span id="datePage">7 settembre 2022</span>
+          {{this.$route.params.Title}}
         </div>
         <div class="imageArticle"></div>
+        <div class="dateDiv">
+          Data di pubblicazione: <span id="datePage">{{this.$route.params.Date}}</span>
+        </div>
+        <div v-if="this.$route.params.Name1">
+          <div class="dateDiv">
+            Rubrica curata da: <span id="datePage">{{this.$route.params.Name1}}</span>, {{this.$route.params.Role1}}
+          </div>
+        </div>
+        <div v-if="this.$route.params.Name2">
+          <div class="dateDiv">
+            In collaorazione con: <span id="datePage">{{this.$route.params.Name2}}</span>, {{this.$route.params.Role2}}
+          </div>
+        </div>
+        
 
-        <div class="article">
-          <h3>Ricerca e selezione umana</h3>
-          <p>
-            Le fasi di ricerca e di selezione del personale possono rivelarsi
-            piuttosto aride e, in alcuni casi, persino ostiche. Adottare un
-            approccio sterile nei confronti dei candidati, tuttavia, può
-            rivelarsi controproducente. Sia nella fase di recruiting dei
-            talenti, che in termini di percezione dell'immagine aziendale. Chi
-            vorrebbe inviare il proprio CV ad una realtà che sembra trattare i
-            propri dipendenti come semplici “numeri”?
-          </p>
-          <p>
-            È proprio per questo motivo che, negli ultimi tempi, le società
-            hanno iniziato ad effettuare una ricerca e selezione del personale
-            che sia quanto più possibile umana. Mettersi alla pari del
-            candidato, infatti, può tornare utile sia nella fase di attraction
-            del professionista, che di retention. Adottare questo tipo di
-            strategia, oltre a migliorare le performance aziendali, permette di
-            ricevere un numero maggiori di talenti ideali.
-          </p>
-          <p>
-            Ma cerchiamo di scoprire di seguito quali siano le fasi più cruciali
-            della ricerca di personale e come renderle più human.
-          </p>
-          <h3>Comprendere in pieno le esigenze di entrambe le parti</h3>
-          <p>
-            Una delle cose da fare ancora prima di pubblicare un annuncio di
-            lavoro è quella di avere le idee chiare sulle proprie esigenze. Ma,
-            soprattutto, identificare quali siano le motivazioni principali che
-            possono spingere un'azienda alla ricerca di personale. Una volta
-            valutate con attenzione le esigenze del datore di lavoro, sarà più
-            semplice creare una job description che sia in grado di attirare
-            talenti che condividano la stessa mission aziendale. E non solo.
-          </p>
-          <p>
-            Avere le idee chiare su quali siano le sfide e le opportunità
-            aziendali correlate alla necessità di assumere nuovi lavoratori è un
-            fattore che torna sicuramente utile nel momento in cui si deve
-            effettuare la prima scrematura di curriculum.
-          </p>
-          <h3>La pubblicazione dell'annuncio di lavoro</h3>
-          <p>
-            All'interno della job description è indispensabile riportare quante
-            più informazioni possibili. E con questo non si intende solo la
-            tipologia di contratto che verrà offerta al candidato. Ma anche
-            eventuali benefit proposti e opportunità di carriera da svolgere in
-            azienda.
-          </p>
-          <p>
-            All'interno dell’annuncio di lavoro, inoltre, sarebbe meglio
-            inserire anche delle informazioni riguardanti i valori e la cultura
-            aziendale della propria società. Essere il più trasparenti possibile
-            nei messaggi che si vogliono dare all'esterno della società è
-            sicuramente una scelta che si rivela vincente.
-          </p>
-          <p>
-            Sarebbe utile, inoltre, spiegare con precisione quale sia la
-            tipologia di candidato che si sta cercando. Questo è l’unico modo
-            che permette alla società in questione di entrare in contatto con le
-            persone ideali. Ma, soprattutto, consentirà all'azienda di essere
-            percepita come un'entità più umana e meno astratta.
-          </p>
-          <h3>Dove pubblicare l’annuncio</h3>
-          <p>
-            Scegliere la forma giusta per pubblicare l'annuncio di lavoro,
-            inoltre, è fondamentale per ottenere dei buoni risultati in poco
-            tempo. Scegliere dei siti specializzati in annunci di lavoro,
-            infatti, trasmette al candidato una sensazione di serietà. Chi
-            vorrebbe inviare il proprio cv ad un’azienda che è disposta a
-            lasciare al caso il processo di recruiting e, quindi, anche i propri
-            dipendenti?
-          </p>
-          <p>
-            È così, quindi, che il candidato sarà più intenzionato a rispondere
-            ad annunci pubblicati in siti specializzati, perché non avrà paura
-            di cadere in truffe o di essere vittima di specchietti per le
-            allodole. Non bisogna dimenticare, infatti, che esattamente come
-            un'azienda non ha voglia di perdere tempo ed energie selezionando
-            candidati svogliati e poco appassionati, in egual modo un candidato
-            non ha voglia di spendere tempo ed energie revisionando il proprio
-            CV e fissando colloqui di lavoro con aziende poco serie o con
-            offerte che si rivelano farlocche.
-          </p>
-          <h3>L’utilizzo delle Chatbot</h3>
-          <p>
-            Tra i sistemi tecnologici che vengono maggiormente utilizzati nelle
-            fasi di recruiting del personale non possiamo che citare le chatbot,
-            ossia quei sistemi di automazione che consentono di interagire con
-            moltissime persone allo stesso momento. Soprattutto se si tratta di
-            domande standard.
-          </p>
-          <p>
-            Questi sistemi consentono, ad esempio, di fornire risposte
-            automatiche a più persone, agevolando quindi il lavoro del
-            selezionatore. Ma non solo. Grazie a questa tecnologia, infatti, è
-            possibile semplificare il processo di scrematura dei candidati.
-            Attraverso questi bot, infatti, si riesce a capire fin da subito se
-            il lavoratore in questione riesce a soddisfare i criteri di base
-            richiesti dell'azienda e se la posizione per cui si sta proponendo è
-            quella più indicata per lui.
-          </p>
-          <h3>La tecnologia durante i colloqui</h3>
-          <p>
-            Lo sviluppo della tecnologia nell'arco degli ultimi mesi ha fatto
-            dei passi da gigante. Questo sviluppo è stato esponenziale e si è
-            verificato in brevissimo tempo, soprattutto durante la crisi
-            sanitaria mondiale. È così che le aziende hanno deciso di venire
-            incontro alle esigenze dei candidati dando loro l’opportunità di
-            partecipare a video colloqui.
-          </p>
-          <p>
-            Organizzare degli incontri conoscitivi da remoto con dei potenziali
-            nuovi assunti, permette non solo all'azienda di risparmiare una
-            grande quantità di tempo e di energie, ma consente anche al
-            candidato di partecipare ad un appuntamento senza, per questo, dover
-            investire eccessive quantità di tempo in trasporti e spostamenti
-            vari.
-          </p>
-          <p>
-            Quante volte è capitato, infatti, che venisse proposto ad un
-            candidato di partecipare ai recruiting day in un’altra città? O in
-            orari improbabili che rendono difficile l’organizzazione degli
-            impegni familiari? Sfruttare le tecnologie, in questo momento, rende
-            il processo di recruiting sempre più alla portata del candidato. E,
-            sicuramente, la percezione di quest’ultimo nei confronti
-            dell’azienda sarà più positiva.
-          </p>
-          <h3>Follow-up post assunzione</h3>
-          <p>
-            Assumere un candidato idonei è sicuramente un traguardo notevole per
-            un’azienda. Eppure, è indispensabile ricordare che il momento della
-            firma del contratto non deve essere visto come il punto di arrivo.
-            Bensì come un punto di partenza per un nuovo percorso da fare
-            insieme.
-          </p>
-          <p>
-            Se non esiste un impegno da entrambe le parti nel corso
-            dell'immediato futuro, il progetto sarà destinato a fallire
-            nell'arco di brevissimo tempo.
-          </p>
-          <p>
-            È indispensabile, quindi, che il recruiter o il datore di lavoro,
-            cerchi di tenere costantemente monitorata la situazione anche nei
-            momenti successivi all'ingaggio del neo dipendente. Valutare
-            l'effettiva soddisfazione di tutte le parti coinvolte, è
-            determinante per far sì che il rapporto di lavoro duri il più lungo
-            possibile. Ma anche per evitare che si presentino situazioni di
-            frustrazione che portino a dimissioni impreviste. Mettersi nei panni
-            del dipendente è sempre la scelta vincente.
-          </p>
+        <div class="article" id="article">
+          {{this.$route.params.Text}}
         </div>
       </div>
     </div>
@@ -277,6 +151,18 @@ export default {
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    background: #ada996;
+    background: -webkit-linear-gradient(
+      to right,
+      #eaeaea,
+      #dbdbdb,
+      #f2f2f2,
+      #ada996
+    );
+    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad);
+}
 
 .transition {
   transform: translateY(150px);
@@ -296,15 +182,6 @@ export default {
 }
 
 @media (min-width: 1024px) and (max-width: 1312px) {
-  .articles2 .article[data-v-c1d84998] {
-    float: left;
-    margin-top: 3rem;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-    width: 40% !important;
-    background: #fff;
-    border-radius: 25px;
-  }
 }
 @media (min-width: 1024px) {
   .flowSingleBtn {
@@ -324,6 +201,7 @@ export default {
     background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad);
     padding-left: 6rem;
     padding-right: 6rem;
+    padding-bottom: 4rem;
   }
 
   .first .cols {
@@ -340,7 +218,7 @@ export default {
   .titlePage {
     font-size: 40px;
     line-height: 44px;
-    color: #fff;
+    color: #1e213d;
     font-weight: 800;
     width: 70%;
     margin-left: 11rem;
@@ -351,15 +229,21 @@ export default {
   .dateDiv {
     font-size: 16px;
     line-height: 20px;
-    color: #fff;
-    font-weight: 400;
+    color: #1e213d;
+    font-weight: 300;
     margin-left: 11rem;
     margin-top: 1rem;
   }
 
+  .datePage{
+    font-weight: 500;
+  }
+
   .imageArticle {
-    height: 45vw;
-    width: 100%;
+    height: 25vw;
+    width: 72%;
+    margin-right: auto;
+    margin-left: auto;
     background-image: url(https://media-exp1.licdn.com/dms/image/D4D12AQGtBYsgYvL_lA/article-cover_image-shrink_720_1280/0/1661953124123?e=1669248000&v=beta&t=Gkr7dvHTPSTMJPvCLt_P7tPOKE-NKob557NZYxZNHiw);
     background-size: cover;
     background-position: center;
@@ -371,11 +255,11 @@ export default {
 
   .article {
     margin-top: 3rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
   }
 
-  .article h3 {
+  h3 {
     font-size: 28px;
     line-height: 32px;
     color: #1e213d;
@@ -388,8 +272,8 @@ export default {
     padding-bottom: 2rem;
     margin-bottom: 0rem !important;
     color: #131313;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 400;
   }
 }
