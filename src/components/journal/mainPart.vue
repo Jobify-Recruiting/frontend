@@ -1384,7 +1384,8 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
   }
 
   .article .image .date {

@@ -240,14 +240,13 @@ html{
   }
 
   .imageArticle {
-    height: 25vw;
-    width: 72%;
+    height: 36vw;
+    width: 60vw;
     margin-right: auto;
     margin-left: auto;
     background-image: url(https://media-exp1.licdn.com/dms/image/D4D12AQGtBYsgYvL_lA/article-cover_image-shrink_720_1280/0/1661953124123?e=1669248000&v=beta&t=Gkr7dvHTPSTMJPvCLt_P7tPOKE-NKob557NZYxZNHiw);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
-    background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 2rem;
     border-radius: 12px;
