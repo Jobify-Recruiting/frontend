@@ -103,7 +103,7 @@ export default {
 
 @media (min-width: 1024px) {
   .first {
-    background: #1e213d;
+    background: #0c2550;
   }
 
   #globeViz {
@@ -364,8 +364,8 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     background: #7474bf;
-    background: -webkit-linear-gradient(to right, #1e213d, #ffffff00);
-    background: linear-gradient(to top, #1e213d, #ffffff00);
+    background: -webkit-linear-gradient(to right, #0c2550, #ffffff00);
+    background: linear-gradient(to top, #0c2550, #ffffff00);
     padding-top: 15rem;
   }
 }

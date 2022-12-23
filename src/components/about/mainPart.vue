@@ -167,15 +167,15 @@ tua azienda grazie a un processo di ricerca e selezione consulenziale, umano, ef
       <div class="thirdPart">
         <div class="text1 bold">
           Il nome “Jobify” nasce dall’unione di <span>“job” e “identify”</span> e proprio perché crediamo che siamo prima persone
-e professionisti e proprio questo diventa il fulcro del nostro lavoro di ogni giorno.
+e poi professionisti e proprio questo diventa il fulcro del nostro lavoro di ogni giorno.
         </div>
       </div>
       <div class="fourthPart">
         <div class="rowImages">
           <div class="image1 transition"></div>
           <div class="image2 transition" style="margin-top: 5rem"></div>
-          <div class="image1 transition"></div>
-          <div class="image2 transition" style="margin-top: 5rem"></div>
+          <div class="image3 transition"></div>
+          <div class="image4 transition" style="margin-top: 5rem"></div>
         </div>
       </div>
       <div class="secondPart">
@@ -185,7 +185,7 @@ e professionisti e proprio questo diventa il fulcro del nostro lavoro di ogni gi
       </div>
       <div class="thirdPart">
         <div class="text1 bold ">
-          A differenza della tradizionale agenzia di ricerca e selezione personale, Jobify Recruiting è un’agenzia di
+          A differenza della tradizionale agenzia di ricerca e selezione del personale, Jobify Recruiting è un’agenzia di
 head hunting <span>dinamica ed energica,</span> snella e rapida nel fornire la soluzione ideale al candidato che cerca
 lavoro e all’azienda che cerca candidati.
         </div>
@@ -194,7 +194,7 @@ lavoro e all’azienda che cerca candidati.
         <div class="text1 bold">
           Il nostro team è composto da <span>persone giovani</span> ma altamente competenti, che svolgono il lavoro quotidiano
 di ricerca e selezione talenti con passione e impegno. Amiamo quello che facciamo, ma ancora di più
-amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende con una risorsa ideale.
+amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori aziendali e le aziende con una risorsa ideale.
         </div>
       </div>
       <div class="fifthPart">
@@ -205,10 +205,10 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
                 <span>Mission</span> di Jobify Recruiting
               </div>
               <div class="quoteh5">
-                La nostra Mission è creare il match perfetto umano tra aspettative e valori del candidato. Dal punto di visra
-                dell’azienda si tratta di trovare una persona compatibile con la cultura aziendale, dal punto di vista del
-                candidato inserire la risorsa in un’azienda con cui condivide valori e ideali.
-                </div>
+                La nostra mission è creare il match perfetto tra azienda e candidato. 
+                Dal punto di vista dell'azienda si tratta di trovare una risorsa compatibile con la cultura e l'organizzazione aziendale, 
+                dal punto di vista del candidato di inserire la risorsa in un contesto aziendale in cui si identifica nei valori e negli ideali.
+              </div>
             </div>
             <div class="quote" style="text-align: right !important;
               float: right !important; margin-top: 20rem">
@@ -228,13 +228,11 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
         <div class="description">
           In Jobify Recruiting il candidato diventa una persona da mettere al centro del processo di selezione. Con un
           metodo scientifico e rigoroso basato sui dati valutiamo valori e aspettative di ciascuno per trovare il suo
-          talento e metterlo a disposizione delle aziende. L’azienda giusta diventa quella di cui il candidato si rivede
-          nei valori ed è soddisfatto delle sue aspettative personali e questo modo di lavorare porta a persone felici e
-          pronte a svolgere al meglio il loro lavoro.
+          talento e metterlo a disposizione delle aziende.
         </div>
 
         <div class="sixtPartButton">
-          <a href="/workwithus" class="">
+          <a href="/workers" class="">
             <button class="btn"> Scopri i servizi per il candidato <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16" data-v-3f1ba09e=""><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" data-v-3f1ba09e=""></path></svg></span></button></a></div>
       </div>
       <div class="secondPart">
@@ -250,6 +248,10 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
 
           Management. Da questo bagaglio di competenze è nata l’idea di <span>mettere l’esperienza alla servizio delle
           aziende</span> per colmare un gap esistente nel mondo della ricerca e selezione.
+
+          In jobify recruiting non ci limitiamo a valutare il talento soltanto attraverso il cv e 
+          quindi valutando hard e soft skills, ma prendiamo in considerazione anche i valori e 
+          le aspettative professionali del candidato e la cultura aziendale della società.
         </div>
       </div>
       <div class="thirdPart">
@@ -341,14 +343,14 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
         </div>
       </div>
       <div class="story" id="1">
-              <div class="content">
-                <div class="close_story" @click="close_story(1)">
+        <div class="close_story" @click="close_story(1)">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22"
                                 height="22"
                                 fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                   </svg>
                 </div>
+        <div class="content">
                 <div class="nickname" id="nickname"></div>
                 <div style="display: flex; align-items: center; width: 100%; text-align: center;">
                   <div class="ruolo" id="ruolo"></div> 
@@ -357,81 +359,47 @@ amiamo far incontrare il talento con un’azienda in cui si rivede e le aziende 
                 </div>
                 <div class="storia_testo" id="storia_testo"></div>
               </div>
-            </div>
-      <!--<div class="secondPart">
-        <div class="title">
-          <h2>Come funziona il processo di selezione</h2>
-          <p>
-            Get updates on the GitHub activity you've subscribed to. Use the
-            notifications inbox to customize, triage, and manage your updates.
-          </p>
-        </div>
-        <div class="steps">
-          <div class="step transition">
-            <div class="number">1</div>
-            <div class="title">Crea profilo</div>
-            <div class="text">
-              Get updates on the GitHub activity you've subscribed to. Use the
-              notifications inbox to customize, triage, and manage your updates.
-            </div>
-          </div>
-          <div class="step transition" style="margin-top: 3rem">
-            <div class="number">2</div>
-            <div class="title">Crea profilo</div>
-            <div class="text">
-              Get updates on the GitHub activity you've subscribed to. Use the
-              notifications inbox to customize, triage, and manage your updates.
-            </div>
-          </div>
-          <div class="step transition" style="margin-top: 6rem">
-            <div class="number">3</div>
-            <div class="title">Crea profilo</div>
-            <div class="text">
-              Get updates on the GitHub activity you've subscribed to. Use the
-              notifications inbox to customize, triage, and manage your updates.
-            </div>
-          </div>
-        </div>
-      </div>-->
-      <div class="seventhPart">
-        <div class="imageJobifyLogo transition"></div>
-        <div class="imageSapienza transition"></div>
-        <div class="text" style="text-align: right;">
-          <h2 style="margin-left: auto;">Jobify Recruiting come <span>Stakeholder</span></h2>
-          <p style="margin-left: auto;">Jobify Recruiting è stakeholder Sapienza per i tirocini del 2 e 3 anno di Scienze del Turismo.</p>
-        </div>
+              
       </div>
-      <div class="seventhPart">
-        <div class="text">
-          <h2>Lavora con <span>noi</span></h2>
-          <p>La squadra di Jobify Recruiting è giovane, dinamica e competente. Scopri le persone che ne fanno parte e
-contattaci se anche tu vuoi entrare nel nostro team.</p>
+            <div class="seventhPart">
+              <div class="imageJobifyLogo transition"></div>
+              <div class="imageSapienza transition"></div>
+              <div class="text" style="text-align: right;">
+                <h2 style="margin-left: auto;">Jobify Recruiting come <span>Stakeholder</span></h2>
+                <p style="margin-left: auto;">Jobify Recruiting è stakeholder Sapienza per i tirocini del 2 e 3 anno di Scienze del Turismo.</p>
+              </div>
+            </div>
+            <div class="seventhPart">
+              <div class="text">
+                <h2>Lavora con <span>noi</span></h2>
+                <p>La squadra di Jobify Recruiting è giovane, dinamica e competente. Scopri le persone che ne fanno parte e
+      contattaci se anche tu vuoi entrare nel nostro team.</p>
 
-          <div class="formButton">
-            <router-link to="/workwithus"
-              ><button class="btn">
-                Invia
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-short"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                    />
-                  </svg>
-                </span></button
-            ></router-link>
-          </div>
-        </div>
-        <div class="image transition"></div>
-        <div class="image transition" style="margin-top: 8rem"></div>
-      </div>
+                <div class="formButton">
+                  <router-link to="/workwithus"
+                    ><button class="btn">
+                      Invia
+                      <span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          fill="currentColor"
+                          class="bi bi-arrow-right-short"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                          />
+                        </svg>
+                      </span></button
+                  ></router-link>
+                </div>
+              </div>
+              <div class="image transition"></div>
+              <div class="image transition" style="margin-top: 8rem"></div>
+            </div>
     </div>
   </div>
 </template>
@@ -497,35 +465,50 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   .story{
     display: none;
     position: fixed;
-    top: 0;
-    background: #0000008a;
-    width: 100%;
     height: 100%;
+    background-color: #26334285;
+    backdrop-filter: blur(12px);
     z-index: 15;
+    top: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
   }
 
   .story .content{
-    display: inline;
-    position: fixed;
-    top: 15%;
-    background-color: #1e213dba;
-    backdrop-filter: blur(12px);
-    width: fit-content;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding-top: 7rem;
+    position: fixed;
+    z-index: 10;
+    background: #0c25509f;
+    backdrop-filter: blur(12px);
+    width: 80%;
+    border-radius: 40px;
+    padding: 4rem;
+    left: 10%;
+    top: 5%;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
   }
 
-  .story .content .close_story{
-    cursor: pointer;
-    width: fit-content;
+  .story .close_story{
     margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 16px;
+    border: 2px solid #0a1e4375;
+    color: white;
+    font-size: 18px;
+    line-height: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .story .close_story:hover {
+    border-color: white;
+    transform: rotate(90deg);
   }
 
   .story .content .nickname{
@@ -758,7 +741,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   }
 
   .secondPart .text1 span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -784,7 +767,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   }
 
   .thirdPart .text1 span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -811,21 +794,42 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   .fourthPart .image1 {
     width: 20vw;
     height: 35vw;
-    background-image: url(/src/assets/ph10.png);
+    background-image: url(/src/assets/chisiamoimg1.png);
     background-position: center;
     background-size: cover;
     border-radius: 20px;
+    margin-left: 1rem;
   }
 
   .fourthPart .image2 {
     width: 20vw;
     height: 35vw;
-    background-image: url(/src/assets/ph10.png);
+    background-image: url(/src/assets/chisiamoimg2.png);
     background-position: center;
     background-size: cover;
     border-radius: 20px;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .fourthPart .image3 {
+    width: 20vw;
+    height: 35vw;
+    background-image: url(/src/assets/chisiamoimg3.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  .fourthPart .image4 {
+    width: 20vw;
+    height: 35vw;
+    background-image: url(/src/assets/chisiamoimg4.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .fifthPart {
@@ -840,7 +844,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -878,13 +882,13 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
     line-height: 58px;
     font-weight: 800;
     width: 100%;
-    color: #1e213d;
+    color: #0c2550;
     margin-bottom: 1rem;
     text-align: left !important;
     letter-spacing: -0.04em;
   }
   .quotes .quoteh4 span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -912,7 +916,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #1e213d;
+    color: #0c2550;
     font-size: 54px;
     font-weight: 800 !important;
     width: 60%;
@@ -942,7 +946,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #1e213d;
+    color: #0c2550;
     font-size: 18px;
     font-weight: 500 !important;
     width: 40%;
@@ -1022,7 +1026,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
     font-weight: 300;
     font-size: 16px;
     line-height: 16px;
-    color: #1e213d;
+    color: #0c2550;
     font-weight: 400;
   }
 
@@ -1041,7 +1045,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
     font-weight: 300;
     font-size: 18px;
     line-height: 18px;
-    color: #1e213d;
+    color: #0c2550;
     font-weight: 400;
     width: 16vw;
   }
@@ -1070,7 +1074,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   }
 
   .seventhPart .text h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 56px;
     font-weight: 800 !important;
     width: 70%;
@@ -1079,7 +1083,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   }
 
   .seventhPart .text h2 span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1144,7 +1148,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   }
 
   .fifthDiv .adviser {
-    background: #1e213d;
+    background: #0c2550;
     border-radius: 30px;
     display: flex;
   }
@@ -1235,7 +1239,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   }
 
   .secondPart .title h2 {
-    color: #1e213d;
+    color: #0c2550;
     width: 80%;
     font-size: 54px;
     line-height: 58px;
@@ -1305,7 +1309,7 @@ contattaci se anche tu vuoi entrare nel nostro team.</p>
   }
 
   .step .title {
-    color: #1e213d;
+    color: #0c2550;
     margin-left: 0 !important;
     font-size: 38px;
     line-height: 42px;

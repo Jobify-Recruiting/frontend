@@ -49,7 +49,7 @@ export default {
   font-family: "Alliance No.1", sans-serif;
 }
 main {
-  background: #1e213d;
+  background: #0c2550;
   background-size: 300%;
   overflow: visible;
   animation: animated_text 5s ease-in-out infinite;

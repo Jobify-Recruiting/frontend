@@ -45,13 +45,13 @@ export default {
       <div class="col">
         <div class="title">Servizi</div>
         <router-link to="/openposition">
-          <div class="link">Posizioni aperte</div></router-link
+          <div class="link">Offerte di lavoro</div></router-link
         >
         <router-link to="/companies">
-          <div class="link">Aziende</div></router-link
+          <div class="link">Sei un'azienda?</div></router-link
         >
         <router-link to="/workers">
-          <div class="link">Lavoratori</div></router-link
+          <div class="link">Servizi offerti</div></router-link
         >
       </div>
       <div class="col">
@@ -115,10 +115,10 @@ export default {
     width: 100%;
     background: linear-gradient(
       211deg,
-      #1e213d,
+      #0c2550,
       #071b38,
       rgb(1 10 20),
-      #1e213d
+      #0c2550
     );
     background-size: 300%;
     overflow: visible;

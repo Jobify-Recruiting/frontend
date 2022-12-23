@@ -375,7 +375,7 @@ export default {
 
 @media (min-width: 1920px) {
   #globeViz {
-    left: 10% !important;
+    left: 30% !important;
   }
 }
 

@@ -143,18 +143,6 @@ export default {
       <p>Sede principale</p>
     </div>
 
-    <!--<div class="office" id="officeDubai" @click="openOffice2(office2)">
-      <div class="image2"></div>
-      <h4>Dubai</h4>
-      <p>Sede</p>
-    </div>-->
-
-    <!--<div class="office" id="officeTrencin" @click="openOffice3(office3)">
-      <div class="image3"></div>
-      <h4>Trencin</h4>
-      <p>Sede</p>
-    </div>-->
-
     <div class="bgTransparent bg1">
       <div class="closeMenu" @click="closePopup()">
         <svg
@@ -443,7 +431,7 @@ business.
   }
 
   .first {
-    background: #1e213d;
+    background: #0c2550;
   }
 
   #globeViz {
@@ -698,7 +686,7 @@ business.
   .popup {
     position: fixed;
     z-index: 10;
-    background: #1e213d;
+    background: #0c2550;
     backdrop-filter: blur(12px);
     width: 80%;
     border-radius: 40px;
@@ -843,8 +831,8 @@ business.
     padding-left: 8rem;
     padding-right: 8rem;
     background: transparent;
-    background: -webkit-linear-gradient(to top, #1e213d, #ffffff00);
-    background: linear-gradient(to top, #1e213d, #ffffff00);
+    background: -webkit-linear-gradient(to top, #0c2550, #ffffff00);
+    background: linear-gradient(to top, #0c2550, #ffffff00);
     padding-top: 6rem;
     margin-top: 25rem;
     z-index: 10;
@@ -879,7 +867,7 @@ business.
 
   .cols .col p {
     text-transform: uppercase;
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -888,7 +876,7 @@ business.
 
   .cols .col h4 {
     text-transform: uppercase;
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -905,7 +893,7 @@ business.
   }
 
   .cols .col h2 {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 68px;
@@ -914,7 +902,7 @@ business.
   }
 
   .cols .col h3 {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;
@@ -1034,7 +1022,7 @@ business.
     line-height: 230px;
     letter-spacing: -0.04em;
     margin-left: 5rem;
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

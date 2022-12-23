@@ -247,7 +247,7 @@ evoluzione e cambiamento.</span>
           style="position: absolute; top: 60%; z-index: 10"
         >
           <path
-            fill="#1e213d"
+            fill="#0c2550"
             fill-opacity="1"
             d="M0,64L40,58.7C80,53,160,43,240,48C320,53,400,75,480,96C560,117,640,139,720,144C800,149,880,139,960,117.3C1040,96,1120,64,1200,53.3C1280,43,1360,53,1400,58.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
           ></path>
@@ -435,7 +435,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    background: #1e213d;
+    background: #0c2550;
   }
 
   .firstPart .subtitle {
@@ -488,7 +488,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   }
   .cols .col p {
     text-transform: uppercase;
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -514,7 +514,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   }
 
   .cols .col h2 {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 68px;
@@ -523,7 +523,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   }
 
   .cols .col h3 {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;
@@ -543,7 +543,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   }
 
   .secondPart h2 {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -565,7 +565,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   }
 
   .secondPart .text span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -694,7 +694,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   }
 
   .thirdDiv .title h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
@@ -704,7 +704,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   }
 
   .thirdDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -745,7 +745,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
     -webkit-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
     -moz-box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);
     box-shadow: 0px 0px 133px 17px rgb(162 0 255 / 17%);*/
-    background: #1e213d;
+    background: #0c2550;
     -webkit-box-shadow: 0px 0px 133px 17px #005dff2b;
     -moz-box-shadow: 0px 0px 133px 17px #005dff2b;
     box-shadow: 0px 0px 133px 17px #005dff2b;
@@ -776,7 +776,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   .partnerImg3 {
     width: 45px;
     height: 45px;
-    background: #1e213d4a;
+    background: #0c25504a;
     border-radius: 25rem;
     position: absolute;
     background: rgba(0, 140, 255, 0.17);
@@ -788,7 +788,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   .partnerImg5 {
     width: 45px;
     height: 45px;
-    background: #1e213d4a;
+    background: #0c25504a;
     border-radius: 25rem;
     position: absolute;
     background: rgba(0, 255, 136, 0.17);

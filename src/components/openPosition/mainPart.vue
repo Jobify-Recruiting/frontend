@@ -206,16 +206,6 @@ export default {
       htmlElement.style.overflowY = "scroll";
     },
 
-    sendCV() {
-      let content = document.querySelector(".bg2");
-      content.style.width = "100%";
-      content.style.opacity = "1";
-      content.style.visibility = "visible";
-      content.style.display = "inline";
-      var htmlElement = document.querySelector("html");
-      htmlElement.style.overflowY = "hidden";
-    },
-
     closePopup2() {
       let content = document.querySelector(".bg2");
       content.style.width = "0%";
@@ -226,6 +216,7 @@ export default {
       var htmlElement = document.querySelector("html");
       htmlElement.style.overflowY = "scroll";
     },
+
     story(x){
       let content = document.querySelector(".story");
       content.style.display = "inline";
@@ -265,7 +256,7 @@ export default {
       <div class="glow7"></div>
       <div class="glow8"></div>
       <div class="first">
-        <div style="background: #1e213d; padding-top: 10rem;">
+        <div style="background: #0c2550; padding-top: 10rem;">
           <div class="title">
           <div class="titleDiv">
             <h2>Cerchi Lavoro?</h2>
@@ -426,7 +417,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#1e213d"
+                        fill="#0c2550"
                         class="bi bi-chevron-left"
                         viewBox="0 0 16 16"
                       >
@@ -441,7 +432,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#1e213d"
+                        fill="#0c2550"
                         class="bi bi-chevron-right"
                         viewBox="0 0 16 16"
                       >
@@ -788,7 +779,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#1e213d"
+                        fill="#0c2550"
                         class="bi bi-chevron-left"
                         viewBox="0 0 16 16"
                       >
@@ -803,7 +794,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#1e213d"
+                        fill="#0c2550"
                         class="bi bi-chevron-right"
                         viewBox="0 0 16 16"
                       >
@@ -1150,7 +1141,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#1e213d"
+                        fill="#0c2550"
                         class="bi bi-chevron-left"
                         viewBox="0 0 16 16"
                       >
@@ -1165,7 +1156,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#1e213d"
+                        fill="#0c2550"
                         class="bi bi-chevron-right"
                         viewBox="0 0 16 16"
                       >
@@ -1512,7 +1503,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#1e213d"
+                        fill="#0c2550"
                         class="bi bi-chevron-left"
                         viewBox="0 0 16 16"
                       >
@@ -1527,7 +1518,7 @@ export default {
                         xmlns="http://www.w3.org/2000/svg"
                         width="22"
                         height="22"
-                        fill="#1e213d"
+                        fill="#0c2550"
                         class="bi bi-chevron-right"
                         viewBox="0 0 16 16"
                       >
@@ -1832,7 +1823,7 @@ export default {
                     class="input"
                     type="text"
                     name="nickname"
-                    placeholder="Nome della job alert (es. hr manager)"
+                    placeholder="Nome della job alert (es. sviluppatore)"
                   />
                 </div>
                 <div
@@ -2035,9 +2026,8 @@ export default {
             </h2>
             <p>
               Tante sono le aziende che cercano candidati nel settore <span>Farm, Finance, IT Tech e HR</span> e tanti i candidati che
-cercano l’azienda ideale in cui collocarsi per una carriera professionale ricca di soddisfazioni. In tutto questo
-Jobify Recruiting ha il compito di creare il match perfetto tra talento e azienda, cercando profili di medio e
-alto livello che condividono valori e ideali con l’azienda in cui andranno a lavorare.
+              cercano l’azienda ideale in cui collocarsi per una carriera professionale ricca di soddisfazioni. In tutto questo
+              Jobify Recruiting ha il compito di creare il match perfetto tra talento e azienda.
             </p>
           </div>
           <div class="steps">
@@ -2061,14 +2051,15 @@ sviluppare in azienda.
 
         <h2 class="ctaTitle">Jobify Recruiting: ricerca e selezione talenti</h2>
 
-        <div class="ctaCV" style="background: #1e213d">
+        <div class="ctaCV" style="background: #0c2550">
           <div class="blur"></div>
           <div class="cols">
             <div class="col col-padding" id="positions">
               <h3 style="color: #fff">
                 Jobify Recruiting ti permette di inserire in azienda <span>la risorsa giusta</span> nei settori Farm, Finance, IT, Tech e HR.
               </h3>
-              <div class="button" @click="sendCV()">
+              <router-link to="/workers">
+              <div class="button">
                 Contattaci per un appuntamento
                 <span>
                   <svg
@@ -2086,6 +2077,7 @@ sviluppare in azienda.
                   </svg>
                 </span>
               </div>
+            </router-link>
             </div>
             <div
               class="col"
@@ -2109,7 +2101,7 @@ sviluppare in azienda.
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
-                  fill="#1e213d"
+                  fill="#0c2550"
                   class="bi bi-chevron-left"
                   viewBox="0 0 16 16"
                 >
@@ -2124,7 +2116,7 @@ sviluppare in azienda.
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
-                  fill="#1e213d"
+                  fill="#0c2550"
                   class="bi bi-chevron-right"
                   viewBox="0 0 16 16"
                 >
@@ -2221,7 +2213,7 @@ sviluppare in azienda.
                 <div class="close_story" @click="close_story(1)">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22"
                                 height="22"
-                                fill="#1e213d" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                fill="#0c2550" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                   </svg>
                 </div>
@@ -2506,7 +2498,7 @@ sviluppare in azienda.
   }
 
   .main2 {
-    background: #1e213d;
+    background: #0c2550;
     padding-top: 1rem;
   }
 
@@ -2609,7 +2601,7 @@ sviluppare in azienda.
     line-height: 34px;
     margin-left: 3rem;
     font-weight: 700;
-    color: #1e213d;
+    color: #0c2550;
     margin-bottom: 0;
   }
 
@@ -2924,7 +2916,7 @@ sviluppare in azienda.
   }
 
   .ctaTitle {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -3009,7 +3001,7 @@ sviluppare in azienda.
     align-items: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background: #1e213d;
+    background: #0c2550;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -3085,7 +3077,7 @@ sviluppare in azienda.
   }
 
   .navMain{
-    background: #1e213d;
+    background: #0c2550;
   }
 
   .nav {
@@ -3259,7 +3251,7 @@ sviluppare in azienda.
   .popup {
     position: fixed;
     z-index: 10;
-    background: #1e213d9f;
+    background: #0c25509f;
     backdrop-filter: blur(12px);
     width: 80%;
     border-radius: 40px;
@@ -3505,7 +3497,7 @@ sviluppare in azienda.
     width: 50%;
     transition: all 0.3s ease-out;
     text-align: left;
-    background: #1e213d;
+    background: #0c2550;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
   }
 
@@ -3576,7 +3568,7 @@ sviluppare in azienda.
   .featureds .titles h2 {
     font-size: 50px;
     line-height: 54px;
-    color: #1e213d;
+    color: #0c2550;
     font-weight: 700;
     margin-top: 3rem;
     letter-spacing: -2.5px;

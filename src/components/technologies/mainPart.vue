@@ -789,7 +789,7 @@ export default {
   }
 
   .third .cols .col-sx h2 span {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2867b2  100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -859,7 +859,7 @@ export default {
   }
 
   .fourth .cols .col-sx h2 span {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2867b2  100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -947,7 +947,7 @@ export default {
   }
 
   .fifth .col-sx h2 span {
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2867b2  100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

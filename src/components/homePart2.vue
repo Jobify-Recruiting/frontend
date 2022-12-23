@@ -218,7 +218,7 @@ export default {
               Trovare, valorizzare e trattenere i <span style="color: #c554a0; font-weight: 500"
                 >talenti</span> √® compito di ogni azienda e per questo puoi affidarti a Jobify
               Recruiting, la tua agenzia di head hunting digitale e dinamica, formata da persone giovani che lavorano in
-              un contesto nazionale
+              un contesto nazionale.
             </p>
             <div class="" style="display: flex; align-items: center">
               <router-link to="/companies"
@@ -291,7 +291,7 @@ export default {
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
                 height="22"
-                fill="#1e213d"
+                fill="#0c2550"
                 class="bi bi-chevron-left"
                 viewBox="0 0 16 16"
               >
@@ -306,7 +306,7 @@ export default {
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
                 height="22"
-                fill="#1e213d"
+                fill="#0c2550"
                 class="bi bi-chevron-right"
                 viewBox="0 0 16 16"
               >
@@ -339,13 +339,13 @@ export default {
             </div>
 
             <div class="logoClient" >
-              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/10/logo.png"
               />
             </div>
 
             <div class="logoClient">
-              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-2.png"
               />
             </div>
@@ -413,7 +413,7 @@ export default {
             </div>
 
             <div class="logoClient">
-              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-3-1.png"
               />
             </div>
@@ -426,7 +426,7 @@ export default {
             </div>
 
             <div class="logoClient">
-              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo20white.png"
               />
             </div>
@@ -444,13 +444,13 @@ export default {
             </div>
 
             <div class="logoClient">
-              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/04/AG_LOGO_CLAIM_BIANCO-1.png"
               />
             </div>
 
             <div class="logoClient">
-              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
                 src="https://davidemaggiohr.it/wp-content/uploads/2021/04/PentaFinanziamentiItalia.png"
               />
             </div>
@@ -477,7 +477,7 @@ export default {
               <img src="https://www.autosystemspa.it/img/logo-autosystem.png" />
             </div>
             <div class="logoClient">
-              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;" 
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
                     src="https://thingsss.s3.eu-central-1.amazonaws.com/logo-cascone-home.png" />
             </div>
             <div class="logoClient">
@@ -486,7 +486,7 @@ export default {
               />
             </div>
             <div class="logoClient">
-              <img style="background: #1e213d; padding: 1.5rem; border-radius: 20px;"
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
                 src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxOTAuMiA1My4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOTAuMiA1My4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+Cjx0aXRsZT5Bc3NldCA1PC90aXRsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI1LjYsNDAuOGMtMywwLjEtNi0wLjgtOC41LTIuNWMtMi4xLTEuNS0zLjQtMy45LTMuNi02LjVoNy42YzAuMSwxLDAuNiwyLDEuNSwyLjZjMC45LDAuNiwyLDAuOSwzLjEsMC45CgljMi4zLDAsMy41LTAuNywzLjUtMi4xYzAtMC42LTAuMy0xLjItMC44LTEuNmMtMC44LTAuNS0xLjctMC44LTIuNi0xbC01LTEuM2MtMi0wLjQtMy44LTEuNS01LjEtMy4xYy0xLjEtMS41LTEuNy0zLjMtMS43LTUuMgoJYzAtMi4zLDEtNC40LDIuOS01LjdjMi4zLTEuNiw1LTIuMyw3LjgtMi4yYzIuNy0wLjEsNS4zLDAuNyw3LjUsMi4zYzIsMS41LDMuMiwzLjcsMy4zLDYuMWgtNy40Yy0wLjMtMS44LTEuNS0yLjctMy41LTIuNwoJYy0wLjgsMC0xLjYsMC4xLTIuMywwLjVjLTAuNSwwLjMtMC45LDAuOS0wLjksMS41YzAsMS4yLDEsMiwzLDIuNWw0LjcsMS4zYzIuMSwwLjQsNC4xLDEuNCw1LjYsM2MxLjIsMS41LDEuOCwzLjMsMS44LDUuMwoJYzAsMi40LTEuMSw0LjYtMy4xLDUuOUMzMS4yLDQwLjEsMjguNCw0MC45LDI1LjYsNDAuOCIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDguNyw1MS4zaC03LjNWMTMuNmg3LjN2M2MwLjgtMS4xLDEuOS0xLjksMy4xLTIuNWMxLjQtMC43LDMtMS4xLDQuNi0xLjFjMy40LDAsNi43LDEuNSw4LjksNC4xCgljMi40LDIuNywzLjcsNi4yLDMuNyw5LjhjMC4xLDMuNi0xLjIsNy4xLTMuNiw5LjhjLTIuMiwyLjYtNS41LDQuMS04LjksNC4xYy0xLjYsMC0zLjItMC4zLTQuNi0xLjFjLTEuMi0wLjYtMi4zLTEuNC0zLjEtMi41CglMNDguNyw1MS4zTDQ4LjcsNTEuM3ogTTUwLDMyLjFjMi43LDIuNyw3LDIuNyw5LjcsMGMwLDAsMCwwLDAsMGMxLjMtMS40LDEuOS0zLjMsMS44LTUuMmMwLjEtMS45LTAuNi0zLjgtMS44LTUuMgoJYy0yLjctMi43LTcuMS0yLjctOS43LDBjMCwwLDAsMCwwLDBjLTEuMywxLjQtMS45LDMuMy0xLjgsNS4yQzQ4LjEsMjguOCw0OC43LDMwLjcsNTAsMzIuMSIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNODcuNSw0MC4yVjEzLjZoNy4zdjNjMS42LTIuNCw0LjItMy42LDcuNi0zLjZjMi45LTAuMiw1LjYsMSw3LjYsMy4xYzEuOSwyLjQsMi45LDUuNCwyLjcsOC40djE1LjZoLTcuM1YyNS44CgljMC4xLTEuNi0wLjMtMy4yLTEuMi00LjVjLTAuOC0xLjEtMi4xLTEuNy0zLjUtMS42Yy0xLjctMC4xLTMuMiwwLjctNC4zLDEuOWMtMS4yLDEuNi0xLjgsMy42LTEuNiw1LjZ2MTNIODcuNXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEyOC42LDQwLjhjLTIuOCwwLjItNS42LTEtNy40LTMuMmMtMS45LTIuNS0yLjgtNS41LTIuNi04LjZWMTMuNmg3LjN2MTQuMmMwLDQuMiwxLjUsNi4zLDQuNSw2LjMKCWMxLjYsMC4xLDMuMS0wLjcsNC0xLjljMS4xLTEuNywxLjYtMy43LDEuNS01LjZ2LTEzaDcuM3YyNi42aC03LjN2LTNDMTM0LjMsMzkuNiwxMzEuNSw0MSwxMjguNiw0MC44Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNTcsNTEuM2gtNy4zVjEzLjZoNy4zdjNjMC44LTEuMSwxLjktMS45LDMuMS0yLjVjMS40LTAuNywzLTEuMSw0LjYtMS4xYzMuNCwwLDYuNywxLjUsOC45LDQuMQoJYzIuNCwyLjcsMy43LDYuMiwzLjYsOS44YzAuMSwzLjYtMS4yLDcuMS0zLjYsOS44Yy0yLjIsMi42LTUuNSw0LjEtOC45LDQuMWMtMS42LDAtMy4yLTAuMy00LjYtMS4xYy0xLjItMC42LTIuMy0xLjQtMy4xLTIuNVY1MS4zegoJIE0xNTguMiwzMi4xYzIuNywyLjcsNywyLjcsOS43LDBjMCwwLDAsMCwwLDBjMS4zLTEuNCwxLjktMy4zLDEuOC01LjJjMC4xLTEuOS0wLjYtMy44LTEuOC01LjJjLTIuNy0yLjctNy4xLTIuNy05LjcsMGMwLDAsMCwwLDAsMAoJYy0xLjMsMS40LTEuOSwzLjMtMS44LDUuMkMxNTYuMywyOC44LDE1NywzMC43LDE1OC4yLDMyLjEiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI3My44LDQwLjIgODEuMSw0MC4yIDgxLjEsMjkuMyA3My44LDI5LjMgNzMuOCw0MC4yICIvPgo8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjgxLjEsMTMuNiA3My44LDEzLjYgNzMuOCwyNC41IDgxLjEsMjQuNSA4MS4xLDEzLjYgIi8+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMCw1My4yIDAsMCAxMS44LDAgMTEuOCw1LjcgNy4zLDUuNyA3LjMsNDcuNSAxMS44LDQ3LjUgMTEuOCw1My4yIDAsNTMuMiAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxOTAuMiwwIDE5MC4yLDUzLjIgMTc4LjQsNTMuMiAxNzguNCw0Ny41IDE4Mi45LDQ3LjUgMTgyLjksNS43IDE3OC40LDUuNyAxNzguNCwwIDE5MC4yLDAgIi8+Cjwvc3ZnPgo="
               />
             </div>
@@ -632,7 +632,7 @@ offerta, per creare il match ‚Äúperfetto‚Äù tra azienda e candidato.
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            fill="#1e213d"
+            fill="#0c2550"
             class="bi bi-arrow-right"
             viewBox="0 0 16 16"
           >
@@ -679,7 +679,7 @@ offerta, per creare il match ‚Äúperfetto‚Äù tra azienda e candidato.
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            fill="#1e213d"
+            fill="#0c2550"
             class="bi bi-arrow-right"
             viewBox="0 0 16 16"
           >
@@ -731,7 +731,7 @@ offerta, per creare il match ‚Äúperfetto‚Äù tra azienda e candidato.
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            fill="#1e213d"
+            fill="#0c2550"
             class="bi bi-arrow-right"
             viewBox="0 0 16 16"
           >
@@ -778,7 +778,7 @@ offerta, per creare il match ‚Äúperfetto‚Äù tra azienda e candidato.
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
-            fill="#1e213d"
+            fill="#0c2550"
             class="bi bi-arrow-right"
             viewBox="0 0 16 16"
           >
@@ -837,7 +837,7 @@ offerta, per creare il match ‚Äúperfetto‚Äù tra azienda e candidato.
               valori e le aspettative dal punto di vista professionale
             </p>
           </div>
-          <div class="col2" >
+          <div class="col3" >
           </div>
         </div>
       </div>
@@ -859,7 +859,7 @@ offerta, per creare il match ‚Äúperfetto‚Äù tra azienda e candidato.
             xmlns="http://www.w3.org/2000/svg"
             width="22"
             height="22"
-            fill="#1e213d"
+            fill="#0c2550"
             class="bi bi-chevron-left"
             viewBox="0 0 16 16"
           >
@@ -874,7 +874,7 @@ offerta, per creare il match ‚Äúperfetto‚Äù tra azienda e candidato.
             xmlns="http://www.w3.org/2000/svg"
             width="22"
             height="22"
-            fill="#1e213d"
+            fill="#0c2550"
             class="bi bi-chevron-right"
             viewBox="0 0 16 16"
           >
@@ -917,11 +917,9 @@ offerta, per creare il match ‚Äúperfetto‚Äù tra azienda e candidato.
                   </svg>
                 </div>
               </div>
-              <h2>Maggiore umanizzazione</h2>
+              <h2>Umanizzazione</h2>
               <p>
-                L‚Äôazienda che funziona √® un‚Äôazienda che ha al suo interno dipendenti felici. Per
-questo Jobify Recruiting trova il candidato giusto per ogni azienda, in linea non solo in termini di
-competenze e preparazione professionale, ma anche di valori e ideali
+                Le aziende di successo hanno al loro interno dipendenti felici e per questo lo scopo di Jobify Recruiting √® creare il match ideale tra talento e azienda. Si tratta di andare oltre le competenze professionali e tenere conto di valori e ideali della risorsa da inserire in azienda.
               </p>
             </div>
           </div>
@@ -931,7 +929,7 @@ competenze e preparazione professionale, ma anche di valori e ideali
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                fill="#1e213d"
+                fill="#0c2550"
                 class="bi bi-arrow-right"
                 viewBox="0 0 16 16"
               >
@@ -965,10 +963,9 @@ competenze e preparazione professionale, ma anche di valori e ideali
                   </svg>
                 </div>
               </div>
-              <h2>Maggiore rapidit√†</h2>
+              <h2>Rapidit√†</h2>
               <p>
-                Il processo di ricerca e selezione fatto con le moderne tecnologie √® rapido ed efficiente e
-si riducono errori di valutazione, spese extra e tempo per trovare la giusta risorsa.
+                Le moderne tecnologie velocizzano il processo di selezione e riducono errori di valutazione, tempo e spese extra per la ricerca della migliore risorsa.
               </p>
             </div>
           </div>
@@ -980,7 +977,7 @@ si riducono errori di valutazione, spese extra e tempo per trovare la giusta ris
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                fill="#1e213d"
+                fill="#0c2550"
                 class="bi bi-arrow-right"
                 viewBox="0 0 16 16"
               >
@@ -1010,7 +1007,7 @@ si riducono errori di valutazione, spese extra e tempo per trovare la giusta ris
                   </svg>
                 </div>
               </div>
-              <h2>Maggiore scientificit√†</h2>
+              <h2>Scientificit√†</h2>
               <p>
                 Lavoriamo con la migliore tecnologia per prendere decisioni consapevoli e basate sui
                 dati in modo da garantire un approccio scientifico alla ricerca risorse umane.
@@ -1023,7 +1020,7 @@ si riducono errori di valutazione, spese extra e tempo per trovare la giusta ris
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
-                fill="#1e213d"
+                fill="#0c2550"
                 class="bi bi-arrow-right"
                 viewBox="0 0 16 16"
               >
@@ -1051,10 +1048,9 @@ si riducono errori di valutazione, spese extra e tempo per trovare la giusta ris
                   </svg>
                 </div>
               </div>
-              <h2>Maggiore efficacia</h2>
+              <h2>Efficacia</h2>
               <p>
-                Le persone e i talenti inseriti in azienda assicurano prestazioni migliori, il turnover si
-abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚Äôazienda.
+                Il giusto candidato permette di ottenere prestazioni migliori, il turnover si riduce e aumenta il tasso di retention. Questo si traduce in una riduzione dei costi per l‚Äôazienda.
               </p>
             </div>
           </div>
@@ -1103,7 +1099,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="22"
-              fill="#1e213d"
+              fill="#0c2550"
               class="bi bi-chevron-left"
               viewBox="0 0 16 16"
             >
@@ -1118,7 +1114,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
               xmlns="http://www.w3.org/2000/svg"
               width="22"
               height="22"
-              fill="#1e213d"
+              fill="#0c2550"
               class="bi bi-chevron-right"
               viewBox="0 0 16 16"
             >
@@ -1150,24 +1146,6 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
               </div>
             </div>
           </div>
-          <div class="feedback">
-                <p class="quote">"</p>
-                <h3>
-                  Consiglierei jobify recruiting per la perseveranza, bravura, con cui sono stato seguito nell‚Äôaggiornamento costante della ricerca affidatagli. Soprattuto con la mia referente elisa con cui si e‚Äô istaurato da subito un rapporto di affinita‚Äô, empatia e accoglienza nel capire le mie esigenze di trovare una risorsa valida da far crescere nella mia realta‚Äô professionale. Se dovessi effettuare nuove ricerche di personale mi rivolgerei di nuovo a jobify che ha saputo consigliarmi e orientarmi nella scelta del miglior candidato, e tutto questo svolto dall‚Äôitalia , visto la mia attivita‚Äô si trova a malta. Sono molto contento di come abbiano lavorato con attenzione e costanza per la mia azienda.
-                </h3>
-                <div class="feedbackInfo">
-                  <div
-                    class="feedbackInfoPhoto"
-                    style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
-                    "
-                  ></div>
-                  <div class="feddbackData">
-                    <p class="author">Simone Cascone</p>
-                    <p class="worktitle">SAddetto alle vendite (Malta) presso CASCONE HOME</p>
-                  </div>
-                </div>
-              </div>
               <div class="feedback">
                 <p class="quote">"</p>
                 <h3>
@@ -1921,7 +1899,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .mainTitle .title h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 56px;
     font-weight: 800;
     width: 90%;
@@ -1941,12 +1919,12 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   .first .video {
     width: fit-content;
     height: fit-content;
-    background: #1e213d;
+    background: #0c2550;
     border-radius: 30px;
   }
 
   .gradientTitle {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1986,7 +1964,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
 
   .clientsCoLink h2 {
     width: fit-content;
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2000,7 +1978,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   .clientsCoLink p {
     width: fit-content;
     margin-left: 6rem;
-    color: #1e213d;
+    color: #0c2550;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -2092,7 +2070,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .secondDiv .title h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 64px;
     font-weight: 800 !important;
     width: 87%;
@@ -2104,7 +2082,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .secondDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2148,7 +2126,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
 
   .step {
     text-align: center;
-    background: #1e213d;
+    background: #0c2550;
     border-radius: 30px;
     z-index: 14;
     margin-right: 2rem;
@@ -2217,7 +2195,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .thirdPartDiv {
-    background: #1e213d;
+    background: #0c2550;
     border-radius: 30px;
     padding: 5rem;
     padding-right: 0;
@@ -2243,7 +2221,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
     letter-spacing: -0.04em;
     font-weight: 700;
     margin-bottom: 5rem;
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2867b2  100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2268,7 +2246,17 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
     background-image: url(/src/assets/whyJobify.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom;
+    width: 78%;
+    height: auto;
+    border-bottom-right-radius: 30px;
+  }
+
+  .first .col3  {
+    background-image: url(/src/assets/metodo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
     width: 78%;
     height: auto;
     border-bottom-right-radius: 30px;
@@ -2321,7 +2309,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .feature .title {
-    color: #1e213d;
+    color: #0c2550;
     margin-left: 0 !important;
     font-size: 30px;
     line-height: 32px;
@@ -2354,7 +2342,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
     width: 60vw;
     height: 25vw;
     margin-right: 2rem;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/candidato.jpg);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/punti_di_forza.png);
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -2394,7 +2382,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .workflow .workflowTitle2 {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2457,7 +2445,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .workflow .columns .column .background {
-    background: #1e213d;
+    background: #0c2550;
     padding: 3rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -2487,13 +2475,13 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .workflow .columns .number {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     letter-spacing: -0.04em !important;
-    color: #1e213d;
+    color: #0c2550;
     font-size: 74px;
     font-weight: 800 !important;
     line-height: 78px;
@@ -2529,7 +2517,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
 
   .workflowFlexTitle {
     margin-bottom: 0rem !important;
-    color: #1e213d !important;
+    color: #0c2550 !important;
     font-size: 64px !important;
     font-weight: 800 !important;
     text-align: center !important;
@@ -2671,7 +2659,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
 
   .step_workflow .body {
     margin-top: 1rem;
-    color: #1e213d;
+    color: #0c2550;
     font-size: 14px;
     line-height: 14px;
     display: none;
@@ -2691,7 +2679,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
     font-size: 22px;
     line-height: 24px;
     font-weight: 600;
-    color: #1e213d;
+    color: #0c2550;
     padding-top: 0.5rem;
     margin-left: 0.8rem;
   }
@@ -2853,8 +2841,8 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   .elemsx .elemdx_rectangle6 {
     width: 350px;
     height: 400px;
-    background: #1e213d;
-    border: 2px solid #1e213d;
+    background: #0c2550;
+    border: 2px solid #0c2550;
     border-radius: 30px;
     -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
     -moz-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
@@ -2914,7 +2902,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .second .flow .elemsx h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 64px;
     line-height: 68px;
     font-weight: 800;
@@ -2928,7 +2916,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
     line-height: 68px;
     font-weight: 800;
     letter-spacing: -0.04em !important;
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2947,7 +2935,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .elemH2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 64px;
     line-height: 68px;
     font-weight: 800;
@@ -2970,7 +2958,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .elemH2_v2 {
-    color: #1e213d;
+    color: #0c2550;
   }
 
   .elemH2_v2 .elemH2_v2Span {
@@ -3011,7 +2999,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
 
   .elemP_image span {
     margin-top: 15rem !important;
-    color: #1e213d !important;
+    color: #0c2550 !important;
     font-size: 20px !important;
     width: 90% !important;
     line-height: 24px !important;
@@ -3075,7 +3063,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   .elemdx .elemdx_rectangle3 {
     width: 450px;
     height: 250px;
-    background: #1e213d;
+    background: #0c2550;
     border: 3px solid #324567;
     border-radius: 30px;
     -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);
@@ -3344,7 +3332,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .second .flowSingle .flowSingleContent .flowSingleTitle {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
@@ -3354,7 +3342,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .second .flowSingle .flowSingleContent .flowSingleTitle .flowSingleTitleSpan {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 64px;
     line-height: 68px;
     letter-spacing: -0.04em !important;
@@ -3427,7 +3415,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .third .flowSingle .flowSingleContent .flowSingleTitle {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
@@ -3437,7 +3425,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .third .flowSingle .flowSingleContent .flowSingleTitle .flowSingleTitleSpan {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 64px;
     line-height: 68px;
     font-weight: 700;
@@ -3487,7 +3475,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
     width: 100%;
     padding-left: 8rem;
     width: 100%;
-    background-color: #1e213d;
+    background-color: #0c2550;
     padding-top: 8rem;
   }
 
@@ -3517,7 +3505,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .fourthDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3603,7 +3591,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
     background: transparent;
     background-image: url(/src/assets/contactus.png);
     background-size: contain;
-    background-position: center;
+    background-position: right;
     top: 0%;
     background-repeat: no-repeat;
     right: 0%;
@@ -3637,7 +3625,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .feedbackDiv h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 64px;
     font-weight: 800 !important;
     text-align: center;
@@ -3723,7 +3711,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .feedbackDiv .feedbacks .feedback h3 {
-    color: #1e213d;
+    color: #0c2550;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
@@ -3732,7 +3720,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .feedbackDiv .feedbacks .feedback .author {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 22px;
@@ -3770,7 +3758,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   }
 
   .fifthDiv .adviser {
-    background: #1e213d;
+    background: #0c2550;
     border-radius: 30px;
     display: flex;
   }
@@ -3858,7 +3846,7 @@ abbassa e aumenta il tasso di talent retention con la riduzione dei costi per l‚
   .elemsx .elemdx_rectangle6 {
     width: 350px;
     height: 400px;
-    background: #1e213d;
+    background: #0c2550;
     border: 3px solid #324567;
     border-radius: 30px;
     -webkit-box-shadow: 0px 0px 133px 17px rgba(255, 0, 217, 0.17);

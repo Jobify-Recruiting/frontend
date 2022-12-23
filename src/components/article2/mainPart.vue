@@ -108,7 +108,7 @@ export default {
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
                   height="30"
-                  fill="#1e213d"
+                  fill="#0c2550"
                   class="bi bi-arrow-left"
                   viewBox="0 0 16 16"
                 >
@@ -218,7 +218,7 @@ html{
   .titlePage {
     font-size: 40px;
     line-height: 44px;
-    color: #1e213d;
+    color: #0c2550;
     font-weight: 800;
     width: 70%;
     margin-left: 11rem;
@@ -229,7 +229,7 @@ html{
   .dateDiv {
     font-size: 16px;
     line-height: 20px;
-    color: #1e213d;
+    color: #0c2550;
     font-weight: 300;
     margin-left: 11rem;
     margin-top: 1rem;
@@ -261,7 +261,7 @@ html{
   h3 {
     font-size: 28px;
     line-height: 32px;
-    color: #1e213d;
+    color: #0c2550;
     font-weight: 800;
     padding-bottom: 1rem;
     letter-spacing: -0.02em;

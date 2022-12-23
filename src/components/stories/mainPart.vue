@@ -184,7 +184,7 @@ export default {
                     xmlns="http://www.w3.org/2000/svg"
                     width="22"
                     height="22"
-                    fill="#1e213d"
+                    fill="#0c2550"
                     class="bi bi-chevron-left"
                     viewBox="0 0 16 16"
                   >
@@ -199,7 +199,7 @@ export default {
                     xmlns="http://www.w3.org/2000/svg"
                     width="22"
                     height="22"
-                    fill="#1e213d"
+                    fill="#0c2550"
                     class="bi bi-chevron-right"
                     viewBox="0 0 16 16"
                   >
@@ -305,14 +305,14 @@ export default {
               </div>
           </div>
             <div class="story" id="1">
-              <div class="content">
-                <div class="close_story" @click="close_story(1)">
+              <div class="close_story" @click="close_story(1)">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22"
                                 height="22"
-                                fill="#1e213d" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                   </svg>
                 </div>
+              <div class="content">
                 <div class="nickname" id="nickname"></div>
                 <div style="display: flex; align-items: center; width: 100%; text-align: center;">
                   <div class="ruolo" id="ruolo"></div> 
@@ -387,8 +387,8 @@ export default {
   .first {
     padding-top: 5rem;
     background: #ada996;
-    background: -webkit-linear-gradient(to top, #eaeaea, #ffffff, #ffffff47, #1e213d);
-    background: linear-gradient(to top, #eaeaea, #ffffff, #ffffff47, #1e213d);
+    background: -webkit-linear-gradient(to top, #eaeaea, #ffffff, #ffffff47, #0c2550);
+    background: linear-gradient(to top, #eaeaea, #ffffff, #ffffff47, #0c2550);
   }
 
   .first .cols {
@@ -411,7 +411,7 @@ export default {
   .titlePage2 {
     font-size: 34px;
     line-height: 38px;
-    color: #1e213d;
+    color: #0c2550;
     font-weight: 800;
     margin-left: 12.5rem;
     margin-top: 3rem;
@@ -515,7 +515,7 @@ export default {
     margin-left: 2rem;
     width: 40%;
     margin-right: 2rem;
-    color: #1e213d;
+    color: #0c2550;
   }
 
   .firstTitle p {
@@ -537,7 +537,7 @@ export default {
   }
 
   .firstTitle h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 46px;
     line-height: 50px;
     font-weight: 700;
@@ -564,30 +564,50 @@ export default {
   .story{
     display: none;
     position: fixed;
-    top: 0;
-    background: #0000008a;
-    width: 100%;
     height: 100%;
+    background-color: #26334285;
+    backdrop-filter: blur(12px);
     z-index: 15;
+    top: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
   }
 
   .story .content{
-    display: inline;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: fixed;
-    top: 15%;
-    background: white;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding-top: 7rem;
+    z-index: 10;
+    background: #0c25509f;
+    backdrop-filter: blur(12px);
+    width: 80%;
+    border-radius: 40px;
+    padding: 4rem;
+    left: 10%;
+    top: 5%;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
   }
 
-  .story .content .close_story{
-    cursor: pointer;
-    width: fit-content;
+  .story .close_story{
     margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 16px;
+    border: 2px solid #0a1e4375;
+    color: white;
+    font-size: 18px;
+    line-height: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .story .close_story:hover {
+    border-color: white;
+    transform: rotate(90deg);
   }
 
   .story .content .nickname{
@@ -596,6 +616,7 @@ export default {
     font-weight: 600;
     font-size: 18px;
     line-height: 18px;
+    color: #fff;
   }
 
   .story .content .azienda{
@@ -603,13 +624,14 @@ export default {
     font-size: 16px;
     line-height: 16px;
     margin-top: 0.5rem;
+    color: #fff;
   }
   .story .content .data{
     font-weight: 300;
     font-size: 14px;
     line-height: 14px;
     margin-top: 0.5rem;
-    color: #273350;
+    color: #fff;
     margin-right: auto;
     width: fit-content;
     margin-left: 1rem;
@@ -620,7 +642,7 @@ export default {
     font-size: 14px;
     line-height: 14px;
     margin-top: 0.5rem;
-    color: #273350;
+    color: #fff;
     margin-right: 1rem;
     margin-left: auto;
     width: fit-content;
@@ -632,6 +654,8 @@ export default {
     margin-top: 3rem;
     overflow-y: scroll;
     height: 65%;
+    font-weight: 300;
+    color: #fff;
   }
 
   .second {
@@ -671,6 +695,7 @@ export default {
     flex-wrap: nowrap;
     align-items: center;
     position: relative;
+    cursor: pointer;
   }
 
   .featuredContent.active {
@@ -830,11 +855,11 @@ export default {
     line-height: 38px;
     font-weight: 700;
     letter-spacing: -1px;
-    color: #1e213d;
+    color: #0c2550;
   }
 
   .fifthDiv .adviser .col h3 span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -867,7 +892,7 @@ export default {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #1e213d;
+    color: #0c2550;
     font-size: 54px;
     font-weight: 800 !important;
     width: 60%;
@@ -897,7 +922,7 @@ export default {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #1e213d;
+    color: #0c2550;
     font-size: 18px;
     font-weight: 500 !important;
     width: 40%;

@@ -429,7 +429,7 @@ export default {
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
                 height="22"
-                fill="#1e213d"
+                fill="#0c2550"
                 class="bi bi-chevron-left"
                 viewBox="0 0 16 16"
               >
@@ -444,7 +444,7 @@ export default {
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
                 height="22"
-                fill="#1e213d"
+                fill="#0c2550"
                 class="bi bi-chevron-right"
                 viewBox="0 0 16 16"
               >
@@ -486,7 +486,7 @@ export default {
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#1e213d"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -515,7 +515,7 @@ export default {
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#1e213d"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -541,7 +541,7 @@ export default {
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#1e213d"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -575,7 +575,7 @@ export default {
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#1e213d"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -607,7 +607,7 @@ export default {
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#1e213d"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -641,7 +641,7 @@ export default {
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#1e213d"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -671,7 +671,7 @@ export default {
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#1e213d"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -988,7 +988,7 @@ export default {
     padding-bottom: 15rem;
     padding-top: 15rem;
     margin-right: 0;
-    background: #1e213d;
+    background: #0c2550;
   }
 
   .firstPart .subtitle {
@@ -1052,7 +1052,7 @@ export default {
   }
   .cols .col p {
     text-transform: uppercase;
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -1078,7 +1078,7 @@ export default {
   }
 
   .cols .col h2 {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 68px;
@@ -1087,7 +1087,7 @@ export default {
   }
 
   .cols .col h3 {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;
@@ -1107,7 +1107,7 @@ export default {
   }
 
   .secondPart h2 {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -1129,7 +1129,7 @@ export default {
   }
 
   .secondPart .text span {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1165,7 +1165,7 @@ export default {
   }
 
   .fourthPart .title h2 {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 50px;
     line-height: 54px;
@@ -1210,7 +1210,7 @@ export default {
     padding-top: 4rem;
     padding-bottom: 4rem;
     text-align: center;
-    background: #1e213d;
+    background: #0c2550;
     border-radius: 30px;
     z-index: 14;
     margin-right: 3rem;
@@ -1276,7 +1276,7 @@ export default {
     letter-spacing: -0.04em;
     font-weight: 700;
     margin-bottom: 5rem;
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1293,7 +1293,7 @@ export default {
     margin-top: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1345,7 +1345,7 @@ export default {
   }
 
   .second .feature h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 30px;
     line-height: 34px;
     letter-spacing: -0.04em;
@@ -1382,7 +1382,7 @@ export default {
   }
 
   .secondPart .title h2 {
-    color: #1e213d;
+    color: #0c2550;
     width: 80%;
     font-size: 54px;
     line-height: 58px;
@@ -1408,7 +1408,7 @@ export default {
   }
 
   .workflow .workflowTitle h2 {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1436,7 +1436,7 @@ export default {
   .workflow .btnScrollR {
     width: fit-content;
     background: transparent;
-    border: 2px solid #1e213d;
+    border: 2px solid #0c2550;
     border-radius: 25rem;
     height: auto;
     z-index: 10;
@@ -1449,7 +1449,7 @@ export default {
     margin-right: 1rem;
     width: fit-content;
     background: transparent;
-    border: 2px solid #1e213d;
+    border: 2px solid #0c2550;
     border-radius: 25rem;
     height: auto;
     z-index: 10;
@@ -1470,7 +1470,7 @@ export default {
   }
 
   .workflow .columns .column .background {
-    background: #1e213d;
+    background: #0c2550;
     padding: 3rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -1500,13 +1500,13 @@ export default {
   }
 
   .workflow .columns .number {
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     letter-spacing: -0.04em !important;
-    color: #1e213d;
+    color: #0c2550;
     font-size: 74px;
     font-weight: 800 !important;
     line-height: 78px;
@@ -1580,7 +1580,7 @@ export default {
     font-size: 36px;
     font-weight: 600;
     line-height: 40px;
-    background: -webkit-linear-gradient(-70deg, #2188ff 0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1589,7 +1589,7 @@ export default {
   }
 
   .step .title {
-    color: #1e213d;
+    color: #0c2550;
     margin-left: 0 !important;
     font-size: 38px;
     line-height: 42px;
@@ -1697,7 +1697,7 @@ export default {
     line-height: 38px;
     font-weight: 700;
     letter-spacing: -1px;
-    color: #1e213d;
+    color: #0c2550;
   }
 
   .ctaCV .col h3 span {
@@ -1764,7 +1764,7 @@ export default {
   .popup {
     position: fixed;
     z-index: 10;
-    background: #1e213d9f;
+    background: #0c25509f;
     backdrop-filter: blur(12px);
     width: 80%;
     border-radius: 40px;
@@ -1881,7 +1881,7 @@ export default {
   }
 
   .seventh .asks h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 50px;
     line-height: 54px;
     font-weight: 700;
@@ -1934,7 +1934,7 @@ export default {
   }
 
   .btn-link {
-    color: #1e213d;
+    color: #0c2550;
     font-weight: 700;
     font-size: 24px;
     align-items: center;
@@ -1943,7 +1943,7 @@ export default {
   }
 
   .btn-link:hover {
-    color: #1e213d;
+    color: #0c2550;
     text-decoration: none;
   }
 

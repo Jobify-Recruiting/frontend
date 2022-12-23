@@ -88,24 +88,14 @@ export default {
           <router-link to="/about"
             ><div class="link">Chi siamo</div></router-link
           >
-          <div class="link" @click="openWorkers()">
-            Cerchi lavoro? &nbsp;
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              fill="currentColor"
-              class="bi bi-chevron-down"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-              />
-            </svg>
-          </div>
+          <router-link to="/openposition"
+            ><div class="link">Offerte di lavoro</div></router-link
+          >
           <router-link to="/companies"
             ><div class="link">Sei un'Azienda?</div></router-link
+          >
+          <router-link to="/journal"
+            ><div class="link">Journal</div></router-link
           >
         </div>
         <div class="left">
@@ -293,7 +283,7 @@ a:hover {
 
 @media (min-width: 1024px) {
   .change_color {
-    background-color: #1e213dba;
+    background-color: #0c2550ba;
     backdrop-filter: blur(12px);
     width: fit-content;
     -webkit-transition: all 0.3s ease-in-out;
@@ -433,7 +423,7 @@ a:hover {
     /*background: #131b23;
     border: 2px solid #b3b3b326;*/
 
-    background-color: #1e213dd4;
+    background-color: #0c2550d4;
     backdrop-filter: blur(12px);
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 
@@ -477,7 +467,7 @@ a:hover {
     z-index: 20;
     width: 0%;
     height: 100%;
-    background-color: #1e213dd4;
+    background-color: #0c2550d4;
     backdrop-filter: blur(12px);
     padding: 7rem;
     opacity: 0;

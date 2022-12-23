@@ -272,12 +272,12 @@ da dedicare alla ricerca e selezione vera e propria dei talenti.
               <p>match tra azienda e candidato</p>
             </div>
             <div class="number transition">
-              <h3>-30%</h3>
+              <h3>+30%</h3>
               <div class="subtitle">Rapidità</div>
               <p>tempo risparmiato per la ricerca e selezione e tempo medio di ricerca candidati di 26 gg</p>
             </div>
             <div class="number transition">
-              <h3>45</h3>
+              <h3>+45</h3>
               <div class="subtitle">Aumenta clima aziendale</div>
               <p>grazie al match di valori tra azienda e candidato</p>
             </div>
@@ -306,7 +306,7 @@ professionali e si riflette nella cultura aziendale</p>
                   Oggi le aziende hanno difficoltà a trovare i giusti talenti dato che spesso si basano unicamente sulla
                   valutazione del CV e delle Hard &amp; Soft Skills. Per questo Jobify Recruiting propone un approccio che punta a
                   mettere al centro valori e aspettative del candidato dal punto di vista professionale per creare i match con
-                  la cultura e i valori aziendali alla base di una proficua relazione candidato-azienda. 4 IL PROBLEMA: Oggi in
+                  la cultura e i valori aziendali alla base di una proficua relazione candidato-azienda. Oggi in
                   Italia esistono ben 1074 società di Ricerca &amp; Selezione del personale, ma poche si caratterizzano per
                   l’approccio consulenziale e la volontà di umanizzare il processo di selezione. Questo è quello che fa Jobify
                   Recruiting con un metodo: Umano, Scientifico, Trasparente, Consulenziale.
@@ -318,8 +318,10 @@ professionali e si riflette nella cultura aziendale</p>
                 <p>
                   Jobify Recruiting è molto diversa dalle agenzie di ricerca personale. Siamo una società di Head Hunting che
                   utilizza un metodo scientifico con un approccio consulenziale. Il processo di selezione è umano e studiato
-                  nei minimi dettagli per prendere decisioni in modo consapevole e trasparente al fine di lavorare in perfetta
-                  sinergia con l’azienda. Per questo il nostro metodo di ricerca talenti si basa su: Interviste all’azienda per
+                  nei minimi dettagli per prendere decisioni in modo consapevole poiché tutti i nostri processi di ricerca e 
+                  selezione sono misurati è supportato da dati scientifici “ e trasparenti in quanto condividiamo costantemente 
+                  questi dati con le aziende e questo ci consente di lavorare in perfetta sinergia con le aziende e trasparente 
+                  al fine di lavorare in perfetta sinergia con l’azienda. Per questo il nostro metodo di ricerca talenti si basa su: Interviste all’azienda per
                   comprendere e approfondire la cultura aziendale, il clima aziendale, l&#39;organigramma ed il funzionigramma,
                   oltre al riporto diretto della risorsa da inserire, Interviste al candidato per comprendere ed approfondire i
                   valori e le aspettative dal punto di vista professionale.
@@ -360,10 +362,11 @@ professionali e si riflette nella cultura aziendale</p>
             </div>
             <div class="second">
               <div class="feature">
-                <h2>Efficacia</h2>
+                <h2>Umanizzazione</h2>
                 <p>
-                  Il giusto candidato permette di ottenere prestazioni migliori, il turnover si riduce e aumenta il
-                  tasso di retention. Questo si traduce in una riduzione dei costi per l’azienda.
+                  Le aziende di successo hanno al loro interno dipendenti felici e per questo lo scopo di Jobify
+                  Recruiting è creare il match ideale tra talento e azienda. Si tratta di andare oltre le competenze
+                  professionali e tenere conto di valori e ideali della risorsa da inserire in azienda.
                 </p>
               </div>
               <div class="feature">
@@ -374,11 +377,17 @@ professionali e si riflette nella cultura aziendale</p>
                 </p>
               </div>
               <div class="feature">
-                <h2>Umanizzazione</h2>
+                <h2>Scientificità</h2>
                 <p>
-                  Le aziende di successo hanno al loro interno dipendenti felici e per questo lo scopo di Jobify
-                  Recruiting è creare il match ideale tra talento e azienda. Si tratta di andare oltre le competenze
-                  professionali e tenere conto di valori e ideali della risorsa da inserire in azienda.
+                  Lavoriamo con la migliore tecnologia per prendere decisioni consapevoli e basate sui
+                dati in modo da garantire un approccio scientifico alla ricerca risorse umane.
+                </p>
+              </div>
+              <div class="feature">
+                <h2>Efficacia</h2>
+                <p>
+                  Il giusto candidato permette di ottenere prestazioni migliori, il turnover si riduce e aumenta il
+                  tasso di retention. Questo si traduce in una riduzione dei costi per l’azienda.
                 </p>
               </div>
             </div>
@@ -395,7 +404,7 @@ professionali e si riflette nella cultura aziendale</p>
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
                 height="22"
-                fill="#1e213d"
+                fill="#0c2550"
                 class="bi bi-chevron-left"
                 viewBox="0 0 16 16"
               >
@@ -410,7 +419,7 @@ professionali e si riflette nella cultura aziendale</p>
                 xmlns="http://www.w3.org/2000/svg"
                 width="22"
                 height="22"
-                fill="#1e213d"
+                fill="#0c2550"
                 class="bi bi-chevron-right"
                 viewBox="0 0 16 16"
               >
@@ -683,7 +692,7 @@ professionali e si riflette nella cultura aziendale</p>
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
-                  fill="#1e213d"
+                  fill="#0c2550"
                   class="bi bi-chevron-left"
                   viewBox="0 0 16 16"
                 >
@@ -698,7 +707,7 @@ professionali e si riflette nella cultura aziendale</p>
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
                   height="22"
-                  fill="#1e213d"
+                  fill="#0c2550"
                   class="bi bi-chevron-right"
                   viewBox="0 0 16 16"
                 >
@@ -745,24 +754,6 @@ professionali e si riflette nella cultura aziendale</p>
                   <div class="feddbackData">
                     <p class="author">Riccardo di Camillo</p>
                     <p class="worktitle">Titolare presso Celda 2000 Servizi Integrati srls</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feedback">
-                <p class="quote">"</p>
-                <h3>
-                  Consiglierei jobify recruiting per la perseveranza, bravura, con cui sono stato seguito nell’aggiornamento costante della ricerca affidatagli. Soprattuto con la mia referente elisa con cui si e’ istaurato da subito un rapporto di affinita’, empatia e accoglienza nel capire le mie esigenze di trovare una risorsa valida da far crescere nella mia realta’ professionale. Se dovessi effettuare nuove ricerche di personale mi rivolgerei di nuovo a jobify che ha saputo consigliarmi e orientarmi nella scelta del miglior candidato, e tutto questo svolto dall’italia , visto la mia attivita’ si trova a malta. Sono molto contento di come abbiano lavorato con attenzione e costanza per la mia azienda.
-                </h3>
-                <div class="feedbackInfo">
-                  <div
-                    class="feedbackInfoPhoto"
-                    style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
-                    "
-                  ></div>
-                  <div class="feddbackData">
-                    <p class="author">Simone Cascone</p>
-                    <p class="worktitle">Addetto alle vendite (Malta) presso CASCONE HOME</p>
                   </div>
                 </div>
               </div>
@@ -1861,7 +1852,7 @@ appuntamento con Jobify Recruiting.
     padding-bottom: 6rem;
     padding-top: 9rem;
     margin-right: 0;
-    background:#1e213d;
+    background:#0c2550;
   }
 
   .firstPart .subtitle {
@@ -1967,7 +1958,7 @@ appuntamento con Jobify Recruiting.
   }
   .cols .col p {
     text-transform: uppercase;
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -1993,7 +1984,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .cols .col h2 {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 68px;
@@ -2022,7 +2013,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .secondPart h2 {
-    color: #1e213d;
+    color: #0c2550;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -2203,7 +2194,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .workflow .columns .column .background {
-    background: #1e213d;
+    background: #0c2550;
     padding: 3rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -2239,7 +2230,7 @@ appuntamento con Jobify Recruiting.
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     letter-spacing: -0.04em !important;
-    color: #1e213d;
+    color: #0c2550;
     font-size: 74px;
     font-weight: 800 !important;
     line-height: 78px;
@@ -2350,7 +2341,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .clientsCo .titles h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 64px;
     font-weight: 800 !important;
     text-align: center;
@@ -2386,7 +2377,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .numbersDiv h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 56px;
     line-height: 56px;
     font-weight: 600;
@@ -2415,7 +2406,7 @@ appuntamento con Jobify Recruiting.
     padding-top: 2rem;
     padding-bottom: 2rem;
     text-align: center;
-    background: #1e213d;
+    background: #0c2550;
     border-radius: 30px;
     z-index: 14;
     margin-right: 2rem;
@@ -2566,7 +2557,7 @@ appuntamento con Jobify Recruiting.
     padding-top: 3rem;
     padding-bottom: 3rem;
     text-align: center;
-    background: #1e213d;
+    background: #0c2550;
     border-radius: 30px;
     z-index: 14;
     margin-right: 2rem;
@@ -2619,7 +2610,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .fifthDiv .adviser {
-    background: #1e213d;
+    background: #0c2550;
     border-radius: 30px;
     display: flex;
   }
@@ -2669,7 +2660,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .feedbackDiv h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 64px;
     font-weight: 800 !important;
     text-align: center;
@@ -2729,7 +2720,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .feedbackDiv .feedbacks .feedback {
-    background: #1e213d;
+    background: #0c2550;
     border-radius: 30px;
     padding: 2rem;
     margin-right: 1rem;
@@ -2863,7 +2854,7 @@ appuntamento con Jobify Recruiting.
   .second .feature {
     margin-right: 2rem;
     width: 30%;
-    background: #1e213d;
+    background: #0c2550;
     border-radius: 30px;
     padding: 3rem;
   }

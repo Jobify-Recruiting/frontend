@@ -279,28 +279,28 @@ export default {
                   date: "18 Nov 2022",
                   title: "#EVENTI | Milano Digital Week 2022",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/milano+digital+week+2.jpeg",
-                  subtitle: "𝐎𝐜𝐜𝐨𝐫𝐫𝐞 𝐭𝐫𝐚𝐬𝐟𝐨𝐫𝐦𝐚𝐫𝐞 𝐥𝐚 𝐝𝐢𝐬𝐚𝐛𝐢𝐥𝐢𝐭𝐚' 𝐢𝐧 𝐚𝐛𝐢𝐥𝐢𝐭𝐚', 𝐩𝐚𝐫𝐭𝐞𝐧𝐝𝐨 𝐝𝐚𝐥 𝐩𝐫𝐢𝐧𝐜𝐢𝐩𝐢𝐨 𝐜𝐡𝐞 𝐭𝐮𝐭𝐭𝐢 𝐚𝐛𝐛𝐢𝐚𝐦𝐨 𝐮𝐧 𝐩𝐨𝐭𝐞𝐧𝐳𝐢𝐚𝐥𝐞 𝐝𝐚 𝐟𝐚𝐫 𝐞𝐦𝐞𝐫𝐠𝐞𝐫𝐞.",
+                  subtitle: "𝐎𝐜𝐜𝐨𝐫𝐫𝐞 𝐭𝐫𝐚𝐬𝐟𝐨𝐫𝐦𝐚𝐫𝐞 𝐥𝐚 𝐝𝐢𝐬𝐚𝐛𝐢𝐥𝐢𝐭𝐚' 𝐢𝐧 𝐚𝐛𝐢𝐥𝐢𝐭𝐚'...",
                   text: "<h3>#EVENTI | 𝐌𝐢𝐥𝐚𝐧𝐨 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐖𝐞𝐞𝐤 𝟐𝟎𝟐𝟐</h3><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/milano+digital+week+1.jpeg\" width=\"50%\" height=\"50%\"/><p>« 𝐎𝐜𝐜𝐨𝐫𝐫𝐞 𝐭𝐫𝐚𝐬𝐟𝐨𝐫𝐦𝐚𝐫𝐞 𝐥𝐚 𝐝𝐢𝐬𝐚𝐛𝐢𝐥𝐢𝐭𝐚' 𝐢𝐧 𝐚𝐛𝐢𝐥𝐢𝐭𝐚', 𝐩𝐚𝐫𝐭𝐞𝐧𝐝𝐨 𝐝𝐚𝐥 𝐩𝐫𝐢𝐧𝐜𝐢𝐩𝐢𝐨 𝐜𝐡𝐞 𝐭𝐮𝐭𝐭𝐢 𝐚𝐛𝐛𝐢𝐚𝐦𝐨 𝐮𝐧 𝐩𝐨𝐭𝐞𝐧𝐳𝐢𝐚𝐥𝐞 𝐝𝐚 𝐟𝐚𝐫 𝐞𝐦𝐞𝐫𝐠𝐞𝐫𝐞. »</p><p>🗓 𝟭𝟭/𝟭𝟭/𝟮𝟬𝟮𝟮 • Jobify Recruiting, Novis Games e UP-Communication insieme durante la quinta edizione della Milano Digital Week con un #webinar speciale dal titolo “𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲 𝐟𝐨𝐫 𝐡𝐮𝐦𝐚𝐧𝐬: 𝐚𝐜𝐜𝐞𝐬𝐬𝐢𝐛𝐢𝐥𝐢𝐭𝐚' 𝐞 𝐢𝐧𝐜𝐥𝐮𝐬𝐢𝐨𝐧𝐞 𝐧𝐞𝐥 𝐦𝐨𝐧𝐝𝐨 𝐝𝐞𝐥 𝐥𝐚𝐯𝐨𝐫𝐨”. </p><p>💬 Abbiamo avuto l’opportunità di parlare di tematiche oggi estremamente fondamentali nel mondo del lavoro → #accessibilità | #inclusione | #umanizzazione | #tecnologia | #futuro ! </p><p>➤ Un intervento ricco e profondo, durante il quale gli speaker Davide Maggio, Arianna Ortelli, Marco Andriano ed Alessio Cinao hanno portato alla luce statistiche e strumenti utili per fortificare l’#employerbranding e dare supporto alle #aziende che forniscono lavoro a chi rientra nelle #categorieprotette: le disposizioni della #legge6899, i principali canali di ricerca, gli sgravi e le agevolazioni fiscali previste, ma anche casi di successo ed i racconti di esperienze personali che hanno permesso di entrare ancor di più nel vivo di un argomento fonte di #evoluzione e #cambiamento.</p><p>#MilanoDigitalWeek #jobifyrecruiting #humanrecources #risorseumane #hr #digitalizzazione #milano #innovazionedigitale #lavoro</p><p>Martina Di Palma | Chiara Lucia Graziano | Elisa Severa | Marco Fattizzo | Anna Lisa Costa | Albino Ruberti </p>",
                 },
                 {
                   date: "21 Ott 2022",
                   title: "#EVENTI | 𝗩𝗲𝗿𝘀𝗼 𝗻𝘂𝗼𝘃𝗶 𝗽𝗮𝗿𝗮𝗱𝗶𝗴𝗺𝗶",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/verso+nuovi+paradigmi.jpeg",
-                  subtitle: "Il 7 e l'8 Ottobre si è tenuto a Bologna il  51° Congresso Nazionale di AIDP - Associazione Italiana per la Direzione del Personale...",
+                  subtitle: "Il 7 e l'8 Ottobre si è tenuto a Bologna il  51° Congresso Nazionale di AIDP...",
                   text: "<h3>#EVENTI | 𝐌𝐢𝐥𝐚𝐧𝐨 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐖𝐞𝐞𝐤 𝟐𝟎𝟐𝟐</h3><p>Il 7 e l'8 Ottobre si è tenuto a Bologna il 51° Congresso Nazionale di AIDP - Associazione Italiana per la Direzione del Personale, tra i più importanti eventi per le #risorseumane in Italia.</p><p>Il nostro CEO & Founder Davide Maggio era presente per affrontare tematiche di particolare rilievo legate al mondo #HR → #umanità | #tecnologia | #sostenibilità | #competenze | #skillsmismatch | #futurodellavoro</p><p>« 𝐒𝐞𝐧𝐳𝐚 𝐚𝐩𝐩𝐚𝐫𝐭𝐞𝐧𝐞𝐧𝐳𝐚 𝐢 𝐩𝐢𝐮' 𝐠𝐢𝐨𝐯𝐚𝐧𝐢 𝐞 𝐢 𝐩𝐢𝐮' 𝐦𝐨𝐭𝐢𝐯𝐚𝐭𝐢 𝐧𝐨𝐧 𝐫𝐞𝐬𝐭𝐚𝐧𝐨 »</p><p>Ispirati dalle parole di Pier Luigi Celli e guidati dal Professore Luca Solari nell’approfondire quello che è il rapporto uomo/macchina, per non dimenticare che siamo prima di tutto Uomini e Donne e poi professionisti, lavoratori.</p><p>Il mondo #HR sta cambiando radicalmente in questi anni ed è compito dei professionisti del settore ridisegnarne i #paradigmi, sia culturalmente che concretamente. </p><p>Un grazie particolare va a chi ha reso tutto questo possibile: la Presidentessa Matilde Marandola e tutto lo staff #AIDP con Gabriele Sannino, Paolo Iacci e Isabella Covili Faggioli… E solo alcuni dei tanti nomi che hanno partecipato, rendendo questo evento un’occasione di incontro, di scambio e di conoscenza dal valore inestimabile: FRANCESCO AMENDOLITO, Luigi Severini, Corrado Cingolani, Marco Micaroni, David Trotti, Luigi Maria Vignali, Marcella Loporchio, Guenda Novena, Gioia Novena .</p><p>#congressonazionale #AIDP #AIDP2022 #weareaidp #versonuoviparadigmi #jobifyrecruiting #humanrecources #umanizzazione #talentattraction #talentretention </p><p>Martina Di Palma | Chiara Lucia Graziano | Elisa Severa | Marco Fattizzo | Anna Lisa Costa | Alessio Cinao | Albino Ruberti | Monica J. Romano</p>",
                 },
                 {
                   date: "14 Ott 2022",
                   title: "#EVENTI | Talent Attraction & Talent Retention",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+8.jpeg",
-                  subtitle: "𝗡𝗼𝗻 𝘀𝗼𝗻𝗼 𝗽𝗶𝘂' 𝗹𝗲 𝗮𝘇𝗶𝗲𝗻𝗱𝗲 𝗰𝗵𝗲 𝘀𝗰𝗲𝗹𝗴𝗼𝗻𝗼 𝗶 𝗰𝗮𝗻𝗱𝗶𝗱𝗮𝘁𝗶, 𝗺𝗮 𝗶 𝗰𝗮𝗻𝗱𝗶𝗱𝗮𝘁𝗶 𝗰𝗵𝗲 𝘀𝗰𝗲𝗹𝗴𝗼𝗻𝗼 𝗹𝗲 𝗮𝘇𝗶𝗲𝗻𝗱𝗲!",
+                  subtitle: "𝗡𝗼𝗻 𝘀𝗼𝗻𝗼 𝗽𝗶𝘂' 𝗹𝗲 𝗮𝘇𝗶𝗲𝗻𝗱𝗲 𝗰𝗵𝗲...",
                   text: "<h3>#EVENTI | Talent Attraction & Talent Retention</h3><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+1.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+2.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+3.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+4.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+5.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+6.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+7.jpeg\" width=\"50%\" height=\"50%\"/><p>𝗡𝗼𝗻 𝘀𝗼𝗻𝗼 𝗽𝗶𝘂' 𝗹𝗲 𝗮𝘇𝗶𝗲𝗻𝗱𝗲 𝗰𝗵𝗲 𝘀𝗰𝗲𝗹𝗴𝗼𝗻𝗼 𝗶 𝗰𝗮𝗻𝗱𝗶𝗱𝗮𝘁𝗶, 𝗺𝗮 𝗶 𝗰𝗮𝗻𝗱𝗶𝗱𝗮𝘁𝗶 𝗰𝗵𝗲 𝘀𝗰𝗲𝗹𝗴𝗼𝗻𝗼 𝗹𝗲 𝗮𝘇𝗶𝗲𝗻𝗱𝗲!</p><p>#umanità e #talento sono state le chiavi di lettura di questo evento #HR, una serata ricca di valore e condivisione.</p><p>Al centro di questo scambio, un tema di grande rilievo nel mondo del lavoro attuale: la difficoltà riscontrata dalle #aziende nell'attrarre risorse in linea con i loro bisogni e la loro #culturaaziendale, e la conseguente strategia necessaria per far sì che i #dipendenti coltivino poi il loro talento all'interno dell’impresa portando valore aggiunto.</p><p>Il nostro CEO e Founder Davide Maggio era presente tra gli speaker ed i moderatori della #roundtable, insieme a Nicoletta Bressa, Talent Acquisition ed Employer Branding Senior Manager di Sisal.</p><p>Un grazie particolare va a Mercuri International Italia per aver ospitato questo momento di #networking, a Giovanni D'Anna per averlo pensato, e a Fabio Panella con la sua azienda Talent.com per aver reso possibile tutto questo.</p><p>Non possiamo non nominare anche tutte le altre aziende coinvolte che hanno reso questo evento un momento speciale, fucina di spunti di riflessione e di miglioramento: Novartis, iliad, EY, Trenord, Sysdata S.p.A., AIDP Lombardia, Federmanager, Kelly Services Italia.</p><p>#jobifyrecruiting #humanrecources #risorseumane #umanizzazione #talentattraction #talentretention #talent #formazioneprofessionale #formazioneaziendale</p><p>Marco Fattizzo | Martina Di Palma | Chiara Lucia Graziano | Elisa Severa | Anna Lisa Costa | Alessio Cinao | Albino Ruberti | SERGIO ACANFORA | Gaetano Angiuli | Giovanni Messana | Giovanni Astarita | Viola Frick | Chiara Pierazzi | Luigi Severini | Marcella Loporchio | Maurizio Quarta</p>",
                 },
                 {
                   date: "16 Sett 2022",
                   title: "I nostri primi colloqui nel #Metaverso!",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/tech+jobs+fair.jpeg",
-                  subtitle: "È iniziata oggi la nuova edizione del TECH JOBS fair, e la grande famiglia di Jobify Recruiting...",
+                  subtitle: "È iniziata oggi la nuova edizione del TECH JOBS fair...",
                   text: "<p>È iniziata oggi la nuova edizione del TECH JOBS fair, e la grande famiglia di Jobify Recruiting è presente con numerosi interventi ed interazioni da parte dei membri del nostro team.</p><p>Per la prima volta abbiamo conosciuto ed ascoltato i candidati in una versione 3D immersiva, che ci ha permesso di abbattere le distanze ed ancora una volta di sfruttare la digitalizzazione e l'innovazione per dare più spazio al lato umano, valore intrinseco ed irrinunciabile della nostra azienda. Conoscere al meglio aziende e candidati diventa, così, possibile ed estremamente coinvolgente!</p><p>Passa a trovarci nel nostro stand oppure guarda i nostri interventi sulla pagina dell'evento!</p><p>#digitalizzazione #innovazione #techjobsfair #hr #ai #risorseumane #digitalevent</p><p>Coderblock Davide Maggio Martina Di Palma Elisa Severa 🧭 Chiara Lucia Graziano Anna Lisa Costa Marco Fattizzo 💡 Rodolfo Duè Daniela Restelli Sara Frison Helena Hagan</p>",
                 },
                 {
@@ -321,7 +321,7 @@ export default {
                   date: "10 Mag 2022",
                   title: "#Docenza | Il mondo HR incontra quello del digital marketing",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/docenza+sapienza.jpeg",
-                  subtitle: "Jobify Recruiting a braccetto con UP-Communication durante il tirocinio rivolto agli studenti del corso...",
+                  subtitle: "Jobify Recruiting a braccetto con UP-Communication durante il tirocinio...",
                   text: "<h3>#Docenza | Il mondo HR incontra quello del digital marketing</h3><p>Jobify Recruiting a braccetto con UP-Communication durante il tirocinio rivolto agli studenti del corso “ Scienze del Turismo” della Sapienza Università di Roma.</p><ul> <li>➡️ Come attrarre i talenti attraverso le attività di Digital #Employer Branding? </li> <li>➡️ Cos’è il #marketing? </li> <li>➡️ Quali sono le principali attività del marketing?</li> <li>➡️ Quanto è importante la #comunicazione fra i dipendenti di un’azienda? </li></ul><p>Questi sono i main topic affrontati durante l’intervento di Alessio Cinao, direttore marketing di Up Communication e di Jobify Recruting affiancato da Davide Maggio, curatore del tirocinio, HR Manager e CEO di Jobify Recruiting. </p><p>Una lezione formativa, mirata a comprendere le logiche e le strategie che si nascondono dietro all’Employer #Branding in funzione del mondo #HR.</p><p>L’intervento ha lasciato spazio anche a una profonda riflessione sulla vita personale e lavorativa: il work life balance di ognuno di noi sta cambiando.</p><p>E’ il momento per le aziende e i dipendenti di riorganizzare il proprio tempo, in funzione della società e di se stessi. </p><p>Crea la giusta immagine di te stesso perché questa azione può determinare il tuo futuro lavorativo.</p><p>| Davide Maggio | Marco Fattizzo | Martina Di Palma | Chiara Lucia Graziano | Monica J. Romano | Elisa Severa 🧭 | 𝑷𝒂𝒔𝒒𝒖𝒂𝒍𝒆 𝑫𝒆 𝑳𝒖𝒄𝒂 𝑩𝒐𝒔𝒔𝒂 | Flavio Mazzullo | Alessio Cinao | Albino Ruberti | Daniela Restelli | Helena Hagan | Sara Frison | Rodolfo Duè | Serena Di Maria | Sara Sampieri | Alice Dosseni</p><p>#digitalmarketing #jobifyrecruiting #talenti #humanresource #umanizzazione #worklifebalance #strategie #turismo</p>",
                 },
                 {
@@ -453,7 +453,7 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <div style="background: #1e213d; padding-top: 8rem; padding-bottom: 2rem;">
+        <div style="background: #0c2550; padding-top: 8rem; padding-bottom: 2rem;">
           <div class="firstColumns">
             <div class="firstColumn">
               <h1>
@@ -470,7 +470,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
           </div>
         </div>
 
-        <div style="background: #1e213d; padding-top: 5rem; padding-bottom: 2rem;">
+        <div style="background: #0c2550; padding-top: 5rem; padding-bottom: 2rem;">
           <div class="titlePage">News</div>
           <div class="topContent">
             <div class="img1"></div>
@@ -512,6 +512,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             <li><a data-toggle="tab" href="#lostrillone">Lo Strillone</a></li>
             <li><a data-toggle="tab" href="#laboratoria">Lab Oratoria</a></li>
             <li><a data-toggle="tab" href="#pubblicazionicartacee">Pubblicazioni cartacee</a></li>
+            <li><a data-toggle="tab" href="#eventijobify">Eventi Jobify</a></li>
           </ul></div>
 
           <div class="tab-content">
@@ -836,13 +837,10 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="titlePage2">Eventi</div>
-        <div class="secondPart">
-          <div class="articles articles2">
-              <router-link :to="{name: 'Article2', params: { Title: this.events[0].title, Date: this.events[0].date, Text: this.events[0].text, Image: this.events[0].img }}">
+            <div id="eventijobify" class="tab-pane fade">
+              <div class="filters">
+                <div class="content filtersContent articles articles2">
+                  <router-link :to="{name: 'Article2', params: { Title: this.events[0].title, Date: this.events[0].date, Text: this.events[0].text, Image: this.events[0].img }}">
                     <div class="article">
                       <div class="image" id="imageE0">
                         <div class="hover"></div>
@@ -952,8 +950,12 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleE9"></div>
                     </div>
               </router-link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
         <div class="fifthDiv">
           <div class="adviser">
             <div class="col">
@@ -1059,7 +1061,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   }
 
   .nav li:hover {
-    background: #1e213d47;
+    background: #0c255047;
   }
 
   .nav li .active {
@@ -1074,17 +1076,17 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   }
 
   .nav li:hover ::v-deep(a) {
-    color: #1e213d;
+    color: #0c2550;
   }
 
   .nav li a {
-    color: #1e213d;
+    color: #0c2550;
     font-weight: 500;
     font-size: 16px;
   }
 
   .nav li a:hover {
-    color: #1e213d;
+    color: #0c2550;
   }
 
   .flowSingleBtn {
@@ -1153,7 +1155,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   .titlePage2 {
     font-size: 34px;
     line-height: 38px;
-    color: #1e213d;
+    color: #0c2550;
     font-weight: 800;
     margin-left: 12.5rem;
     margin-top: 3rem;
@@ -1257,7 +1259,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
     margin-left: 2rem;
     width: 40%;
     margin-right: 2rem;
-    color: #1e213d;
+    color: #0c2550;
   }
 
   .firstTitle p {
@@ -1279,7 +1281,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   }
 
   .firstTitle h2 {
-    color: #1e213d;
+    color: #0c2550;
     font-size: 46px;
     line-height: 50px;
     font-weight: 700;
@@ -1315,7 +1317,9 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   }
 
   .articles2 a {
-    width: 50%;
+    width: 30%;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .articles2 .article {
@@ -1323,7 +1327,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
     margin-top: 3rem;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
-    width: 90% !important;
+    width: 100% !important;
     background: #fff;
     border-radius: 25px;
   }
@@ -1344,7 +1348,6 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
     margin-bottom: 2rem;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
-    width: 29%;
     background: #f9f9f9;
     border-radius: 25px;
   }
@@ -1464,7 +1467,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   .second {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background: #1e213d;
+    background: #0c2550;
   }
 
   ::-webkit-scrollbar {
@@ -1494,7 +1497,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   .featuredContent {
     height: 100%;
     width: 100%;
-    background-color: #1e213d;
+    background-color: #0c2550;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -1592,9 +1595,6 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
     position: absolute;
     bottom: 0;
     width: 100%;
-  }
-
-  .featured .text {
   }
 
   .featured h2 {
