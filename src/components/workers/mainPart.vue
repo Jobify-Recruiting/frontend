@@ -244,7 +244,7 @@ export default {
         <div class="glow4"></div>
         <div class="glow5"></div>
         <div class="firstPart">
-          <div class="subtitle">Cerchi lavoro?</div>
+          <div class="subtitle">Trova lavoro</div>
           <h2>Jobify Recruiting è la risposta giusta!</h2>
           <p>Su Jobify Recruiting trovi ogni giorno nuove offerte in ambito Farm, Finance, IT, Tech, HR.</p>
           <div class="mainButton">

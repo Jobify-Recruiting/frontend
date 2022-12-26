@@ -282,7 +282,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/marcofattizzo.jpeg);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/marcofattizzo.png);
               "
             ></div>
             <div class="name">Marco Fattizzo</div>
@@ -297,7 +297,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/martinadipalma.jpg);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/martinadipalma.png);
               "
             ></div>
             <div class="name">Martina Di Palma</div>
@@ -305,7 +305,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
           </div>
           <div class="person" @click="story(4)">
             <div class="photo" style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ceciliadondi.jpg);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ceciliadondi.png);
               "></div>
             <div class="name">Cecilia Dondi</div>
             <div class="jobtitle">HR Consultant</div>
@@ -334,7 +334,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/alessiocinao.jpeg);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/alessiocinao.png);
               "
             ></div>
             <div class="name">Alessio Cinao</div>
@@ -398,7 +398,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
                 </div>
               </div>
               <div class="image transition"></div>
-              <div class="image transition" style="margin-top: 8rem"></div>
+              <div class="image2 transition" style="margin-top: 8rem"></div>
             </div>
     </div>
   </div>
@@ -993,7 +993,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   .team1 .person2 .photo {
     width: 16vw;
     height: 16vw;
-    background-image: url(/src/assets/ph9.JPG);
+    background-image: url(/src/assets/davide.png);
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -1104,7 +1104,19 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     width: 30vw;
     height: 30vw;
     margin-right: 2rem;
-    background-image: url(/src/assets/ph10.png);
+    background-image: url(/src/assets/lavoraconnoi1.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-left: auto;
+  }
+
+  .seventhPart .image2 {
+    width: 30vw;
+    height: 30vw;
+    background-image: url(/src/assets/lavoraconnoi2.png);
     background-position: center;
     background-size: cover;
     border-radius: 20px;

@@ -84,7 +84,7 @@ export default {
         <div class="glow5"></div>
         <div class="firstPart">
           <div class="subtitle">Prenota appuntamento</div>
-          <h2>Prenota una call one-to-one con noi</h2>
+          <h2>Prenota una call per un appuntamento gratuito</h2>
           <p>Crediamo che ogni persona abbia un talento, basta scoprirlo.</p>
           <div class="image">
             <!-- Calendly inline widget begin -->

@@ -111,13 +111,6 @@ export default {
                 },
                 {
                   date: "18 Dic 2022",
-                  title: "Com'é nata Kekyjob?",
-                  img: "https://davidemaggiohr.it/wp-content/uploads/2021/04/Come-e-nata-kekyjob.jpeg",
-                  subtitle: "Com'è nata Keyjob?",
-                  text: "<img src=\"https://davidemaggiohr.it/wp-content/uploads/2021/04/Come-e-nata-kekyjob-1117x1536.jpeg\" width=\"100%\" height=\"100%\"/>",
-                },
-                {
-                  date: "18 Dic 2022",
                   title: "HRTECH ed esperienza: Il binomio vincente",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/04/HRTECH-ed-esperienza-Il-binomio-vincente.jpeg",
                   subtitle: "HRTECH ed esperienza: Il binomio vincente",
@@ -651,6 +644,12 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA11"></div>
                     </div>
                   </router-link>
+                </div>
+              </div>
+            </div>
+            <div id="lostrillone" class="tab-pane fade">
+              <div class="filters">
+                <div class="content filtersContent articles articles2">
                   <router-link :to="{name: 'Article2', params: { Title: this.articles[12].title, Date: this.articles[12].date, Text: this.articles[12].text, Image: this.articles[12].img  }}">
                     <div class="article">
                       <div class="image" id="imageA12">
@@ -662,12 +661,6 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA12"></div>
                     </div>
                   </router-link>
-                </div>
-              </div>
-            </div>
-            <div id="lostrillone" class="tab-pane fade">
-              <div class="filters">
-                <div class="content filtersContent articles articles2">
                   <router-link :to="{name: 'Article2', params: { Title: this.articles[13].title, Date: this.articles[13].date, Text: this.articles[13].text, Image: this.articles[13].img, Name1: this.articles[13].name1, Role1: this.articles[13].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA13">
@@ -745,6 +738,12 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA19"></div>
                     </div>
                   </router-link>
+                </div>
+              </div>
+            </div>
+            <div id="laboratoria" class="tab-pane fade">
+              <div class="filters">
+                <div class="content filtersContent articles articles2">         
                   <router-link :to="{name: 'Article2', params: { Title: this.articles[20].title, Date: this.articles[20].date, Text: this.articles[20].text, Image: this.articles[20].img, Name1: this.articles[20].name1, Role1: this.articles[20].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA20">
@@ -756,12 +755,6 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA20"></div>
                     </div>
                   </router-link>
-                </div>
-              </div>
-            </div>
-            <div id="laboratoria" class="tab-pane fade">
-              <div class="filters">
-                <div class="content filtersContent articles articles2">
                   <router-link :to="{name: 'Article2', params: { Title: this.articles[21].title, Date: this.articles[21].date, Text: this.articles[21].text, Image: this.articles[21].img, Name1: this.articles[21].name1, Role1: this.articles[21].role1, Name2: this.articles[21].name2, Role2: this.articles[21].role2, }}">
                     <div class="article">
                       <div class="image" id="imageA21">
@@ -795,6 +788,12 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA23"></div>
                     </div>
                   </router-link>
+                </div>
+              </div>
+            </div>
+            <div id="pubblicazionicartacee" class="tab-pane fade">
+              <div class="filters">
+                <div class="content filtersContent articles articles2">
                   <router-link :to="{name: 'Article2', params: { Title: this.articles[24].title, Date: this.articles[24].date, Text: this.articles[24].text, Image: this.articles[24].img, Name1: this.articles[24].name1, Role1: this.articles[24].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA24">
@@ -806,12 +805,6 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA24"></div>
                     </div>
                   </router-link>
-                </div>
-              </div>
-            </div>
-            <div id="pubblicazionicartacee" class="tab-pane fade">
-              <div class="filters">
-                <div class="content filtersContent articles articles2">
                   <router-link :to="{name: 'Article2', params: { Title: this.articles[25].title, Date: this.articles[25].date, Text: this.articles[25].text, Image: this.articles[25].img, Name1: this.articles[25].name1, Role1: this.articles[25].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA25">
@@ -821,17 +814,6 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="desctitle">Articolo</div>
                       <div class="title" id="titleA25"></div>
                       <div class="subtitle" id="subtitleA25"></div>
-                    </div>
-                  </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[26].title, Date: this.articles[26].date, Text: this.articles[26].text, Image: this.articles[26].img, Name1: this.articles[26].name1, Role1: this.articles[26].role1, }}">
-                    <div class="article">
-                      <div class="image" id="imageA26">
-                        <div class="hover"></div>
-                        <div class="date" id="dateA26"></div>
-                      </div>
-                      <div class="desctitle">Articolo</div>
-                      <div class="title" id="titleA26"></div>
-                      <div class="subtitle" id="subtitleA26"></div>
                     </div>
                   </router-link>
                 </div>

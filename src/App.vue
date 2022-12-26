@@ -126,7 +126,7 @@ export default {
   <div class="menuWorkersBG" @click="closeWorkers()">
     <div class="menuWorkers">
       <router-link to="/workers"
-            ><div class="link">Servizi offerti</div></router-link
+            ><div class="link">Trova lavoro</div></router-link
           >
       <router-link to="/openposition"
             ><div class="link">Offerte di lavoro</div></router-link

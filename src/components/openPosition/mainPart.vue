@@ -2060,7 +2060,7 @@ sviluppare in azienda.
               </h3>
               <router-link to="/workers">
               <div class="button">
-                Contattaci per un appuntamento
+                Trova lavoro
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

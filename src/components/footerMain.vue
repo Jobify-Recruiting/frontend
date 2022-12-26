@@ -51,7 +51,7 @@ export default {
           <div class="link">Sei un'azienda?</div></router-link
         >
         <router-link to="/workers">
-          <div class="link">Servizi offerti</div></router-link
+          <div class="link">Trova lavoro</div></router-link
         >
       </div>
       <div class="col">
