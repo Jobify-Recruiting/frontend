@@ -4,6 +4,14 @@ export default {
   components: {},
   data() {
     return {
+      first: [
+                {
+                  date: "17 Feb 2022",
+                  title: "Il principio di Pareto e la sua applicazione nella ricerca del lavoro",
+                  img: "https://citynews-today.stgy.ovh/~media/horizontal-hi/34704150547432/computer-digitale.jpg",
+                  subtitle: "Al giorno d’oggi, in un contesto occupazionale caratterizzato da una grande domanda di lavoro...",
+                },
+      ],
       articles: [
                 {
                   date: "18 Dic 2022",
@@ -259,32 +267,44 @@ export default {
                   name1:"Davide Maggio",
                   role1: "Temporary Hr Manager, Socio studio associato Felli/Maggio",
                 },
+                {
+                  date: "22 Giu 2022",
+                  title: "La figura del Temporary HR Manager nelle PMI e grandi aziende",
+                  img: "https://www.risorseumane-hr.it/wp-content/uploads/2022/06/La-figura-del-Temporary-HR-Manager-1020x480.jpeg",
+                  subtitle: "Il Temporary HR Manager fa parte di quelle figure che nel corso degli ultimi tempi è riuscita ad ...",
+                },
+                {
+                  date: "30 Giu 2022",
+                  title: "Le grandi dimissioni: le ragioni per cui si lascia il proprio posto di lavoro",
+                  img: "https://www.leadershipmanagementmagazine.com/wp-content/uploads/dimissioni.jpg",
+                  subtitle: "L’emergenza sanitaria che ha coinvolto interamente il nostro pianeta ha decisamente avuto...",
+                },
               ],
       events: [
                 {
                   date: "28 Nov 2022",
-                  title: "#EVENTI | Il Futuro del Lavoro",
+                  title: "Il Futuro del Lavoro",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/il+futuro+del+lavoro_novembre.jpeg",
                   subtitle: "La scorsa settimana si è tenuta a Milano la seconda edizione de “Il Futuro del Lavoro”...",
-                  text: "<h3>#EVENTI | Il Futuro del Lavoro</h3><p>La scorsa settimana si è tenuta a Milano la seconda edizione de “Il Futuro del Lavoro”, evento organizzato da Bianco Lavoro - Euspert di cui Jobify Recruiting è stata partner. </p><p>In questa occasione, abbiamo affrontato tematiche molto importanti per il mondo del #lavoro, che, come sappiamo, è in continua e rapida evoluzione. Abbiamo parlato di: → #comunicazione | #posizionamento | #personalbranding | #inclusività | #umanizzazione 🎯</p><p>🗣 Il nostro CEO & Founder, Davide Maggio, era presente tra gli #speaker dell’#evento e ci ha parlato di quanto sia importante in #azienda così come nella vita privata, rimanere autentici e ricordare sempre di essere prima #persone e poi #professionisti. </p><p>🙏 Un grazie speciale va a Marco Fattizzo e a tutto il team di Bianco Lavoro per aver reso possibile questa occasione, non solo di incontro e di conoscenza, ma anche di confronto, crescita e formazione.</p><p>E grazie anche a tutti gli altri #professionisti del settore che sono intervenuti rendendo possibile il successo di questa nuova edizione: Alessio Cinao, Gianluca Lo Stimolo, Marcella Loporchio, Helena Hagan, Daniela Restelli, Gioia Novena, Guenda Novena, Silvia Gorini, Gabriele Sciulli, Paolo Costa, Rodolfo Duè, Sabrina Grazini, Massimo Calderini, Alberto Giacobone, e tanti altri.</p><p>Non ci resta che darvi appuntamento al prossimo evento!</p><p>#jobifyrecruiting #humanrecources #umanizzazione #digitalizzazione #evento #futurodellavoro </p><p>Martina Di Palma | Chiara Lucia Graziano | Elisa Severa | Anna Lisa Costa | Albino Ruberti</p>",
+                  text: "<h3>#EVENTI | Il Futuro del Lavoro</h3><p>La scorsa settimana si è tenuta a Milano la seconda edizione de “Il Futuro del Lavoro”, evento organizzato da Bianco Lavoro - Euspert di cui Jobify Recruiting è stata partner. </p><p>In questa occasione, abbiamo affrontato tematiche molto importanti per il mondo del #lavoro, che, come sappiamo, è in continua e rapida evoluzione. Abbiamo parlato di: → #comunicazione | #posizionamento | #personalbranding | #inclusività | #umanizzazione 🎯</p><p>🗣 Il nostro CEO & Founder, Davide Maggio, era presente tra gli #speaker dell’#evento e ci ha parlato di quanto sia importante in #azienda così come nella vita privata, rimanere autentici e ricordare sempre di essere prima #persone e poi #professionisti. </p><p>🙏 Un grazie speciale va a Marco Fattizzo e a tutto il team di Bianco Lavoro per aver reso possibile questa occasione, non solo di incontro e di conoscenza, ma anche di confronto, crescita e formazione.</p><p>E grazie anche a tutti gli altri #professionisti del settore che sono intervenuti rendendo possibile il successo di questa nuova edizione: Alessio Cinao, Gianluca Lo Stimolo, Marcella Loporchio, Helena Hagan, Daniela Restelli, Gioia Novena, Guenda Novena, Silvia Gorini, Gabriele Sciulli, Paolo Costa, Rodolfo Duè, Sabrina Grazini, Massimo Calderini, Alberto Giacobone, e tanti altri.</p><p>Non ci resta che darvi appuntamento al prossimo evento!</p>",
                 },
                 {
                   date: "18 Nov 2022",
-                  title: "#EVENTI | Milano Digital Week 2022",
+                  title: "Milano Digital Week 2022",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/milano+digital+week+2.jpeg",
                   subtitle: "𝐎𝐜𝐜𝐨𝐫𝐫𝐞 𝐭𝐫𝐚𝐬𝐟𝐨𝐫𝐦𝐚𝐫𝐞 𝐥𝐚 𝐝𝐢𝐬𝐚𝐛𝐢𝐥𝐢𝐭𝐚' 𝐢𝐧 𝐚𝐛𝐢𝐥𝐢𝐭𝐚'...",
-                  text: "<h3>#EVENTI | 𝐌𝐢𝐥𝐚𝐧𝐨 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐖𝐞𝐞𝐤 𝟐𝟎𝟐𝟐</h3><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/milano+digital+week+1.jpeg\" width=\"50%\" height=\"50%\"/><p>« 𝐎𝐜𝐜𝐨𝐫𝐫𝐞 𝐭𝐫𝐚𝐬𝐟𝐨𝐫𝐦𝐚𝐫𝐞 𝐥𝐚 𝐝𝐢𝐬𝐚𝐛𝐢𝐥𝐢𝐭𝐚' 𝐢𝐧 𝐚𝐛𝐢𝐥𝐢𝐭𝐚', 𝐩𝐚𝐫𝐭𝐞𝐧𝐝𝐨 𝐝𝐚𝐥 𝐩𝐫𝐢𝐧𝐜𝐢𝐩𝐢𝐨 𝐜𝐡𝐞 𝐭𝐮𝐭𝐭𝐢 𝐚𝐛𝐛𝐢𝐚𝐦𝐨 𝐮𝐧 𝐩𝐨𝐭𝐞𝐧𝐳𝐢𝐚𝐥𝐞 𝐝𝐚 𝐟𝐚𝐫 𝐞𝐦𝐞𝐫𝐠𝐞𝐫𝐞. »</p><p>🗓 𝟭𝟭/𝟭𝟭/𝟮𝟬𝟮𝟮 • Jobify Recruiting, Novis Games e UP-Communication insieme durante la quinta edizione della Milano Digital Week con un #webinar speciale dal titolo “𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲 𝐟𝐨𝐫 𝐡𝐮𝐦𝐚𝐧𝐬: 𝐚𝐜𝐜𝐞𝐬𝐬𝐢𝐛𝐢𝐥𝐢𝐭𝐚' 𝐞 𝐢𝐧𝐜𝐥𝐮𝐬𝐢𝐨𝐧𝐞 𝐧𝐞𝐥 𝐦𝐨𝐧𝐝𝐨 𝐝𝐞𝐥 𝐥𝐚𝐯𝐨𝐫𝐨”. </p><p>💬 Abbiamo avuto l’opportunità di parlare di tematiche oggi estremamente fondamentali nel mondo del lavoro → #accessibilità | #inclusione | #umanizzazione | #tecnologia | #futuro ! </p><p>➤ Un intervento ricco e profondo, durante il quale gli speaker Davide Maggio, Arianna Ortelli, Marco Andriano ed Alessio Cinao hanno portato alla luce statistiche e strumenti utili per fortificare l’#employerbranding e dare supporto alle #aziende che forniscono lavoro a chi rientra nelle #categorieprotette: le disposizioni della #legge6899, i principali canali di ricerca, gli sgravi e le agevolazioni fiscali previste, ma anche casi di successo ed i racconti di esperienze personali che hanno permesso di entrare ancor di più nel vivo di un argomento fonte di #evoluzione e #cambiamento.</p><p>#MilanoDigitalWeek #jobifyrecruiting #humanrecources #risorseumane #hr #digitalizzazione #milano #innovazionedigitale #lavoro</p><p>Martina Di Palma | Chiara Lucia Graziano | Elisa Severa | Marco Fattizzo | Anna Lisa Costa | Albino Ruberti </p>",
+                  text: "<h3>#EVENTI | 𝐌𝐢𝐥𝐚𝐧𝐨 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐖𝐞𝐞𝐤 𝟐𝟎𝟐𝟐</h3><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/milano+digital+week+1.jpeg\" width=\"50%\" height=\"50%\"/><p>« 𝐎𝐜𝐜𝐨𝐫𝐫𝐞 𝐭𝐫𝐚𝐬𝐟𝐨𝐫𝐦𝐚𝐫𝐞 𝐥𝐚 𝐝𝐢𝐬𝐚𝐛𝐢𝐥𝐢𝐭𝐚' 𝐢𝐧 𝐚𝐛𝐢𝐥𝐢𝐭𝐚', 𝐩𝐚𝐫𝐭𝐞𝐧𝐝𝐨 𝐝𝐚𝐥 𝐩𝐫𝐢𝐧𝐜𝐢𝐩𝐢𝐨 𝐜𝐡𝐞 𝐭𝐮𝐭𝐭𝐢 𝐚𝐛𝐛𝐢𝐚𝐦𝐨 𝐮𝐧 𝐩𝐨𝐭𝐞𝐧𝐳𝐢𝐚𝐥𝐞 𝐝𝐚 𝐟𝐚𝐫 𝐞𝐦𝐞𝐫𝐠𝐞𝐫𝐞. »</p><p>🗓 𝟭𝟭/𝟭𝟭/𝟮𝟬𝟮𝟮 • Jobify Recruiting, Novis Games e UP-Communication insieme durante la quinta edizione della Milano Digital Week con un #webinar speciale dal titolo “𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐲 𝐟𝐨𝐫 𝐡𝐮𝐦𝐚𝐧𝐬: 𝐚𝐜𝐜𝐞𝐬𝐬𝐢𝐛𝐢𝐥𝐢𝐭𝐚' 𝐞 𝐢𝐧𝐜𝐥𝐮𝐬𝐢𝐨𝐧𝐞 𝐧𝐞𝐥 𝐦𝐨𝐧𝐝𝐨 𝐝𝐞𝐥 𝐥𝐚𝐯𝐨𝐫𝐨”. </p><p>💬 Abbiamo avuto l’opportunità di parlare di tematiche oggi estremamente fondamentali nel mondo del lavoro → #accessibilità | #inclusione | #umanizzazione | #tecnologia | #futuro ! </p><p>➤ Un intervento ricco e profondo, durante il quale gli speaker Davide Maggio, Arianna Ortelli, Marco Andriano ed Alessio Cinao hanno portato alla luce statistiche e strumenti utili per fortificare l’#employerbranding e dare supporto alle #aziende che forniscono lavoro a chi rientra nelle #categorieprotette: le disposizioni della #legge6899, i principali canali di ricerca, gli sgravi e le agevolazioni fiscali previste, ma anche casi di successo ed i racconti di esperienze personali che hanno permesso di entrare ancor di più nel vivo di un argomento fonte di #evoluzione e #cambiamento.</p>",
                 },
                 {
                   date: "21 Ott 2022",
-                  title: "#EVENTI | 𝗩𝗲𝗿𝘀𝗼 𝗻𝘂𝗼𝘃𝗶 𝗽𝗮𝗿𝗮𝗱𝗶𝗴𝗺𝗶",
+                  title: "𝗩𝗲𝗿𝘀𝗼 𝗻𝘂𝗼𝘃𝗶 𝗽𝗮𝗿𝗮𝗱𝗶𝗴𝗺𝗶",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/verso+nuovi+paradigmi.jpeg",
                   subtitle: "Il 7 e l'8 Ottobre si è tenuto a Bologna il  51° Congresso Nazionale di AIDP...",
-                  text: "<h3>#EVENTI | 𝐌𝐢𝐥𝐚𝐧𝐨 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐖𝐞𝐞𝐤 𝟐𝟎𝟐𝟐</h3><p>Il 7 e l'8 Ottobre si è tenuto a Bologna il 51° Congresso Nazionale di AIDP - Associazione Italiana per la Direzione del Personale, tra i più importanti eventi per le #risorseumane in Italia.</p><p>Il nostro CEO & Founder Davide Maggio era presente per affrontare tematiche di particolare rilievo legate al mondo #HR → #umanità | #tecnologia | #sostenibilità | #competenze | #skillsmismatch | #futurodellavoro</p><p>« 𝐒𝐞𝐧𝐳𝐚 𝐚𝐩𝐩𝐚𝐫𝐭𝐞𝐧𝐞𝐧𝐳𝐚 𝐢 𝐩𝐢𝐮' 𝐠𝐢𝐨𝐯𝐚𝐧𝐢 𝐞 𝐢 𝐩𝐢𝐮' 𝐦𝐨𝐭𝐢𝐯𝐚𝐭𝐢 𝐧𝐨𝐧 𝐫𝐞𝐬𝐭𝐚𝐧𝐨 »</p><p>Ispirati dalle parole di Pier Luigi Celli e guidati dal Professore Luca Solari nell’approfondire quello che è il rapporto uomo/macchina, per non dimenticare che siamo prima di tutto Uomini e Donne e poi professionisti, lavoratori.</p><p>Il mondo #HR sta cambiando radicalmente in questi anni ed è compito dei professionisti del settore ridisegnarne i #paradigmi, sia culturalmente che concretamente. </p><p>Un grazie particolare va a chi ha reso tutto questo possibile: la Presidentessa Matilde Marandola e tutto lo staff #AIDP con Gabriele Sannino, Paolo Iacci e Isabella Covili Faggioli… E solo alcuni dei tanti nomi che hanno partecipato, rendendo questo evento un’occasione di incontro, di scambio e di conoscenza dal valore inestimabile: FRANCESCO AMENDOLITO, Luigi Severini, Corrado Cingolani, Marco Micaroni, David Trotti, Luigi Maria Vignali, Marcella Loporchio, Guenda Novena, Gioia Novena .</p><p>#congressonazionale #AIDP #AIDP2022 #weareaidp #versonuoviparadigmi #jobifyrecruiting #humanrecources #umanizzazione #talentattraction #talentretention </p><p>Martina Di Palma | Chiara Lucia Graziano | Elisa Severa | Marco Fattizzo | Anna Lisa Costa | Alessio Cinao | Albino Ruberti | Monica J. Romano</p>",
+                  text: "<h3>#EVENTI | 𝐌𝐢𝐥𝐚𝐧𝐨 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐖𝐞𝐞𝐤 𝟐𝟎𝟐𝟐</h3><p>Il 7 e l'8 Ottobre si è tenuto a Bologna il 51° Congresso Nazionale di AIDP - Associazione Italiana per la Direzione del Personale, tra i più importanti eventi per le #risorseumane in Italia.</p><p>Il nostro CEO & Founder Davide Maggio era presente per affrontare tematiche di particolare rilievo legate al mondo #HR → #umanità | #tecnologia | #sostenibilità | #competenze | #skillsmismatch | #futurodellavoro</p><p>« 𝐒𝐞𝐧𝐳𝐚 𝐚𝐩𝐩𝐚𝐫𝐭𝐞𝐧𝐞𝐧𝐳𝐚 𝐢 𝐩𝐢𝐮' 𝐠𝐢𝐨𝐯𝐚𝐧𝐢 𝐞 𝐢 𝐩𝐢𝐮' 𝐦𝐨𝐭𝐢𝐯𝐚𝐭𝐢 𝐧𝐨𝐧 𝐫𝐞𝐬𝐭𝐚𝐧𝐨 »</p><p>Ispirati dalle parole di Pier Luigi Celli e guidati dal Professore Luca Solari nell’approfondire quello che è il rapporto uomo/macchina, per non dimenticare che siamo prima di tutto Uomini e Donne e poi professionisti, lavoratori.</p><p>Il mondo #HR sta cambiando radicalmente in questi anni ed è compito dei professionisti del settore ridisegnarne i #paradigmi, sia culturalmente che concretamente. </p><p>Un grazie particolare va a chi ha reso tutto questo possibile: la Presidentessa Matilde Marandola e tutto lo staff #AIDP con Gabriele Sannino, Paolo Iacci e Isabella Covili Faggioli… E solo alcuni dei tanti nomi che hanno partecipato, rendendo questo evento un’occasione di incontro, di scambio e di conoscenza dal valore inestimabile: FRANCESCO AMENDOLITO, Luigi Severini, Corrado Cingolani, Marco Micaroni, David Trotti, Luigi Maria Vignali, Marcella Loporchio, Guenda Novena, Gioia Novena .</p>",
                 },
                 {
                   date: "14 Ott 2022",
-                  title: "#EVENTI | Talent Attraction & Talent Retention",
+                  title: "Talent Attraction & Talent Retention",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+8.jpeg",
                   subtitle: "𝗡𝗼𝗻 𝘀𝗼𝗻𝗼 𝗽𝗶𝘂' 𝗹𝗲 𝗮𝘇𝗶𝗲𝗻𝗱𝗲 𝗰𝗵𝗲...",
                   text: "<h3>#EVENTI | Talent Attraction & Talent Retention</h3><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+1.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+2.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+3.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+4.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+5.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+6.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/talent+attraction+e+talent+retention+7.jpeg\" width=\"50%\" height=\"50%\"/><p>𝗡𝗼𝗻 𝘀𝗼𝗻𝗼 𝗽𝗶𝘂' 𝗹𝗲 𝗮𝘇𝗶𝗲𝗻𝗱𝗲 𝗰𝗵𝗲 𝘀𝗰𝗲𝗹𝗴𝗼𝗻𝗼 𝗶 𝗰𝗮𝗻𝗱𝗶𝗱𝗮𝘁𝗶, 𝗺𝗮 𝗶 𝗰𝗮𝗻𝗱𝗶𝗱𝗮𝘁𝗶 𝗰𝗵𝗲 𝘀𝗰𝗲𝗹𝗴𝗼𝗻𝗼 𝗹𝗲 𝗮𝘇𝗶𝗲𝗻𝗱𝗲!</p><p>#umanità e #talento sono state le chiavi di lettura di questo evento #HR, una serata ricca di valore e condivisione.</p><p>Al centro di questo scambio, un tema di grande rilievo nel mondo del lavoro attuale: la difficoltà riscontrata dalle #aziende nell'attrarre risorse in linea con i loro bisogni e la loro #culturaaziendale, e la conseguente strategia necessaria per far sì che i #dipendenti coltivino poi il loro talento all'interno dell’impresa portando valore aggiunto.</p><p>Il nostro CEO e Founder Davide Maggio era presente tra gli speaker ed i moderatori della #roundtable, insieme a Nicoletta Bressa, Talent Acquisition ed Employer Branding Senior Manager di Sisal.</p><p>Un grazie particolare va a Mercuri International Italia per aver ospitato questo momento di #networking, a Giovanni D'Anna per averlo pensato, e a Fabio Panella con la sua azienda Talent.com per aver reso possibile tutto questo.</p><p>Non possiamo non nominare anche tutte le altre aziende coinvolte che hanno reso questo evento un momento speciale, fucina di spunti di riflessione e di miglioramento: Novartis, iliad, EY, Trenord, Sysdata S.p.A., AIDP Lombardia, Federmanager, Kelly Services Italia.</p><p>#jobifyrecruiting #humanrecources #risorseumane #umanizzazione #talentattraction #talentretention #talent #formazioneprofessionale #formazioneaziendale</p><p>Marco Fattizzo | Martina Di Palma | Chiara Lucia Graziano | Elisa Severa | Anna Lisa Costa | Alessio Cinao | Albino Ruberti | SERGIO ACANFORA | Gaetano Angiuli | Giovanni Messana | Giovanni Astarita | Viola Frick | Chiara Pierazzi | Luigi Severini | Marcella Loporchio | Maurizio Quarta</p>",
@@ -294,42 +314,42 @@ export default {
                   title: "I nostri primi colloqui nel #Metaverso!",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/tech+jobs+fair.jpeg",
                   subtitle: "È iniziata oggi la nuova edizione del TECH JOBS fair...",
-                  text: "<p>È iniziata oggi la nuova edizione del TECH JOBS fair, e la grande famiglia di Jobify Recruiting è presente con numerosi interventi ed interazioni da parte dei membri del nostro team.</p><p>Per la prima volta abbiamo conosciuto ed ascoltato i candidati in una versione 3D immersiva, che ci ha permesso di abbattere le distanze ed ancora una volta di sfruttare la digitalizzazione e l'innovazione per dare più spazio al lato umano, valore intrinseco ed irrinunciabile della nostra azienda. Conoscere al meglio aziende e candidati diventa, così, possibile ed estremamente coinvolgente!</p><p>Passa a trovarci nel nostro stand oppure guarda i nostri interventi sulla pagina dell'evento!</p><p>#digitalizzazione #innovazione #techjobsfair #hr #ai #risorseumane #digitalevent</p><p>Coderblock Davide Maggio Martina Di Palma Elisa Severa 🧭 Chiara Lucia Graziano Anna Lisa Costa Marco Fattizzo 💡 Rodolfo Duè Daniela Restelli Sara Frison Helena Hagan</p>",
+                  text: "<p>È iniziata oggi la nuova edizione del TECH JOBS fair, e la grande famiglia di Jobify Recruiting è presente con numerosi interventi ed interazioni da parte dei membri del nostro team.</p><p>Per la prima volta abbiamo conosciuto ed ascoltato i candidati in una versione 3D immersiva, che ci ha permesso di abbattere le distanze ed ancora una volta di sfruttare la digitalizzazione e l'innovazione per dare più spazio al lato umano, valore intrinseco ed irrinunciabile della nostra azienda. Conoscere al meglio aziende e candidati diventa, così, possibile ed estremamente coinvolgente!</p><p>Passa a trovarci nel nostro stand oppure guarda i nostri interventi sulla pagina dell'evento!</p>",
                 },
                 {
                   date: "30 Gen 2022",
-                  title: "#EVENTO | Roma",
+                  title: "Roma",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/Il+futuro+del+lavoro_giugno+1.jpeg",
                   subtitle: "Per Jobify Recruiting è stato un immenso piacere partecipare il 24 giugno all’evento #HR di Bianco Lavoro - Euspert.",
-                  text: "<h3>#EVENTO | Roma</h3><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Il+futuro+del+lavoro_giugno+2.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Il+futuro+del+lavoro_giugno+3.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Il+futuro+del+lavoro_giugno+4.jpeg\" width=\"50%\" height=\"50%\"/><p>Per Jobify Recruiting è stato un immenso piacere partecipare il 24 giugno all’evento #HR di Bianco Lavoro - Euspert. </p><p>Durante l’evento abbiamo parlato del #futuro del #lavoro: un tema che sta riguardando tutti, aziende, manager e talenti.</p><ul> <li> ➡️Come sta cambiando la cultura del lavoro? </li> <li> ➡️Cosa sta cambiando nell’ambito lavorativo? </li> <li> ➡️Cos’è importante oggi giorno per un’azienda? </li></ul><p>Oggi più che mai le aziende e i lavoratori sentono l’esigenza di affrontare temi come work-life balance, valori aziendali, aspettative professionali e smart-working.</p><p>🎯Il mondo del lavoro sta cambiando radicalmente, dalle nuove #tecnologie che ormai fanno parte della nostra vita, alla #cultura del lavoro. </p><p>Noi, come persone, siamo chiamati a un grande atto di responsabilità. </p><p>🤝 E’ stata una serata ricca di riflessioni; ognuno di noi ha trasmesso e lasciato qualcosa all’altro</p><p>Un ringraziamento speciale agli sponsor Adecco | Bianco Lavoro - Euspert | TECH JOBS fair | Studio Felli | Extreme Rentals Dubai | CreaImpresa | Edicole &100 | AIDP Lazio | Miutifin | COACH Professionista|</p><p>E un grazie a tutti i partecipanti che hanno reso possibile tutto questo!</p><p>Vi aspettiamo al prossimo evento!</p><p>| Davide Maggio | Marco Fattizzo 💡| Helena Hagan | Rodolfo Duè.| David Trotti | Martina Di Palma | Gianmarco Sepe | Monica Capuano | Stefano Rossi | Guido Penta | Elisa Severa 🧭 | Vanessa Caracci | Concetta Scaldaferri | Claudia Della Torre | Stefano Capuano | Alessandro Gian Maria Ferri | Dr. Alessandro Gradelli | Andrea Abondio | Chiara Lucia Graziano | Luciano Tiberi | Federica Cortina | Federico Pirro | Veronica Capozzi | Giulia Fiorenzi | Giuseppe Rotundo | Francesca Brudaglio | Alessandro Vecchio | Albino Ruberti |</p>",
+                  text: "<h3>#EVENTO | Roma</h3><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Il+futuro+del+lavoro_giugno+2.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Il+futuro+del+lavoro_giugno+3.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Il+futuro+del+lavoro_giugno+4.jpeg\" width=\"50%\" height=\"50%\"/><p>Per Jobify Recruiting è stato un immenso piacere partecipare il 24 giugno all’evento #HR di Bianco Lavoro - Euspert. </p><p>Durante l’evento abbiamo parlato del #futuro del #lavoro: un tema che sta riguardando tutti, aziende, manager e talenti.</p><ul> <li> ➡️Come sta cambiando la cultura del lavoro? </li> <li> ➡️Cosa sta cambiando nell’ambito lavorativo? </li> <li> ➡️Cos’è importante oggi giorno per un’azienda? </li></ul><p>Oggi più che mai le aziende e i lavoratori sentono l’esigenza di affrontare temi come work-life balance, valori aziendali, aspettative professionali e smart-working.</p><p>🎯Il mondo del lavoro sta cambiando radicalmente, dalle nuove #tecnologie che ormai fanno parte della nostra vita, alla #cultura del lavoro. </p><p>Noi, come persone, siamo chiamati a un grande atto di responsabilità. </p><p>🤝 E’ stata una serata ricca di riflessioni; ognuno di noi ha trasmesso e lasciato qualcosa all’altro</p><p>Un ringraziamento speciale agli sponsor Adecco | Bianco Lavoro - Euspert | TECH JOBS fair | Studio Felli | Extreme Rentals Dubai | CreaImpresa | Edicole &100 | AIDP Lazio | Miutifin | COACH Professionista|</p><p>E un grazie a tutti i partecipanti che hanno reso possibile tutto questo!</p><p>Vi aspettiamo al prossimo evento!</p>",
                 },
                 {
                   date: "13 Magg 2022",
                   title: "📣 Conosci AI Week Italia ?",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/AI+Week+Italia.jpeg",
                   subtitle: "È la settimana italiana dell’intelligenza artificiale.",
-                  text: "<h3>📣 Conosci AI Week Italia ?</h3><p>È la settimana italiana dell’intelligenza artificiale</p><p>Jobify Recruiting non poteva mancare alla terza edizione di AI WEEK con ospiti di estrema professionalità e conoscenza nel mondo dell’#AI</p><p> Consigli, idee e nuove tecnologie direttamente dal mondo AI che contribuiranno a migliorare il nostro processo di Ricerca & Selezione. </p><p>| Davide Maggio | Marco Fattizzo 💡 | Martina Di Palma | Chiara Lucia Graziano | Helena Hagan | Sara Frison | Rodolfo Duè | Alessio Cinao | 𝑷𝒂𝒔𝒒𝒖𝒂𝒍𝒆 𝑫𝒆 𝑳𝒖𝒄𝒂 𝑩𝒐𝒔𝒔𝒂 | Daniela Restelli | Monica J. Romano | Serena Di Maria | Albino Ruberti | Flavio Mazzullo | Elisa Severa 🧭 | Alice Dosseni</p><p>#jobifyrecruiting #intelligenzaartificiale #recruiting #human #AIWEEK</p>",
+                  text: "<h3>📣 Conosci AI Week Italia ?</h3><p>È la settimana italiana dell’intelligenza artificiale</p><p>Jobify Recruiting non poteva mancare alla terza edizione di AI WEEK con ospiti di estrema professionalità e conoscenza nel mondo dell’#AI</p><p> Consigli, idee e nuove tecnologie direttamente dal mondo AI che contribuiranno a migliorare il nostro processo di Ricerca & Selezione. </p>",
                 },
                 {
                   date: "10 Mag 2022",
-                  title: "#Docenza | Il mondo HR incontra quello del digital marketing",
+                  title: "Il mondo HR incontra quello del digital marketing",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/docenza+sapienza.jpeg",
                   subtitle: "Jobify Recruiting a braccetto con UP-Communication durante il tirocinio...",
-                  text: "<h3>#Docenza | Il mondo HR incontra quello del digital marketing</h3><p>Jobify Recruiting a braccetto con UP-Communication durante il tirocinio rivolto agli studenti del corso “ Scienze del Turismo” della Sapienza Università di Roma.</p><ul> <li>➡️ Come attrarre i talenti attraverso le attività di Digital #Employer Branding? </li> <li>➡️ Cos’è il #marketing? </li> <li>➡️ Quali sono le principali attività del marketing?</li> <li>➡️ Quanto è importante la #comunicazione fra i dipendenti di un’azienda? </li></ul><p>Questi sono i main topic affrontati durante l’intervento di Alessio Cinao, direttore marketing di Up Communication e di Jobify Recruting affiancato da Davide Maggio, curatore del tirocinio, HR Manager e CEO di Jobify Recruiting. </p><p>Una lezione formativa, mirata a comprendere le logiche e le strategie che si nascondono dietro all’Employer #Branding in funzione del mondo #HR.</p><p>L’intervento ha lasciato spazio anche a una profonda riflessione sulla vita personale e lavorativa: il work life balance di ognuno di noi sta cambiando.</p><p>E’ il momento per le aziende e i dipendenti di riorganizzare il proprio tempo, in funzione della società e di se stessi. </p><p>Crea la giusta immagine di te stesso perché questa azione può determinare il tuo futuro lavorativo.</p><p>| Davide Maggio | Marco Fattizzo | Martina Di Palma | Chiara Lucia Graziano | Monica J. Romano | Elisa Severa 🧭 | 𝑷𝒂𝒔𝒒𝒖𝒂𝒍𝒆 𝑫𝒆 𝑳𝒖𝒄𝒂 𝑩𝒐𝒔𝒔𝒂 | Flavio Mazzullo | Alessio Cinao | Albino Ruberti | Daniela Restelli | Helena Hagan | Sara Frison | Rodolfo Duè | Serena Di Maria | Sara Sampieri | Alice Dosseni</p><p>#digitalmarketing #jobifyrecruiting #talenti #humanresource #umanizzazione #worklifebalance #strategie #turismo</p>",
+                  text: "<h3>#Docenza | Il mondo HR incontra quello del digital marketing</h3><p>Jobify Recruiting a braccetto con UP-Communication durante il tirocinio rivolto agli studenti del corso “ Scienze del Turismo” della Sapienza Università di Roma.</p><ul> <li>➡️ Come attrarre i talenti attraverso le attività di Digital #Employer Branding? </li> <li>➡️ Cos’è il #marketing? </li> <li>➡️ Quali sono le principali attività del marketing?</li> <li>➡️ Quanto è importante la #comunicazione fra i dipendenti di un’azienda? </li></ul><p>Questi sono i main topic affrontati durante l’intervento di Alessio Cinao, direttore marketing di Up Communication e di Jobify Recruting affiancato da Davide Maggio, curatore del tirocinio, HR Manager e CEO di Jobify Recruiting. </p><p>Una lezione formativa, mirata a comprendere le logiche e le strategie che si nascondono dietro all’Employer #Branding in funzione del mondo #HR.</p><p>L’intervento ha lasciato spazio anche a una profonda riflessione sulla vita personale e lavorativa: il work life balance di ognuno di noi sta cambiando.</p><p>E’ il momento per le aziende e i dipendenti di riorganizzare il proprio tempo, in funzione della società e di se stessi. </p><p>Crea la giusta immagine di te stesso perché questa azione può determinare il tuo futuro lavorativo.</p>",
                 },
                 {
                   date: "28 Apr 2022",
-                  title: "#Eventi | Milano",
+                  title: "Milano",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/evento+jobify.jpeg",
                   subtitle: "Primo evento in presenza per Jobify Recruiting...",
                   text: "<h3>#Eventi | Milano</h3><p>Primo evento in presenza per Jobify Recruiting </p><p>Un momento importante per la nostra azienda </p><p>Professionalità, condivisione, #networking e team #building </p><p>Grazie a questi eventi si crea un reale rapporto umano tra i collaboratori del proprio #Team, un fattore dominante per il successo aziendale. </p><p>Abbiamo dimostrato come sia possibile essere professionali e friendly allo stesso tempo!</p><p>| Davide Maggio | Marco Fattizzo | Martina Di Palma | Chiara Lucia Graziano | Monica J. Romano | Elisa Severa 🧭 | 𝑷𝒂𝒔𝒒𝒖𝒂𝒍𝒆 𝑫𝒆 𝑳𝒖𝒄𝒂 𝑩𝒐𝒔𝒔𝒂 | Flavio Mazzullo | Alessio Cinao | Albino Ruberti | Daniela Restelli | Helena Hagan | Sara Frison | Rodolfo Duè | Serena Di Maria | Sara Sampieri | Alice Dosseni</p><p>#jobifyrecruiting #HR #hrtech #ricercaeselezione</p>",
                 },
                 {
                   date: "26 Apr 2022",
-                  title: "#Docenza",
+                  title: "Docenza",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/docenza+sapienza+1.jpeg",
                   subtitle: "E’ stato un immenso piacere per Jobify Recruiting condividere con Gruppo Tempocasa la docenza...",
-                  text: "<h3>#Docenza</h3><p>E’ stato un immenso piacere per Jobify Recruiting condividere con Gruppo Tempocasa la docenza presso Sapienza Università di Roma, venerdì 8 aprile.</p><p>Gli studenti del corso di laurea “ Scienze del Turismo” hanno assistito all’intervento di Francesca Ravasi - HR Manager di Gruppo Tempocasa - affiancata da Davide Maggio - Temporary HR Manager, Founder di Jobify Recruiting e curatore del tirocinio.</p><p>E’ stato presentato il #casestudy Tempocasa e sono stati approfonditi main topic come il ruolo HR all’interno di un’azienda, i processi onboarding e il piano carriera di una risorsa che entra nel mondo del lavoro.</p><p>Jobify Recruiting e Gruppo Tempocasa hanno dimostrato concretamente cosa vuol dire occuparsi di risorse umane e di come l’area #HR sia fondamentale all’interno di qualsiasi ambiente lavorativo.</p><p>“Collaborazione e condivisione sono il valore aggiunto del mondo HR”</p><p>Questo il messaggio che Jobify Recruiting e Gruppo Tempocasa hanno voluto lasciato agli studenti.</p><p>| Davide Maggio | Marco Fattizzo | Francesca Ravasi | Chiara Lucia Graziano | Martina Di Palma | Monica J. Romano | Elisa Severa 🧭 | 𝑷𝒂𝒔𝒒𝒖𝒂𝒍𝒆 𝑫𝒆 𝑳𝒖𝒄𝒂 𝑩𝒐𝒔𝒔𝒂 | Flavio Mazzullo | Alessio Cinao | Albino Ruberti | Daniela Restelli | Helena Hagan | Sara Frison | Rodolfo Duè | Serena Di Maria | Sara Sampieri | Alice Dosseni</p><p>#jobifyrecruiting #Tempocasa #ricercaeselezione #humanresource #hrtech #sapienza</p>",
+                  text: "<h3>#Docenza</h3><p>E’ stato un immenso piacere per Jobify Recruiting condividere con Gruppo Tempocasa la docenza presso Sapienza Università di Roma, venerdì 8 aprile.</p><p>Gli studenti del corso di laurea “ Scienze del Turismo” hanno assistito all’intervento di Francesca Ravasi - HR Manager di Gruppo Tempocasa - affiancata da Davide Maggio - Temporary HR Manager, Founder di Jobify Recruiting e curatore del tirocinio.</p><p>E’ stato presentato il #casestudy Tempocasa e sono stati approfonditi main topic come il ruolo HR all’interno di un’azienda, i processi onboarding e il piano carriera di una risorsa che entra nel mondo del lavoro.</p><p>Jobify Recruiting e Gruppo Tempocasa hanno dimostrato concretamente cosa vuol dire occuparsi di risorse umane e di come l’area #HR sia fondamentale all’interno di qualsiasi ambiente lavorativo.</p><p>“Collaborazione e condivisione sono il valore aggiunto del mondo HR”</p><p>Questo il messaggio che Jobify Recruiting e Gruppo Tempocasa hanno voluto lasciato agli studenti.</p>",
                 },
               ],
     };
@@ -425,6 +445,20 @@ export default {
       var image = document.getElementById("imageE"+i);
       image.style.backgroundImage = "url('"+this.events[i].img +"')";
     }
+
+    for (let i = 0; i < this.first.length; i++) {
+      var date = document.getElementById("dateF"+i);
+      date.textContent = this.first[i].date;
+
+      var title = document.getElementById("titleF"+i);
+      title.textContent = this.first[i].title;
+
+      var subtitle = document.getElementById("subtitleF"+i);
+      subtitle.textContent = this.first[i].subtitle;
+
+      var image = document.getElementById("imageF"+i);
+      image.style.backgroundImage = "url('"+this.first[i].img +"')";
+    }
   },
   methods: {
     btnScrollSx() {
@@ -466,18 +500,16 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
         <div style="background: #0c2550; padding-top: 5rem; padding-bottom: 2rem;">
           <div class="titlePage">News</div>
           <div class="topContent">
-            <div class="img1"></div>
+            <div class="img1" id="imageF0"></div>
             <div class="firstTitle">
-              <p>AGO 23, 2022</p>
-              <h2>
+              <p id="dateF0"></p>
+              <h2 id="titleF0">
                 Talent Attraction e Talent Retention: le nuove tendenze
                 dell’employer branding
               </h2>
-              <div class="subtitle">
-                Uno degli obiettivi che hanno in comune le aziende è quello di
-                entrare in contatto con persone di valore.
+              <div class="subtitle" id="subtitleF0">
               </div>
-              <router-link to="/article1">
+              <a href="https://www.today.it/economia/lavoro/principio-pareto.html" target="blank">
                 <div class="btnRead">
                   Leggi di più &nbsp;&nbsp;<span
                     ><svg
@@ -495,7 +527,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                     </svg>
                   </span>
                 </div>
-              </router-link>
+              </a>
             </div>
           </div>
         </div>
@@ -503,8 +535,9 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
           <div class="navMain"><ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#biancolavoro">Bianco Lavoro</a></li>
             <li><a data-toggle="tab" href="#lostrillone">Lo Strillone</a></li>
-            <li><a data-toggle="tab" href="#laboratoria">Lab Oratoria</a></li>
+            <li><a data-toggle="tab" href="#laboratoria">AIDP Lab Oratoria</a></li>
             <li><a data-toggle="tab" href="#pubblicazionicartacee">Pubblicazioni cartacee</a></li>
+            <li><a data-toggle="tab" href="#pubblicazionionline">Pubblicazioni online</a></li>
             <li><a data-toggle="tab" href="#eventijobify">Eventi Jobify</a></li>
           </ul></div>
 
@@ -816,6 +849,34 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA25"></div>
                     </div>
                   </router-link>
+                </div>
+              </div>
+            </div>
+            <div id="pubblicazionionline" class="tab-pane fade">
+              <div class="filters">
+                <div class="content filtersContent articles articles2">
+                  <a href="https://www.risorseumane-hr.it/temporary-hr-manager-nelle-pmi-e-grandi-aziende/">
+                    <div class="article">
+                      <div class="image" id="imageA26">
+                        <div class="hover"></div>
+                        <div class="date" id="dateA26"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titleA26"></div>
+                      <div class="subtitle" id="subtitleA26"></div>
+                    </div>
+                  </a>
+                  <a href="https://www.leadershipmanagementmagazine.com/articoli/le-grandi-dimissioni-le-ragioni-per-cui-si-lascia-il-proprio-posto-di-lavoro/">
+                    <div class="article">
+                      <div class="image" id="imageA27">
+                        <div class="hover"></div>
+                        <div class="date" id="dateA27"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titleA27"></div>
+                      <div class="subtitle" id="subtitleA27"></div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

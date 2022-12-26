@@ -1126,44 +1126,6 @@ offerta, per creare il match “perfetto” tra azienda e candidato.
           </div>
         </div>
         <div class="feedbacks" id="feedbacksContainer">
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Dal nostro primo incontro ho riconosciuto in Davide volontà,
-              dedizione e una importante preparazione culturale.Doti preziose
-              nel contesto lavorativo di riferimento.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Stefano Ruscito</p>
-                <p class="worktitle">Sales Account presso Umana spa</p>
-              </div>
-            </div>
-          </div>
-              <div class="feedback">
-                <p class="quote">"</p>
-                <h3>
-                  Sono mesi che ormai collaboro strettamente con JOBIFY e devo dire che sono pienamente soddisfatto del servizio di recruiting per la mia azienda. Ci tengo a sottolineare la massima disponibilità fornita nell’ascoltare al meglio le mie esigenze per la ricerca dei candidati adatti. In particolare, ho apprezzato molto poter avere un contatto diretto ed un supporto costante nella delicata fase di assunzione di nuovo personale. Questo per me è motivo di grande fiducia nei confronti dell’azienda, che si è sempre dimostrata eccellente sia a livello umano che professionale, affiancandomi pienamente nel processo di selezione di nuovo personale.
-                </h3>
-                <div class="feedbackInfo">
-                  <div
-                    class="feedbackInfoPhoto"
-                    style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/adamo.jpeg);
-                    "
-                  ></div>
-                  <div class="feddbackData">
-                    <p class="author">Alessandro Adamo</p>
-                    <p class="worktitle">CEO & Founder presso Dotstay.com</p>
-                  </div>
-                </div>
-              </div>
               <div class="feedback">
                 <p class="quote">"</p>
                 <h3>
@@ -1173,7 +1135,7 @@ offerta, per creare il match “perfetto” tra azienda e candidato.
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/Ivan_Rallo.jpg);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -1316,7 +1278,6 @@ offerta, per creare il match “perfetto” tra azienda e candidato.
               </div>
             </div>
           </div>
-
           <div class="feedback">
             <p class="quote">"</p>
             <h3>
@@ -1415,6 +1376,44 @@ offerta, per creare il match “perfetto” tra azienda e candidato.
               </div>
             </div>
           </div>
+          <div class="feedback">
+            <p class="quote">"</p>
+            <h3>
+              Dal nostro primo incontro ho riconosciuto in Davide volontà,
+              dedizione e una importante preparazione culturale.Doti preziose
+              nel contesto lavorativo di riferimento.
+            </h3>
+            <div class="feedbackInfo">
+              <div
+                class="feedbackInfoPhoto"
+                style="
+                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
+                "
+              ></div>
+              <div class="feddbackData">
+                <p class="author">Stefano Ruscito</p>
+                <p class="worktitle">Sales Account presso Umana spa</p>
+              </div>
+            </div>
+          </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Sono mesi che ormai collaboro strettamente con JOBIFY e devo dire che sono pienamente soddisfatto del servizio di recruiting per la mia azienda. Ci tengo a sottolineare la massima disponibilità fornita nell’ascoltare al meglio le mie esigenze per la ricerca dei candidati adatti. In particolare, ho apprezzato molto poter avere un contatto diretto ed un supporto costante nella delicata fase di assunzione di nuovo personale. Questo per me è motivo di grande fiducia nei confronti dell’azienda, che si è sempre dimostrata eccellente sia a livello umano che professionale, affiancandomi pienamente nel processo di selezione di nuovo personale.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/adamo.jpeg);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Alessandro Adamo</p>
+                    <p class="worktitle">CEO & Founder presso Dotstay.com</p>
+                  </div>
+                </div>
+              </div>
           <div class="feedback">
             <p class="quote">"</p>
             <h3>
@@ -1751,27 +1750,6 @@ offerta, per creare il match “perfetto” tra azienda e candidato.
                 <p class="worktitle">
                   HR Assistant & Recruiter, KOHLER Engines EMEA
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feedback is-clone">
-            <p class="quote">"</p>
-            <h3>
-              Dal nostro primo incontro ho riconosciuto in Davide volontà,
-              dedizione e una importante preparazione culturale.Doti preziose
-              nel contesto lavorativo di riferimento.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Stefano Ruscito</p>
-                <p class="worktitle">Sales Account presso Umana spa</p>
               </div>
             </div>
           </div>
