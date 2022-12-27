@@ -5,11 +5,11 @@ export default {
   data() {
     return {
       first: [
-                {
-                  date: "17 Feb 2022",
-                  title: "Il principio di Pareto e la sua applicazione nella ricerca del lavoro",
-                  img: "https://citynews-today.stgy.ovh/~media/horizontal-hi/34704150547432/computer-digitale.jpg",
-                  subtitle: "Al giorno d’oggi, in un contesto occupazionale caratterizzato da una grande domanda di lavoro...",
+      {
+                  date: "24 Mag 2022",
+                  title: "La ricerca e selezione nell’era digitale con A.I.",
+                  img: "https://www.risorseumane-hr.it/wp-content/uploads/2022/05/La-ricerca-e-selezione-nellera-digitale-1020x480.jpg",
+                  subtitle: "Le attività di ricerca di selezione del personale rappresentano uno dei momenti più complessi ...",
                 },
       ],
       articles: [
@@ -279,6 +279,18 @@ export default {
                   img: "https://www.leadershipmanagementmagazine.com/wp-content/uploads/dimissioni.jpg",
                   subtitle: "L’emergenza sanitaria che ha coinvolto interamente il nostro pianeta ha decisamente avuto...",
                 },
+                {
+                  date: "17 Feb 2022",
+                  title: "Il principio di Pareto e la sua applicazione nella ricerca del lavoro",
+                  img: "https://citynews-today.stgy.ovh/~media/horizontal-hi/34704150547432/computer-digitale.jpg",
+                  subtitle: "Al giorno d’oggi, in un contesto occupazionale caratterizzato da una grande domanda di lavoro...",
+                },
+                {
+                  date: "24 Mag 2022",
+                  title: "La ricerca e selezione nell’era digitale con A.I.",
+                  img: "https://www.risorseumane-hr.it/wp-content/uploads/2022/05/La-ricerca-e-selezione-nellera-digitale-1020x480.jpg",
+                  subtitle: "Le attività di ricerca di selezione del personale rappresentano uno dei momenti più complessi ...",
+                },
               ],
       events: [
                 {
@@ -533,11 +545,10 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
         </div>
         <div class="container2">
           <div class="navMain"><ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#biancolavoro">Bianco Lavoro</a></li>
-            <li><a data-toggle="tab" href="#lostrillone">Lo Strillone</a></li>
-            <li><a data-toggle="tab" href="#laboratoria">AIDP Lab Oratoria</a></li>
+            <li class="active"><a data-toggle="tab" href="#pubblicazionionline">Pubblicazioni online</a></li>
             <li><a data-toggle="tab" href="#pubblicazionicartacee">Pubblicazioni cartacee</a></li>
-            <li><a data-toggle="tab" href="#pubblicazionionline">Pubblicazioni online</a></li>
+            <li><a data-toggle="tab" href="#laboratoria">AIDP Lab Oratoria</a></li>
+            <li><a data-toggle="tab" href="#lostrillone">Lo Strillone</a></li>
             <li><a data-toggle="tab" href="#eventijobify">Eventi Jobify</a></li>
           </ul></div>
 
@@ -877,6 +888,28 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA27"></div>
                     </div>
                   </a>
+                  <a href="https://www.today.it/economia/lavoro/principio-pareto.html">
+                    <div class="article">
+                      <div class="image" id="imageA28">
+                        <div class="hover"></div>
+                        <div class="date" id="dateA28"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titleA28"></div>
+                      <div class="subtitle" id="subtitleA28"></div>
+                    </div>
+                  </a>
+                  <a href="https://www.risorseumane-hr.it/ricerca-selezione-era-digitale/">
+                    <div class="article">
+                      <div class="image" id="imageA29">
+                        <div class="hover"></div>
+                        <div class="date" id="dateA29"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titleA29"></div>
+                      <div class="subtitle" id="subtitleA29"></div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1105,6 +1138,17 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
 
   .nav li:hover {
     background: #0c255047;
+  }
+
+  .navMain .active{
+    background: #3e455052;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-radius: 12px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
   }
 
   .nav li .active {

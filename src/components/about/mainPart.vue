@@ -9,52 +9,38 @@ export default {
       storie: [
                 {
                   nickname: "Davide Maggio",
-                  ruolo: "Sviluppatore PHP",
-                  azienda: "CONTAQ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "L’approccio umano è stato una componente fondamentale di tutto il processo. E’ stato molto importante per me il supporto, non solo dal punto di vista tecnico, durante tutta la durata della selezione. Ogni mia domanda o richiesta è stata accolta mettendo sempre in primo piano le mie necessità senza avere alcuna forzatura o costrizione di alcun tipo. Del servizio offerto mi hanno colpito la serietà, l’empatia e la cura del cliente. Molte aziende spesso trattano le risorse che cercano come numeri mentre qui ho notato un approccio completamente diverso e di totale cura della persona. Non sono mai stato lasciato solo ed ho sempre ricevuto l’appoggio di Chiara (la ragazza che ha curato il tutto) e questo è stato di grande aiuto per me. Per ultimo ma ovviamente non meno importante, la possibilità di ricevere un’offerta molto più alta della mia attuale RAL grazie all’intermediazione di Chiara, nel mio caso ho ricevuto un’offerta superiore di 10k alla mia attuale retribuzione",
+                  ruolo: "Founder & CEO",
+                  storia_testo: "È il CEO e FOUNDER di Jobify Recruinting e vanta una consolidata esperienza nel settore delle risorse umane. Ha lavorato 10 anni come Direttore del Personale &amp; Docente Seminariale La Sapienza.",
                 },
                 {
                   nickname: "Marco Fattizzo",
-                  ruolo: "Consulente Commerciale in P.Iva",
-                  azienda: "STUDIO FELLI",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito a mio agio nel potermi presentare in un clima sereno, dove sentirmi veramente ascoltato. Mi sono sentito seguito e sostenuto dall’inizio dell’iter di selezione, dal primo contatto telefonico, sino alle fasi successive, dove ho avuto un contatto e aggiornamento costante avendo un professionista a cui fare sempre riferimento .  Ho apprezzato la tempestività delle comunicazioni e il clima distensivo creato in mio favore per arrivare sereno e preparato sull’azienda al colloquio finale.",
+                  ruolo: "Responsabile Pubbliche Relazioni & Co-Founder",
+                  storia_testo: "È il Responsabile Pubbliche Relazioni &amp; Co-Founder di Jobify Recruiting e ha un’esperienza decennale come area manager agenzie per il lavoro (Adecco, Start People, Lavorint Spa). Oltre a questo è il CEO e Founder Euspert - Bianco Lavoro.",
                 },
                 {
                   nickname: "Martina Di Palma",
-                  ruolo: "Segretaria Commerciale",
-                  azienda: "STRAGROUP ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia candidatura. In qualità di candidata sono stata scrupolosamente seguita in tutte le fasi del processo di selezione dall' Head Hunter Martina Di Palma che ha ascoltato le mie aspettative lavorative, professionali e personali, incrociandole con le esigenze dell'azienda. Doppio ringraziamento per lo svolgimento della selezione interamente da remoto, che ha azzerato completamente i costi economici e temporali. Che dire finalmente un'agenzia di recruiting al passo con i tempi e soprattutto attenta al capitale umano!",
+                  ruolo: "Head Hunter",
+                  storia_testo: "Giovane ma competente Head Hunter ha 1 anno di esperienza in Ricerca &amp; Selezione del personale. La sua formazione comprende un European Bachelor of Science in Design (majoring in Fashion Business) &amp; Master in HR.",
                 },
                 {
                   nickname: "Cecilia Dondi",
-                  ruolo: "Car Rental Agent (BS)",
-                  azienda: "AUTOSYSTEM",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Rispetto alle agenzie di recruiting sono spesso stata molto diffidente, mi sono ricreduta durante la mia esperienza con Jobify Recruiting. Questo soprattutto grazie alla professionalità di Martina che ha gestito il processo di selezione con un approccio umano, oltre che professionale e con molta chiarezza in tutti gli step. Quindi chiarezza e professionalità contraddistinguono la Jobify Recruiting. ",
+                  ruolo: "HR Consultant",
+                  storia_testo: "È una HR Consultant all’interno di Jobify Recruiting e ha 2,5 anni di esperienza in Ricerca &amp; Selezione del personale &amp; come Content Creator. Ha una laurea in Scienze Linguistiche per la Comunicazione e i Media &amp; Master in Marketing e Comunicazione.",
                 },
                 {
                   nickname: "Chiara Lucia Graziano",
-                  ruolo: "Inside Sales",
-                  azienda: "DOTSTAY ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "L'esperienza vissuta con Jobify è stata molto positiva, l'azienda è stata un tramite perfetto tra me e il mio attuale datore di lavoro. Hanno seguito con molta attenzione tutta la fase di assunzione: dalla prima telefonata orientativa fino alla firma del contratto, tutto sempre con estrema umanità e professionalità",
+                  ruolo: "HR Consultant & Career Coach",
+                  storia_testo: "È HR Consultant &amp; Career Coach di Jobify Recruiting con 1 anno di esperienza in Ricerca &amp; Selezione del personale. Sta studiando Linguaggi dei Media (Profilo Pubblicità) e frequentando un Master in Coach Professionist.",
                 },
                 {
                   nickname: "Elisa Severa",
-                  ruolo: "Addetto alle vendite (Malta)",
-                  azienda: "CASCONE HOME ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio targhetizzato, chiaro e per nulla impersonale. Le mie precedenti esperienze con le apl non sono state positive, in quanto non avevo questo costante rapporto di condivisione e aggiornamento con la parte hr. Ho riscontrato in jobify l’attenzione nel mettere il candidato al centro del processo di r&s , dove essere considerato una persona con le proprie ambizioni e talento da far incrociare perfettamente con le richieste dell’azienda. La chiarezza a partire dall’annuncio, sino all’orientamento verso il colloquio finale con l’azienda mi ha fatto sentire sicuro e seguito.",
+                  ruolo: "HR Consultant",
+                  storia_testo: "È una HR Consultant di grande esperienza che può vantare di 10 anni di lavoro in in Payroll, con compiti di orientamento al lavoro e Ricerca &amp; Selezione del personale.",
                 },
                 {
                   nickname: "Alessio Cinao",
-                  ruolo: "Impiegata Contabile",
-                  azienda: "Celda 2000 Servizi Integrati srls",
-                  data: "8 Dicembre 2022",
-                  storia_testo: "Mi sono sentita da subito a mio agio, capita e compresa, ho avuto addirittura, nel momento del colloquio con la mia referente Elisa, dei suggerimenti per migliorare il mio cv e la mia presentazione, non mi era mai capitato. Ho apprezzato in Jobify Recruiting la serietà, e umanità, mi sono sentita trattata alla pari, e sostenuta per tutto l’iter di selezione, per affrontare al meglio il colloquio finale con l’azienda.",
+                  ruolo: "Direttore Marketing",
+                  storia_testo: "Con una laurea in Informazione, Media e Pubblicità è il Direttore Marketing di Jobify Recruiting e ha 2 anni di esperienza come Digital Marketing Strategist.",
                 },
               ],
     };
@@ -111,14 +97,6 @@ export default {
     content.style.opacity = "0";
     content.style.visibility = "hidden";
     content.style.display = "unset";
-
-    /*for (let i = 0; i < this.storie.length; i++) {
-      var nickname = document.getElementById("username"+i);
-      nickname.textContent = this.storie[i].nickname;
-
-      var ruolo = document.getElementById("jobtitle"+i);
-      ruolo.textContent = this.storie[i].ruolo;
-    }*/
   },
   methods: {
     story(x){
@@ -127,12 +105,6 @@ export default {
 
       var nickname = document.getElementById("nickname");
       nickname.textContent = this.storie[x-1].nickname;
-
-      var azienda = document.getElementById("azienda");
-      azienda.textContent = this.storie[x-1].azienda;
-
-      var data = document.getElementById("data");
-      data.textContent = this.storie[x-1].data;
 
       var ruolo = document.getElementById("ruolo");
       ruolo.textContent = this.storie[x-1].ruolo;
@@ -186,8 +158,8 @@ e poi professionisti e proprio questo diventa il fulcro del nostro lavoro di ogn
       <div class="thirdPart">
         <div class="text1 bold ">
           A differenza della tradizionale agenzia di ricerca e selezione del personale, Jobify Recruiting è un’agenzia di
-head hunting <span>dinamica ed energica,</span> snella e rapida nel fornire la soluzione ideale al candidato che cerca
-lavoro e all’azienda che cerca candidati.
+head hunting <span>dinamica ed energica</span>, snella e rapida nel fornire la soluzione ideale al talento che cerca lavoro
+e all’azienda che cerca talenti.
         </div>
       </div>
       <div class="thirdPart">
@@ -226,9 +198,8 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
       <div class="sixtPart">
         <h2>Non più candidati, ma persone da mettere al centro del processo di selezione</h2>
         <div class="description">
-          In Jobify Recruiting il candidato diventa una persona da mettere al centro del processo di selezione. Con un
-          metodo scientifico e rigoroso basato sui dati valutiamo valori e aspettative di ciascuno per trovare il suo
-          talento e metterlo a disposizione delle aziende.
+          L’azienda giusta diventa quella di cui il candidato si rivede nei valori ed è soddisfatto nelle sue aspettative
+personali e questo modo di lavorare porta a persone felici e pronte a svolgere al meglio il loro lavoro.
         </div>
 
         <div class="sixtPartButton">
@@ -346,7 +317,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
         <div class="close_story" @click="close_story(1)">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22"
                                 height="22"
-                                fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                fill="#0a1e4375" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                   </svg>
                 </div>
@@ -508,7 +479,12 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
 
   .story .close_story:hover {
     border-color: white;
+    color: #fff;
     transform: rotate(90deg);
+  }
+
+  .story .close_story:hover svg {
+    fill: #fff;
   }
 
   .story .content .nickname{
@@ -520,24 +496,6 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     color: #fff;
   }
 
-  .story .content .azienda{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
-    margin-top: 0.5rem;
-    color: #fff;
-  }
-  .story .content .data{
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 14px;
-    margin-top: 0.5rem;
-    color: #fff;
-    margin-right: auto;
-    width: fit-content;
-    margin-left: 1rem;
-  }
-
   .story .content .ruolo{
     font-weight: 300;
     font-size: 14px;
@@ -547,6 +505,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     margin-right: 1rem;
     margin-left: auto;
     width: fit-content;
+    margin-right: auto;
   }
 
   .story .content .storia_testo{
@@ -557,6 +516,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     height: 65%;
     color: #fff;
     font-weight: 300;
+    text-align: center;
   }
   .main {
     background: #ada996;

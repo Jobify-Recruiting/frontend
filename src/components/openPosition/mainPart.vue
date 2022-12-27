@@ -47,6 +47,13 @@ export default {
                   data: "1 Dicembre 2022",
                   storia_testo: "Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio targhetizzato, chiaro e per nulla impersonale. Le mie precedenti esperienze con le apl non sono state positive, in quanto non avevo questo costante rapporto di condivisione e aggiornamento con la parte hr. Ho riscontrato in jobify l’attenzione nel mettere il candidato al centro del processo di r&s , dove essere considerato una persona con le proprie ambizioni e talento da far incrociare perfettamente con le richieste dell’azienda. La chiarezza a partire dall’annuncio, sino all’orientamento verso il colloquio finale con l’azienda mi ha fatto sentire sicuro e seguito.",
                 },
+                {
+                  nickname: "K.R.",
+                  ruolo: "Impiegata Contabile",
+                  azienda: "Celda 2000 Servizi Integrati srls",
+                  data: "8 Dicembre 2022",
+                  storia_testo: "Mi sono sentita da subito a mio agio, capita e compresa, ho avuto addirittura, nel momento del colloquio con la mia referente Elisa, dei suggerimenti per migliorare il mio cv e la mia presentazione, non mi era mai capitato. Ho apprezzato in Jobify Recruiting la serietà, e umanità, mi sono sentita trattata alla pari, e sostenuta per tutto l’iter di selezione, per affrontare al meglio il colloquio finale con l’azienda.",
+                },
               ],
     };
   },
@@ -132,6 +139,38 @@ export default {
         const walk = (x - startX) * 3; //scroll-fast
         slider.scrollLeft = scrollLeft - walk;
       });
+    }
+
+    const slider2 = document.querySelector(".featuredContent");
+
+    if(slider2 != 0){
+      const slider = document.querySelector(".featuredContent");
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    if (slider) {
+      slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        slider.classList.add("active");
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      slider.addEventListener("mouseleave", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mouseup", () => {
+        isDown = false;
+        slider.classList.remove("active");
+      });
+      slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+      });
+    }
     }
 
     for (let i = 0; i < this.storie.length; i++) {
@@ -227,9 +266,6 @@ export default {
       var azienda = document.getElementById("azienda");
       azienda.textContent = this.storie[x-1].azienda;
 
-      var data = document.getElementById("data");
-      data.textContent = this.storie[x-1].data;
-
       var ruolo = document.getElementById("ruolo");
       ruolo.textContent = this.storie[x-1].ruolo;
 
@@ -240,7 +276,7 @@ export default {
     close_story(x){
       let close_story = document.getElementById(x);
       close_story.style.display = "none";
-    }
+    },
   },
 };
 </script>
@@ -703,7 +739,7 @@ export default {
               </div>
             </div>
             <div id="Finance" class="tab-pane fade">
-              <div class="filters" style="margin-top: 7rem">
+              <div class="filters">
                 <div class="filtersTop">
                   <h2>Posizioni aperte <span>Finance</span></h2>
                   <div class="filtersPositions">
@@ -1065,7 +1101,7 @@ export default {
               </div>
             </div>
             <div id="IT" class="tab-pane fade">
-              <div class="filters" style="margin-top: 7rem">
+              <div class="filters">
                 <div class="filtersTop">
                   <h2>Posizioni aperte <span>IT Tech</span></h2>
                   <div class="filtersPositions">
@@ -1427,7 +1463,7 @@ export default {
               </div>
             </div>
             <div id="Hr" class="tab-pane fade">
-              <div class="filters" style="margin-top: 7rem">
+              <div class="filters">
                 <div class="filtersTop">
                   <h2>Posizioni aperte <span>HR</span></h2>
                   <div class="filtersPositions">
@@ -1789,7 +1825,7 @@ export default {
               </div>
             </div>
             <div id="Digital" class="tab-pane fade">
-              <div class="filters" style="margin-top: 7rem">
+              <div class="filters">
                 <div class="filtersTop">
                   <h2>Posizioni aperte <span>Digital</span></h2>
                   <div class="filtersPositions">
@@ -2495,100 +2531,147 @@ sviluppare in azienda.
               <div class="featured" @click="story(1)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     L’approccio umano è stato una componente fondamentale di tutto il processo...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username0"></div>
-                  <div class="jobtitle" id="jobtitle0"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username0"></div>
+                    <div class="jobtitle" id="jobtitle0"></div>
+                  </div>
+
+                  <div class="btn">
+                    Scopri
+                  </div>
+                  
                 </div>
               </div>
               <div class="featured" @click="story(2)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username1"></div>
-                  <div class="jobtitle" id="jobtitle1"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username1"></div>
+                    <div class="jobtitle" id="jobtitle1"></div>
+                  </div>
+                  <div class="btn">
+                    Scopri
+                  </div>
                 </div>
               </div>
               <div class="featured" @click="story(3)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username2"></div>
-                  <div class="jobtitle" id="jobtitle2"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username2"></div>
+                    <div class="jobtitle" id="jobtitle2"></div>
+                  </div>
+
+                  <div class="btn">
+                    Scopri
+                  </div>
                 </div>
               </div>
               <div class="featured" @click="story(4)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     Rispetto alle agenzie di recruiting sono spesso stata molto diffidente...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username3"></div>
-                  <div class="jobtitle" id="jobtitle3"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username3"></div>
+                    <div class="jobtitle" id="jobtitle3"></div>
+                  </div>
+
+                  <div class="btn">
+                    Scopri
+                  </div>
                 </div>
               </div>
               <div class="featured" @click="story(5)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     L'esperienza vissuta con Jobify è stata molto positiva...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username4"></div>
-                  <div class="jobtitle" id="jobtitle4"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username4"></div>
+                    <div class="jobtitle" id="jobtitle4"></div>
+                  </div>
+
+                  <div class="btn">
+                    Scopri
+                  </div>
                 </div>
               </div>
               <div class="featured" @click="story(6)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username5"></div>
-                  <div class="jobtitle" id="jobtitle5"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username5"></div>
+                    <div class="jobtitle" id="jobtitle5"></div>
+                  </div>
+
+                  <div class="btn">
+                    Scopri
+                  </div>
                 </div>
               </div>
-          </div>
-          <div class="story" id="1">
-              <div class="content">
-                <div class="close_story" @click="close_story(1)">
+              <div class="featured" @click="story(7)">
+                <div class="hover"></div>
+                <div class="text">
+                  <h2>
+                    Mi sono sentita da subito a mio agio, capita e compresa...
+                  </h2>
+                </div>
+                <div class="info_story">
+                  <div class="basic_informations">
+                    <div class="username" id="username6"></div>
+                    <div class="jobtitle" id="jobtitle6"></div>
+                  </div>
+
+                  <div class="btn">
+                    Scopri
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="story" id="1">
+              <div class="close_story" @click="close_story(1)">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22"
                                 height="22"
-                                fill="#0c2550" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                fill="#0a1e4375" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                   </svg>
                 </div>
+              <div class="content">
                 <div class="nickname" id="nickname"></div>
                 <div style="display: flex; align-items: center; width: 100%; text-align: center;">
                   <div class="ruolo" id="ruolo"></div> 
                   <div class="azienda" id="azienda"></div> 
-                  <div class="data" id="data"></div>
                 </div>
                 <div class="storia_testo" id="storia_testo"></div>
               </div>
-          </div>
+            </div>
         </div>
       </div>
     </div>
@@ -2622,30 +2705,55 @@ sviluppare in azienda.
   .story{
     display: none;
     position: fixed;
-    top: 0;
-    background: #0000008a;
-    width: 100%;
     height: 100%;
+    background-color: #26334285;
+    backdrop-filter: blur(12px);
     z-index: 15;
+    top: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
   }
 
   .story .content{
-    display: inline;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: fixed;
-    top: 15%;
-    background: white;
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    padding-top: 7rem;
+    z-index: 10;
+    background: #0c25509f;
+    backdrop-filter: blur(12px);
+    width: 80%;
+    border-radius: 40px;
+    padding: 4rem;
+    left: 10%;
+    top: 5%;
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
   }
 
-  .story .content .close_story{
-    cursor: pointer;
-    width: fit-content;
+  .story .close_story{
     margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 16px;
+    border: 2px solid #0a1e4375;
+    color: white;
+    font-size: 18px;
+    line-height: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .story .close_story:hover {
+    border-color: white;
+    color: #fff;
+    transform: rotate(90deg);
+  }
+
+  .story .close_story:hover svg {
+    fill: #fff;
   }
 
   .story .content .nickname{
@@ -2654,20 +2762,23 @@ sviluppare in azienda.
     font-weight: 600;
     font-size: 18px;
     line-height: 18px;
+    color: #fff;
   }
 
   .story .content .azienda{
     font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 14px;
     margin-top: 0.5rem;
+    color: #fff;
+    margin-right: auto;
   }
   .story .content .data{
     font-weight: 300;
     font-size: 14px;
     line-height: 14px;
     margin-top: 0.5rem;
-    color: #273350;
+    color: #fff;
     margin-right: auto;
     width: fit-content;
     margin-left: 1rem;
@@ -2678,7 +2789,7 @@ sviluppare in azienda.
     font-size: 14px;
     line-height: 14px;
     margin-top: 0.5rem;
-    color: #273350;
+    color: #fff;
     margin-right: 1rem;
     margin-left: auto;
     width: fit-content;
@@ -2690,6 +2801,9 @@ sviluppare in azienda.
     margin-top: 3rem;
     overflow-y: scroll;
     height: 65%;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
   }
   
   .second {
@@ -3477,6 +3591,17 @@ sviluppare in azienda.
     background: #3e455052;
   }
 
+  .navMain .active{
+    background: #3e455052;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    border-radius: 12px;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+  }
+
   .nav li .active {
     background: #3e455052;
     padding-left: 1rem;
@@ -3988,21 +4113,26 @@ sviluppare in azienda.
     padding: 2rem;
     width: 100%;
     background: #ada996;
-    background: -webkit-linear-gradient( to top, #000000d1, #00000075, #0000000f, transparent );
-    background: linear-gradient( to top, #000000d1, #00000075, #0000000f, transparent );
+    background: -webkit-linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
+    background: linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
     border-radius: 30px;
     width: 100%;
+    display: flex;
+  }
+
+  .featured .info_story .basic_informations{
+    margin-right: auto;
   }
 
   .featured .info_story .username{
     color: white;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 600;
   }
 
   .featured .info_story .jobtitle{
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
   }
 
@@ -4033,11 +4163,12 @@ sviluppare in azienda.
     color: #fff;
     padding: 2rem;
     padding-bottom: 0.5rem;
-    padding-top: 0;
+    padding-top: 2rem;
     font-size: 30px;
     line-height: 34px;
     width: 30vw;
   }
+
   .featured p {
     color: #fff;
     padding: 2rem;

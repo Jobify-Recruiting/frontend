@@ -153,9 +153,6 @@ export default {
       var azienda = document.getElementById("azienda");
       azienda.textContent = this.storie[x-1].azienda;
 
-      var data = document.getElementById("data");
-      data.textContent = this.storie[x-1].data;
-
       var ruolo = document.getElementById("ruolo");
       ruolo.textContent = this.storie[x-1].ruolo;
 
@@ -189,7 +186,7 @@ export default {
       <div class="first">
         <div class="second">
           <div class="featureds">
-            <!--<div class="titles">
+            <div class="titles">
               <h2>Storie dei talenti</h2>
               <div class="buttons">
                 <div class="btnScrollL" @click="btnScrollSx()">
@@ -223,817 +220,140 @@ export default {
                   </svg>
                 </div>
               </div>
-            </div>-->
-            <!--<div class="featuredContent">
+            </div>
+            <div class="featuredContent">
               <div class="featured" @click="story(1)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     L’approccio umano è stato una componente fondamentale di tutto il processo...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username0"></div>
-                  <div class="jobtitle" id="jobtitle0"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username0"></div>
+                    <div class="jobtitle" id="jobtitle0"></div>
+                  </div>
+
+                  <div class="btn">
+                    Scopri
+                  </div>
+                  
                 </div>
               </div>
               <div class="featured" @click="story(2)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username1"></div>
-                  <div class="jobtitle" id="jobtitle1"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username1"></div>
+                    <div class="jobtitle" id="jobtitle1"></div>
+                  </div>
+                  <div class="btn">
+                    Scopri
+                  </div>
                 </div>
               </div>
               <div class="featured" @click="story(3)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username2"></div>
-                  <div class="jobtitle" id="jobtitle2"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username2"></div>
+                    <div class="jobtitle" id="jobtitle2"></div>
+                  </div>
+
+                  <div class="btn">
+                    Scopri
+                  </div>
                 </div>
               </div>
               <div class="featured" @click="story(4)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     Rispetto alle agenzie di recruiting sono spesso stata molto diffidente...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username3"></div>
-                  <div class="jobtitle" id="jobtitle3"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username3"></div>
+                    <div class="jobtitle" id="jobtitle3"></div>
+                  </div>
+
+                  <div class="btn">
+                    Scopri
+                  </div>
                 </div>
               </div>
               <div class="featured" @click="story(5)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     L'esperienza vissuta con Jobify è stata molto positiva...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username4"></div>
-                  <div class="jobtitle" id="jobtitle4"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username4"></div>
+                    <div class="jobtitle" id="jobtitle4"></div>
+                  </div>
+
+                  <div class="btn">
+                    Scopri
+                  </div>
                 </div>
               </div>
               <div class="featured" @click="story(6)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 1, 2022</p>
                   <h2>
                     Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username5"></div>
-                  <div class="jobtitle" id="jobtitle5"></div>
+                  <div class="basic_informations">
+                    <div class="username" id="username5"></div>
+                    <div class="jobtitle" id="jobtitle5"></div>
+                  </div>
+
+                  <div class="btn">
+                    Scopri
+                  </div>
                 </div>
               </div>
               <div class="featured" @click="story(7)">
                 <div class="hover"></div>
                 <div class="text">
-                  <p>Dicembre 8, 2022</p>
                   <h2>
                     Mi sono sentita da subito a mio agio, capita e compresa...
                   </h2>
                 </div>
                 <div class="info_story">
-                  <div class="username" id="username5"></div>
-                  <div class="jobtitle" id="jobtitle5"></div>
-                </div>
-              </div>
-            </div>-->
-            <div class="feedbackDiv" id="feedback">
-      <div class="content">
-        <h2>I clienti dicono di noi</h2>
-        <div class="buttons">
-          <div class="btnScrollL" @click="btnScrollSx()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              fill="#0c2550"
-              class="bi bi-chevron-left"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-              />
-            </svg>
-          </div>
-          <div class="btnScrollR" @click="btnScrollDx()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              fill="#0c2550"
-              class="bi bi-chevron-right"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-              />
-            </svg>
-          </div>
-        </div>
-        <div class="feedbacks" id="feedbacksContainer">
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Dal nostro primo incontro ho riconosciuto in Davide volontà,
-              dedizione e una importante preparazione culturale.Doti preziose
-              nel contesto lavorativo di riferimento.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Stefano Ruscito</p>
-                <p class="worktitle">Sales Account presso Umana spa</p>
-              </div>
-            </div>
-          </div>
-              <div class="feedback">
-                <p class="quote">"</p>
-                <h3>
-                  Sono mesi che ormai collaboro strettamente con JOBIFY e devo dire che sono pienamente soddisfatto del servizio di recruiting per la mia azienda. Ci tengo a sottolineare la massima disponibilità fornita nell’ascoltare al meglio le mie esigenze per la ricerca dei candidati adatti. In particolare, ho apprezzato molto poter avere un contatto diretto ed un supporto costante nella delicata fase di assunzione di nuovo personale. Questo per me è motivo di grande fiducia nei confronti dell’azienda, che si è sempre dimostrata eccellente sia a livello umano che professionale, affiancandomi pienamente nel processo di selezione di nuovo personale.
-                </h3>
-                <div class="feedbackInfo">
-                  <div
-                    class="feedbackInfoPhoto"
-                    style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/adamo.jpeg);
-                    "
-                  ></div>
-                  <div class="feddbackData">
-                    <p class="author">Alessandro Adamo</p>
-                    <p class="worktitle">CEO & Founder presso Dotstay.com</p>
+                  <div class="basic_informations">
+                    <div class="username" id="username6"></div>
+                    <div class="jobtitle" id="jobtitle6"></div>
                   </div>
-                </div>
-              </div>
-              <div class="feedback">
-                <p class="quote">"</p>
-                <h3>
-                  Il feedback sulla collaborazione con Jobify Recruiting non può essere che positivo. Siamo stati veloci a trovare, valutare ed assumere la risorsa come anche in altri processi di R&S portati avanti insieme. Non c’è nulla da appuntare e ringrazio l'Head Hunter di riferimento per il supporto e la presenza: Martina ha capito al volo di cosa avevamo bisogno ed i suoi commenti sui candidati in short list sono stati preziosi.
-                </h3>
-                <div class="feedbackInfo">
-                  <div
-                    class="feedbackInfoPhoto"
-                    style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
-                    "
-                  ></div>
-                  <div class="feddbackData">
-                    <p class="author">Ivan Rallo</p>
-                    <p class="worktitle">Operations Manager presso AUTOSYSTEM Società di servizi S.p.a.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feedback">
-                <p class="quote">"</p>
-                <h3>
-                  Consiglio Jobify per il loro approccio di profonda umanità e professionalità verso le esigenze dei loro clienti, per la loro capacità di ascoltare e orientare le esigenze aziendali verso il candidato migliore, in maniera chiara e puntuale. Ho apprezzato gli aggiornamenti costanti sulla posizione affidatagli, la capacità di saper cogliere sfumature, offrire riflessioni nel momento dell’intervista conoscitiva con noi aziende, in cui si crea subito un clima di reciproca fiducia. Quest’ultima non è stata un mero raccogliere dati, ma un capire davvero le mie esigenze , offrendo al tempo stesso una consulenza di valore , da cui traspare la grande competenza nel settore della ricerca e selezione e la passione, di Jobify , per il loro impegno professionale che diviene una vera e propria missione, per far incontrare aziende e candidati , in un clima sereno , dove generare una reciproca opportunità.
-                </h3>
-                <div class="feedbackInfo">
-                  <div
-                    class="feedbackInfoPhoto"
-                    style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/roberto.jpg);
-                    "
-                  ></div>
-                  <div class="feddbackData">
-                    <p class="author">Roberto Felli</p>
-                    <p class="worktitle">Titolare presso Studio Felli</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feedback">
-                <p class="quote">"</p>
-                <h3>
-                  Innanzitutto ci ha stupite l'intervista di approfondimento con attenzione non solo alle esigenze tecniche della figura richiesta ma anche e soprattutto umane, con domande mirate e approfondite, per riuscire a trovare una figura compatibile a 360 gardi. Un approccio che non ci aspettavamo. Apprezzata non solo la disponibilità e l'aggiornamento costante ma anche la professionalità che portava alla condivisione di candidati mirati, con un'attenzione alla qualità piuttosto che alla quantità, che riduce la perdita di tempo. Interpretazione dei nostri desideri con consapevolezza del e sul mercato.
-                </h3>
-                <div class="feedbackInfo">
-                  <div
-                    class="feedbackInfoPhoto"
-                    style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pamela.jpeg);
-                    "
-                  ></div>
-                  <div class="feddbackData">
-                    <p class="author">Pamela Solitario</p>
-                    <p class="worktitle">HR Manager presso Quality Lab Srl (ContaQ)</p>
-                  </div>
-                </div>
-              </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Con Davide portiamo avanti da tempo diverse iniziative in ambito
-              HR. La sua voglia di ridisegnare il futuro del settore con
-              approcci innovativi lo rende un esempio da seguire. Cultura,
-              competenza, serietà e tanta voglia di fare sono solo alcune delle
-              qualità che contraddistinguono Davide.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-10-at-18.01.29-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Fabio Panella</p>
-                <p class="worktitle">
-                  Director of Sales & Operations SEUR - Talent.com
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Posso descrivere Davide semplicemente in due parole: “competenza”
-              e “voglia di fare”. La sua spiccata professionalità gli consente
-              di muoversi in qualsiasi contesto.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-17-at-19.19.22-2-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Marco Calabrese</p>
-                <p class="worktitle">
-                  Direttore delle Risorse Umane e Organizzazione AG Group Italy
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Lavoro con Davide in ambito associativo AIDP ed è un vero piacere.
-              Davide è un vero appassionato di tutte le diverse sfaccettature
-              del mondo HR e la sua principale dote direi che è la curiosità.
-              Ascolta ed approfondisce.È generoso e si mette sempre a
-              disposizione. I suoi punti di forza direi problem solving e forte
-              competenza nei processi di selezione e sviluppo delle risorse
-              umane.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-21-at-19.47.39-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Marco Micaroni</p>
-                <p class="worktitle">
-                  Responsabile relazioni sindacali e contenzioso del lavoro
-                  AUTOSTRADE PER L’ITALIA SPA
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Ho avuto modo di conoscere Davide all'interno della community
-              AIDP. E ne ho subito tratto un'ottima impressione. Dinamico,
-              aperto a capire il mondo HR che gli sta intorno e capace di
-              portare contributi professionali di valore. Tutto questo
-              supportato da una gran voglia e volontà di fare cose innovative e
-              con grande competenza.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-22-at-11.14.00-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Nicola Rossi</p>
-                <p class="worktitle">
-                  Senior Director, Managing Director Italy at Monster Italia
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Un profilo a 360 gradi già raggiunto in giovane età. Davide è un
-              professionista che ha maturato competenze importanti in diversi
-              ambiti culturali, produttivi e geografici. A tutto questo si
-              aggiunge energia e attenzione elementi dimostrati dalla sua
-              attività di commentatore in diversi ambiti multimediali.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/david-trotti-2.jpg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Davide Tratti</p>
-                <p class="worktitle">Presidente regionale AIDP Lazio</p>
+                  <div class="btn">
+                    Scopri
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Ho conosciuto Davide Maggio e ho avuto l’opportunità di apprezzare
-              le sue competenze specifiche, nell’area HR, nella più estesa
-              accezione dell’espressione, collaborando su specifici incarichi
-              professionali e su altri fronti, non ultimo quello della
-              pubblicistica e della editoria divulgativa e di approfondimento.
-              Ho apprezzato le sue qualità umane e professionali, in termini di
-              efficace ed efficiente risposta alle necessità informative e
-              problematiche del mio Studio.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/1517557072323.jpg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Pasquale Dui</p>
-                <p class="worktitle">
-                  Avvocato e Docente presso Università Bicocca
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Ogni volta che entro in contatto con Davide c'è sempre qualcosa di
-              nuovo da scoprire ed una opportunità da cogliere. Poche
-              chiacchiere, dritto al punto, focus e sempre con il sorriso.
-              Difficile non entrare in sintonia. Per un settore come il nostro,
-              quello delle Risorse Umane, l'affidabilità, la preparazione, le
-              relazioni e la concretezza sono i quattro elementi cardine che
-              creano la differenza tra dilettanti e professionisti. Davide è al
-              top in tutti e quattro.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-12-at-16.03.00-1-2-1-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Marco Fattizio</p>
-                <p class="worktitle">CEO di Euspert- Bianco lavoro</p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Davide Maggio è una persona da cui puoi apprendere qualcosa
-              conversando di fronte ad un tavolo di lavoro o sorseggiando un
-              caffè amichevole ad un bar. È un professionista di ampie vedute e
-              con un acuto spirito di osservazione che mi ha trasmesso molto,
-              sia professionalmente sia umanamente.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Serena-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Serena Di Maria</p>
-                <p class="worktitle">
-                  Dottoressa in Lingue Orientali e content creator
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              “Davide, professionale, attento, intuitivo e travolgente.
-              Innamorato del suo lavoro al punto da trasmettere tale passione
-              anche a chi come me, opera in un settore differente. Lo definirei
-              un “Freccia Rossa”.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/foto_ylenia_muratore-Ottimizzata.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Ylenia Muratore</p>
-                <p class="worktitle">
-                  Transfer Pricing Consultant presso Deloitte spa
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Davide Maggio è un giovane talento del mondo HR e unisce a una
-              solida preparazione a 360° in questo settore, una cultura generale
-              ampia e un modo di lavorare improntato al raggiungimento di
-              obiettivi specifici. Ha una ottima conoscenza delle best pratices
-              americane e del mondo aziendale italiano. Una rara profondità
-              psicologica e dei valori etici "antichi" ne fanno un
-              professionista estremamente affidabile e performante. Ho avuto la
-              fortuna di collaborare in vari contesti e si è sempre dimostrato
-              un leader giovane, con esperienza di oltre 7 anni nel ruolo di HR
-              Manager, e una persona per bene. Se avete un'azienda e volete fare
-              la differenza nelle Risorse Umane, Davide Maggio fa al caso
-              vostro.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Albino.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Albino Ruberti</p>
-                <p class="worktitle">Project Manager e Business Coach</p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Problem solver e consulenza risorse Umane sono i principi che
-              caratterizzano Davide. Professionista attento alla cura dei
-              dettagli.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Antonio-Signorello.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Antonio Signorello</p>
-                <p class="worktitle">
-                  HR recruiter service, fives Interlogistics spa
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Ho il piacere di conoscere e collaborare con Davide il quale
-              dimostra in ogni occasione di confronto e scambio di idee di
-              essere non solo un professionista centrato sul pezzo in ciò che
-              fa, ma fa della sua umiltà personale e fame di sapere il perno in
-              cui ruota la sua essenza di HR manager.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-19.20.29-1-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Cinzia Calzavara</p>
-                <p class="worktitle">
-                  Formatore soft skills e HR, Consulente delle Politiche Attive
-                  del lavoro. Presso Adecco & Randstad
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Dimenticate i pregiudizi sul ruolo dell’HR. Davide Maggio è una
-              vera e necessaria rivoluzione nel settore delle risorse umane.
-              Lavorare con Davide comporta un arricchimento umano e
-              professionale. Un talento giovane, determinato, pieno di risorse
-              creative e innovative, ma soprattutto dedito all’ascolto attivo
-              del cliente, è una necessaria rivoluzione nelle RU.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-13-at-12.15.45-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Marta De Prezzo</p>
-                <p class="worktitle">Junior HR recruiter randstand</p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Attendo, acuto e dal profondo spessore umano e professionale,
-              Davide Maggio ha più volte dato modo di creare valore e
-              opportunità al network di professionisti che lo circondano.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Gianluca-Caputo.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Gianluca Caputo</p>
-                <p class="worktitle">CEO Softmine Srl</p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Davide è un HR manager che stimo profondamente. Nonostante la
-              giovane età - grazie alle sue competenze e alla sua
-              determinazione- ha già raggiunto importanti traguardi
-              professionali. Dialogando con lui traspare fin da subito la forte
-              passione e dedizione verso il proprio lavoro. Ha inoltre spiccate
-              doti d’ascolto e osservazione. Davide è un esempio per tutti i
-              giovani che voglio intraprendere un percorso professionale in un
-              settore ad alta competitività come quello delle risorse umane.
-              Lavorare con Davide ti arricchisce come professionista e come
-              individuo.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-11-at-22.41.13-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Marika Orlandi</p>
-                <p class="worktitle">
-                  Talent Acquisition Specialist di Facile.it
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Ho trovato in Davide un giovane professionista entusiasta del
-              proprio lavoro che si impegna sempre a svolgere al meglio. Ha già
-              una buona esperienza acquisita, ma al contempo sa ascoltare ed è
-              sempre pronto a migliorarsi. Da un anno è in partnership con
-              Kekyjob e si è rivelato un elemento utile ed efficace per la
-              crescita dell'azienda.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-13-at-00.20.13-1-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Francesco Margreth</p>
-                <p class="worktitle">CEO di kekyjob Srl</p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Davide è un esperto HR Manager, estremamente professionale,
-              flessibile e sensibile alle esigenze del cliente capace di offrire
-              sempre un servizio di qualità.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/NOme-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Pasquale De Luca bossa</p>
-                <p class="worktitle">HR Manager</p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Ho conosciuto Davide in occasione della nostra collaborazione per
-              la Rubrica HR di Bianco Lavoro. Da subito mi ha colpito la sua
-              professionalità e il suo entusiasmo. Davide è un manager
-              determinato, preparato, intraprendente con la voglia costante di
-              migliorarsi e aggiornarsi. Ottimo problem solver, svolge il suo
-              lavoro con impegno e dedizione per trovare la migliore soluzione
-              al problema. Un professionista completo a 360°, un talento che
-              tutte le aziende vorrebbero on-board.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Francesca.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Francesca Sardella</p>
-                <p class="worktitle">HR Business presso IVI RMA GLOBAL</p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Ho conosciuto Davide non molto tempo fa,subito ho percepito la sua
-              voglia di fare bene e la sua grande determinazione nel raggiungere
-              obiettivi. Oggi sto conoscendo oltre al professionista anche una
-              persona vera e sincera che vuole condividere relazioni umane
-              propio come me. Vi consiglio Davide come persona di valori e come
-              professionista.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-19-at-09.39.21-5-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Alessandro Gian Maria Ferri</p>
-                <p class="worktitle">CEO edicole &100</p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Davide Maggio è un nuovo e vero amico. Giovane intraprendente e
-              brillante, capace di vedere il vero potenziale nelle persone e di
-              valorizzarlo, è un leader capace e un talentuoso manager. Ciò che
-              ha colpito profondamente la mia attenzione di lui, il giorno in
-              cui ci siamo conosciuti, è stata la forza del suo carattere e come
-              questa fosse indirizzata naturalmente verso la cura e l'attenzione
-              presso gli altri. Un grande uomo e professionista, un altruista e
-              solidale amico
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Laurent-otimizzato-e1617780132679.jpg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Laurent Vercken de Vreuschmen</p>
-                <p class="worktitle">
-                  Professore Presso i Ministeri dell'Economia e Finanza e della
-                  Difesa. Direttore e editore di Edizioni &100
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Ho avuto modo di collaborare con Davide Maggio, persona di grande
-              competenza, capacità e talento. Puntuale, brillante e affidabile,
-              ha saputo cogliere l'esigenza della nostra azienda, fornendo
-              soluzioni efficaci e vincenti. A ciò si aggiunge una forte
-              connotazione empatica e un vivo entusiasmo, che caratterizzano
-              piacevolmente l'esperienza professionale, aggiungendone valore.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/Piace-ELena.-ottimizzata.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Elena Piave</p>
-                <p class="worktitle">
-                  Coordinatore Nazionale - Consorzio Progresso
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback">
-            <p class="quote">"</p>
-            <h3>
-              Lavorare con David è sinonimo di professionalità e affidabilità, a
-              tal punto che il suo modus operandi riesce a rendere semplice ogni
-              processo. Mirabile è l'abilità nel cercare soluzioni adatte al
-              contesto o anche solo far notare prospettive alternative e
-              innovative.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/05/WhatsApp-Image-2021-05-02-at-23.46.37-1-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Chiara Temperanza</p>
-                <p class="worktitle">
-                  HR Assistant & Recruiter, KOHLER Engines EMEA
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feedback is-clone">
-            <p class="quote">"</p>
-            <h3>
-              Dal nostro primo incontro ho riconosciuto in Davide volontà,
-              dedizione e una importante preparazione culturale.Doti preziose
-              nel contesto lavorativo di riferimento.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Stefano Ruscito</p>
-                <p class="worktitle">Sales Account presso Umana spa</p>
-              </div>
-            </div>
-          </div>
-          <div class="feedback is-clone">
-            <p class="quote">"</p>
-            <h3>
-              Con Davide portiamo avanti da tempo diverse iniziative in ambito
-              HR. La sua voglia di ridisegnare il futuro del settore con
-              approcci innovativi lo rende un esempio da seguire. Cultura,
-              competenza, serietà e tanta voglia di fare sono solo alcune delle
-              qualità che contraddistinguono Davide.
-            </h3>
-            <div class="feedbackInfo">
-              <div
-                class="feedbackInfoPhoto"
-                style="
-                  background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-10-at-18.01.29-1-1.jpeg);
-                "
-              ></div>
-              <div class="feddbackData">
-                <p class="author">Fabio Panella</p>
-                <p class="worktitle">
-                  Director of Sales & Operations SEUR - Talent.com
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
             </div>
             <div class="story" id="1">
               <div class="close_story" @click="close_story(1)">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22"
                                 height="22"
-                                fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                fill="#0a1e4375" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                   </svg>
                 </div>
@@ -1042,7 +362,6 @@ export default {
                 <div style="display: flex; align-items: center; width: 100%; text-align: center;">
                   <div class="ruolo" id="ruolo"></div> 
                   <div class="azienda" id="azienda"></div> 
-                  <div class="data" id="data"></div>
                 </div>
                 <div class="storia_testo" id="storia_testo"></div>
               </div>
@@ -1332,7 +651,12 @@ export default {
 
   .story .close_story:hover {
     border-color: white;
+    color: #fff;
     transform: rotate(90deg);
+  }
+
+  .story .close_story:hover svg {
+    fill: #fff;
   }
 
   .story .content .nickname{
@@ -1346,10 +670,11 @@ export default {
 
   .story .content .azienda{
     font-weight: 300;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 14px;
     margin-top: 0.5rem;
     color: #fff;
+    margin-right: auto;
   }
   .story .content .data{
     font-weight: 300;
@@ -1381,6 +706,7 @@ export default {
     height: 65%;
     font-weight: 300;
     color: #fff;
+    text-align: center;
   }
 
   .second {
@@ -1500,21 +826,26 @@ export default {
     padding: 2rem;
     width: 100%;
     background: #ada996;
-    background: -webkit-linear-gradient( to top, #000000d1, #00000075, #0000000f, transparent );
-    background: linear-gradient( to top, #000000d1, #00000075, #0000000f, transparent );
+    background: -webkit-linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
+    background: linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
     border-radius: 30px;
     width: 100%;
+    display: flex;
+  }
+
+  .featured .info_story .basic_informations{
+    margin-right: auto;
   }
 
   .featured .info_story .username{
     color: white;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 600;
   }
 
   .featured .info_story .jobtitle{
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
   }
 
@@ -1545,11 +876,12 @@ export default {
     color: #fff;
     padding: 2rem;
     padding-bottom: 0.5rem;
-    padding-top: 0;
+    padding-top: 2rem;
     font-size: 30px;
     line-height: 34px;
     width: 30vw;
   }
+  
   .featured p {
     color: #fff;
     padding: 2rem;
@@ -1720,6 +1052,7 @@ export default {
     transition: all 0.3s ease-out;
     z-index: 10;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 50%;
   }
 
   .btn:hover {

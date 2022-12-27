@@ -93,8 +93,12 @@ export default {
         <div class="link">Termini & Condizioni</div>
       </div>
       <div class="right">
-        <div class="link">Facebook</div>
-        <div class="link">Linkedin</div>
+        <a href="https://www.facebook.com/jobifyrecruiting">
+          <div class="link">Facebook</div>
+        </a>
+        <a href="https://www.linkedin.com/company/jobify-recruiting/">
+          <div class="link">Linkedin</div>
+        </a>
       </div>
     </div>
   </div>
