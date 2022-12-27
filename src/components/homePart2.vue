@@ -1569,57 +1569,6 @@ cercano personale.
                   </div>
                 </div>
               </div>
-
-              <div class="feedback is-clone">
-                <p class="quote">"</p>
-                <h3>
-                  Dal nostro primo incontro ho riconosciuto in Davide volontà, dedizione e un’importante preparazione
-                  culturale. Doti preziose nel contesto lavorativo di riferimento. Il mondo HR è ancora troppo spesso un
-                  mondo che si basa su analisi del CV e delle soft e hard skills senza valutare il complesso patrimonio di ideali
-                  e valori del candidato. Per questo Davide ama parlare di talenti piuttosto che candidati e di persone prima
-                  che professionisti, dato che ognuno possiede caratteristiche e qualità che permettono all’azienda di
-                  crescere ed essere sempre più competitiva. Una visione innovativa delle risorse umane che testimonia la
-                  ampiezza di vedute d Davide.
-                </h3>
-                <div class="feedbackInfo">
-                  <div
-                    class="feedbackInfoPhoto"
-                    style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-16-at-21.11.17-1-1-1.jpeg);
-                    "
-                  ></div>
-                  <div class="feddbackData">
-                    <p class="author">Stefano Ruscito</p>
-                    <p class="worktitle">Sales Account presso Umana spa</p>
-                  </div>
-                </div>
-              </div>
-              <div class="feedback is-clone">
-                <p class="quote">"</p>
-                <h3>
-                  Con Davide portiamo avanti da tempo diverse iniziative in ambito HR. La sua voglia di ridisegnare il futuro
-del settore con approcci innovativi lo rende un esempio da seguire. Cultura, competenza, serietà e tanta
-voglia di fare sono solo alcune delle qualità che contraddistinguono Davide. Davide conosce perfettamente
-il mondo HR in ogni sua sfaccettatura e sa comprendere il cliente per offrirgli sempre la risposta più
-adeguata alle sue esigenze. Con Davide le aziende incontrano i talenti e i talenti incontrano le aziende in
-modo solo apparentemente semplice per un risultato sempre di eccellenza, che porta alla crescita
-professionale e personale del candidato e al successo del business.
-                </h3>
-                <div class="feedbackInfo">
-                  <div
-                    class="feedbackInfoPhoto"
-                    style="
-                      background-image: url(https://davidemaggiohr.it/wp-content/uploads/2021/07/WhatsApp-Image-2021-07-10-at-18.01.29-1-1.jpeg);
-                    "
-                  ></div>
-                  <div class="feddbackData">
-                    <p class="author">Fabio Panella</p>
-                    <p class="worktitle">
-                      Director of Sales & Operations SEUR - Talent.com
-                    </p>
-                  </div>
-                </div>
-              </div>
         </div>
       </div>
     </div>
@@ -2226,6 +2175,7 @@ professionale e personale del candidato e al successo del business.
     margin-left: auto;
     width: fit-content;
     margin-right: 5rem;
+    margin-bottom: 1rem;
   }
 
   .workflow .btnScrollR {
