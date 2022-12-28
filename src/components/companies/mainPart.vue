@@ -1995,7 +1995,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .cols .col h3 {
-    color: #fff;
+    color: #0c2751;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;

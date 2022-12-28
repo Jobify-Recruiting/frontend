@@ -1474,7 +1474,7 @@ export default {
     padding: 3rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    width: 35vw;
+    height: 25vw;
   }
 
   .workflow .columns .column .circle {

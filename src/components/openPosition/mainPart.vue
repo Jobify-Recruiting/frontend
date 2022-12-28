@@ -2481,7 +2481,7 @@ sviluppare in azienda.
             <div
               class="col"
               style="
-                background-image: url(/src/assets/storie.jpg);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/storie.jpg);
                 background-size: cover;
                 border-radius: 30px;
                 background-repeat: no-repeat;
