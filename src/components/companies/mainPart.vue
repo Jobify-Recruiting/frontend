@@ -439,12 +439,9 @@ professionali e si riflette nella cultura aziendale</p>
                   <div class="number">1</div>
                   <h2>Intervista al cliente</h2>
                   <p>
-                    Descrizione dello step, Jobify, la tua ricerca e selezione,
-                    la tua ricerca e selezione, la tua ricerca e selezione, la
-                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
-                    la tua ricerca e selezione, la tua ricerca e selezione, la
-                    tua ricerca e selezione, la tua ricerca e selezione, la tua
-                    ricerca e selezione
+                    Trovare lavoro rapidamente significa avere le idee chiare non solo sull’azienda per cui ci si candida e sulla
+                    posizione, ma anche sulle proprie esigenze, valori e ideali e aspettative. Per questo in Jobify Recruiting
+                    intervistiamo i candidati in modo da proporre solo annunci in linea con quello che si vuole dal nuovo lavoro.
                   </p>
                 </div>
               </div>
@@ -454,7 +451,7 @@ professionali e si riflette nella cultura aziendale</p>
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#fff"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -468,12 +465,10 @@ professionali e si riflette nella cultura aziendale</p>
                   <div class="number">2</div>
                   <h2>Job description</h2>
                   <p>
-                    Descrizione dello step, Jobify, la tua ricerca e selezione,
-                    la tua ricerca e selezione, la tua ricerca e selezione, la
-                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
-                    la tua ricerca e selezione, la tua ricerca e selezione, la
-                    tua ricerca e selezione, la tua ricerca e selezione, la tua
-                    ricerca e selezione
+                    Chi cerca lavoro lo fa a partire da una determinata Job Description: sapere chi si è e cosa si sa fare, quali
+                    sono i propri talenti e potenzialità significa presentarsi alle aziende con una marcia in più rispetto agli altri
+                    candidati. Per questo in Jobify Recruiting conoscendo le soft e hard skills troviamo l’annuncio per mettere
+                    la persona giusta nell’azienda giusta.
                   </p>
                 </div>
               </div>
@@ -485,7 +480,7 @@ professionali e si riflette nella cultura aziendale</p>
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#fff"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -497,15 +492,11 @@ professionali e si riflette nella cultura aziendale</p>
                 </div>
                 <div class="background transition">
                   <div class="number">3</div>
-                  <h2>Lancio annuncio & Head Hunting</h2>
+                  <h2>Head Hunting e incontro con l’azienda</h2>
                   <p>
-                    Descrizione dello step, Jobify, la tua ricerca e selezione,
-                    la tua ricerca e selezione, la tua ricerca e selezione, la
-                    tua ricerca e selezione, la tua ricerca e selezione, Jobify,
-                    <span
-                      >la tua ricerca e selezione, la tua ricerca e
-                      selezione</span
-                    >
+                    Dopo l’intervista e l’analisi della job description abbiamo in mano gli strumenti per cominciare la ricerca del
+                    lavoro e le basi per creare il match vincente tra azienda e candidato. Fare Head Hunting significa trovare la
+                    soluzione migliore per entrambe le parti e portare a un rapporto di lavoro proficuo e che dura nel tempo.
                   </p>
                 </div>
               </div>
@@ -515,7 +506,7 @@ professionali e si riflette nella cultura aziendale</p>
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#fff"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -549,7 +540,7 @@ professionali e si riflette nella cultura aziendale</p>
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#fff"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -581,7 +572,7 @@ professionali e si riflette nella cultura aziendale</p>
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#fff"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -615,7 +606,7 @@ professionali e si riflette nella cultura aziendale</p>
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#fff"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -645,7 +636,7 @@ professionali e si riflette nella cultura aziendale</p>
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
-                    fill="#fff"
+                    fill="#0c2550"
                     class="bi bi-arrow-right"
                     viewBox="0 0 16 16"
                   >
@@ -2200,7 +2191,7 @@ appuntamento con Jobify Recruiting.
     padding: 3rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 30vw;
+    height: 35vw;
   }
 
   .workflow .columns .column .circle {

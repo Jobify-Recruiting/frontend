@@ -420,7 +420,7 @@ export default {
         <div class="workflow" id="workflow">
           <div class="workflowTitle">
             <h2 style="margin-bottom: 0rem !important">
-              Gli step del processo di ricerca e selezione
+              Schema del processo
             </h2>
           </div>
           <div class="buttons">
@@ -1474,7 +1474,7 @@ export default {
     padding: 3rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 25vw;
+    height: 35vw;
   }
 
   .workflow .columns .column .circle {
