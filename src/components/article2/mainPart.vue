@@ -124,17 +124,17 @@ export default {
           {{this.$route.params.Title}}
         </div>
         <div class="imageArticle"></div>
-        <div class="dateDiv">
+        <div class="dateDiv_article">
           Data di pubblicazione: <span id="datePage">{{this.$route.params.Date}}</span>
         </div>
         <div v-if="this.$route.params.Name1">
-          <div class="dateDiv">
-            Rubrica curata da: <span id="datePage">{{this.$route.params.Name1}}</span>, {{this.$route.params.Role1}}
+          <div class="dateDiv_article">
+            Rubrica curata da: <span id="datePage">{{this.$route.params.Name1}} ,</span> <span id="datePage">{{this.$route.params.Role1}}</span>
           </div>
         </div>
         <div v-if="this.$route.params.Name2">
-          <div class="dateDiv">
-            In collaorazione con: <span id="datePage">{{this.$route.params.Name2}}</span>, {{this.$route.params.Role2}}
+          <div class="dateDiv_article">
+            In collaorazione con: <span id="datePage">{{this.$route.params.Name2}} ,</span> <span id="datePage">{{this.$route.params.Role2}}</span>
           </div>
         </div>
         
@@ -146,6 +146,35 @@ export default {
     </div>
   </div>
 </template>
+<style>
+.dateDiv_article{
+  font-size: 16px;
+    line-height: 20px;
+    color: #0c2550;
+    font-weight: 600;
+    margin-left: 11rem;
+    margin-top: 1rem;
+}
+
+.dateDiv_article span{
+  font-weight: 300;
+}
+
+.article img {
+  margin-bottom: 2rem;
+}
+
+.article a{
+  font-size: 16px !important;
+    line-height: 16px !important;
+    width: 100% !important;
+}
+
+.article a:hover{
+  color: #ed3fb4 !important; 
+}
+
+</style>
 <style scoped>
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");

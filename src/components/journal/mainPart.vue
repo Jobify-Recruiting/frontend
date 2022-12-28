@@ -291,6 +291,42 @@ export default {
                   img: "https://www.risorseumane-hr.it/wp-content/uploads/2022/05/La-ricerca-e-selezione-nellera-digitale-1020x480.jpg",
                   subtitle: "Le attività di ricerca di selezione del personale rappresentano uno dei momenti più complessi ...",
                 },
+                {
+                  date: "2022",
+                  title: "Diversity Management. Genere e Generazioni per una sostenibilità resiliente.",
+                  img: "https://thingsss.s3.eu-central-1.amazonaws.com/diversity+management+1.jpg",
+                  subtitle: "Abbiamo chiesto a Davide Maggio, Human Resource Manager Genius...",
+                  text: "<img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/diversity+management+2.png\"/><p>Eccoci dunque all&rsquo;ultimo contributo di questa nostra fatica. Abbiamo chiesto a Davide Maggio, Human Resource Manager Genius Elettrodomestici s.r.l., giovane HR di una media azienda della provincia laziale, Genius elettrodomestici srl, che &egrave; azienda punto di riferimento per il basso Lazio nel settore dell&rsquo;elettronica di consumo. Gli abbiamo rivolto una domanda secca: Selezione e diversity ci racconti come la Direzione risorse umane rende e render&agrave; compatibili questi due mondi? Ecco cosa ci ha risposto. Da alcuni anni in molte organizzazioni si sente parlare di &ldquo;diversity&rdquo; e &ldquo;inclusion&rdquo;. Sono concetti complementari. Se con diversity si intende l&rsquo;insieme di caratteristiche soggettive piuttosto che determinate condizioni che rendono unici, con l&rsquo;inclusion queste &ldquo;differenze&rdquo; vengono abbattute, trasformandosi in opportunit&agrave;.Al giorno d&rsquo;oggi la diversit&agrave; culturale rappresenta la priorit&agrave; per numerose organizzazioni. Per un numero crescente di aziende la diversity &egrave; diventata una questione di sostanza prima ancora che di forma. Ne &egrave; prova il fatto che molte di queste imprese si sono dotate di un diversity director, figura che si occupa di gestire i processi di selezione dando il giusto valore al fattore &ldquo;diversit&agrave;&rdquo;, considerando tutte le caratteristiche della figura ricercata.</p>    <a href=\"https://www.amazon.it/Diversity-2020-Giuditta-Alessandrini/dp/8869927571/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;dchild=1&amp;keywords=Diversity+management&amp;qid=1618294398&amp;sr=8-1\">Compra il Libro Completo</a>",
+                  name1:"Davide Maggio",
+                  role1: "Co-autore",
+                },
+                {
+                  date: "2022",
+                  title: "Quale futuro attende gli HR DIRECTOR e quali strumenti avranno a loro disposizione - Sole 24 Ore",
+                  img: "https://thingsss.s3.eu-central-1.amazonaws.com/Quale+futuro+attende+gli+HR+Director.png",
+                  subtitle: "Cari lettori, oggi come non mai tra le soft skill che vengono richieste agli uomini del personale...",
+                  text: "<h3>Quale futuro attende gli HR DIRECTOR e quali strumenti avranno a disposizione.</h3><p>Cari lettori, oggi come non mai tra le soft skill che vengono richieste agli uomini del personale c&rsquo;&egrave; la predittivit&agrave;. Redazione Meliusform.</p><h3>Il ruolo sociale della contrattazione: la diversity &amp; inclusion nel Gruppo Autostrade.</h3><p>La contrattazione collettiva pu&ograve; svolgere un compito fondamentale anche nel campo della &ldquo;diversity, equity &amp; inclusion&rdquo;, aiutando in materia a passare dalla teoria alla pratica. Di Marco Micaroni.</p><h3>Affermare il valore della Pubblica Amministrazione richiede nuove frontiere di formazione.</h3><p>Nella lunga notte della pandemia, la Pubblica Amministrazione italiana &egrave; tornata una luce da accendere. Abbiamo compreso l&rsquo;importanza di una solida sanit&agrave; pubblica; abbiamo scoperto le nuove tecnologie nella scuola; abbiamo invocato servizi a distanza da parte di enti centrali e locali. Di Luigi Vignali.</p><h3>La nascita dei nuovi ammortizzatori sociali: verso una nuova speranza (tanto per parafrasare guerre stellari).</h3><p>Il tema che in questo numero di Melius24, a cui Aidp Lazio collabora, verr&agrave; affrontato &egrave; quello inerente i nuovi ammortizzatori sociali, o meglio su come possono essere pensati gli ammortizzatori nel futuro, alla luce di tutto quello che l&rsquo;esperienza della Covid-19 ci ha insegnato. Di David Trotti.</p><h3>La produttivit&agrave; nelle aziende partecipate: verso un nuovo modello.</h3><p>Seppur in un contesto dove le Societ&agrave; partecipate da Amministrazioni Pubbliche sembrano poter essere definite quale &ldquo;terzo genere&rdquo; tra pubblico e privato, &egrave; sempre pi&ugrave; chiara la necessit&agrave; di una linea di governance che esprima una gestione aziendale indirizzata verso dinamiche di sostenibilit&agrave; economica nella realizzazione degli obiettivi per la quale la societ&agrave; &egrave; stata creata. Di Corrado Cingolani.</p><h3>Come motivare i professionisti che lavorano in sanit&agrave;:tra tradizione e innovazione.</h3><p>Le organizzazioni sanitarie sono caratterizzate da una elevata complessit&agrave; organizzativa e gestionale essenzialmente derivante da tre caratteristiche peculiari: alto livello di conoscenze professionali in continua evoluzione e di professionisti in organizzazione. Di Daniele Piacentini.</p><h3>Il laboratorio delle multinazionali: il lavoro come nascita di una unica umanit&agrave;.</h3><p>Nel mondo degli affari altamente globalizzato di oggi, lo sviluppo di capacit&agrave; di gestione interculturale potrebbe sembrare quasi inutile. La maggior parte delle persone hanno almeno un account social, cosa che potenzialmente permette loro di restare in contatto con centinaia di persone in tutto il mondo, e una delle cose di cui stiamo maggiormente soffrendo di questa pandemia &egrave; la privazione della possibilit&agrave; di viaggiare. All&rsquo;interno delle organizzazioni, lavorare con colleghi di altre culture &egrave; diventato normale. Di Gianpiero Tufilli.</p><h3>L&rsquo;uso strategico dei dati come driver per far ripartire l&rsquo;industria pesante.</h3><p>Circa due terzi dei progetti di digitalizzazione delle aziende del comparto industriale e minerario, delle infrastrutture pubbliche e delle telecomunicazioni hanno subito dei rallentamenti a causa della pandemia di Covid-19. A dispetto degli ingenti investimenti per l&rsquo;adozione delle nuove tecnologie, solo in un caso su tre vengono raggiunti gli obiettivi prefissati e una delle cause principali &egrave; la mancanza di una cultura aziendale data centrica. NEWS IL SOLE 24 ORE</p><p><a href=\"https://davidemaggiohr.it/wp-content/uploads/2021/06/8A%CC%82%C2%B0MELIUS24_GIUGNO-LUGLIO_Def-2.pdf\">Scarica il PDF</a></p>",
+                  name1:"Davide Maggio",
+                  role1: "Co-autore",
+                },
+                {
+                  date: "2022",
+                  title: "Da Edicolante a Imprenditore: Il manuale per trasformare la tua Edicola in un&#39;Impresa di successo",
+                  img: "https://thingsss.s3.eu-central-1.amazonaws.com/Da+edicolante+a+imprenditore+1.png",
+                  subtitle: "Credendo nell’apprendimento continuo e nel miglioramento costante, Edicole &amp;100...",
+                  text: "<p><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Da+edicolante+a+imprenditore+2.png\"/></p><h3>La prima Academy dedicata agli edicolanti</h3><p>Credendo nell&rsquo;apprendimento continuo e nel miglioramento costante, Edicole &amp;100 ti offre la possibilit&agrave; di formarti presso l&rsquo;unica Academy dedicata agli edicolanti. 8 moduli, 15 ore e 32 corsi formativi per realizzare un progetto in maniera semplice ed efficace, raggiungere un obiettivo personale o aziendale, imparare a ragionare per obiettivi e risultati chiave, comunicare in maniera efficace, apprendere tecniche e strategie per proporti sul mercato in modo incisivo, organizzare un evento nel tuo punto vendita, gestire il personale e i collaboratori, conoscere le procedure, le norme e la fiscalit&agrave; indispensabili per la tua attivit&agrave;. Ogni modulo si conclude con un questionario e, al completamento del percorso, riceverai la Certificazione &amp;100 e l&rsquo;esclusivo libro dell'Academy con i contenuti di tutti i docenti. E, in pi&ugrave;, puoi vincere un premio esclusivo estratto tra i partecipanti.</p><p>[ Testo estrapolato dal sito <a href=\"https://edicolee100.com/formazione/\">Formazione - Edicole &amp;100 (edicolee100.com) ]</a></p><p><a href=\"https://edizionie100.com/libro/da-edicolante-a-imprenditore-il-manuale-per-trasformare-la-tua-edicola-in-unimpresa-di-successo/\">Acquista il libro - Da Edicolante a Imprenditore Il manuale per trasformare la tua Edicola in un'Impresa di successo - Edizioni &amp;100 (edizionie100.com)</a></p>",
+                  name1:"Davide Maggio",
+                  role1: "Co-autore",
+                },
+                {
+                  date: "2022",
+                  title: "Inedita",
+                  img: "https://thingsss.s3.eu-central-1.amazonaws.com/inedita+1.jpg",
+                  subtitle: "Credendo nell’apprendimento continuo e nel miglioramento costante, Edicole &amp;100...",
+                  text: "<img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Inedita+2.jpg\" width=\"50%\"/><p>Siamo orgogliosi di comunicarvi che il libro del quale siamo co-autori, Inedita, sia diventato BEST SELLER AMAZON! Questo libro, pubblicato da Edizioni &amp;100, &egrave; stato pensato e scritto appositamente in vista di un evento ben preciso: il Mapic Cannes 2022, l&rsquo;evento leader mondiale nel settore retail. Un viaggio introspettivo, che ha coinvolto tutti coloro che hanno avuto un ruolo fondamentale per lo sviluppo continuo dell&rsquo;idea iniziale, e che ripercorre le tappe principali e le visioni differenti di ciascun professionista, vissute in base al proprio ruolo, alla propria mansione ed alle rispettive esperienze pregresse, cos&igrave; da capire a 360&deg;lo sviluppo e le potenzialit&agrave; di tale progetto retail.</p><p><a href=\"https://www.ibs.it/inedita-libro-vari/e/9791280486202\">Acquista il libro - Inedita - Libro - Edizioni &amp;100 - | IBS</a> <a href=\"https://edizionie100.com/libro/scarica-ora-le-book-inedita\">Scarica ora l'E-Book: INEDITA - Edizioni &amp;100 (edizionie100.com)</a></p>",
+                  name1:"Davide Maggio",
+                  role1: "Co-autore",
+                },
               ],
       events: [
                 {
@@ -362,6 +398,27 @@ export default {
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/docenza+sapienza+1.jpeg",
                   subtitle: "E’ stato un immenso piacere per Jobify Recruiting condividere con Gruppo Tempocasa la docenza...",
                   text: "<h3>#Docenza</h3><p>E’ stato un immenso piacere per Jobify Recruiting condividere con Gruppo Tempocasa la docenza presso Sapienza Università di Roma, venerdì 8 aprile.</p><p>Gli studenti del corso di laurea “ Scienze del Turismo” hanno assistito all’intervento di Francesca Ravasi - HR Manager di Gruppo Tempocasa - affiancata da Davide Maggio - Temporary HR Manager, Founder di Jobify Recruiting e curatore del tirocinio.</p><p>E’ stato presentato il #casestudy Tempocasa e sono stati approfonditi main topic come il ruolo HR all’interno di un’azienda, i processi onboarding e il piano carriera di una risorsa che entra nel mondo del lavoro.</p><p>Jobify Recruiting e Gruppo Tempocasa hanno dimostrato concretamente cosa vuol dire occuparsi di risorse umane e di come l’area #HR sia fondamentale all’interno di qualsiasi ambiente lavorativo.</p><p>“Collaborazione e condivisione sono il valore aggiunto del mondo HR”</p><p>Questo il messaggio che Jobify Recruiting e Gruppo Tempocasa hanno voluto lasciato agli studenti.</p>",
+                },
+                {
+                  date: "12 Sett 2022",
+                  title: "Chi ha paura del temporary manager",
+                  img: "https://thingsss.s3.eu-central-1.amazonaws.com/Chi+ha+paura+del+temporary+Manager.jpg",
+                  subtitle: "La figura del temporary hr manager in Italia...",
+                  text: "<h3>Chi ha paura del temporary manager</h3><p>La figura del temporary hr manager in Italia.</p><p>Grazie a Marcella Loporchio, abbiamo avuto la possibilità di raccontare di cosa si occupa il Temporary HR Manager.</p><p>Una figura sempre più centrale per lo sviluppo, l’organizzazione, la gestione e la strategia delle risorse umane.</p><a href=\"https://www.youtube.com/watch?v=shPhyneX7jU\">Chi ha paura del Temporary Manager | SwitchUP - YouTube</a>",
+                },
+                {
+                  date: "28 Lug 2022",
+                  title: "Sviluppare la cultura manageriale nelle PMI",
+                  img: "https://thingsss.s3.eu-central-1.amazonaws.com/FederManager+Calabria.png",
+                  subtitle: "La figura professionale del Temporary e del fractional manager nelle piccole medie e imprese è...",
+                  text: "<h3>SVILUPPARE LA CULTURA MANAGERIALE NELLE PMI: TEMPORARY E FRACTIONAL MANAGER</h3><p>La figura professionale del Temporary e del fractional manager nelle piccole medie e imprese è sempre più centrale.</p><p>Ad esempio, il temporary Hr manager gestisce il riassetto strutturale e l’accelerazione dell’innovazione nelle imprese, con progetti mirati alla crescita delle persone e allo sviluppo delle performance.</p><a href=\"https://www.youtube.com/watch?v=_PzmT8uou8A\">SVILUPPARE LA CULTURA MANAGERIALE NELLE PMI: TEMPORARY E FRACTIONAL MANAGER - YouTube</a>",
+                },
+                {
+                  date: "11 Lug 2022",
+                  title: "Intelligenza artificiale e risorse umane: come possono convivere?",
+                  img: "https://thingsss.s3.eu-central-1.amazonaws.com/people2results.png",
+                  subtitle: "Abbiamo parlato con People2Results di come l’intelligenza artificiale...",
+                  text: "<h3>Intelligenza artificiale e risorse umane: come possono convivere?</h3><p>Abbiamo parlato con People2Results di come l’intelligenza artificiale - utilizzata con consapevolezza e competenza (come ogni altro strumento!) all&#39;interno del processo di ricerca e selezione - possa rappresentare un notevole supporto al servizio dell’uomo, dell&#39;head hunter, senza mai volersi sostituire a quest&#39;ultimo, ma supportandolo ed agevolandolo nelle attività quotidiane e concedendo più spazio per coltivare l&#39;aspetto umano della relazione con i candidati.</p>",
                 },
               ],
     };
@@ -545,10 +602,9 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
         </div>
         <div class="container2">
           <div class="navMain"><ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#pubblicazionionline">Pubblicazioni online</a></li>
+            <li class=""><a data-toggle="tab" href="#pubblicazionionline">Pubblicazioni online</a></li>
             <li><a data-toggle="tab" href="#pubblicazionicartacee">Pubblicazioni cartacee</a></li>
             <li><a data-toggle="tab" href="#laboratoria">AIDP Lab Oratoria</a></li>
-            <li><a data-toggle="tab" href="#lostrillone">Lo Strillone</a></li>
             <li><a data-toggle="tab" href="#eventijobify">Eventi Jobify</a></li>
           </ul></div>
 
@@ -691,9 +747,81 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                 </div>
               </div>
             </div>
-            <div id="lostrillone" class="tab-pane fade">
+            <div id="laboratoria" class="tab-pane fade">
+              <div class="filters">
+                <div class="content filtersContent articles articles2">         
+                  <router-link :to="{name: 'Article2', params: { Title: this.articles[20].title, Date: this.articles[20].date, Text: this.articles[20].text, Image: this.articles[20].img, Name1: this.articles[20].name1, Role1: this.articles[20].role1, }}">
+                    <div class="article">
+                      <div class="image" id="imageA20">
+                        <div class="hover"></div>
+                        <div class="date" id="dateA20"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titleA20"></div>
+                      <div class="subtitle" id="subtitleA20"></div>
+                    </div>
+                  </router-link>
+                  <router-link :to="{name: 'Article2', params: { Title: this.articles[21].title, Date: this.articles[21].date, Text: this.articles[21].text, Image: this.articles[21].img, Name1: this.articles[21].name1, Role1: this.articles[21].role1, Name2: this.articles[21].name2, Role2: this.articles[21].role2, }}">
+                    <div class="article">
+                      <div class="image" id="imageA21">
+                        <div class="hover"></div>
+                        <div class="date" id="dateA21"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titleA21"></div>
+                      <div class="subtitle" id="subtitleA21"></div>
+                    </div>
+                  </router-link>
+                  <router-link :to="{name: 'Article2', params: { Title: this.articles[22].title, Date: this.articles[22].date, Text: this.articles[22].text, Image: this.articles[22].img, Name1: this.articles[22].name1, Role1: this.articles[22].role1, Name2: this.articles[22].name2, Role2: this.articles[22].role2, }}">
+                    <div class="article">
+                      <div class="image" id="imageA22">
+                        <div class="hover"></div>
+                        <div class="date" id="dateA22"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titleA22"></div>
+                      <div class="subtitle" id="subtitleA22"></div>
+                    </div>
+                  </router-link>
+                  <router-link :to="{name: 'Article2', params: { Title: this.articles[23].title, Date: this.articles[23].date, Text: this.articles[23].text, Image: this.articles[23].img, Name1: this.articles[23].name1, Role1: this.articles[23].role1, }}">
+                    <div class="article">
+                      <div class="image" id="imageA23">
+                        <div class="hover"></div>
+                        <div class="date" id="dateA23"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titleA23"></div>
+                      <div class="subtitle" id="subtitleA23"></div>
+                    </div>
+                  </router-link>
+                </div>
+              </div>
+            </div>
+            <div id="pubblicazionicartacee" class="tab-pane fade">
               <div class="filters">
                 <div class="content filtersContent articles articles2">
+                  <router-link :to="{name: 'Article2', params: { Title: this.articles[24].title, Date: this.articles[24].date, Text: this.articles[24].text, Image: this.articles[24].img, Name1: this.articles[24].name1, Role1: this.articles[24].role1, }}">
+                    <div class="article">
+                      <div class="image" id="imageA24">
+                        <div class="hover"></div>
+                        <div class="date" id="dateA24"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titleA24"></div>
+                      <div class="subtitle" id="subtitleA24"></div>
+                    </div>
+                  </router-link>
+                  <router-link :to="{name: 'Article2', params: { Title: this.articles[25].title, Date: this.articles[25].date, Text: this.articles[25].text, Image: this.articles[25].img, Name1: this.articles[25].name1, Role1: this.articles[25].role1, }}">
+                    <div class="article">
+                      <div class="image" id="imageA25">
+                        <div class="hover"></div>
+                        <div class="date" id="dateA25"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titleA25"></div>
+                      <div class="subtitle" id="subtitleA25"></div>
+                    </div>
+                  </router-link>
                   <router-link :to="{name: 'Article2', params: { Title: this.articles[12].title, Date: this.articles[12].date, Text: this.articles[12].text, Image: this.articles[12].img  }}">
                     <div class="article">
                       <div class="image" id="imageA12">
@@ -782,82 +910,48 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA19"></div>
                     </div>
                   </router-link>
-                </div>
-              </div>
-            </div>
-            <div id="laboratoria" class="tab-pane fade">
-              <div class="filters">
-                <div class="content filtersContent articles articles2">         
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[20].title, Date: this.articles[20].date, Text: this.articles[20].text, Image: this.articles[20].img, Name1: this.articles[20].name1, Role1: this.articles[20].role1, }}">
+                  <router-link :to="{name: 'Article2', params: { Title: this.articles[30].title, Date: this.articles[30].date, Text: this.articles[30].text, Image: this.articles[30].img, Name1: this.articles[30].name1, Role1: this.articles[30].role1, }}">
                     <div class="article">
-                      <div class="image" id="imageA20">
+                      <div class="image" id="imageA30">
                         <div class="hover"></div>
-                        <div class="date" id="dateA20"></div>
+                        <div class="date" id="dateA30"></div>
                       </div>
                       <div class="desctitle">Articolo</div>
-                      <div class="title" id="titleA20"></div>
-                      <div class="subtitle" id="subtitleA20"></div>
+                      <div class="title" id="titleA30"></div>
+                      <div class="subtitle" id="subtitleA30"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[21].title, Date: this.articles[21].date, Text: this.articles[21].text, Image: this.articles[21].img, Name1: this.articles[21].name1, Role1: this.articles[21].role1, Name2: this.articles[21].name2, Role2: this.articles[21].role2, }}">
+                  <router-link :to="{name: 'Article2', params: { Title: this.articles[31].title, Date: this.articles[31].date, Text: this.articles[31].text, Image: this.articles[31].img, Name1: this.articles[31].name1, Role1: this.articles[31].role1, }}">
                     <div class="article">
-                      <div class="image" id="imageA21">
+                      <div class="image" id="imageA31">
                         <div class="hover"></div>
-                        <div class="date" id="dateA21"></div>
+                        <div class="date" id="dateA31"></div>
                       </div>
                       <div class="desctitle">Articolo</div>
-                      <div class="title" id="titleA21"></div>
-                      <div class="subtitle" id="subtitleA21"></div>
+                      <div class="title" id="titleA31"></div>
+                      <div class="subtitle" id="subtitleA31"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[22].title, Date: this.articles[22].date, Text: this.articles[22].text, Image: this.articles[22].img, Name1: this.articles[22].name1, Role1: this.articles[22].role1, Name2: this.articles[22].name2, Role2: this.articles[22].role2, }}">
+                  <router-link :to="{name: 'Article2', params: { Title: this.articles[32].title, Date: this.articles[32].date, Text: this.articles[32].text, Image: this.articles[32].img, Name1: this.articles[32].name1, Role1: this.articles[32].role1, }}">
                     <div class="article">
-                      <div class="image" id="imageA22">
+                      <div class="image" id="imageA32">
                         <div class="hover"></div>
-                        <div class="date" id="dateA22"></div>
+                        <div class="date" id="dateA32"></div>
                       </div>
                       <div class="desctitle">Articolo</div>
-                      <div class="title" id="titleA22"></div>
-                      <div class="subtitle" id="subtitleA22"></div>
+                      <div class="title" id="titleA32"></div>
+                      <div class="subtitle" id="subtitleA32"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[23].title, Date: this.articles[23].date, Text: this.articles[23].text, Image: this.articles[23].img, Name1: this.articles[23].name1, Role1: this.articles[23].role1, }}">
+                  <router-link :to="{name: 'Article2', params: { Title: this.articles[33].title, Date: this.articles[33].date, Text: this.articles[33].text, Image: this.articles[33].img, Name1: this.articles[33].name1, Role1: this.articles[33].role1, }}">
                     <div class="article">
-                      <div class="image" id="imageA23">
+                      <div class="image" id="imageA33">
                         <div class="hover"></div>
-                        <div class="date" id="dateA23"></div>
+                        <div class="date" id="dateA33"></div>
                       </div>
                       <div class="desctitle">Articolo</div>
-                      <div class="title" id="titleA23"></div>
-                      <div class="subtitle" id="subtitleA23"></div>
-                    </div>
-                  </router-link>
-                </div>
-              </div>
-            </div>
-            <div id="pubblicazionicartacee" class="tab-pane fade">
-              <div class="filters">
-                <div class="content filtersContent articles articles2">
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[24].title, Date: this.articles[24].date, Text: this.articles[24].text, Image: this.articles[24].img, Name1: this.articles[24].name1, Role1: this.articles[24].role1, }}">
-                    <div class="article">
-                      <div class="image" id="imageA24">
-                        <div class="hover"></div>
-                        <div class="date" id="dateA24"></div>
-                      </div>
-                      <div class="desctitle">Articolo</div>
-                      <div class="title" id="titleA24"></div>
-                      <div class="subtitle" id="subtitleA24"></div>
-                    </div>
-                  </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[25].title, Date: this.articles[25].date, Text: this.articles[25].text, Image: this.articles[25].img, Name1: this.articles[25].name1, Role1: this.articles[25].role1, }}">
-                    <div class="article">
-                      <div class="image" id="imageA25">
-                        <div class="hover"></div>
-                        <div class="date" id="dateA25"></div>
-                      </div>
-                      <div class="desctitle">Articolo</div>
-                      <div class="title" id="titleA25"></div>
-                      <div class="subtitle" id="subtitleA25"></div>
+                      <div class="title" id="titleA33"></div>
+                      <div class="subtitle" id="subtitleA33"></div>
                     </div>
                   </router-link>
                 </div>
@@ -1026,6 +1120,39 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleE9"></div>
                     </div>
               </router-link>
+              <router-link :to="{name: 'Article2', params: { Title: this.events[10].title, Date: this.events[10].date, Text: this.events[10].text, Image: this.events[10].img }}">
+                    <div class="article">
+                      <div class="image" id="imageE10">
+                        <div class="hover"></div>
+                        <div class="date" id="dateE10"></div>
+                      </div>
+                      <div class="desctitle">Evento</div>
+                      <div class="title" id="titleE10"></div>
+                      <div class="subtitle" id="subtitleE10"></div>
+                    </div>
+              </router-link>
+              <router-link :to="{name: 'Article2', params: { Title: this.events[11].title, Date: this.events[11].date, Text: this.events[11].text, Image: this.events[11].img }}">
+                    <div class="article">
+                      <div class="image" id="imageE11">
+                        <div class="hover"></div>
+                        <div class="date" id="dateE11"></div>
+                      </div>
+                      <div class="desctitle">Evento</div>
+                      <div class="title" id="titleE11"></div>
+                      <div class="subtitle" id="subtitleE11"></div>
+                    </div>
+              </router-link>
+              <router-link :to="{name: 'Article2', params: { Title: this.events[12].title, Date: this.events[12].date, Text: this.events[12].text, Image: this.events[12].img }}">
+                    <div class="article">
+                      <div class="image" id="imageE12">
+                        <div class="hover"></div>
+                        <div class="date" id="dateE12"></div>
+                      </div>
+                      <div class="desctitle">Evento</div>
+                      <div class="title" id="titleE12"></div>
+                      <div class="subtitle" id="subtitleE12"></div>
+                    </div>
+              </router-link>
                 </div>
               </div>
             </div>
@@ -1055,8 +1182,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             </div>
             <div
               class="col"
-              style="
-                background-image: url(/src/assets/storie.jpg);
+              style="background-image: url(/src/assets/storie.jpg);
                 background-size: cover;
                 background-position: center;
                 border-radius: 30px;
@@ -1134,10 +1260,6 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
     padding-bottom: 0.6rem;
     transition: all 0.3s ease-out;
     cursor: pointer;
-  }
-
-  .nav li:hover {
-    background: #0c255047;
   }
 
   .navMain .active{
