@@ -54,7 +54,8 @@ export default {
         <div class="glow3"></div>
         <div class="glow4"></div>
         <div class="firstPart">
-          <div class="subtitle">Partnerships</div>
+          <div class="firstPartBody">
+            <div class="subtitle">Partnerships</div>
           <h2>Una crescita solida con chi crede nei valori di Jobify Recruiting</h2>
           <p>
             Da sempre Jobify Recruiting seleziona partner strategici per la crescita del business. Il nostro partner ideale
@@ -82,6 +83,17 @@ successo suo e nostro.
                 </span></button
             ></a>
           </div>
+          </div>
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          preserveAspectRatio="none"
+          viewBox="0 0 1680 40"
+          class="position-absolute width-full z-1"
+          style="bottom: 0"
+          >
+            <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+          </svg>
         </div>
 
         <div class="thirdDiv" id="first">
@@ -344,7 +356,6 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .transition {
   transform: translateY(150px);
@@ -357,10 +368,8 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   opacity: 1;
 }
 
-* {
-  /*font-family: "Alliance No.1", sans-serif;*/
-  /*font-family: "planer", sans-serif;*/
-  font-family: 'Work Sans', sans-serif;
+*{
+  font-family: "Merienda";
 }
 
 @media (min-width: 1024px) {
@@ -429,7 +438,6 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   }
 
   .firstPart {
-    text-align: center;
     padding-top: 11rem;
     padding-bottom: 15rem;
     width: 100%;
@@ -460,6 +468,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   .firstPart p {

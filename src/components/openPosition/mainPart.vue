@@ -292,7 +292,7 @@ export default {
       <div class="glow7"></div>
       <div class="glow8"></div>
       <div class="first">
-        <div style="background: #0c2550; padding-top: 10rem;">
+        <div style="background: #0c2550; padding-top: 10rem; padding-bottom: 10rem;">
           <div class="title">
           <div class="titleDiv">
             <h2>Cerchi Lavoro?</h2>
@@ -324,6 +324,9 @@ export default {
                 </svg>
               </span>
             </div>
+            <div @click="jobAlert()" class="btn btnJobAlert">
+                <a href="#">Crea una Job Alert</a>
+              </div>
             <div class="suggestWords">
               <div id="suggestWordsOverlay"></div>
               <div class="suggestTopDiv">
@@ -361,25 +364,38 @@ export default {
               </div>
             </div>
           </div>
+          <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      preserveAspectRatio="none"
+      viewBox="0 0 1680 40"
+      class="position-absolute width-full z-1"
+      style="bottom: 0"
+    >
+      <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+    </svg>
         </div>
+       
         
         <div class="container2">
-          <div class="navMain"><ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#Farm">Farm</a></li>
-            <li><a data-toggle="tab" href="#Finance">Finance</a></li>
-            <li><a data-toggle="tab" href="#IT">IT Tech</a></li>
-            <li><a data-toggle="tab" href="#Hr">HR</a></li>
-            <li><a data-toggle="tab" href="#Digital">Digital</a></li>
-            <li @click="jobAlert()" class="btn">
-              <a href="#">Crea una Job Alert</a>
-            </li>
-          </ul></div>
+          <!--<div class="navMain">
+            <ul class="nav nav-tabs">
+              <li class="active"><a data-toggle="tab" href="#Farm">Farm</a></li>
+              <li><a data-toggle="tab" href="#Finance">Finance</a></li>
+              <li><a data-toggle="tab" href="#IT">IT Tech</a></li>
+              <li><a data-toggle="tab" href="#Hr">HR</a></li>
+              <li><a data-toggle="tab" href="#Digital">Digital</a></li>
+              <li @click="jobAlert()" class="btn">
+                <a href="#">Crea una Job Alert</a>
+              </li>
+            </ul>
+          </div>-->
 
           <div class="tab-content">
             <div id="Farm" class="tab-pane in active">
               <div class="filters">
                 <div class="filtersTop">
-                  <h2>Posizioni aperte <span>Farm</span></h2>
+                  <h2>Posizioni aperte <!--<span>Farm</span>--></h2>
                   <div class="filtersPositions">
                     <div class="blur"></div>
                     <div class="dropdown">
@@ -2681,7 +2697,6 @@ sviluppare in azienda.
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .transition {
   transform: translateY(150px);
@@ -2694,10 +2709,8 @@ sviluppare in azienda.
   opacity: 1;
 }
 
-* {
-  /*font-family: "Alliance No.1", sans-serif;*/
-  /*font-family: "planer", sans-serif;*/
-  font-family: 'Work Sans', sans-serif;
+*{
+  font-family: "Merienda";
 }
 
 @media (min-width: 1024px) {
@@ -2885,10 +2898,21 @@ sviluppare in azienda.
   }
 
   .first .searchKey {
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 2rem;
     z-index: 10;
+    margin-left: auto;
   }
+
+  .btnJobAlert{
+    margin-top: 0 !important;
+    height: 50%;
+    margin-right: auto !important;
+  }
+
+  .btnJobAlert a{
+    color: #fff !important;
+  }
+
   .cols {
     display: flex;
   }
@@ -2919,6 +2943,7 @@ sviluppare in azienda.
 
   .title {
     display: flex;
+    z-index: 2;
   }
 
   .title .btnDiv {
@@ -3191,7 +3216,6 @@ sviluppare in azienda.
   }
 
   .topPosition .photo {
-    width: 24vw;
     height: 22vw;
     background-position: center;
     background-size: cover;
@@ -3508,7 +3532,7 @@ sviluppare in azienda.
   }
 
   .dropdown-menu {
-    background: #131b23;
+    background: #0c2550;
     border: 2px solid #b3b3b326;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -3631,7 +3655,7 @@ sviluppare in azienda.
 
   .suggestWords {
     position: absolute;
-    left: 30%;
+    left: 23%;
     width: 0%;
     top: 90%;
     font-size: 16px;
@@ -3646,7 +3670,7 @@ sviluppare in azienda.
     transition: all 0.3s ease-in-out;
     background: #131b23;
     border: 2px solid #b3b3b326;
-    z-index: 5;
+    z-index: 11;
     visibility: hidden;
     opacity: 0;
     display: unset;

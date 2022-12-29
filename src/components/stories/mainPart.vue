@@ -224,127 +224,106 @@ export default {
             <div class="featuredContent">
               <div class="featured" @click="story(1)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    L’approccio umano è stato una componente fondamentale di tutto il processo...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username0"></div>
                     <div class="jobtitle" id="jobtitle0"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    L’approccio umano è stato una componente fondamentale di tutto il processo...
+                    <span>Leggi di più</span>
                   </div>
-                  
                 </div>
               </div>
               <div class="featured" @click="story(2)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username1"></div>
                     <div class="jobtitle" id="jobtitle1"></div>
                   </div>
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
               <div class="featured" @click="story(3)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username2"></div>
                     <div class="jobtitle" id="jobtitle2"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
               <div class="featured" @click="story(4)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    Rispetto alle agenzie di recruiting sono spesso stata molto diffidente...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username3"></div>
                     <div class="jobtitle" id="jobtitle3"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    Rispetto alle agenzie di recruiting sono spesso stata molto diffidente...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
               <div class="featured" @click="story(5)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    L'esperienza vissuta con Jobify è stata molto positiva...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username4"></div>
                     <div class="jobtitle" id="jobtitle4"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    L'esperienza vissuta con Jobify è stata molto positiva...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
               <div class="featured" @click="story(6)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username5"></div>
                     <div class="jobtitle" id="jobtitle5"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
               <div class="featured" @click="story(7)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    Mi sono sentita da subito a mio agio, capita e compresa...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username6"></div>
                     <div class="jobtitle" id="jobtitle6"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    Mi sono sentita da subito a mio agio, capita e compresa...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
@@ -407,7 +386,6 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .transition {
   transform: translateY(150px);
@@ -420,10 +398,8 @@ export default {
   opacity: 1;
 }
 
-* {
-  /*font-family: "Alliance No.1", sans-serif;*/
-  /*font-family: "planer", sans-serif;*/
-  font-family: 'Work Sans', sans-serif;
+*{
+  font-family: "Merienda";
 }
 
 @media (min-width: 1024px) {
@@ -824,13 +800,13 @@ export default {
     position: absolute;
     bottom: 0;
     padding: 2rem;
+    padding-top: 13rem;
     width: 100%;
     background: #ada996;
     background: -webkit-linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
     background: linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
     border-radius: 30px;
     width: 100%;
-    display: flex;
   }
 
   .featured .info_story .basic_informations{
@@ -849,22 +825,14 @@ export default {
     font-weight: 300;
   }
 
+  .featured .info_story .text_preview{
+    color: white;
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
   .featured .hover {
-    background: #ada996;
-    background: -webkit-linear-gradient(
-      to bottom,
-      #000000d1,
-      #00000027,
-      #0000000a,
-      transparent
-    );
-    background: linear-gradient(
-      to bottom,
-      #000000d1,
-      #00000027,
-      #0000000a,
-      transparent
-    );
     height: 100%;
     border-radius: 30px;
     position: absolute;

@@ -72,3 +72,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+  font-family: "Merienda";
+  src: local("Merienda"),
+   url(@/assets/fonts/AttenNewRegular.otf) format("truetype");
+}
+
+*{
+  font-family: "Merienda";
+}

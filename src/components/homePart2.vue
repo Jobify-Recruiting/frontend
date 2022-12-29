@@ -1623,7 +1623,6 @@ cercano personale.
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .transition {
   transform: translateY(150px);
@@ -1636,10 +1635,8 @@ cercano personale.
   opacity: 1;
 }
 
-* {
-  /*font-family: "Alliance No.1", sans-serif;*/
-  /*font-family: "planer", sans-serif;*/
-  font-family: 'Work Sans', sans-serif;
+*{
+  font-family: "Merienda";
 }
 
 @media (min-width: 1024px) {
@@ -2457,7 +2454,6 @@ cercano personale.
   .btn2 {
     background: transparent;
     border: none;
-    font-family: "planer", sans-serif;
     color: #2d2e2f;
     font-size: 24px;
     padding-top: 0;
@@ -2486,7 +2482,6 @@ cercano personale.
     overflow: hidden !important;
     margin-top: 0 !important;
     cursor: pointer;
-    font-family: "Planer";
   }
 
   .btn2 span {
@@ -2630,8 +2625,6 @@ cercano personale.
     font-size: 12px !important;
     width: 100% !important;
     line-height: 16px !important;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-      Liberation Mono, monospace !important;
   }
 
   .elemdx_rectangle6 .elemdx_text span {
@@ -2640,8 +2633,6 @@ cercano personale.
     font-size: 12px !important;
     width: 100% !important;
     line-height: 16px !important;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-      Liberation Mono, monospace !important;
   }
 
   .elemdx_rectangle6 .elemdx_text2 {
@@ -2650,8 +2641,6 @@ cercano personale.
     font-size: 12px !important;
     width: 100% !important;
     line-height: 16px !important;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-      Liberation Mono, monospace !important;
     margin-top: 1rem !important;
   }
 
@@ -2661,8 +2650,6 @@ cercano personale.
     font-size: 12px !important;
     width: 100% !important;
     line-height: 16px !important;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-      Liberation Mono, monospace !important;
   }
 
   .second .flow .elemsx {
@@ -2852,8 +2839,6 @@ cercano personale.
     font-size: 12px !important;
     width: 100% !important;
     line-height: 16px !important;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-      Liberation Mono, monospace !important;
   }
 
   .elemdx_rectangle3 .elemdx_text span {
@@ -2862,8 +2847,6 @@ cercano personale.
     font-size: 12px !important;
     width: 100% !important;
     line-height: 16px !important;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-      Liberation Mono, monospace !important;
   }
 
   .elemdx_rectangle3 .elemdx_text2 {
@@ -2872,8 +2855,6 @@ cercano personale.
     font-size: 12px !important;
     width: 100% !important;
     line-height: 16px !important;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-      Liberation Mono, monospace !important;
     margin-top: 1rem !important;
   }
 
@@ -2883,8 +2864,6 @@ cercano personale.
     font-size: 12px !important;
     width: 100% !important;
     line-height: 16px !important;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-      Liberation Mono, monospace !important;
   }
 
   .elemdx_rectangle3 .elemdx_text3 {
@@ -2896,8 +2875,6 @@ cercano personale.
     font-size: 12px !important;
     width: 100% !important;
     line-height: 16px !important;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-      Liberation Mono, monospace !important;
   }
 
   .elemdx_rectangle3 .elemdx_text3 span {
@@ -2920,8 +2897,6 @@ cercano personale.
     font-size: 12px !important;
     width: 100% !important;
     line-height: 16px !important;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-      Liberation Mono, monospace !important;
     margin-top: 1rem !important;
   }
 
@@ -2932,8 +2907,6 @@ cercano personale.
     font-size: 12px !important;
     width: 100% !important;
     line-height: 16px !important;
-    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas,
-      Liberation Mono, monospace !important;
   }
 
   .elemdx .elemdx_rectangle4 {
@@ -3562,7 +3535,7 @@ cercano personale.
   .fifthDiv .adviser .col_image {
     background: transparent;
     border-radius: 30px;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/storie.jpg);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

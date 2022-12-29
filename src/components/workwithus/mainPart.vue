@@ -55,6 +55,7 @@ export default {
         <div class="glow5"></div>
 
         <div class="firstPart">
+          <div class="firstPartBody">
           <div
             class="people1"
             style="
@@ -126,27 +127,17 @@ export default {
 clienti che possono essere di volta in volta candidati e aziende. Se pensi di possedere queste qualità entra
 nel nostro team.
           </p>
-          <!--<div class="mainButton">
-            <a href="#first"
-              ><button class="btn">
-                Invia
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-short"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                    />
-                  </svg>
-                </span></button
-            ></a>
-          </div>-->
+        </div>
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          preserveAspectRatio="none"
+          viewBox="0 0 1680 40"
+          class="position-absolute width-full z-1"
+          style="bottom: 0"
+          >
+            <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+          </svg>
         </div>
         <div class="values">
           <div class="value1">
@@ -273,7 +264,6 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .transition {
   transform: translateY(150px);
@@ -286,10 +276,8 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   opacity: 1;
 }
 
-* {
-  /*font-family: "Alliance No.1", sans-serif;*/
-  /*font-family: "planer", sans-serif;*/
-  font-family: 'Work Sans', sans-serif;
+*{
+  font-family: "Merienda";
 }
 
 @media (min-width: 1024px) {
@@ -428,16 +416,18 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   }
 
   .firstPart {
-    text-align: center;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-bottom: 15rem;
-    padding-top: 15rem;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     background: #0c2550;
+  }
+
+  .firstPartBody{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-bottom: 15rem;
+    padding-top: 15rem;
   }
 
   .firstPart .subtitle {
@@ -462,6 +452,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
     width: 60%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
   }
 
   .firstPart p {

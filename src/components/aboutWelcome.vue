@@ -62,30 +62,30 @@ export default {
         <p>Jobify è</p>
         <b>
           <div class="innerIam">
-            innovazione<br />
-            tecnologia<br />
-            progresso<br />
-            risorse umane<br />
-            etica
-          </div>
+          umana<br />
+          rapida<br />
+          consulenziale<br />
+          competitiva<br />
+          scientifica
+        </div>
         </b>
       </div>
     </div>
     <div class="gradient"></div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      preserveAspectRatio="none"
+      viewBox="0 0 1680 40"
+      class="position-absolute width-full z-1"
+      style="bottom: 0"
+    >
+      <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+    </svg>
   </div>
 </template>
 
 <style scoped>
-@import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
-@import url("https://fonts.cdnfonts.com/css/planer");
-@import url("https://fonts.cdnfonts.com/css/alliance-no1");
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-* {
-  /*font-family: "Alliance No.1", sans-serif;*/
-  /* font-family: "planer", sans-serif;*/
-  font-family: 'Work Sans', sans-serif;
-}
 
 @media (min-width: 1600px) {
   #globeViz {
@@ -96,7 +96,7 @@ export default {
     padding-top: 3rem;
     font: normal 40px/50px Planer, sans-serif;
     color: #fff;
-    font-size: 90px !important;
+    font-size: 64px !important;
     margin-left: 10rem !important;
   }
 }
@@ -224,7 +224,6 @@ export default {
   .datas p {
     margin-bottom: 0 !important;
     letter-spacing: 1px;
-    font-family: "planer", sans-serif !important;
   }
 
   .datas .item {
@@ -241,7 +240,6 @@ export default {
     width: fit-content;
     overflow: hidden;
     cursor: pointer;
-    font-family: "Planer";
   }
   .btn {
     display: -webkit-inline-box;
@@ -312,7 +310,7 @@ export default {
     padding-top: 3rem;
     font: normal 40px/50px Planer, sans-serif;
     color: #fff;
-    font-size: 80px;
+    font-size: 64px;
     margin-left: 5rem;
   }
   .Iam p {

@@ -244,7 +244,8 @@ export default {
         <div class="glow4"></div>
         <div class="glow5"></div>
         <div class="firstPart">
-          <div class="subtitle">Trova lavoro</div>
+          <div class="firstPartBody">
+            <div class="subtitle">Trova lavoro</div>
           <h2>Jobify Recruiting è la risposta giusta!</h2>
           <p>Su Jobify Recruiting trovi ogni giorno nuove offerte in ambito Farm, Finance, IT, Tech, HR.</p>
           <div class="mainButton">
@@ -269,6 +270,17 @@ export default {
             ></router-link>
           </div>
           <div class="image"></div>
+          </div>
+          <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      preserveAspectRatio="none"
+      viewBox="0 0 1680 40"
+      class="position-absolute width-full z-1"
+      style="bottom: 0"
+    >
+      <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+          </svg>
         </div>
 
         <div class="thirdPart">
@@ -782,7 +794,6 @@ export default {
 @import url(//db.onlinewebfonts.com/c/bcd329db3107d78cc2e47e8077750927?family=Rogan-Regular);
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 ::-webkit-scrollbar {
   width: 0px;
@@ -819,10 +830,8 @@ export default {
   opacity: 1;
 }
 
-* {
-  /*font-family: "Alliance No.1", sans-serif;*/
-  /*font-family: "planer", sans-serif;*/
-  font-family: 'Work Sans', sans-serif;
+*{
+  font-family: "Merienda";
 }
 
 @media (min-width: 1024px) {
@@ -923,12 +932,15 @@ export default {
   .firstPart {
     text-align: left;
     width: 100%;
-    padding-left: 10rem;
-    padding-right: 10rem;
     padding-bottom: 15rem;
     padding-top: 15rem;
     margin-right: 0;
     background: #0c2550;
+  }
+
+  .firstPartBody{
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   .firstPart .subtitle {

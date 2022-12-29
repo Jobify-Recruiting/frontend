@@ -109,9 +109,8 @@ export default {
 @import url("https://fonts.cdnfonts.com/css/planer");
 @import url("https://fonts.cdnfonts.com/css/alliance-no1");
 
-* {
-  /*font-family: "Alliance No.1", sans-serif;*/
-  /*font-family: "planer", sans-serif;*/
+*{
+  font-family: "Merienda";
 }
 
 @media (min-width: 1024px) {
