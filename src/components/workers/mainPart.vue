@@ -271,67 +271,6 @@ export default {
           <div class="image"></div>
         </div>
 
-        <!--<div class="fourthPart">
-          <div class="title">
-            <h2>Costruiamo l'ecosistema del domani.</h2>
-          </div>
-          <div class="subtitle">
-            <p>
-              Increase developer velocity. Secure every step. Automate entire
-              workflows. Redefine collaboration. Trusted by over 83 million
-              developers.
-            </p>
-          </div>
-
-          <div class="jobs">
-            <div class="job transition">
-              <h2>Web Developer</h2>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-            <div class="job transition">
-              <h2>Web Developer</h2>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-            <div class="job transition">
-              <h2>Web Developer</h2>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-            <div class="job transition">
-              <h2>Web Developer</h2>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-            <div class="job transition">
-              <h2>Web Developer</h2>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-            <div class="job transition">
-              <h2>Web Developer</h2>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-            <div class="job transition">
-              <h2>Web Developer</h2>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-            <div class="job transition">
-              <h2>Web Developer</h2>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-            <div class="job transition">
-              <h2>Web Developer</h2>
-              <div class="subtitle">Reduction</div>
-              <p>in developer onboarding time</p>
-            </div>
-          </div>
-        </div>-->
-
         <div class="thirdPart">
           <div class="thirdPartDiv">
             <div class="first">
@@ -795,6 +734,7 @@ export default {
             </div>
           </div>
         </div>
+
         <div class="beforeFooter">
           <div class="ctaCV" style="background: rgb(161 161 161 / 10%)">
             <div class="blur"></div>

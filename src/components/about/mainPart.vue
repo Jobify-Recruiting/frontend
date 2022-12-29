@@ -157,9 +157,9 @@ e poi professionisti e proprio questo diventa il fulcro del nostro lavoro di ogn
       </div>
       <div class="thirdPart">
         <div class="text1 bold ">
-          A differenza della tradizionale agenzia di ricerca e selezione del personale, Jobify Recruiting è un’agenzia di
-head hunting <span>dinamica ed energica</span>, snella e rapida nel fornire la soluzione ideale al talento che cerca lavoro
-e all’azienda che cerca talenti.
+          A differenza della tradizionale agenzia di ricerca e selezione del personale, 
+          Jobify Recruiting è un’agenzia di head hunting <span>dinamica ed energica, </span>
+          snella e rapida nel fornire la soluzione ideale al talento che cerca lavoro e all’azienda che cerca talenti.
         </div>
       </div>
       <div class="thirdPart">
@@ -198,8 +198,8 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
       <div class="sixtPart">
         <h2>Non più candidati, ma persone da mettere al centro del processo di selezione</h2>
         <div class="description">
-          L’azienda giusta diventa quella di cui il candidato si rivede nei valori ed è soddisfatto nelle sue aspettative
-personali e questo modo di lavorare porta a persone felici e pronte a svolgere al meglio il loro lavoro.
+          L’azienda giusta diventa quella di cui il candidato si rivede nei valori ed è soddisfatto nelle sue 
+          aspettative personali e questo modo di lavorare porta a persone felici e pronte a svolgere al meglio il loro lavoro.
         </div>
 
         <div class="sixtPartButton">

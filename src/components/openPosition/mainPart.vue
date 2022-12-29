@@ -2455,7 +2455,7 @@ sviluppare in azienda.
           <div class="cols">
             <div class="col col-padding" id="positions">
               <h3 style="color: #fff">
-                Jobify Recruiting ti permette di inserire in azienda <span>la risorsa giusta</span> nei settori Farm, Finance, IT, Tech e HR.
+                Come trovare lavoro, ti aiutiamo a raggiungere i tuoi sogni. 
               </h3>
               <router-link to="/workers">
               <div class="button">

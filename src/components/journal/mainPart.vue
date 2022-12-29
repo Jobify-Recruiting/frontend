@@ -7,9 +7,9 @@ export default {
       first: [
       {
                   date: "24 Mag 2022",
-                  title: "La ricerca e selezione nell’era digitale con A.I.",
+                  title: "Il principio di Pareto e la sua applicazione nella ricerca del lavoro",
                   img: "https://www.risorseumane-hr.it/wp-content/uploads/2022/05/La-ricerca-e-selezione-nellera-digitale-1020x480.jpg",
-                  subtitle: "Le attività di ricerca di selezione del personale rappresentano uno dei momenti più complessi ...",
+                  subtitle: "Al giorno d’oggi, in un contesto occupazionale caratterizzato da una grande domanda di lavoro...",
                 },
       ],
       articles: [

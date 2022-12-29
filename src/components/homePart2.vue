@@ -546,8 +546,7 @@ persone con un metodo e un approccio consulenziale ben diverso da quello delle t
 lavoro.
             </p>
             <p>
-              L’obiettivo è quello di porre il rapporto umano al centro tra domanda e offerta, per creare il match
-“perfetto” tra azienda e candidato.
+              L’obiettivo è quello di porre il rapporto umano al centro tra domanda e offerta, per creare il match “perfetto” tra azienda e candidato.
             </p>
           </div>
           <div class="col2" >
