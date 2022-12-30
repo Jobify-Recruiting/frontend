@@ -5,11 +5,11 @@ export default {
   data() {
     return {
       first: [
-      {
+                {
                   date: "24 Mag 2022",
-                  title: "Il principio di Pareto e la sua applicazione nella ricerca del lavoro",
+                  title: "La ricerca e selezione nell’era digitale con A.I.",
                   img: "https://www.risorseumane-hr.it/wp-content/uploads/2022/05/La-ricerca-e-selezione-nellera-digitale-1020x480.jpg",
-                  subtitle: "Al giorno d’oggi, in un contesto occupazionale caratterizzato da una grande domanda di lavoro...",
+                  subtitle: "Le attività di ricerca di selezione del personale rappresentano uno dei momenti più complessi ...",
                 },
       ],
       articles: [
@@ -609,7 +609,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
               </h2>
               <div class="subtitle" id="subtitleF0">
               </div>
-              <a href="https://www.today.it/economia/lavoro/principio-pareto.html" target="blank">
+              <a href="https://www.risorseumane-hr.it/ricerca-selezione-era-digitale/" target="blank">
                 <div class="btnRead">
                   Leggi di più &nbsp;&nbsp;<span
                     ><svg
@@ -630,6 +630,16 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
               </a>
             </div>
           </div>
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          preserveAspectRatio="none"
+          viewBox="0 0 1680 40"
+          class="position-absolute width-full z-1"
+          style="bottom: 0"
+          >
+            <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+          </svg>
         </div>
         <div class="container2">
           <div class="navMain"><ul class="nav nav-tabs">
@@ -644,7 +654,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             <div id="biancolavoro" class="tab-pane in active">
               <div class="filters">
                 <div class="articles articles2">
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[0].title, Date: this.articles[0].date, Text: this.articles[0].text, Image: this.articles[0].img, Name1: this.articles[0].name1, Role1: this.articles[0].role1, Name2: this.articles[0].name2, Role2: this.articles[0].role2,  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[1].title, Date: this.articles[1].date, Text: this.articles[1].text, Image: this.articles[1].img, Name1: this.articles[1].name1, Role1: this.articles[1].role1, Name2: this.articles[1].name2, Role2: this.articles[1].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA0">
                         <div class="hover"></div>
@@ -655,7 +665,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA0"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[1].title, Date: this.articles[1].date, Text: this.articles[1].text, Image: this.articles[1].img, Name1: this.articles[1].name1, Role1: this.articles[1].role1, Name2: this.articles[1].name2, Role2: this.articles[1].role2,  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[1].title, Date: this.articles[1].date, Text: this.articles[1].text, Image: this.articles[1].img, Name1: this.articles[1].name1, Role1: this.articles[1].role1, Name2: this.articles[1].name2, Role2: this.articles[1].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA1">
                         <div class="hover"></div>
@@ -666,7 +676,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA1"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[2].title, Date: this.articles[2].date, Text: this.articles[2].text, Image: this.articles[2].img, Name1: this.articles[2].name1, Role1: this.articles[2].role1, Name2: this.articles[2].name2, Role2: this.articles[2].role2,  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[2].title, Date: this.articles[2].date, Text: this.articles[2].text, Image: this.articles[2].img, Name1: this.articles[2].name1, Role1: this.articles[2].role1, Name2: this.articles[2].name2, Role2: this.articles[2].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA2">
                         <div class="hover"></div>
@@ -677,7 +687,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA2"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[3].title, Date: this.articles[3].date, Text: this.articles[3].text, Image: this.articles[3].img, Name1: this.articles[3].name1, Role1: this.articles[3].role1, Name2: this.articles[3].name2, Role2: this.articles[3].role2,  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[3].title, Date: this.articles[3].date, Text: this.articles[3].text, Image: this.articles[3].img, Name1: this.articles[3].name1, Role1: this.articles[3].role1, Name2: this.articles[3].name2, Role2: this.articles[3].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA3">
                         <div class="hover"></div>
@@ -688,7 +698,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA3"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[4].title, Date: this.articles[4].date, Text: this.articles[4].text, Image: this.articles[4].img, Name1: this.articles[4].name1, Role1: this.articles[4].role1, Name2: this.articles[4].name2, Role2: this.articles[4].role2,  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[4].title, Date: this.articles[4].date, Text: this.articles[4].text, Image: this.articles[4].img, Name1: this.articles[4].name1, Role1: this.articles[4].role1, Name2: this.articles[4].name2, Role2: this.articles[4].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA4">
                         <div class="hover"></div>
@@ -699,7 +709,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA4"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[5].title, Date: this.articles[5].date, Text: this.articles[5].text, Image: this.articles[5].img, Name1: this.articles[5].name1, Role1: this.articles[5].role1, Name2: this.articles[5].name2, Role2: this.articles[5].role2,  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[5].title, Date: this.articles[5].date, Text: this.articles[5].text, Image: this.articles[5].img, Name1: this.articles[5].name1, Role1: this.articles[5].role1, Name2: this.articles[5].name2, Role2: this.articles[5].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA5">
                         <div class="hover"></div>
@@ -710,7 +720,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA5"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[6].title, Date: this.articles[6].date, Text: this.articles[6].text, Image: this.articles[6].img, Name1: this.articles[6].name1, Role1: this.articles[6].role1, Name2: this.articles[6].name2, Role2: this.articles[6].role2,  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[6].title, Date: this.articles[6].date, Text: this.articles[6].text, Image: this.articles[6].img, Name1: this.articles[6].name1, Role1: this.articles[6].role1, Name2: this.articles[6].name2, Role2: this.articles[6].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA6">
                         <div class="hover"></div>
@@ -721,7 +731,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA6"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[7].title, Date: this.articles[7].date, Text: this.articles[7].text, Image: this.articles[7].img, Name1: this.articles[7].name1, Role1: this.articles[7].role1, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[7].title, Date: this.articles[7].date, Text: this.articles[7].text, Image: this.articles[7].img, Name1: this.articles[7].name1, Role1: this.articles[7].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA7">
                         <div class="hover"></div>
@@ -732,7 +742,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA7"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[8].title, Date: this.articles[8].date, Text: this.articles[8].text, Image: this.articles[8].img, Name1: this.articles[8].name1, Role1: this.articles[8].role1, Name2: this.articles[8].name2, Role2: this.articles[8].role2,  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[8].title, Date: this.articles[8].date, Text: this.articles[8].text, Image: this.articles[8].img, Name1: this.articles[8].name1, Role1: this.articles[8].role1, Name2: this.articles[8].name2, Role2: this.articles[8].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA8">
                         <div class="hover"></div>
@@ -742,8 +752,8 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="title" id="titleA8"></div>
                       <div class="subtitle" id="subtitleA8"></div>
                     </div>
-                  </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[9].title, Date: this.articles[9].date, Text: this.articles[9].text, Image: this.articles[9].img,  }}">
+                  </router-link>  
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[9].title, Date: this.articles[9].date, Text: this.articles[9].text, Image: this.articles[9].img,  }}">
                     <div class="article">
                       <div class="image" id="imageA9">
                         <div class="hover"></div>
@@ -754,7 +764,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA9"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[10].title, Date: this.articles[10].date, Text: this.articles[10].text, Image: this.articles[10].img  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[10].title, Date: this.articles[10].date, Text: this.articles[10].text, Image: this.articles[10].img  }}">
                     <div class="article">
                       <div class="image" id="imageA10">
                         <div class="hover"></div>
@@ -765,7 +775,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA10"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[11].title, Date: this.articles[11].date, Text: this.articles[11].text, Image: this.articles[11].img  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[11].title, Date: this.articles[11].date, Text: this.articles[11].text, Image: this.articles[11].img  }}">
                     <div class="article">
                       <div class="image" id="imageA11">
                         <div class="hover"></div>
@@ -782,7 +792,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             <div id="laboratoria" class="tab-pane fade">
               <div class="filters">
                 <div class="content filtersContent articles articles2">         
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[20].title, Date: this.articles[20].date, Text: this.articles[20].text, Image: this.articles[20].img, Name1: this.articles[20].name1, Role1: this.articles[20].role1, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[20].title, Date: this.articles[20].date, Text: this.articles[20].text, Image: this.articles[20].img, Name1: this.articles[20].name1, Role1: this.articles[20].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA20">
                         <div class="hover"></div>
@@ -793,7 +803,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA20"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[21].title, Date: this.articles[21].date, Text: this.articles[21].text, Image: this.articles[21].img, Name1: this.articles[21].name1, Role1: this.articles[21].role1, Name2: this.articles[21].name2, Role2: this.articles[21].role2, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[21].title, Date: this.articles[21].date, Text: this.articles[21].text, Image: this.articles[21].img, Name1: this.articles[21].name1, Role1: this.articles[21].role1, Name2: this.articles[21].name2, Role2: this.articles[21].role2, }}">
                     <div class="article">
                       <div class="image" id="imageA21">
                         <div class="hover"></div>
@@ -804,7 +814,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA21"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[22].title, Date: this.articles[22].date, Text: this.articles[22].text, Image: this.articles[22].img, Name1: this.articles[22].name1, Role1: this.articles[22].role1, Name2: this.articles[22].name2, Role2: this.articles[22].role2, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[22].title, Date: this.articles[22].date, Text: this.articles[22].text, Image: this.articles[22].img, Name1: this.articles[22].name1, Role1: this.articles[22].role1, Name2: this.articles[22].name2, Role2: this.articles[22].role2, }}">
                     <div class="article">
                       <div class="image" id="imageA22">
                         <div class="hover"></div>
@@ -815,7 +825,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA22"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[23].title, Date: this.articles[23].date, Text: this.articles[23].text, Image: this.articles[23].img, Name1: this.articles[23].name1, Role1: this.articles[23].role1, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[23].title, Date: this.articles[23].date, Text: this.articles[23].text, Image: this.articles[23].img, Name1: this.articles[23].name1, Role1: this.articles[23].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA23">
                         <div class="hover"></div>
@@ -832,7 +842,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             <div id="pubblicazionicartacee" class="tab-pane fade">
               <div class="filters">
                 <div class="content filtersContent articles articles2">
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[24].title, Date: this.articles[24].date, Text: this.articles[24].text, Image: this.articles[24].img, Name1: this.articles[24].name1, Role1: this.articles[24].role1, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[24].title, Date: this.articles[24].date, Text: this.articles[24].text, Image: this.articles[24].img, Name1: this.articles[24].name1, Role1: this.articles[24].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA24">
                         <div class="hover"></div>
@@ -843,7 +853,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA24"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[25].title, Date: this.articles[25].date, Text: this.articles[25].text, Image: this.articles[25].img, Name1: this.articles[25].name1, Role1: this.articles[25].role1, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[25].title, Date: this.articles[25].date, Text: this.articles[25].text, Image: this.articles[25].img, Name1: this.articles[25].name1, Role1: this.articles[25].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA25">
                         <div class="hover"></div>
@@ -854,7 +864,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA25"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[12].title, Date: this.articles[12].date, Text: this.articles[12].text, Image: this.articles[12].img  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[12].title, Date: this.articles[12].date, Text: this.articles[12].text, Image: this.articles[12].img  }}">
                     <div class="article">
                       <div class="image" id="imageA12">
                         <div class="hover"></div>
@@ -865,7 +875,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA12"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[13].title, Date: this.articles[13].date, Text: this.articles[13].text, Image: this.articles[13].img, Name1: this.articles[13].name1, Role1: this.articles[13].role1, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[13].title, Date: this.articles[13].date, Text: this.articles[13].text, Image: this.articles[13].img, Name1: this.articles[13].name1, Role1: this.articles[13].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA13">
                         <div class="hover"></div>
@@ -876,7 +886,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA13"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[14].title, Date: this.articles[14].date, Text: this.articles[14].text, Image: this.articles[14].img, Name1: this.articles[14].name1, Role1: this.articles[14].role1, Name2: this.articles[14].name2, Role2: this.articles[14].role2,  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[14].title, Date: this.articles[14].date, Text: this.articles[14].text, Image: this.articles[14].img, Name1: this.articles[14].name1, Role1: this.articles[14].role1, Name2: this.articles[14].name2, Role2: this.articles[14].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA14">
                         <div class="hover"></div>
@@ -887,7 +897,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA14"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[15].title, Date: this.articles[15].date, Text: this.articles[15].text, Image: this.articles[15].img, Name1: this.articles[15].name1, Role1: this.articles[15].role1, Name2: this.articles[15].name2, Role2: this.articles[15].role2,  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[15].title, Date: this.articles[15].date, Text: this.articles[15].text, Image: this.articles[15].img, Name1: this.articles[15].name1, Role1: this.articles[15].role1, Name2: this.articles[15].name2, Role2: this.articles[15].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA15">
                         <div class="hover"></div>
@@ -898,7 +908,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA15"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[16].title, Date: this.articles[16].date, Text: this.articles[16].text, Image: this.articles[16].img, Name1: this.articles[16].name1, Role1: this.articles[16].role1, Name2: this.articles[16].name2, Role2: this.articles[16].role2,  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[16].title, Date: this.articles[16].date, Text: this.articles[16].text, Image: this.articles[16].img, Name1: this.articles[16].name1, Role1: this.articles[16].role1, Name2: this.articles[16].name2, Role2: this.articles[16].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA16">
                         <div class="hover"></div>
@@ -909,7 +919,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA16"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[17].title, Date: this.articles[17].date, Text: this.articles[17].text, Image: this.articles[17].img }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[17].title, Date: this.articles[17].date, Text: this.articles[17].text, Image: this.articles[17].img }}">
                     <div class="article">
                       <div class="image" id="imageA17">
                         <div class="hover"></div>
@@ -920,7 +930,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA17"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[18].title, Date: this.articles[18].date, Text: this.articles[18].text, Image: this.articles[18].img, Name1: this.articles[18].name1, Role1: this.articles[18].role1  }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[18].title, Date: this.articles[18].date, Text: this.articles[18].text, Image: this.articles[18].img, Name1: this.articles[18].name1, Role1: this.articles[18].role1  }}">
                     <div class="article">
                       <div class="image" id="imageA18">
                         <div class="hover"></div>
@@ -931,7 +941,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA18"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[19].title, Date: this.articles[19].date, Text: this.articles[19].text, Image: this.articles[19].img, Name1: this.articles[19].name1, Role1: this.articles[19].role1, Name2: this.articles[19].name2, Role2: this.articles[19].role2, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[19].title, Date: this.articles[19].date, Text: this.articles[19].text, Image: this.articles[19].img, Name1: this.articles[19].name1, Role1: this.articles[19].role1, Name2: this.articles[19].name2, Role2: this.articles[19].role2, }}">
                     <div class="article">
                       <div class="image" id="imageA19">
                         <div class="hover"></div>
@@ -942,7 +952,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA19"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[30].title, Date: this.articles[30].date, Text: this.articles[30].text, Image: this.articles[30].img, Name1: this.articles[30].name1, Role1: this.articles[30].role1, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[30].title, Date: this.articles[30].date, Text: this.articles[30].text, Image: this.articles[30].img, Name1: this.articles[30].name1, Role1: this.articles[30].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA30">
                         <div class="hover"></div>
@@ -953,7 +963,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA30"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[31].title, Date: this.articles[31].date, Text: this.articles[31].text, Image: this.articles[31].img, Name1: this.articles[31].name1, Role1: this.articles[31].role1, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[31].title, Date: this.articles[31].date, Text: this.articles[31].text, Image: this.articles[31].img, Name1: this.articles[31].name1, Role1: this.articles[31].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA31">
                         <div class="hover"></div>
@@ -964,7 +974,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA31"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[32].title, Date: this.articles[32].date, Text: this.articles[32].text, Image: this.articles[32].img, Name1: this.articles[32].name1, Role1: this.articles[32].role1, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[32].title, Date: this.articles[32].date, Text: this.articles[32].text, Image: this.articles[32].img, Name1: this.articles[32].name1, Role1: this.articles[32].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA32">
                         <div class="hover"></div>
@@ -975,7 +985,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA32"></div>
                     </div>
                   </router-link>
-                  <router-link :to="{name: 'Article2', params: { Title: this.articles[33].title, Date: this.articles[33].date, Text: this.articles[33].text, Image: this.articles[33].img, Name1: this.articles[33].name1, Role1: this.articles[33].role1, }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[33].title, Date: this.articles[33].date, Text: this.articles[33].text, Image: this.articles[33].img, Name1: this.articles[33].name1, Role1: this.articles[33].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA33">
                         <div class="hover"></div>
@@ -992,7 +1002,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             <div id="pubblicazionionline" class="tab-pane fade">
               <div class="filters">
                 <div class="content filtersContent articles articles2">
-                  <a href="https://www.risorseumane-hr.it/temporary-hr-manager-nelle-pmi-e-grandi-aziende/">
+                  <a href="https://www.risorseumane-hr.it/temporary-hr-manager-nelle-pmi-e-grandi-aziende/" target="blank" >
                     <div class="article">
                       <div class="image" id="imageA26">
                         <div class="hover"></div>
@@ -1003,7 +1013,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA26"></div>
                     </div>
                   </a>
-                  <a href="https://www.leadershipmanagementmagazine.com/articoli/le-grandi-dimissioni-le-ragioni-per-cui-si-lascia-il-proprio-posto-di-lavoro/">
+                  <a href="https://www.leadershipmanagementmagazine.com/articoli/le-grandi-dimissioni-le-ragioni-per-cui-si-lascia-il-proprio-posto-di-lavoro/" target="blank" >
                     <div class="article">
                       <div class="image" id="imageA27">
                         <div class="hover"></div>
@@ -1014,7 +1024,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA27"></div>
                     </div>
                   </a>
-                  <a href="https://www.today.it/economia/lavoro/principio-pareto.html">
+                  <a href="https://www.today.it/economia/lavoro/principio-pareto.html" target="blank">
                     <div class="article">
                       <div class="image" id="imageA28">
                         <div class="hover"></div>
@@ -1025,7 +1035,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA28"></div>
                     </div>
                   </a>
-                  <a href="https://www.risorseumane-hr.it/ricerca-selezione-era-digitale/">
+                  <a href="https://www.risorseumane-hr.it/ricerca-selezione-era-digitale/" target="blank">
                     <div class="article">
                       <div class="image" id="imageA29">
                         <div class="hover"></div>
@@ -1042,149 +1052,149 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             <div id="eventijobify" class="tab-pane fade">
               <div class="filters">
                 <div class="content filtersContent articles articles2">
-                  <router-link :to="{name: 'Article2', params: { Title: this.events[0].title, Date: this.events[0].date, Text: this.events[0].text, Image: this.events[0].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE0">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE0"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE0"></div>
-                      <div class="subtitle" id="subtitleE0"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[1].title, Date: this.events[1].date, Text: this.events[1].text, Image: this.events[1].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE1">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE1"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE1"></div>
-                      <div class="subtitle" id="subtitleE1"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[2].title, Date: this.events[2].date, Text: this.events[2].text, Image: this.events[2].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE2">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE2"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE2"></div>
-                      <div class="subtitle" id="subtitleE2"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[3].title, Date: this.events[3].date, Text: this.events[3].text, Image: this.events[3].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE3">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE3"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE3"></div>
-                      <div class="subtitle" id="subtitleE3"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[4].title, Date: this.events[4].date, Text: this.events[4].text, Image: this.events[4].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE4">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE4"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE4"></div>
-                      <div class="subtitle" id="subtitleE4"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[5].title, Date: this.events[5].date, Text: this.events[5].text, Image: this.events[5].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE5">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE5"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE5"></div>
-                      <div class="subtitle" id="subtitleE5"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[6].title, Date: this.events[6].date, Text: this.events[6].text, Image: this.events[6].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE6">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE6"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE6"></div>
-                      <div class="subtitle" id="subtitleE6"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[7].title, Date: this.events[7].date, Text: this.events[7].text, Image: this.events[7].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE7">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE7"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE7"></div>
-                      <div class="subtitle" id="subtitleE7"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[8].title, Date: this.events[8].date, Text: this.events[8].text, Image: this.events[8].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE8">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE8"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE8"></div>
-                      <div class="subtitle" id="subtitleE8"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[9].title, Date: this.events[9].date, Text: this.events[9].text, Image: this.events[9].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE9">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE9"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE9"></div>
-                      <div class="subtitle" id="subtitleE9"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[10].title, Date: this.events[10].date, Text: this.events[10].text, Image: this.events[10].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE10">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE10"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE10"></div>
-                      <div class="subtitle" id="subtitleE10"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[11].title, Date: this.events[11].date, Text: this.events[11].text, Image: this.events[11].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE11">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE11"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE11"></div>
-                      <div class="subtitle" id="subtitleE11"></div>
-                    </div>
-              </router-link>
-              <router-link :to="{name: 'Article2', params: { Title: this.events[12].title, Date: this.events[12].date, Text: this.events[12].text, Image: this.events[12].img }}">
-                    <div class="article">
-                      <div class="image" id="imageE12">
-                        <div class="hover"></div>
-                        <div class="date" id="dateE12"></div>
-                      </div>
-                      <div class="desctitle">Evento</div>
-                      <div class="title" id="titleE12"></div>
-                      <div class="subtitle" id="subtitleE12"></div>
-                    </div>
-              </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[0].title, Date: this.events[0].date, Text: this.events[0].text, Image: this.events[0].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE0">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE0"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE0"></div>
+                          <div class="subtitle" id="subtitleE0"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[1].title, Date: this.events[1].date, Text: this.events[1].text, Image: this.events[1].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE1">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE1"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE1"></div>
+                          <div class="subtitle" id="subtitleE1"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[2].title, Date: this.events[2].date, Text: this.events[2].text, Image: this.events[2].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE2">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE2"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE2"></div>
+                          <div class="subtitle" id="subtitleE2"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[3].title, Date: this.events[3].date, Text: this.events[3].text, Image: this.events[3].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE3">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE3"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE3"></div>
+                          <div class="subtitle" id="subtitleE3"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[4].title, Date: this.events[4].date, Text: this.events[4].text, Image: this.events[4].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE4">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE4"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE4"></div>
+                          <div class="subtitle" id="subtitleE4"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[5].title, Date: this.events[5].date, Text: this.events[5].text, Image: this.events[5].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE5">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE5"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE5"></div>
+                          <div class="subtitle" id="subtitleE5"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[6].title, Date: this.events[6].date, Text: this.events[6].text, Image: this.events[6].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE6">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE6"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE6"></div>
+                          <div class="subtitle" id="subtitleE6"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[7].title, Date: this.events[7].date, Text: this.events[7].text, Image: this.events[7].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE7">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE7"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE7"></div>
+                          <div class="subtitle" id="subtitleE7"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[8].title, Date: this.events[8].date, Text: this.events[8].text, Image: this.events[8].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE8">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE8"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE8"></div>
+                          <div class="subtitle" id="subtitleE8"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[9].title, Date: this.events[9].date, Text: this.events[9].text, Image: this.events[9].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE9">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE9"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE9"></div>
+                          <div class="subtitle" id="subtitleE9"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[10].title, Date: this.events[10].date, Text: this.events[10].text, Image: this.events[10].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE10">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE10"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE10"></div>
+                          <div class="subtitle" id="subtitleE10"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[11].title, Date: this.events[11].date, Text: this.events[11].text, Image: this.events[11].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE11">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE11"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE11"></div>
+                          <div class="subtitle" id="subtitleE11"></div>
+                        </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[12].title, Date: this.events[12].date, Text: this.events[12].text, Image: this.events[12].img }}">
+                        <div class="article">
+                          <div class="image" id="imageE12">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE12"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE12"></div>
+                          <div class="subtitle" id="subtitleE12"></div>
+                        </div>
+                  </router-link>
                 </div>
               </div>
             </div>

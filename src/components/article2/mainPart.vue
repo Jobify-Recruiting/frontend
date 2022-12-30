@@ -6,6 +6,8 @@ export default {
     return {};
   },
   mounted() {
+
+    console.log(this.$route.query.Title)
     let recaptchaScript = document.createElement("script");
     recaptchaScript.setAttribute(
       "src",
@@ -18,8 +20,8 @@ export default {
     htmlElement.style.background = "linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad)";
 
     var image = document.querySelector(".imageArticle");
-    image.style.backgroundUrl= this.$route.params.img;
-    image.style.backgroundImage = "url('"+this.$route.params.Image +"')";
+    image.style.backgroundUrl= this.$route.query.img;
+    image.style.backgroundImage = "url('"+this.$route.query.Image +"')";
 
     function reveal() {
       var reveals = document.querySelectorAll(".transition");
@@ -74,11 +76,11 @@ export default {
       });
     }
 
-    var xmlString = this.$route.params.Text;
+    var xmlString = this.$route.query.Text;
     var doc = new DOMParser().parseFromString(xmlString, "text/xml");
-    console.log(doc); 
     var date = document.getElementById("article");
-    date.innerHTML = this.$route.params.Text;
+    console.log(this.$route.query.Text);
+    date.innerHTML = this.$route.query.Text;
   },
   methods: {
     btnScrollSx() {
@@ -101,7 +103,8 @@ export default {
     <div class="main">
       <div class="first">
         <div class="titlePage">
-            <div class="btn_back" @click="$router.go(-1)">
+          <router-link to="/journal">
+            <div class="btn_back">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -118,27 +121,28 @@ export default {
                 </svg>
               </span>
             </div>
+          </router-link>
 
-          {{this.$route.params.Title}}
+          {{this.$route.query.Title}}
         </div>
         <div class="imageArticle"></div>
         <div class="dateDiv_article">
-          Data di pubblicazione: <span id="datePage">{{this.$route.params.Date}}</span>
+          Data di pubblicazione: <span id="datePage">{{this.$route.query.Date}}</span>
         </div>
-        <div v-if="this.$route.params.Name1">
+        <div v-if="this.$route.query.Name1">
           <div class="dateDiv_article">
-            Rubrica curata da: <span id="datePage">{{this.$route.params.Name1}} ,</span> <span id="datePage">{{this.$route.params.Role1}}</span>
+            Rubrica curata da: <span id="datePage">{{this.$route.query.Name1}} ,</span> <span id="datePage">{{this.$route.query.Role1}}</span>
           </div>
         </div>
-        <div v-if="this.$route.params.Name2">
+        <div v-if="this.$route.query.Name2">
           <div class="dateDiv_article">
-            In collaorazione con: <span id="datePage">{{this.$route.params.Name2}} ,</span> <span id="datePage">{{this.$route.params.Role2}}</span>
+            In collaorazione con: <span id="datePage">{{this.$route.query.Name2}} ,</span> <span id="datePage">{{this.$route.query.Role2}}</span>
           </div>
         </div>
         
 
         <div class="article" id="article">
-          {{this.$route.params.Text}}
+          {{this.$route.query.Text}}
         </div>
       </div>
     </div>

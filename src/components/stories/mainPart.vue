@@ -54,6 +54,13 @@ export default {
                   data: "8 Dicembre 2022",
                   storia_testo: "Mi sono sentita da subito a mio agio, capita e compresa, ho avuto addirittura, nel momento del colloquio con la mia referente Elisa, dei suggerimenti per migliorare il mio cv e la mia presentazione, non mi era mai capitato. Ho apprezzato in Jobify Recruiting la serietà, e umanità, mi sono sentita trattata alla pari, e sostenuta per tutto l’iter di selezione, per affrontare al meglio il colloquio finale con l’azienda.",
                 },
+                {
+                  nickname: "Enis Gulishi",
+                  ruolo: "Manutentore Elettromeccanico Trasfertista",
+                  azienda: "NTE Processs",
+                  data: "30 Dicembre 2022",
+                  storia_testo: "Sono stato assistito da Martina Di Palma. Che dire? Servizio impeccabile. Personale attento, cordiale e disponibile. Molto soddisfatto.",
+                },
               ],
     };
   },
@@ -323,6 +330,21 @@ export default {
                   </div>
                   <div class="text_preview">
                     Mi sono sentita da subito a mio agio, capita e compresa...
+                    <span>Leggi di più</span>
+                  </div>
+                </div>
+              </div>
+              <div class="featured" @click="story(8)">
+                <div class="hover"></div>
+                <div class="text"><h2></h2>
+                </div>
+                <div class="info_story">
+                  <div class="basic_informations">
+                    <div class="username" id="username7"></div>
+                    <div class="jobtitle" id="jobtitle7"></div>
+                  </div>
+                  <div class="text_preview">
+                    Sono stato assistito da Martina Di Palma. Che dire?
                     <span>Leggi di più</span>
                   </div>
                 </div>

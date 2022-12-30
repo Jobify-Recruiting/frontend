@@ -78,11 +78,12 @@ export default {
       }"
     >
       <div class="content">
-        <router-link to="/">
+        <a href="/">
           <div class="logo">
             <img src="/src/assets/logo/white.png" />
           </div>
-        </router-link>
+        </a>
+        
         <div class="center">
           <router-link to="/"><div class="link">Home</div></router-link>
           <router-link to="/about"
