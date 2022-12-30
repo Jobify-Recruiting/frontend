@@ -643,10 +643,10 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
         </div>
         <div class="container2">
           <div class="navMain"><ul class="nav nav-tabs">
-            <li class=""><a data-toggle="tab" href="#biancolavoro">Bianco lavoro</a></li>
             <li class=""><a data-toggle="tab" href="#pubblicazionionline">Pubblicazioni online</a></li>
             <li><a data-toggle="tab" href="#pubblicazionicartacee">Pubblicazioni cartacee</a></li>
             <li><a data-toggle="tab" href="#laboratoria">AIDP Lab Oratoria</a></li>
+            <li class=""><a data-toggle="tab" href="#biancolavoro">Bianco lavoro</a></li>
             <li><a data-toggle="tab" href="#eventijobify">Eventi Jobify</a></li>
           </ul></div>
 

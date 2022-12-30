@@ -1467,7 +1467,7 @@ cercano personale.
             </div>
             
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/system+management.png" />
+              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/system+management.jpeg" />
             </div>
 
             <div class="logoClient">
