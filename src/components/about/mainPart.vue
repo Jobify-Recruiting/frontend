@@ -182,11 +182,9 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
                 dal punto di vista del candidato di inserire la risorsa in un contesto aziendale in cui si identifica nei valori e negli ideali.
               </div>
             </div>
-            <div class="quote" style="text-align: right !important;
-              float: right !important;">
-              <div class="quoteh4" style="text-align: right !important;
-              float: right !important"><span>Vision</span><br> di Jobify Recruiting</div>
-              <div class="quoteh5" style="float: right !important">
+            <div class="quote">
+              <div class="quoteh4"><span>Vision</span><br> di Jobify Recruiting</div>
+              <div class="quoteh5">
                 La nostra vision parla di un mondo HR sempre più human e digital, in cui competenze personali incontrano
                 le moderne tecnologie per un processo di ricerca e selezione dei candidati ottimizzato. Vogliamo trovare la
                 persona ideale per ogni azienda e dare al candidato la posizione lavorativa che cerca e sogna da sempre.
@@ -710,7 +708,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   .thirdPart {
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-top: 8rem;
+    padding-top: 3rem;
     padding-bottom: 5rem;
     background: #ffffff;
   }
@@ -736,8 +734,8 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   .fourthPart {
     padding-left: 8rem;
     padding-right: 8rem;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
     background: #fff;
   }
 
@@ -794,7 +792,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
     background: #fff;
   }
 
@@ -1021,8 +1019,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   .seventhPart {
     padding-left: 11rem;
     padding-right: 11rem;
-    padding-top: 8rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
     background: #fff;
     display: flex;
     align-items: center;
@@ -1208,7 +1205,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   }
 
   .secondPart {
-    padding-top: 8rem;
+    padding-top: 2rem;
   }
 
   .secondPart .title h2 {

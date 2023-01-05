@@ -2033,7 +2033,7 @@ appuntamento con Jobify Recruiting.
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 5%;
+    top: 0%;
     right: 0;
     margin-right: 0;
   }
@@ -2315,7 +2315,7 @@ appuntamento con Jobify Recruiting.
 
   .workflow .columns .column .background {
     background: #0c2550;
-    padding: 3rem;
+    padding: 1.5rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 35vw;
@@ -2542,6 +2542,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .clientsCoBody {
+    padding-top: 2rem;
     padding-right: 6rem;
     height: 100%;
     width: 100%;
@@ -2997,8 +2998,8 @@ appuntamento con Jobify Recruiting.
   }
 
   .thirdPart .thirdPartImage{
-    width: 30vw;
-    height: 38vw;
+    width: 36vw;
+    height: 44vw;
     background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ilproblemadelleaziende.png);
     background-position: center;
     background-size: cover;

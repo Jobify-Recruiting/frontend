@@ -283,7 +283,7 @@ export default {
           <div class="thirdPartDiv">
             <div class="first">
               <div class="col1">
-                <h2><span>Trova con noi</span> <br>il tuo prossimo lavoro.</h2>
+                <h2><span>Trova con noi</span> il tuo prossimo lavoro.</h2>
                 <p>
                   Se sei un candidato in cerca di lavoro e cerchi nuove opportunità professionali Jobify Recruiting ti mette in
                   contatto con l’azienda giusta per te. Il nostro obiettivo è creare il match perfetto tra risorse umane e
@@ -877,19 +877,14 @@ export default {
   }
 
   .firstPart .image {
-    height: 100%;
-    width: 50%;
-    padding-bottom: 10rem;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-top: 10rem;
+    width: 51%;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2F012%20Trova%20lavoro.png?alt=media&token=81ced77b-78ef-451f-b65b-3746472ef446);
     background-size: cover;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top: 0;
+    top: -20%;
     right: 0;
     margin-right: 0;
   }
@@ -1126,7 +1121,7 @@ export default {
 
   .thirdPartDiv .first h2 {
     color: #fff;
-    width: 80%;
+    width: 100%;
     font-size: 54px;
     line-height: 58px;
     letter-spacing: -0.04em;
@@ -1179,7 +1174,7 @@ export default {
   }
 
   .thirdPartDiv .first p {
-    width: 60%;
+    width: 100%;
     color: #627597;
     font-size: 18px;
     line-height: 22px;
@@ -1349,7 +1344,7 @@ export default {
 
   .workflow .columns .column .background {
     background: #0c2550;
-    padding: 3rem;
+    padding: 1.5rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     height: 35vw;

@@ -672,7 +672,7 @@ lavoro.
         "
       >
       <div class="columns">
-          <div class="column workflowColumn" style="width: 35vw !important">
+          <div class="column workflowColumn" style="width: 28vw !important">
             <div class="background transition">
               <div class="number">
                 <div class="icon">
@@ -699,7 +699,7 @@ lavoro.
           <div class="svg_logo_link transition">
               <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
           </div>
-          <div class="column workflowColumn" style="width: 35vw !important">
+          <div class="column workflowColumn" style="width: 28vw !important">
             <div class="background transition">
               <div class="number">
                 <div class="icon">
@@ -735,7 +735,7 @@ lavoro.
               <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
           </div>
         <div class="columns">
-          <div class="column workflowColumn" style="width: 35vw !important">
+          <div class="column workflowColumn" style="width: 28vw !important">
             <div class="background transition">
               <div class="number">
                 <div class="icon">
@@ -766,7 +766,7 @@ lavoro.
           <div class="svg_logo_link transition">
               <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
           </div>
-          <div class="column workflowColumn" style="width: 35vw !important">
+          <div class="column workflowColumn" style="width: 28vw !important">
             <div class="background transition">
               <div class="number">
                 <div class="icon">
@@ -1824,6 +1824,7 @@ cercano personale.
   }
 
   .clientsCoBody {
+    padding-top: 2rem;
     padding-right: 6rem;
     height: 100%;
     width: 100%;
@@ -2033,8 +2034,8 @@ cercano personale.
     background-image: url(/src/assets/whyJobify.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
-    width: 78%;
+    background-position: right bottom;
+    width: 100%;
     height: auto;
     border-bottom-right-radius: 30px;
   }
@@ -2234,10 +2235,10 @@ cercano personale.
 
   .workflow .columns .column .background {
     background: #0c2550;
-    padding: 3rem;
+    padding: 1.5rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 25vw;
+    height: 22vw;
   }
 
   .workflow .columns .column .circle {
@@ -3547,8 +3548,8 @@ cercano personale.
 
   .fifthDiv .adviser .col {
     width: 50%;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
@@ -3578,7 +3579,7 @@ cercano personale.
     background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     width: 42%;
   }
 }

@@ -553,7 +553,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    top: 0;
+    top: -15%;
     right: 0;
     margin-right: 0;
   }

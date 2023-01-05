@@ -853,7 +853,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
     height: 35vw;
     margin-right: 2rem;
     background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FPartnership%20-%20Mission.png?alt=media&token=7c7babb6-df72-42a3-9708-2fe8e1875b73);
-    background-position: 100%;
+    background-position: 88%;
     background-size: cover;
     border-radius: 20px;
     -webkit-transition: all 0.3s ease-in-out;
