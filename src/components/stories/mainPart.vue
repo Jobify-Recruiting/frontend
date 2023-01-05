@@ -61,6 +61,13 @@ export default {
                   data: "30 Dicembre 2022",
                   storia_testo: "Sono stato assistito da Martina Di Palma. Che dire? Servizio impeccabile. Personale attento, cordiale e disponibile. Molto soddisfatto.",
                 },
+                {
+                  nickname: "Valentina Mura",
+                  ruolo: "HR Manager",
+                  azienda: "Mamacrowd ",
+                  data: "13 Dicembre 2022",
+                  storia_testo: "L'esperienza con Jobify è stata un esperienza nuova perché l'approccio che usano è differente rispetto a chi tradizionalmente si occupa di recruiting. Si tratta di un approccio human centric dove mettono al primo posto l'attenzione del candidato e la trasparenza. Ritengo questi due aspetti fondamentali per far sentire il candidato a proprio agio e per permettergli di esprimere al meglio le proprie competenze e skills.",
+                },
               ],
     };
   },
@@ -349,6 +356,21 @@ export default {
                   </div>
                 </div>
               </div>
+              <div class="featured" @click="story(9)">
+                <div class="hover"></div>
+                <div class="text"><h2></h2>
+                </div>
+                <div class="info_story">
+                  <div class="basic_informations">
+                    <div class="username" id="username8"></div>
+                    <div class="jobtitle" id="jobtitle8"></div>
+                  </div>
+                  <div class="text_preview">
+                    L'esperienza con Jobify è stata un esperienza nuova ...
+                    <span>Leggi di più</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="story" id="1">
               <div class="close_story" @click="close_story(1)">
@@ -397,7 +419,7 @@ export default {
                 >
               </div>
             </div>
-            <div class="col" data-v-1672ca76="" style="background-image: url(&quot;https://thingsss.s3.eu-central-1.amazonaws.com/storie.jpg&quot;); background-size: cover; border-radius: 30px;"></div>
+            <div class="col" data-v-1672ca76="" style="background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png); background-size: cover; border-radius: 30px; background-position: top;"></div>
           </div>
         </div>
       </div>
@@ -814,7 +836,7 @@ export default {
     background-position: center;
     width: 75vw;
     float: left;
-    height: 35vw;
+    height: 20vw;
     position: relative;
   }
 
@@ -888,39 +910,43 @@ export default {
   }
 
   .fifthDiv .adviser {
-    background: rgba(161, 161, 161, 0.1);
+    background: #0c2550;
     border-radius: 30px;
     display: flex;
   }
 
   .fifthDiv .adviser .col {
     width: 50%;
-    padding: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
+
   .fifthDiv .adviser .col h3 {
-    font-size: 34px;
-    line-height: 38px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    color: #0c2550;
+    color: #fff;
+    width: 72%;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
   }
 
   .fifthDiv .adviser .col h3 span {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg,#2867b2 0%,#01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-size: 34px;
-    line-height: 38px;
-    letter-spacing: -1px;
-    font-weight: 700;
+    letter-spacing: -0.06em;
+    font-weight: 700 !important;
   }
 
   .fifthDiv .adviser .col_image {
     background: transparent;
     border-radius: 60px;
-    background-image: url(/src/assets/searchimage.png);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;

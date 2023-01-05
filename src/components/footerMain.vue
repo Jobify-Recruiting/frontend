@@ -18,7 +18,7 @@ export default {
   <div class="footer">
     <div class="content">
       <div class="col-logo">
-        <img src="/src/assets/logo/small_white.png" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2FLogo%20Jobify%20versioni%20estese_Tavola%20disegno%201%20copia%2010.png?alt=media&token=baed9f0b-c891-4524-9635-60e4ea397134" />
         <div class="title2">Iscriviti alla newsletter</div>
         <div class="divInput">
           <div class="input">
@@ -147,7 +147,7 @@ export default {
   }
 
   .col-logo img {
-    width: 35px;
+    width: 210px;
   }
 
   .footer .content .col {

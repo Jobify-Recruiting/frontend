@@ -49,12 +49,8 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <div class="glow"></div>
-        <div class="glow2"></div>
-        <div class="glow3"></div>
-        <div class="glow4"></div>
         <div class="firstPart">
-          <div class="firstPartBody">
+          <!--<div class="firstPartBody">
             <div class="subtitle">Partnerships</div>
           <h2>Una crescita solida con chi crede nei valori di Jobify Recruiting</h2>
           <p>
@@ -83,6 +79,38 @@ successo suo e nostro.
                 </span></button
             ></a>
           </div>
+          </div>-->
+          <div class="firstPartBody">
+            <div class="subtitle">Partnerships</div>
+              <h2>Una crescita solida con chi crede nei valori di Jobify Recruiting</h2>
+
+              <p>
+                Da sempre Jobify Recruiting seleziona partner strategici per la crescita del business. Il nostro partner ideale crede nei valori dell’agenzia di head hunting ed è pronto a mettersi a disposizione per contribuire al successo suo e nostro.
+              </p>
+
+              <div class="mainButton">
+                <a href="#whyJobify"
+                  ><button class="btn">
+                    Scopri di più
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                        />
+                      </svg>
+                    </span></button
+                ></a>
+              </div>
+              <div class="image">
+              </div>
           </div>
           <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -97,12 +125,6 @@ successo suo e nostro.
         </div>
 
         <div class="thirdDiv" id="first">
-          <div class="glow"></div>
-          <div class="glow2"></div>
-          <div class="glow3"></div>
-          <div class="glow4"></div>
-          <div class="glow6"></div>
-          <div class="glow7"></div>
           <div class="content">
             <div class="partnersImgs">
               <a
@@ -267,7 +289,7 @@ evoluzione e cambiamento.</span>
         <div class="cols">
           <div class="col col_1">
             <p>Partners</p>
-            <h2>Diventa nostro partner</h2>
+            <h2>Diventa<br><span>nostro partner</span> </h2>
             <div class="subtitle">
               Cerchiamo talenti per creare il futuro, persone disposte a mettersi in gioco e aziende innovative pronte a
 offrire opportunità di lavoro e crescita personale e professionale. Diventa nostro partner!
@@ -389,7 +411,6 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
 
   .mainButton {
     width: fit-content;
-    margin-left: auto;
     margin-right: auto;
   }
 
@@ -437,7 +458,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
     padding-bottom: 3rem;
   }
 
-  .firstPart {
+  /*.firstPart {
     padding-top: 11rem;
     padding-bottom: 15rem;
     width: 100%;
@@ -481,6 +502,70 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
     text-align: center;
     line-height: 24px;
     font-weight: 400;
+  }*/
+
+  .firstPart {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 6rem;
+    padding-top: 9rem;
+    margin-right: 0;
+    background:#0c2550;
+  }
+
+  .firstPartBody{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .firstPart .subtitle {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .firstPart p span {
+    color: #c554a0;
+    font-weight: 600;
+  }
+
+  .firstPart h2 {
+    color: #fff;
+    letter-spacing: -0.04em;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    width: 50%;
+  }
+
+  .firstPart p {
+    width: 50%;
+    margin-top: 0.5rem;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    line-height: 22px;
+    font-weight: 200;
+    margin-bottom: 2rem;
+  }
+
+  .firstPart .image {
+    height: 65vh;
+    width: 56%;
+    padding-left: 8rem;
+    padding-right: 0;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FPartnership%20Una%20crescita%20solida.png?alt=media&token=340abd73-707f-40d3-8d64-963d734556e8);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
   }
 
   .cols .col_1 {
@@ -525,10 +610,22 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   .cols .col h2 {
     color: #0c2550;
     letter-spacing: -0.04em;
-    font-size: 64px;
-    line-height: 68px;
-    font-weight: 800;
+    font-size: 56px;
+    line-height: 56px;
+    font-weight: 500;
     margin-bottom: 2rem;
+  }
+
+  .cols .col h2 span{
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    letter-spacing: -0.03em !important;
+    font-size: 56px;
+    line-height: 65px;
+    font-weight: 700;
   }
 
   .cols .col h3 {
@@ -574,12 +671,12 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   }
 
   .secondPart .text span {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 26px;
     line-height: 30px;
   }
@@ -620,83 +717,6 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
     background-repeat: no-repeat;
   }
 
-  .glow {
-    position: absolute;
-    width: 5vw;
-    opacity: 0.5;
-    left: -5%;
-    top: 10%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-  }
-
-  .glow2 {
-    position: absolute;
-    width: 5vw;
-    top: 23%;
-    left: -5%;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-  }
-
-  .glow3 {
-    position: absolute;
-    width: 5vw;
-    top: 40%;
-    right: -4%;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-  }
-
-  .glow4 {
-    position: absolute;
-    width: 5vw;
-    top: 55%;
-    opacity: 0.5;
-    right: -4%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-  }
-
-  .glow6 {
-    position: absolute;
-    width: 5vw;
-    top: 0%;
-    opacity: 0.5;
-    left: 50%;
-    -webkit-box-shadow: 0px 0px 105px 45px #2eff9de6;
-    -moz-box-shadow: 0px 0px 105px 45px #2eff9de6;
-    box-shadow: 0px 0px 105px 45px #2eff9de6;
-  }
-
-  .glow7 {
-    position: absolute;
-    width: 5vw;
-    top: 60%;
-    opacity: 0.5;
-    left: 50%;
-    -webkit-box-shadow: 0px 0px 105px 45px #2eff9de6;
-    -moz-box-shadow: 0px 0px 105px 45px #2eff9de6;
-    box-shadow: 0px 0px 105px 45px #2eff9de6;
-  }
-
-  .glow9 {
-    position: absolute;
-    width: 5vw;
-    top: 25%;
-    opacity: 0.5;
-    right: 10%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.9);
-  }
-
   .thirdDiv .content {
     padding: 5rem;
     padding-top: 10rem;
@@ -713,7 +733,7 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   }
 
   .thirdDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -819,8 +839,8 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
     width: 30vw;
     height: 35vw;
     margin-right: 2rem;
-    background-image: url(/src/assets/ph10.png);
-    background-position: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FPartnership%20-%20Partner.png?alt=media&token=df915e04-bf6c-49f5-8831-14fb1d7f20f3);
+    background-position: 75%;
     background-size: cover;
     border-radius: 20px;
     -webkit-transition: all 0.3s ease-in-out;
@@ -832,8 +852,8 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
     width: 30vw;
     height: 35vw;
     margin-right: 2rem;
-    background-image: url(/src/assets/ph10.png);
-    background-position: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FPartnership%20-%20Mission.png?alt=media&token=7c7babb6-df72-42a3-9708-2fe8e1875b73);
+    background-position: 100%;
     background-size: cover;
     border-radius: 20px;
     -webkit-transition: all 0.3s ease-in-out;

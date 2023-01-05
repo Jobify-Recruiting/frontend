@@ -302,7 +302,7 @@ export default {
           <div class="colsBody">
             <div class="col col_1">
         <p>Contattaci</p>
-        <h2>Fissa un appuntamento</h2>
+        <h2>Fissa <span>un appuntamento</span></h2>
         <div class="subtitle">
           Contattare Jobify Recruiting, agenzia di head hunting con sede a Milano, significa trovare la persona giusta
 da inserire al giusto posto in azienda. Da sempre siamo specializzati nella ricerca e valorizzazione di talenti e
@@ -897,10 +897,24 @@ business.
   .cols .col h2 {
     color: #0c2550;
     letter-spacing: -0.04em;
-    font-size: 64px;
-    line-height: 68px;
-    font-weight: 800;
+    font-size: 56px;
+    line-height: 65px;
+    font-weight: 500;
     margin-bottom: 2rem;
+  }
+
+  .cols .col h2 span{
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700 !important;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    padding-right: 0.05rem;
+    letter-spacing: -0.06em !important;
   }
 
   .cols .col h3 {
@@ -1024,7 +1038,7 @@ business.
     line-height: 230px;
     letter-spacing: -0.04em;
     margin-left: 5rem;
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

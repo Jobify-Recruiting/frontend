@@ -239,10 +239,6 @@ export default {
             </div>
           </div>
         </div>
-        <div class="glow"></div>
-        <div class="glow2"></div>
-        <div class="glow4"></div>
-        <div class="glow5"></div>
         <div class="firstPart">
           <div class="firstPartBody">
             <div class="subtitle">Trova lavoro</div>
@@ -287,7 +283,7 @@ export default {
           <div class="thirdPartDiv">
             <div class="first">
               <div class="col1">
-                <h2>Trova con noi il tuo prossimo lavoro.</h2>
+                <h2><span>Trova con noi</span> <br>il tuo prossimo lavoro.</h2>
                 <p>
                   Se sei un candidato in cerca di lavoro e cerchi nuove opportunità professionali Jobify Recruiting ti mette in
                   contatto con l’azienda giusta per te. Il nostro obiettivo è creare il match perfetto tra risorse umane e
@@ -316,7 +312,7 @@ export default {
                 </svg>
               </div>
             </div>
-            <h3>Gli strumenti che mettiamo a tua disposizione</h3>
+            <h3><span>Gli strumenti</span><br> che mettiamo a tua disposizione</h3>
             <div class="second">
               
               <div class="feature">
@@ -332,7 +328,7 @@ export default {
                   Jobify Recruiting. Troverai un team che sa tradurre le tue competenze e i tuoi talenti in un documento
                   professionale con cui presentarti alle aziende.
                 </p>
-                <div class="btn3">Scarica</div>
+                <a href="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/documenti_template%2FTemplate%20CV%20.docx?alt=media&token=f02bcd04-aeb7-4fbc-b61b-f7de0cbfcfcc" download><div class="btn3">Scarica</div></a>
               </div>
               <div class="feature">
                 <div
@@ -347,7 +343,7 @@ export default {
                   candida. Tanti sono gli accorgimenti da tenere a mente e i dettagli da non trascurare e per questo in Jobify
                   Recruiting trovi un consulente che ti accompagna in questa fase delicata della ricerca lavoro.
                 </p>
-                <div class="btn3">Learn more</div>
+                <div class="btn3">Scopri di più</div>
               </div>
               <div class="feature">
                 <div
@@ -362,7 +358,7 @@ export default {
                   Una lettera di presentazione efficace è centrata sulla posizione e sull’azienda per cui ci si candida e
                   prepararla è sicuramente più semplice se si può contare sul supporto di Jobify Recruiting.
                 </p>
-                <div class="btn3">Learn more</div>
+                <a href="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/documenti_template%2FLettera%20motivazionale%20-%20Template.docx?alt=media&token=cd248b19-cbaf-449b-8105-ae9cccf09dde" download><div class="btn3">Scarica</div></a>
               </div>
             </div>
           </div>
@@ -431,22 +427,11 @@ export default {
                   </p>
                 </div>
               </div>
+              <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
+                
                 <div class="background transition">
                   <div class="number">2</div>
                   <h2>Job description</h2>
@@ -459,23 +444,11 @@ export default {
                 </div>
               </div>
             </div>
+            <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
             <div class="columns">
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">3</div>
                   <h2>Head Hunting e incontro con l’azienda</h2>
@@ -486,22 +459,10 @@ export default {
                   </p>
                 </div>
               </div>
+              <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">4</div>
                   <h2>Screening CV</h2>
@@ -519,23 +480,11 @@ export default {
                 </div>
               </div>
             </div>
+            <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
             <div class="columns">
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">5</div>
                   <h2>Screening telefonico</h2>
@@ -552,22 +501,10 @@ export default {
                   </p>
                 </div>
               </div>
+              <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">6</div>
                   <h2>Videocolloquio</h2>
@@ -585,23 +522,11 @@ export default {
                 </div>
               </div>
             </div>
+            <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
             <div class="columns">
               <div class="column workflowColumn" style="width: 35vw">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">7</div>
                   <h2>Presentazione Short list</h2>
@@ -616,22 +541,10 @@ export default {
                   </p>
                 </div>
               </div>
+              <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
               <div class="column workflowColumn" style="width: 35vw">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">8</div>
                   <h2>Colloqui one-toone con l'azienda</h2>
@@ -747,43 +660,34 @@ export default {
           </div>
         </div>
 
-        <div class="beforeFooter">
-          <div class="ctaCV" style="background: rgb(161 161 161 / 10%)">
-            <div class="blur"></div>
-            <div class="cols2">
-              <div class="col col-padding" id="positions">
-                <h3>
-                  Scopri le <span>posizioni aperte</span> su Jobify recruiting
-                </h3>
-                <router-link to="/openposition">
-                  <div class="button">
-                    Guarda le offerte di lavoro
-                    <span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        fill="currentColor"
-                        class="bi bi-arrow-right-short"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                        />
-                      </svg>
-                    </span></div
-                ></router-link>
-              </div>
-              <div
-                class="col"
-                style="
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/storie.jpg);
-                  background-size: cover;
-                  border-radius: 30px;
-                "
-              ></div>
+        
+        <div class="fifthDiv">
+          <div class="adviser transition">
+            <div class="col">
+              <h3>
+                <span>Scopri le posizioni aperte</span><br> su Jobify Recruiting
+              </h3>
+              <router-link to="/openposition">
+                      <div class="button">
+                        Guarda le offerte di lavoro
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-arrow-right-short"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                            />
+                          </svg>
+                        </span></div
+                    ></router-link>
             </div>
+            <div class="col_image"></div>
           </div>
         </div>
       </div>
@@ -979,13 +883,13 @@ export default {
     padding-left: 8rem;
     padding-right: 8rem;
     padding-top: 10rem;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/avatartech.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2F012%20Trova%20lavoro.png?alt=media&token=81ced77b-78ef-451f-b65b-3746472ef446);
     background-size: cover;
     background-position: center;
-    background-size: 60%;
+    background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top: 5%;
+    top: 0;
     right: 0;
     margin-right: 0;
   }
@@ -1081,7 +985,7 @@ export default {
   }
 
   .secondPart .text span {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1226,9 +1130,20 @@ export default {
     font-size: 54px;
     line-height: 58px;
     letter-spacing: -0.04em;
+    font-weight: 500;
+    margin-bottom: 5rem;
+    color: #0c2550;
+  }
+
+  .thirdPartDiv .first h2 span{
+    color: #fff;
+    width: 80%;
+    font-size: 54px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
     font-weight: 700;
     margin-bottom: 5rem;
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1238,14 +1153,25 @@ export default {
   .thirdPartDiv h3 {
     color: #fff;
     width: 80%;
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 54px;
+    line-height: 58px;
     letter-spacing: -0.04em;
-    font-weight: 700;
-    margin-top: 2rem;
+    font-weight: 500;
+    margin-top: 5rem;
+    color: #0c2550;
     padding-left: 3rem;
     padding-right: 3rem;
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+  }
+
+  .thirdPartDiv h3 span{
+    color: #fff;
+    width: 80%;
+    font-size: 54px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    margin-bottom: 5rem;
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1360,7 +1286,7 @@ export default {
   }
 
   .workflow .workflowTitle h2 {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1388,7 +1314,7 @@ export default {
   .workflow .btnScrollR {
     width: fit-content;
     background: transparent;
-    border: 2px solid #0c2550;
+    border: 2px solid rgb(209, 209, 209);
     border-radius: 25rem;
     height: auto;
     z-index: 10;
@@ -1401,7 +1327,7 @@ export default {
     margin-right: 1rem;
     width: fit-content;
     background: transparent;
-    border: 2px solid #0c2550;
+    border: 2px solid rgb(209, 209, 209);
     border-radius: 25rem;
     height: auto;
     z-index: 10;
@@ -1415,7 +1341,7 @@ export default {
   }
 
   .workflow .columns .column {
-    padding: 3rem;
+    padding: 1rem;
     width: 70%;
     display: flex;
     align-items: center;
@@ -1452,7 +1378,7 @@ export default {
   }
 
   .workflow .columns .number {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1491,6 +1417,12 @@ export default {
     line-height: 20px;
     font-weight: 600 !important;
   }
+
+  .svg_logo_link {
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
   .steps {
     padding-top: 2rem;
@@ -1532,7 +1464,7 @@ export default {
     font-size: 36px;
     font-weight: 600;
     line-height: 40px;
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1625,46 +1557,56 @@ export default {
     border-color: #0062f5;
   }
 
-  .ctaCV {
-    width: 90%;
-    height: 300px;
-    background-color: white;
-    border-radius: 12px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5rem;
+  .fifthDiv {
+    background: #fff;
+    padding: 5rem;
+    padding-bottom: 5rem;
   }
 
-  .ctaCV .cols2 {
-    height: 100%;
+  .fifthDiv .adviser {
+    background: #0c2550;
+    border-radius: 30px;
     display: flex;
   }
 
-  .ctaCV .col-padding {
-    padding: 5rem;
-  }
-
-  .ctaCV .col h3 {
-    font-size: 34px;
-    line-height: 38px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    color: #0c2550;
-  }
-
-  .ctaCV .col h3 span {
-    font-size: 34px;
-    line-height: 38px;
-    font-weight: 700;
-    color: #0062f5;
-  }
-
-  .ctaCV .col {
+  .fifthDiv .adviser .col {
     width: 50%;
-    height: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .fifthDiv .adviser .col h3 {
+    color: #fff;
+    width: 72%;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
   }
 
-  .ctaCV .button {
+  .fifthDiv .adviser .col h3 span {
+    background: -webkit-linear-gradient(-70deg,#2867b2 0%,#01a49e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    letter-spacing: -0.06em;
+    font-weight: 700 !important;
+  }
+
+  .fifthDiv .adviser .col_image {
+    background: transparent;
+    border-radius: 30px;
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 42%;
+  }
+
+  .adviser .button {
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     padding-left: 1.6rem;
@@ -1683,11 +1625,11 @@ export default {
     cursor: pointer;
   }
 
-  .ctaCV .button span {
+  .adviser .button span {
     margin-left: 0.4rem;
   }
 
-  .ctaCV .button:hover {
+  .adviser .button:hover {
     background: #ed3fb4;
     color: #fff;
   }
@@ -1822,9 +1764,6 @@ export default {
     transform: rotate(90deg);
   }
 
-  .beforeFooter {
-    padding-bottom: 3rem;
-  }
 
   .seventh {
     width: 100%;
@@ -1929,52 +1868,6 @@ export default {
 
   .seventh .btn {
     background: transparent !important;
-  }
-
-  .glow {
-    width: 5vw;
-    opacity: 0.5;
-    transform: scale(3.5);
-    left: 3%;
-    top: 23%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
-    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
-  }
-
-  .glow2 {
-    position: absolute;
-    width: 5vw;
-    transform: scale(3.5);
-    top: 70%;
-    z-index: 15;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
-    box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
-  }
-
-  .glow4 {
-    position: absolute;
-    width: 5vw;
-    transform: scale(4.5);
-    top: 10%;
-    opacity: 0.5;
-    left: 110%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
-    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
-  }
-  .glow5 {
-    position: absolute;
-    width: 5vw;
-    transform: scale(4.5);
-    top: 90%;
-    opacity: 0.5;
-    left: 110%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
-    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
   }
 }
 

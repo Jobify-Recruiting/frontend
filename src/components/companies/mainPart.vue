@@ -85,7 +85,7 @@ export default {
       });
     }
 
-    const flavoursContainer2 = document.getElementById("clients2");
+    const flavoursContainer2 = document.getElementById("clientsCoBodyId");
     const flavoursScrollWidth2 = flavoursContainer2.scrollWidth;
 
     window.addEventListener("load", () => {
@@ -160,13 +160,26 @@ export default {
     },
 
     workflowScrollSx() {
-      let content = document.querySelector(".workflowFlex");
+      let content = document.querySelector("#workflowFlex2");
       const itemWidth = content.querySelector(".workflowColumn").clientWidth;
       content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
       console.log(content);
     },
 
     workflowScrollDx() {
+      let content = document.querySelector("#workflowFlex2");
+      const itemWidth = content.querySelector(".workflowColumn").clientWidth;
+      content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
+    },
+
+    workflowScrollSx2() {
+      let content = document.querySelector(".workflowFlex");
+      const itemWidth = content.querySelector(".workflowColumn").clientWidth;
+      content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
+      console.log(content);
+    },
+
+    workflowScrollDx2() {
       let content = document.querySelector(".workflowFlex");
       const itemWidth = content.querySelector(".workflowColumn").clientWidth;
       content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
@@ -179,11 +192,6 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <div class="glow"></div>
-        <div class="glow2"></div>
-        <div class="glow3"></div>
-        <div class="glow4"></div>
-        <div class="glow5"></div>
         <div class="firstPart">
 
         <div class="firstPartBody">
@@ -279,7 +287,7 @@ professionali e si riflette nella cultura aziendale</p>
           <div class="thirdPartDiv">
             <div class="first">
               <div class="col1">
-                <h2>Il problema delle aziende…</h2>
+                <h2><span>Il problema</span> delle aziende…</h2>
                 <p>
                   Oggi le aziende hanno difficoltà a trovare i giusti talenti dato che spesso si basano unicamente sulla
                   valutazione del CV e delle Hard &amp; Soft Skills. Per questo Jobify Recruiting propone un approccio che punta a
@@ -291,7 +299,7 @@ professionali e si riflette nella cultura aziendale</p>
                 </p>
 
                 <h2>
-                  I punti di forza del nostro metodo
+                  <span>I punti di forza</span> del nostro metodo
                 </h2>
                 <p>
                   Jobify Recruiting è molto diversa dalle agenzie di ricerca personale. Siamo una società di Head Hunting che
@@ -306,7 +314,7 @@ professionali e si riflette nella cultura aziendale</p>
                 </p>
 
                 <h2>
-                  I vantaggi per le aziende
+                  <span>I vantaggi</span> per le aziende
                 </h2>
                 <p>
                   La situazione di emergenza sanitaria ha fatto riscoprire alle persone il valore della vita e le ha portate a
@@ -319,11 +327,10 @@ professionali e si riflette nella cultura aziendale</p>
                 
               </div>
               <div class="col2">
-                <div class="glow4"></div>
                 <div class="thirdPartImage"></div>
               </div>
             </div>
-            <div class="second">
+            <!--<div class="second">
               <div class="feature">
                 <h2>Umanizzazione</h2>
                 <p>
@@ -353,9 +360,188 @@ professionali e si riflette nella cultura aziendale</p>
                   tasso di retention. Questo si traduce in una riduzione dei costi per l’azienda.
                 </p>
               </div>
+            </div>-->
+          </div>
+        </div>
+
+        <div class="workflow" id="workflow">
+      <div class="workflowTitle">
+        <h2 class="workflowTitle2" style="margin-bottom: 2rem !important">
+          I vantaggi
+        </h2>
+        <p>
+          Il nostro processo di selezione si caratterizza per il fatto di garantire:
+              <br />
+            </p>
+      </div>
+      <div class="buttons">
+        <div class="btnScrollL" @click="workflowScrollSx2()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="#0c2550"
+            class="bi bi-chevron-left"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+            />
+          </svg>
+        </div>
+        <div class="btnScrollR" @click="workflowScrollDx2()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="22"
+            height="22"
+            fill="#0c2550"
+            class="bi bi-chevron-right"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="workflowFlex"
+        style="
+          display: flex;
+          height: 100%;
+          width: 100%;
+          overflow-x: scroll;
+          overflow-y: hidden;
+          flex-wrap: nowrap;
+          align-items: center;
+          position: relative;
+        "
+      >
+      <div class="columns">
+          <div class="column workflowColumn" style="width: 35vw !important">
+            <div class="background transition">
+              <div class="number">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="#0062f5"
+                    class="bi bi-person"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h2>Umanizzazione</h2>
+              <p>
+                Le aziende di successo hanno al loro interno dipendenti felici e per questo lo scopo di Jobify Recruiting è creare il match ideale tra talento e azienda. Si tratta di andare oltre le competenze professionali e tenere conto di valori e ideali della risorsa da inserire in azienda.
+              </p>
+            </div>
+          </div>
+          <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
+          <div class="column workflowColumn" style="width: 35vw !important">
+            <div class="background transition">
+              <div class="number">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="#0062f5"
+                    class="bi bi-bullseye"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                    />
+                    <path
+                      d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"
+                    />
+                    <path
+                      d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
+                    />
+                    <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                  </svg>
+                </div>
+              </div>
+              <h2>Rapidità</h2>
+              <p>
+                Le moderne tecnologie velocizzano il processo di selezione e riducono errori di valutazione, tempo e spese extra per la ricerca della migliore risorsa.
+              </p>
             </div>
           </div>
         </div>
+        <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
+        <div class="columns">
+          <div class="column workflowColumn" style="width: 35vw !important">
+            <div class="background transition">
+              <div class="number">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="#0062f5"
+                    class="bi bi-alarm"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z"
+                    />
+                    <path
+                      d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h2>Scientificità</h2>
+              <p>
+                Lavoriamo con la migliore tecnologia per prendere decisioni consapevoli e basate sui
+                dati in modo da garantire un approccio scientifico alla ricerca risorse umane.
+              </p>
+            </div>
+          </div>
+          <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
+          <div class="column workflowColumn" style="width: 35vw !important">
+            <div class="background transition">
+              <div class="number">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50"
+                    height="50"
+                    fill="#0062f5"
+                    class="bi bi-graph-up-arrow"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <h2>Efficacia</h2>
+              <p>
+                Il giusto candidato permette di ottenere prestazioni migliori, il turnover si riduce e aumenta il tasso di retention. Questo si traduce in una riduzione dei costi per l’azienda.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
         <div class="workflow" id="workflow">
           <div class="workflowTitle">
@@ -405,6 +591,7 @@ professionali e si riflette nella cultura aziendale</p>
               align-items: center;
               position: relative;
             "
+            id="workflowFlex2"
           >
             <div class="columns">
               <div class="column workflowColumn" style="width: 35vw !important">
@@ -418,22 +605,10 @@ professionali e si riflette nella cultura aziendale</p>
                   </p>
                 </div>
               </div>
+              <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">2</div>
                   <h2>Job description</h2>
@@ -446,23 +621,11 @@ professionali e si riflette nella cultura aziendale</p>
                 </div>
               </div>
             </div>
+            <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
             <div class="columns">
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">3</div>
                   <h2>Head Hunting e incontro con l’azienda</h2>
@@ -473,22 +636,10 @@ professionali e si riflette nella cultura aziendale</p>
                   </p>
                 </div>
               </div>
+              <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">4</div>
                   <h2>Screening CV</h2>
@@ -506,23 +657,11 @@ professionali e si riflette nella cultura aziendale</p>
                 </div>
               </div>
             </div>
+            <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
             <div class="columns">
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">5</div>
                   <h2>Screening telefonico</h2>
@@ -539,22 +678,10 @@ professionali e si riflette nella cultura aziendale</p>
                   </p>
                 </div>
               </div>
+              <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">6</div>
                   <h2>Videocolloquio</h2>
@@ -572,23 +699,11 @@ professionali e si riflette nella cultura aziendale</p>
                 </div>
               </div>
             </div>
+            <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
             <div class="columns">
               <div class="column workflowColumn" style="width: 35vw">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">7</div>
                   <h2>Presentazione Short list</h2>
@@ -603,22 +718,10 @@ professionali e si riflette nella cultura aziendale</p>
                   </p>
                 </div>
               </div>
+              <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+              </div>
               <div class="column workflowColumn" style="width: 35vw">
-                <div class="circle2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    fill="#0c2550"
-                    class="bi bi-arrow-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                    />
-                  </svg>
-                </div>
                 <div class="background transition">
                   <div class="number">8</div>
                   <h2>Colloqui one-toone con l'azienda</h2>
@@ -639,7 +742,7 @@ professionali e si riflette nella cultura aziendale</p>
 
         <div class="feedbackDiv" id="feedback">
           <div class="content">
-            <h2>I clienti dicono di noi</h2>
+            <h2><span>I clienti</span> dicono di noi</h2>
             <div class="buttons">
               <div class="btnScrollL" @click="btnScrollSx()">
                 <svg
@@ -848,6 +951,24 @@ professionale e personale del candidato e al successo del business.
                     <p class="worktitle">
                       Director of Sales & Operations SEUR - Talent.com
                     </p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Team giovane, ma con passione ed esperienza. Abbiamo trovato in loro un valido supporto.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_clients%2Fmaurizio%20de%20gregorio.jpeg?alt=media&token=685ca922-f7e2-4c38-9796-09e3a2d90478);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Maurizio de Gregorio</p>
+                    <p class="worktitle">General Manager presso Mamacrowd </p>
                   </div>
                 </div>
               </div>
@@ -1386,247 +1507,247 @@ cercano personale.
           </div>
         </div>
 
-        <div class="clientsCo" id="clients">
-          <div class="titles">
-            <h2>I nostri clienti</h2>
-          </div>
-          <div class="clientsCoBody" id="clients2">
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-4.png"
-              />
+        <div class="clientsCo">
+          <div class="clientsCoBorder">
+            <div class="clientsCoLink">
+              <h2><span>I clienti</span> di Jobify Recruiting</h2>
             </div>
+            <div class="clientsCoDiv">
+              <div class="clientsCoBody" id="clientsCoBodyId">
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-4.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="data:image/svg+xml,%3csvg width='330px' height='44px' viewBox='0 0 330 44' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3c!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch --%3e %3ctitle%3elogo/mamacrowd_logo_2020%3c/title%3e %3cdesc%3eCreated with Sketch.%3c/desc%3e %3cg id='logo/mamacrowd_logo_2020' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cpath d='M166.56625,36.98 C163.632045,36.98 160.97066,36.3404424 158.589504,35.0603989 C156.203924,33.7779773 154.324101,31.9949099 152.957504,29.7172479 C151.589878,27.4378723 150.90625,24.8621823 150.90625,22 C150.90625,19.1378177 151.589878,16.5621277 152.957504,14.2827521 C154.324101,12.0050901 156.203924,10.2220227 158.589504,8.93960107 C160.970852,7.65945451 163.645559,7.02 166.60625,7.02 C169.099515,7.02 171.360682,7.45986212 173.385841,8.34156419 C175.416819,9.22579954 177.126792,10.4996255 178.510361,12.1599078 L178.814628,12.5250284 L173.926118,17.0374992 L173.588253,16.6472897 C171.789012,14.5692923 169.579799,13.54 166.92625,13.54 C165.276048,13.54 163.813432,13.8993497 162.530161,14.6164717 C161.250921,15.3313411 160.257591,16.3246708 159.542722,17.6039107 C158.8256,18.8871817 158.46625,20.349798 158.46625,22 C158.46625,23.650202 158.8256,25.1128183 159.542722,26.3960893 C160.257591,27.6753292 161.250921,28.6686589 162.530161,29.3835283 C163.813432,30.1006503 165.276048,30.46 166.92625,30.46 C169.578437,30.46 171.786893,29.418512 173.586299,27.3149815 L173.923837,26.920395 L178.8118,31.4323617 L178.512946,31.796964 C177.128781,33.4856458 175.410801,34.7741305 173.364706,35.6589285 C171.326642,36.5402534 169.059198,36.98 166.56625,36.98 Z M194.164274,28.7 L188.96625,28.7 L188.96625,36.5 L181.48625,36.5 L181.48625,7.5 L194.10625,7.5 C196.653926,7.5 198.877063,7.92673209 200.7724,8.78447577 C202.68401,9.6495839 204.165419,10.8852617 205.20564,12.4877645 C206.246974,14.0919814 206.76625,15.9866385 206.76625,18.16 C206.76625,20.3349847 206.239401,22.2246152 205.182841,23.8164988 C204.230907,25.2507467 202.919606,26.3803129 201.257273,27.2025453 L207.74483,36.5 L199.564274,36.5 L194.164274,28.7 Z M188.96625,13.78 L188.96625,22.54 L193.74625,22.54 C195.584471,22.54 196.951892,22.1457883 197.864182,21.3775444 C198.759309,20.6237534 199.20625,19.5652087 199.20625,18.16 C199.20625,16.7285934 198.759515,15.664659 197.867155,14.9249397 C196.954549,14.1684371 195.585771,13.78 193.74625,13.78 L188.96625,13.78 Z M224.44625,36.98 C221.458907,36.98 218.757584,36.3338821 216.349651,35.0404778 C213.937571,33.7448464 212.044272,31.9551953 210.677504,29.6772479 C209.310005,27.398084 208.62625,24.8357286 208.62625,22 C208.62625,19.1642714 209.310005,16.601916 210.677504,14.3227521 C212.044272,12.0448047 213.937571,10.2551536 216.349651,8.95952222 C218.757584,7.66611786 221.458907,7.02 224.44625,7.02 C227.433902,7.02 230.12894,7.66625926 232.523903,8.96008959 C234.921679,10.2554399 236.814097,12.0442585 238.193849,14.3208491 C239.575395,16.6004009 240.26625,19.1634713 240.26625,22 C240.26625,24.8365287 239.575395,27.3995991 238.193849,29.6791509 C236.814097,31.9557415 234.921679,33.7445601 232.523903,35.0399104 C230.12894,36.3337407 227.433902,36.98 224.44625,36.98 Z M224.44625,30.46 C226.014394,30.46 227.422274,30.1017448 228.678648,29.3856114 C229.932541,28.6708925 230.914032,27.6768989 231.629778,26.3960893 C232.3469,25.1128183 232.70625,23.650202 232.70625,22 C232.70625,20.349798 232.3469,18.8871817 231.629778,17.6039107 C230.914032,16.3231011 229.932541,15.3291075 228.678648,14.6143886 C227.422274,13.8982552 226.014394,13.54 224.44625,13.54 C222.878106,13.54 221.470226,13.8982552 220.213852,14.6143886 C218.959959,15.3291075 217.978468,16.3231011 217.262722,17.6039107 C216.5456,18.8871817 216.18625,20.349798 216.18625,22 C216.18625,23.650202 216.5456,25.1128183 217.262722,26.3960893 C217.978468,27.6768989 218.959959,28.6708925 220.213852,29.3856114 C221.470226,30.1017448 222.878106,30.46 224.44625,30.46 Z M262.258665,18.6348026 L256.265909,36.5 L248.624238,36.5 L239.095666,7.5 L246.870831,7.5 L252.836546,26.076783 L259.066564,7.5 L265.790331,7.5 L271.830666,26.2250392 L277.984257,7.5 L285.235897,7.5 L275.748754,36.5 L268.06297,36.5 L262.258665,18.6348026 Z M287.74625,7.5 L300.96625,7.5 C304.080668,7.5 306.843361,8.09641273 309.248833,9.29227589 C311.664986,10.4934492 313.549264,12.1906848 314.892357,14.3784028 C316.235698,16.5665258 316.90625,19.1104756 316.90625,22 C316.90625,24.8895244 316.235698,27.4334742 314.892357,29.6215972 C313.549264,31.8093152 311.664986,33.5065508 309.248833,34.7077241 C306.843361,35.9035873 304.080668,36.5 300.96625,36.5 L287.74625,36.5 L287.74625,7.5 Z M295.22625,13.82 L295.22625,30.18 L300.64625,30.18 C303.325738,30.18 305.436268,29.4428894 307.004571,27.9749583 C308.565477,26.5139504 309.34625,24.5339097 309.34625,22 C309.34625,19.4660903 308.565477,17.4860496 307.004571,16.0250417 C305.436268,14.5571106 303.325738,13.82 300.64625,13.82 L295.22625,13.82 Z' id='crowd' stroke='%234FBDBF' fill='%234EBDBF'%3e%3c/path%3e %3cpath d='M38.893058,21.0099512 L31.4329711,33.54 L27.9476609,33.54 L20.52875,21.3440343 L20.52875,36.5 L13.44875,36.5 L13.44875,7.5 L19.591288,7.5 L29.7854486,24.4254193 L39.8239731,7.5 L45.9273235,7.5 L46.0101806,36.5 L38.9299391,36.5 L38.893058,21.0099512 Z M71.2543888,30.5 L58.9231112,30.5 L56.4431112,36.5 L48.6984759,36.5 L61.6241902,7.5 L68.6728867,7.5 L81.6400295,36.5 L73.7343888,36.5 L71.2543888,30.5 Z M68.8004709,24.58 L65.10875,15.6666557 L61.4170291,24.58 L68.8004709,24.58 Z M109.733058,21.0099512 L102.272971,33.54 L98.7876609,33.54 L91.36875,21.3440343 L91.36875,36.5 L84.28875,36.5 L84.28875,7.5 L90.431288,7.5 L100.625449,24.4254193 L110.663973,7.5 L116.767323,7.5 L116.850181,36.5 L109.769939,36.5 L109.733058,21.0099512 Z M142.094389,30.5 L129.763111,30.5 L127.283111,36.5 L119.538476,36.5 L132.46419,7.5 L139.512887,7.5 L152.48003,36.5 L144.574389,36.5 L142.094389,30.5 Z M139.640471,24.58 L135.94875,15.6666557 L132.257029,24.58 L139.640471,24.58 Z' id='mama' stroke='%234A4A4A' fill='%234A4A4A'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="data:image/svg+xml,%3csvg width='330px' height='44px' viewBox='0 0 330 44' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3c!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch --%3e %3ctitle%3elogo/mamacrowd_logo_2020%3c/title%3e %3cdesc%3eCreated with Sketch.%3c/desc%3e %3cg id='logo/mamacrowd_logo_2020' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cpath d='M166.56625,36.98 C163.632045,36.98 160.97066,36.3404424 158.589504,35.0603989 C156.203924,33.7779773 154.324101,31.9949099 152.957504,29.7172479 C151.589878,27.4378723 150.90625,24.8621823 150.90625,22 C150.90625,19.1378177 151.589878,16.5621277 152.957504,14.2827521 C154.324101,12.0050901 156.203924,10.2220227 158.589504,8.93960107 C160.970852,7.65945451 163.645559,7.02 166.60625,7.02 C169.099515,7.02 171.360682,7.45986212 173.385841,8.34156419 C175.416819,9.22579954 177.126792,10.4996255 178.510361,12.1599078 L178.814628,12.5250284 L173.926118,17.0374992 L173.588253,16.6472897 C171.789012,14.5692923 169.579799,13.54 166.92625,13.54 C165.276048,13.54 163.813432,13.8993497 162.530161,14.6164717 C161.250921,15.3313411 160.257591,16.3246708 159.542722,17.6039107 C158.8256,18.8871817 158.46625,20.349798 158.46625,22 C158.46625,23.650202 158.8256,25.1128183 159.542722,26.3960893 C160.257591,27.6753292 161.250921,28.6686589 162.530161,29.3835283 C163.813432,30.1006503 165.276048,30.46 166.92625,30.46 C169.578437,30.46 171.786893,29.418512 173.586299,27.3149815 L173.923837,26.920395 L178.8118,31.4323617 L178.512946,31.796964 C177.128781,33.4856458 175.410801,34.7741305 173.364706,35.6589285 C171.326642,36.5402534 169.059198,36.98 166.56625,36.98 Z M194.164274,28.7 L188.96625,28.7 L188.96625,36.5 L181.48625,36.5 L181.48625,7.5 L194.10625,7.5 C196.653926,7.5 198.877063,7.92673209 200.7724,8.78447577 C202.68401,9.6495839 204.165419,10.8852617 205.20564,12.4877645 C206.246974,14.0919814 206.76625,15.9866385 206.76625,18.16 C206.76625,20.3349847 206.239401,22.2246152 205.182841,23.8164988 C204.230907,25.2507467 202.919606,26.3803129 201.257273,27.2025453 L207.74483,36.5 L199.564274,36.5 L194.164274,28.7 Z M188.96625,13.78 L188.96625,22.54 L193.74625,22.54 C195.584471,22.54 196.951892,22.1457883 197.864182,21.3775444 C198.759309,20.6237534 199.20625,19.5652087 199.20625,18.16 C199.20625,16.7285934 198.759515,15.664659 197.867155,14.9249397 C196.954549,14.1684371 195.585771,13.78 193.74625,13.78 L188.96625,13.78 Z M224.44625,36.98 C221.458907,36.98 218.757584,36.3338821 216.349651,35.0404778 C213.937571,33.7448464 212.044272,31.9551953 210.677504,29.6772479 C209.310005,27.398084 208.62625,24.8357286 208.62625,22 C208.62625,19.1642714 209.310005,16.601916 210.677504,14.3227521 C212.044272,12.0448047 213.937571,10.2551536 216.349651,8.95952222 C218.757584,7.66611786 221.458907,7.02 224.44625,7.02 C227.433902,7.02 230.12894,7.66625926 232.523903,8.96008959 C234.921679,10.2554399 236.814097,12.0442585 238.193849,14.3208491 C239.575395,16.6004009 240.26625,19.1634713 240.26625,22 C240.26625,24.8365287 239.575395,27.3995991 238.193849,29.6791509 C236.814097,31.9557415 234.921679,33.7445601 232.523903,35.0399104 C230.12894,36.3337407 227.433902,36.98 224.44625,36.98 Z M224.44625,30.46 C226.014394,30.46 227.422274,30.1017448 228.678648,29.3856114 C229.932541,28.6708925 230.914032,27.6768989 231.629778,26.3960893 C232.3469,25.1128183 232.70625,23.650202 232.70625,22 C232.70625,20.349798 232.3469,18.8871817 231.629778,17.6039107 C230.914032,16.3231011 229.932541,15.3291075 228.678648,14.6143886 C227.422274,13.8982552 226.014394,13.54 224.44625,13.54 C222.878106,13.54 221.470226,13.8982552 220.213852,14.6143886 C218.959959,15.3291075 217.978468,16.3231011 217.262722,17.6039107 C216.5456,18.8871817 216.18625,20.349798 216.18625,22 C216.18625,23.650202 216.5456,25.1128183 217.262722,26.3960893 C217.978468,27.6768989 218.959959,28.6708925 220.213852,29.3856114 C221.470226,30.1017448 222.878106,30.46 224.44625,30.46 Z M262.258665,18.6348026 L256.265909,36.5 L248.624238,36.5 L239.095666,7.5 L246.870831,7.5 L252.836546,26.076783 L259.066564,7.5 L265.790331,7.5 L271.830666,26.2250392 L277.984257,7.5 L285.235897,7.5 L275.748754,36.5 L268.06297,36.5 L262.258665,18.6348026 Z M287.74625,7.5 L300.96625,7.5 C304.080668,7.5 306.843361,8.09641273 309.248833,9.29227589 C311.664986,10.4934492 313.549264,12.1906848 314.892357,14.3784028 C316.235698,16.5665258 316.90625,19.1104756 316.90625,22 C316.90625,24.8895244 316.235698,27.4334742 314.892357,29.6215972 C313.549264,31.8093152 311.664986,33.5065508 309.248833,34.7077241 C306.843361,35.9035873 304.080668,36.5 300.96625,36.5 L287.74625,36.5 L287.74625,7.5 Z M295.22625,13.82 L295.22625,30.18 L300.64625,30.18 C303.325738,30.18 305.436268,29.4428894 307.004571,27.9749583 C308.565477,26.5139504 309.34625,24.5339097 309.34625,22 C309.34625,19.4660903 308.565477,17.4860496 307.004571,16.0250417 C305.436268,14.5571106 303.325738,13.82 300.64625,13.82 L295.22625,13.82 Z' id='crowd' stroke='%234FBDBF' fill='%234EBDBF'%3e%3c/path%3e %3cpath d='M38.893058,21.0099512 L31.4329711,33.54 L27.9476609,33.54 L20.52875,21.3440343 L20.52875,36.5 L13.44875,36.5 L13.44875,7.5 L19.591288,7.5 L29.7854486,24.4254193 L39.8239731,7.5 L45.9273235,7.5 L46.0101806,36.5 L38.9299391,36.5 L38.893058,21.0099512 Z M71.2543888,30.5 L58.9231112,30.5 L56.4431112,36.5 L48.6984759,36.5 L61.6241902,7.5 L68.6728867,7.5 L81.6400295,36.5 L73.7343888,36.5 L71.2543888,30.5 Z M68.8004709,24.58 L65.10875,15.6666557 L61.4170291,24.58 L68.8004709,24.58 Z M109.733058,21.0099512 L102.272971,33.54 L98.7876609,33.54 L91.36875,21.3440343 L91.36875,36.5 L84.28875,36.5 L84.28875,7.5 L90.431288,7.5 L100.625449,24.4254193 L110.663973,7.5 L116.767323,7.5 L116.850181,36.5 L109.769939,36.5 L109.733058,21.0099512 Z M142.094389,30.5 L129.763111,30.5 L127.283111,36.5 L119.538476,36.5 L132.46419,7.5 L139.512887,7.5 L152.48003,36.5 L144.574389,36.5 L142.094389,30.5 Z M139.640471,24.58 L135.94875,15.6666557 L132.257029,24.58 L139.640471,24.58 Z' id='mama' stroke='%234A4A4A' fill='%234A4A4A'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://www.serverplan.com/assets/images/serverplan.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://www.serverplan.com/assets/images/serverplan.png"
+                  />
+                </div>
 
-            <div class="logoClient" >
-              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/10/logo.png"
-              />
-            </div>
+                <div class="logoClient" >
+                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/10/logo.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-2.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-2.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/06/logo_bit4id.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/06/logo_bit4id.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://static.wixstatic.com/media/aa2e06_cd3d54eb615144ca903cc5a5d5d754e7~mv2.png/v1/fill/w_214,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Contaq%20Logo%20blu.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://static.wixstatic.com/media/aa2e06_cd3d54eb615144ca903cc5a5d5d754e7~mv2.png/v1/fill/w_214,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Contaq%20Logo%20blu.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img src="https://www.simol.com/static/img/logo.png" />
-            </div>
+                <div class="logoClient">
+                  <img src="https://www.simol.com/static/img/logo.png" />
+                </div>
 
-            <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/equity+factory.jpg" />
-            </div>
+                <div class="logoClient">
+                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/equity+factory.jpg" />
+                </div>
 
-            <div class="logoClient">
-              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
-              src="https://thingsss.s3.eu-central-1.amazonaws.com/cikis+studio.png" />
-            </div>
+                <div class="logoClient">
+                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
+                  src="https://thingsss.s3.eu-central-1.amazonaws.com/cikis+studio.png" />
+                </div>
 
-            <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/nte+process.png" />
-            </div>
+                <div class="logoClient">
+                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/nte+process.png" />
+                </div>
 
-            <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/adipso.png" />
-            </div>
+                <div class="logoClient">
+                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/adipso.png" />
+                </div>
 
-            <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/Khale+automation.png" />
-            </div>
-            
-            <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/stragroup.png" />
-            </div>
+                <div class="logoClient">
+                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/Khale+automation.png" />
+                </div>
+                
+                <div class="logoClient">
+                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/stragroup.png" />
+                </div>
 
-            <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/ghezzi.png" />
-            </div>
-            
-            <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/system+management.jpeg" />
-            </div>
+                <div class="logoClient">
+                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/ghezzi.png" />
+                </div>
+                
+                <div class="logoClient">
+                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/system+management.jpeg" />
+                </div>
 
-            <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/unipol+rental.png" />
-            </div>
+                <div class="logoClient">
+                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/unipol+rental.png" />
+                </div>
 
-            <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/alifmed.png" />
-            </div>
+                <div class="logoClient">
+                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/alifmed.png" />
+                </div>
 
-            <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/betflag.png" />
-            </div>
+                <div class="logoClient">
+                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/betflag.png" />
+                </div>
 
-            <div class="logoClient">
-              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-              src="https://thingsss.s3.eu-central-1.amazonaws.com/BN+Partners.png" />
-            </div>
+                <div class="logoClient">
+                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                  src="https://thingsss.s3.eu-central-1.amazonaws.com/BN+Partners.png" />
+                </div>
 
-            <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/celda.jpeg" />
-            </div>
+                <div class="logoClient">
+                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/celda.jpeg" />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/athena_logo.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/athena_logo.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-etwo.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-etwo.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-border-white-1-1.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-border-white-1-1.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-OrfinSito.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-OrfinSito.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/studio-felli-1-1.jpg"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/studio-felli-1-1.jpg"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-07-at-22.44.28-1.jpeg"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-07-at-22.44.28-1.jpeg"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-5.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-5.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-3-1.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-3-1.png"
+                  />
+                </div>
 
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-autoscuole-furia-3-1.jpg"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-autoscuole-furia-3-1.jpg"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo20white.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo20white.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Schermata-2020-07-10-alle-16.59.13-1-1.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Schermata-2020-07-10-alle-16.59.13-1-1.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo_irec-1.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo_irec-1.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/AG_LOGO_CLAIM_BIANCO-1.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/AG_LOGO_CLAIM_BIANCO-1.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/PentaFinanziamentiItalia.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/PentaFinanziamentiItalia.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Cattura-4.png"
-              />
-            </div>
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Cattura-4.png"
+                  />
+                </div>
 
-            <div class="logoClient">
-              <img
-                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Unione-professionisti-1.jpg"
-              />
-            </div>
-            
-            <div class="logoClient">
-              <img
-                src="https://www.studiorossihr.com/wp-content/uploads/2020/10/logo-orizzontale500.png"
-              />
-            </div>
-            
-            <div class="logoClient">
-              <img src="https://www.autosystemspa.it/img/logo-autosystem.png" />
-            </div>
-            <div class="logoClient">
-              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
-                    src="https://thingsss.s3.eu-central-1.amazonaws.com/logo-cascone-home.png" />
-            </div>
-            <div class="logoClient">
-              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
-                src="https://www.dotstay.com/workspace/static/images/logos/logodotstaybianco.svg"
-              />
-            </div>
-            <div class="logoClient">
-              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxOTAuMiA1My4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOTAuMiA1My4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+Cjx0aXRsZT5Bc3NldCA1PC90aXRsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI1LjYsNDAuOGMtMywwLjEtNi0wLjgtOC41LTIuNWMtMi4xLTEuNS0zLjQtMy45LTMuNi02LjVoNy42YzAuMSwxLDAuNiwyLDEuNSwyLjZjMC45LDAuNiwyLDAuOSwzLjEsMC45CgljMi4zLDAsMy41LTAuNywzLjUtMi4xYzAtMC42LTAuMy0xLjItMC44LTEuNmMtMC44LTAuNS0xLjctMC44LTIuNi0xbC01LTEuM2MtMi0wLjQtMy44LTEuNS01LjEtMy4xYy0xLjEtMS41LTEuNy0zLjMtMS43LTUuMgoJYzAtMi4zLDEtNC40LDIuOS01LjdjMi4zLTEuNiw1LTIuMyw3LjgtMi4yYzIuNy0wLjEsNS4zLDAuNyw3LjUsMi4zYzIsMS41LDMuMiwzLjcsMy4zLDYuMWgtNy40Yy0wLjMtMS44LTEuNS0yLjctMy41LTIuNwoJYy0wLjgsMC0xLjYsMC4xLTIuMywwLjVjLTAuNSwwLjMtMC45LDAuOS0wLjksMS41YzAsMS4yLDEsMiwzLDIuNWw0LjcsMS4zYzIuMSwwLjQsNC4xLDEuNCw1LjYsM2MxLjIsMS41LDEuOCwzLjMsMS44LDUuMwoJYzAsMi40LTEuMSw0LjYtMy4xLDUuOUMzMS4yLDQwLjEsMjguNCw0MC45LDI1LjYsNDAuOCIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDguNyw1MS4zaC03LjNWMTMuNmg3LjN2M2MwLjgtMS4xLDEuOS0xLjksMy4xLTIuNWMxLjQtMC43LDMtMS4xLDQuNi0xLjFjMy40LDAsNi43LDEuNSw4LjksNC4xCgljMi40LDIuNywzLjcsNi4yLDMuNyw5LjhjMC4xLDMuNi0xLjIsNy4xLTMuNiw5LjhjLTIuMiwyLjYtNS41LDQuMS04LjksNC4xYy0xLjYsMC0zLjItMC4zLTQuNi0xLjFjLTEuMi0wLjYtMi4zLTEuNC0zLjEtMi41CglMNDguNyw1MS4zTDQ4LjcsNTEuM3ogTTUwLDMyLjFjMi43LDIuNyw3LDIuNyw5LjcsMGMwLDAsMCwwLDAsMGMxLjMtMS40LDEuOS0zLjMsMS44LTUuMmMwLjEtMS45LTAuNi0zLjgtMS44LTUuMgoJYy0yLjctMi43LTcuMS0yLjctOS43LDBjMCwwLDAsMCwwLDBjLTEuMywxLjQtMS45LDMuMy0xLjgsNS4yQzQ4LjEsMjguOCw0OC43LDMwLjcsNTAsMzIuMSIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNODcuNSw0MC4yVjEzLjZoNy4zdjNjMS42LTIuNCw0LjItMy42LDcuNi0zLjZjMi45LTAuMiw1LjYsMSw3LjYsMy4xYzEuOSwyLjQsMi45LDUuNCwyLjcsOC40djE1LjZoLTcuM1YyNS44CgljMC4xLTEuNi0wLjMtMy4yLTEuMi00LjVjLTAuOC0xLjEtMi4xLTEuNy0zLjUtMS42Yy0xLjctMC4xLTMuMiwwLjctNC4zLDEuOWMtMS4yLDEuNi0xLjgsMy42LTEuNiw1LjZ2MTNIODcuNXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEyOC42LDQwLjhjLTIuOCwwLjItNS42LTEtNy40LTMuMmMtMS45LTIuNS0yLjgtNS41LTIuNi04LjZWMTMuNmg3LjN2MTQuMmMwLDQuMiwxLjUsNi4zLDQuNSw2LjMKCWMxLjYsMC4xLDMuMS0wLjcsNC0xLjljMS4xLTEuNywxLjYtMy43LDEuNS01LjZ2LTEzaDcuM3YyNi42aC03LjN2LTNDMTM0LjMsMzkuNiwxMzEuNSw0MSwxMjguNiw0MC44Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNTcsNTEuM2gtNy4zVjEzLjZoNy4zdjNjMC44LTEuMSwxLjktMS45LDMuMS0yLjVjMS40LTAuNywzLTEuMSw0LjYtMS4xYzMuNCwwLDYuNywxLjUsOC45LDQuMQoJYzIuNCwyLjcsMy43LDYuMiwzLjYsOS44YzAuMSwzLjYtMS4yLDcuMS0zLjYsOS44Yy0yLjIsMi42LTUuNSw0LjEtOC45LDQuMWMtMS42LDAtMy4yLTAuMy00LjYtMS4xYy0xLjItMC42LTIuMy0xLjQtMy4xLTIuNVY1MS4zegoJIE0xNTguMiwzMi4xYzIuNywyLjcsNywyLjcsOS43LDBjMCwwLDAsMCwwLDBjMS4zLTEuNCwxLjktMy4zLDEuOC01LjJjMC4xLTEuOS0wLjYtMy44LTEuOC01LjJjLTIuNy0yLjctNy4xLTIuNy05LjcsMGMwLDAsMCwwLDAsMAoJYy0xLjMsMS40LTEuOSwzLjMtMS44LDUuMkMxNTYuMywyOC44LDE1NywzMC43LDE1OC4yLDMyLjEiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI3My44LDQwLjIgODEuMSw0MC4yIDgxLjEsMjkuMyA3My44LDI5LjMgNzMuOCw0MC4yICIvPgo8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjgxLjEsMTMuNiA3My44LDEzLjYgNzMuOCwyNC41IDgxLjEsMjQuNSA4MS4xLDEzLjYgIi8+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMCw1My4yIDAsMCAxMS44LDAgMTEuOCw1LjcgNy4zLDUuNyA3LjMsNDcuNSAxMS44LDQ3LjUgMTEuOCw1My4yIDAsNTMuMiAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxOTAuMiwwIDE5MC4yLDUzLjIgMTc4LjQsNTMuMiAxNzguNCw0Ny41IDE4Mi45LDQ3LjUgMTgyLjksNS43IDE3OC40LDUuNyAxNzguNCwwIDE5MC4yLDAgIi8+Cjwvc3ZnPgo="
-              />
+                <div class="logoClient">
+                  <img
+                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Unione-professionisti-1.jpg"
+                  />
+                </div>
+                
+                <div class="logoClient">
+                  <img
+                    src="https://www.studiorossihr.com/wp-content/uploads/2020/10/logo-orizzontale500.png"
+                  />
+                </div>
+                
+                <div class="logoClient">
+                  <img src="https://www.autosystemspa.it/img/logo-autosystem.png" />
+                </div>
+                <div class="logoClient">
+                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
+                        src="https://thingsss.s3.eu-central-1.amazonaws.com/logo-cascone-home.png" />
+                </div>
+                <div class="logoClient">
+                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
+                    src="https://www.dotstay.com/workspace/static/images/logos/logodotstaybianco.svg"
+                  />
+                </div>
+                <div class="logoClient">
+                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxOTAuMiA1My4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOTAuMiA1My4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+Cjx0aXRsZT5Bc3NldCA1PC90aXRsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI1LjYsNDAuOGMtMywwLjEtNi0wLjgtOC41LTIuNWMtMi4xLTEuNS0zLjQtMy45LTMuNi02LjVoNy42YzAuMSwxLDAuNiwyLDEuNSwyLjZjMC45LDAuNiwyLDAuOSwzLjEsMC45CgljMi4zLDAsMy41LTAuNywzLjUtMi4xYzAtMC42LTAuMy0xLjItMC44LTEuNmMtMC44LTAuNS0xLjctMC44LTIuNi0xbC01LTEuM2MtMi0wLjQtMy44LTEuNS01LjEtMy4xYy0xLjEtMS41LTEuNy0zLjMtMS43LTUuMgoJYzAtMi4zLDEtNC40LDIuOS01LjdjMi4zLTEuNiw1LTIuMyw3LjgtMi4yYzIuNy0wLjEsNS4zLDAuNyw3LjUsMi4zYzIsMS41LDMuMiwzLjcsMy4zLDYuMWgtNy40Yy0wLjMtMS44LTEuNS0yLjctMy41LTIuNwoJYy0wLjgsMC0xLjYsMC4xLTIuMywwLjVjLTAuNSwwLjMtMC45LDAuOS0wLjksMS41YzAsMS4yLDEsMiwzLDIuNWw0LjcsMS4zYzIuMSwwLjQsNC4xLDEuNCw1LjYsM2MxLjIsMS41LDEuOCwzLjMsMS44LDUuMwoJYzAsMi40LTEuMSw0LjYtMy4xLDUuOUMzMS4yLDQwLjEsMjguNCw0MC45LDI1LjYsNDAuOCIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDguNyw1MS4zaC03LjNWMTMuNmg3LjN2M2MwLjgtMS4xLDEuOS0xLjksMy4xLTIuNWMxLjQtMC43LDMtMS4xLDQuNi0xLjFjMy40LDAsNi43LDEuNSw4LjksNC4xCgljMi40LDIuNywzLjcsNi4yLDMuNyw5LjhjMC4xLDMuNi0xLjIsNy4xLTMuNiw5LjhjLTIuMiwyLjYtNS41LDQuMS04LjksNC4xYy0xLjYsMC0zLjItMC4zLTQuNi0xLjFjLTEuMi0wLjYtMi4zLTEuNC0zLjEtMi41CglMNDguNyw1MS4zTDQ4LjcsNTEuM3ogTTUwLDMyLjFjMi43LDIuNyw3LDIuNyw5LjcsMGMwLDAsMCwwLDAsMGMxLjMtMS40LDEuOS0zLjMsMS44LTUuMmMwLjEtMS45LTAuNi0zLjgtMS44LTUuMgoJYy0yLjctMi43LTcuMS0yLjctOS43LDBjMCwwLDAsMCwwLDBjLTEuMywxLjQtMS45LDMuMy0xLjgsNS4yQzQ4LjEsMjguOCw0OC43LDMwLjcsNTAsMzIuMSIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNODcuNSw0MC4yVjEzLjZoNy4zdjNjMS42LTIuNCw0LjItMy42LDcuNi0zLjZjMi45LTAuMiw1LjYsMSw3LjYsMy4xYzEuOSwyLjQsMi45LDUuNCwyLjcsOC40djE1LjZoLTcuM1YyNS44CgljMC4xLTEuNi0wLjMtMy4yLTEuMi00LjVjLTAuOC0xLjEtMi4xLTEuNy0zLjUtMS42Yy0xLjctMC4xLTMuMiwwLjctNC4zLDEuOWMtMS4yLDEuNi0xLjgsMy42LTEuNiw1LjZ2MTNIODcuNXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEyOC42LDQwLjhjLTIuOCwwLjItNS42LTEtNy40LTMuMmMtMS45LTIuNS0yLjgtNS41LTIuNi04LjZWMTMuNmg3LjN2MTQuMmMwLDQuMiwxLjUsNi4zLDQuNSw2LjMKCWMxLjYsMC4xLDMuMS0wLjcsNC0xLjljMS4xLTEuNywxLjYtMy43LDEuNS01LjZ2LTEzaDcuM3YyNi42aC03LjN2LTNDMTM0LjMsMzkuNiwxMzEuNSw0MSwxMjguNiw0MC44Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNTcsNTEuM2gtNy4zVjEzLjZoNy4zdjNjMC44LTEuMSwxLjktMS45LDMuMS0yLjVjMS40LTAuNywzLTEuMSw0LjYtMS4xYzMuNCwwLDYuNywxLjUsOC45LDQuMQoJYzIuNCwyLjcsMy43LDYuMiwzLjYsOS44YzAuMSwzLjYtMS4yLDcuMS0zLjYsOS44Yy0yLjIsMi42LTUuNSw0LjEtOC45LDQuMWMtMS42LDAtMy4yLTAuMy00LjYtMS4xYy0xLjItMC42LTIuMy0xLjQtMy4xLTIuNVY1MS4zegoJIE0xNTguMiwzMi4xYzIuNywyLjcsNywyLjcsOS43LDBjMCwwLDAsMCwwLDBjMS4zLTEuNCwxLjktMy4zLDEuOC01LjJjMC4xLTEuOS0wLjYtMy44LTEuOC01LjJjLTIuNy0yLjctNy4xLTIuNy05LjcsMGMwLDAsMCwwLDAsMAoJYy0xLjMsMS40LTEuOSwzLjMtMS44LDUuMkMxNTYuMywyOC44LDE1NywzMC43LDE1OC4yLDMyLjEiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI3My44LDQwLjIgODEuMSw0MC4yIDgxLjEsMjkuMyA3My44LDI5LjMgNzMuOCw0MC4yICIvPgo8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjgxLjEsMTMuNiA3My44LDEzLjYgNzMuOCwyNC41IDgxLjEsMjQuNSA4MS4xLDEzLjYgIi8+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMCw1My4yIDAsMCAxMS44LDAgMTEuOCw1LjcgNy4zLDUuNyA3LjMsNDcuNSAxMS44LDQ3LjUgMTEuOCw1My4yIDAsNTMuMiAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxOTAuMiwwIDE5MC4yLDUzLjIgMTc4LjQsNTMuMiAxNzguNCw0Ny41IDE4Mi45LDQ3LjUgMTgyLjksNS43IDE3OC40LDUuNyAxNzguNCwwIDE5MC4yLDAgIi8+Cjwvc3ZnPgo="
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="cols">
-          <div class="glow2"></div>
-          <div class="glow3"></div>
-          <div class="glow4"></div>
-          <div class="glow5"></div>
           <div class="col col_1">
             <p>Sei un'azienda?</p>
-            <h2>Fissa un appuntamento</h2>
+            <h2>Fissa <span>un appuntamento</span></h2>
             <div class="subtitle">
               Se anche tu stai cercando il candidato perfetto per la posizione aperta nella tua azienda fissa un
 appuntamento con Jobify Recruiting.
             </div>
-            <div class="images">
+            <!--<div class="images">
               <div
                 class="photo"
                 style="
@@ -1647,7 +1768,7 @@ appuntamento con Jobify Recruiting.
                   background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
                 "
               ></div>
-            </div>
+            </div>-->
           </div>
           <div class="col col_2 transition">
             <h3>Invia richiesta</h3>
@@ -1902,54 +2023,19 @@ appuntamento con Jobify Recruiting.
 
   .firstPart .image {
     height: 100%;
-    width: 46%;
+    width: 50%;
     padding-bottom: 10rem;
     padding-left: 8rem;
     padding-right: 0;
-    padding-top: 10rem;
+    padding-top: 5rem;
     background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/sei_azienda.png);
-    background-position: center;
+    background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
     top: 5%;
     right: 0;
     margin-right: 0;
-  }
-
-  .firstPart .image .desc {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    background: #00225e8f;
-    backdrop-filter: blur(3px);
-    padding-top: 0.9rem;
-    padding-bottom: 0.9rem;
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-    border-radius: 20px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    margin-bottom: 1.5rem;
-  }
-
-  .firstPart .image .desc .photo {
-    width: 60px;
-    height: 60px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 25rem;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    margin-right: 1rem;
-  }
-
-  .firstPart .image .desc p {
-    width: 80%;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 400;
-    color: #fff;
-    margin: 0 !important;
   }
 
   .cols .col_1 {
@@ -1994,10 +2080,24 @@ appuntamento con Jobify Recruiting.
   .cols .col h2 {
     color: #0c2550;
     letter-spacing: -0.04em;
-    font-size: 64px;
-    line-height: 68px;
-    font-weight: 800;
+    font-size: 56px;
+    line-height: 65px;
+    font-weight: 500;
     margin-bottom: 2rem;
+  }
+
+  .cols .col h2 span{
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700 !important;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    padding-right: 0.05rem;
+    letter-spacing: -0.06em !important;
   }
 
   .cols .col h3 {
@@ -2135,26 +2235,38 @@ appuntamento con Jobify Recruiting.
   }
 
   .workflow {
-    padding-top: 10rem;
-    padding-bottom: 0;
+    padding-top: 0rem;
+    padding-bottom: 10rem;
   }
 
   .workflow .workflowTitle h2 {
-    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     letter-spacing: -0.04em !important;
     font-weight: 800 !important;
-    font-size: 50px;
-    line-height: 54px;
+    font-size: 56px;
+    line-height: 65px;
     font-weight: 800 !important;
     letter-spacing: -0.04em !important;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
+  }
+
+  .workflow .workflowTitle p{
+    margin-top: 1rem;
+    color: #627597;
+    font-size: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 400 !important;
   }
 
   .workflow .buttons {
@@ -2195,7 +2307,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .workflow .columns .column {
-    padding: 3rem;
+    padding: 1rem;
     width: 70%;
     display: flex;
     align-items: center;
@@ -2240,7 +2352,7 @@ appuntamento con Jobify Recruiting.
     letter-spacing: -0.04em !important;
     color: #0c2550;
     font-size: 74px;
-    font-weight: 800 !important;
+    font-weight: 700 !important;
     line-height: 78px;
     letter-spacing: -0.04em !important;
     margin-bottom: 1rem;
@@ -2270,6 +2382,12 @@ appuntamento con Jobify Recruiting.
     font-size: 16px;
     line-height: 20px;
     font-weight: 600 !important;
+  }
+
+  .svg_logo_link{
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .partners {
@@ -2325,10 +2443,106 @@ appuntamento con Jobify Recruiting.
 
   .clientsCo {
     width: 100%;
-    padding-bottom: 10rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .clientsCoBorder {
+    align-items: center;
+    border: 2px solid #80808038;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border-radius: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
+  .clientsCoLink{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clientsCoLink h2 {
+    color: #0c2550;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: -0.06em !important;
+    width: fit-content;
+  }
+
+  .clientsCoLink h2 span{
+    width: fit-content;
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700 !important;
+  }
+
+  .clientsCoLink p {
+    width: fit-content;
+    margin-left: 6rem;
+    color: #0c2550;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.01em !important;
+    border: 2px solid #80808038;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+  }
+
+  .clientsCoLink .buttons{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+  .clientsCoLink .btnScrollR {
+    width: fit-content;
+    background: transparent;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .clientsCoLink .btnScrollL {
+    margin-right: 1rem;
+    width: fit-content;
+    background: transparent;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 25rem;
+    height: auto;
+    z-index: 10;
+    padding: 0.7rem;
+    line-height: 0px;
+    cursor: pointer;
+  }
+
+  .clientsCoDiv {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .clientsCoBody {
+    padding-right: 6rem;
     height: 100%;
     width: 100%;
     display: flex;
@@ -2337,28 +2551,6 @@ appuntamento con Jobify Recruiting.
     flex-wrap: nowrap;
     align-items: center;
     position: relative;
-  }
-
-  .clientsCoBody.active {
-    cursor: grabbing;
-    cursor: -webkit-grabbing;
-  }
-
-  .clientsCo .titles {
-    margin-bottom: 2rem;
-  }
-
-  .clientsCo .titles h2 {
-    color: #0c2550;
-    font-size: 64px;
-    font-weight: 800 !important;
-    text-align: center;
-    line-height: 68px;
-    letter-spacing: -0.03em !important;
-  }
-
-  .clientsCo .part {
-    width: fit-content;
   }
 
   .logoClient {
@@ -2375,7 +2567,7 @@ appuntamento con Jobify Recruiting.
     width: 135px;
     height: auto;
     margin-right: 5rem;
-  }
+}
 
   .numbersDiv {
     margin-top: 10rem;
@@ -2388,19 +2580,19 @@ appuntamento con Jobify Recruiting.
     color: #0c2550;
     font-size: 56px;
     line-height: 56px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: -2.5px;
     width: 50%;
     margin-left: 2rem;
   }
 
   .numbersDiv h2 span{
-    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   .numbersDiv .numbers {
@@ -2446,64 +2638,6 @@ appuntamento con Jobify Recruiting.
     color: #627597;
     font-size: 16px;
     line-height: 20px;
-  }
-
-  .glow {
-    width: 5vw;
-    opacity: 0.5;
-    transform: scale(3.5);
-    left: 3%;
-    top: 23%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
-    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.4);
-  }
-
-  .glow2 {
-    position: absolute;
-    width: 5vw;
-    transform: scale(3.5);
-    top: 80%;
-    z-index: 15;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
-    box-shadow: 0px 0px 105px 45px rgba(0, 255, 213, 0.2);
-  }
-
-  .glow3 {
-    position: absolute;
-    width: 5vw;
-    transform: scale(4.5);
-    top: 55%;
-    left: 105%;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.3);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.3);
-    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.3);
-  }
-
-  .glow4 {
-    position: absolute;
-    width: 5vw;
-    transform: scale(4.5);
-    top: 10%;
-    opacity: 0.5;
-    left: 110%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
-    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
-  }
-  .glow5 {
-    position: absolute;
-    width: 5vw;
-    transform: scale(4.5);
-    top: 90%;
-    opacity: 0.5;
-    left: 110%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
-    box-shadow: 0px 0px 105px 45px rgba(4, 0, 255, 0.3);
   }
 
   .secondPart2 {
@@ -2624,7 +2758,10 @@ appuntamento con Jobify Recruiting.
 
   .fifthDiv .adviser .col {
     width: 50%;
-    padding: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .fifthDiv .adviser .col h3 {
     color: #fff;
@@ -2663,7 +2800,6 @@ appuntamento con Jobify Recruiting.
     padding-bottom: 8rem;
     width: 100%;
     background-color: transparent;
-    padding-top: 10rem;
   }
 
   .feedbackDiv h2 {
@@ -2673,6 +2809,15 @@ appuntamento con Jobify Recruiting.
     text-align: center;
     line-height: 68px;
     letter-spacing: -0.03em !important;
+  }
+
+  .feedbackDiv h2 span {
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700 !important;
   }
 
   .feedbackDiv .buttons {
@@ -2719,6 +2864,7 @@ appuntamento con Jobify Recruiting.
     flex-wrap: nowrap;
     align-items: center;
     position: relative;
+    margin-top: 1rem;
   }
 
   .feedbacks.active {
@@ -2727,24 +2873,24 @@ appuntamento con Jobify Recruiting.
   }
 
   .feedbackDiv .feedbacks .feedback {
-    background: #0c2550;
+    background: #f4f5f6;
     border-radius: 30px;
-    padding: 2rem;
+    padding: 1.5rem;
     margin-right: 1rem;
     margin-left: 1rem;
     float: left;
-    box-shadow: rgb(0 35 117 / 20%) 0px 8px 24px;
-    height: auto;
+    height: 44vh;
   }
 
   .feedbackDiv .feedbacks .feedback .quote {
-    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
+    background: -webkit-linear-gradient(-70deg, #67a3f0 0%, #4e54ed 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     font-weight: 700;
     font-size: 80px;
+    line-height: 0;
     letter-spacing: 1.5px;
     line-height: 38px;
     margin-bottom: 0;
@@ -2752,16 +2898,16 @@ appuntamento con Jobify Recruiting.
   }
 
   .feedbackDiv .feedbacks .feedback h3 {
-    color: #cccccc;
+    color: #0c2550;
     font-weight: 300;
-    font-size: 22px;
-    line-height: 26px;
-    margin-bottom: 2rem;
-    width: 40vw;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+    width: 60vw;
   }
 
   .feedbackDiv .feedbacks .feedback .author {
-    color: #ffffff;
+    color: #0c2550;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 22px;
@@ -2770,7 +2916,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .feedbackDiv .feedbacks .feedback .worktitle {
-    color: #c1c1c1;
+    color: #3e3f40;
     font-size: 12px;
     letter-spacing: 1px;
     line-height: 16px;
@@ -2802,13 +2948,12 @@ appuntamento con Jobify Recruiting.
   .thirdPartDiv {
     background: transparent;
     border-radius: 30px;
+    padding-bottom: 5rem;
   }
 
   .thirdPartDiv .first {
     background: transparent;
     display: flex;
-    padding-left: 3rem;
-    padding-right: 3rem;
     position: relative;
   }
 
@@ -2818,6 +2963,16 @@ appuntamento con Jobify Recruiting.
   }
 
   .thirdPartDiv .first h2 {
+    color: #0c2550;
+    width: 80%;
+    font-size: 54px;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .thirdPartDiv .first h2 span{
     color: #fff;
     width: 80%;
     font-size: 54px;
@@ -2825,7 +2980,7 @@ appuntamento con Jobify Recruiting.
     letter-spacing: -0.04em;
     font-weight: 700;
     margin-bottom: 2rem;
-    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2842,8 +2997,8 @@ appuntamento con Jobify Recruiting.
   }
 
   .thirdPart .thirdPartImage{
-    width: 26vw;
-    height: 35vw;
+    width: 30vw;
+    height: 38vw;
     background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ilproblemadelleaziende.png);
     background-position: center;
     background-size: cover;

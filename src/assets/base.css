@@ -79,6 +79,20 @@ body {
    url(@/assets/fonts/AttenNewRegular.otf) format("truetype");
 }
 
+@font-face {
+  font-family: "Merienda";
+  src: local("Merienda"),
+   url(@/assets/fonts/AttenNewBold.otf) format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Merienda";
+  src: local("Merienda"),
+   url(@/assets/fonts/AttenNewMedium.otf) format("truetype");
+  font-weight: 500;
+}
+
 *{
   font-family: "Merienda";
 }

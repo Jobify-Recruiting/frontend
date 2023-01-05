@@ -39,7 +39,7 @@ export default {
                   date: "18 Dic 2022",
                   title: "Il Time Managament",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/07/Cattura-3-1.jpg",
-                  subtitle: "L’uomo da sempre si è interrogato sul concetto di “tempo”. Il tempo è stato e può essere concepito in quanto a “durata”...",
+                  subtitle: "L’uomo da sempre si è interrogato sul concetto di “tempo”. Il tempo è stato e può essere ...",
                   text: "<p>L’uomo da sempre si è interrogato sul concetto di “tempo”. Il tempo è stato e può essere concepito in quanto a “durata”, nel suo “divenire”, in modo “lineare” o “circolare”, come “finito” o “infinito”, “assoluto” ovvero “relativo”, “oggettivo” e “soggettivo”, “unico” o “molteplice” e così via ma, esiste una certezza: il “tempo” è ineluttabile in quanto risorsa “finita” e costituisce la misura del valore che ha la nostra esistenza. Anche se non lo possiamo contrastare, il tempo è gestibile ed in quest’ottica diventa fondamentale il modo in cui lo impieghiamo. L’imperatore Marco Aurelio ne “I Ricordi” riflette sulla gestione del tempo: “Ricorda da quanto tempo rinvii ciò che devi fare e quante volte, ricevuta una proroga dagli immortali, non ne fai un corretto utilizzo. Devi finalmente comprendere quale sia il cosmo di cui sei parte, quale sia l’entità al governo del cosmo della quale tu costituisci una manifestazione, e che hai un limite circoscritto di tempo, un tempo che, se non ne approfitti per conquistare la serenità, andrà perduto, e andrai perduto anche tu, e non vi sarà un’altra possibilità.” Citando Seneca, “De Brevitate Vitae”, la più grande sciagura della vita è il suo procrastinarla quindi, anche se può sembrare un paradosso, la prima cosa da fare è dedicare del tempo alla gestione del tempo in tal modo non lo percepiremo più come una scadenza ineludibile sentendoci sopraffatti dal suo scorrere incessante anzi, vedremo nel tempo una risorsa imparando a riprogrammare invece che “aggiustare”. La gestione del tempo è una responsabilità non delegabile e fa la differenza tra un mero esecutore ed un organizzatore, costituisce un’abitudine che, attraverso tecniche, accorgimenti ed autodisciplina permette di amministrare con maggiore padronanza e vantaggio il tempo. Ottimizzare e gestire il tempo non deve assumere una dimensione “ansiogena” non significa infatti diventare cyborg in grado di incastrare ogni singolo impegno al millesimo di secondo ma, vuol dire trovare delle strategie per essere più produttivi. Il problema fondamentale è avere ben chiaro lo scopo da raggiungere ed imparare a definire le priorità. Il Time Management è un processo di pianificazione e controllo del tempo per ottimizzare le attività aziendali e aumentare l’efficacia, l’efficienza e la produttività.</p> <img src=\"https://davidemaggiohr.it/wp-content/uploads/2021/07/Cattura-5-1.jpg\" width=\"50%\" height=\"50%\"/><p>Può essere migliorato attraverso l’uso di competenze, strumenti e tecniche. Esistono differenti tecniche per la gestione del tempo ad esempi:</p><ul> <li> la tecnica dell’ABC consiste nel classificare con le prime tre lettere dell’alfabeto le attività da svolgere distinguendo rispettivamente tra attività importanti e urgenti, attività importanti ma non urgenti ed attività né importanti né urgenti, passando poi a svolgere per prime quelle che richiedono meno tempo; </li> <li> la matrice di Eisenhower è costituita da quattro quadranti sugli assi cartesiani dove le attività sono riportate secondo lo schema urgenza/importanza e per definire le priorità si segue la logica che le attività importanti e urgenti devono essere compiute subito come nella figura che segue. Sostituendo nello schema il concetto d’importanza con quello di tempo avremo un quadro generale per definire le azioni da adottare per una migliore gestione del tempo. </li></ul><p> In definitiva, non esiste una “ricetta” unica per gestire il tempo, ognuno segue la sua logica dettata dal buon senso. In ogni caso ci sono principi comune a tutti ossia: definire le attività da svolgere per portare a termine i progetti (ad esempio ciò che compete alla propria mansione, quali sono gli obiettivi da raggiungere ed i risultati da ottenere con il proprio lavoro), identificare le priorità stabilendo i criteri per determinare quali attività sono più importanti di altre ed infine prendere una decisione.Tutto ciò consente di svolgere anche lavori meno piacevoli perché è chiaro l’obiettivo finale.</p><p> Dedicare del tempo alla gestione del tempo per quanto detto non significa perderlo o sprecarlo a patto che si acquisisca una sempre maggior consapevolezza e si impari dal passato</p>",
                   name1:"Davide Maggio",
                   role1: "Temporary Hr Manager",
@@ -61,7 +61,7 @@ export default {
                   date: "18 Dic 2022",
                   title: "Costi del personale CONTABILIZZAZIONE",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/04/Costi-del-personale.png",
-                  subtitle: "Tante aziende, soprattutto piccole e medie imprese (c.d. PMI), sempre più di frequente, affidano ad esperti del settore...",
+                  subtitle: "Tante aziende, soprattutto piccole e medie imprese (c.d. PMI), sempre più di frequente, affidano ...",
                   text: "<p>Tante aziende, soprattutto piccole e medie imprese (c.d. PMI), sempre più di frequente, affidano ad esperti del settore, i Consulenti del Lavoro, gli adempimenti connessi all’amministrazione del personale (comunicazioni obbligatorie, adempimenti fiscali e contributivi ecc.) e la gestione ed elaborazione delle buste paga. In tal modo riescono meglio a gestire gli aspetti legali, fiscali, contributivi e sindacali legati all’amministrazione del personale, ambiti difficili perché soggetti a continue variazioni normative. Inoltre l’outsourcing si traduce in una riduzione dei costi (minor personale assunto, ridotte esigenze formative e via di seguito) e consente di delegare quindi ad un soggetto terzo, con competenze tecniche e tecnologiche, tutti gli adempimenti connessi all’amministrazione del personale e payroll. La rilevazione contabile, in generale, consiste nella determinazione qualitativo-quantitativa, nella classificazione, nella elaborazione, nella corretta interpretazione e rappresentazione dei dati.</p><p>Essa è lo strumento che permette di registrare i fatti economici e finanziari, di misurarli e di valutarli secondo riconosciuti principi contabili. La rilevazione contabile si concretizza nella redazione delle relative scritture mediante le quali si rappresenta una veritiera e corretta situazione degli eventi, così come previsto dalle norme civilistiche e quelle degli organismi nazionali (OIC) ed internazionali (IAS). La contabilizzazione dei costi del personale, in particolare, va gestita da personale con competenze specifiche e trasversali: infatti, sono necessarie una spiccata sensibilità alle tematiche di natura contabile/gestionale e competenze HR. Il raggruppamento delle voci paga nei diversi conti economici e patrimoniali, la gestione degli aspetti contabili legati al fondo TFR ed ai ratei del personale in uno alle modalità di contabilizzazione, sono attività che presuppongono una peculiare preparazione, facilitando il compito agli addetti alla contabilità/finance. Una soluzione potrebbe essere quella di esternalizzare oltre ai servizi di amministrazione del personale e payroll, anche tutti gli aspetti contabili e di controllo di gestione legati alle paghe, alle imposte ed ai contributi. Tuttavia, questa decisione, potrebbe implicare una certa trascuratezza nella trasmissione delle informazioni legate al costo del lavoro ed agli elementi economico/patrimoniali ad essi collegati. Ne consegue che, avere in azienda figure con competenze adeguate in grado di rispondere alle esigenze legate al processo di payroll ed alle evidenze contabili da esso derivanti risulta, in termini di completezza e rapidità di risposta, un indubbio valore aggiunto.</p><p> Per espressa previsione dell’art. 1 della Legge del 5 gennaio 1953, n. 4, all’attodella corresponsione della retribuzione, è fatto obbligo ai datori di lavoro di consegnare ai lavoratori dipendenti un prospetto paga. Scopo principale del cedolino paga, infatti, è quello di evidenziare le voci di retribuzione che compongono il compenso corrisposto ad ogni dipendente, in un dato periodo lavorativo, in ottemperanza ai contratti collettivi di lavoro ed alle leggi vigenti in materia. Tutte le somme, riportate nei prospettipaga mensili dei singoli dipendenti, vengono poi riepilogate, in un prospetto riassuntivo definito “prospetto contabile” o “cedolone”, necessario per la rilevazione delle scritture contabili da riportare a Libro Giornale e a Mastro. Ipotizziamo che, alla fine del periodo dilavoro (generalmente il mese), per un dipendente in forza già al primo gennaio dell’anno precedente, venga redatto un prospetto contabile contenete le segue ti voci di retribuzione e ritenute:</p><img src=\"https://davidemaggiohr.it/wp-content/uploads/2021/04/Costi-del-personale-1.png\" width=\"50%\" height=\"50%\"/><p> I costi del lavoro per l’azienda sono espressi dai saldi dei conti “retribuzioni lorde” e “contributi INPS c/ditta” mentre, i conti patrimoniali si azzerano con il pagamento delle spettanze ai dipendenti e quello verso l’ente previdenziale e l’erario.I riscontri documentali delle predette scritture contabili sono dati per i contributi previdenziali obbligatori dalla dichiarazione mensile inviata all’INPS (Uniemens), mentre per le ritenute d’imposta dal modello F24 presentato in banca per il pagamento e dalla dichiarazione annuale (modello 770) per il costo aziendale del personale dipendente.Sono poi da contabilizzare altri costi del personale dipendente che hanno cadenza annuale come la rilevazione del trattamento di fine rapporto (TFR), salvoeventuali rilevazioni infrannuali dovute ad interruzioni del rapporto di lavoro.Il TFR è una retribuzione del lavoro dipendente differita nel tempo così come stabilito dalle norme del codice civile, in quanto spettanza che i dipendenti maturano nell’anno di lavoro ma non riscuotono (salvo particolari casi previsti dalla legge che consentono di usufruire di anticipazioni).</p><p> A fine esercizio occorre quindi rilevarne il costo per competenza economicacommisurando in contropartita il relativo debito nei confronti dei dipendentiin apposito fondo tenendo anche conto della rivalutazione e della ritenuta d’imposta prevista dalla legge. Altra rilevazione di costo, a fine esercizio, è quella relativa al saldo degli oneri dei premi di assicurazione obbligatoria sul lavoro da versare all’INAIL. A fineesercizio verrà rilevato il saldo del premio dovuto derivante dalla denuncia diautoliquidazione prevista per Legge ed inviata all’Istituto. Sono da considerare infine altri costi indiretti del personale dipendente che le aziende sostengono in ottemperanza a norme di legge come la formazione, la vigilanza sanitaria, la sicurezza dei luoghi di lavoro ed altri ancora eventualmente previsti dai CCNL. Tali costi sono definiti indiretti perché non strettamente collegati alla prestazione lavorativa e non sono corrisposti ai dipendenti ma, in generale pagati a professionisti esterni. Questa fattispecie di costi, che a secondadella dimensione dell’azienda, può assumere anche un’importante rilevanza vanno rilevati in conti appositi e distinti da quelli tipici del lavoro dipendente.</p>",
                   name1:"Davide Maggio",
                   role1: "Temporary Hr Manager",
@@ -72,7 +72,7 @@ export default {
                   date: "18 Dic 2022",
                   title: "Il principio di pareto",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/04/Il-principio-di-pareto-1-1.png",
-                  subtitle: "Oggigiorno cercare un lavoro richiede di impegnarsi in diverse attività (ricerca,candidatura, networking), ma non tutte hanno sempre la stessa efficacia....",
+                  subtitle: "Oggigiorno cercare un lavoro richiede di impegnarsi in diverse attività (ricerca,candidatura, networking), ma non tutte hanno sempre la stessa efficacia...",
                   text: "<h3>Come sfruttare il Principio di Pareto nella Ricerca Attiva del Lavoro</h3><p>Oggigiorno cercare un lavoro richiede di impegnarsi in diverse attività (ricerca, candidatura, networking), ma non tutte hanno sempre la stessa efficacia. E’ fondamentale imparare a dare priorità a quelle azioni che permettono di raggiungere i risultati attesi, così come ci insegna il Principio di Pareto. Vediamo di cosa si tratta e come può essere utile nella ricerca del lavoro.</p><p>Quando sei alla ricerca di una nuova occupazione, spesso ti rendi conto che sono centinaia le persone che si sono candidate per quella stessa posizione lavorativa. In un contesto dove c’è una forte concorrenza per un posto di lavoro, è fondamentale riuscire a sfruttare una ricerca attiva del lavoro che permetta di raggiungere l’obiettivo senza un dispendio inefficace di tempo e risorse. Per ottimizzare il processo di ricerca attiva del lavoro può esserti d’aiuto il Principio di Pareto (conosciuto anche come Legge 80/20)</p><h3>Principio di Pareto e sua utilità</h3><p> Nel 1897 Vilfredo Pareto, economista, ingegnere e sociologo, condusse una ricerca sulla suddivisione del patrimonio popolare in Italia, riscontrando come soltanto il 20% della popolazione possedeva l’80% della ricchezza. Era tale fetta della popolazione su cui doveva puntare il Governo. Questo risultato ha ispirato il cosiddetto Principio di Pareto (anche noto come Legge 80/20), una regola statistico-empirica secondo cui impiegando solo il 20% di una certa azione si potrà avere l’80% dei risultati. La Legge 80/20 trova riscontro in tantissimi settori. Ad esempio è stato rilevato che:</p><ul> <li> in ambito economico il 20% dei clienti di un’azienda fattura l’80% dei ricavi</li> <li>nel settore sanitario il 20% dei pazienti incide sull’80% della spesa sanitaria</li> <li>in quello assicurativo il 20% dei conducenti assicurati causa l’80% degli incidenti</li></ul><p>La legge di Pareto trova conferma anche nelle attività della vita quotidiana: spesso solo il 20% di ciò che fai determina l’80% degli effetti. Pensa, ad esempio, al numero di applicazioni che utilizzi rispetto a quelle installate sul tuo smartphone; i vestiti che indossi solitamente rispetto a quelli tenuti nell’armadio; il numero di persone che frequenti rispetto a quelle conosciute. Ovviamente tale principio non è una regola matematica i cui valori vanno intesi nel rapporto preciso 80-20, ma piuttosto in termini approssimativi (il rapporto potrebbe essere anche 70-30, 90-10 o 75-25). Il punto principale è ciò che dimostra la regola, ossia che la maggior parte degli effetti ottenuti proviene da un numero limitato di cause. Da questo Principio ne deriva che è possibile pianificare consapevolmente specifici comportamenti per ottenere determinati risultati.</p><h3>Perchè sfruttarlo</h3><p>E’ noto che per molti candidati cercare lavoro significa principalmente fare due cose: dedicare, nella fase iniziale, alcune ore alla stesura del curriculum; utilizzare successivamente tale curriculum (sempre lo stesso!) per candidarsi a quanti più annunci possibili trovati online. Tuttavia, questo impegno di tempo ed energie ha il frequente risultato di ottenere giusto un paio di colloqui o anche nessuno. Nei fatti stai dedicando (più o meno) l’80% dei tuoi sforzi per ottenere il 20% dei risultati attesi. Se è questo il caso, è chiaro che devi cambiare la tua strategia di ricerca.</p><h3>Come utilizzare il Principio</h3><p>Secondo la Legge di Pareto, solo il 20% delle tue azioni dirette alla ricerca attiva del lavoro porterà l’80% del rendimento. Devi, dunque, trovare quel 20% di azioni utili per ottenere dei risultati e verso cui investire una fetta maggiore del tuo tempo. Come fare? Innanzitutto, individuare la strategia più adatta, richiede del tempo che ti servirà per monitorare le azioni compiute, valutare i risultati ottenuti e ridefinire le attività prioritarie.</p><h3>Inizia con molteplici azioni</h3><p>E’ bene non iniziare impiegando l’intero tempo a disposizione nell’unico sforzo di candidarsi agli annunci online. Cercare un’occupazione, infatti, richiede diverse azioni, tutte da testare. Esempio di attività sono:</p><ul> <li>adattare il Curriculum Vitae e la lettera motivazionale in funzione degli annunci a cui ti candidatura;</li> <li>studiare gli annunci di lavoro relativi alla posizione a cui aspiri, per capire quali solo le competenze e le esperienze più richieste;</li> <li>informarti sulle aziende e il mercato del lavoro della zona geografica di interesse;</li> <li>individuare la rosa di aziende a cui inviare un’autocandidatura mirata;</li> <li>connetterti con i recruiter;</li> <li>partecipare a gruppi di ricerca del lavoro;</li> <li>curare il personal branding su Linkedin;</li> <li>partecipare a career day, workshop, webinar;</li> <li>valutare la necessità di percorsi formativi per rendere il tuo profilo professionale più appetibile per il mercato del lavoro.</li></ul><h3>Pianifica e tieni traccia</h3><p>Per programmare, tenere traccia delle tue attività e dei risultati che comportano, è utile costruire un foglio Excel dove sintetizzare il tutto. Ad esempio:</p><p>Elenco attività programmate:</p><ul> <li>18 febbraio: inviare autocandidatura ad aziende X, Y, Z</li> <li>19 febbraio: webinar ricerca attiva del lavoro</li> </ul><p>Elenco attività svolte:</p><ul> <li>Candidatura: Azienda; Città; Canale (es Indeed; Linkedin); Data; Stato candidatura</li> <li>contatto Hr su Linkedin (nome; azienda; sede)</li> </ul><h3>Monitora tempi e risultati</h3><p>Devi monitorare il tempo che dedichi alle singole attività e i risultati raggiunti, in modo da capire quale tra esse permette un rendimento più alto. Se, ad esempio, contattare i recruiter su Linkedin ti ha permesso di ottenere dei colloqui rispetto al candidarsi sui siti web aziendali, vorrà dire che devi ripianificare le attività, dedicando più tempo al curare le relazioni con gli Hr sui social.</p><h3>Applicato alle singole azioni</h3><p>Per aumentare le possibilità di ottenere il lavoro desiderato, è utile sfruttare La legge 80/20 anche per le singole azioni, quali la candidatura agli annunci, la stesura del Cv e della lettera motivazionale, il colloquio di lavoro</p><ul> <li>Annunci di lavoro: piuttosto che puntare alla quantità di annunci a cui candidarti, punta sulla qualità della candidatura. E’ inutile iscriversi a dozzine di candidature se non hai i requisiti indicati. Piuttosto, seleziona quel 20% di annunci che hanno un buon matching tra requisiti richiesti e posseduti. Adatta, ogni volta, il Cv e la lettera motivazionale a quanto richiesto nell’annuncio.</li> <li>Curriculum Vitae e lettera motivazionale: il primo 20% del curriculum (la parte superiore) deve avere un “impatto” sul recruiter e motivarlo a continuare la lettura del restante 80% del documento. Spiega nelle prime righe le abilità più importanti e cosa potresti fare per l’azienda per cui ti candidi, fornendo dettagli, cifre o esempi concreti. Da poche righe deve emergere qual è la tua proposta di valore e come essa può essere utile al datore. Stesso discorso vale per la lettera motivazionale: cattura nelle prime righe l’interesse del recruiter spiegando brevemente i motivi per cui puoi essere il candidato giusto.</li> <li>Colloquio di lavoro: la preparazione del colloquio di lavoro è una parte che non va trascurata. Spesso, durante un colloquio, il primo 20% dell’intervista è sotto il controllo del candidato, a cui si danno un paio di minuti per parlare di sé. E’ in questa fase di introduzione che devi raccontarti in modo chiaro, sintetico, focalizzandoti su esperienze e competenze principali. Il focus è sempre lo stesso: far intendere il valore aggiunto che puoi apportare all’azienda qualora venissi assunto.</li></ul><h3>Conclusione</h3><p>Cercare un lavoro non significa spendere gran parte del tuo tempo in attività “non mirate”. E’ importante costruire con costanza una strategia di ricerca e assegnare delle priorità alle azioni compiute. La consapevolezza, nel tuo processo di ricerca del lavoro, di ciò che è utile e ciò che non lo è, può permetterti di ottimizzare tempi e risorse orientandole al risultato atteso.</p><img src=\"https://davidemaggiohr.it/wp-content/uploads/2021/04/Il-principio-di-pareto-2-1.png\" width=\"50%\" height=\"50%\"/>",
                   name1:"Davide Maggio",
                   role1: "Temporary Hr Manager",
@@ -83,7 +83,7 @@ export default {
                   date: "18 Dic 2022",
                   title: "Smart working e motivazione",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/04/Smart-Working.png",
-                  subtitle: "La motivazione costituisce la leva della nostra vita personale e professionale. Per motivazione, si intende una determinata spinta che quotidianamente ci permette di raggiungere gli obiettivi assegnati....",
+                  subtitle: "La motivazione costituisce la leva della nostra vita personale e professionale. Per motivazione, si intende una determinata spinta che quotidianamente ci permette di ...",
                   text: "<h3>Una leva per la produttività</h3><p>La motivazione costituisce la leva della nostra vita personale e professionale. Per motivazione, si intende una determinata spinta che quotidianamente ci permette di raggiungere gli obiettivi assegnati, la finalità è la soddisfazione dei bisogni fisiologici e psicologici, ad es nel caso del lavoro l’acquisto di un capo d’abbigliamento o una vacanza è il bisogno fisiologico di cui abbiamo necessità. Maslow è stato uno dei maggiori studiosi in merito a tale argomento, famosa è la sua teoria piramidale dove bisogni primari e secondari esprimevano il concetto di motivazione. Il concetto di motivazione applicato al mondo lavorativo viene rappresentato come un processo circolare, dove al centro troviamo il bisogno che guida l’individuo ad essere motivato, mentre alla parte destra l’obiettivo da raggiungere per ottenere il bisogno e alla parte sinistra il coinvolgimento utile per farsi che la motivazione venga continuamente alimentata. Quando si parla di motivazione non possiamo non far riferimento alla produttività, argomento attuale complice il lavoro agile adottato da molte aziende. Il dipendente motivato produce degli effetti sia diretti ad es la fiducia conquistata verso il proprio capo, che indiretti come l’immagine positiva che l’azienda ne ottiene.</p><h3>Smart working VS Motivazione del dipendente: una panoramica</h3><p>Nel lavoro agile, la motivazione ha un ruolo fondamentale, in quanto permette di affrontare il lavoro di fronte alle avversità e conquista la fiducia sia del capo che di tutta l’azienda. Secondo recenti ricerche la produttività del dipendente durante questi mesi di lavoro in modalità agile è cresciuta in maniera esponenziale, non tutti i dipendenti però hanno raggiunto gli obiettivi allo stesso modo. Lo smart working ha degli effetti diretti non solo sulla motivazione, coinvolgendo elementi portanti quali:</p><p>Fiducia: è quel elemento che ci accredita in azienda come professionisti e appassionati del nostro lavoro;</p><p>Engagement: il dipendente motivato protagonista è coinvolto nei processi aziendali, difficile che abbandoni l’azienda entro pochi mesi dalla sua assunzione;</p><p>Employer branding: Quando si parla di lavoro agile e welfare, si fa riferimento all’immagine positiva e innovativa verso quella determinata azienda.</p><p>Con il processo di digital transformation ancora in atto, le aziende devono comprendere come attirare le generazioni Z e post digital; Produttività: un dipendente motivato produce di più, aspetto che va quotidianamente coltivato. La motivazione permette di distinguere i talenti in azienda, dai dipendenti legati al solo aspetto retributivo, i quali sono in possesso di un basso livello di motivazione o perché non appassionati del proprio impiego o perché non sono stati stimolati durante la permanenza in azienda.</p><h3>Da cosa è alimentata la spinta motivazionale?</h3><ul> <li>Carriera e crescita professionale;</li> <li>Welfare;</li> <li>Flessibilità</li></ul><p>Notiamo che il denaro non è nella classifica, aspetto ormai su cui non si può far affidamento quando si parla di motivazione.</p>",
                   name1:"Davide Maggio",
                   role1: "Temporary Hr Manager",
@@ -119,7 +119,7 @@ export default {
                 },
                 {
                   date: "18 Dic 2022",
-                  title: "HRTECH ed esperienza: Il binomio vincente",
+                  title: "HRTECH ed esperienza...",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/04/HRTECH-ed-esperienza-Il-binomio-vincente.jpeg",
                   subtitle: "HRTECH ed esperienza: Il binomio vincente",
                   text: "<img src=\"https://davidemaggiohr.it/wp-content/uploads/2021/04/HRTECH-ed-esperienza-Il-binomio-vincente-1117x1536.jpeg\" width=\"100%\" height=\"100%\"/>",
@@ -135,7 +135,7 @@ export default {
                   date: "18 Dic 2022",
                   title: "Welfare Aziendale: cos’è e come funziona",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/04/WELFAME-COPERTINA-1.jpg",
-                  subtitle: "L'Italia fanalino di coda nelle misure Welfare volte al benessere sociale. Negli ultimi anni si parla spesso di welfare aziendale...",
+                  subtitle: "L'Italia fanalino di coda nelle misure Welfare ...",
                   text: "<h3>Welfare quali vantaggi per le aziende?</h3><p>L'Italia fanalino di coda nelle misure Welfare volte al benessere sociale. Negli ultimi anni si parla spesso di welfare aziendale, ma di cosa si tratta? E cosa deve fare un datore di lavoro per inserire un piano welfare? E quali benefici apporta? Con il termine welfare si intende una serie di misure ed iniziative promosse dall’azienda volte alla creazione e diffusione del benessere nel luogo di lavoro e al miglioramento del clima aziendale, favorendo un incremento nelle performance aziendali. L’azienda può da una parte erogare bonus e servizi ai lavoratori e dall’altra usufruire di sgravi fiscali. (Art.51 e art.100 del tuir). Queste politiche redistributive dovrebbero consentire di ridurre le diseguaglianze di partenza e favorire il contributo di ciascuno ai processi di crescita del Paese, mettendo al centro quelle misure volte ad aumentare occupazione giovanile e femminile, e mettere in campo un piano di rafforzamento dell’offerta degli asili nido sul territorio. Sta pertanto notevolmente aumentando la sensibilità e l’attenzione del datore di lavoro nei confronti di vari aspetti della vita dei suoi lavoratori, primo fra tutti la salute e il benessere in senso ampio</p><img src=\"https://davidemaggiohr.it/wp-content/uploads/2021/04/WELFAME-COPERTINA-1.png\" width=\"50%\" height=\"50%\"/><p>I vantaggi per l’azienda? Riduzione del turnover con la diretta conseguenza del contenimento dei costi legati all’inserimento di nuovi assunti. Riduzione importante dell’assenteismo grazie alla maggior attenzione alla salute dei propri lavoratori. Gli sgravi fiscale sono una leva essenziale per spingere l’azienda a mettere in campo queste misure. Servizi da poter applicare con un piano Welfare Aziendale:</p><ul> <li>rimborsi sulle spese sanitarie sostenute dai lavoratori oppure convenzioni con strutture e specialisti privati;</li> <li>buoni per il pagamento di mense, tasse universitarie, libri di testo, campus estivi e gite scolastiche;</li> <li>abbonamenti per palestre, cura della persona, viaggi e cultura;</li> <li>assistenza professionale per la cura di un familiare anziano o non autosufficiente. Oppure erogazione di buoni per il pagamento di una baby sitter e spese per asilo nido;</li> <li>destinazione del conto welfare ad contribuzione previdenziale per il fondo pensione;</li> <li>buoni per shopping o spesa alimentare e anmily, People ed Elder Care</li></ul><p>La prima riguarda le iniziative per la salute e il benessere (polizza sanitaria, vaccinazioni gratuite..); la seconda servizi per la famiglia ed i figli (asili nido, campi estivi, specifici permessi per neo genitori ..); la terza una serie di strumenti per migliorare la vita lavorativa (polizze, previdenza complementare ..); la quarta alcuni progetti a supporto dei dipendenti con familiari in difficoltà (assistenza agli anziani..). Come si vede, il welfare è molte cose.</p><p>Welfare quali vantaggi – Per il lavoratore i vantaggi sono molteplici. Uno dei più significativi é che, se parliamo di welfare contrattuale, lo strumento consente di far arrivare, in servizi, più soldi al dipendente, nel senso che non si è sottoposti a quello che è uno degli annosi nodi del mondo del lavoro: il c.d. “cuneo fiscale” e cioè la differenza tra quanto paga il datore di lavoro e quanto invece arriva al lavoratore</p><p>Welfare: Benessere e lavoro – Il lavoratore inserito in un sistema di welfare il più possibile completo, si sente più protetto. Facciamo solo qualche esempio: se ha un problema di salute attiva la sua polizza sanitaria, che magari copre anche moglie e figli; con un sistema di previdenza complementare prepara un futuro più sereno con una pensione migliore; se ha un’esigenza urgente di assistenza per i suoi familiari, con i permessi solidali i suoi colleghi possono donargli alcune giornate di ferie.</p><p>Welfare e servizi per il dipendente – Le prestazioni che si possono offrire al dipendente sono molteplici e il nostro Gruppo, negli anni, ha veramente creato un sistema di servizi, anche grazie al ruolo della contrattazione e al lavoro fatto con le organizzazioni sindacali. Ancora un esempio: qualche anno fa, a livello nazionale, è stato istituito un Ente bilaterale di comparto che sta andando ora a regime con una serie di polizze e iniziative. Tra le altre, borse di studio e premi in denaro per i figli dei dipendenti particolarmente meritevoli nello studio, una polizza che prevede una rendita vitalizia di 1000 euro al mese in caso di non autosufficienza del lavoratore (la c.d. LongTerm Care), rimborsi spese per acquisto dei libri di testo</p><p>La diffusione del Welfare: il ruolo di AIDP (Associazione Italiana per la Direzione del Personale) Faccio parte del Consiglio direttivo dell’Associazione insieme a Davide Maggio Hr manager e da diversi anni ci occupiamo di welfare con varie iniziative: seminari di approfondimento, articoli specifici su singoli aspetti, consulenze. Crediamo molto che condividere le diverse esperienze presenti in AIDP possa aiutare a sviluppare il welfare, con indubbi vantaggi, sia per le aziende che per i lavoratori.</p>",
                   name1:"Davide Maggio",
                   role1: "Temporary Hr Manager",
@@ -175,9 +175,9 @@ export default {
                 },
                 {
                   date: "18 Dic 2022",
-                  title: "Digital Transformation: come cambia il lavoro",
+                  title: "Digital Transformation ...",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/03/DigitalTransformation-br-come-cambia-il-lavoro-1-1.png",
-                  subtitle: "Il profondo cambiamento delle attività e dei processi organizzativi, delle competenze e dei modelli di business con le applicazioni di tecnologia...",
+                  subtitle: "Il profondo cambiamento delle attività e dei processi organizzativi, delle competenze e ...",
                   text: "<p>Il profondo cambiamento delle attività e dei processi organizzativi, delle competenze e dei modelli di business con le applicazioni di tecnologia digitale in tutti gli aspetti della società umana.</p><img src=\"https://davidemaggiohr.it/wp-content/uploads/2021/03/DigitalTransformation-br-come-cambia-il-lavoro-1-1.png\" width=\"50%\" height=\"50%\"/><p>Digital transformation è il cambiamento organizzativo alle fondamenta della trasformazione del business digitale. Questo perché cambiare la natura di un’organizzazione significa cambiare il modo in cui le persone lavorano, sfidando il loro modo di pensare, i processi di lavoro quotidiani e le strategie su cui esse fanno affidamento. Anche di fronte i problemi più difficili, la digital transformation offre vantaggi più proficui, consentendo ad un’azienda di diventare sia più efficiente, essendo guidata dai dati, sia più agile, potendo sfruttare maggiori opportunità di business.</p><p>La trasformazione digitale può essere un processo complesso e spesso scoraggiante, richiede cambiamenti che vanno dall’alto verso il basso (Top-Down), collegando ciascun elemento per creare un’operazione digitale efficiente. È un nuovo modo di approcciare il lavoro quotidiano di ognuno e molto probabilmente comporterà l’uscita dalla zona di comfort e l’apprendimento di nuove competenze anche per chi, nell’azienda, si fa regista di questo processo di cambiamento. Non c’è trasformazione digitale senza giuste competenze e questo riguarda non solo il manager, ma tutte le persone facenti parte dell’organizzazione. Quando un’organizzazione inizia un percorso di digital transformation si rende conto di aver bisogno di un set di competenze diverse da quelle tradizionali, per soddisfare le esigenze del cambiamento tecnologico.</p><p>È necessario investire soprattutto sullo sviluppo e sulla formazione di nuove figure professionali e rinnovare digitalmente le soft skill. Bisogna trasformare le persone per continuare ad innovare. Le aziende che lo avevano già fatto, oggi, sono riuscite meglio a fronteggiare l’emergenza da coronavirus, avendo in precedenza acquisito nel proprio modello di business quei processi digitali, adesso per tutti indispensabili. In situazioni normali investire sulla trasformazione digitale significa migliorare la qualità del lavoro dei dipendenti, e l’engagement dei clienti, e acquisita una maggiore semplicità nei processi decisionali.</p><p>Aumentano le quote di mercato, e la nascita di nuovi prodotti digitali a supporto degli obiettivi aziendali è più rapida ed efficace. La quarta rivoluzione digitale è in corso e il mondo digital avanza ad alta velocità, imponendo un cambiamento non semplice a causa della ritrosia da parte di manager old style e aziende analogiche di abbracciare l’innovazione. Le persone sono il fulcro della digital transformation. Le aziende che investono nelle risorse umane saranno in grado anche di affrontare i cambiamenti più ostili.</p><h3>La tecnologia come strumento:</h3><p>La tecnologia è conoscenza umana che coinvolge strumenti, materiali e sistemi. L’applicazione della tecnologia si traduce in genere in prodotti e servizi. Se la tecnologia è ben applicata, avvantaggia gli esseri umani, e stiamo scoprendo, adesso più che mai, i benefici che essa può apportare in situazioni d’emergenza come quella attuale (Covid-19). Ma è vero anche il contrario, li può annientare, se utilizzata per motivi dannosi. La digital transformation utilizza la tecnologia per portare un vantaggio competitivo nelle operations, nel marketing, nel sales e nella produzione/erogazione di prodotti e servizi. Come gli oggi tanto citati, “Smart working e-Learning”.</p><h3>La Digital transformation oltre il mondo del business</h3><p>Quando si parla di digital transformation ci si riferisce prevalentemente ad un contesto di business, ma l’impatto delle tecnologie e dell’innovazione che essa porta influisce anche su altre organizzazioni come governi, agenzie del settore pubblico e organizzazioni che sono coinvolte nell’affrontare le sfide della società come l’inquinamento o l’invecchiamento della popolazione. In alcuni paesi la trasformazione digitale mira anche ad avere un impatto su tutti gli aspetti della vita. Nè è un caso esemplare l’iniziativa del Giappone chiamata “società 5.0”, un programma governativo che va ben oltre la visione limitata dell’industria 4.0 di molti altri paesi. Ritornando alla trasformazione digitale nelle aziende, il citato sviluppo di nuove competenze è mirato a creare processi più agili , modelli orientati alle persone, innovativi, attenti al cliente, snelli, efficienti e in grado d’indurre/sfruttare le opportunità. In pratica, l’ottimizzazione della customer experience, la flessibilità operativa e l’innovazione sono i tre principali driver della trasformazione digitale, insieme allo sviluppo di nuove fonti di reddito ed ecosistemi di valore basati sull’informazione, che portano a trasformazioni del modello di business e a nuove forme di processi digitali. Una testimonianza di trasformazione digitale per esempio è quella di Alessandro Savarese Executive director regional ROMA Nord est, Consulente Finanziario Fineco Bank.</p><img src=\"https://davidemaggiohr.it/wp-content/uploads/2021/03/Digital-Transfom-1.png\" width=\"50%\" height=\"50%\"/><h3>La trasformazione digitale secondo Savarese</h3><p>Il mondo della consulenza finanziaria sta incontrando nuove sfide: MIFID2, FinTech, Intelligenza Artificiale, nuovi player che si affacciano sul mercato. Di conseguenza, per chi oggi opera in questo campo è necessaria una trasformazione del proprio modus operandi per adattarsi al nuovo contesto. Prima di entrare nel merito della questione, “tuttavia “ è doveroso fare chiarezza sul ruolo del consulente finanziario. Il Consulente Finanziario è un professionista esperto di finanza e dei connessi aspetti giuridici e fiscali, con particolare riferimento alla materia dei servizi d’investimento e alle operazioni di gestione capitali di aziende, istituzioni o privati. In Italia i consulenti finanziari vantano di un bacino di ben 4 milioni e 200 mila clienti. La quota di risparmio gestito da consulenti finanziari in Italia rappresenta il 15%. Sono numeri importanti, numeri in crescita rispetto a qualche anno fa. Il modello di servizio dei consulenti finanziari, per chi li conosce, è decisamente superiore a quello delle banche tradizionali e questo è un dato di fatto. C’è stata una crescita del 50%, però c’è un enorme potenziale di mercato che non è servito dai consulenti finanziari e non potrà tantomeno esserlo in futuro, in quanto colmato da altri strumenti quali modelli e vendite digitali.Anche per questo motivo non c’è ricambio generazionale in questo settore.</p><p>Il mondo dei consulenti finanziari è già abbastanza chiuso, e questa figura rischia di fare la fine dei dinosauri nel prossimo ventennio. Da un lato abbiamo un potenziale incredibile, abbiamo dei livelli di soddisfazione dei clienti dei consulenti finanziari che sono il doppio rispetto a quelli di qualsiasi altro referente per gli investimenti. Occorre una riconversione del consulente finanziario di oggi, un nuovo mo dello, un modello digitale e allo stesso tempo consulenziale, quest’ultimo essenziale oggi e domani più che mai. Dovrà essere un consulente finanziario smart sempre iper connesso, che riesce a dialogare con tutte le generazioni, nonché costantemente “affamato”. Pensiamo a Warren Buffet, deve avere fame anche se ha la pancia piena e deve essere innamorato del cliente e del proprio lavoro, in altre parole, deve avere passione. Occorre investire sempre più non solo sulla digitalizzazione, ma anche sulla formazione e sul capitale umano. Essenziale in questo processo è la creazione di un ponte tra l’online e l’offline.</p><p>Creare un ponte tra online e offline, BNI in prma linea Savarese: Executive director regional Bni ROMA Nord est BNI – LA PIÙ GRANDE ORGANIZZAZIONE DI BUSINESS NETWORKING E SCAMBIO REFERENZE A LIVELLO MONDIALE. BnI: Business NetworkInternational è un’organizzazione di rete in franchising americana con circa 273.206 + membri in 9.400 + capitoli locali in tutto il mondo. Con uno scambio di referenze che ammonta a 12 milioni nel 2019, e un giro d’affari di 16 miliardi di dollari nel 2019. Bni italia , vanta di 355 capitoli , e di 10.600 membri, con 362 mila referenze scambiate, per un totale di fatturato di 346 milioni di euro. I membri si incontrano settimanalmente per discutere di affari e supportare le reciproche attività condividendo i referral. BNI® è l’organizzazione di scambio referenze più vasta e di successo a livello mondiale. I suoi Membri sono professionisti e impren ditori che si aiutano reciprocamente ad aumentare il proprio giro d’affari grazie al GiversGain® (chi dà riceve). Ogni settimana, in migliaia di gruppi in tutto il mondo, i Membri si incontrano con altri professionisti e imprenditori per costruire e alimentare relazioni a lungo termine basate sulla fiducia reciproca e per scambiare referenze di business di qualità. La partecipazione a BNI® permette l’accesso alla formazione professionale erogata da esperti del settore, nonché all’opportunità di fare networking e business con centinaia di migliaia di Membri BNI® in tutto il mondo. Per Bni l’elemento umano è fondamentale in tutti le fasi: sia per la trasformazione in quanto tale (collaborazione, ecosistemi, abilità, cultura empowerment ecc.), sia per gli obiettivi della digital transformation. Dal momento che le persone non vogliono il “digitale” per tutto e attribuiscono valore alle interazioni umane e alle relazioni faccia a faccia, ci sarà sempre un elemento “offline”, a seconda del contesto in cui ci si trova. Tuttavia, anche nelle interazioni e nelle transazioni non digitali, la digital transformation gioca un ruolo molto importante, potenziandone i processi.</p><h3>Conclusione</h3><p>La trasformazione digitale è un viaggio al quale sono connessi molteplici obiettivi. Bisogna riadattare l’ecosistema aziendale ai i ritmi di un’era iper-conessa, puntando ad ottimizzare i processi e le divisioni e creando le giuste connessioni. Solo in questo modo, “costruendo ponti” tra “rapporti umani e processi digitali”, e non lasciando nessuno indietro, è possibile imboccare con successo la strada (o meglio, l’autostrada) della digital transformation.</p>",
                 },
                 {
@@ -191,9 +191,9 @@ export default {
                 },
                 {
                   date: "18 Dic 2022",
-                  title: "INQUADRAMENTO DEI LAVORATORI",
+                  title: "INQUADRAMENTO DEI ...",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/08/Cattura4-1-1.jpg",
-                  subtitle: "All’atto dell’assunzione, ogni datore di lavoro, inquadra il lavoratore in un determinato ruolo all’interno dell’organizzazione aziendale.",
+                  subtitle: "All’atto dell’assunzione, ogni datore di lavoro, inquadra il lavoratore in un determinato ...",
                   text: "<h3>Le prestazioni sono classificate secondo uno schema ben preciso</h3><p>All’atto dell’assunzione, ogni datore di lavoro, inquadra il lavoratore in un determinato ruolo all’interno dell’organizzazione aziendale. Inquadrare un dipendente significa assegnargli una qualifica e una categoria. Per inquadramento si intende quindi il ruolo assegnato al dipendente o, per essere maggiormente precisi, si indicano le mansioni e i compiti che svolge e il ruolo all’interno dell’azienda. Da quanto detto, consegue che le prestazioni sono classificate secondo uno schema ben preciso per delineare chiaramente le differenti figure professionali.</p><h3>In che modo si classificano i dipendenti?</h3><p>In fase di stipula del contratto di lavoro bisogna fare delle operazioni preliminari, al fine di scegliere successivamente il corretto inquadramento, basandosi tu tre criteri:</p><ul> <li> Mansioni </li> <li> Qualifiche </li> <li> Categorie </li></ul><h3>Le Mansioni</h3><p>A norma dell’Art. 2103 c.c. “il prestatore di lavoro deve essere adibito alle mansioni per le quali è stato assunto o a quelle corrispondenti alla categoria superiore che abbia successivamente acquisito ovvero a mansioni equivalenti alle ultime effettivamente svolte, senza alcuna diminuzione della retribuzione […]” Le mansioni sono quindi esattamente i compiti e le attività concrete del lavoratore ovvero rappresentano l’obbligazione del lavoratore (ad esempio Impiegato addetto alla contabilità).</p><h3>Le Qualifiche</h3><p>Con il termine qualifiche si intende il raggruppamento di mansioni omogenee e consentono di identificare una specifica figura professionale (ad esempio Capo Contabile)</p><h3>Le Categorie</h3><p>Spesso si usano impropriamente, come sinonimi, i termini categorie e qualifiche. In realtà la differenza è sostanziale! Le categorie costituiscono il criterio più ampio di classificazione, in grado di ricomprendere i sottoinsiemi delle mansioni e delle qualifiche. L’Articolo 2095 c.c. dispone la suddivisione dei lavoratori subordinati in 4 categorie gerarchiche: dirigenti, quadri, impiegati ed operai.</p><h3>A cosa serve l’inquadramento?</h3><p>Come accennato, all’atto dell’assunzione, il datore di lavoro deve inquadrare il lavoratore in base alle mansioni che è destinato a svolgere e si avvale degli altri criteri su menzionati per definire con precisione il ruolo all’interno dell’organizzazione aziendale con conseguente rappresentazione sull’organigramma. L’esigenza di inquadrare i lavoratori non risponde solo alla necessità di avere una dimensione gerarchico/funzionale ma, la logica è anche quella di avere un riferimento chiaro per commisurare il trattamento economico all’attività svolta. Da questo punto di visto il fondamento dell’inquadramento è rappresentato dall’Art. 36 della Costituzione “Il lavoratore ha diritto ad una retribuzione proporzionata alla quantità e qualità del suo lavoro […]”. In parole semplici l’inquadramento serve anche a dare valore alle differenti prestazioni lavorative.</p><h3>Qual è la disciplina giuridica di riferimento per l’inquadramento?</h3><p>I riferimenti normativi relativi all’inquadramento sono due: il codice civile e la contrattazione collettiva. Il Codice Civile, all’Art. 2095, individua le categorie tuttavia, è bene segnalare che, quest’articolo individua le categorie ma non le definisce rimandando a leggi speciali ed alla contrattazione collettiva il compito di specificarne i requisiti in relazione alle caratteristiche peculiari del settore e struttura di ciascuna impresa. La contrattazione collettiva permette da un lato di spiegare il significato attribuito ad ogni singola categoria e dall’altro di classificare le risorse umane in base ai livelli (alcuni contratti collettivi prevedono anche le aree professionali mentre il numero di livelli e finanche l’ordine varia da contratto a contratto). I CCNL, per ogni livello, formulano una declaratoria generale che consiste in una sintesi ed esemplificazione delle mansioni e delle qualifiche, elencando dettagliatamente le attività lavorative. Lo scopo ultimo di questo sistema è quello di attribuire al lavoratore un certo livello di inquadramento al quale corrisponde uno specifico trattamento economico. Con riferimento al Codice Civile l’inquadramento è definito legale mentre, in relazione alla contrattazione collettiva parleremo di inquadramento contrattuale.</p><h3>Come si procede per l’inquadramento delle risorse umane?</h3><p>Si tratta di un’operazione molto delicata alla quale dedicare un’accurata programmazione. Tutto ha inizio da una sopraggiunta necessità aziendale dovuta ai casi più disparati ad esempio in un dato momento si avverte l’esigenza d’inserire una nuova figura in azienda oppure perché bisogna sostituire un dipendente e così via. Semplicisticamente potremmo dire che un dipendente si può inquadrare facendo riferimento all’inquadramento degli altri presenti in azienda. Il discorso non è cosi semplice, è leggermente più complesso e bisognerà seguire un percorso ben preciso e distinto in tre fasi:</p><ul> <li> Identificazione della mansione affidata al lavoratore; </li> <li> Disamina delle mansioni per ricondurla alla declaratoria del CCNL di riferimento; </li> <li> Determinazione del livello di inquadramento e del conseguente trattamento economico in base alla declaratoria. </li></ul><p> Le fasi su elencate permettono di avere un’idea più chiara e definita di cos’è l’inquadramento e di quanto sia cruciale che sia correttamente definito infatti come detto in precedenza, esso definisce il ruolo del dipendente, indica quali mansioni e compiti svolge all’interno dell’azienda e qual è la retribuzione che gli spetta.</p><h3>Quali sono le conseguenze di un errato inquadramento?</h3><p>L’errato inquadramento è la conseguenza di differenti errori di valutazione; alcuni sono errori grossolani altri invece sono il risultato di mala gestio. Capita di analizzare le declaratorie con superficialità oppure non è ben chiaro fin dal principio cosa dovrà fare il lavoratore in altri casi, invece, si scegli di prendere a riferimento un CCNL non pertinente; questi sono solo alcuni esempi esemplificativi e non esaustivi che determinano un errato inquadramento contrattuale. Ciò che preme non è tanto conoscere gli errori bensì le conseguenze di questi errori. Un errato inquadramento si configura quando il lavoratore viene assegnato a mansioni superiori o inferiori; a seconda che sia assegnato a mansioni superiori o inferiori le conseguenze sono differenti. Nel primo caso, qualora siano accertati i presupposti, al dipendente spetta il trattamento economico corrispondente a quella determinata mansione quindi il datore di lavoro dovrà corrispondere gli arretrati retributivi e contributivi e adeguare lo stipendio del dipendente. Nel secondo caso invece, per il dipendente, si configura il c.d. demansionamento con conseguente impoverimento della propria professionalità. In generale, tranne che in determinati e ben definiti casi, tale pratica non è consentita dalla Legge pertanto il datore di lavoro è passibile di una causa per mobbing. Oltre a queste conseguenze va ricordato che qualora siano accertate violazioni nel corretto inquadramento l’azienda si vedrà negati eventuali sgravi contributivi e fiscali e nel caso ne avesse usufruito dovrà restituire quanto indebitamente percepito.</p><h3> Conclusioni</h3><p> Inquadrare correttamente i propri dipendenti non è solo un obbligo di legge pena un aumento dei costi relativi alla gestione delle risorse umane ma è anche una leva strategica per raggiungere gli obiettivi di business aziendali. Le aziende con dipendenti correttamente inquadrati manifestano un clima aziendale più sereno con un tasso di produttività maggiore rispetto ad altri contesti infatti sapere con precisione qual è il proprio ruolo, chi sono i responsabili diretti ed essere remunerati correttamente sono percepiti in maniera favorevole dalle risorse umane.</p>",
                   name1:"Davide Maggio",
                   role1: "Temporary Hr Manager",
@@ -211,9 +211,9 @@ export default {
                 },
                 {
                   date: "18 Dic 2022",
-                  title: "Hr tech – recruiting 4.0",
+                  title: "HR tech – Recruiting 4.0",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/04/4.0.png",
-                  subtitle: "La trasformazione digitale nell’attuale contesto storico ha subito un’accelerazione importante in tutti i comparti lavorativi...",
+                  subtitle: "La trasformazione digitale nell’attuale ...",
                   text: "<p>La trasformazione digitale nell’attuale contesto storico ha subito un’accelerazione importante in tutti i comparti lavorativi, non da ultimo il recruitment. Intercettare nel modo giusto il cambiamento ed utilizzare gli strumenti funzionali ad esso è la principale priorità dell’ HR manager. L’elemento imprescindibile di questo processo è l’analisi delle diverse generazioni.</p><p>La pandemia e le continue paralisi delle attività aziendali, devono più che mai mettere in risalto una delle più importanti soft skills di un HR manager: pensare fuori dagli schemi e trovare soluzioni alternative. Tra queste vi è la trasformazione digitale.Nell’attuale contesto storico il processo di digitalizzazione ha ricevuto un impulso notevole e, di conseguenza, sta necessariamente coinvolgendo anche il recruiting. La paura di avere una visione parziale del candidato ha influenzato per molto tempo noi HR rispetto all’utilizzo dei canali digitali. Il superamento di questa diffidenza è sicuramente possibile attraverso un’implementazione delle competenze trasversali e dell’alfabetizzazione digitale dell’HR.In realtà l’HR manager può e deve selezionare strumenti che consentano di cogliere le competenze richieste e il potenziale del candidato. La trasformazione digitale ci consentirà, sempre più, di azzerare le distanze e di ottimizzare il processo di selezione ma, cosa ancora più importante, darà la possibilità di valutare una platea di candidati nettamente superiore rispetto al passato. Hr Tech è un’espressione che richiama alla mente la visione di un settore che ingloba soluzioni digitali e software interamente dedicati al vasto mondo delle risorse umane. Esistono soluzioni che abbracciano tutti i processi HR: dalla ricerca e selezione del personale, ai gestionali, al payroll, all’analisi di performance. Un insieme di strumenti che possono migliorare ogni processo HR nella propria realtà aziendale. Gli strumenti offerti dalle aziende HR Tech sono stati dapprima accolti dalle grandi imprese che ne hanno intuito le potenzialità, ed oggi anche le piccole aziende ne stanno lentamente comprendendo il valore; un’innovazione utilissima ma che è osservata ancora con sospetto e diffidenza a causa della mancanza di consapevolezza e della paura nei confronti di tutto ciò che è diverso e nuovo. Se ci soffermiamo per un attimo sul mondo della ricerca e della selezione del personale ed analizziamo il contributo che l’HR Tech fornisce all’attività dei recruiter, resteremo stupiti dal numero e dall’efficacia delle innovative soluzioni esistenti, che vanno dai software ATS, alla gamification, ai video-colloqui in differita: tutti strumenti che aiutano ad erogare un servizio rapido ed efficiente riducendo tempi e costi. Il Digital Recruiting rappresenta l’ultima frontiera nell’attività di ricerca e selezione del personale.</p><h3>Gli ATS</h3> <p> Entrando più nel vivo della trattazione sono varie le applicazioni di A.I. che vengono utilizzate; una delle più usate è sicuramente l’ATS (acronimo inglese che indica Applicant Tracking System). Gli ATS non sono altro che software per la selezione del personale che permettono alle aziende di fare una prima scrematura delle candidature ricevute. I software sono generalmente impostati e associati a keyword o a termini tecnici e alla descrizione della posizione lavorativa. In sostanza, il software scannerizza ogni curriculum in entrata (sulla base di parole chiave) e seleziona quelli che meglio collimano con la posizione lavorativa offerta. </p> <h3>Le chatbot</h3> <p>Un’altra forma di intelligenza artificiale è rappresentata dalle piattaforme di interazione, le cosiddette chatbot. Le chatbot sono dei software dialoganti o per meglio dire assistenti personali virtuali in grado di rispondere a richieste specifiche degli utenti. L’automatizzazione di molti processi e la simulazione di conversazioni attraverso delle domande preimpostate facilita il lavoro dei selezionatori. La chatbot rappresenta un vantaggio sia per il candidato sia per il selezionatore. Tra i vantaggi per i candidati possiamo pensare ad un’assistenza continua (le chat sono fruibili h24) e in tempo reale. Un dato importante: con le chatbot i candidati vengono orientati verso l’offerta di lavoro che collima maggiormente con il loro profilo.</p> <h3>L’uomo: elemento chiave e insostituibile</h3> <p>I vantaggi prodotti da un software sono sicuramente di maggior efficienza ed efficacia nella ricerca del candidato, diminuzione dei tempi di selezione, diminuzione del margine di errore e automatizzazione dei processi. Ma, trattandosi pur sempre di macchine, ci sono anche degli svantaggi: il software compie azioni ripetitive ossia ricerca gli elementi ricorrenti in un curriculum e li accoppia con elementi ricorrenti nella descrizione del lavoro, quindi se non venisse settato correttamente si potrebbero perdere tutte le soft skills che un occhio umano riesce a cogliere chiaramente.</p> <h3>Generazioni</h3> <p>La “rivoluzione digitale” ci porterà a ricercare professioni e competenze differenti rispetto al passato ma soprattutto sta portando alla luce una distanza tra le diverse generazioni che è molto più marcata rispetto ad altri periodi storici. L’HR dovrà selezionare le risorse valutando l’impatto che ci sarà sulla cultura aziendale e sulla relazione che si svilupperà sul “cliente aziendale”. La trasformazione in atto ci porterà ad essere i primi attori ed i facilitatori di questo cambiamento attraverso la formazione, la riduzione del divario generazionale e in senso più stretto della Cultura d’impresa.</p>",
                   name1:"Davide Maggio",
                   role1: "Temporary Hr Manager, Socio studio associato Felli/Maggio",
@@ -222,9 +222,9 @@ export default {
                 },
                 {
                   date: "18 Dic 2022",
-                  title: "Il Temporary HR Manager in aiuto delle PMI",
+                  title: "Il Temporary HR Manager in ...",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/10/Cattura-1.jpg",
-                  subtitle: "Esiste ampia letteratura in tema di performance management e quando si parla di crescita aziendale è inevitabile che il discorso...",
+                  subtitle: "Esiste ampia letteratura in tema di perfor...",
                   text: "<p>La figura del Temporary HR Manager può concretamente e in modo sostenibile permettere alle PMI di dotarsi di quelle competenze manageriali che consentono di raggiungere risultati in linea con le aziende di altri paesi avanzati rispondendo alle sfide che la globalizzazione presenta. --Davide Maggio</p><p>Esiste ampia letteratura in tema di performance management e quando si parla di crescita aziendale è inevitabile che il discorso si soffermi sull’argomento gestione delle prestazioni. Ciò accade perché, in un mercato in continua evoluzione, le aziende per avere successo ed essere modernamente organizzate hanno la necessità di una strategia efficace per raggiungere gli obiettivi strategici di business. In questa fase storica le aziende, in modo particolare le PMI, sono pressate dalla necessità di mutare, evolvere e questa esigenza nasconde numerose insidie e variabili. Ad eventi quali sono il ricambio generazionale, la sostituzione per pensionamento di una qualche figura cardine o l’adeguamento e il rinnovo degli impianti – che già presentano tutti i connotati di quello che viene comunemente definito contesto VUCA – si sono aggiunti negli ultimi mesi eventi dettati dall’emergenza sanitaria, che ha accelerato a dismisura i processi di digitalizzazione (in particolare nei settori della vendita online e comunicazione) e messo in discussione o sotto stress le procedure organizzative.</p><p>Una società liquida, soggetta a continui e repentini mutamenti, determina la stringente necessità se non addirittura l’obbligo di essere flessibili per rispondere tempestivamente ed efficacemente ai cambiamenti. La maggior parte delle PMI, spesso non dispone internamente delle professionalità adeguate a far fronte a situazioni di questo genere quindi, il ricorso a una figura come il Temporary Manager diventa la migliore strategia da adottare per far sì che le varie fasi di transizione vengano gestite con metodo ed esperienza, progettando percorsi coerenti senza lasciare spazio all’improvvisazione. Con il termine performance management ci riferiamo all’insieme dei processi gestionali finalizzati all’allineamento dei comportamenti e degli obiettivi individuali a quelli aziendali; in maniera più semplice, possiamo definire la performance management come l’insieme di sistemi, metodologie, processi nonché di criteri e di tecniche di valutazione delle performance atte a comprendere se l’attività aziendale si muove verso gli obiettivi strategici prefissati. Il Temporary Manager è una figura professionale esperta che viene incaricata di gestire con poteri e deleghe, in tutto o in parte, un’impresa, nell’ottica di un miglioramento o del superamento di una crisi, garantendo la continuità organizzativa e l’accrescimento delle competenze manageriali interne.</p> <p>La figura del Temporary Manager rappresenta la soluzione ottimale per le PMI al fine di dotarsi di competenze di alto livello, immediatamente fruibili. Tali caratteristiche rendono il Temporary HR Manager, specialista nella gestione delle risorse umane, la figura ideale per guidare il riassetto strutturale e l’accelerazione dell’innovazione all’interno delle imprese nonché, in misura crescente negli ultimi anni, il punto di riferimento per la gestione dei processi d’internazionalizzazione e dei passaggi generazionali. In altri termini, il Temporary HR Manager cura progetti a medio e lungo termine focalizzati sulla crescita delle persone all’interno delle organizzazioni, aiutando le aziende a strutturarsi meglio, partendo dalle interviste ai dipendenti, con conseguenti (job analysis, task analysis e grading) e dalla conoscenza del tessuto e del clima aziendale (utile è somministrare una analisi di clima), arrivando a definire fabbisogni: formativi, di job rotation e di change management. Attraverso un’attenta analisi dell’organizzazione quindi il Temporary Manager individua i gap da colmare identificando gli obiettivi da raggiungere (attraverso il metodo del: goal setting).</p> <p>Il Temporary HR Manager raggiunge questi obiettivi con progetti mirati alla crescita delle persone e allo sviluppo delle performance. Tuttavia, il suo perimetro d’azione non è circoscritto alla risoluzione di eventuali gap nella gestione tecnica delle risorse umane. Questo professionista aiuta le aziende ad evolversi a 360°, dal piano organizzativo e strategico a quello culturale e identitario. Il suo ruolo è far comprendere alle organizzazioni che il conseguimento degli obiettivi strategici non può prescindere dal coinvolgimento attivo del capitale umano e da una nuova cultura aziendale basata sul feedback costante e sui valori identitari del marchio. Nelle aziende a “conduzione familiare”, o dove sia presente un unico soggetto decisionale (strutture piramidali, connotate dalla presenza di una figura imprenditoriale accentratrice), è più rassicurate implementare un intervento di affiancamento interno piuttosto che considerare una proposta di consulenza per l’applicazione ex novo di un diverso sistema organizzativo; il rischio potrebbe essere quello di recepire in modo confuso o errato l’intervento rendendo inutile e controproducente l’investimento. Il Temporary Manager, che si colloca all’interno della gerarchia aziendale, ammorbidisce le fasi di cambiamento adattandola al singolo caso, garantendo una transizione più coerente con la necessità della PMI. il costo della figura professionale è parametrato in base al progetto e agli obiettivi da raggiungere e spesso è mediamente inferiore rispetto all’assunzione diretta di un professionista, inoltre, i tempi e le modalità operative sono chiari e le performance possono essere controllate e misurate, così come possono essere monitorati i risultati da raggiungere nel tempo previsto per l’operazione. I modelli tradizionali, in un contesto così dinamico, presentano il limite di rallentare la valutazione delle performance aziendali per questo motivo le organizzazioni hanno l’esigenza di “sburocratizzare” e snellire alcune procedure velocizzando di fatto la capacità di monitorare l’allineamento di obiettivi individuali con quelli aziendali. Un moderno sistema di performance management è incentrato sul miglioramento continuo e sulla capacità di dare feedback tempestivi correggendo eventuali deviazioni di rotta tenendo ben presente che alla base deve necessariamente esserci una programmazione di lungo periodo. Il ruolo della Direzione HR è quello di facilitare l’approccio ad una nuova cultura finalizzata al feedback continuo ed al lavoro per obiettivi, inoltre, avrà il compito di rendere le organizzazioni consapevoli che per realizzare gli obiettivi strategici non è più sufficiente far leva sull’aspetto economico ma, che il raggiungimento di tali risultati è fondato sui valori identitari del brand coinvolgendo attivamente le risorse umane. Il Temporary Hr Manager assume quindi anche un ruolo formativo all’interno della PMI, creando presupposti per la crescita e andando a colmare il diffuso difetto di managerializzazione che attanaglia il tessuto imprenditoriale del nostro Paese.</p>",
                   name1:"Davide Maggio",
                   role1: "Temporary Hr Manager, Socio studio associato Felli/Maggio",
@@ -253,7 +253,7 @@ export default {
                   date: "18 Dic 2022",
                   title: "Aumentano le buste paga, a chi spetta e cosa cambia",
                   img: "https://davidemaggiohr.it/wp-content/uploads/2021/04/Conte-pensate.jpeg",
-                  subtitle: "Aumentano le buste paga, a chi spetta e cosa cambia",
+                  subtitle: "Aumentano le buste paga, a chi spetta e ...",
                   text: "<img src=\"https://davidemaggiohr.it/wp-content/uploads/2021/04/Conte-pensate.jpeg\" width=\"100%\" height=\"100%\"/>",
                   name1:"Davide Maggio",
                   role1: "Temporary Hr Manager, Socio studio associato Felli/Maggio",
@@ -302,7 +302,7 @@ export default {
                 },
                 {
                   date: "2022",
-                  title: "Quale futuro attende gli HR DIRECTOR e quali strumenti avranno a loro disposizione - Sole 24 Ore",
+                  title: "Quale futuro attende gli HR DIRECTOR e quali strumenti avranno ...",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/Quale+futuro+attende+gli+HR+Director.png",
                   subtitle: "Cari lettori, oggi come non mai tra le soft skill che vengono richieste agli uomini del personale...",
                   text: "<h3>Quale futuro attende gli HR DIRECTOR e quali strumenti avranno a disposizione.</h3><p>Cari lettori, oggi come non mai tra le soft skill che vengono richieste agli uomini del personale c&rsquo;&egrave; la predittivit&agrave;. Redazione Meliusform.</p><h3>Il ruolo sociale della contrattazione: la diversity &amp; inclusion nel Gruppo Autostrade.</h3><p>La contrattazione collettiva pu&ograve; svolgere un compito fondamentale anche nel campo della &ldquo;diversity, equity &amp; inclusion&rdquo;, aiutando in materia a passare dalla teoria alla pratica. Di Marco Micaroni.</p><h3>Affermare il valore della Pubblica Amministrazione richiede nuove frontiere di formazione.</h3><p>Nella lunga notte della pandemia, la Pubblica Amministrazione italiana &egrave; tornata una luce da accendere. Abbiamo compreso l&rsquo;importanza di una solida sanit&agrave; pubblica; abbiamo scoperto le nuove tecnologie nella scuola; abbiamo invocato servizi a distanza da parte di enti centrali e locali. Di Luigi Vignali.</p><h3>La nascita dei nuovi ammortizzatori sociali: verso una nuova speranza (tanto per parafrasare guerre stellari).</h3><p>Il tema che in questo numero di Melius24, a cui Aidp Lazio collabora, verr&agrave; affrontato &egrave; quello inerente i nuovi ammortizzatori sociali, o meglio su come possono essere pensati gli ammortizzatori nel futuro, alla luce di tutto quello che l&rsquo;esperienza della Covid-19 ci ha insegnato. Di David Trotti.</p><h3>La produttivit&agrave; nelle aziende partecipate: verso un nuovo modello.</h3><p>Seppur in un contesto dove le Societ&agrave; partecipate da Amministrazioni Pubbliche sembrano poter essere definite quale &ldquo;terzo genere&rdquo; tra pubblico e privato, &egrave; sempre pi&ugrave; chiara la necessit&agrave; di una linea di governance che esprima una gestione aziendale indirizzata verso dinamiche di sostenibilit&agrave; economica nella realizzazione degli obiettivi per la quale la societ&agrave; &egrave; stata creata. Di Corrado Cingolani.</p><h3>Come motivare i professionisti che lavorano in sanit&agrave;:tra tradizione e innovazione.</h3><p>Le organizzazioni sanitarie sono caratterizzate da una elevata complessit&agrave; organizzativa e gestionale essenzialmente derivante da tre caratteristiche peculiari: alto livello di conoscenze professionali in continua evoluzione e di professionisti in organizzazione. Di Daniele Piacentini.</p><h3>Il laboratorio delle multinazionali: il lavoro come nascita di una unica umanit&agrave;.</h3><p>Nel mondo degli affari altamente globalizzato di oggi, lo sviluppo di capacit&agrave; di gestione interculturale potrebbe sembrare quasi inutile. La maggior parte delle persone hanno almeno un account social, cosa che potenzialmente permette loro di restare in contatto con centinaia di persone in tutto il mondo, e una delle cose di cui stiamo maggiormente soffrendo di questa pandemia &egrave; la privazione della possibilit&agrave; di viaggiare. All&rsquo;interno delle organizzazioni, lavorare con colleghi di altre culture &egrave; diventato normale. Di Gianpiero Tufilli.</p><h3>L&rsquo;uso strategico dei dati come driver per far ripartire l&rsquo;industria pesante.</h3><p>Circa due terzi dei progetti di digitalizzazione delle aziende del comparto industriale e minerario, delle infrastrutture pubbliche e delle telecomunicazioni hanno subito dei rallentamenti a causa della pandemia di Covid-19. A dispetto degli ingenti investimenti per l&rsquo;adozione delle nuove tecnologie, solo in un caso su tre vengono raggiunti gli obiettivi prefissati e una delle cause principali &egrave; la mancanza di una cultura aziendale data centrica. NEWS IL SOLE 24 ORE</p><p><a href=\"https://davidemaggiohr.it/wp-content/uploads/2021/06/8A%CC%82%C2%B0MELIUS24_GIUGNO-LUGLIO_Def-2.pdf\">Scarica il PDF</a></p>",
@@ -311,7 +311,7 @@ export default {
                 },
                 {
                   date: "2022",
-                  title: "Da Edicolante a Imprenditore: Il manuale per trasformare la tua Edicola in un&#39;Impresa di successo",
+                  title: "Da Edicolante a Imprenditore ...",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/Da+edicolante+a+imprenditore+1.png",
                   subtitle: "Credendo nell’apprendimento continuo e nel miglioramento costante, Edicole &amp;100...",
                   text: "<p><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Da+edicolante+a+imprenditore+2.png\"/></p><h3>La prima Academy dedicata agli edicolanti</h3><p>Credendo nell&rsquo;apprendimento continuo e nel miglioramento costante, Edicole &amp;100 ti offre la possibilit&agrave; di formarti presso l&rsquo;unica Academy dedicata agli edicolanti. 8 moduli, 15 ore e 32 corsi formativi per realizzare un progetto in maniera semplice ed efficace, raggiungere un obiettivo personale o aziendale, imparare a ragionare per obiettivi e risultati chiave, comunicare in maniera efficace, apprendere tecniche e strategie per proporti sul mercato in modo incisivo, organizzare un evento nel tuo punto vendita, gestire il personale e i collaboratori, conoscere le procedure, le norme e la fiscalit&agrave; indispensabili per la tua attivit&agrave;. Ogni modulo si conclude con un questionario e, al completamento del percorso, riceverai la Certificazione &amp;100 e l&rsquo;esclusivo libro dell'Academy con i contenuti di tutti i docenti. E, in pi&ugrave;, puoi vincere un premio esclusivo estratto tra i partecipanti.</p><p>[ Testo estrapolato dal sito <a href=\"https://edicolee100.com/formazione/\">Formazione - Edicole &amp;100 (edicolee100.com) ]</a></p><p><a href=\"https://edizionie100.com/libro/da-edicolante-a-imprenditore-il-manuale-per-trasformare-la-tua-edicola-in-unimpresa-di-successo/\">Acquista il libro - Da Edicolante a Imprenditore Il manuale per trasformare la tua Edicola in un'Impresa di successo - Edizioni &amp;100 (edizionie100.com)</a></p>",
@@ -361,14 +361,14 @@ export default {
                   date: "16 Sett 2022",
                   title: "I nostri primi colloqui nel Metaverso!",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/tech+jobs+fair.jpeg",
-                  subtitle: "È iniziata oggi la nuova edizione del TECH JOBS fair...",
+                  subtitle: "È iniziata oggi la nuova edizione del TECH JO...",
                   text: "<p>È iniziata oggi la nuova edizione del TECH JOBS fair, e la grande famiglia di Jobify Recruiting è presente con numerosi interventi ed interazioni da parte dei membri del nostro team.</p><p>Per la prima volta abbiamo conosciuto ed ascoltato i candidati in una versione 3D immersiva, che ci ha permesso di abbattere le distanze ed ancora una volta di sfruttare la digitalizzazione e l'innovazione per dare più spazio al lato umano, valore intrinseco ed irrinunciabile della nostra azienda. Conoscere al meglio aziende e candidati diventa, così, possibile ed estremamente coinvolgente!</p><p>Passa a trovarci nel nostro stand oppure guarda i nostri interventi sulla pagina dell'evento!</p>",
                 },
                 {
                   date: "30 Gen 2022",
                   title: "Roma",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/Il+futuro+del+lavoro_giugno+1.jpeg",
-                  subtitle: "Per Jobify Recruiting è stato un immenso piacere partecipare il 24 giugno all’evento HR di Bianco Lavoro - Euspert.",
+                  subtitle: "Per Jobify Recruiting è stato un immenso piacere partecipare il 24 giugno all’evento HR di...",
                   text: "<h3>Roma</h3><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Il+futuro+del+lavoro_giugno+2.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Il+futuro+del+lavoro_giugno+3.jpeg\" width=\"50%\" height=\"50%\"/><img src=\"https://thingsss.s3.eu-central-1.amazonaws.com/Il+futuro+del+lavoro_giugno+4.jpeg\" width=\"50%\" height=\"50%\"/><p>Per Jobify Recruiting è stato un immenso piacere partecipare il 24 giugno all’evento HR di Bianco Lavoro - Euspert. </p><p>Durante l’evento abbiamo parlato del futuro del lavoro: un tema che sta riguardando tutti, aziende, manager e talenti.</p><ul> <li> ➡️Come sta cambiando la cultura del lavoro? </li> <li> ➡️Cosa sta cambiando nell’ambito lavorativo? </li> <li> ➡️Cos’è importante oggi giorno per un’azienda? </li></ul><p>Oggi più che mai le aziende e i lavoratori sentono l’esigenza di affrontare temi come work-life balance, valori aziendali, aspettative professionali e smart-working.</p><p>🎯Il mondo del lavoro sta cambiando radicalmente, dalle nuove tecnologie che ormai fanno parte della nostra vita, alla cultura del lavoro. </p><p>Noi, come persone, siamo chiamati a un grande atto di responsabilità. </p><p>🤝 E’ stata una serata ricca di riflessioni; ognuno di noi ha trasmesso e lasciato qualcosa all’altro</p><p>Un ringraziamento speciale agli sponsor Adecco | Bianco Lavoro - Euspert | TECH JOBS fair | Studio Felli | Extreme Rentals Dubai | CreaImpresa | Edicole &100 | AIDP Lazio | Miutifin | COACH Professionista|</p><p>E un grazie a tutti i partecipanti che hanno reso possibile tutto questo!</p><p>Vi aspettiamo al prossimo evento!</p>",
                 },
                 {
@@ -380,9 +380,9 @@ export default {
                 },
                 {
                   date: "10 Mag 2022",
-                  title: "Il mondo HR incontra quello del digital marketing",
+                  title: "Il mondo HR incontra quello...",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/docenza+sapienza.jpeg",
-                  subtitle: "Jobify Recruiting a braccetto con UP-Communication durante il tirocinio...",
+                  subtitle: "Jobify Recruiting a braccetto con ...",
                   text: "<h3>Docenza | Il mondo HR incontra quello del digital marketing</h3><p>Jobify Recruiting a braccetto con UP-Communication durante il tirocinio rivolto agli studenti del corso “ Scienze del Turismo” della Sapienza Università di Roma.</p><ul> <li>➡️ Come attrarre i talenti attraverso le attività di Digital Employer Branding? </li> <li>➡️ Cos’è il marketing? </li> <li>➡️ Quali sono le principali attività del marketing?</li> <li>➡️ Quanto è importante la comunicazione fra i dipendenti di un’azienda? </li></ul><p>Questi sono i main topic affrontati durante l’intervento di Alessio Cinao, direttore marketing di Up Communication e di Jobify Recruting affiancato da Davide Maggio, curatore del tirocinio, HR Manager e CEO di Jobify Recruiting. </p><p>Una lezione formativa, mirata a comprendere le logiche e le strategie che si nascondono dietro all’Employer Branding in funzione del mondo HR.</p><p>L’intervento ha lasciato spazio anche a una profonda riflessione sulla vita personale e lavorativa: il work life balance di ognuno di noi sta cambiando.</p><p>E’ il momento per le aziende e i dipendenti di riorganizzare il proprio tempo, in funzione della società e di se stessi. </p><p>Crea la giusta immagine di te stesso perché questa azione può determinare il tuo futuro lavorativo.</p>",
                 },
                 {
@@ -408,9 +408,9 @@ export default {
                 },
                 {
                   date: "28 Lug 2022",
-                  title: "Sviluppare la cultura manageriale nelle PMI",
+                  title: "Sviluppare la cultura manager...",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/FederManager+Calabria.png",
-                  subtitle: "La figura professionale del Temporary e del fractional manager nelle piccole medie e imprese è...",
+                  subtitle: "La figura professionale del Temporary e del fractional manager nelle piccole medie e...",
                   text: "<h3>SVILUPPARE LA CULTURA MANAGERIALE NELLE PMI: TEMPORARY E FRACTIONAL MANAGER</h3><p>La figura professionale del Temporary e del fractional manager nelle piccole medie e imprese è sempre più centrale.</p><p>Ad esempio, il temporary Hr manager gestisce il riassetto strutturale e l’accelerazione dell’innovazione nelle imprese, con progetti mirati alla crescita delle persone e allo sviluppo delle performance.</p><a href=\"https://www.youtube.com/watch?v=_PzmT8uou8A\">SVILUPPARE LA CULTURA MANAGERIALE NELLE PMI: TEMPORARY E FRACTIONAL MANAGER - YouTube</a>",
                 },
                 {
@@ -419,6 +419,81 @@ export default {
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/people2results.png",
                   subtitle: "Abbiamo parlato con People2Results di come l’intelligenza artificiale...",
                   text: "<h3>Intelligenza artificiale e risorse umane: come possono convivere?</h3><p>Abbiamo parlato con People2Results di come l’intelligenza artificiale - utilizzata con consapevolezza e competenza (come ogni altro strumento!) all&#39;interno del processo di ricerca e selezione - possa rappresentare un notevole supporto al servizio dell’uomo, dell&#39;head hunter, senza mai volersi sostituire a quest&#39;ultimo, ma supportandolo ed agevolandolo nelle attività quotidiane e concedendo più spazio per coltivare l&#39;aspetto umano della relazione con i candidati.</p>",
+                },
+              ],
+              bianco_lavoro: [
+                {
+                  date: "9 Sett 2022",
+                  title: "Il fenomeno delle grandi dimissioni, trattenere...",
+                  img: "https://www.biancolavoro.it/wp-content/uploads/2022/09/protection-2022-08-01-01-48-43-utc-scaled.jpg",
+                  subtitle: "Analizziamo il fenomeno delle grandi dimissioni, quale sia il target di... ",
+                },
+                {
+                  date: "13 Sett 2022",
+                  title: "Jobify al TECH JOBS fair remote working edition 2022...",
+                  img: "https://www.biancolavoro.it/wp-content/uploads/2022/09/rendering-ritaglio.jpeg",
+                  subtitle: "Presentiamo una delle aziende che parteciperà al TECH JOBS Fair 2022 il...",
+                },
+                {
+                  date: "26 Giu 2022",
+                  title: "Il Metaverso rivoluziona le Risorse Umane...",
+                  img: "https://www.biancolavoro.it/wp-content/uploads/2022/06/woman-with-vr-virtual-reality-goggles-2022-04-21-03-13-18-utc-1024x640.jpg",
+                  subtitle: "Negli ultimi mesi è capitato a tutti di leggere la parola Metaverso ...",
+                },
+              ],
+              pubblicazioni_cartacee: [
+                {
+                  date: "",
+                  title: "Sicurezza sul lavoro",
+                  img: "https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/mondo_lavoro.png?alt=media&token=f04ee972-31c5-4112-b1d5-c81290b7ff78",
+                  subtitle: "Il Decreto Legislativo n. 81/2008 de finisce “formazione” quel...",
+                  text: "<img src=\"https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/mondo_lavoro.png?alt=media&token=f04ee972-31c5-4112-b1d5-c81290b7ff78\" width=\"100%\" height=\"100%\"/>",
+                  name1:"Davide Maggio",
+                  role1: "Temporary Hr Manager, Socio studio associato Felli/Maggio",
+                  name2: "Pasquale De Luca Bossa",
+                  role2: "Hr Manager",
+                },
+                {
+                  date: "",
+                  title: "Digital transformation oltre al business",
+                  img: "https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/lostrillone.png?alt=media&token=8686267a-a170-41ad-bed9-84bdce6d2cf7",
+                  subtitle: "Quando si parla di digital transformation ci si riferisce ...",
+                  text: "<img src=\"https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/lostrillone.png?alt=media&token=8686267a-a170-41ad-bed9-84bdce6d2cf7\" width=\"100%\" height=\"100%\"/>",
+                },
+                {
+                  date: "",
+                  title: "CoronaVirus: AIDP a sostegno delle imprese",
+                  img: "https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/coronavirus_aidp.png?alt=media&token=71519582-7c26-4999-99c5-8f0ffc4716a9",
+                  subtitle: "Trotti: Sono sicuro che le nostre aziende riusciranno...",
+                  text: "<img src=\"https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/coronavirus_aidp.png?alt=media&token=71519582-7c26-4999-99c5-8f0ffc4716a9\" width=\"100%\" height=\"100%\"/>",
+                },
+                {
+                  date: "",
+                  title: "Budget e costo del lavoro",
+                  img: "https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/budget%20e%20costo-1.png?alt=media&token=aaec351e-261f-4d47-9d49-81e98cfd66a4",
+                  subtitle: "Fattori che incidono sul costo del lavoro, elementi della retribuzione e incentivi per le assunzioni. Tra i fattori della produzione ...",
+                  text: "<img src=\"https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/budget%20e%20costo-1.png?alt=media&token=aaec351e-261f-4d47-9d49-81e98cfd66a4\" width=\"100%\" height=\"100%\"/> <img src=\"https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/budget%20e%20costo-2.png?alt=media&token=f5d25373-12d4-4484-8712-55ce2ffebebc\" width=\"100%\" height=\"100%\"/>",
+                },
+                {
+                  date: "",
+                  title: "Competenze manageriali",
+                  img: "https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/competenze_manageriali.png?alt=media&token=f3c3a414-6ec5-45ee-8521-4aeea0c63553",
+                  subtitle: "Negli scacchi come nella strategia aziendale, è importante la capacità di fissare l’obiettivo ...",
+                  text: "<img src=\"https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/competenze_manageriali.png?alt=media&token=f3c3a414-6ec5-45ee-8521-4aeea0c63553\" width=\"100%\" height=\"100%\"/>",
+                },
+                {
+                  date: "",
+                  title: "Il mismtach tra domanda...",
+                  img: "https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/mismatch-1.png?alt=media&token=41c50561-ca03-4390-a73d-314a054e7277",
+                  subtitle: "Come superare questo gap e i fattori che lo determinano ...",
+                  text: "<img src=\"https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/mismatch-1.png?alt=media&token=41c50561-ca03-4390-a73d-314a054e7277\" width=\"100%\" height=\"100%\"/> <img src=\"https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/mismatch-2.png?alt=media&token=d797a913-ba05-48fa-9990-71c9419fd210\" width=\"100%\" height=\"100%\"/>",
+                },
+                {
+                  date: "",
+                  title: "Gestione del personale",
+                  img: "https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/gestione_del_personale.png?alt=media&token=3fdf983f-1bbb-4db2-adda-92be5a423592",
+                  subtitle:"Alla base della gestione strategica delle risorse umane c'è la ...",
+                  text: "<img src=\"https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/gestione_del_personale.png?alt=media&token=3fdf983f-1bbb-4db2-adda-92be5a423592\" width=\"100%\" height=\"100%\"/>",
                 },
               ],
       sections:[
@@ -510,8 +585,8 @@ export default {
     }
 
     for (let i = 0; i < this.articles.length; i++) {
-      var date = document.getElementById("dateA"+i);
-      date.textContent = this.articles[i].date;
+      /*var date = document.getElementById("dateA"+i);
+      date.textContent = this.articles[i].date;*/
 
       var title = document.getElementById("titleA"+i);
       title.textContent = this.articles[i].title;
@@ -524,8 +599,8 @@ export default {
     }
 
     for (let i = 0; i < this.events.length; i++) {
-      var date = document.getElementById("dateE"+i);
-      date.textContent = this.events[i].date;
+      /*var date = document.getElementById("dateE"+i);
+      date.textContent = this.events[i].date;*/
 
       var title = document.getElementById("titleE"+i);
       title.textContent = this.events[i].title;
@@ -549,6 +624,34 @@ export default {
 
       var image = document.getElementById("imageF"+i);
       image.style.backgroundImage = "url('"+this.first[i].img +"')";
+    }
+
+    for (let i = 0; i < this.bianco_lavoro.length; i++) {
+      /*var date = document.getElementById("dateBL"+i);
+      date.textContent = this.bianco_lavoro[i].date;*/
+
+      var title = document.getElementById("titleBL"+i);
+      title.textContent = this.bianco_lavoro[i].title;
+
+      var subtitle = document.getElementById("subtitleBL"+i);
+      subtitle.textContent = this.bianco_lavoro[i].subtitle;
+
+      var image = document.getElementById("imageBL"+i);
+      image.style.backgroundImage = "url('"+this.bianco_lavoro[i].img +"')";
+    }
+
+    for (let i = 0; i < this.pubblicazioni_cartacee.length; i++) {
+      /*var date = document.getElementById("datePC"+i);
+      date.textContent = this.bianco_lavoro[i].date;*/
+
+      var title = document.getElementById("titlePC"+i);
+      title.textContent = this.pubblicazioni_cartacee[i].title;
+
+      var subtitle = document.getElementById("subtitlePC"+i);
+      subtitle.textContent = this.pubblicazioni_cartacee[i].subtitle;
+
+      var image = document.getElementById("imagePC"+i);
+      image.style.backgroundImage = "url('"+this.pubblicazioni_cartacee[i].img +"')";
     }
 
     for (let i = 0; i < this.sections.length; i++){
@@ -580,11 +683,11 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <div style="background: #0c2550; padding-top: 8rem; padding-bottom: 2rem;">
+        <div style="background: #0089cc; padding-top: 8rem; padding-bottom: 2rem;">
           <div class="firstColumns">
             <div class="firstColumn">
               <h1>
-                Il <span>blog di Jobify Recruiting</span> esplora il mercato del lavoro e le opportunità per talenti e aziende
+                <span>Il blog di Jobify Recruiting</span> esplora il mercato <br>del lavoro e le opportunità per talenti e aziende
               </h1>
             </div>
             <div class="firstColumn transition" style="margin-top: 20rem;">
@@ -597,7 +700,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
           </div>
         </div>
 
-        <div style="background: #0c2550; padding-top: 5rem; padding-bottom: 2rem;">
+        <div style="background: #0089cc; padding-top: 5rem; padding-bottom: 2rem;">
           <div class="titlePage">News</div>
           <div class="topContent">
             <div class="img1" id="imageF0"></div>
@@ -786,6 +889,39 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA11"></div>
                     </div>
                   </router-link>
+                  <a href="https://www.biancolavoro.it/il-fenomeno-delle-grandi-dimissioni-trattenere-i-talenti-in-azienda-con-oneboarding-e-piano-di-carriera/" target="blank">
+                    <div class="article">
+                          <div class="image" id="imageBL0">
+                            <div class="hover"></div>
+                            <div class="date" id="dateBL0"></div>
+                          </div>
+                          <div class="desctitle">Articolo</div>
+                          <div class="title" id="titleBL0"></div>
+                          <div class="subtitle" id="subtitleBL0"></div>
+                        </div>
+                  </a>
+                  <a href="https://www.biancolavoro.it/jobify-al-tech-jobs-fair-remote-working-edition-2022-opportunita-di-lavoro-e-interventi/" target="blank">
+                    <div class="article">
+                          <div class="image" id="imageBL1">
+                            <div class="hover"></div>
+                            <div class="date" id="dateBL1"></div>
+                          </div>
+                          <div class="desctitle">Articolo</div>
+                          <div class="title" id="titleBL1"></div>
+                          <div class="subtitle" id="subtitleBL1"></div>
+                        </div>
+                  </a>
+                  <a href="https://www.biancolavoro.it/il-metaverso-rivoluziona-le-risorse-umane-i-cambiamenti-del-futuro-nel-mondo-del-lavoro/" target="blank">
+                    <div class="article">
+                          <div class="image" id="imageBL2">
+                            <div class="hover"></div>
+                            <div class="date" id="dateBL2"></div>
+                          </div>
+                          <div class="desctitle">Articolo</div>
+                          <div class="title" id="titleBL2"></div>
+                          <div class="subtitle" id="subtitleBL2"></div>
+                        </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -996,6 +1132,83 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA33"></div>
                     </div>
                   </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.pubblicazioni_cartacee[0].title, Date: this.pubblicazioni_cartacee[0].date, Text: this.pubblicazioni_cartacee[0].text, Image: this.pubblicazioni_cartacee[0].img, Name1: this.pubblicazioni_cartacee[0].name1, Role1: this.pubblicazioni_cartacee[0].role1, Name2: this.pubblicazioni_cartacee[0].name2, Role2: this.pubblicazioni_cartacee[0].role2,}}">
+                    <div class="article">
+                      <div class="image" id="imagePC0">
+                        <div class="hover"></div>
+                        <div class="date" id="datePC0"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titlePC0"></div>
+                      <div class="subtitle" id="subtitlePC0"></div>
+                    </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.pubblicazioni_cartacee[1].title, Date: this.pubblicazioni_cartacee[1].date, Text: this.pubblicazioni_cartacee[1].text, Image: this.pubblicazioni_cartacee[1].img}}">
+                    <div class="article">
+                      <div class="image" id="imagePC1">
+                        <div class="hover"></div>
+                        <div class="date" id="datePC1"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titlePC1"></div>
+                      <div class="subtitle" id="subtitlePC1"></div>
+                    </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.pubblicazioni_cartacee[2].title, Date: this.pubblicazioni_cartacee[2].date, Text: this.pubblicazioni_cartacee[2].text, Image: this.pubblicazioni_cartacee[2].img}}">
+                    <div class="article">
+                      <div class="image" id="imagePC2">
+                        <div class="hover"></div>
+                        <div class="date" id="datePC2"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titlePC2"></div>
+                      <div class="subtitle" id="subtitlePC2"></div>
+                    </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.pubblicazioni_cartacee[3].title, Date: this.pubblicazioni_cartacee[3].date, Text: this.pubblicazioni_cartacee[3].text, Image: this.pubblicazioni_cartacee[3].img}}">
+                    <div class="article">
+                      <div class="image" id="imagePC3">
+                        <div class="hover"></div>
+                        <div class="date" id="datePC3"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titlePC3"></div>
+                      <div class="subtitle" id="subtitlePC3"></div>
+                    </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.pubblicazioni_cartacee[4].title, Date: this.pubblicazioni_cartacee[4].date, Text: this.pubblicazioni_cartacee[4].text, Image: this.pubblicazioni_cartacee[4].img}}">
+                    <div class="article">
+                      <div class="image" id="imagePC4">
+                        <div class="hover"></div>
+                        <div class="date" id="datePC4"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titlePC4"></div>
+                      <div class="subtitle" id="subtitlePC4"></div>
+                    </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.pubblicazioni_cartacee[5].title, Date: this.pubblicazioni_cartacee[5].date, Text: this.pubblicazioni_cartacee[5].text, Image: this.pubblicazioni_cartacee[5].img}}">
+                    <div class="article">
+                      <div class="image" id="imagePC5">
+                        <div class="hover"></div>
+                        <div class="date" id="datePC5"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titlePC5"></div>
+                      <div class="subtitle" id="subtitlePC5"></div>
+                    </div>
+                  </router-link>
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.pubblicazioni_cartacee[6].title, Date: this.pubblicazioni_cartacee[6].date, Text: this.pubblicazioni_cartacee[6].text, Image: this.pubblicazioni_cartacee[6].img}}">
+                    <div class="article">
+                      <div class="image" id="imagePC6">
+                        <div class="hover"></div>
+                        <div class="date" id="datePC6"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titlePC6"></div>
+                      <div class="subtitle" id="subtitlePC6"></div>
+                    </div>
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -1052,7 +1265,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             <div id="eventijobify" class="tab-pane fade">
               <div class="filters">
                 <div class="content filtersContent articles articles2">
-                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[0].title, Date: this.events[0].date, Text: this.events[0].text, Image: this.events[0].img }}">
+                  <!--<router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[0].title, Date: this.events[0].date, Text: this.events[0].text, Image: this.events[0].img }}">
                         <div class="article">
                           <div class="image" id="imageE0">
                             <div class="hover"></div>
@@ -1062,7 +1275,18 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                           <div class="title" id="titleE0"></div>
                           <div class="subtitle" id="subtitleE0"></div>
                         </div>
-                  </router-link>
+                  </router-link>-->
+                  <a href="https://www.biancolavoro.it/il-futuro-del-lavoro-evento-hr-networking-e-apericena-a-milano/" target="blank">
+                    <div class="article">
+                          <div class="image" id="imageE0">
+                            <div class="hover"></div>
+                            <div class="date" id="dateE0"></div>
+                          </div>
+                          <div class="desctitle">Evento</div>
+                          <div class="title" id="titleE0"></div>
+                          <div class="subtitle" id="subtitleE0"></div>
+                        </div>
+                  </a>
                   <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[1].title, Date: this.events[1].date, Text: this.events[1].text, Image: this.events[1].img }}">
                         <div class="article">
                           <div class="image" id="imageE1">
@@ -1224,7 +1448,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             </div>
             <div
               class="col"
-              style="background-image: url(/src/assets/storie.jpg); background-size: cover; background-position: center; border-radius: 30px;"
+              style="background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png); background-size: cover; background-position: TOP; border-radius: 30px;"
             ></div>
           </div>
         </div>
@@ -1350,7 +1574,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   }
 
   .firstColumns .firstColumn span{
-    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1867,14 +2091,17 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   }
 
   .fifthDiv .adviser {
-    background: rgba(161, 161, 161, 0.1);
+    background: #0c2550;
     border-radius: 30px;
     display: flex;
   }
 
   .fifthDiv .adviser .col {
     width: 50%;
-    padding: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .fifthDiv .adviser .col h3 {
     color: #fff;
@@ -1886,7 +2113,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   }
 
   .fifthDiv .adviser .col h3 span {
-    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+    background: -webkit-linear-gradient(-70deg,#2867b2 0%,#01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

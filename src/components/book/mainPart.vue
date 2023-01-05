@@ -84,7 +84,7 @@ export default {
         <div class="glow5"></div>
         <div class="firstPart">
           <div class="subtitle">Prenota appuntamento</div>
-          <h2>Prenota una call per un appuntamento gratuito</h2>
+          <h2><span>Prenota una call</span> <br>per un appuntamento gratuito</h2>
           <p>Crediamo che ogni persona abbia un talento, basta scoprirlo.</p>
           <div class="image">
             <!-- Calendly inline widget begin -->
@@ -181,11 +181,24 @@ export default {
   .firstPart h2 {
     color: #fff;
     letter-spacing: -0.04em;
-    font-size: 72px;
-    line-height: 76px;
-    font-weight: 800;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 500;
     margin-bottom: 1rem;
     width: 50%;
+  }
+
+  .firstPart h2 span{
+    background: -webkit-linear-gradient(-70deg,#2867b2 0%,#01a49e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700 !important;
+    font-size: 64px;
+    line-height: 64px;
+    padding-right: 0.05rem;
+    letter-spacing: -0.03em !important;
   }
 
   .firstPart p {

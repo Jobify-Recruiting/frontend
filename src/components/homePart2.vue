@@ -7,7 +7,7 @@ export default {
   },
   mounted() {
 
-    const flavoursContainer = document.getElementById("feedbacksContainer");
+    /*const flavoursContainer = document.getElementById("feedbacksContainer");
     const flavoursScrollWidth = flavoursContainer.scrollWidth;
 
     window.addEventListener("load", () => {
@@ -20,7 +20,7 @@ export default {
           flavoursContainer.scrollTo(0, 0);
         }
       }, 15);
-    });
+    });*/
 
     function reveal() {
       var reveals = document.querySelectorAll(".transition");
@@ -212,7 +212,7 @@ export default {
         <div class="first" style="width: 100% !important;">
           <div class="title">
             <h2>
-              <span class="gradientTitle">Jobify Recruiting: </span>la tua agenzia di head hunting
+              <span class="gradientTitle">Jobify Recruiting: </span><br>la tua agenzia di head hunting
             </h2>
             <p>
               Trovare, valorizzare e trattenere i <span style="color: #c554a0; font-weight: 500"
@@ -243,15 +243,9 @@ export default {
             </div>
           </div>
           <div class="video transition">
-            <iframe
-              width="600"
-              height="350"
-              src="https://www.youtube.com/embed/-VmEWZsUIGY"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <video width="450" height="450" controls style="border-radius: 30px;">
+  <source src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/video_home.mp4?alt=media&token=6e32bfee-c070-4f4f-a1a8-ca716751cc2e" type="video/mp4">
+  </video>
           </div>
         </div>
       </div>
@@ -283,7 +277,7 @@ export default {
     <div class="clientsCo">
       <div class="clientsCoBorder">
         <div class="clientsCoLink">
-          <h2>I clienti di Jobify Recruiting</h2>
+          <h2><span>I clienti</span> di Jobify Recruiting</h2>
         </div>
         <div class="clientsCoDiv">
           <div class="clientsCoBody" id="clientsCoBodyId">
@@ -517,7 +511,7 @@ export default {
         <div class="first" style="display: inline !important">
           <div class="title">
             <h2>
-              <span>I servizi offerti da Jobify Recruiting</span>
+              <span>I servizi offerti</span> da Jobify Recruiting
             </h2>
             <p>
               Jobify Recruiting è un’agenzia affidabile e competente che supporta le aziende nella ricerca del giusto
@@ -543,7 +537,7 @@ e talenti.
                       />
                     </svg>
                   </div>
-                  <div class="title">Ricerca e selezione del personale</div>
+                  <div class="title">Ricerca e selezione <br>del personale</div>
                   <div class="text">
                     lavoriamo ogni giorno per creare il match perfetto tra azienda e
                     candidato e aiutare le aziende a trovare la risorsa migliore.
@@ -560,7 +554,7 @@ e talenti.
                       <path d="m10.273 2.513-.921-.944.715-.698.622.637.89-.011a2.89 2.89 0 0 1 2.924 2.924l-.01.89.636.622a2.89 2.89 0 0 1 0 4.134l-.637.622.011.89a2.89 2.89 0 0 1-2.924 2.924l-.89-.01-.622.636a2.89 2.89 0 0 1-4.134 0l-.622-.637-.89.011a2.89 2.89 0 0 1-2.924-2.924l.01-.89-.636-.622a2.89 2.89 0 0 1 0-4.134l.637-.622-.011-.89a2.89 2.89 0 0 1 2.924-2.924l.89.01.622-.636a2.89 2.89 0 0 1 4.134 0l-.715.698a1.89 1.89 0 0 0-2.704 0l-.92.944-1.32-.016a1.89 1.89 0 0 0-1.911 1.912l.016 1.318-.944.921a1.89 1.89 0 0 0 0 2.704l.944.92-.016 1.32a1.89 1.89 0 0 0 1.912 1.911l1.318-.016.921.944a1.89 1.89 0 0 0 2.704 0l.92-.944 1.32.016a1.89 1.89 0 0 0 1.911-1.912l-.016-1.318.944-.921a1.89 1.89 0 0 0 0-2.704l-.944-.92.016-1.32a1.89 1.89 0 0 0-1.912-1.911l-1.318.016z"/>
                     </svg>
                   </div>
-                  <div class="title">Le divisioni che trattiamo</div>
+                  <div class="title">Le divisioni <br>che trattiamo</div>
                   <div class="text">
                     In Jobify Recruiting offriamo consulenza alle aziende che cercano figure impiegatizie, white collars e middle
 e top management. Le divisioni che trattiamo sono IT, HR, FARM, DIGITAL, FINANCE.
@@ -581,7 +575,7 @@ e top management. Le divisioni che trattiamo sono IT, HR, FARM, DIGITAL, FINANCE
       <div class="thirdPartDiv">
         <div class="first">
           <div class="col1">
-            <h2>Perchè scegliere Jobify Recruiting?</h2>
+            <h2>Perchè scegliere <br>Jobify Recruiting?</h2>
             <p>
               <!--<span>Jobify Recruiting</span>-->
               Jobify Recruiting nasce per umanizzare il processo di Ricerca &amp; Selezione e si propone sul mercato come
@@ -702,22 +696,10 @@ lavoro.
               </p>
             </div>
           </div>
+          <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
           <div class="column workflowColumn" style="width: 35vw !important">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#0c2550"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
             <div class="background transition">
               <div class="number">
                 <div class="icon">
@@ -749,23 +731,11 @@ lavoro.
             </div>
           </div>
         </div>
+        <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
         <div class="columns">
           <div class="column workflowColumn" style="width: 35vw !important">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#0c2550"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
             <div class="background transition">
               <div class="number">
                 <div class="icon">
@@ -793,22 +763,10 @@ lavoro.
               </p>
             </div>
           </div>
+          <div class="svg_logo_link transition">
+              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
+          </div>
           <div class="column workflowColumn" style="width: 35vw !important">
-            <div class="circle2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="#0c2550"
-                class="bi bi-arrow-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                />
-              </svg>
-            </div>
             <div class="background transition">
               <div class="number">
                 <div class="icon">
@@ -841,7 +799,7 @@ lavoro.
       <div class="adviser transition">
         <div class="col">
           <h3>
-            <span>Jobify Recruiting crea il matching</span> perfetto tra azienda
+            <span>Jobify Recruiting crea<br> il matching perfetto</span> tra azienda
             e candidato
           </h3>
           <button class="btn" @click="call_btn()">
@@ -869,7 +827,7 @@ lavoro.
 
     <div class="feedbackDiv" id="feedback">
       <div class="content">
-        <h2>I clienti dicono di noi</h2>
+        <h2><span>I clienti</span> dicono di noi</h2>
         <div class="buttons">
           <div class="btnScrollL" @click="btnScrollSx()">
             <svg
@@ -1078,6 +1036,24 @@ professionale e personale del candidato e al successo del business.
                     <p class="worktitle">
                       Director of Sales & Operations SEUR - Talent.com
                     </p>
+                  </div>
+                </div>
+              </div>
+              <div class="feedback">
+                <p class="quote">"</p>
+                <h3>
+                  Team giovane, ma con passione ed esperienza. Abbiamo trovato in loro un valido supporto.
+                </h3>
+                <div class="feedbackInfo">
+                  <div
+                    class="feedbackInfoPhoto"
+                    style="
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_clients%2Fmaurizio%20de%20gregorio.jpeg?alt=media&token=685ca922-f7e2-4c38-9796-09e3a2d90478);
+                    "
+                  ></div>
+                  <div class="feddbackData">
+                    <p class="author">Maurizio de Gregorio</p>
+                    <p class="worktitle">General Manager presso Mamacrowd </p>
                   </div>
                 </div>
               </div>
@@ -1711,7 +1687,7 @@ cercano personale.
   .mainTitle .title h2 {
     color: #0c2550;
     font-size: 56px;
-    font-weight: 800;
+    font-weight: 500;
     width: 90%;
     line-height: 56px;
     letter-spacing: -0.06em !important;
@@ -1734,7 +1710,7 @@ cercano personale.
   }
 
   .gradientTitle {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1773,16 +1749,22 @@ cercano personale.
   }
 
   .clientsCoLink h2 {
+    color: #0c2550;
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: -0.06em !important;
     width: fit-content;
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+  }
+
+  .clientsCoLink h2 span{
+    width: fit-content;
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 44px;
-    letter-spacing: -0.04em !important;
+    font-weight: 700 !important;
   }
 
   .clientsCoLink p {
@@ -1881,24 +1863,24 @@ cercano personale.
 
   .secondDiv .title h2 {
     color: #0c2550;
-    font-size: 64px;
-    font-weight: 800 !important;
-    width: 87%;
+    font-size: 56px;
+    font-weight: 500 !important;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    line-height: 68px;
-    letter-spacing: -0.04em !important;
+    width: fit-content;
+    line-height: 56px;
+    letter-spacing: -0.06em !important;
   }
 
   .secondDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     letter-spacing: -0.04em !important;
-    font-weight: 800 !important;
+    font-weight: 700 !important;
   }
 
   .secondDiv .title p {
@@ -1959,7 +1941,7 @@ cercano personale.
     font-size: 36px;
     font-weight: 600;
     line-height: 40px;
-    background: linear-gradient(90.91deg, #027bfd -24.67%, #5162fb 53.55%);
+    background: linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2026,16 +2008,11 @@ cercano personale.
   .thirdPartDiv .first h2 {
     color: #fff;
     width: 100%;
-    font-size: 54px;
-    line-height: 58px;
+    font-size: 56px;
+    line-height: 56px;
     letter-spacing: -0.04em;
     font-weight: 700;
     margin-bottom: 5rem;
-    background: -webkit-linear-gradient(-70deg, #db469f 0%, #2867b2  100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-box-decoration-break: clone;
   }
 
   .thirdPartDiv .first p {
@@ -2056,7 +2033,7 @@ cercano personale.
     background-image: url(/src/assets/whyJobify.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: right;
     width: 78%;
     height: auto;
     border-bottom-right-radius: 30px;
@@ -2110,7 +2087,7 @@ cercano personale.
     font-size: 36px;
     font-weight: 600;
     line-height: 40px;
-    background: linear-gradient(90.91deg, #027bfd -24.67%, #5162fb 53.55%);
+    background: linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2192,7 +2169,7 @@ cercano personale.
   }
 
   .workflow .workflowTitle2 {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2200,7 +2177,7 @@ cercano personale.
     letter-spacing: -0.04em !important;
     font-weight: 800 !important;
     font-size: 56px;
-    line-height: 56px;
+    line-height: 65px;
     font-weight: 800 !important;
     letter-spacing: -0.04em !important;
     width: fit-content;
@@ -2248,7 +2225,7 @@ cercano personale.
   }
 
   .workflow .columns .column {
-    padding: 3rem;
+    padding: 1rem;
     padding-top: 0rem;
     width: 70%;
     display: flex;
@@ -2286,7 +2263,7 @@ cercano personale.
   }
 
   .workflow .columns .number {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2348,6 +2325,8 @@ cercano personale.
     background-color: #fff;
     align-items: center;
     position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .workflowFlex .workflowLogo {
@@ -2368,6 +2347,13 @@ cercano personale.
     background: #0e3f70;
     top: 15%;
     border-radius: 15px;
+  }
+
+
+  .svg_logo_link{
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
   .flowScheme {
@@ -2717,7 +2703,7 @@ cercano personale.
     line-height: 68px;
     font-weight: 800;
     letter-spacing: -0.04em !important;
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -2746,7 +2732,7 @@ cercano personale.
   }
 
   .elemH2 span {
-    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3134,7 +3120,7 @@ cercano personale.
     line-height: 68px;
     letter-spacing: -0.04em !important;
     font-weight: 800;
-    background: -webkit-linear-gradient(-70deg, #67a3f0 0%, #4e54ed 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3216,7 +3202,7 @@ cercano personale.
     font-size: 64px;
     line-height: 68px;
     font-weight: 700;
-    background: -webkit-linear-gradient(-70deg, #67a3f0 0%, #4e54ed 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3263,7 +3249,7 @@ cercano personale.
     padding-left: 8rem;
     width: 100%;
     background-color: #0c2550;
-    padding-top: 8rem;
+    padding-top: 5rem;
   }
 
   .fourthDiv .content {
@@ -3288,11 +3274,11 @@ cercano personale.
     width: 80%;
     text-align: left;
     line-height: 56px;
-    letter-spacing: -0.04em !important;
+    letter-spacing: -0.06em !important;
   }
 
   .fourthDiv .title h2 span {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(-70deg,#2867b2 0%,#01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3302,7 +3288,7 @@ cercano personale.
   }
 
   .fourthDiv .title p {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     width: 80%;
     text-align: left;
     margin-bottom: 2rem;
@@ -3413,11 +3399,20 @@ cercano personale.
 
   .feedbackDiv h2 {
     color: #0c2550;
-    font-size: 64px;
-    font-weight: 800 !important;
+    font-size: 56px;
+    font-weight: 500;
     text-align: center;
-    line-height: 68px;
-    letter-spacing: -0.03em !important;
+    line-height: 65px;
+    letter-spacing: -0.06em !important;
+  }
+
+  .feedbackDiv h2 span {
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    font-weight: 700 !important;
   }
 
   .feedbackDiv .buttons {
@@ -3464,6 +3459,7 @@ cercano personale.
     flex-wrap: nowrap;
     align-items: center;
     position: relative;
+    margin-top: 1rem;
   }
 
   .feedbacks.active {
@@ -3478,12 +3474,11 @@ cercano personale.
     margin-right: 1rem;
     margin-left: 1rem;
     float: left;
-    box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    height: auto;
+    height: 44vh;
   }
 
   .feedbackDiv .feedbacks .feedback .quote {
-    background: -webkit-linear-gradient(-70deg, #67a3f0 0%, #4e54ed 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -3503,7 +3498,7 @@ cercano personale.
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 1rem;
-    width: 40vw;
+    width: 60vw;
   }
 
   .feedbackDiv .feedbacks .feedback .author {
@@ -3552,7 +3547,10 @@ cercano personale.
 
   .fifthDiv .adviser .col {
     width: 50%;
-    padding: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .fifthDiv .adviser .col h3 {
     color: #fff;
@@ -3560,20 +3558,18 @@ cercano personale.
     font-size: 36px;
     line-height: 40px;
     letter-spacing: -0.04em;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1.5rem;
   }
 
   .fifthDiv .adviser .col h3 span {
-    background: -webkit-linear-gradient(116deg, #00ffbf 0%, #0076ff 100%);
+    background: -webkit-linear-gradient(-70deg,#2867b2 0%,#01a49e 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: -0.04em;
-    font-weight: 700;
+    letter-spacing: -0.06em;
+    font-weight: 700 !important;
   }
 
   .fifthDiv .adviser .col_image {

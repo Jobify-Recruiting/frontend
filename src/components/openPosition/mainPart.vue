@@ -54,6 +54,20 @@ export default {
                   data: "8 Dicembre 2022",
                   storia_testo: "Mi sono sentita da subito a mio agio, capita e compresa, ho avuto addirittura, nel momento del colloquio con la mia referente Elisa, dei suggerimenti per migliorare il mio cv e la mia presentazione, non mi era mai capitato. Ho apprezzato in Jobify Recruiting la serietà, e umanità, mi sono sentita trattata alla pari, e sostenuta per tutto l’iter di selezione, per affrontare al meglio il colloquio finale con l’azienda.",
                 },
+                {
+                  nickname: "Enis Gulishi",
+                  ruolo: "Manutentore Elettromeccanico Trasfertista",
+                  azienda: "NTE Processs",
+                  data: "30 Dicembre 2022",
+                  storia_testo: "Sono stato assistito da Martina Di Palma. Che dire? Servizio impeccabile. Personale attento, cordiale e disponibile. Molto soddisfatto.",
+                },
+                {
+                  nickname: "Valentina Mura",
+                  ruolo: "HR Manager",
+                  azienda: "Mamacrowd ",
+                  data: "13 Dicembre 2022",
+                  storia_testo: "L'esperienza con Jobify è stata un esperienza nuova perché l'approccio che usano è differente rispetto a chi tradizionalmente si occupa di recruiting. Si tratta di un approccio human centric dove mettono al primo posto l'attenzione del candidato e la trasparenza. Ritengo questi due aspetti fondamentali per far sentire il candidato a proprio agio e per permettergli di esprimere al meglio le proprie competenze e skills.",
+                },
               ],
     };
   },
@@ -2436,7 +2450,7 @@ export default {
         <div class="secondPart2">
           <div class="title">
             <h2>
-              Jobify Recruiting: mettiamo il <span>talento</span> al servizio delle aziende
+              <span>Jobify Recruiting:</span> mettiamo il talento al servizio delle aziende
               
             </h2>
             <p>
@@ -2497,11 +2511,11 @@ sviluppare in azienda.
             <div
               class="col"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/storie.jpg);
+                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png);
                 background-size: cover;
                 border-radius: 30px;
                 background-repeat: no-repeat;
-                background-position: center;
+                background-position: top;
               "
             ></div>
           </div>
@@ -2546,127 +2560,136 @@ sviluppare in azienda.
           <div class="featuredContent">
               <div class="featured" @click="story(1)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    L’approccio umano è stato una componente fondamentale di tutto il processo...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username0"></div>
                     <div class="jobtitle" id="jobtitle0"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    L’approccio umano è stato una componente fondamentale di tutto il processo...
+                    <span>Leggi di più</span>
                   </div>
-                  
                 </div>
               </div>
               <div class="featured" @click="story(2)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username1"></div>
                     <div class="jobtitle" id="jobtitle1"></div>
                   </div>
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
               <div class="featured" @click="story(3)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username2"></div>
                     <div class="jobtitle" id="jobtitle2"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
               <div class="featured" @click="story(4)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    Rispetto alle agenzie di recruiting sono spesso stata molto diffidente...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username3"></div>
                     <div class="jobtitle" id="jobtitle3"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    Rispetto alle agenzie di recruiting sono spesso stata molto diffidente...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
               <div class="featured" @click="story(5)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    L'esperienza vissuta con Jobify è stata molto positiva...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username4"></div>
                     <div class="jobtitle" id="jobtitle4"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    L'esperienza vissuta con Jobify è stata molto positiva...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
               <div class="featured" @click="story(6)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username5"></div>
                     <div class="jobtitle" id="jobtitle5"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
               <div class="featured" @click="story(7)">
                 <div class="hover"></div>
-                <div class="text">
-                  <h2>
-                    Mi sono sentita da subito a mio agio, capita e compresa...
-                  </h2>
+                <div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
                     <div class="username" id="username6"></div>
                     <div class="jobtitle" id="jobtitle6"></div>
                   </div>
-
-                  <div class="btn">
-                    Scopri
+                  <div class="text_preview">
+                    Mi sono sentita da subito a mio agio, capita e compresa...
+                    <span>Leggi di più</span>
+                  </div>
+                </div>
+              </div>
+              <div class="featured" @click="story(8)">
+                <div class="hover"></div>
+                <div class="text"><h2></h2>
+                </div>
+                <div class="info_story">
+                  <div class="basic_informations">
+                    <div class="username" id="username7"></div>
+                    <div class="jobtitle" id="jobtitle7"></div>
+                  </div>
+                  <div class="text_preview">
+                    Sono stato assistito da Martina Di Palma. Che dire?
+                    <span>Leggi di più</span>
+                  </div>
+                </div>
+              </div>
+              <div class="featured" @click="story(9)">
+                <div class="hover"></div>
+                <div class="text"><h2></h2>
+                </div>
+                <div class="info_story">
+                  <div class="basic_informations">
+                    <div class="username" id="username8"></div>
+                    <div class="jobtitle" id="jobtitle8"></div>
+                  </div>
+                  <div class="text_preview">
+                    L'esperienza con Jobify è stata un esperienza nuova ...
+                    <span>Leggi di più</span>
                   </div>
                 </div>
               </div>
@@ -3419,8 +3442,8 @@ sviluppare in azienda.
   .ctaTitle {
     color: #0c2550;
     letter-spacing: -0.04em;
-    font-size: 60px;
-    line-height: 64px;
+    font-size: 56px;
+    line-height: 60px;
     font-weight: 800;
     width: 50%;
     margin-left: auto;
@@ -3444,7 +3467,10 @@ sviluppare in azienda.
   }
 
   .ctaCV .col-padding {
-    padding: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .ctaCV .col h3 {
@@ -3933,13 +3959,25 @@ sviluppare in azienda.
   }
 
   .secondPart2 h2 {
-    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
+    color: #0c2550;
+    letter-spacing: -0.04em;
+    font-size: 56px;
+    line-height: 60px;
+    font-weight: 800;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .secondPart2 h2 span{
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     letter-spacing: -0.04em;
-    font-size: 60px;
+    font-size: 56px;
     line-height: 64px;
     font-weight: 800;
     width: 50%;
@@ -4057,6 +4095,7 @@ sviluppare in azienda.
     flex-wrap: nowrap;
     align-items: center;
     position: relative;
+    cursor: pointer;
   }
 
   .featuredContent.active {
@@ -4080,18 +4119,18 @@ sviluppare in azienda.
   }
 
   .featureds .titles h2 {
-    font-size: 50px;
-    line-height: 54px;
+    font-size: 40px;
+    line-height: 42px;
     color: #0c2550;
-    font-weight: 700;
+    font-weight: 800;
     margin-top: 3rem;
-    letter-spacing: -2.5px;
+    letter-spacing: -0.02em;
     width: fit-content;
   }
 
   .featureds .btnScrollR {
     width: fit-content;
-    background: transparent;
+    background: white;
     border: 2px solid rgb(209, 209, 209);
     border-radius: 25rem;
     height: auto;
@@ -4104,7 +4143,7 @@ sviluppare in azienda.
   .featureds .btnScrollL {
     margin-right: 1rem;
     width: fit-content;
-    background: transparent;
+    background: #fff;
     border: 2px solid rgb(209, 209, 209);
     border-radius: 25rem;
     height: auto;
@@ -4123,27 +4162,26 @@ sviluppare in azienda.
     box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
       0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
       0 22px 17px rgb(0 0 0 / 2%) !important;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/story.jpg);
+    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph17.jpg);
     background-size: cover;
     background-position: center;
     width: 75vw;
     float: left;
-    height: 35vw;
+    height: 20vw;
     position: relative;
-    cursor: pointer;
   }
 
   .featured .info_story{
     position: absolute;
     bottom: 0;
     padding: 2rem;
+    padding-top: 13rem;
     width: 100%;
     background: #ada996;
     background: -webkit-linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
     background: linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
     border-radius: 30px;
     width: 100%;
-    display: flex;
   }
 
   .featured .info_story .basic_informations{
@@ -4162,22 +4200,14 @@ sviluppare in azienda.
     font-weight: 300;
   }
 
+  .featured .info_story .text_preview{
+    color: white;
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 14px;
+  }
+
   .featured .hover {
-    background: #ada996;
-    background: -webkit-linear-gradient(
-      to bottom,
-      #000000d1,
-      #00000027,
-      #0000000a,
-      transparent
-    );
-    background: linear-gradient(
-      to bottom,
-      #000000d1,
-      #00000027,
-      #0000000a,
-      transparent
-    );
     height: 100%;
     border-radius: 30px;
     position: absolute;
@@ -4194,7 +4224,7 @@ sviluppare in azienda.
     line-height: 34px;
     width: 30vw;
   }
-
+  
   .featured p {
     color: #fff;
     padding: 2rem;

@@ -127,7 +127,7 @@ export default {
 
       <div class="secondPart">
         <div class="text1 bold text1H1">
-          <span>Jobify Recruiting:</span> chi siamo e il nostro metodo
+          <span>Jobify Recruiting:</span> <br>chi siamo e il nostro metodo
         </div>
       </div>
       <div class="thirdPart">
@@ -174,7 +174,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
           <div class="quotes">
             <div class="quote">
               <div class="quoteh4">
-                <span>Mission</span> di Jobify Recruiting
+                <span>Mission</span><br> di Jobify Recruiting
               </div>
               <div class="quoteh5">
                 La nostra mission è creare il match perfetto tra azienda e candidato. 
@@ -183,9 +183,9 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
               </div>
             </div>
             <div class="quote" style="text-align: right !important;
-              float: right !important; margin-top: 20rem">
+              float: right !important;">
               <div class="quoteh4" style="text-align: right !important;
-              float: right !important"><span>Vision</span> di Jobify Recruiting</div>
+              float: right !important"><span>Vision</span><br> di Jobify Recruiting</div>
               <div class="quoteh5" style="float: right !important">
                 La nostra vision parla di un mondo HR sempre più human e digital, in cui competenze personali incontrano
                 le moderne tecnologie per un processo di ricerca e selezione dei candidati ottimizzato. Vogliamo trovare la
@@ -196,7 +196,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
         </div>
       </div>
       <div class="sixtPart">
-        <h2>Non più candidati, ma persone da mettere al centro del processo di selezione</h2>
+        <h2>Non più candidati, ma persone<br> da mettere al centro del processo <br>di selezione</h2>
         <div class="description">
           L’azienda giusta diventa quella di cui il candidato si rivede nei valori ed è soddisfatto nelle sue aspettative personali e questo modo di lavorare porta a persone felici e pronte a svolgere al meglio il loro lavoro.
         </div>
@@ -332,12 +332,13 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
               
       </div>
             <div class="seventhPart">
+              <div class="text" style="text-align: left;">
+                <h2>Jobify Recruiting come <span>Stakeholder</span></h2>
+                <p>Jobify Recruiting è stakeholder Sapienza per i tirocini del 2 e 3 anno di Scienze del Turismo.</p>
+              </div>
               <div class="imageJobifyLogo transition"></div>
               <div class="imageSapienza transition"></div>
-              <div class="text" style="text-align: right;">
-                <h2 style="margin-left: auto;">Jobify Recruiting come <span>Stakeholder</span></h2>
-                <p style="margin-left: auto;">Jobify Recruiting è stakeholder Sapienza per i tirocini del 2 e 3 anno di Scienze del Turismo.</p>
-              </div>
+              
             </div>
             <div class="seventhPart">
               <div class="text">
@@ -688,6 +689,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     font-size: 54px !important;
     line-height: 54px !important;
     font-weight: 500 !important;
+    color: #0c2550 !important;
   }
 
   .secondPart .text1 h3{
@@ -697,12 +699,12 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   }
 
   .secondPart .text1 span {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   .thirdPart {
@@ -717,18 +719,18 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     color: #627597;
     font-size: 30px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 100;
     width: 65%;
     margin-left: 3rem;
   }
 
   .thirdPart .text1 span {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
-    font-weight: 500;
+    font-weight: 700;
   }
 
   .fourthPart {
@@ -800,7 +802,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -844,7 +846,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     letter-spacing: -0.04em;
   }
   .quotes .quoteh4 span {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -939,7 +941,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   }
 
   .person {
-    width: 22%;
+    width: 31%;
     margin-left: 1.5rem;
     float: left;
     position: relative;
@@ -1039,7 +1041,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   }
 
   .seventhPart .text h2 span {
-    background: -webkit-linear-gradient(-70deg, #2867b2  0%, #01a49e 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1099,7 +1101,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     width: 30vw;
     height: 30vw;
     margin-right: 2rem;
-    background-image: url(/src/assets/logo/blue.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2FLogo%20Jobify%20versioni%20estese_Tavola%20disegno%201%20copia%209.png?alt=media&token=bd3639a9-15b8-4cfa-ad1b-ef68bef15a74);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -1123,7 +1125,10 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
 
   .fifthDiv .adviser .col {
     width: 50%;
-    padding: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .fifthDiv .adviser .col h3 {
     color: #fff;

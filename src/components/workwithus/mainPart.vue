@@ -48,86 +48,114 @@ export default {
   <div>
     <div class="main">
       <div class="first">
-        <div class="glow"></div>
-        <div class="glow2"></div>
-        <div class="glow3"></div>
-        <div class="glow4"></div>
-        <div class="glow5"></div>
 
         <div class="firstPart">
-          <div class="firstPartBody">
-          <div
-            class="people1"
-            style="
-              top: 60%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-            "
-          ></div>
-          <div
-            class="people2"
-            style="
-              top: 80%;
-              left: 15%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-            "
-          ></div>
-          <div
-            class="people2"
-            style="
-              top: 20%;
-              left: 5%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-            "
-          ></div>
-          <div
-            class="people1"
-            style="
-              top: 40%;
-              left: 12%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-            "
-          ></div>
+          <!--<div class="firstPartBody">
+              <div
+                class="people1"
+                style="
+                  top: 60%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                "
+              ></div>
+              <div
+                class="people2"
+                style="
+                  top: 80%;
+                  left: 15%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                "
+              ></div>
+              <div
+                class="people2"
+                style="
+                  top: 20%;
+                  left: 5%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                "
+              ></div>
+              <div
+                class="people1"
+                style="
+                  top: 40%;
+                  left: 12%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+                "
+              ></div>
 
-          <div
-            class="people1"
-            style="
-              top: 25%;
-              right: 10%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-            "
-          ></div>
-          <div
-            class="people2"
-            style="
-                top: 41%;
-                right: 2%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-            "
-          ></div>
-          <div
-            class="people2"
-            style="
-              top: 80%;
-              right: 10%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-            "
-          ></div>
-          <div
-            class="people1"
-            style="
-              top: 60%;
-              right: 10%;
-              background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-            "
-          ></div>
-          <div class="subtitle">Lavora con noi</div>
-          <h2>Un team fatto di persone per le persone</h2>
-          <p>
-            Jobify Recruiting lavora con passione e impegno e mette competenza, tecnologia e umanità al servizio di
-clienti che possono essere di volta in volta candidati e aziende. Se pensi di possedere queste qualità entra
-nel nostro team.
-          </p>
-        </div>
+              <div
+                class="people1"
+                style="
+                  top: 25%;
+                  right: 10%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                "
+              ></div>
+              <div
+                class="people2"
+                style="
+                    top: 41%;
+                    right: 2%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+                "
+              ></div>
+              <div
+                class="people2"
+                style="
+                  top: 80%;
+                  right: 10%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                "
+              ></div>
+              <div
+                class="people1"
+                style="
+                  top: 60%;
+                  right: 10%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                "
+              ></div>
+              <div class="subtitle">Lavora con noi</div>
+              <h2>Un team fatto di persone per le persone</h2>
+              <p>
+                Jobify Recruiting lavora con passione e impegno e mette competenza, tecnologia e umanità al servizio di
+    clienti che possono essere di volta in volta candidati e aziende. Se pensi di possedere queste qualità entra
+    nel nostro team.
+              </p>
+          </div>-->
+
+          <div class="firstPartBody">
+            <div class="subtitle">Lavora con noi</div>
+              <h2>Un team fatto di persone per le persone</h2>
+
+              <p>
+                Jobify Recruiting lavora con passione e impegno e mette competenza, tecnologia e umanità al servizio di clienti che possono essere di volta in volta candidati e aziende. Se pensi di possedere queste qualità entra nel nostro team.
+              </p>
+
+              <div class="mainButton">
+                <a href="#whyJobify"
+                  ><button class="btn">
+                    Scopri di più
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                        />
+                      </svg>
+                    </span></button
+                ></a>
+              </div>
+              <div class="image">
+              </div>
+          </div>
           <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -295,7 +323,6 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
 
   .mainButton {
     width: fit-content;
-    margin-left: auto;
     margin-right: auto;
   }
 
@@ -415,7 +442,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
     background: #fff;
   }
 
-  .firstPart {
+  /*.firstPart {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -465,6 +492,70 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
     font-size: 18px;
     line-height: 22px;
     font-weight: 200;
+  }*/
+
+  .firstPart {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 6rem;
+    padding-top: 9rem;
+    margin-right: 0;
+    background:#0c2550;
+  }
+
+  .firstPartBody{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .firstPart .subtitle {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .firstPart p span {
+    color: #c554a0;
+    font-weight: 600;
+  }
+
+  .firstPart h2 {
+    color: #fff;
+    letter-spacing: -0.04em;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    width: 50%;
+  }
+
+  .firstPart p {
+    width: 50%;
+    margin-top: 0.5rem;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    line-height: 22px;
+    font-weight: 200;
+    margin-bottom: 2rem;
+  }
+
+  .firstPart .image {
+    height: 54vh;
+    width: 56%;
+    padding-left: 8rem;
+    padding-right: 0;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2F010%20Lavora%20con%20noi%20un%20team%20fatto%20di%20persone.png?alt=media&token=a054eec2-4254-43b2-b730-ac8b46870df3);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
   }
 
   .first .cols {
@@ -636,65 +727,6 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
     width: 90%;
     margin-right: auto;
     text-align: left;
-  }
-
-  .glow {
-    position: absolute;
-    width: 5vw;
-    opacity: 0.5;
-    left: 10%;
-    top: 30%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-    z-index: 1;
-  }
-
-  .glow2 {
-    position: absolute;
-    width: 5vw;
-    top: 70%;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(0, 119, 255, 0.9);
-    z-index: 1;
-  }
-
-  .glow3 {
-    position: absolute;
-    width: 5vw;
-    top: 75%;
-    left: 80%;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(162, 0, 255, 0.9);
-    z-index: 1;
-  }
-
-  .glow4 {
-    position: absolute;
-    width: 5vw;
-    top: 30%;
-    opacity: 0.5;
-    left: 85%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
-    z-index: 1;
-  }
-
-  .glow5 {
-    position: absolute;
-    width: 5vw;
-    top: 10%;
-    opacity: 0.5;
-    left: 65%;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 255, 179, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.9);
-    z-index: 1;
   }
 }
 
