@@ -1,21 +1,95 @@
 <script>
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import firebase from 'firebase/compat/app';
+import storage from 'firebase/compat';
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import 'firebase/compat/firestore';
+
 export default {
   name: "footer",
   components: {},
   data() {
-    return {};
+    return {
+      email1:"",
+    };
   },
   mounted() {
     const d = new Date();
     let year = d.getFullYear();
     document.getElementById("year").innerHTML = year;
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyDvtosJB--sCCj3TlZhuGBWxvToa0c12ec",
+        authDomain: "jobify-d2a24.firebaseapp.com",
+        databaseURL: "https://jobify-d2a24-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "jobify-d2a24",
+        storageBucket: "jobify-d2a24.appspot.com",
+        messagingSenderId: "27249165508",
+        appId: "1:27249165508:web:b5f27662b7488d85b57591",
+        measurementId: "G-KZXCNHDBT0"
+      };
   },
-  methods: {},
+  methods: {
+    registerNewsletter(){
+      const db = firebase
+        .initializeApp({ projectId: "jobify-d2a24" })
+        .firestore();
+
+        const current = new Date();
+      const date =
+        current.getDate() +
+        "-" +
+        (current.getMonth() + 1) +
+        "-" +
+        current.getFullYear();
+      const time =
+        current.getHours() +
+        ":" +
+        current.getMinutes() +
+        ":" +
+        current.getSeconds();
+
+        const dateTime = date + " " + time;
+
+        const data = {
+          email: this.email1,
+          data: dateTime,
+        };
+
+        db.collection("newsletter")
+        .add(data)
+        .then(() => {
+          document.getElementById("notify").style.display = "inline-flex";
+          document.getElementById("title").innerHTML = "Newsletter";
+          document.getElementById("subtitle").innerHTML = "Iscrizione avvenuta con successo.";
+          setTimeout(() => {
+            document.getElementById("notify").style.display = "none";
+          }, 6000); // 👈️ time in milliseconds
+          });
+    }
+    
+  },
 };
 </script>
 
 <template>
   <div class="footer">
+    <div class="notify" id="notify">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#33548c" class="bi bi-check-lg" viewBox="0 0 16 16">
+          <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+        </svg>
+      </div>
+      <div class="text">
+        <div class="title" id="title">
+          
+        </div>
+        <div class="subtitle" id="subtitle">
+          
+        </div>
+      </div>
+    </div>
     <div class="content">
       <div class="col-logo">
         <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2FLogo%20Jobify%20versioni%20estese_Tavola%20disegno%201%20copia%2010.png?alt=media&token=baed9f0b-c891-4524-9635-60e4ea397134" />
@@ -26,19 +100,18 @@ export default {
               id="nav"
               class="input"
               type="text"
-              name="nickname"
               placeholder="Inserisci la tua email"
+              name="email1" 
+              v-model="email1"
             />
           </div>
-          <router-link to="/newsletter"
-            ><button class="btn">Iscriviti</button></router-link
-          >
+            <button class="btn" @click="registerNewsletter()">Iscriviti</button>
         </div>
         <div class="checkbox">
           <input type="checkbox" />
           <p>
             Accetto i
-            <router-link to="">&nbsp;termini e condizioni.</router-link>
+            <a href="https://www.iubenda.com/termini-e-condizioni/18605079" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Termini e Condizioni ">Termini e Condizioni</a>
           </p>
         </div>
       </div>
@@ -89,8 +162,8 @@ export default {
           <span id="year"></span> &nbsp;&nbsp;•&nbsp;&nbsp; Jobify Recruiting Srl. (Aut. Min.
           Prot. N.F205S530526 del 26.07.2022)
         </div>
-        <div class="link">Privacy Policy</div>
-        <div class="link">Termini & Condizioni</div>
+        <a href="https://www.iubenda.com/privacy-policy/18605079" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a>
+        <a href="https://www.iubenda.com/termini-e-condizioni/18605079" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Termini e Condizioni ">Termini e Condizioni</a>
       </div>
       <div class="right">
         <a href="https://www.facebook.com/jobifyrecruiting">
@@ -114,6 +187,42 @@ export default {
 }
 
 @media (min-width: 1024px) {
+
+  .notify{
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    background: #0c2550;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: 20px;
+    z-index: 20;
+    width: 30%;
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .notify .title{
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+  }
+
+  .notify .subtitle{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 1rem;
+  }
+
   .footer {
     width: 100%;
     background: linear-gradient(

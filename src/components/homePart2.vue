@@ -221,7 +221,7 @@ export default {
               un contesto nazionale.
             </p>
             <div class="" style="display: flex; align-items: center">
-              <router-link to="/companies"
+              <router-link to="/about"
                 ><button class="btn">
                   Scopri chi siamo
                   <span>
@@ -243,7 +243,7 @@ export default {
             </div>
           </div>
           <div class="video transition">
-            <video width="450" height="450" controls style="border-radius: 30px;">
+            <video width="450" height="450" controls style="border-radius: 30px;" muted>
   <source src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/video_home.mp4?alt=media&token=6e32bfee-c070-4f4f-a1a8-ca716751cc2e" type="video/mp4">
   </video>
           </div>
@@ -953,7 +953,7 @@ nuovo personale.</h3>
                   </div>
                 </div>
               </div>
-              <div class="feedback">
+              <!--<div class="feedback">
                 <p class="quote">"</p>
                 <h3>
                   Consiglierei jobify recruiting per la perseveranza, bravura, con cui sono stato seguito nell’aggiornamento costante della ricerca affidatagli. Soprattuto con la mia referente elisa con cui si e’ istaurato da subito un rapporto di affinita’, empatia e accoglienza nel capire le mie esigenze di trovare una risorsa valida da far crescere nella mia realta’ professionale. Se dovessi effettuare nuove ricerche di personale mi rivolgerei di nuovo a jobify che ha saputo consigliarmi e orientarmi nella scelta del miglior candidato, e tutto questo svolto dall’italia , visto la mia attivita’ si trova a malta. Sono molto contento di come abbiano lavorato con attenzione e costanza per la mia azienda.
@@ -970,7 +970,7 @@ nuovo personale.</h3>
                     <p class="worktitle">Adetto alle vendite (Malta) presso Cascone Home</p>
                   </div>
                 </div>
-              </div>
+              </div>-->
               <div class="feedback">
                 <p class="quote">"</p>
                 <h3>
@@ -1599,7 +1599,7 @@ cercano personale.
             <div class="subtitle">
               Agenzia Head Hunting Jobify Recruiting
             </div>
-            <h2><span>Contattaci per un appuntamento gratuito</span></h2>
+            <h2>Contattaci per un appuntamento gratuito</h2>
             <p>
               Jobify Recruiting offre alle aziende una prima consulenza e appuntamento gratuito per aiutarle a trovare la
               persona giusta e il talento giusto.

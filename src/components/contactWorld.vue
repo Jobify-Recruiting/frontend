@@ -1,4 +1,11 @@
 <script>
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import firebase from 'firebase/compat/app';
+import storage from 'firebase/compat';
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import 'firebase/compat/firestore';
+
 import Globe from "globe.gl";
 export default {
   name: "welcome",
@@ -8,6 +15,11 @@ export default {
       office1: "officeMilan",
       office2: "officeDubai",
       office3: "officeTrencin",
+      name: "",
+      surname: "",
+      email: "",
+      mobile: "",
+      details: "",
     };
   },
   mounted() {
@@ -116,6 +128,48 @@ export default {
       var htmlElement = document.querySelector("html");
       htmlElement.style.overflowY = "scroll";
     },
+
+    requestContact(){
+      const db = firebase
+        .initializeApp({ projectId: "jobify-d2a24" })
+        .firestore();
+
+        const current = new Date();
+      const date =
+        current.getDate() +
+        "-" +
+        (current.getMonth() + 1) +
+        "-" +
+        current.getFullYear();
+      const time =
+        current.getHours() +
+        ":" +
+        current.getMinutes() +
+        ":" +
+        current.getSeconds();
+
+        const dateTime = date + " " + time;
+
+        const data = {
+          name: this.name,
+          surname: this.surname,
+          email: this.email,
+          mobile: this.mobile,
+          details: this.details,
+          data: dateTime,
+        };
+
+        db.collection("richieste_contattaci")
+        .add(data)
+        .then(() => {
+          document.getElementById("notify").style.display = "inline-flex";
+          document.getElementById("title").innerHTML = "Richiesta Contatto";
+          document.getElementById("subtitle").innerHTML = "Richiesta inviata con successo.";
+          setTimeout(() => {
+            document.getElementById("notify").style.display = "none";
+          }, 6000); // 👈️ time in milliseconds
+          });
+    }
   },
 };
 </script>
@@ -178,9 +232,7 @@ export default {
         </div>
         <div class="body">
           <div class="images">
-            <div class="img1">
-              <img class="mainImage" src="/src/assets/ph15.jpg" />
-            </div>
+            <div class="img1"></div>
             <div class="img2">
               <img class="mainImage" src="/src/assets/ph16.jpg" />
             </div>
@@ -305,10 +357,10 @@ export default {
         <h2>Fissa <span>un appuntamento</span></h2>
         <div class="subtitle">
           Contattare Jobify Recruiting, agenzia di head hunting con sede a Milano, significa trovare la persona giusta
-da inserire al giusto posto in azienda. Da sempre siamo specializzati nella ricerca e valorizzazione di talenti e
-troviamo il candidato perfetto per rispondere alle esigenze aziendali. Il risultato? Un rapporto azienda-
-talento duraturo ed efficace, per la piena soddisfazione della persona e il raggiungimento degli obiettivi di
-business.
+          da inserire al giusto posto in azienda. Da sempre siamo specializzati nella ricerca e valorizzazione di talenti e
+          troviamo il candidato perfetto per rispondere alle esigenze aziendali. Il risultato? Un rapporto azienda-
+          talento duraturo ed efficace, per la piena soddisfazione della persona e il raggiungimento degli obiettivi di
+          business.
         </div>
       </div>
       <div class="col col_2 transition">
@@ -322,7 +374,8 @@ business.
             id="nav"
             class="input"
             type="text"
-            name="nickname"
+            name="name" 
+            v-model="name"
             placeholder="Nome"
           />
 
@@ -331,7 +384,8 @@ business.
             style="width: 100%; margin: 0"
             class="input"
             type="text"
-            name="nickname"
+            name="surname" 
+            v-model="surname"
             placeholder="Cognome"
           />
         </div>
@@ -340,7 +394,8 @@ business.
             id="nav"
             class="input"
             type="text"
-            name="nickname"
+            name="email" 
+            v-model="email"
             placeholder="Email"
           />
         </div>
@@ -349,7 +404,8 @@ business.
             id="nav"
             class="input"
             type="text"
-            name="nickname"
+            name="mobile" 
+            v-model="mobile"
             placeholder="Telefono"
           />
         </div>
@@ -358,14 +414,14 @@ business.
             id="nav"
             class="input"
             type="text"
-            name="nickname"
+            name="details" 
+            v-model="details"
             placeholder="Dettagli"
           />
         </div>
 
         <div class="formButton">
-          <a href="#first"
-            ><button class="btn">
+          <button class="btn" @click="requestContact()">
               Invia
               <span>
                 <svg
@@ -382,12 +438,28 @@ business.
                   />
                 </svg>
               </span></button
-          ></a>
+          >
         </div>
       </div>
           </div>
       
     </div>
+
+    <div class="notify" id="notify">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#33548c" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+          </div>
+          <div class="text">
+            <div class="title" id="title">
+              
+            </div>
+            <div class="subtitle" id="subtitle">
+
+            </div>
+          </div>
+        </div>
   </div>
 </template>
 
@@ -424,6 +496,42 @@ business.
 }
 
 @media (min-width: 1024px) {
+
+  .notify{
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    background: #0c2550;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: 20px;
+    z-index: 20;
+    width: 30%;
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .notify .title{
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+  }
+
+  .notify .subtitle{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 1rem;
+  }
+
   #officeMilan {
     top: 32%;
     left: 77%;
@@ -713,8 +821,7 @@ business.
     width: 120%;
   }
 
-  .col_2 {
-    margin-top: 2rem;
+  .col_2 { 
     margin-left: 5rem;
   }
 
@@ -782,7 +889,11 @@ business.
   .images .img1 {
     width: 60%;
     margin-right: 2rem;
-  }
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FSede%20Milano%20box%20grande.png?alt=media&token=f972bb81-b26c-45e3-9fa1-40d670b492f1);
+    background-position: center;
+    background-size: cover;
+    height: 28vw;
+    border-radius: 30px;}
 
   .images .img2 {
     width: 30%;
@@ -855,7 +966,6 @@ business.
   }
 
   .cols .col_2 {
-    margin-top: 2rem;
     margin-left: 5rem;
   }
 

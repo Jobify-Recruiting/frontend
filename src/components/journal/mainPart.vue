@@ -1,9 +1,17 @@
 <script>
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import firebase from 'firebase/compat/app';
+import storage from 'firebase/compat';
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import 'firebase/compat/firestore';
+
 export default {
   name: "mainPart",
   components: {},
   data() {
     return {
+      email1:"",
       first: [
                 {
                   date: "24 Mag 2022",
@@ -676,6 +684,44 @@ export default {
       const itemWidth = content.querySelector(".featured").clientWidth;
       content.scrollBy({ left: itemWidth * 4, top: 0, behavior: "smooth" });
     },
+
+    registerNewsletter(){
+      const db = firebase
+        .initializeApp({ projectId: "jobify-d2a24" })
+        .firestore();
+
+        const current = new Date();
+      const date =
+        current.getDate() +
+        "-" +
+        (current.getMonth() + 1) +
+        "-" +
+        current.getFullYear();
+      const time =
+        current.getHours() +
+        ":" +
+        current.getMinutes() +
+        ":" +
+        current.getSeconds();
+
+        const dateTime = date + " " + time;
+
+        const data = {
+          email: this.email1,
+          data: dateTime,
+        };
+
+        db.collection("newsletter")
+        .add(data)
+        .then(() => {
+          document.getElementById("notify").style.display = "inline-flex";
+          document.getElementById("title").innerHTML = "Newsletter";
+          document.getElementById("subtitle").innerHTML = "Iscrizione avvenuta con successo.";
+          setTimeout(() => {
+            document.getElementById("notify").style.display = "none";
+          }, 6000); // 👈️ time in milliseconds
+          });
+    }
   },
 };
 </script>
@@ -1437,19 +1483,40 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                     id="nav"
                     class="input"
                     type="text"
-                    name="nickname"
                     placeholder="Inserisci la tua email"
+                    name="email1" 
+                    v-model="email1"
                   />
-                </div>
-                <router-link to="/newsletter"
-                  ><button class="btn">Iscriviti</button></router-link
-                >
+                </div><button class="btn" @click="registerNewsletter()">Iscriviti</button>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" />
+                <p>
+                  Accetto i
+                  <a href="https://www.iubenda.com/termini-e-condizioni/18605079" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Termini e Condizioni ">Termini e Condizioni</a>
+                </p>
               </div>
             </div>
             <div
               class="col"
               style="background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png); background-size: cover; background-position: TOP; border-radius: 30px;"
             ></div>
+          </div>
+        </div>
+
+        <div class="notify" id="notify">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#33548c" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+          </div>
+          <div class="text">
+            <div class="title" id="title">
+              
+            </div>
+            <div class="subtitle" id="subtitle">
+              
+            </div>
           </div>
         </div>
       </div>
@@ -1487,6 +1554,41 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   }
 }
 @media (min-width: 1024px) {
+
+  .notify{
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    background: #0c2550;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: 20px;
+    z-index: 20;
+    width: 30%;
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .notify .title{
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+  }
+
+  .notify .subtitle{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 1rem;
+  }
 
   .navMain{
     background: #fff;
@@ -1635,7 +1737,6 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   }
 
   .cols .col_2 {
-    margin-top: 2rem;
     margin-left: 5rem;
   }
 
@@ -2088,6 +2189,24 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
     padding-left: 3rem;
     padding-right: 3rem;
     padding-bottom: 4rem;
+  }
+
+  .adviser .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .adviser .checkbox input {
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+
+  .adviser .checkbox p {
+    margin-bottom: 0 !important;
+    color: #fff;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .fifthDiv .adviser {

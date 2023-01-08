@@ -314,6 +314,7 @@ export default {
     margin-right: 0.3em;
     font-weight: 500;
     letter-spacing: -2.5px;
+    font-weight: 700;
   }
   .Iam b {
     float: left;

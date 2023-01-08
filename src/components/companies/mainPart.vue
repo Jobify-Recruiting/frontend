@@ -196,7 +196,7 @@ export default {
 
         <div class="firstPartBody">
           <div class="subtitle">Sei un'azienda</div>
-              <h2>Jobify Recruiting trova il candidato giusto per l’azienda giusta</h2>
+              <h2><span>Jobify</span> Recruiting trova il candidato giusto per l’azienda giusta</h2>
               <p>
                 Jobify Recruiting è molto diversa dalle agenzie di ricerca personale. Siamo una società di Head Hunting che
                 utilizza un metodo <span>scientifico</span> con un approccio <span>consulenziale</span>. Il processo di selezione è umano e studiato
@@ -595,29 +595,29 @@ professionali e si riflette nella cultura aziendale</p>
           >
             <div class="columns">
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="background transition">
+                <div class="background2 transition">
                   <div class="number">1</div>
                   <h2>Intervista al cliente</h2>
-                  <p>
+                  <!-- <p>
                     Trovare lavoro rapidamente significa avere le idee chiare non solo sull’azienda per cui ci si candida e sulla
                     posizione, ma anche sulle proprie esigenze, valori e ideali e aspettative. Per questo in Jobify Recruiting
                     intervistiamo i candidati in modo da proporre solo annunci in linea con quello che si vuole dal nuovo lavoro.
-                  </p>
+                  </p>-->
                 </div>
               </div>
               <div class="svg_logo_link transition">
               <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
           </div>
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="background transition">
+                <div class="background2 transition">
                   <div class="number">2</div>
                   <h2>Job description</h2>
-                  <p>
+                  <!-- <p>
                     Chi cerca lavoro lo fa a partire da una determinata Job Description: sapere chi si è e cosa si sa fare, quali
                     sono i propri talenti e potenzialità significa presentarsi alle aziende con una marcia in più rispetto agli altri
                     candidati. Per questo in Jobify Recruiting conoscendo le soft e hard skills troviamo l’annuncio per mettere
                     la persona giusta nell’azienda giusta.
-                  </p>
+                  </p>-->
                 </div>
               </div>
             </div>
@@ -626,24 +626,24 @@ professionali e si riflette nella cultura aziendale</p>
           </div>
             <div class="columns">
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="background transition">
+                <div class="background2 transition">
                   <div class="number">3</div>
                   <h2>Head Hunting e incontro con l’azienda</h2>
-                  <p>
+                  <!-- <p>
                     Dopo l’intervista e l’analisi della job description abbiamo in mano gli strumenti per cominciare la ricerca del
                     lavoro e le basi per creare il match vincente tra azienda e candidato. Fare Head Hunting significa trovare la
                     soluzione migliore per entrambe le parti e portare a un rapporto di lavoro proficuo e che dura nel tempo.
-                  </p>
+                  </p>-->
                 </div>
               </div>
               <div class="svg_logo_link transition">
               <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
           </div>
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="background transition">
+                <div class="background2 transition">
                   <div class="number">4</div>
                   <h2>Screening CV</h2>
-                  <p>
+                  <!-- <p>
                     Descrizione dello step, Jobify, la tua ricerca e selezione,
                     la tua ricerca e selezione, la tua ricerca e selezione,
                     <span
@@ -653,7 +653,7 @@ professionali e si riflette nella cultura aziendale</p>
                     Jobify, la tua ricerca e selezione, la tua ricerca e
                     selezione, la tua ricerca e selezione, la tua ricerca e
                     selezione, la tua ricerca e selezione
-                  </p>
+                  </p>-->
                 </div>
               </div>
             </div>
@@ -662,10 +662,10 @@ professionali e si riflette nella cultura aziendale</p>
           </div>
             <div class="columns">
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="background transition">
+                <div class="background2 transition">
                   <div class="number">5</div>
                   <h2>Screening telefonico</h2>
-                  <p>
+                  <!-- <p>
                     Descrizione dello step, Jobify, la tua ricerca e selezione,
                     la tua ricerca e selezione, la tua ricerca e selezione, la
                     tua ricerca e selezione, la tua ricerca e selezione, Jobify,
@@ -675,17 +675,17 @@ professionali e si riflette nella cultura aziendale</p>
                       selezione</span
                     >
                     la tua ricerca e selezione, la tua ricerca e selezione
-                  </p>
+                  </p>-->
                 </div>
               </div>
               <div class="svg_logo_link transition">
               <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
           </div>
               <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="background transition">
+                <div class="background2 transition">
                   <div class="number">6</div>
                   <h2>Videocolloquio</h2>
-                  <p>
+                  <!-- <p>
                     Descrizione dello step, Jobify, la tua ricerca e selezione,
                     la tua ricerca e selezione, la tua ricerca e selezione, la
                     tua ricerca e selezione, la tua ricerca e selezione, Jobify,
@@ -695,7 +695,7 @@ professionali e si riflette nella cultura aziendale</p>
                       >la tua ricerca e selezione, la tua ricerca e
                       selezione</span
                     >
-                  </p>
+                  </p>-->
                 </div>
               </div>
             </div>
@@ -704,10 +704,10 @@ professionali e si riflette nella cultura aziendale</p>
           </div>
             <div class="columns">
               <div class="column workflowColumn" style="width: 35vw">
-                <div class="background transition">
+                <div class="background2 transition">
                   <div class="number">7</div>
                   <h2>Presentazione Short list</h2>
-                  <p>
+                  <!-- <p>
                     Descrizione dello step, Jobify, la tua ricerca e selezione,
                     la tua ricerca e selezione, la tua ricerca e selezione, la
                     tua ricerca e selezione, la tua ricerca e selezione, Jobify,
@@ -715,17 +715,17 @@ professionali e si riflette nella cultura aziendale</p>
                       >la tua ricerca e selezione, la tua ricerca e
                       selezione</span
                     >
-                  </p>
+                  </p>-->
                 </div>
               </div>
               <div class="svg_logo_link transition">
               <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
               </div>
               <div class="column workflowColumn" style="width: 35vw">
-                <div class="background transition">
+                <div class="background2 transition">
                   <div class="number">8</div>
-                  <h2>Colloqui one-toone con l'azienda</h2>
-                  <p>
+                  <h2>Colloqui one-to one con l'azienda</h2>
+                  <!-- <p>
                     Descrizione dello step, Jobify, la tua ricerca e selezione,
                     la tua ricerca e selezione, la tua ricerca e selezione, la
                     tua ricerca e selezione, la tua ricerca e selezione, Jobify,
@@ -733,7 +733,7 @@ professionali e si riflette nella cultura aziendale</p>
                       >la tua ricerca e selezione, la tua ricerca e
                       selezione</span
                     >
-                  </p>
+                  </p>-->
                 </div>
               </div>
             </div>
@@ -868,7 +868,7 @@ nuovo personale.</h3>
                   </div>
                 </div>
               </div>
-              <div class="feedback">
+              <!--<div class="feedback">
                 <p class="quote">"</p>
                 <h3>
                   Consiglierei jobify recruiting per la perseveranza, bravura, con cui sono stato seguito nell’aggiornamento costante della ricerca affidatagli. Soprattuto con la mia referente elisa con cui si e’ istaurato da subito un rapporto di affinita’, empatia e accoglienza nel capire le mie esigenze di trovare una risorsa valida da far crescere nella mia realta’ professionale. Se dovessi effettuare nuove ricerche di personale mi rivolgerei di nuovo a jobify che ha saputo consigliarmi e orientarmi nella scelta del miglior candidato, e tutto questo svolto dall’italia , visto la mia attivita’ si trova a malta. Sono molto contento di come abbiano lavorato con attenzione e costanza per la mia azienda.
@@ -885,7 +885,7 @@ nuovo personale.</h3>
                     <p class="worktitle">Adetto alle vendite (Malta) presso Cascone Home</p>
                   </div>
                 </div>
-              </div>
+              </div>-->
               <div class="feedback">
                 <p class="quote">"</p>
                 <h3>
@@ -1742,7 +1742,7 @@ cercano personale.
         <div class="cols">
           <div class="col col_1">
             <p>Sei un'azienda?</p>
-            <h2>Fissa <span>un appuntamento</span></h2>
+            <h2>Fissa <br><span>un appuntamento</span></h2>
             <div class="subtitle">
               Se anche tu stai cercando il candidato perfetto per la posizione aperta nella tua azienda fissa un
 appuntamento con Jobify Recruiting.
@@ -2005,9 +2005,13 @@ appuntamento con Jobify Recruiting.
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 64px;
-    font-weight: 800;
+    font-weight: 500;
     margin-bottom: 1rem;
     width: 50%;
+  }
+
+  .firstPart h2 span{
+    font-weight: 700;
   }
 
   .firstPart p {
@@ -2043,7 +2047,6 @@ appuntamento con Jobify Recruiting.
   }
 
   .cols .col_2 {
-    margin-top: 2rem;
     margin-left: 5rem;
   }
 
@@ -2318,7 +2321,17 @@ appuntamento con Jobify Recruiting.
     padding: 1.5rem;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    height: 35vw;
+    height: 20vw;
+    width: 35vw;
+  }
+
+  .workflow .columns .column .background2 {
+    background: #0c2550;
+    padding: 1.5rem;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 15vw;
+    width: 35vw;
   }
 
   .workflow .columns .column .circle {

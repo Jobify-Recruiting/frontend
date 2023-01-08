@@ -1,9 +1,22 @@
 <script>
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import firebase from 'firebase/compat/app';
+import storage from 'firebase/compat';
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import 'firebase/compat/firestore';
+
 export default {
   name: "mainPart",
   components: {},
   data() {
-    return {};
+    return {
+      name: "",
+      city: "",
+      address: "",
+      email: "",
+      industry: "",
+    };
   },
   mounted() {
     let recaptchaScript = document.createElement("script");
@@ -41,7 +54,49 @@ export default {
     content.style.visibility = "hidden";
     content.style.display = "unset";
   },
-  methods: {},
+  methods: {
+    requestPartner(){
+      const db = firebase
+        .initializeApp({ projectId: "jobify-d2a24" })
+        .firestore();
+
+        const current = new Date();
+      const date =
+        current.getDate() +
+        "-" +
+        (current.getMonth() + 1) +
+        "-" +
+        current.getFullYear();
+      const time =
+        current.getHours() +
+        ":" +
+        current.getMinutes() +
+        ":" +
+        current.getSeconds();
+
+        const dateTime = date + " " + time;
+
+        const data = {
+          name: this.name,
+          city: this.city,
+          address: this.address,
+          email: this.email,
+          industry: this.industry,
+          data: dateTime,
+        };
+
+        db.collection("richieste_partners")
+        .add(data)
+        .then(() => {
+          document.getElementById("notify").style.display = "inline-flex";
+          document.getElementById("title").innerHTML = "Richiesta Partner";
+          document.getElementById("subtitle").innerHTML = "Richiesta inviata con successo.";
+          setTimeout(() => {
+            document.getElementById("notify").style.display = "none";
+          }, 6000); // 👈️ time in milliseconds
+          });
+    }
+  },
 };
 </script>
 
@@ -89,7 +144,7 @@ successo suo e nostro.
               </p>
 
               <div class="mainButton">
-                <a href="#whyJobify"
+                <a href="#partners"
                   ><button class="btn">
                     Scopri di più
                     <span>
@@ -124,7 +179,7 @@ successo suo e nostro.
           </svg>
         </div>
 
-        <div class="thirdDiv" id="first">
+        <div class="thirdDiv" id="partners">
           <div class="content">
             <div class="partnersImgs">
               <a
@@ -292,7 +347,7 @@ evoluzione e cambiamento.</span>
             <h2>Diventa<br><span>nostro partner</span> </h2>
             <div class="subtitle">
               Cerchiamo talenti per creare il futuro, persone disposte a mettersi in gioco e aziende innovative pronte a
-offrire opportunità di lavoro e crescita personale e professionale. Diventa nostro partner!
+              offrire opportunità di lavoro e crescita personale e professionale. Diventa nostro partner!
             </div>
           </div>
           <div class="col col_2 transition">
@@ -306,7 +361,8 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
                 id="nav"
                 class="input"
                 type="text"
-                name="nickname"
+                name="name" 
+                v-model="name"
                 placeholder="Nome azienda"
               />
 
@@ -315,7 +371,8 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
                 style="width: 100%; margin: 0"
                 class="input"
                 type="text"
-                name="nickname"
+                name="city" 
+                v-model="city"
                 placeholder="Città"
               />
             </div>
@@ -324,7 +381,8 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
                 id="nav"
                 class="input"
                 type="text"
-                name="nickname"
+                name="address" 
+                v-model="address"
                 placeholder="Via"
               />
             </div>
@@ -333,7 +391,8 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
                 id="nav"
                 class="input"
                 type="text"
-                name="nickname"
+                name="email" 
+                v-model="email"
                 placeholder="Email"
               />
             </div>
@@ -342,14 +401,14 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
                 id="nav"
                 class="input"
                 type="text"
-                name="nickname"
+                name="industry" 
+                v-model="industry"
                 placeholder="Settore"
               />
             </div>
 
             <div class="formButton">
-              <a href="#first"
-                ><button class="btn">
+              <button class="btn" @click="requestPartner()">
                   Invia
                   <span>
                     <svg
@@ -366,7 +425,22 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
                       />
                     </svg>
                   </span></button
-              ></a>
+              >
+            </div>
+          </div>
+        </div>
+        <div class="notify" id="notify">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#33548c" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+          </div>
+          <div class="text">
+            <div class="title" id="title">
+              
+            </div>
+            <div class="subtitle" id="subtitle">
+
             </div>
           </div>
         </div>
@@ -395,6 +469,42 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
 }
 
 @media (min-width: 1024px) {
+
+  .notify{
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    background: #0c2550;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: 20px;
+    z-index: 20;
+    width: 30%;
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .notify .title{
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+  }
+
+  .notify .subtitle{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 1rem;
+  }
+
   .flowSingleBtn {
     margin-top: 15rem;
   }
@@ -573,7 +683,6 @@ offrire opportunità di lavoro e crescita personale e professionale. Diventa nos
   }
 
   .cols .col_2 {
-    margin-top: 2rem;
     margin-left: 5rem;
   }
 

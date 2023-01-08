@@ -251,7 +251,7 @@ export default {
                   </div>
                 </div>
               </div>
-              <div class="featured" @click="story(2)">
+              <div class="featured2" @click="story(2)">
                 <div class="hover"></div>
                 <div class="text"><h2></h2>
                 </div>
@@ -281,7 +281,7 @@ export default {
                   </div>
                 </div>
               </div>
-              <div class="featured" @click="story(4)">
+              <div class="featured2" @click="story(4)">
                 <div class="hover"></div>
                 <div class="text"><h2></h2>
                 </div>
@@ -311,7 +311,7 @@ export default {
                   </div>
                 </div>
               </div>
-              <div class="featured" @click="story(6)">
+              <div class="featured2" @click="story(6)">
                 <div class="hover"></div>
                 <div class="text"><h2></h2>
                 </div>
@@ -341,7 +341,7 @@ export default {
                   </div>
                 </div>
               </div>
-              <div class="featured" @click="story(8)">
+              <div class="featured2" @click="story(8)">
                 <div class="hover"></div>
                 <div class="text"><h2></h2>
                 </div>
@@ -487,7 +487,6 @@ export default {
   }
 
   .cols .col_2 {
-    margin-top: 2rem;
     margin-left: 5rem;
   }
 
@@ -777,8 +776,8 @@ export default {
   .featureds .titles {
     align-items: center;
     display: flex;
-    margin-left: 11rem;
-    margin-right: 11rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
     margin-bottom: 2rem;
   }
 
@@ -824,31 +823,26 @@ export default {
 
   .featureds .featured {
     border-radius: 30px;
-    background-color: #6398ef29;
+    background-color: #0089cc;
     margin-right: 1rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
     box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
       0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
       0 22px 17px rgb(0 0 0 / 2%) !important;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph17.jpg);
     background-size: cover;
     background-position: center;
     width: 75vw;
     float: left;
-    height: 20vw;
+    height: 11vw;
     position: relative;
   }
 
   .featured .info_story{
-    position: absolute;
     bottom: 0;
     padding: 2rem;
-    padding-top: 13rem;
+    padding-top: 1rem;
     width: 100%;
-    background: #ada996;
-    background: -webkit-linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
-    background: linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
     border-radius: 30px;
     width: 100%;
   }
@@ -859,21 +853,24 @@ export default {
 
   .featured .info_story .username{
     color: white;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
   }
 
   .featured .info_story .jobtitle{
     color: white;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
   }
 
   .featured .info_story .text_preview{
     color: white;
     margin-top: 1rem;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .featured .hover {
@@ -887,15 +884,95 @@ export default {
   .featured h2 {
     color: #fff;
     padding: 2rem;
-    padding-bottom: 0.5rem;
-    padding-top: 2rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
     font-size: 30px;
-    line-height: 34px;
+    line-height: 0;
     width: 30vw;
   }
   
   .featured p {
     color: #fff;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .featureds .featured2 {
+    border-radius: 30px;
+    background-color: #fff;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
+      0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
+      0 22px 17px rgb(0 0 0 / 2%) !important;
+    background-size: cover;
+    background-position: center;
+    width: 75vw;
+    float: left;
+    height: 11vw;
+    position: relative;
+  }
+
+  .featured2 .info_story{
+    bottom: 0;
+    padding: 2rem;
+    padding-top: 1rem;
+    width: 100%;
+    border-radius: 30px;
+    width: 100%;
+  }
+
+  .featured2 .info_story .basic_informations{
+    margin-right: auto;
+  }
+
+  .featured2 .info_story .username{
+    color: #0089cc;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .featured2 .info_story .jobtitle{
+    color: #0089cc;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+
+  .featured2 .info_story .text_preview{
+    color: #0089cc;
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .featured2 .hover {
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .featured2 h2 {
+    color: #0089cc;
+    padding: 2rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    font-size: 30px;
+    line-height: 0;
+    width: 30vw;
+  }
+  
+  .featured2 p {
+    color: #0089cc;
     padding: 2rem;
     padding-top: 2rem;
     padding-bottom: 1rem;

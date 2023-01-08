@@ -1,9 +1,23 @@
 <script>
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import firebase from 'firebase/compat/app';
+import storage from 'firebase/compat';
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import 'firebase/compat/firestore';
+
 export default {
   name: "mainPart",
   components: {},
   data() {
-    return {};
+    return {
+      name: "",
+      surname: "",
+      email: "",
+      linkedin: "",
+      mobile: "",
+      details: "",
+    };
   },
   mounted() {
     let recaptchaScript = document.createElement("script");
@@ -41,7 +55,50 @@ export default {
     content.style.visibility = "hidden";
     content.style.display = "unset";
   },
-  methods: {},
+  methods: {
+    requestWorkWithUs(){
+      const db = firebase
+        .initializeApp({ projectId: "jobify-d2a24" })
+        .firestore();
+
+        const current = new Date();
+      const date =
+        current.getDate() +
+        "-" +
+        (current.getMonth() + 1) +
+        "-" +
+        current.getFullYear();
+      const time =
+        current.getHours() +
+        ":" +
+        current.getMinutes() +
+        ":" +
+        current.getSeconds();
+
+        const dateTime = date + " " + time;
+
+        const data = {
+          name: this.name,
+          surname: this.surname,
+          email: this.email,
+          linkedin: this.linkedin,
+          mobile: this.mobile,
+          details: this.details,
+          data: dateTime,
+        };
+
+        db.collection("richieste_lavoraConNoi")
+        .add(data)
+        .then(() => {
+          document.getElementById("notify").style.display = "inline-flex";
+          document.getElementById("title").innerHTML = "Richiesta Lavora con Noi";
+          document.getElementById("subtitle").innerHTML = "Richiesta inviata con successo.";
+          setTimeout(() => {
+            document.getElementById("notify").style.display = "none";
+          }, 6000); // 👈️ time in milliseconds
+          });
+    }
+  },
 };
 </script>
 <template>
@@ -171,12 +228,12 @@ export default {
           <div class="value1">
             <h2>I nostri valori</h2>
             <span>Jobify Recruiting crede nei valori</span> delle persone e seleziona per l’arricchimento costante del team chi ama
-migliorarsi e crescere personalmente e professionalmente.
+                  migliorarsi e crescere personalmente e professionalmente.
           </div>
           <div class="value2">
             <h2>I nostri ideali</h2>
-            Creare il match perfetto tra aziende e persone è la nostra mission e per questo lavoriamo mettendo al
-centro ideali come <span>etica, professionalità e trasparenza.</span>
+                Creare il match perfetto tra aziende e persone è la nostra mission e per questo lavoriamo mettendo al
+                centro ideali come <span>etica, professionalità e trasparenza.</span>
           </div>
         </div>
 
@@ -186,7 +243,7 @@ centro ideali come <span>etica, professionalità e trasparenza.</span>
             <h2>Entra nel nostro team</h2>
             <p>
               Se cerchi un’azienda giovane, flessibile e dinamica con cui lavorare sei nel posto giusto. Entra nel nostro
-team e scopri le opportunità aperte nella nostra squadra!
+              team e scopri le opportunità aperte nella nostra squadra!
             </p>
           </div>
         </div>
@@ -211,7 +268,8 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
                 id="nav"
                 class="input"
                 type="text"
-                name="nickname"
+                name="name" 
+                v-model="name"
                 placeholder="Nome"
               />
 
@@ -220,7 +278,8 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
                 style="width: 100%; margin: 0"
                 class="input"
                 type="text"
-                name="nickname"
+                name="surname" 
+                v-model="surname"
                 placeholder="Cognome"
               />
             </div>
@@ -229,7 +288,8 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
                 id="nav"
                 class="input"
                 type="text"
-                name="nickname"
+                name="email" 
+                v-model="email"
                 placeholder="Email"
               />
             </div>
@@ -238,7 +298,8 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
                 id="nav"
                 class="input"
                 type="text"
-                name="nickname"
+                name="linkedin" 
+                v-model="linkedin"
                 placeholder="Linkedin Url"
               />
             </div>
@@ -247,7 +308,8 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
                 id="nav"
                 class="input"
                 type="text"
-                name="nickname"
+                name="mobile" 
+                v-model="mobile"
                 placeholder="Telefono"
               />
             </div>
@@ -256,14 +318,14 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
                 id="nav"
                 class="input"
                 type="text"
-                name="nickname"
+                name="details" 
+                v-model="details"
                 placeholder="Dettagli"
               />
             </div>
 
             <div class="formButton">
-              <a href="#first"
-                ><button class="btn">
+              <button class="btn" @click="requestWorkWithUs()">
                   Invia
                   <span>
                     <svg
@@ -280,7 +342,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
                       />
                     </svg>
                   </span></button
-              ></a>
+              >
             </div>
           </div>
         </div>
@@ -309,6 +371,42 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
 }
 
 @media (min-width: 1024px) {
+
+  .notify{
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    background: #0c2550;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: 20px;
+    z-index: 20;
+    width: 30%;
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .notify .title{
+    color: #fff;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+  }
+
+  .notify .subtitle{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 1rem;
+  }
+
   .flowSingleBtn {
     margin-top: 15rem;
   }
@@ -568,7 +666,6 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   }
 
   .cols .col_2 {
-    margin-top: 2rem;
     margin-left: 5rem;
   }
 
@@ -689,11 +786,12 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   }
 
   .teamPhoto {
-    background-image: url(/src/assets/team.jpg);
-    background-position: center;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FEntra%20nel%20nostro%20team.png?alt=media&token=5a99f56c-ece6-40d1-ab9c-2923c8708a2a);
+    background-position: 50%;
     width: 100%;
     height: 40vw;
     border-radius: 30px;
+    background-size: cover;
   }
 
   .secondPart {

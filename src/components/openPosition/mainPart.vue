@@ -321,7 +321,7 @@ export default {
                 type="text"
                 name="searchbar"
                 autocomplete="off"
-                placeholder="Cerca parola chiave"
+                placeholder="Che lavoro cerchi?"
               />
               <span>
                 <svg
@@ -379,19 +379,19 @@ export default {
             </div>
           </div>
           <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      preserveAspectRatio="none"
-      viewBox="0 0 1680 40"
-      class="position-absolute width-full z-1"
-      style="bottom: 0"
-    >
-      <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
-    </svg>
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              preserveAspectRatio="none"
+              viewBox="0 0 1680 40"
+              class="position-absolute width-full z-1"
+              style="bottom: 0"
+            >
+            <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+          </svg>
         </div>
        
         
-        <div class="container2">
+        <div class="results_jobs">
           <!--<div class="navMain">
             <ul class="nav nav-tabs">
               <li class="active"><a data-toggle="tab" href="#Farm">Farm</a></li>
@@ -404,1818 +404,2059 @@ export default {
               </li>
             </ul>
           </div>-->
+          <div class="filters_jobs">
+            <div class="filter_category filter_job">
+              <h3>Categorie</h3>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Categoria</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
 
+            <div class="industry_category filter_job">
+              <h3>Industria</h3>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Industria</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="city_category filter_job">
+              <h3>Città</h3>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Città</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="date_category filter_job">
+              <h3>Data</h3>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Data</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+
+            <div class="contract_category filter_job">
+              <h3>Tipo di contratto</h3>
+              <div class="checkbox">
+                <input class="" type="checkbox" value="" id="tempo_indeterminato">
+                <label class="form-check-label" for="tempo_indeterminato" style="margin-left: 0.5rem;">
+                  Tempo indeterminato
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <input class="" type="checkbox" value="" id="tempo_determinato">
+                <label class="form-check-label" for="tempo_determinato" style="margin-left: 0.5rem;">
+                  Tempo determinato
+                </label>
+              </div>
+              
+            </div>
+          </div>
           <div class="tab-content">
-            <div id="Farm" class="tab-pane in active">
-              <div class="filters">
-                <div class="filtersTop">
-                  <h2>Posizioni aperte <!--<span>Farm</span>--></h2>
-                  <div class="filtersPositions">
-                    <div class="blur"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Città
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="separetor"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Data
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="separetor"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Contratto
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
+              <div class="tab_header">
+                <div class="results">
+                  16 results
+                </div>
+                <div class="sort_by">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Ordina per</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>    
+              <div id="Farm" class="tab-pane in active jobs">
+                <div class="job">
+                  <div class="head">
+                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
+                  </div>
+                  <div class="info">
+                    <div class="subtitle">Specifiche</div>
+                    <div class="specs">
+                      <div class="spec1">
+                        <div class="spec1_title">Città</div>
+                        <div class="spec1_text">Roma</div>
+                      </div>
+                      <div class="spec1">
+                        <div class="spec1_title">Contratto</div>
+                        <div class="spec1_text">Determinato</div>
+                      </div>
+                      <div class="spec1">
+                        <div class="spec1_title">Industria</div>
+                        <div class="spec1_text">Informatico</div>
+                      </div>
                     </div>
                   </div>
-                  <div class="buttons" style="margin-left: unset !important">
-                    <div class="btnScrollL" @click="btnScrollSx()">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#0c2550"
-                        class="bi bi-chevron-left"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="btnScrollR" @click="btnScrollDx()">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#0c2550"
-                        class="bi bi-chevron-right"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                        />
-                      </svg>
-                    </div>
+                  <div class="desc">
+                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
+                  </div>
+                  <div class="link">
+                    <div class="btn">Vedi l'offerta</div>
                   </div>
                 </div>
-
-                <div class="content filtersContent">
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
-                        </div>
+                <div class="job">
+                  <div class="head">
+                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
+                  </div>
+                  <div class="info">
+                    <div class="subtitle">Specifiche</div>
+                    <div class="specs">
+                      <div class="spec1">
+                        <div class="spec1_title">Città</div>
+                        <div class="spec1_text">Roma</div>
                       </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
+                      <div class="spec1">
+                        <div class="spec1_title">Contratto</div>
+                        <div class="spec1_text">Determinato</div>
                       </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
+                      <div class="spec1">
+                        <div class="spec1_title">Industria</div>
+                        <div class="spec1_text">Informatico</div>
                       </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
                     </div>
                   </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
-                        </div>
+                  <div class="desc">
+                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
+                  </div>
+                  <div class="link">
+                    <div class="btn">Vedi l'offerta</div>
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="head">
+                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
+                  </div>
+                  <div class="info">
+                    <div class="subtitle">Specifiche</div>
+                    <div class="specs">
+                      <div class="spec1">
+                        <div class="spec1_title">Città</div>
+                        <div class="spec1_text">Roma</div>
                       </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
+                      <div class="spec1">
+                        <div class="spec1_title">Contratto</div>
+                        <div class="spec1_text">Determinato</div>
                       </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
+                      <div class="spec1">
+                        <div class="spec1_title">Industria</div>
+                        <div class="spec1_text">Informatico</div>
                       </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
                     </div>
                   </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
-                        </div>
+                  <div class="desc">
+                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
+                  </div>
+                  <div class="link">
+                    <div class="btn">Vedi l'offerta</div>
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="head">
+                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
+                  </div>
+                  <div class="info">
+                    <div class="subtitle">Specifiche</div>
+                    <div class="specs">
+                      <div class="spec1">
+                        <div class="spec1_title">Città</div>
+                        <div class="spec1_text">Roma</div>
                       </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
+                      <div class="spec1">
+                        <div class="spec1_title">Contratto</div>
+                        <div class="spec1_text">Determinato</div>
                       </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
+                      <div class="spec1">
+                        <div class="spec1_title">Industria</div>
+                        <div class="spec1_text">Informatico</div>
                       </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
                     </div>
                   </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
-                        </div>
+                  <div class="desc">
+                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
+                  </div>
+                  <div class="link">
+                    <div class="btn">Vedi l'offerta</div>
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="head">
+                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
+                  </div>
+                  <div class="info">
+                    <div class="subtitle">Specifiche</div>
+                    <div class="specs">
+                      <div class="spec1">
+                        <div class="spec1_title">Città</div>
+                        <div class="spec1_text">Roma</div>
+                      </div>
+                      <div class="spec1">
+                        <div class="spec1_title">Contratto</div>
+                        <div class="spec1_text">Determinato</div>
+                      </div>
+                      <div class="spec1">
+                        <div class="spec1_title">Industria</div>
+                        <div class="spec1_text">Informatico</div>
                       </div>
                     </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
+                  </div>
+                  <div class="desc">
+                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
+                  </div>
+                  <div class="link">
+                    <div class="btn">Vedi l'offerta</div>
+                  </div>
+                </div>
+                <div class="job">
+                  <div class="head">
+                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
+                  </div>
+                  <div class="info">
+                    <div class="subtitle">Specifiche</div>
+                    <div class="specs">
+                      <div class="spec1">
+                        <div class="spec1_title">Città</div>
+                        <div class="spec1_text">Roma</div>
                       </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
+                      <div class="spec1">
+                        <div class="spec1_title">Contratto</div>
+                        <div class="spec1_text">Determinato</div>
+                      </div>
+                      <div class="spec1">
+                        <div class="spec1_title">Industria</div>
+                        <div class="spec1_text">Informatico</div>
                       </div>
                     </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
+                  </div>
+                  <div class="desc">
+                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
+                  </div>
+                  <div class="link">
+                    <div class="btn">Vedi l'offerta</div>
+                  </div>
+                </div>
+              </div>
+              <div id="Farm" class="tab-pane fade">
+                <div class="filters">
+                  <div class="filtersTop">
+                    <h2>Posizioni aperte <!--<span>Farm</span>--></h2>
+                    <div class="filtersPositions">
+                      <div class="blur"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Città
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="separetor"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Data
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="separetor"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Contratto
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="buttons" style="margin-left: unset !important">
+                      <div class="btnScrollL" @click="btnScrollSx()">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          fill="#0c2550"
+                          class="bi bi-chevron-left"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="btnScrollR" @click="btnScrollDx()">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          fill="#0c2550"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content filtersContent">
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="Finance" class="tab-pane fade">
-              <div class="filters">
-                <div class="filtersTop">
-                  <h2>Posizioni aperte <span>Finance</span></h2>
-                  <div class="filtersPositions">
-                    <div class="blur"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Città
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="separetor"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Data
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="separetor"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Contratto
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="buttons" style="margin-left: unset !important">
-                    <div class="btnScrollL" @click="btnScrollSx()">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#0c2550"
-                        class="bi bi-chevron-left"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="btnScrollR" @click="btnScrollDx()">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#0c2550"
-                        class="bi bi-chevron-right"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="content filtersContent">
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
+              <div id="Finance" class="tab-pane fade">
+                <div class="filters">
+                  <div class="filtersTop">
+                    <h2>Posizioni aperte <span>Finance</span></h2>
+                    <div class="filtersPositions">
+                      <div class="blur"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Città
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
-                        </div>
+                          </li>
+                        </ul>
                       </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
+                      <div class="separetor"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Data
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
-                        </div>
+                          </li>
+                        </ul>
                       </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
+                      <div class="separetor"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Contratto
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="buttons" style="margin-left: unset !important">
+                      <div class="btnScrollL" @click="btnScrollSx()">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          fill="#0c2550"
+                          class="bi bi-chevron-left"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="btnScrollR" @click="btnScrollDx()">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          fill="#0c2550"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
+
+                  <div class="content filtersContent">
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
                         </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
 
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
 
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="IT" class="tab-pane fade">
-              <div class="filters">
-                <div class="filtersTop">
-                  <h2>Posizioni aperte <span>IT Tech</span></h2>
-                  <div class="filtersPositions">
-                    <div class="blur"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Città
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="separetor"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Data
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="separetor"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Contratto
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="buttons" style="margin-left: unset !important">
-                    <div class="btnScrollL" @click="btnScrollSx()">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#0c2550"
-                        class="bi bi-chevron-left"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="btnScrollR" @click="btnScrollDx()">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#0c2550"
-                        class="bi bi-chevron-right"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="content filtersContent">
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
                       </div>
                     </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
                         </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
 
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
 
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
                       </div>
                     </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
                       </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
                       </div>
                     </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="Hr" class="tab-pane fade">
-              <div class="filters">
-                <div class="filtersTop">
-                  <h2>Posizioni aperte <span>HR</span></h2>
-                  <div class="filtersPositions">
-                    <div class="blur"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Città
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="separetor"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Data
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="separetor"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Contratto
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="buttons" style="margin-left: unset !important">
-                    <div class="btnScrollL" @click="btnScrollSx()">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#0c2550"
-                        class="bi bi-chevron-left"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="btnScrollR" @click="btnScrollDx()">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#0c2550"
-                        class="bi bi-chevron-right"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="content filtersContent">
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
+              <div id="IT" class="tab-pane fade">
+                <div class="filters">
+                  <div class="filtersTop">
+                    <h2>Posizioni aperte <span>IT Tech</span></h2>
+                    <div class="filtersPositions">
+                      <div class="blur"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Città
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
-                        </div>
+                          </li>
+                        </ul>
                       </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
+                      <div class="separetor"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Data
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
-                        </div>
+                          </li>
+                        </ul>
                       </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
+                      <div class="separetor"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Contratto
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
                             >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="buttons" style="margin-left: unset !important">
+                      <div class="btnScrollL" @click="btnScrollSx()">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          fill="#0c2550"
+                          class="bi bi-chevron-left"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="btnScrollR" @click="btnScrollDx()">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          fill="#0c2550"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
+
+                  <div class="content filtersContent">
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
                         </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
 
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
 
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="Digital" class="tab-pane fade">
-              <div class="filters">
-                <div class="filtersTop">
-                  <h2>Posizioni aperte <span>Digital</span></h2>
-                  <div class="filtersPositions">
-                    <div class="blur"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Città
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="separetor"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Data
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="separetor"></div>
-                    <div class="dropdown">
-                      <button
-                        class="filterPosition dropdown-toggle"
-                        type="button"
-                        data-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Contratto
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="buttons" style="margin-left: unset !important">
-                    <div class="btnScrollL" @click="btnScrollSx()">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#0c2550"
-                        class="bi bi-chevron-left"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                        />
-                      </svg>
-                    </div>
-                    <div class="btnScrollR" @click="btnScrollDx()">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="22"
-                        height="22"
-                        fill="#0c2550"
-                        class="bi bi-chevron-right"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="content filtersContent">
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
                       </div>
                     </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
                         </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
 
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
 
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
-                      </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
                       </div>
                     </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
-                    </div>
-                  </div>
-                  <div class="position">
-                    <div class="blur"></div>
-                    <div class="topPosition">
-                      <div
-                        class="photo"
-                        style="
-                          background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-                        "
-                      >
-                        <div class="photoBlur">
-                          <p>
-                            Inserire la descrizione della posizione del
-                            progetto, la descrizione della posizione del
-                            progetto, della posizione del progetto,
-                          </p>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="content">
-                      <div class="subtitle" style="padding-left: 0.5rem">
-                        Professione
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
                       </div>
-                      <h2>Web developer</h2>
-                      <div class="infos">
-                        <div class="info">
-                          <div class="subtitle">Città</div>
-                          <p>Milano</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Tempo</div>
-                          <p>Indeterminato</p>
-                        </div>
-
-                        <div class="info">
-                          <div class="subtitle">Stipendio</div>
-                          <p>€ 1.500/mese</p>
-                        </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
                       </div>
                     </div>
-                    <div class="right">
-                      <a href=""
-                        ><div class="button">
-                          Apri ora
-                          <span>
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              fill="currentColor"
-                              class="bi bi-arrow-right-short"
-                              viewBox="0 0 16 16"
-                            >
-                              <path
-                                fill-rule="evenodd"
-                                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                              />
-                            </svg>
-                          </span></div
-                      ></a>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+              <div id="Hr" class="tab-pane fade">
+                <div class="filters">
+                  <div class="filtersTop">
+                    <h2>Posizioni aperte <span>HR</span></h2>
+                    <div class="filtersPositions">
+                      <div class="blur"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Città
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="separetor"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Data
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="separetor"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Contratto
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="buttons" style="margin-left: unset !important">
+                      <div class="btnScrollL" @click="btnScrollSx()">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          fill="#0c2550"
+                          class="bi bi-chevron-left"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="btnScrollR" @click="btnScrollDx()">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          fill="#0c2550"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content filtersContent">
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="Digital" class="tab-pane fade">
+                <div class="filters">
+                  <div class="filtersTop">
+                    <h2>Posizioni aperte <span>Digital</span></h2>
+                    <div class="filtersPositions">
+                      <div class="blur"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Città
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="separetor"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Data
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="separetor"></div>
+                      <div class="dropdown">
+                        <button
+                          class="filterPosition dropdown-toggle"
+                          type="button"
+                          data-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Contratto
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="buttons" style="margin-left: unset !important">
+                      <div class="btnScrollL" @click="btnScrollSx()">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          fill="#0c2550"
+                          class="bi bi-chevron-left"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                          />
+                        </svg>
+                      </div>
+                      <div class="btnScrollR" @click="btnScrollDx()">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="22"
+                          height="22"
+                          fill="#0c2550"
+                          class="bi bi-chevron-right"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="content filtersContent">
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="position">
+                      <div class="blur"></div>
+                      <div class="topPosition">
+                        <div
+                          class="photo"
+                          style="
+                            background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+                          "
+                        >
+                          <div class="photoBlur">
+                            <p>
+                              Inserire la descrizione della posizione del
+                              progetto, la descrizione della posizione del
+                              progetto, della posizione del progetto,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content">
+                        <div class="subtitle" style="padding-left: 0.5rem">
+                          Professione
+                        </div>
+                        <h2>Web developer</h2>
+                        <div class="infos">
+                          <div class="info">
+                            <div class="subtitle">Città</div>
+                            <p>Milano</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Tempo</div>
+                            <p>Indeterminato</p>
+                          </div>
+
+                          <div class="info">
+                            <div class="subtitle">Stipendio</div>
+                            <p>€ 1.500/mese</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <a href=""
+                          ><div class="button">
+                            Apri ora
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                fill="currentColor"
+                                class="bi bi-arrow-right-short"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                                />
+                              </svg>
+                            </span></div
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
 
@@ -2573,7 +2814,7 @@ sviluppare in azienda.
                   </div>
                 </div>
               </div>
-              <div class="featured" @click="story(2)">
+              <div class="featured2" @click="story(2)">
                 <div class="hover"></div>
                 <div class="text"><h2></h2>
                 </div>
@@ -2603,7 +2844,7 @@ sviluppare in azienda.
                   </div>
                 </div>
               </div>
-              <div class="featured" @click="story(4)">
+              <div class="featured2" @click="story(4)">
                 <div class="hover"></div>
                 <div class="text"><h2></h2>
                 </div>
@@ -2633,7 +2874,7 @@ sviluppare in azienda.
                   </div>
                 </div>
               </div>
-              <div class="featured" @click="story(6)">
+              <div class="featured2" @click="story(6)">
                 <div class="hover"></div>
                 <div class="text"><h2></h2>
                 </div>
@@ -2663,7 +2904,7 @@ sviluppare in azienda.
                   </div>
                 </div>
               </div>
-              <div class="featured" @click="story(8)">
+              <div class="featured2" @click="story(8)">
                 <div class="hover"></div>
                 <div class="text"><h2></h2>
                 </div>
@@ -2845,69 +3086,6 @@ sviluppare in azienda.
   .second {
     padding-bottom: 5rem;
   }
-  .glow {
-    position: absolute;
-    width: 5vw;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-    box-shadow: 0px 0px 105px 45px rgba(46, 116, 255, 0.9);
-    z-index: 10;
-  }
-
-  .glow2 {
-    position: absolute;
-    width: 5vw;
-    right: 0%;
-    top: 8%;
-    width: 10vw;
-    transform: rotate(90deg);
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(210, 255, 46, 0.2);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(210, 255, 46, 0.2);
-    box-shadow: 0px 0px 105px 45px rgba(210, 255, 46, 0.2);
-    z-index: 10;
-  }
-
-  .glow3 {
-    position: absolute;
-    width: 5vw;
-    right: 0%;
-    top: 18%;
-    width: 10vw;
-    transform: rotate(90deg);
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.2);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.2);
-    box-shadow: 0px 0px 105px 45px rgba(178, 46, 255, 0.2);
-    z-index: 10;
-  }
-
-  .glow7 {
-    position: absolute;
-    width: 5vw;
-    transform: scale(3.5);
-    top: 10%;
-    left: 50%;
-    z-index: 1;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.2);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.2);
-    box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.2);
-  }
-
-  .glow8 {
-    position: absolute;
-    width: 20vw;
-    transform: scale(3.5);
-    top: 0%;
-    left: 42%;
-    z-index: 1;
-    opacity: 0.5;
-    -webkit-box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.4);
-    -moz-box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.4);
-    box-shadow: 0px 0px 105px 45px rgba(0, 174, 255, 0.4);
-  }
 
   .first {
     padding-bottom: 5rem;
@@ -3028,6 +3206,146 @@ sviluppare in azienda.
   }
 
   /*filtri*/
+
+  .results_jobs{
+    display: flex;
+    padding-left: 5rem;
+    padding-top: 2rem;
+    padding-right: 5rem;
+  }
+
+  .filter_job{
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom:1px solid #efefef;
+  }
+
+  .filters_jobs h3{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  select{
+    padding: 0.5rem;
+    border-radius: 10px;
+    background: #f7fbfb;
+    border: 2px solid #d1d1d1;
+    font-weight: 500;
+    color: #2c3e50;
+  }
+
+  .filters_jobs .checkbox{
+    display: flex;
+  }
+
+  .filters_jobs .checkbox label{
+    font-size: 16px;
+  }
+
+  .tab_header{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .tab_header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .tab_header .results{
+    width: fit-content;
+  }
+
+  .tab_header .sort_by{
+    margin-left: auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+  }
+
+  .jobs{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 5rem;
+    width: 77vw;
+  }
+
+  .job{
+    width: 22vw;
+    background: #fff;
+    border:2px solid #efefef;
+    border-radius: 20px;
+    padding: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .job .title{
+    font-size: 20px;
+    line-height: 24px;
+    color: #0c2550;
+    font-weight: 700;
+    width: 18vw;
+    white-space: nowrap;
+    overflow: hidden!important;
+    text-overflow: ellipsis;
+    position: relative;
+  }
+
+  .job .title:after {
+    content: "...";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: white;
+    padding: 0 5px;
+  }
+
+  .info{
+    margin-top: 1rem;
+  }
+
+  .info .subtitle{
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .info .specs{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .info .spec1{
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .spec1 .spec1_title{
+    font-weight: 500;
+  }
+
+  .spec1 .spec1_text{
+    margin-left: 0.5rem;
+  }
+
+  .job .desc{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom:1px solid #efefef;
+  }
+
   .contaniner2 {
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -3987,7 +4305,7 @@ sviluppare in azienda.
   }
 
   .secondPart2 h2 span {
-    background: -webkit-linear-gradient(-70deg, #01a49e 0%, #2960ec 100%);
+    background: -webkit-linear-gradient(335deg, #0c2550 0%, #2867b2 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -4106,8 +4424,8 @@ sviluppare in azienda.
   .featureds .titles {
     align-items: center;
     display: flex;
-    margin-left: 11rem;
-    margin-right: 11rem;
+    margin-left: 5rem;
+    margin-right: 3rem;
     margin-bottom: 2rem;
   }
 
@@ -4155,31 +4473,26 @@ sviluppare in azienda.
 
   .featureds .featured {
     border-radius: 30px;
-    background-color: #6398ef29;
+    background-color: #0089cc;
     margin-right: 1rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
     box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
       0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
       0 22px 17px rgb(0 0 0 / 2%) !important;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph17.jpg);
     background-size: cover;
     background-position: center;
     width: 75vw;
     float: left;
-    height: 20vw;
+    height: 11vw;
     position: relative;
   }
 
   .featured .info_story{
-    position: absolute;
     bottom: 0;
     padding: 2rem;
-    padding-top: 13rem;
+    padding-top: 1rem;
     width: 100%;
-    background: #ada996;
-    background: -webkit-linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
-    background: linear-gradient( to top, #000000d1, #000000a6, #0000000f, transparent );
     border-radius: 30px;
     width: 100%;
   }
@@ -4190,21 +4503,24 @@ sviluppare in azienda.
 
   .featured .info_story .username{
     color: white;
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
   }
 
   .featured .info_story .jobtitle{
     color: white;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
   }
 
   .featured .info_story .text_preview{
     color: white;
     margin-top: 1rem;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .featured .hover {
@@ -4218,14 +4534,94 @@ sviluppare in azienda.
   .featured h2 {
     color: #fff;
     padding: 2rem;
-    padding-bottom: 0.5rem;
-    padding-top: 2rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
     font-size: 30px;
-    line-height: 34px;
+    line-height: 0;
     width: 30vw;
   }
   
   .featured p {
+    color: #fff;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .featureds .featured2 {
+    border-radius: 30px;
+    background-color: #0c2550;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
+      0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
+      0 22px 17px rgb(0 0 0 / 2%) !important;
+    background-size: cover;
+    background-position: center;
+    width: 75vw;
+    float: left;
+    height: 11vw;
+    position: relative;
+  }
+
+  .featured2 .info_story{
+    bottom: 0;
+    padding: 2rem;
+    padding-top: 1rem;
+    width: 100%;
+    border-radius: 30px;
+    width: 100%;
+  }
+
+  .featured2 .info_story .basic_informations{
+    margin-right: auto;
+  }
+
+  .featured2 .info_story .username{
+    color: #fff;
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  .featured2 .info_story .jobtitle{
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+
+  .featured2 .info_story .text_preview{
+    color: #fff;
+    margin-top: 1rem;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .featured2 .hover {
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .featured2 h2 {
+    color: #fff;
+    padding: 2rem;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    font-size: 30px;
+    line-height: 0;
+    width: 30vw;
+  }
+  
+  .featured2 p {
     color: #fff;
     padding: 2rem;
     padding-top: 2rem;
