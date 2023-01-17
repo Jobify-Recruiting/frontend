@@ -10,32 +10,32 @@ export default {
                 {
                   nickname: "Davide Maggio",
                   ruolo: "Founder & CEO",
-                  storia_testo: "È il CEO e FOUNDER di Jobify Recruinting e vanta una consolidata esperienza nel settore delle risorse umane. Ha lavorato 10 anni come Direttore del Personale &amp; Docente Seminariale La Sapienza.",
+                  storia_testo: "È il CEO e FOUNDER di Jobify Recruinting e vanta una consolidata esperienza nel settore delle risorse umane. Ha lavorato 10 anni come Direttore del Personale e Docente Seminariale La Sapienza.",
                 },
                 {
                   nickname: "Marco Fattizzo",
                   ruolo: "Responsabile Pubbliche Relazioni & Co-Founder",
-                  storia_testo: "È il Responsabile Pubbliche Relazioni &amp; Co-Founder di Jobify Recruiting e ha un’esperienza decennale come area manager agenzie per il lavoro (Adecco, Start People, Lavorint Spa). Oltre a questo è il CEO e Founder Euspert - Bianco Lavoro.",
+                  storia_testo: "È il Responsabile Pubbliche Relazioni e Co-Founder di Jobify Recruiting e ha un’esperienza decennale come area manager agenzie per il lavoro (Adecco, Start People, Lavorint Spa). Oltre a questo è il CEO e Founder Euspert - Bianco Lavoro.",
                 },
                 {
                   nickname: "Martina Di Palma",
                   ruolo: "Head Hunter",
-                  storia_testo: "Giovane ma competente Head Hunter ha 1 anno di esperienza in Ricerca &amp; Selezione del personale. La sua formazione comprende un European Bachelor of Science in Design (majoring in Fashion Business) &amp; Master in HR.",
+                  storia_testo: "Giovane ma competente Head Hunter ha 1 anno di esperienza in Ricerca e Selezione del personale. La sua formazione comprende un European Bachelor of Science in Design (majoring in Fashion Business) e Master in HR.",
                 },
                 {
                   nickname: "Cecilia Dondi",
                   ruolo: "HR Consultant",
-                  storia_testo: "È una HR Consultant all’interno di Jobify Recruiting e ha 2,5 anni di esperienza in Ricerca &amp; Selezione del personale &amp; come Content Creator. Ha una laurea in Scienze Linguistiche per la Comunicazione e i Media &amp; Master in Marketing e Comunicazione.",
+                  storia_testo: "È una HR Consultant all’interno di Jobify Recruiting e ha 2,5 anni di esperienza in Ricerca e Selezione del personale e come Content Creator. Ha una laurea in Scienze Linguistiche per la Comunicazione e i Media e Master in Marketing e Comunicazione.",
                 },
                 {
                   nickname: "Chiara Lucia Graziano",
                   ruolo: "HR Consultant & Career Coach",
-                  storia_testo: "È HR Consultant &amp; Career Coach di Jobify Recruiting con 1 anno di esperienza in Ricerca &amp; Selezione del personale. Sta studiando Linguaggi dei Media (Profilo Pubblicità) e frequentando un Master in Coach Professionist.",
+                  storia_testo: "È HR Consultant e Career Coach di Jobify Recruiting con 1 anno di esperienza in Ricerca e Selezione del personale. Sta studiando Linguaggi dei Media (Profilo Pubblicità) e frequentando un Master in Coach Professionist.",
                 },
                 {
                   nickname: "Elisa Severa",
                   ruolo: "HR Consultant",
-                  storia_testo: "È una HR Consultant di grande esperienza che può vantare di 10 anni di lavoro in in Payroll, con compiti di orientamento al lavoro e Ricerca &amp; Selezione del personale.",
+                  storia_testo: "È una HR Consultant di grande esperienza che può vantare di 10 anni di lavoro in in Payroll, con compiti di orientamento al lavoro e Ricerca e Selezione del personale.",
                 },
                 {
                   nickname: "Alessio Cinao",
@@ -224,9 +224,9 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
       </div>
       <div class="thirdPart">
         <div class="text1 bold">
-          Il settore della Ricerca &amp; Selezione e dell’ HR Tech in Italia è fermo da 10 anni: le aziende faticano ancora a
+          Il settore della Ricerca e Selezione e dell’ HR Tech in Italia è fermo da 10 anni: le aziende faticano ancora a
           trovare i talenti giusti, ed i talenti a trovare le aziende giuste. Jobify Recruiting ha come obiettivo primario
-          quello di <span>umanizzare il processo di Ricerca &amp; Selezione,</span> mettendo a servizio dei nostri Head Hunter
+          quello di <span>umanizzare il processo di Ricerca e Selezione,</span> mettendo a servizio dei nostri Head Hunter
           strumenti di Intelligenza Artificiale ed HR Tech.
         </div>
       </div>
@@ -592,7 +592,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
 
   .firstPart .col1 p {
     margin-top: 0.5rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
@@ -675,7 +675,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
 
   .secondPart .text1 {
     padding-top: 10rem;
-    color: #627597;
+    color: #000;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
@@ -714,7 +714,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   }
 
   .thirdPart .text1 {
-    color: #627597;
+    color: #000;
     font-size: 30px;
     line-height: 30px;
     font-weight: 100;
@@ -838,7 +838,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     line-height: 58px;
     font-weight: 800;
     width: 100%;
-    color: #0c2550;
+    color: #000;
     margin-bottom: 1rem;
     text-align: left !important;
     letter-spacing: -0.04em;
@@ -856,7 +856,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
-    color: #627597;
+    color: #000;
     margin-bottom: 1rem;
   }
 
@@ -872,7 +872,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #0c2550;
+    color: #000;
     font-size: 54px;
     font-weight: 800 !important;
     width: 60%;
@@ -887,7 +887,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
-    color: #627597;
+    color: #000;
     padding-bottom: 2rem;
     width: 80%;
   }
@@ -902,7 +902,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #0c2550;
+    color: #000;
     font-size: 18px;
     font-weight: 500 !important;
     width: 40%;
@@ -982,7 +982,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     font-weight: 300;
     font-size: 16px;
     line-height: 16px;
-    color: #0c2550;
+    color: #000;
     font-weight: 400;
   }
 
@@ -991,7 +991,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     font-weight: 300;
     font-size: 14px;
     line-height: 14px;
-    color: #627597;
+    color: #000;
     margin-top: 0.2rem;
   }
 
@@ -1001,7 +1001,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     font-weight: 300;
     font-size: 18px;
     line-height: 18px;
-    color: #0c2550;
+    color: #000;
     font-weight: 400;
     width: 16vw;
   }
@@ -1011,7 +1011,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
     font-weight: 300;
     font-size: 14px;
     line-height: 14px;
-    color: #627597;
+    color: #000;
     margin-top: 0.2rem;
     width: 16vw;
   }
@@ -1029,7 +1029,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   }
 
   .seventhPart .text h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 56px;
     font-weight: 800 !important;
     width: 70%;
@@ -1047,7 +1047,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   }
 
   .seventhPart .text p {
-    color: #627597;
+    color: #000;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
@@ -1209,7 +1209,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   }
 
   .secondPart .title h2 {
-    color: #0c2550;
+    color: #000;
     width: 80%;
     font-size: 54px;
     line-height: 58px;
@@ -1222,7 +1222,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   }
 
   .secondPart .title p {
-    color: #627597;
+    color: #000;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
@@ -1279,7 +1279,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   }
 
   .step .title {
-    color: #0c2550;
+    color: #000;
     margin-left: 0 !important;
     font-size: 38px;
     line-height: 42px;
@@ -1290,7 +1290,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
   }
 
   .step .text {
-    color: #627597;
+    color: #000;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;

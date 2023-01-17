@@ -243,7 +243,7 @@ export default {
             </div>
           </div>
           <div class="video transition">
-            <video width="450" height="450" controls style="border-radius: 30px;" muted>
+            <video width="450" height="450" controls style="border-radius: 30px;">
   <source src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/video_home.mp4?alt=media&token=6e32bfee-c070-4f4f-a1a8-ca716751cc2e" type="video/mp4">
   </video>
           </div>
@@ -1685,7 +1685,7 @@ cercano personale.
   }
 
   .mainTitle .title h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 56px;
     font-weight: 500;
     width: 90%;
@@ -1695,7 +1695,7 @@ cercano personale.
 
   .mainTitle .title p {
     margin-top: 1rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 90%;
     line-height: 24px;
@@ -1749,7 +1749,7 @@ cercano personale.
   }
 
   .clientsCoLink h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 56px;
     font-weight: 500;
     line-height: 56px;
@@ -1770,7 +1770,7 @@ cercano personale.
   .clientsCoLink p {
     width: fit-content;
     margin-left: 6rem;
-    color: #0c2550;
+    color: #000;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -1863,7 +1863,7 @@ cercano personale.
   }
 
   .secondDiv .title h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 56px;
     font-weight: 500 !important;
     margin-left: auto;
@@ -1886,7 +1886,7 @@ cercano personale.
 
   .secondDiv .title p {
     margin-top: 1rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 70%;
     margin-left: auto;
@@ -1967,7 +1967,7 @@ cercano personale.
   }
 
   .step .text {
-    color: #627597;
+    color: #000;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
@@ -2097,7 +2097,7 @@ cercano personale.
   }
 
   .feature .title {
-    color: #0c2550;
+    color: #000;
     margin-left: 0 !important;
     font-size: 30px;
     line-height: 32px;
@@ -2108,7 +2108,7 @@ cercano personale.
   }
 
   .feature .text {
-    color: #627597;
+    color: #000;
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -2159,7 +2159,7 @@ cercano personale.
 
   .workflow .workflowTitle p{
     margin-top: 1rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 70%;
     margin-left: auto;
@@ -2270,7 +2270,7 @@ cercano personale.
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     letter-spacing: -0.04em !important;
-    color: #0c2550;
+    color: #000;
     font-size: 74px;
     font-weight: 800 !important;
     line-height: 78px;
@@ -2457,7 +2457,7 @@ cercano personale.
 
   .step_workflow .body {
     margin-top: 1rem;
-    color: #0c2550;
+    color: #000;
     font-size: 14px;
     line-height: 14px;
     display: none;
@@ -2477,7 +2477,7 @@ cercano personale.
     font-size: 22px;
     line-height: 24px;
     font-weight: 600;
-    color: #0c2550;
+    color: #000;
     padding-top: 0.5rem;
     margin-left: 0.8rem;
   }
@@ -2690,7 +2690,7 @@ cercano personale.
   }
 
   .second .flow .elemsx h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 64px;
     line-height: 68px;
     font-weight: 800;
@@ -2714,7 +2714,7 @@ cercano personale.
 
   .second .flow .elemsx p {
     margin-top: 1rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 80%;
     line-height: 24px;
@@ -2723,7 +2723,7 @@ cercano personale.
   }
 
   .elemH2 {
-    color: #0c2550;
+    color: #000;
     font-size: 64px;
     line-height: 68px;
     font-weight: 800;
@@ -2746,7 +2746,7 @@ cercano personale.
   }
 
   .elemH2_v2 {
-    color: #0c2550;
+    color: #000;
   }
 
   .elemH2_v2 .elemH2_v2Span {
@@ -2768,7 +2768,7 @@ cercano personale.
 
   .elemP {
     margin-top: 0.5rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 80%;
     line-height: 24px;
@@ -2984,7 +2984,7 @@ cercano personale.
 
   .second .flow .elemdx p {
     margin-top: 1rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 80%;
     line-height: 24px;
@@ -3088,7 +3088,7 @@ cercano personale.
   }
 
   .numbers .number .subtitle {
-    color: #627597;
+    color: #000;
     font-size: 18px;
     letter-spacing: 0.5px;
     font-weight: 300;
@@ -3106,7 +3106,7 @@ cercano personale.
   }
 
   .second .flowSingle .flowSingleContent .flowSingleTitle {
-    color: #0c2550;
+    color: #000;
     font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
@@ -3116,7 +3116,7 @@ cercano personale.
   }
 
   .second .flowSingle .flowSingleContent .flowSingleTitle .flowSingleTitleSpan {
-    color: #0c2550;
+    color: #000;
     font-size: 64px;
     line-height: 68px;
     letter-spacing: -0.04em !important;
@@ -3189,7 +3189,7 @@ cercano personale.
   }
 
   .third .flowSingle .flowSingleContent .flowSingleTitle {
-    color: #0c2550;
+    color: #000;
     font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
@@ -3199,7 +3199,7 @@ cercano personale.
   }
 
   .third .flowSingle .flowSingleContent .flowSingleTitle .flowSingleTitleSpan {
-    color: #0c2550;
+    color: #000;
     font-size: 64px;
     line-height: 68px;
     font-weight: 700;
@@ -3212,7 +3212,7 @@ cercano personale.
 
   .second .flowSingle .flowSingleContent p {
     margin-top: 1rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 100%;
     line-height: 24px;
@@ -3399,7 +3399,7 @@ cercano personale.
   }
 
   .feedbackDiv h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 56px;
     font-weight: 500;
     text-align: center;
@@ -3494,7 +3494,7 @@ cercano personale.
   }
 
   .feedbackDiv .feedbacks .feedback h3 {
-    color: #0c2550;
+    color: #000;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
@@ -3503,7 +3503,7 @@ cercano personale.
   }
 
   .feedbackDiv .feedbacks .feedback .author {
-    color: #0c2550;
+    color: #000;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 22px;

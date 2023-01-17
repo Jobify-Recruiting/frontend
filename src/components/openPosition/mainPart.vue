@@ -1,4 +1,6 @@
 <script>
+import axios from 'axios';
+
 export default {
   name: "mainPart",
   components: {},
@@ -69,9 +71,19 @@ export default {
                   storia_testo: "L'esperienza con Jobify è stata un esperienza nuova perché l'approccio che usano è differente rispetto a chi tradizionalmente si occupa di recruiting. Si tratta di un approccio human centric dove mettono al primo posto l'attenzione del candidato e la trasparenza. Ritengo questi due aspetti fondamentali per far sentire il candidato a proprio agio e per permettergli di esprimere al meglio le proprie competenze e skills.",
                 },
               ],
+      jobs: [],
+      jobs_lenght: ""
     };
   },
   mounted() {
+    axios
+      .get('https://inrecruiting.intervieweb.it/annunci.php?lang=en&LAC=jobconsultinghr&d=jobifyrecruiting.netlify.app&k=fd7a2de73e6faba23a23ea947913431c&format=json_en&utype=0')
+      .then((response) => {
+        this.jobs = response.data
+        this.jobs_lenght = response.data.length
+      })
+
+    
     let recaptchaScript = document.createElement("script");
     recaptchaScript.setAttribute(
       "src",
@@ -466,7 +478,7 @@ export default {
           <div class="tab-content">
               <div class="tab_header">
                 <div class="results">
-                  16 results
+                  {{ jobs_lenght }} risultati
                 </div>
                 <div class="sort_by">
                   <select class="form-select" aria-label="Default select example">
@@ -478,174 +490,42 @@ export default {
                 </div>
               </div>    
               <div id="Farm" class="tab-pane in active jobs">
-                <div class="job">
+                <div
+                    v-for="job in jobs"
+                    class="currency"
+                    v-bind:key="job"
+                  >
+                  <div class="job">
                   <div class="head">
-                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
+                    <div class="title">{{ job.title }}</div>
                   </div>
                   <div class="info">
                     <div class="subtitle">Specifiche</div>
                     <div class="specs">
                       <div class="spec1">
                         <div class="spec1_title">Città</div>
-                        <div class="spec1_text">Roma</div>
+                        <div class="spec1_text">{{ job.city }}</div>
                       </div>
                       <div class="spec1">
                         <div class="spec1_title">Contratto</div>
-                        <div class="spec1_text">Determinato</div>
+                        <div class="spec1_text">{{ job.contract_type }}</div>
                       </div>
                       <div class="spec1">
                         <div class="spec1_title">Industria</div>
-                        <div class="spec1_text">Informatico</div>
+                        <div class="spec1_text">{{ job.industry }}</div>
                       </div>
                     </div>
                   </div>
                   <div class="desc">
-                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
+                    <div class="description">{{ job.function }}</div>
                   </div>
                   <div class="link">
-                    <div class="btn">Vedi l'offerta</div>
+                    <a :href=job.url>
+                      <div class="btn">Vedi l'offerta</div>
+                    </a>
                   </div>
-                </div>
-                <div class="job">
-                  <div class="head">
-                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
                   </div>
-                  <div class="info">
-                    <div class="subtitle">Specifiche</div>
-                    <div class="specs">
-                      <div class="spec1">
-                        <div class="spec1_title">Città</div>
-                        <div class="spec1_text">Roma</div>
-                      </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Contratto</div>
-                        <div class="spec1_text">Determinato</div>
-                      </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Industria</div>
-                        <div class="spec1_text">Informatico</div>
-                      </div>
-                    </div>
                   </div>
-                  <div class="desc">
-                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
-                  </div>
-                  <div class="link">
-                    <div class="btn">Vedi l'offerta</div>
-                  </div>
-                </div>
-                <div class="job">
-                  <div class="head">
-                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
-                  </div>
-                  <div class="info">
-                    <div class="subtitle">Specifiche</div>
-                    <div class="specs">
-                      <div class="spec1">
-                        <div class="spec1_title">Città</div>
-                        <div class="spec1_text">Roma</div>
-                      </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Contratto</div>
-                        <div class="spec1_text">Determinato</div>
-                      </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Industria</div>
-                        <div class="spec1_text">Informatico</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
-                  </div>
-                  <div class="link">
-                    <div class="btn">Vedi l'offerta</div>
-                  </div>
-                </div>
-                <div class="job">
-                  <div class="head">
-                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
-                  </div>
-                  <div class="info">
-                    <div class="subtitle">Specifiche</div>
-                    <div class="specs">
-                      <div class="spec1">
-                        <div class="spec1_title">Città</div>
-                        <div class="spec1_text">Roma</div>
-                      </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Contratto</div>
-                        <div class="spec1_text">Determinato</div>
-                      </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Industria</div>
-                        <div class="spec1_text">Informatico</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
-                  </div>
-                  <div class="link">
-                    <div class="btn">Vedi l'offerta</div>
-                  </div>
-                </div>
-                <div class="job">
-                  <div class="head">
-                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
-                  </div>
-                  <div class="info">
-                    <div class="subtitle">Specifiche</div>
-                    <div class="specs">
-                      <div class="spec1">
-                        <div class="spec1_title">Città</div>
-                        <div class="spec1_text">Roma</div>
-                      </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Contratto</div>
-                        <div class="spec1_text">Determinato</div>
-                      </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Industria</div>
-                        <div class="spec1_text">Informatico</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
-                  </div>
-                  <div class="link">
-                    <div class="btn">Vedi l'offerta</div>
-                  </div>
-                </div>
-                <div class="job">
-                  <div class="head">
-                    <div class="title">Informatore Medico Scientifico Specialist Roma</div>
-                  </div>
-                  <div class="info">
-                    <div class="subtitle">Specifiche</div>
-                    <div class="specs">
-                      <div class="spec1">
-                        <div class="spec1_title">Città</div>
-                        <div class="spec1_text">Roma</div>
-                      </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Contratto</div>
-                        <div class="spec1_text">Determinato</div>
-                      </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Industria</div>
-                        <div class="spec1_text">Informatico</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    <div class="description">per importante realtà nel settore farmaceutico, ricerchiamo informatori medico scientifici specialist per le zone di roma. la risorsa si occuperà di garantire l'informazione medico-scientifica presso target specialistici (gastroenterologi, pediatri,...</div>
-                  </div>
-                  <div class="link">
-                    <div class="btn">Vedi l'offerta</div>
-                  </div>
-                </div>
               </div>
               <div id="Farm" class="tab-pane fade">
                 <div class="filters">
@@ -3161,7 +3041,7 @@ sviluppare in azienda.
   }
 
   .title p {
-    color: #627597;
+    color: #d9d9d9;
     font-size: 20px;
     width: 100%;
     line-height: 24px;
@@ -3283,34 +3163,37 @@ sviluppare in azienda.
     background: #fff;
     border:2px solid #efefef;
     border-radius: 20px;
-    padding: 2rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
 
   .job .title{
-    font-size: 20px;
-    line-height: 24px;
-    color: #0c2550;
+    font-size: 28px;
+    line-height: 32px;
+    color: #000;
     font-weight: 700;
-    width: 18vw;
-    white-space: nowrap;
-    overflow: hidden!important;
-    text-overflow: ellipsis;
-    position: relative;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
-  .job .title:after {
+  /*.job .title:after {
     content: "...";
     position: absolute;
     right: 0;
     top: 0;
     background-color: white;
     padding: 0 5px;
-  }
+  }*/
 
   .info{
     margin-top: 1rem;
+    background: #027bfd;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #fff;
   }
 
   .info .subtitle{
@@ -3341,9 +3224,26 @@ sviluppare in azienda.
   }
 
   .job .desc{
-    margin-top: 1rem;
+    color: #fff;
     padding-bottom: 1rem;
-    border-bottom:1px solid #efefef;
+    background: #027bfd;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .job .link{
+    background: #027bfd;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .job .link .btn{
+    border: 1px solid white;
   }
 
   .contaniner2 {
@@ -3444,7 +3344,7 @@ sviluppare in azienda.
     line-height: 34px;
     margin-left: 3rem;
     font-weight: 700;
-    color: #0c2550;
+    color: #000;
     margin-bottom: 0;
   }
 
@@ -3758,7 +3658,7 @@ sviluppare in azienda.
   }
 
   .ctaTitle {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 56px;
     line-height: 60px;
@@ -4277,7 +4177,7 @@ sviluppare in azienda.
   }
 
   .secondPart2 h2 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 56px;
     line-height: 60px;
@@ -4314,7 +4214,7 @@ sviluppare in azienda.
   }
 
   .secondPart2 .title p {
-    color: #627597;
+    color: #000;
     font-size: 18px;
     line-height: 22px;
     font-weight: 300 !important;
@@ -4439,7 +4339,7 @@ sviluppare in azienda.
   .featureds .titles h2 {
     font-size: 40px;
     line-height: 42px;
-    color: #0c2550;
+    color: #000;
     font-weight: 800;
     margin-top: 3rem;
     letter-spacing: -0.02em;

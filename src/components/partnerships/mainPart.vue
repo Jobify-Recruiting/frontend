@@ -195,12 +195,12 @@ successo suo e nostro.
               </a>
 
               <a
-                href="https://www.atempospa.it/"
+                href="https://www.value4you.it/"
                 class="partnerImg transition"
                 style="
                   right: 16%;
                   top: 15%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo2.png);
+                  background-image: url(https://www.value4you.it/wp-content/uploads/2020/04/logo_w.png);
                 "
               >
                 <div class="" style=""></div>
@@ -607,7 +607,7 @@ evoluzione e cambiamento.</span>
     margin-left: auto;
     margin-right: auto;
     margin-top: 0.5rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     text-align: center;
     line-height: 24px;
@@ -691,7 +691,7 @@ evoluzione e cambiamento.</span>
   }
   .cols .col p {
     text-transform: uppercase;
-    color: #0c2550;
+    color: #000;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -717,7 +717,7 @@ evoluzione e cambiamento.</span>
   }
 
   .cols .col h2 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 56px;
     line-height: 56px;
@@ -738,7 +738,7 @@ evoluzione e cambiamento.</span>
   }
 
   .cols .col h3 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;
@@ -747,7 +747,7 @@ evoluzione e cambiamento.</span>
   }
 
   .cols .col .subtitle {
-    color: #627597;
+    color: #000;
     font-size: 18px;
     line-height: 22px;
   }
@@ -758,7 +758,7 @@ evoluzione e cambiamento.</span>
   }
 
   .secondPart h2 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -771,7 +771,7 @@ evoluzione e cambiamento.</span>
 
   .secondPart .text {
     margin-top: 0.5rem;
-    color: #627597;
+    color: #000;
     font-size: 26px;
     line-height: 30px;
     font-weight: 400;
@@ -792,7 +792,7 @@ evoluzione e cambiamento.</span>
 
   .secondPart .text2 {
     margin-top: 0.5rem;
-    color: #627597;
+    color: #000;
     font-size: 26px;
     line-height: 30px;
     font-weight: 400;
@@ -832,7 +832,7 @@ evoluzione e cambiamento.</span>
   }
 
   .thirdDiv .title h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 64px;
     font-weight: 800 !important;
     width: 100%;
@@ -854,7 +854,7 @@ evoluzione e cambiamento.</span>
 
   .thirdDiv .title p {
     margin-top: 0.5rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 100%;
     text-align: center;

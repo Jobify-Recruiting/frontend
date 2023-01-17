@@ -241,29 +241,28 @@ export default {
         </div>
         <div class="firstPart">
           <div class="firstPartBody">
-            <div class="subtitle">Trova lavoro</div>
-          <h2>Jobify Recruiting è la risposta giusta!</h2>
-          <p>Su Jobify Recruiting trovi ogni giorno nuove offerte in ambito Farm, Finance, IT, Tech, HR.</p>
+            <div class="subtitle">Il colloquio</div>
+          <h2>Ccome prepararsi e come affrontarlo con successo</h2>
           <div class="mainButton">
-            <router-link to='/openposition/?jobalert=open'
+            <a href="#secondDiv"
               ><button class="btn">
-                Crea una job alert
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-short"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                    />
-                  </svg>
-                </span></button
-            ></router-link>
+                    Scopri di più
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                        />
+                      </svg>
+                    </span></button
+              ></a>
           </div>
           <div class="image"></div>
           </div>
@@ -279,21 +278,89 @@ export default {
           </svg>
         </div>
 
-        <div class="thirdPart">
+        <div class="thirdPart" id="secondDiv">
           <div class="thirdPartDiv">
             <div class="first">
               <div class="col1">
-                <h2><span>Trova con noi</span> il tuo prossimo lavoro.</h2>
+                <h2><span>Approcciarsi correttamente</span> al colloquio di lavoro</h2>
                 <p>
-                  Se sei un candidato in cerca di lavoro e cerchi nuove opportunità professionali Jobify Recruiting ti mette in
-                  contatto con l’azienda giusta per te. Il nostro obiettivo è creare il match perfetto tra risorse umane e
-                  aziende che assumono, andando oltre una visione tradizionale basata su job title e competenze tecniche,
-                  hard e soft skill.
+                  Non è per nulla semplice e per questo noi di Jobify Recruiting abbiamo deciso di darti alcuni consigli per arrivare preparati all’incontro con l’azienda e con il responsabile risorse umane.
                 </p>
                 <p>
-                  Quello che ti aiutiamo a fare in modo rapido e efficace è collocarti in una realtà imprenditoriale con cui
-                  condividi valori e ideali, perché il dipendente migliore è quello felice di contribuire al successo e alla crescita
-                  aziendale.
+                  Tanti sono gli accorgimenti da tenere a mente e i dettagli da non trascurare, in primo luogo la conoscenza dell’azienda che offre la posizione per cui ci si candida, ma non solo. <strong>Altri suggerimenti utili per affrontare il colloquio con successo</strong> sono:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Non candidarsi a caso:</strong> molte candidature e il cosiddetto “sparare nel mucchio” porta ad un minor tasso di risposta da parte delle aziende;
+                  </li>
+                  <li>
+                    <strong>Candidarsi solo per posizioni lavorative e presso aziende a cui si è realmente interessati;</strong> 
+                  </li>
+                  <li>
+                    <strong>Adeguare il curriculum vitae all’azienda per cui ci si candida;</strong> 
+                  </li>
+                  <li>
+                    <strong>Conoscere e informarsi</strong> sulla storia, mission, vision e caratteristiche dell’azienda per cui ci si candida.
+                  </li>
+                </ul>
+                <p>
+                  Un valore aggiunto che permette al candidato di superare lo screening del CV e arrivare al colloquio è inoltre rappresentato dai seguenti elementi:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Creazione di una lettera di presentazione con le motivazioni</strong> che portano il candidato a fare una application in una determinata azienda;
+                  </li>
+                  <li>
+                    <strong>Presenza del candidato online e sui social media</strong> con una comunicazione attenta e coerente, a partire dalla cura del profilo LinkedIn.
+                  </li>
+                </ul>
+              </div>
+              <div class="col2">
+                <div class="glow4"></div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="250"
+                  height="250"
+                  fill="#fff"
+                  class="bi bi-people transition"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="thirdPart" id="secondDiv">
+          <div class="thirdPartDiv">
+            <div class="first">
+              <div class="col1">
+                <h2><span>Dalla selezione all’incontro</span> con l’azienda: cosa fare</h2>
+                <p>
+                  Quando si è convocati per un colloquio è importante <strong>essere puntuali</strong> all’appuntamento, ma non solo. Anche la <strong>cura dell’abbigliamento e del modo di porsi</strong> permette di fare una buona impressione sui selezionatori e di rimanere impressi nella mente del responsabile HR dell’azienda.
+                </p>
+                <p>
+                  Oltre a questo per impressionare positivamente i selezionatori è bene:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Controllare ansia e emotività</strong> mantenendo un atteggiamento sereno e positivo. Troppo spesso i candidati vivono il colloquio di lavoro come un giudizio da parte delle aziende, ma non è così. Recarsi al colloquio è un’occasione da sfruttare per capire se si è adatti a ricoprire una determinata posizione aziendale e se l’azienda è adatta a te. Si tratta, in altre parole, di un momento di conoscenza reciproca tra candidato e azienda;
+                  </li>
+                  <li>
+                    <strong>Mostrare un atteggiamento professionale e dinamico:</strong> i recruiter di Jobify Recruiting consigliano di non sembrare troppo aggressivi e informali, ma neanche troppo passivi. Quello che le aziende apprezzano nel candidato è un atteggiamento professionale e il fatto che abbia le idee chiare, unite ad un buono spirito di adattamento.
+                  </li>
+                </ul>
+                <p>
+                  La cosa più importante nel preparare e affrontare il colloquio è <strong>essere coerenti e non mentire</strong> su esperienza lavorativa, aspettative e interessi o sul proprio carattere. <strong>Essere se stessi è fondamentale</strong> perché l’azienda deve scegliere le risorse e i talenti per come sono davvero in modo da introdurre nell’organigramma aziendale non solo professionisti, ma soprattutto persone che condividono i valori e gli ideali dell’azienda stessa e contribuiscono al raggiungimento degli obiettivi di business. 
+                </p>
+                <p>
+                  Infine, ai candidati oggi sono richieste <strong>disponibilità e flessibilità.</strong> Questo non significa essere pronti ad accettare ogni lavoro, ma dimostrare la capacità di comprendere il contesto in cui si muove e opera l’azienda, dimostrando al contempo la volontà di mettersi in gioco e adattarsi.
+                </p>
+                <p>
+                  In conclusione essere se stessi e dimostrarsi al contempo professionali e flessibili è il miglior modo per <strong>gestire il momento del colloquio di lavoro,</strong> che non è un esame ma un’opportunità di farsi conoscere e apprezzare dall’azienda.
                 </p>
               </div>
               <div class="col2">
@@ -312,286 +379,8 @@ export default {
                 </svg>
               </div>
             </div>
-            <h3><span>Gli strumenti</span><br> che mettiamo a tua disposizione</h3>
-            <div class="second">
-              
-              <div class="feature">
-                <div
-                  class="img_feature"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/curriculum.jpg);
-                  "
-                ></div>
-                  <div class="feature_text">
-                    <h2>Il Curriculum Vitae</h2>
-                    <p>
-                      Creare un CV efficace non è semplice e per questo nella ricerca del tuo prossimo lavoro puoi affidarti a
-                      Jobify Recruiting. Troverai un team che sa tradurre le tue competenze e i tuoi talenti in un documento
-                      professionale con cui presentarti alle aziende.
-                    </p>
-                    <a href="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/documenti_template%2FTemplate%20CV%20.docx?alt=media&token=f02bcd04-aeb7-4fbc-b61b-f7de0cbfcfcc" download><div class="btn3">Scarica</div></a>
-                  </div>
-              </div>
-              <div class="feature">
-                <div
-                  class="img_feature"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/colloquio.jpg);
-                  "
-                ></div>
-                <div class="feature_text">
-                  <h2>Il colloquio</h2>
-                  <p>
-                    Approcciarsi correttamente al colloquio di lavoro non è per nulla semplice e per questo noi di Jobify Recruiting abbiamo deciso di darti alcuni consigli per arrivare preparati all’incontro con l’azienda e con il responsabile risorse umane.
-                  </p>
-                  <router-link to="/colloquio"><div class="btn3">Scopri di più</div></router-link>
-                </div>
-              </div>
-              <div class="feature">
-                <div
-                  class="img_feature"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/lettera.jpg);
-                  "
-                ></div>
-                <div class="feature_text">
-                  <h2>La lettera di presentazione</h2>
-                  <p>
-                    Le aziende non amano lettere di presentazione standardizzate e semplici copia e incolla inviati in massa.
-                    Una lettera di presentazione efficace è centrata sulla posizione e sull’azienda per cui ci si candida e
-                    prepararla è sicuramente più semplice se si può contare sul supporto di Jobify Recruiting.
-                  </p>
-                  <a href="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/documenti_template%2FLettera%20motivazionale%20-%20Template.docx?alt=media&token=cd248b19-cbaf-449b-8105-ae9cccf09dde" download><div class="btn3">Scarica</div></a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
-
-        <div class="workflow" id="workflow">
-          <div class="workflowTitle">
-            <h2 style="margin-bottom: 0rem !important">
-              Schema del processo
-            </h2>
-          </div>
-          <div class="buttons">
-            <div class="btnScrollL" @click="workflowScrollSx()">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                fill="#0c2550"
-                class="bi bi-chevron-left"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                />
-              </svg>
-            </div>
-            <div class="btnScrollR" @click="workflowScrollDx()">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="22"
-                height="22"
-                fill="#0c2550"
-                class="bi bi-chevron-right"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                />
-              </svg>
-            </div>
-          </div>
-          <div
-            class="workflowFlex"
-            style="
-              display: flex;
-              height: 100%;
-              width: 100%;
-              overflow-x: scroll;
-              overflow-y: hidden;
-              flex-wrap: nowrap;
-              align-items: center;
-              position: relative;
-            "
-          >
-            <div class="columns">
-              <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="background2 transition">
-                  <div class="number">1</div>
-                  <h2>Intervista al cliente</h2>
-                </div>
-              </div>
-              <div class="svg_logo_link transition">
-              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
-          </div>
-              <div class="column workflowColumn" style="width: 35vw !important">
-                
-                <div class="background2 transition">
-                  <div class="number">2</div>
-                  <h2>Job description</h2>
-                </div>
-              </div>
-            </div>
-            <div class="svg_logo_link transition">
-              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
-          </div>
-            <div class="columns">
-              <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="background2 transition">
-                  <div class="number">3</div>
-                  <h2>Head Hunting e incontro con l’azienda</h2>
-                </div>
-              </div>
-              <div class="svg_logo_link transition">
-              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
-          </div>
-              <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="background2 transition">
-                  <div class="number">4</div>
-                  <h2>Screening CV</h2>
-                </div>
-              </div>
-            </div>
-            <div class="svg_logo_link transition">
-              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
-          </div>
-            <div class="columns">
-              <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="background2 transition">
-                  <div class="number">5</div>
-                  <h2>Screening telefonico</h2>
-                </div>
-              </div>
-              <div class="svg_logo_link transition">
-              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
-          </div>
-              <div class="column workflowColumn" style="width: 35vw !important">
-                <div class="background2 transition">
-                  <div class="number">6</div>
-                  <h2>Videocolloquio</h2>
-                </div>
-              </div>
-            </div>
-            <div class="svg_logo_link transition">
-              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
-          </div>
-            <div class="columns">
-              <div class="column workflowColumn" style="width: 35vw">
-                <div class="background2 transition">
-                  <div class="number">7</div>
-                  <h2>Presentazione Short list</h2>
-                </div>
-              </div>
-              <div class="svg_logo_link transition">
-              <img width="50px" height="150px" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2Fsvg_logo_link.png?alt=media&token=e5cee367-1423-4087-863f-9cbed836a383">
-          </div>
-              <div class="column workflowColumn" style="width: 35vw">
-                <div class="background2 transition">
-                  <div class="number">8</div>
-                  <h2>Colloqui one-toone con l'azienda</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="seventh">
-          <div class="asks">
-            <h2>Domande frequenti</h2>
-            <div class="accordion" id="accordionExample">
-              <div class="card transition">
-                <div class="card-header" id="heading1">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapse1"
-                      aria-expanded="false"
-                      aria-controls="collapse1"
-                    >
-                      <p>></p>
-                      Cosa devo fare per trovare lavoro con Jobify Recruiting
-                    </button>
-                  </h2>
-                </div>
-
-                <div
-                  id="collapse1"
-                  class="collapse"
-                  aria-labelledby="heading1"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    Per trovare lavoro grazie agli strumenti messi a disposizione da Jobify Recruiting ti consigliamo di seguire e controllare periodicamente le posizioni aperte sul sito e di iscriverti alla  job alert. Oltre a questo è importante avere un dialogo attivo e costante con i nostri recruiter ed head hunter, la cui missione è da sempre creare il match perfetto tra talento e azienda. Restiamo in contatto!
-                  </div>
-                </div>
-              </div>
-              <div class="card transition">
-                <div class="card-header" id="heading2">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapse2"
-                      aria-expanded="false"
-                      aria-controls="collapse2"
-                    >
-                      <p>></p>
-                      In quanto tempo posso trovare lavoro con Jobify Recruiting?
-                    </button>
-                  </h2>
-                </div>
-
-                <div
-                  id="collapse2"
-                  class="collapse"
-                  aria-labelledby="heading2"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    La ricerca del nuovo lavoro e di offerte in linea con le proprie aspirazioni personali non è mai semplice, ma richiede tempo, impegno e attenzione costante. In altre parole possiamo considerare la ricerca di impiego non come un insieme di azioni non coordinate, ma come un progetto da studiare con attenzione perché possa portare al raggiungimento degli obiettivi desiderati. In media la ricerca lavoro con Jobify Recruiting dura circa 15 mesi, ma si tratta di un periodo di tempo variabile che dipende dalle competenze del candidato e dalla disponibilità di offerte da parte delle aziende.
-                  </div>
-                </div>
-              </div>
-              <div class="card transition">
-                <div class="card-header" id="heading3">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapse3"
-                      aria-expanded="false"
-                      aria-controls="collapse3"
-                    >
-                      <p>></p>
-                      In quali settori posso trovare lavoro con Jobify Recruiting?
-                    </button>
-                  </h2>
-                </div>
-
-                <div
-                  id="collapse3"
-                  class="collapse"
-                  aria-labelledby="heading3"
-                  data-parent="#accordionExample"
-                >
-                  <div class="card-body">
-                    La ricerca del nuovo lavoro e di offerte in linea con le proprie aspirazioni personali non è mai semplice, ma richiede tempo, impegno e attenzione costante. In altre parole possiamo considerare la ricerca di impiego non come un insieme di azioni non coordinate, ma come un progetto da studiare con attenzione perché possa portare al raggiungimento degli obiettivi desiderati. In media la ricerca lavoro con Jobify Recruiting dura circa 15 mesi, ma si tratta di un periodo di tempo variabile che dipende dalle competenze del candidato e dalla disponibilità di offerte da parte delle aziende.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         
         <div class="fifthDiv">
           <div class="adviser transition">
@@ -1040,6 +829,7 @@ export default {
     background: transparent;
     border-radius: 30px;
     padding: 5rem;
+    padding-bottom: 0;
   }
 
   .thirdPartDiv .first {
@@ -1105,6 +895,14 @@ export default {
   }
 
   .thirdPartDiv .first p {
+    width: 100%;
+    color: #000;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+  .thirdPartDiv .first ul li {
     width: 100%;
     color: #000;
     font-size: 18px;

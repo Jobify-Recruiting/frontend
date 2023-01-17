@@ -963,7 +963,7 @@ export default {
   }
 
   .title p {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 100%;
     line-height: 24px;

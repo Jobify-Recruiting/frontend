@@ -342,7 +342,7 @@ export default {
                   title: "Il Futuro del Lavoro",
                   img: "https://thingsss.s3.eu-central-1.amazonaws.com/il+futuro+del+lavoro_novembre.jpeg",
                   subtitle: "La scorsa settimana si è tenuta a Milano la seconda edizione de “Il Futuro del Lavoro”...",
-                  text: "<h3>Il Futuro del Lavoro</h3><p>La scorsa settimana si è tenuta a Milano la seconda edizione de “Il Futuro del Lavoro”, evento organizzato da Bianco Lavoro - Euspert di cui Jobify Recruiting è stata partner. </p><p>In questa occasione, abbiamo affrontato tematiche molto importanti per il mondo del lavoro, che, come sappiamo, è in continua e rapida evoluzione. Abbiamo parlato di: → comunicazione, posizionamento, personalbranding, inclusività, umanizzazione 🎯</p><p>🗣 Il nostro CEO & Founder, Davide Maggio, era presente tra gli speaker dell’evento e ci ha parlato di quanto sia importante in azienda così come nella vita privata, rimanere autentici e ricordare sempre di essere prima persone e poi professionisti. </p><p>🙏 Un grazie speciale va a Marco Fattizzo e a tutto il team di Bianco Lavoro per aver reso possibile questa occasione, non solo di incontro e di conoscenza, ma anche di confronto, crescita e formazione.</p><p>E grazie anche a tutti gli altri professionisti del settore che sono intervenuti rendendo possibile il successo di questa nuova edizione: Alessio Cinao, Gianluca Lo Stimolo, Marcella Loporchio, Helena Hagan, Daniela Restelli, Gioia Novena, Guenda Novena, Silvia Gorini, Gabriele Sciulli, Paolo Costa, Rodolfo Duè, Sabrina Grazini, Massimo Calderini, Alberto Giacobone, e tanti altri.</p><p>Non ci resta che darvi appuntamento al prossimo evento!</p>",
+                  text: "<h3>“Il Futuro del Lavoro” – Evento HR, networking e apericena a Milano</h3><p>Dopo il successo dell’evento tenutosi a Roma nel mese di giugno, è in arrivo anche a Milano l’appuntamento su “Il Futuro del lavoro” incentrato, per questa edizione, su “Comunicazione e Posizionamento”!</p><p>A giugno si è tenuto a Roma l’evento firmato Bianco Lavoro – Euspert in cui si sono toccati argomenti riguardanti intelligenze artificiali, soft skill del futuro, lingue, CV, prospettive ed opportunità. Visto il grande successo, si replica anche a Milano con un evento incentrato su “Comunicazione e Posizionamento“! Si prevedono interventi qualificati da parte di docenti della Academy Bianco Lavoro e Speaker esterni, panel e sessioni domande/risposte in cui si potrà interagire.</p><h3>Evento con Apericena a Milano su “Il Futuro del Lavoro”: data, luogo e programma</h3><p>Questa edizione milanese si terrà giovedì 17 novembre dalle 15.00 alle 21.00 presso Copernico Centrale, zona Stazione Centrale di Milano.  </p><h3>Programma</h3><p>La giornata si svilupperà nel seguente modo:</p><ul><li>15.00 accoglienza e presentazioni</li><li>15.30 inizio interventi, speech e tavola rotonda</li></ul><p>Speech confermati (altri in arrivo):</p><ul><li>Marcella Loporchio (HR Business Consultant)</li><li>Davide Maggio (HR Temporary Manager e founder Agenzia per il Lavoro Jobify)</li><li>Andrea Abondio (esperto in Public Speaking e founder di Speakerss) ed Helena Hagan (HyperPolyglot con otto lingue fluenti, esperta di neurolanguage e co-founder Bianco Lavoro)</li><li>Gioia Novena e Guenda Novena (fondatrici di Nextopp ed Head Hunter)</li><li>Gianluca Lo Stimolo (Business Celebrity Builder – esperto in personal branding)</li></ul><p>Si prosegue con:</p><ul><li>18.15 breve cerimonia di consegna Certificati Master in Risorse Umane e Master in Coaching della Bianco Lavoro Academy. Conferimento ad-honorem di due Master.</li><li>18.30 trasferimento in sala buffet ed attività di networking . Ci si alza dalle sedie e… per chi partecipa con il biglietto comprensivo di apericena e networking, inizia questa parte della serata! Nei caratteristici ed eleganti locali dedicati di Copernico Centrale sarà servito un ricco apericena a buffet. La scelta del buffet è stata fatta per incentivare il networking e gli incontri. Gli organizzatori si preoccuperanno di presentare ed introdurre le persone, creare sinergie e… divertirsi insieme!</li><li>20.30 conclusione e saluti</li></ul><p>Persone chiave presenti (tante altre in arrivo):</p><ul><li>Marco Fattizzo (organizzatore e moderatore. Co-founder di Bianco Lavoro)</li><li>Rodolfo Duè (Founder di Tech Jobs Fair)</li><li>Alessio Cinao (esperto in comunicazione social media)</li><li>Sabrina Grazini (Consulente del Lavoro esperta ed influencer social)</li><li>Daniela Restelli (Career Coach e Tutor Bianco Lavoro Academy)</li></ul><h3>Come partecipare</h3><p>Alla pagina dedicata all’evento è possibile acquistare il ticket per partecipare: <a href=\"https://www.eventbrite.it/e/biglietti-il-futuro-del-lavoro-evento-hr-networking-e-apericena-443180684357\">https://www.eventbrite.it/e/biglietti-il-futuro-del-lavoro-evento-hr-networking-e-apericena-443180684357</a></p>",
                 },
                 {
                   date: "18 Nov 2022",
@@ -555,8 +555,8 @@ export default {
       }
     }
 
-    window.addEventListener("scroll", reveal);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    //window.addEventListener("scroll", reveal);
+    //window.scrollTo({ top: 0, behavior: "smooth" });
 
     let content = document.querySelector(".menu");
     content.style.width = "0%";
@@ -803,7 +803,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             <div id="biancolavoro" class="tab-pane in active">
               <div class="filters">
                 <div class="articles articles2">
-                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[1].title, Date: this.articles[1].date, Text: this.articles[1].text, Image: this.articles[1].img, Name1: this.articles[1].name1, Role1: this.articles[1].role1, Name2: this.articles[1].name2, Role2: this.articles[1].role2,  }}">
+                  <router-link :to="{name: 'Article2', query: { Title: this.articles[0].title, Date: this.articles[0].date, Text: this.articles[0].text, Image: this.articles[0].img, Name1: this.articles[0].name1, Role1: this.articles[0].role1, Name2: this.articles[0].name2, Role2: this.articles[0].role2,  }}">
                     <div class="article">
                       <div class="image" id="imageA0">
                         <div class="hover"></div>
@@ -1024,7 +1024,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             <div id="pubblicazionicartacee" class="tab-pane fade">
               <div class="filters">
                 <div class="content filtersContent articles articles2">
-                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.articles[24].title, Date: this.articles[24].date, Text: this.articles[24].text, Image: this.articles[24].img, Name1: this.articles[24].name1, Role1: this.articles[24].role1, }}">
+                  <router-link :to="{name: 'Article2', query: { Title: this.articles[24].title, Date: this.articles[24].date, Text: this.articles[24].text, Image: this.articles[24].img, Name1: this.articles[24].name1, Role1: this.articles[24].role1, }}">
                     <div class="article">
                       <div class="image" id="imageA24">
                         <div class="hover"></div>
@@ -1311,7 +1311,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
             <div id="eventijobify" class="tab-pane fade">
               <div class="filters">
                 <div class="content filtersContent articles articles2">
-                  <!--<router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[0].title, Date: this.events[0].date, Text: this.events[0].text, Image: this.events[0].img }}">
+                  <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[0].title, Date: this.events[0].date, Text: this.events[0].text, Image: this.events[0].img }}">
                         <div class="article">
                           <div class="image" id="imageE0">
                             <div class="hover"></div>
@@ -1321,8 +1321,8 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                           <div class="title" id="titleE0"></div>
                           <div class="subtitle" id="subtitleE0"></div>
                         </div>
-                  </router-link>-->
-                  <a href="https://www.biancolavoro.it/il-futuro-del-lavoro-evento-hr-networking-e-apericena-a-milano/" target="blank">
+                  </router-link>
+                  <!--<a href="https://www.biancolavoro.it/il-futuro-del-lavoro-evento-hr-networking-e-apericena-a-milano/" target="blank">
                     <div class="article">
                           <div class="image" id="imageE0">
                             <div class="hover"></div>
@@ -1332,7 +1332,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                           <div class="title" id="titleE0"></div>
                           <div class="subtitle" id="subtitleE0"></div>
                         </div>
-                  </a>
+                  </a>-->
                   <router-link target="_blank" :to="{name: 'Article2', query: { Title: this.events[1].title, Date: this.events[1].date, Text: this.events[1].text, Image: this.events[1].img }}">
                         <div class="article">
                           <div class="image" id="imageE1">
@@ -1646,17 +1646,17 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   }
 
   .nav li:hover ::v-deep(a) {
-    color: #0c2550;
+    color: #000;
   }
 
   .nav li a {
-    color: #0c2550;
+    color: #000;
     font-weight: 500;
     font-size: 16px;
   }
 
   .nav li a:hover {
-    color: #0c2550;
+    color: #000;
   }
 
   .flowSingleBtn {
@@ -1725,7 +1725,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   .titlePage2 {
     font-size: 34px;
     line-height: 38px;
-    color: #0c2550;
+    color: #000;
     font-weight: 800;
     margin-left: 12.5rem;
     margin-top: 3rem;
@@ -1828,7 +1828,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
     margin-left: 2rem;
     width: 40%;
     margin-right: 2rem;
-    color: #0c2550;
+    color: #000;
   }
 
   .firstTitle p {
@@ -1850,7 +1850,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   }
 
   .firstTitle h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 46px;
     line-height: 50px;
     font-weight: 700;
@@ -2066,7 +2066,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
   .featuredContent {
     height: 100%;
     width: 100%;
-    background-color: #0c2550;
+    background-color: #000;
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;

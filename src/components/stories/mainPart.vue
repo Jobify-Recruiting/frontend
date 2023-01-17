@@ -198,6 +198,128 @@ export default {
   <div>
     <div class="main">
       <div class="first">
+        <div class="firstPart">
+          <!--<div class="firstPartBody">
+              <div
+                class="people1"
+                style="
+                  top: 60%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                "
+              ></div>
+              <div
+                class="people2"
+                style="
+                  top: 80%;
+                  left: 15%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                "
+              ></div>
+              <div
+                class="people2"
+                style="
+                  top: 20%;
+                  left: 5%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                "
+              ></div>
+              <div
+                class="people1"
+                style="
+                  top: 40%;
+                  left: 12%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+                "
+              ></div>
+
+              <div
+                class="people1"
+                style="
+                  top: 25%;
+                  right: 10%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
+                "
+              ></div>
+              <div
+                class="people2"
+                style="
+                    top: 41%;
+                    right: 2%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
+                "
+              ></div>
+              <div
+                class="people2"
+                style="
+                  top: 80%;
+                  right: 10%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
+                "
+              ></div>
+              <div
+                class="people1"
+                style="
+                  top: 60%;
+                  right: 10%;
+                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
+                "
+              ></div>
+              <div class="subtitle">Lavora con noi</div>
+              <h2>Un team fatto di persone per le persone</h2>
+              <p>
+                Jobify Recruiting lavora con passione e impegno e mette competenza, tecnologia e umanità al servizio di
+    clienti che possono essere di volta in volta candidati e aziende. Se pensi di possedere queste qualità entra
+    nel nostro team.
+              </p>
+          </div>-->
+
+          <div class="firstPartBody">
+            <div class="subtitle">storie dei talenti</div>
+              <h2>Ogni persona ha un talento e ogni talento racchiude in sé un’opportunità di lavoro</h2>
+
+              <p>
+                Il compito di Jobify
+          Recruiting è proprio questo: creare il match perfetto tra persona e azienda, talento e impresa per collocare
+          le persone giuste al posto giusto. Un compito che da sempre svolgiamo con la massima cura e attenzione
+          come testimoniano le storie dei talenti che abbiamo raccolto in questa pagina.
+          Perché nessuna persona è priva di talento e ciascuno può e deve trovare l’azienda capace di valorizzarlo.
+              </p>
+
+              <div class="mainButton">
+                <router-link to="/workwithus"
+                  ><button class="btn">
+                    Scopri i servizi per il candidato
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        class="bi bi-arrow-right-short"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                        />
+                      </svg>
+                    </span></button
+                ></router-link>
+              </div>
+              <div class="image">
+              </div>
+          </div>
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          preserveAspectRatio="none"
+          viewBox="0 0 1680 40"
+          class="position-absolute width-full z-1"
+          style="bottom: 0"
+          >
+            <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
+          </svg>
+        </div>
         <div class="second">
           <div class="featureds">
             <div class="titles">
@@ -392,7 +514,7 @@ export default {
           </div>
         </div>
 
-        <div class="sixtPart">
+        <!--<div class="sixtPart">
         <h2>Ogni persona ha un talento e ogni talento racchiude in sé un’opportunità di lavoro</h2>
         <div class="description">
           Il compito di Jobify
@@ -405,7 +527,7 @@ export default {
         <div class="sixtPartButton">
           <a href="/workwithus" class="">
             <button class="btn"> Scopri i servizi per il candidato <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16" data-v-3f1ba09e=""><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" data-v-3f1ba09e=""></path></svg></span></button></a></div>
-      </div>
+        </div>-->
 
         <div class="fifthDiv">
           <div class="adviser">
@@ -449,10 +571,7 @@ export default {
 @media (min-width: 1024px) {
 
   .first {
-    padding-top: 5rem;
-    background: #ada996;
-    background: -webkit-linear-gradient(to top, #eaeaea, #ffffff, #ffffff47, #0c2550);
-    background: linear-gradient(to top, #eaeaea, #ffffff, #ffffff47, #0c2550);
+    background: #fff;
   }
 
   .first .cols {
@@ -462,10 +581,74 @@ export default {
     padding-right: 4rem;
   }
 
+  .firstPart {
+    text-align: left;
+    width: 100%;
+    padding-bottom: 6rem;
+    padding-top: 9rem;
+    margin-right: 0;
+    background:#0c2550;
+  }
+
+  .firstPartBody{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .firstPart .subtitle {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 1rem;
+  }
+
+  .firstPart p span {
+    color: #c554a0;
+    font-weight: 600;
+  }
+
+  .firstPart h2 {
+    color: #fff;
+    letter-spacing: -0.04em;
+    font-size: 64px;
+    line-height: 64px;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    width: 50%;
+  }
+
+  .firstPart p {
+    width: 50%;
+    margin-top: 0.5rem;
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    line-height: 22px;
+    font-weight: 200;
+    margin-bottom: 2rem;
+  }
+
+  .firstPart .image {
+    height: 54vh;
+    width: 56%;
+    padding-left: 8rem;
+    padding-right: 0;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FStorie%20di%20talenti.png?alt=media&token=25dc28b1-df37-43ff-8bd0-934c02355d24);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -15%;
+    right: 0;
+    margin-right: 0;
+  }
+
   .titlePage {
     font-size: 40px;
     line-height: 44px;
-    color: #fff;
+    color: #000;
     font-weight: 800;
     margin-left: 11rem;
     margin-top: 3rem;
@@ -475,7 +658,7 @@ export default {
   .titlePage2 {
     font-size: 34px;
     line-height: 38px;
-    color: #0c2550;
+    color: #000;
     font-weight: 800;
     margin-left: 12.5rem;
     margin-top: 3rem;
@@ -578,7 +761,7 @@ export default {
     margin-left: 2rem;
     width: 40%;
     margin-right: 2rem;
-    color: #0c2550;
+    color: #000;
   }
 
   .firstTitle p {
@@ -600,7 +783,7 @@ export default {
   }
 
   .firstTitle h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 46px;
     line-height: 50px;
     font-weight: 700;
@@ -758,14 +941,14 @@ export default {
 
   .featuredContent {
     height: 100%;
-    width: 100%;
+    width: 84%;
     display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     position: relative;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .featuredContent.active {
@@ -776,8 +959,8 @@ export default {
   .featureds .titles {
     align-items: center;
     display: flex;
-    margin-left: 5rem;
-    margin-right: 3rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     margin-bottom: 2rem;
   }
 
@@ -791,7 +974,7 @@ export default {
   .featureds .titles h2 {
     font-size: 40px;
     line-height: 42px;
-    color: #fff;
+    color: #000;
     font-weight: 800;
     margin-top: 3rem;
     letter-spacing: -0.02em;
@@ -801,6 +984,7 @@ export default {
   .featureds .btnScrollR {
     width: fit-content;
     background: white;
+    border: 2px solid rgb(209, 209, 209);
     border-radius: 25rem;
     height: auto;
     z-index: 10;
@@ -813,6 +997,7 @@ export default {
     margin-right: 1rem;
     width: fit-content;
     background: #fff;
+    border: 2px solid rgb(209, 209, 209);
     border-radius: 25rem;
     height: auto;
     z-index: 10;
@@ -832,7 +1017,7 @@ export default {
       0 22px 17px rgb(0 0 0 / 2%) !important;
     background-size: cover;
     background-position: center;
-    width: 75vw;
+    width: 25vw;
     float: left;
     height: 11vw;
     position: relative;
@@ -903,7 +1088,7 @@ export default {
 
   .featureds .featured2 {
     border-radius: 30px;
-    background-color: #fff;
+    background-color: #0c2550;
     margin-right: 1rem;
     margin-left: 1rem;
     margin-bottom: 2rem;
@@ -912,7 +1097,7 @@ export default {
       0 22px 17px rgb(0 0 0 / 2%) !important;
     background-size: cover;
     background-position: center;
-    width: 75vw;
+    width: 25vw;
     float: left;
     height: 11vw;
     position: relative;
@@ -932,21 +1117,21 @@ export default {
   }
 
   .featured2 .info_story .username{
-    color: #0089cc;
+    color: #fff;
     font-size: 26px;
     line-height: 30px;
     font-weight: 700;
   }
 
   .featured2 .info_story .jobtitle{
-    color: #0089cc;
+    color: #fff;
     font-size: 18px;
     line-height: 22px;
     font-weight: 500;
   }
 
   .featured2 .info_story .text_preview{
-    color: #0089cc;
+    color: #fff;
     margin-top: 1rem;
     font-weight: 300;
     font-size: 16px;
@@ -1042,7 +1227,7 @@ export default {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #0c2550;
+    color: #000;
     font-size: 54px;
     font-weight: 800 !important;
     width: 60%;
@@ -1057,7 +1242,7 @@ export default {
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
-    color: #627597;
+    color: #000;
     padding-bottom: 2rem;
     width: 80%;
   }
@@ -1072,7 +1257,7 @@ export default {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #0c2550;
+    color: #000;
     font-size: 18px;
     font-weight: 500 !important;
     width: 40%;
@@ -1257,7 +1442,7 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback h3 {
-    color: #0c2550;
+    color: #000;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
@@ -1266,7 +1451,7 @@ export default {
   }
 
   .feedbackDiv .feedbacks .feedback .author {
-    color: #0c2550;
+    color: #000;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 22px;

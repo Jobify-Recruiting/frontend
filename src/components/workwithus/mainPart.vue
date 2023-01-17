@@ -486,7 +486,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   }
 
   .values h2 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 48px;
     line-height: 52px;
@@ -496,7 +496,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   .values .value1 {
     margin-right: 2rem;
     margin-top: 0.5rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
@@ -515,7 +515,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   .values .value2 {
     margin-right: 2rem;
     margin-top: 0.5rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
@@ -539,58 +539,6 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   .first {
     background: #fff;
   }
-
-  /*.firstPart {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    background: #0c2550;
-  }
-
-  .firstPartBody{
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-bottom: 15rem;
-    padding-top: 15rem;
-  }
-
-  .firstPart .subtitle {
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 4px;
-    font-size: 12px;
-    line-height: 12px;
-    margin-bottom: 1rem;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .firstPart h2 {
-    color: #fff;
-    letter-spacing: -0.04em;
-    font-size: 72px;
-    line-height: 76px;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .firstPart p {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0.5rem;
-    text-align: center;
-    color: #fff;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 200;
-  }*/
 
   .firstPart {
     text-align: left;
@@ -675,7 +623,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
 
   .cols .col p {
     text-transform: uppercase;
-    color: #0c2550;
+    color: #000;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -684,7 +632,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
 
   .cols .col h4 {
     text-transform: uppercase;
-    color: #0c2550;
+    color: #000;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -701,7 +649,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   }
 
   .cols .col h2 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 64px;
     line-height: 68px;
@@ -710,7 +658,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   }
 
   .cols .col h3 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;
@@ -719,7 +667,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   }
 
   .cols .col .subtitle {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
   }
@@ -807,7 +755,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   }
 
   .secondPart h2 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -818,7 +766,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   }
 
   .secondPart p {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;

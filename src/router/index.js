@@ -13,6 +13,7 @@ import searchResultView from "../views/searchResultView.vue";
 import article1View from "../views/article1View.vue";
 import article2View from "../views/article2View.vue";
 import BookView from "../views/BookView.vue"; 
+import colloquioView from "../views/colloquioView.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -93,6 +94,11 @@ const router = createRouter({
       path: "/book",
       name: "Book",
       component: BookView,
+    },
+    {
+      path: "/colloquio",
+      name: "Colloquio",
+      component: colloquioView,
     },
   ],
 });

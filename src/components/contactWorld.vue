@@ -979,7 +979,7 @@ export default {
 
   .cols .col p {
     text-transform: uppercase;
-    color: #0c2550;
+    color: #000;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -988,7 +988,7 @@ export default {
 
   .cols .col h4 {
     text-transform: uppercase;
-    color: #0c2550;
+    color: #000;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -1005,7 +1005,7 @@ export default {
   }
 
   .cols .col h2 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 56px;
     line-height: 65px;
@@ -1028,7 +1028,7 @@ export default {
   }
 
   .cols .col h3 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 28px;
     line-height: 32px;
@@ -1037,7 +1037,7 @@ export default {
   }
 
   .cols .col .subtitle {
-    color: #627597;
+    color: #000;
     font-size: 18px;
     line-height: 22px;
   }

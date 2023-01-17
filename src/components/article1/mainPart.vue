@@ -319,7 +319,7 @@ export default {
   .titlePage {
     font-size: 40px;
     line-height: 44px;
-    color: #0c2550;
+    color: #000;
     font-weight: 800;
     width: 70%;
     margin-left: 11rem;
@@ -330,7 +330,7 @@ export default {
   .dateDiv {
     font-size: 16px;
     line-height: 20px;
-    color: #0c2550;
+    color: #000;
     font-weight: 400;
     margin-left: 11rem;
     margin-top: 1rem;
@@ -357,7 +357,7 @@ export default {
   .article h3 {
     font-size: 28px;
     line-height: 32px;
-    color: #0c2550;
+    color: #000;
     font-weight: 800;
     padding-bottom: 1rem;
     letter-spacing: -0.02em;

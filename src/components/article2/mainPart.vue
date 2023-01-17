@@ -152,7 +152,7 @@ export default {
 .dateDiv_article{
   font-size: 16px;
     line-height: 20px;
-    color: #0c2550;
+    color: #000;
     font-weight: 600;
     margin-left: 11rem;
     margin-top: 1rem;
@@ -219,14 +219,8 @@ html{
   .first {
     padding-top: 5rem;
     background: #ada996;
-    background: -webkit-linear-gradient(
-      to right,
-      #eaeaea,
-      #dbdbdb,
-      #f2f2f2,
-      #ada996
-    );
-    background: linear-gradient(to top, #eaeaea, #dbdbdb, #f2f2f2, #96a0ad);
+    background: -webkit-linear-gradient(to top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #0089cc);
+    background: linear-gradient(to top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #0089cc);
     padding-left: 6rem;
     padding-right: 6rem;
     padding-bottom: 4rem;
@@ -246,7 +240,7 @@ html{
   .titlePage {
     font-size: 40px;
     line-height: 44px;
-    color: #0c2550;
+    color: #000;
     font-weight: 800;
     width: 70%;
     margin-left: 11rem;
@@ -257,7 +251,7 @@ html{
   .dateDiv {
     font-size: 16px;
     line-height: 20px;
-    color: #0c2550;
+    color: #000;
     font-weight: 300;
     margin-left: 11rem;
     margin-top: 1rem;
@@ -289,7 +283,7 @@ html{
   h3 {
     font-size: 28px;
     line-height: 32px;
-    color: #0c2550;
+    color: #000;
     font-weight: 800;
     padding-bottom: 1rem;
     letter-spacing: -0.02em;

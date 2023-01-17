@@ -581,7 +581,7 @@ export default {
   }
 
   .first p {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 60%;
     margin-left: auto;
@@ -795,7 +795,7 @@ export default {
   }
 
   .third .cols .col-sx p {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400 !important;
@@ -865,7 +865,7 @@ export default {
   }
 
   .fourth .cols .col-sx p {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400 !important;
@@ -953,7 +953,7 @@ export default {
   }
 
   .fifth .col-sx p {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400 !important;
@@ -1013,7 +1013,7 @@ export default {
   }
 
   .quotes .col1 p {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400 !important;
@@ -1040,7 +1040,7 @@ export default {
   }
 
   .quotes .col2 p {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400 !important;
@@ -1063,7 +1063,7 @@ export default {
   }
 
   .quotes .col3 p {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400 !important;
@@ -1089,7 +1089,7 @@ export default {
   }
 
   .sixth p {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 60%;
     margin-left: auto;
@@ -1231,7 +1231,7 @@ export default {
   .card-body {
     font-size: 16px !important;
     line-height: 20px !important;
-    color: #627597;
+    color: #000;
   }
 
   code {

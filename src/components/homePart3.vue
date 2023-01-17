@@ -59,7 +59,7 @@ export default {
 @media (min-width: 1024px) {
   .divPart3 {
     width: 100%;
-    background-color: #0c2550;
+    background-color: #000;
     height: 100%;
   }
 

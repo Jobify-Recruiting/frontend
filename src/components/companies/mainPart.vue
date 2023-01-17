@@ -280,6 +280,11 @@ professionali e si riflette nella cultura aziendale</p>
               <div class="subtitle">Costi azienda</div>
               <p>di turnover grazie alla capacità di Jobify Recruiting di creare il match perfetto tra talento e azienda</p>
             </div>
+            <div class="number transition">
+              <h3>+20%</h3>
+              <div class="subtitle">Aumento delle performance</div>
+              <p>La risorsa che condivide valori e ideali dell'azienda, ma anche il modo di lavorare e le aspettative professionali è una risorsa più produttiva.</p>
+            </div>
           </div>
         </div>
 
@@ -2055,7 +2060,7 @@ appuntamento con Jobify Recruiting.
   }
   .cols .col p {
     text-transform: uppercase;
-    color: #0c2550;
+    color: #000;
     letter-spacing: 3px;
     font-size: 12px;
     line-height: 12px;
@@ -2081,7 +2086,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .cols .col h2 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 56px;
     line-height: 65px;
@@ -2113,7 +2118,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .cols .col .subtitle {
-    color: #627597;
+    color: #000;
     font-size: 18px;
     line-height: 22px;
   }
@@ -2124,7 +2129,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .secondPart h2 {
-    color: #0c2550;
+    color: #000;
     letter-spacing: -0.04em;
     font-size: 60px;
     line-height: 64px;
@@ -2147,7 +2152,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .secondPart .text {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
@@ -2262,7 +2267,7 @@ appuntamento con Jobify Recruiting.
 
   .workflow .workflowTitle p{
     margin-top: 1rem;
-    color: #627597;
+    color: #000;
     font-size: 20px;
     width: 70%;
     margin-left: auto;
@@ -2363,7 +2368,7 @@ appuntamento con Jobify Recruiting.
     -webkit-text-fill-color: transparent;
     -webkit-box-decoration-break: clone;
     letter-spacing: -0.04em !important;
-    color: #0c2550;
+    color: #000;
     font-size: 74px;
     font-weight: 700 !important;
     line-height: 78px;
@@ -2431,7 +2436,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .partnersPart .col1 p {
-    color: #627597;
+    color: #000;
     font-size: 20px;
     text-align: left;
     line-height: 24px;
@@ -2480,7 +2485,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .clientsCoLink h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 56px;
     font-weight: 500;
     line-height: 56px;
@@ -2501,7 +2506,7 @@ appuntamento con Jobify Recruiting.
   .clientsCoLink p {
     width: fit-content;
     margin-left: 6rem;
-    color: #0c2550;
+    color: #000;
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
@@ -2591,7 +2596,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .numbersDiv h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 56px;
     line-height: 56px;
     font-weight: 500;
@@ -2649,7 +2654,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .number p {
-    color: #627597;
+    color: #000;
     font-size: 16px;
     line-height: 20px;
   }
@@ -2672,7 +2677,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .secondPart2 .title p {
-    color: #627597;
+    color: #000;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
@@ -2750,7 +2755,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .step .text {
-    color: #627597;
+    color: #000;
     font-size: 18px;
     line-height: 22px;
     font-weight: 400;
@@ -2817,7 +2822,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .feedbackDiv h2 {
-    color: #0c2550;
+    color: #000;
     font-size: 64px;
     font-weight: 800 !important;
     text-align: center;
@@ -2912,7 +2917,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .feedbackDiv .feedbacks .feedback h3 {
-    color: #0c2550;
+    color: #000;
     font-weight: 300;
     font-size: 20px;
     line-height: 24px;
@@ -2921,7 +2926,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .feedbackDiv .feedbacks .feedback .author {
-    color: #0c2550;
+    color: #000;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 22px;
@@ -2977,7 +2982,7 @@ appuntamento con Jobify Recruiting.
   }
 
   .thirdPartDiv .first h2 {
-    color: #0c2550;
+    color: #000;
     width: 80%;
     font-size: 54px;
     line-height: 58px;
@@ -3003,7 +3008,7 @@ appuntamento con Jobify Recruiting.
 
   .thirdPartDiv .first p {
     width: 60%;
-    color: #627597;
+    color: #000;
     font-size: 18px;
     line-height: 22px;
     font-weight: 300;
@@ -3159,7 +3164,7 @@ appuntamento con Jobify Recruiting.
   .card-body {
     font-size: 16px !important;
     line-height: 20px !important;
-    color: #627597;
+    color: #000;
   }
 
   code {
