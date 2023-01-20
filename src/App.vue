@@ -98,6 +98,9 @@ export default {
           <router-link to="/journal"
             ><div class="link">Journal</div></router-link
           >
+          <router-link to="/stories"
+            ><div class="link">Storie</div></router-link
+          >
         </div>
         <div class="left">
           <!-- @click="call_btn()" -->
