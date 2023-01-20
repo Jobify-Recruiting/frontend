@@ -1536,7 +1536,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                     v-model="email1"
                   />
                 </div>-->
-                <a href="https://www.linkedin.com/newsletters/jobify-recruiting-newsletter-6967759642458251264/">
+                <a href="https://www.linkedin.com/newsletters/jobify-recruiting-newsletter-6967759642458251264/" target="blank">
                   <button class="btn">Iscriviti alla newsletter</button>
                 </a>
               </div>

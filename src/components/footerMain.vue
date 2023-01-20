@@ -105,7 +105,7 @@ export default {
               v-model="email1"
             />
           </div>-->
-            <a href="https://www.linkedin.com/newsletters/jobify-recruiting-newsletter-6967759642458251264/">
+            <a href="https://www.linkedin.com/newsletters/jobify-recruiting-newsletter-6967759642458251264/" target="blank">
               <button class="btn">Iscriviti alla newsletter</button>
             </a>
         </div>
@@ -159,14 +159,16 @@ export default {
       </div>
       <div class="col">
         <div class="title">Associati</div>
-        <router-link to="/contact"> 
+        <a href="https://www.aidp.it/" target="blank"> 
           <div class="link">
             <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FAIDP-logo.png?alt=media&token=7818036f-5aeb-4961-a536-5c0497eabc6c" />
           </div>
+        </a>
+        <a href="https://www.assolombarda.it/" target="blank"> 
           <div class="link">
             <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fassolombarda.png?alt=media&token=d0f6b530-9bc3-4829-a9ad-75b8a3a5b9e7" />
           </div>
-        </router-link>
+        </a>
       </div>
     </div>
     <div class="bottom">
