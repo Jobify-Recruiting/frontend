@@ -314,54 +314,55 @@ export default {
             </div>
             <h3><span>Gli strumenti</span><br> che mettiamo a tua disposizione</h3>
             <div class="second">
-              
-              <div class="feature">
-                <div
-                  class="img_feature"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/curriculum.jpg);
-                  "
-                ></div>
-                  <div class="feature_text">
-                    <h2>Il Curriculum Vitae</h2>
-                    <p>
-                      Creare un CV efficace non è semplice e per questo nella ricerca del tuo prossimo lavoro puoi affidarti a
+
+              <div class="card">
+                <img class="card-img-top" src="https://thingsss.s3.eu-central-1.amazonaws.com/curriculum.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Il Curriculum Vitae</h5>
+                  <p class="card-text">
+                    Creare un CV efficace non è semplice e per questo nella ricerca del tuo prossimo lavoro puoi affidarti a
                       Jobify Recruiting. Troverai un team che sa tradurre le tue competenze e i tuoi talenti in un documento
                       professionale con cui presentarti alle aziende.
-                    </p>
-                    <a href="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/documenti_template%2FTemplate%20CV%20.docx?alt=media&token=f02bcd04-aeb7-4fbc-b61b-f7de0cbfcfcc" download><div class="btn3">Scarica</div></a>
+                  </p>
+                </div>
+                  <div class="card-buttons">
+                    <a href="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/documenti_template%2FTemplate%20CV%20.docx?alt=media&token=f02bcd04-aeb7-4fbc-b61b-f7de0cbfcfcc" class="btn3">
+                      <div class="btn3">Scarica</div>
+                    </a>
                   </div>
               </div>
-              <div class="feature">
-                <div
-                  class="img_feature"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/colloquio.jpg);
-                  "
-                ></div>
-                <div class="feature_text">
-                  <h2>Il colloquio</h2>
-                  <p>
+
+              <div class="card">
+                <img class="card-img-top" src="https://thingsss.s3.eu-central-1.amazonaws.com/colloquio.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Il colloquio</h5>
+                  <p class="card-text">
                     Approcciarsi correttamente al colloquio di lavoro non è per nulla semplice e per questo noi di Jobify Recruiting abbiamo deciso di darti alcuni consigli per arrivare preparati all’incontro con l’azienda e con il responsabile risorse umane.
                   </p>
-                  <router-link to="/colloquio"><div class="btn3">Scopri di più</div></router-link>
                 </div>
+                  <div class="card-buttons">
+                    <router-link to="/colloquio" class="btn3">
+                      <div class="btn3">Scopri di più</div>
+                    </router-link>
+                  </div>
+                
               </div>
-              <div class="feature">
-                <div
-                  class="img_feature"
-                  style="
-                    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/lettera.jpg);
-                  "
-                ></div>
-                <div class="feature_text">
-                  <h2>La lettera di presentazione</h2>
-                  <p>
+
+              <div class="card">
+                <img class="card-img-top" src="https://thingsss.s3.eu-central-1.amazonaws.com/colloquio.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">La lettera di presentazione</h5>
+                  <p class="card-text">
                     Le aziende non amano lettere di presentazione standardizzate e semplici copia e incolla inviati in massa.
                     Una lettera di presentazione efficace è centrata sulla posizione e sull’azienda per cui ci si candida e
                     prepararla è sicuramente più semplice se si può contare sul supporto di Jobify Recruiting.
                   </p>
-                  <a href="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/documenti_template%2FLettera%20motivazionale%20-%20Template.docx?alt=media&token=cd248b19-cbaf-449b-8105-ae9cccf09dde" download><div class="btn3">Scarica</div></a>
+                    
+                </div>
+                <div class="card-buttons">
+                  <a href="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/documenti_template%2FLettera%20motivazionale%20-%20Template.docx?alt=media&token=cd248b19-cbaf-449b-8105-ae9cccf09dde" download class="btn3">
+                      <div class="btn3">Scarica</div>
+                    </a>
                 </div>
               </div>
             </div>
@@ -1128,13 +1129,54 @@ export default {
     display: flex;
   }
 
-  .second .feature {
+  .second .card {
     width: 35%;
     margin-right: 3rem;
     background: #fff;
     border: 2px solid #80808038;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-    border-radius: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .card .card-img-top{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+  }
+
+  .card .card-body{
+    background-color: #0089cc;
+  }
+
+  .card .card-buttons{
+    background-color: #0089cc;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .card .card-title{
+    color: #fff;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+  }
+
+  .card .card-text{
+    color: #fff;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
   }
 
   .second .feature .img_feature {
@@ -1174,7 +1216,7 @@ export default {
     font-weight: 400;
   }
 
-  .second .feature .btn3 {
+  .second .btn3{
     color: #fff;
     cursor: pointer;
     padding-bottom: 0.1rem;

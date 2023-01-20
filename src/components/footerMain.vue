@@ -95,7 +95,7 @@ export default {
         <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2FLogo%20Jobify%20versioni%20estese_Tavola%20disegno%201%20copia%2010.png?alt=media&token=baed9f0b-c891-4524-9635-60e4ea397134" />
         <div class="title2">Iscriviti alla newsletter</div>
         <div class="divInput">
-          <div class="input">
+          <!--<div class="input">
             <input
               id="nav"
               class="input"
@@ -104,16 +104,18 @@ export default {
               name="email1" 
               v-model="email1"
             />
-          </div>
-            <button class="btn" @click="registerNewsletter()">Iscriviti</button>
+          </div>-->
+            <a href="https://www.linkedin.com/newsletters/jobify-recruiting-newsletter-6967759642458251264/">
+              <button class="btn">Iscriviti alla newsletter</button>
+            </a>
         </div>
-        <div class="checkbox">
+        <!--<div class="checkbox">
           <input type="checkbox" />
           <p>
             Accetto i
             <a href="https://www.iubenda.com/termini-e-condizioni/18605079" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe " title="Termini e Condizioni ">Termini e Condizioni</a>
           </p>
-        </div>
+        </div>-->
       </div>
       <div class="col">
         <div class="title">Servizi</div>
@@ -155,6 +157,17 @@ export default {
         <div class="title">Sedi</div>
         <router-link to="/contact"> <div class="link">Milano</div></router-link>
       </div>
+      <div class="col">
+        <div class="title">Associati</div>
+        <router-link to="/contact"> 
+          <div class="link">
+            <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FAIDP-logo.png?alt=media&token=7818036f-5aeb-4961-a536-5c0497eabc6c" />
+          </div>
+          <div class="link">
+            <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fassolombarda.png?alt=media&token=d0f6b530-9bc3-4829-a9ad-75b8a3a5b9e7" />
+          </div>
+        </router-link>
+      </div>
     </div>
     <div class="bottom">
       <div class="left">
@@ -185,6 +198,15 @@ export default {
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
               <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
             </svg>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="bottom_signed">
+      <div class="left">
+        <a href="">
+          <div class="link">
+            Website made by Miutifin Project
           </div>
         </a>
       </div>
@@ -331,8 +353,13 @@ export default {
     color: #fff;
   }
 
+  .link img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
   .footer .bottom {
-    padding-bottom: 4rem;
+    padding-bottom: 0.5rem;
     padding-top: 2rem;
     margin-left: 5rem;
     margin-right: 5rem;
@@ -352,6 +379,24 @@ export default {
   }
 
   .bottom .link {
+    margin-right: 2rem;
+    color: rgb(199, 199, 199);
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    font-size: 12px;
+  }
+
+  .footer .bottom_signed {
+    padding-bottom: 4rem;
+    padding-top: 0rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .bottom_signed .link {
     margin-right: 2rem;
     color: rgb(199, 199, 199);
     font-weight: 400;
@@ -399,6 +444,10 @@ export default {
     border-color: #0062f5;
   }
 
+  a:hover{
+    text-decoration: unset;
+  }
+
   .btn {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -412,7 +461,7 @@ export default {
     color: #ffffff;
     line-height: 18px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.5px;
     cursor: pointer;

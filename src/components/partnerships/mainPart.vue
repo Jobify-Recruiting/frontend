@@ -184,6 +184,7 @@ successo suo e nostro.
             <div class="partnersImgs">
               <a
                 href="https://studiofelli.com/"
+                target="blank"
                 class="partnerImg transition"
                 style="
                   left: 31%;
@@ -196,6 +197,7 @@ successo suo e nostro.
 
               <a
                 href="https://www.value4you.it/"
+                target="blank"
                 class="partnerImg transition"
                 style="
                   right: 16%;
@@ -208,6 +210,7 @@ successo suo e nostro.
 
               <a
                 href="https://www.uniroma1.it/it/pagina-strutturale/home"
+                target="blank"
                 class="partnerImg transition"
                 style="
                   right: 32%;
@@ -220,6 +223,7 @@ successo suo e nostro.
 
               <a
                 href="https://it.talent.com/"
+                target="blank"
                 class="partnerImg transition"
                 style="
                   right: 18%;
@@ -232,11 +236,12 @@ successo suo e nostro.
 
               <a
                 href="https://www.aidp.it/gruppo/lazio.php"
+                target="blank"
                 class="partnerImg"
                 style="
                   right: 45%;
                   top: 94%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo5.png);
+                  background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Flogo5.png?alt=media&token=a3a5026a-ec46-420a-81e9-abc97e134f6f);
                 "
               >
                 <div class="" style=""></div>
@@ -244,6 +249,7 @@ successo suo e nostro.
 
               <a
                 href="https://www.in-recruiting.com/it/"
+                target="blank"
                 class="partnerImg"
                 style="
                   top: 60%;
@@ -255,6 +261,7 @@ successo suo e nostro.
 
               <a
                 href="https://www.up-communication.com/"
+                target="blank"
                 class="partnerImg transition"
                 style="
                   left: 13%;
@@ -279,11 +286,11 @@ successo suo e nostro.
                     width: 40% !important;
                     margin-left: auto;
                     margin-right: auto;
-                    color: #627597 !important;
+                    color: #000 !important;
                   "
                 >
                 Pochi partner di qualità eccellente: è questo il modo di lavorare di Jobify Recruiting, l’agenzia di head
-hunting fatta dalle persone per le persone.
+                hunting fatta dalle persone per le persone.
                 </p>
               </div>
             </div>

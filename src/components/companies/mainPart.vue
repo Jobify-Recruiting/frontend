@@ -310,11 +310,11 @@ professionali e si riflette nella cultura aziendale</p>
                   Jobify Recruiting è molto diversa dalle agenzie di ricerca personale. Siamo una società di Head Hunting che
                   utilizza un metodo scientifico con un approccio consulenziale. Il processo di selezione è umano e studiato
                   nei minimi dettagli per prendere decisioni in modo consapevole poiché tutti i nostri processi di ricerca e 
-                  selezione sono misurati è supportato da dati scientifici “ e trasparenti in quanto condividiamo costantemente 
+                  selezione sono <span>misurati è supportato da dati scientifici “ e trasparenti</span> in quanto condividiamo costantemente 
                   questi dati con le aziende e questo ci consente di lavorare in perfetta sinergia con le aziende e trasparente 
-                  al fine di lavorare in perfetta sinergia con l’azienda. Per questo il nostro metodo di ricerca talenti si basa su: Interviste all’azienda per
+                  al fine di lavorare in perfetta sinergia con l’azienda. Per questo il nostro metodo di ricerca talenti si basa su: <span>Interviste all’azienda</span> per
                   comprendere e approfondire la cultura aziendale, il clima aziendale, l&#39;organigramma ed il funzionigramma,
-                  oltre al riporto diretto della risorsa da inserire, Interviste al candidato per comprendere ed approfondire i
+                  oltre al riporto diretto della risorsa da inserire, <span>Interviste al candidato</span> per comprendere ed approfondire i
                   valori e le aspettative dal punto di vista professionale.
                 </p>
 

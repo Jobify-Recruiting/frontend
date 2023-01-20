@@ -190,7 +190,7 @@ export default {
               </p>
 
               <div class="mainButton">
-                <a href="#whyJobify"
+                <a href="#form"
                   ><button class="btn">
                     Scopri di più
                     <span>
@@ -248,7 +248,7 @@ export default {
           </div>
         </div>
 
-        <div class="cols">
+        <div class="cols" id="form">
           <div class="col col_1">
             <p>Lavora con noi</p>
             <h2>Cerchiamo talenti per creare il futuro</h2>

@@ -94,8 +94,9 @@ export default {
       </b>
     </div>
     <h2>
-      In Jobify Recruiting digitalizziamo e umanizziamo il processo di Ricerca &amp; Selezione mettendo a disposizione
-      delle aziende i nostri Head Hunter e i migliori strumenti di Intelligenza Artificiale ed HR Tech. Questo ci
+      In jobify recruiting non ci limitiamo a valutare il talento soltanto attraverso il cv e 
+          quindi valutando hard e soft skills, ma prendiamo in considerazione anche i valori e 
+          le aspettative professionali del candidato e la cultura aziendale della società. Questo ci
       permette di essere consulenziali, competitivi, scientifici, umani e rapidi.
     </h2>
     <div class="" style="display: flex; align-items: center">

@@ -295,7 +295,7 @@ export default {
                 },
                 {
                   date: "24 Mag 2022",
-                  title: "La ricerca e selezione nell’era digitale con A.I.",
+                  title: "La ricerca e selezione nell’...",
                   img: "https://www.risorseumane-hr.it/wp-content/uploads/2022/05/La-ricerca-e-selezione-nellera-digitale-1020x480.jpg",
                   subtitle: "Le attività di ricerca di selezione del personale rappresentano uno dei momenti più complessi ...",
                 },
@@ -504,6 +504,20 @@ export default {
                   text: "<img src=\"https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/gestione_del_personale.png?alt=media&token=3fdf983f-1bbb-4db2-adda-92be5a423592\" width=\"100%\" height=\"100%\"/>",
                 },
               ],
+              pubblicazioni_online: [
+                {
+                  date: "30 Dic 2022",
+                  title: "Trend 2023 ricerca e selezione ...",
+                  img: "https://www.biancolavoro.it/wp-content/uploads/2022/12/unnamed-1024x576.png",
+                  subtitle: "Vediamo come è cambiato il mondo della ricerca e selezione del ... ",
+                },
+                {
+                  date: "10 Ott 2023",
+                  title: "Pandemia e nuove tecnologie: ...",
+                  img: "https://www.risorseumane-hr.it/wp-content/uploads/2023/01/Pandemia-e-nuove-tecnologie-come-e-cambiato-il-modo-di-fare-recruiting-1020x480.jpg",
+                  subtitle: " modo di fare recruiting è stato profondamente influenzato ...",
+                },
+              ],
       sections:[
         {
           name: "biancolavoro",
@@ -555,8 +569,8 @@ export default {
       }
     }
 
-    //window.addEventListener("scroll", reveal);
-    //window.scrollTo({ top: 0, behavior: "smooth" });
+    window.addEventListener("scroll", reveal);
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
     let content = document.querySelector(".menu");
     content.style.width = "0%";
@@ -669,6 +683,18 @@ export default {
         console.log(this.sections[i].name + " " +this.sections[i].active);
         break;
       }
+    }
+
+    for (let i = 0; i < this.pubblicazioni_online.length; i++) {
+
+      var title = document.getElementById("titlePO"+i);
+      title.textContent = this.pubblicazioni_online[i].title;
+
+      var subtitle = document.getElementById("subtitlePO"+i);
+      subtitle.textContent = this.pubblicazioni_online[i].subtitle;
+
+      var image = document.getElementById("imagePO"+i);
+      image.style.backgroundImage = "url('"+this.pubblicazioni_online[i].img +"')";
     }
   },
   methods: {
@@ -1305,6 +1331,28 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                       <div class="subtitle" id="subtitleA29"></div>
                     </div>
                   </a>
+                  <a href="https://www.biancolavoro.it/trend-2023-ricerca-e-selezione-del-personale-dal-professionista-alla-persona/" target="blank">
+                    <div class="article">
+                      <div class="image" id="imagePO0">
+                        <div class="hover"></div>
+                        <div class="date" id="datePO0"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titlePO0"></div>
+                      <div class="subtitle" id="subtitlePO0"></div>
+                    </div>
+                  </a>
+                  <a href="https://www.risorseumane-hr.it/pandemia-nuove-tecnologie-come-fare-recruiting/" target="blank">
+                    <div class="article">
+                      <div class="image" id="imagePO1">
+                        <div class="hover"></div>
+                        <div class="date" id="datePO1"></div>
+                      </div>
+                      <div class="desctitle">Articolo</div>
+                      <div class="title" id="titlePO1"></div>
+                      <div class="subtitle" id="subtitlePO1"></div>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1478,7 +1526,7 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                 <span>Iscriviti alla newsletter</span>
               </h3>
               <div class="divInput">
-                <div class="input">
+                <!--<div class="input">
                   <input
                     id="nav"
                     class="input"
@@ -1487,7 +1535,10 @@ appuntamento se sei un’azienda che cerca persone o una persona che cerca azien
                     name="email1" 
                     v-model="email1"
                   />
-                </div><button class="btn" @click="registerNewsletter()">Iscriviti</button>
+                </div>-->
+                <a href="https://www.linkedin.com/newsletters/jobify-recruiting-newsletter-6967759642458251264/">
+                  <button class="btn">Iscriviti alla newsletter</button>
+                </a>
               </div>
               <div class="checkbox">
                 <input type="checkbox" />

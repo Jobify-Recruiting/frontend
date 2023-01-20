@@ -77,9 +77,17 @@ export default {
   },
   mounted() {
     axios
-      .get('https://inrecruiting.intervieweb.it/annunci.php?lang=en&LAC=jobconsultinghr&d=jobifyrecruiting.netlify.app&k=fd7a2de73e6faba23a23ea947913431c&format=json_en&utype=0')
+      .get('https://inrecruiting.intervieweb.it/annunci.php?lang=it&LAC=jobconsultinghr&d=jobifyrecruiting.netlify.app&k=fd7a2de73e6faba23a23ea947913431c&format=json_en&utype=0')
       .then((response) => {
-        this.jobs = response.data
+        let x = response.data
+
+        let datax = x.sort((a, b) => {
+            if (a.published > b.published) {
+              return -1;
+            }
+          });
+
+        this.jobs = datax
         this.jobs_lenght = response.data.length
       })
 
@@ -416,71 +424,60 @@ export default {
               </li>
             </ul>
           </div>-->
-          <div class="filters_jobs">
-            <div class="filter_category filter_job">
-              <h3>Categorie</h3>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Categoria</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div class="industry_category filter_job">
-              <h3>Industria</h3>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Industria</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div class="city_category filter_job">
-              <h3>Città</h3>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Città</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div class="date_category filter_job">
-              <h3>Data</h3>
-              <select class="form-select" aria-label="Default select example">
-                <option selected>Data</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-            </div>
-
-            <div class="contract_category filter_job">
-              <h3>Tipo di contratto</h3>
-              <div class="checkbox">
-                <input class="" type="checkbox" value="" id="tempo_indeterminato">
-                <label class="form-check-label" for="tempo_indeterminato" style="margin-left: 0.5rem;">
-                  Tempo indeterminato
-                </label>
-              </div>
-
-              <div class="checkbox">
-                <input class="" type="checkbox" value="" id="tempo_determinato">
-                <label class="form-check-label" for="tempo_determinato" style="margin-left: 0.5rem;">
-                  Tempo determinato
-                </label>
-              </div>
-              
-            </div>
-          </div>
+          
           <div class="tab-content">
               <div class="tab_header">
                 <div class="results">
                   {{ jobs_lenght }} risultati
                 </div>
-                <div class="sort_by">
+                
+              </div>
+              <div class="filters_jobs">
+                  <div class="filter_category filter_job">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Categorie</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="industry_category filter_job">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Industrie</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="city_category filter_job">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Città</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="date_category filter_job">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Data</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+
+                  <div class="contract_category filter_job">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Tipo di contratto</option>
+                      <option value="1">Tempo indeterminato</option>
+                      <option value="2">Tempo determinato</option>
+                    </select>
+                  </div>
+
+                  <div class="sort_by">
                   <select class="form-select" aria-label="Default select example">
                     <option selected>Ordina per</option>
                     <option value="1">One</option>
@@ -488,43 +485,38 @@ export default {
                     <option value="3">Three</option>
                   </select>
                 </div>
-              </div>    
+                </div>    
               <div id="Farm" class="tab-pane in active jobs">
-                <div
+                  <div
                     v-for="job in jobs"
-                    class="currency"
+                    class="card"
                     v-bind:key="job"
                   >
-                  <div class="job">
-                  <div class="head">
-                    <div class="title">{{ job.title }}</div>
-                  </div>
-                  <div class="info">
-                    <div class="subtitle">Specifiche</div>
-                    <div class="specs">
-                      <div class="spec1">
-                        <div class="spec1_title">Città</div>
-                        <div class="spec1_text">{{ job.city }}</div>
+                      <div class="card-body">
+                        <h5 class="card-title">{{ job.title }}</h5>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2c3e50" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                                      </svg> {{ job.city }}</li>
+                          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2c3e50" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                                        <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
+                                                      </svg>{{ job.function }}</li>
+                          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2c3e50" class="bi bi-clock" viewBox="0 0 16 16">
+                                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                                      </svg>{{ job.contract_type }}</li>
+                          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2c3e50" class="bi bi-building" viewBox="0 0 16 16">
+                                                        <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
+                                                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"/>
+                                                      </svg>{{ job.industry }}</li>
+                        </ul>
                       </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Contratto</div>
-                        <div class="spec1_text">{{ job.contract_type }}</div>
+                      <div class="card-buttons">
+                        <div class="card-body">
+                          <a :href=job.url class="card-link btn">Vedi offerta</a>
+                        </div>
                       </div>
-                      <div class="spec1">
-                        <div class="spec1_title">Industria</div>
-                        <div class="spec1_text">{{ job.industry }}</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="desc">
-                    <div class="description">{{ job.function }}</div>
-                  </div>
-                  <div class="link">
-                    <a :href=job.url>
-                      <div class="btn">Vedi l'offerta</div>
-                    </a>
-                  </div>
-                  </div>
                   </div>
               </div>
               <div id="Farm" class="tab-pane fade">
@@ -3095,9 +3087,21 @@ sviluppare in azienda.
   }
 
   .filter_job{
-    margin-bottom: 1.5rem;
     padding-bottom: 1.5rem;
-    border-bottom:1px solid #efefef;
+    
+  }
+
+  .filters_jobs{
+    display: flex;
+    width: 100%;
+    position: sticky;
+    top: 76px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.677);
+    backdrop-filter: blur(12px);
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .filters_jobs h3{
@@ -3111,10 +3115,23 @@ sviluppare in azienda.
   select{
     padding: 0.5rem;
     border-radius: 10px;
-    background: #f7fbfb;
-    border: 2px solid #d1d1d1;
+    background: #ffffff00;
+    border: none;
     font-weight: 500;
     color: #2c3e50;
+    cursor: pointer;
+  }
+
+  select:focus{
+    border: none;
+  }
+
+  select:visited{
+    border: none;
+  }
+
+  .filter_job select{
+    margin-right: 5rem;
   }
 
   .filters_jobs .checkbox{
@@ -3139,6 +3156,7 @@ sviluppare in azienda.
 
   .tab_header .results{
     width: fit-content;
+    font-size: 20px;
   }
 
   .tab_header .sort_by{
@@ -3155,16 +3173,65 @@ sviluppare in azienda.
     padding-left: 3rem;
     padding-right: 3rem;
     margin-bottom: 5rem;
-    width: 77vw;
+    display: grid;
+    grid-template-columns: repeat(3, calc((18/58) * 100%));
+  }
+
+  .jobs .card{
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    border-radius: 15px;
+    transition: 0.3s all;
+  }
+
+  .jobs .card:hover{
+    border-color:#027bfd
+  }
+
+  .card .card-body{
+    padding: 0;
+  }
+
+  .card .card-title{
+    padding: 2rem;
+    font-size: 28px;
+    line-height: 32px;
+    color: #000;
+    font-weight: 700;
+    padding-bottom: 0;
+  }
+
+  .card ul li{
+    border: none;
+    padding-left: 2rem;
+    align-items: center;
+    display: flex;
+  }
+
+  .card ul li svg{
+    margin-right: 0.5rem;
+  }
+
+  .card .card-buttons{
+    padding: 2rem;
   }
 
   .job{
     width: 22vw;
-    background: #fff;
-    border:2px solid #efefef;
-    border-radius: 20px;
+    background: #027bfd;
+    border-radius: 30px;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    position: relative;
+    min-height: 100%;
+  }
+
+  .job .head{
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-bottom: 1rem;
+    border: 2px solid #efefef;
   }
 
   .job .title{
@@ -3186,8 +3253,12 @@ sviluppare in azienda.
     padding: 0 5px;
   }*/
 
+  
+  .job .job_body{
+    bottom: 0;
+  }
+
   .info{
-    margin-top: 1rem;
     background: #027bfd;
     padding-top: 1rem;
     padding-bottom: 0.5rem;

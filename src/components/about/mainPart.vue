@@ -20,7 +20,7 @@ export default {
                 {
                   nickname: "Martina Di Palma",
                   ruolo: "Head Hunter",
-                  storia_testo: "Giovane ma competente Head Hunter ha 1 anno di esperienza in Ricerca e Selezione del personale. La sua formazione comprende un European Bachelor of Science in Design (majoring in Fashion Business) e Master in HR.",
+                  storia_testo: "Giovane ma competente Head Hunter ha 2 anno di esperienza in Ricerca e Selezione del personale. La sua formazione comprende un European Bachelor of Science in Design (majoring in Fashion Business) e Master in HR.",
                 },
                 {
                   nickname: "Cecilia Dondi",
@@ -418,7 +418,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
 }
 
 .bold.active {
-  color: #627597 !important;
+  color: #000 !important;
   opacity: 1;
 }
 

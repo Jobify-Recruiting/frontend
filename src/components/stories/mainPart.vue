@@ -281,7 +281,7 @@ export default {
                 Il compito di Jobify
           Recruiting è proprio questo: creare il match perfetto tra persona e azienda, talento e impresa per collocare
           le persone giuste al posto giusto. Un compito che da sempre svolgiamo con la massima cura e attenzione
-          come testimoniano le storie dei talenti che abbiamo raccolto in questa pagina.
+          come testimoniano <span>le storie dei talenti che abbiamo raccolto in questa pagina.</span>
           Perché nessuna persona è priva di talento e ciascuno può e deve trovare l’azienda capace di valorizzarlo.
               </p>
 
