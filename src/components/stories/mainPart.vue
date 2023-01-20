@@ -358,9 +358,9 @@ export default {
               </div>
             </div>
             <div class="featuredContent">
-              <div class="featured" @click="story(1)">
+              <div class="featured" @click="story(1)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
                 <div class="hover"></div>
-                <div class="text"><h2></h2>
+                <!--<div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
@@ -371,11 +371,11 @@ export default {
                     L’approccio umano è stato una componente fondamentale di tutto il processo...
                     <span>Leggi di più</span>
                   </div>
-                </div>
+                </div>-->
               </div>
-              <div class="featured2" @click="story(2)">
+              <div class="featured2" @click="story(2)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
                 <div class="hover"></div>
-                <div class="text"><h2></h2>
+                <!--<div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
@@ -386,11 +386,11 @@ export default {
                     Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito...
                     <span>Leggi di più</span>
                   </div>
-                </div>
+                </div>-->
               </div>
-              <div class="featured" @click="story(3)">
+              <div class="featured" @click="story(3)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
                 <div class="hover"></div>
-                <div class="text"><h2></h2>
+                <!--<div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
@@ -401,11 +401,11 @@ export default {
                     Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia...
                     <span>Leggi di più</span>
                   </div>
-                </div>
+                </div>-->
               </div>
-              <div class="featured2" @click="story(4)">
+              <div class="featured2" @click="story(4)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
                 <div class="hover"></div>
-                <div class="text"><h2></h2>
+                <!--<div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
@@ -416,11 +416,11 @@ export default {
                     Rispetto alle agenzie di recruiting sono spesso stata molto diffidente...
                     <span>Leggi di più</span>
                   </div>
-                </div>
+                </div>-->
               </div>
-              <div class="featured" @click="story(5)">
+              <div class="featured" @click="story(5)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
                 <div class="hover"></div>
-                <div class="text"><h2></h2>
+                <!--<div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
@@ -431,11 +431,11 @@ export default {
                     L'esperienza vissuta con Jobify è stata molto positiva...
                     <span>Leggi di più</span>
                   </div>
-                </div>
+                </div>-->
               </div>
-              <div class="featured2" @click="story(6)">
+              <div class="featured2" @click="story(6)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
                 <div class="hover"></div>
-                <div class="text"><h2></h2>
+                <!--<div class="text"><h2></h2>
                 </div>
                 <div class="info_story">
                   <div class="basic_informations">
@@ -446,7 +446,7 @@ export default {
                     Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
                     <span>Leggi di più</span>
                   </div>
-                </div>
+                </div>-->
               </div>
               <div class="featured" @click="story(7)">
                 <div class="hover"></div>
@@ -513,21 +513,6 @@ export default {
             </div>
           </div>
         </div>
-
-        <!--<div class="sixtPart">
-        <h2>Ogni persona ha un talento e ogni talento racchiude in sé un’opportunità di lavoro</h2>
-        <div class="description">
-          Il compito di Jobify
-          Recruiting è proprio questo: creare il match perfetto tra persona e azienda, talento e impresa per collocare
-          le persone giuste al posto giusto. Un compito che da sempre svolgiamo con la massima cura e attenzione
-          come testimoniano le storie dei talenti che abbiamo raccolto in questa pagina.
-          Perché nessuna persona è priva di talento e ciascuno può e deve trovare l’azienda capace di valorizzarlo.
-        </div>
-
-        <div class="sixtPartButton">
-          <a href="/workwithus" class="">
-            <button class="btn"> Scopri i servizi per il candidato <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16" data-v-3f1ba09e=""><path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" data-v-3f1ba09e=""></path></svg></span></button></a></div>
-        </div>-->
 
         <div class="fifthDiv">
           <div class="adviser">
@@ -1019,7 +1004,8 @@ export default {
     background-position: center;
     width: 25vw;
     float: left;
-    height: 11vw;
+    /*height: 11vw;*/
+    height: 25vw;
     position: relative;
   }
 
@@ -1098,8 +1084,8 @@ export default {
     background-size: cover;
     background-position: center;
     width: 25vw;
-    float: left;
-    height: 11vw;
+    /*height: 11vw;*/
+    height: 25vw;
     position: relative;
   }
 
