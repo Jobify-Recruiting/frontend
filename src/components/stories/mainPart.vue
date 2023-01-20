@@ -135,7 +135,7 @@ export default {
       });
     }
 
-    for (let i = 0; i < this.storie.length; i++) {
+    for (let i = 6; i < this.storie.length; i++) {
       var nickname = document.getElementById("username"+i);
       nickname.textContent = this.storie[i].nickname;
 
