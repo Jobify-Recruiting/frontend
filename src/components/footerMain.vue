@@ -92,7 +92,9 @@ export default {
     </div>
     <div class="content">
       <div class="col-logo">
-        <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2FLogo%20Jobify%20versioni%20estese_Tavola%20disegno%201%20copia%2010.png?alt=media&token=baed9f0b-c891-4524-9635-60e4ea397134" />
+        <a href="/">
+          <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/logo%2FLogo%20Jobify%20versioni%20estese_Tavola%20disegno%201%20copia%2010.png?alt=media&token=baed9f0b-c891-4524-9635-60e4ea397134" />
+        </a>
         <div class="title2">Iscriviti alla newsletter</div>
         <div class="divInput">
           <!--<div class="input">
