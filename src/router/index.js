@@ -9,6 +9,8 @@ import ContactView from "../views/ContactView.vue";
 import WorkersView from "../views/WorkersView.vue";
 import CompaniesView from "../views/CompaniesView.vue";
 import StoriesView from "../views/StoriesView.vue";
+import UploadStoriesView from "../views/UploadStoriesView.vue";
+import UploadJobView from "../views/UploadJobView.vue";
 import searchResultView from "../views/searchResultView.vue";
 import article1View from "../views/article1View.vue";
 import article2View from "../views/article2View.vue";
@@ -99,6 +101,16 @@ const router = createRouter({
       path: "/colloquio",
       name: "Colloquio",
       component: colloquioView,
+    },
+    {
+      path: "/upload_story_view",
+      name: "UploadStory",
+      component: UploadStoriesView,
+    },
+    {
+      path: "/upload_job_view",
+      name: "UploadJobView",
+      component: UploadJobView,
     },
   ],
 });

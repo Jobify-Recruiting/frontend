@@ -95,11 +95,8 @@ export default {
           <router-link to="/companies"
             ><div class="link">Sei un'Azienda?</div></router-link
           >
-          <router-link to="/journal"
-            ><div class="link">Journal</div></router-link
-          >
           <router-link to="/stories"
-            ><div class="link">Storie</div></router-link
+            ><div class="link">Storie dei talenti</div></router-link
           >
         </div>
         <div class="left">

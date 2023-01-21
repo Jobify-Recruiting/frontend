@@ -236,6 +236,21 @@ export default {
                 centro ideali come <span>etica, professionalità e trasparenza.</span>
           </div>
         </div>
+        <div class="notify" id="notify">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#0c2550" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+          </div>
+          <div class="text">
+            <div class="title" id="title">
+              
+            </div>
+            <div class="subtitle" id="subtitle">
+
+            </div>
+          </div>
+        </div>
 
         <div class="secondPart">
           <div class="teamPhoto transition"></div>
@@ -376,7 +391,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
     position: fixed;
     right: 2%;
     bottom: 10%;
-    background: #0c2550;
+    background: #fff;
     display: flex;
     align-items: center;
     padding-left: 1rem;
@@ -389,10 +404,11 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
     display: none;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .notify .title{
-    color: #fff;
+    color: #0c2550;
     font-size: 16px;
     line-height: 18px;
     margin-left: 1rem;
@@ -401,7 +417,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
   }
 
   .notify .subtitle{
-    color: #fff;
+    color: #0c2550;
     font-size: 14px;
     line-height: 18px;
     margin-left: 1rem;

@@ -1,82 +1,63 @@
 <script>
 import axios from 'axios';
+import moment from 'moment';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import firebase from 'firebase/compat/app';
+import storage from 'firebase/compat';
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import 'firebase/compat/firestore';
+import { collection, getDocs } from "firebase/firestore";
 
 export default {
   name: "mainPart",
   components: {},
   data() {
     return {
-      storie: [
-                {
-                  nickname: "Mattia Musumeci",
-                  ruolo: "Sviluppatore PHP",
-                  azienda: "CONTAQ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "L’approccio umano è stato una componente fondamentale di tutto il processo. E’ stato molto importante per me il supporto, non solo dal punto di vista tecnico, durante tutta la durata della selezione. Ogni mia domanda o richiesta è stata accolta mettendo sempre in primo piano le mie necessità senza avere alcuna forzatura o costrizione di alcun tipo. Del servizio offerto mi hanno colpito la serietà, l’empatia e la cura del cliente. Molte aziende spesso trattano le risorse che cercano come numeri mentre qui ho notato un approccio completamente diverso e di totale cura della persona. Non sono mai stato lasciato solo ed ho sempre ricevuto l’appoggio di Chiara (la ragazza che ha curato il tutto) e questo è stato di grande aiuto per me. Per ultimo ma ovviamente non meno importante, la possibilità di ricevere un’offerta molto più alta della mia attuale RAL grazie all’intermediazione di Chiara, nel mio caso ho ricevuto un’offerta superiore di 10k alla mia attuale retribuzione",
-                },
-                {
-                  nickname: "Stefano Binucci",
-                  ruolo: "Consulente Commerciale in P.Iva",
-                  azienda: "STUDIO FELLI",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito a mio agio nel potermi presentare in un clima sereno, dove sentirmi veramente ascoltato. Mi sono sentito seguito e sostenuto dall’inizio dell’iter di selezione, dal primo contatto telefonico, sino alle fasi successive, dove ho avuto un contatto e aggiornamento costante avendo un professionista a cui fare sempre riferimento .  Ho apprezzato la tempestività delle comunicazioni e il clima distensivo creato in mio favore per arrivare sereno e preparato sull’azienda al colloquio finale.",
-                },
-                {
-                  nickname: "Valeria Peluso",
-                  ruolo: "Segretaria Commerciale",
-                  azienda: "STRAGROUP ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia candidatura. In qualità di candidata sono stata scrupolosamente seguita in tutte le fasi del processo di selezione dall' Head Hunter Martina Di Palma che ha ascoltato le mie aspettative lavorative, professionali e personali, incrociandole con le esigenze dell'azienda. Doppio ringraziamento per lo svolgimento della selezione interamente da remoto, che ha azzerato completamente i costi economici e temporali. Che dire finalmente un'agenzia di recruiting al passo con i tempi e soprattutto attenta al capitale umano!",
-                },
-                {
-                  nickname: "Gavina Fadda",
-                  ruolo: "Car Rental Agent (BS)",
-                  azienda: "AUTOSYSTEM",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Rispetto alle agenzie di recruiting sono spesso stata molto diffidente, mi sono ricreduta durante la mia esperienza con Jobify Recruiting. Questo soprattutto grazie alla professionalità di Martina che ha gestito il processo di selezione con un approccio umano, oltre che professionale e con molta chiarezza in tutti gli step. Quindi chiarezza e professionalità contraddistinguono la Jobify Recruiting. ",
-                },
-                {
-                  nickname: "Giulia Miccoli",
-                  ruolo: "Inside Sales",
-                  azienda: "DOTSTAY ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "L'esperienza vissuta con Jobify è stata molto positiva, l'azienda è stata un tramite perfetto tra me e il mio attuale datore di lavoro. Hanno seguito con molta attenzione tutta la fase di assunzione: dalla prima telefonata orientativa fino alla firma del contratto, tutto sempre con estrema umanità e professionalità",
-                },
-                {
-                  nickname: "Marco G.",
-                  ruolo: "Addetto alle vendite (Malta)",
-                  azienda: "CASCONE HOME ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio targhetizzato, chiaro e per nulla impersonale. Le mie precedenti esperienze con le apl non sono state positive, in quanto non avevo questo costante rapporto di condivisione e aggiornamento con la parte hr. Ho riscontrato in jobify l’attenzione nel mettere il candidato al centro del processo di r&s , dove essere considerato una persona con le proprie ambizioni e talento da far incrociare perfettamente con le richieste dell’azienda. La chiarezza a partire dall’annuncio, sino all’orientamento verso il colloquio finale con l’azienda mi ha fatto sentire sicuro e seguito.",
-                },
-                {
-                  nickname: "K.R.",
-                  ruolo: "Impiegata Contabile",
-                  azienda: "Celda 2000 Servizi Integrati srls",
-                  data: "8 Dicembre 2022",
-                  storia_testo: "Mi sono sentita da subito a mio agio, capita e compresa, ho avuto addirittura, nel momento del colloquio con la mia referente Elisa, dei suggerimenti per migliorare il mio cv e la mia presentazione, non mi era mai capitato. Ho apprezzato in Jobify Recruiting la serietà, e umanità, mi sono sentita trattata alla pari, e sostenuta per tutto l’iter di selezione, per affrontare al meglio il colloquio finale con l’azienda.",
-                },
-                {
-                  nickname: "Enis Gulishi",
-                  ruolo: "Manutentore Elettromeccanico Trasfertista",
-                  azienda: "NTE Processs",
-                  data: "30 Dicembre 2022",
-                  storia_testo: "Sono stato assistito da Martina Di Palma. Che dire? Servizio impeccabile. Personale attento, cordiale e disponibile. Molto soddisfatto.",
-                },
-                {
-                  nickname: "Valentina Mura",
-                  ruolo: "HR Manager",
-                  azienda: "Mamacrowd ",
-                  data: "13 Dicembre 2022",
-                  storia_testo: "L'esperienza con Jobify è stata un esperienza nuova perché l'approccio che usano è differente rispetto a chi tradizionalmente si occupa di recruiting. Si tratta di un approccio human centric dove mettono al primo posto l'attenzione del candidato e la trasparenza. Ritengo questi due aspetti fondamentali per far sentire il candidato a proprio agio e per permettergli di esprimere al meglio le proprie competenze e skills.",
-                },
-              ],
-      jobs: [],
-      jobs_lenght: ""
+      new_jobs: [],
+      jobs_lenght: "",
+      old_jobs: [],
+      all_jobs: [],
+      new_date: "",
     };
   },
-  mounted() {
-    axios
+  async mounted() {
+
+    let date = new Date();
+    let day = date.getDate();
+    let month = date.getMonth();
+    let year = date.getFullYear();
+    let new_date_composed = day+"/"+month+"/"+year;
+    this.new_date = new_date_composed;
+
+    const db = firebase
+        .initializeApp({ projectId: "jobify-d2a24" })
+        .firestore();
+
+    const querySnapshot = await getDocs(collection(db, "offerte_di_lavoro"));
+    querySnapshot.forEach((doc) => {
+      this.old_jobs.push({ 
+        id: doc.data().id,
+        job_title: doc.data().job_title,
+        location: doc.data().location,
+        company: doc.data().company,
+        contact: doc.data().contact,
+        publication_date: doc.data().publication_date,
+        closing_date: doc.data().closing_date,
+        contract_type: doc.data().contract_type,
+        area_funzione: doc.data().area_funzione,
+      });
+    });
+
+    let old_jobs_ordered = this.old_jobs.sort((a, b) => {
+            if (a.publication_date > b.publication_date) {
+              return -1;
+            }
+    });
+    
+    this.old_jobs = old_jobs_ordered;
+
+    await axios
       .get('https://inrecruiting.intervieweb.it/annunci.php?lang=it&LAC=jobconsultinghr&d=jobifyrecruiting.netlify.app&k=fd7a2de73e6faba23a23ea947913431c&format=json_en&utype=0')
       .then((response) => {
         let x = response.data
@@ -87,10 +68,92 @@ export default {
             }
           });
 
-        this.jobs = datax
-        this.jobs_lenght = response.data.length
+        this.new_jobs = datax;
+
+        for (var i = 0; i < this.new_jobs.length; i++) {
+          const strManipulationSplit = this.new_jobs[i].published.split(" ")[0];
+          let xx = strManipulationSplit.replaceAll("-", "/");
+          this.new_jobs[i].published = xx;
+
+          const strManipulationSplit2 = this.new_jobs[i].expires.split(" ")[0];
+          let xx2 = strManipulationSplit2.replaceAll("-", "/");
+          this.new_jobs[i].expires = xx2;
+        }
+
+        return this.new_jobs;
       })
 
+      for (var i = 0; i < 1; i++) {
+        if(this.new_jobs[i].id != this.old_jobs[i].id){
+          const db = firebase
+            .initializeApp({ projectId: "jobify-d2a24" })
+            .firestore();
+
+            const current = new Date();
+            const date =
+            current.getDate() +
+            "-" +
+            (current.getMonth() + 1) +
+            "-" +
+            current.getFullYear();
+            const time =
+            current.getHours() +
+            ":" +
+            current.getMinutes() +
+            ":" +
+            current.getSeconds();
+
+            const dateTime = date + " " + time;
+
+            const data = {
+              id: this.new_jobs[i].id,
+              job_title: this.new_jobs[i].title,
+              location: this.new_jobs[i].location,
+              company: this.new_jobs[i].company,
+              contact: this.new_jobs[i].vacancy_owner,
+              publication_date: this.new_jobs[i].published,
+              closing_date: this.new_jobs[i].expires,
+              contract_type: this.new_jobs[i].contract_type,
+              area_funzione: this.new_jobs[i].function,
+              url: this.new_jobs[i].url,
+            };
+
+            console.log(data)
+
+            db.collection("offerte_di_lavoro")
+            .add(data)
+            .then(() => {
+              
+              });
+        }
+      }
+
+      const querySnapshot2 = await getDocs(collection(db, "offerte_di_lavoro"));
+      querySnapshot2.forEach((doc) => {
+        this.all_jobs.push({ 
+          id: doc.data().id,
+          job_title: doc.data().job_title,
+          location: doc.data().location,
+          company: doc.data().company,
+          contact: doc.data().contact,
+          publication_date: doc.data().publication_date,
+          closing_date: doc.data().closing_date,
+          contract_type: doc.data().contract_type,
+          area_funzione: doc.data().area_funzione,
+          url: doc.data().url,
+        });
+      });
+
+      let old_jobs_ordered2 = this.all_jobs.sort((a, b) => {
+              if (a.publication_date > b.publication_date) {
+                return -1;
+              }
+      });
+    
+      this.all_jobs = old_jobs_ordered2;
+      this.jobs_lenght = this.all_jobs.length;
+
+      console.log(this.all_jobs);
     
     let recaptchaScript = document.createElement("script");
     recaptchaScript.setAttribute(
@@ -205,14 +268,6 @@ export default {
         slider.scrollLeft = scrollLeft - walk;
       });
     }
-    }
-
-    for (let i = 0; i < this.storie.length; i++) {
-      var nickname = document.getElementById("username"+i);
-      nickname.textContent = this.storie[i].nickname;
-
-      var ruolo = document.getElementById("jobtitle"+i);
-      ruolo.textContent = this.storie[i].ruolo;
     }
   },
   methods: {
@@ -488,33 +543,37 @@ export default {
                 </div>    
               <div id="Farm" class="tab-pane in active jobs">
                   <div
-                    v-for="job in jobs"
+                    v-for="job in all_jobs"
                     class="card"
                     v-bind:key="job"
                   >
                       <div class="card-body">
-                        <h5 class="card-title">{{ job.title }}</h5>
+                        <h5 class="card-title">{{ job.job_title }}</h5>
                         <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2c3e50" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                          <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0c2550" class="bi bi-geo-alt" viewBox="0 0 16 16">
                                                         <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
                                                         <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                                                      </svg> {{ job.city }}</li>
-                          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2c3e50" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                                      </svg> {{ job.location }}</li>
+                          <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0c2550" class="bi bi-briefcase" viewBox="0 0 16 16">
                                                         <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5zm1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0zM1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5z"/>
-                                                      </svg>{{ job.function }}</li>
-                          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2c3e50" class="bi bi-clock" viewBox="0 0 16 16">
+                                                      </svg>{{ job.area_funzione }}</li>
+                          <li class="list-group-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0c2550" class="bi bi-clock" viewBox="0 0 16 16">
                                                         <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
                                                         <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
                                                       </svg>{{ job.contract_type }}</li>
-                          <li class="list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#2c3e50" class="bi bi-building" viewBox="0 0 16 16">
-                                                        <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
-                                                        <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"/>
-                                                      </svg>{{ job.industry }}</li>
+                          <li class="list-group-item date">
+                            Data di pubblicazione: {{ job.publication_date }}
+                          </li>
+                          
                         </ul>
                       </div>
                       <div class="card-buttons">
                         <div class="card-body">
-                          <a :href=job.url class="card-link btn">Vedi offerta</a>
+                          <a v-if="job.closing_date < this.new_date" :href=job.url target="blank" class="card-link btn">Vedi offerta</a>
+                          <div v-else>Offerta non più disponibile</div>
                         </div>
                       </div>
                   </div>
@@ -2633,198 +2692,6 @@ sviluppare in azienda.
             ></div>
           </div>
         </div>
-
-        <div class="featureds">
-          <div class="titles">
-            <h2>Storie dei talenti</h2>
-            <div class="buttons">
-              <div class="btnScrollL" @click="btnScrollSx2()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#0c2550"
-                  class="bi bi-chevron-left"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                  />
-                </svg>
-              </div>
-              <div class="btnScrollR" @click="btnScrollDx2()">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  fill="#0c2550"
-                  class="bi bi-chevron-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="featuredContent">
-              <div class="featured" @click="story(1)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username0"></div>
-                    <div class="jobtitle" id="jobtitle0"></div>
-                  </div>
-                  <div class="text_preview">
-                    L’approccio umano è stato una componente fondamentale di tutto il processo...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
-              <div class="featured2" @click="story(2)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username1"></div>
-                    <div class="jobtitle" id="jobtitle1"></div>
-                  </div>
-                  <div class="text_preview">
-                    Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
-              <div class="featured" @click="story(3)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username2"></div>
-                    <div class="jobtitle" id="jobtitle2"></div>
-                  </div>
-                  <div class="text_preview">
-                    Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
-              <div class="featured2" @click="story(4)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username3"></div>
-                    <div class="jobtitle" id="jobtitle3"></div>
-                  </div>
-                  <div class="text_preview">
-                    Rispetto alle agenzie di recruiting sono spesso stata molto diffidente...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
-              <div class="featured" @click="story(5)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username4"></div>
-                    <div class="jobtitle" id="jobtitle4"></div>
-                  </div>
-                  <div class="text_preview">
-                    L'esperienza vissuta con Jobify è stata molto positiva...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
-              <div class="featured2" @click="story(6)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username5"></div>
-                    <div class="jobtitle" id="jobtitle5"></div>
-                  </div>
-                  <div class="text_preview">
-                    Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
-              <div class="featured" @click="story(7)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username6"></div>
-                    <div class="jobtitle" id="jobtitle6"></div>
-                  </div>
-                  <div class="text_preview">
-                    Mi sono sentita da subito a mio agio, capita e compresa...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
-              <div class="featured2" @click="story(8)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username7"></div>
-                    <div class="jobtitle" id="jobtitle7"></div>
-                  </div>
-                  <div class="text_preview">
-                    Sono stato assistito da Martina Di Palma. Che dire?
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
-              <div class="featured" @click="story(9)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username8"></div>
-                    <div class="jobtitle" id="jobtitle8"></div>
-                  </div>
-                  <div class="text_preview">
-                    L'esperienza con Jobify è stata un esperienza nuova ...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="story" id="1">
-              <div class="close_story" @click="close_story(1)">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22"
-                                height="22"
-                                fill="#0a1e4375" class="bi bi-x-lg" viewBox="0 0 16 16">
-                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
-                  </svg>
-                </div>
-              <div class="content">
-                <div class="nickname" id="nickname"></div>
-                <div style="display: flex; align-items: center; width: 100%; text-align: center;">
-                  <div class="ruolo" id="ruolo"></div> 
-                  <div class="azienda" id="azienda"></div> 
-                </div>
-                <div class="storia_testo" id="storia_testo"></div>
-              </div>
-            </div>
-        </div>
       </div>
     </div>
   </div>
@@ -3053,7 +2920,7 @@ sviluppare in azienda.
     color: #ffffff;
     line-height: 18px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.5px;
     margin-top: 1rem;
@@ -3142,6 +3009,10 @@ sviluppare in azienda.
     font-size: 16px;
   }
 
+  .tab-content{
+    width: 100%;
+  }
+
   .tab_header{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -3174,7 +3045,7 @@ sviluppare in azienda.
     padding-right: 3rem;
     margin-bottom: 5rem;
     display: grid;
-    grid-template-columns: repeat(3, calc((18/58) * 100%));
+    grid-template-columns: repeat(4, calc((15/58) * 100%));
   }
 
   .jobs .card{
@@ -3182,6 +3053,7 @@ sviluppare in azienda.
     margin-right: 2rem;
     border-radius: 15px;
     transition: 0.3s all;
+    border: 2px solid rgba(0,0,0,.125);
   }
 
   .jobs .card:hover{
@@ -3193,9 +3065,9 @@ sviluppare in azienda.
   }
 
   .card .card-title{
-    padding: 2rem;
-    font-size: 28px;
-    line-height: 32px;
+    padding: 1.5rem;
+    font-size: 20px;
+    line-height: 24px;
     color: #000;
     font-weight: 700;
     padding-bottom: 0;
@@ -3203,9 +3075,14 @@ sviluppare in azienda.
 
   .card ul li{
     border: none;
-    padding-left: 2rem;
+    padding-left: 1.5rem;
     align-items: center;
     display: flex;
+    color: #000;
+  }
+
+  .card ul .date{
+    color: #727272 !important;
   }
 
   .card ul li svg{
@@ -3213,11 +3090,12 @@ sviluppare in azienda.
   }
 
   .card .card-buttons{
-    padding: 2rem;
+    padding: 1.5rem;
+    padding-top: 0;
   }
 
   .job{
-    width: 22vw;
+    width: 15vw;
     background: #027bfd;
     border-radius: 30px;
     margin-right: 1rem;

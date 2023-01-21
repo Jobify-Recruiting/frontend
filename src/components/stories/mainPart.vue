@@ -1,77 +1,42 @@
 <script>
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import firebase from 'firebase/compat/app';
+import storage from 'firebase/compat';
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import 'firebase/compat/firestore';
+import { collection, getDocs } from "firebase/firestore";
+
 export default {
   name: "mainPart",
   components: {},
   data() {
     return {
       storie: [
-                {
-                  nickname: "Mattia Musumeci",
-                  ruolo: "Sviluppatore PHP",
-                  azienda: "CONTAQ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "L’approccio umano è stato una componente fondamentale di tutto il processo. E’ stato molto importante per me il supporto, non solo dal punto di vista tecnico, durante tutta la durata della selezione. Ogni mia domanda o richiesta è stata accolta mettendo sempre in primo piano le mie necessità senza avere alcuna forzatura o costrizione di alcun tipo. Del servizio offerto mi hanno colpito la serietà, l’empatia e la cura del cliente. Molte aziende spesso trattano le risorse che cercano come numeri mentre qui ho notato un approccio completamente diverso e di totale cura della persona. Non sono mai stato lasciato solo ed ho sempre ricevuto l’appoggio di Chiara (la ragazza che ha curato il tutto) e questo è stato di grande aiuto per me. Per ultimo ma ovviamente non meno importante, la possibilità di ricevere un’offerta molto più alta della mia attuale RAL grazie all’intermediazione di Chiara, nel mio caso ho ricevuto un’offerta superiore di 10k alla mia attuale retribuzione",
-                },
-                {
-                  nickname: "Stefano Binucci",
-                  ruolo: "Consulente Commerciale in P.Iva",
-                  azienda: "STUDIO FELLI",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito a mio agio nel potermi presentare in un clima sereno, dove sentirmi veramente ascoltato. Mi sono sentito seguito e sostenuto dall’inizio dell’iter di selezione, dal primo contatto telefonico, sino alle fasi successive, dove ho avuto un contatto e aggiornamento costante avendo un professionista a cui fare sempre riferimento .  Ho apprezzato la tempestività delle comunicazioni e il clima distensivo creato in mio favore per arrivare sereno e preparato sull’azienda al colloquio finale.",
-                },
-                {
-                  nickname: "Valeria Peluso",
-                  ruolo: "Segretaria Commerciale",
-                  azienda: "STRAGROUP ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia candidatura. In qualità di candidata sono stata scrupolosamente seguita in tutte le fasi del processo di selezione dall' Head Hunter Martina Di Palma che ha ascoltato le mie aspettative lavorative, professionali e personali, incrociandole con le esigenze dell'azienda. Doppio ringraziamento per lo svolgimento della selezione interamente da remoto, che ha azzerato completamente i costi economici e temporali. Che dire finalmente un'agenzia di recruiting al passo con i tempi e soprattutto attenta al capitale umano!",
-                },
-                {
-                  nickname: "Gavina Fadda",
-                  ruolo: "Car Rental Agent (BS)",
-                  azienda: "AUTOSYSTEM",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Rispetto alle agenzie di recruiting sono spesso stata molto diffidente, mi sono ricreduta durante la mia esperienza con Jobify Recruiting. Questo soprattutto grazie alla professionalità di Martina che ha gestito il processo di selezione con un approccio umano, oltre che professionale e con molta chiarezza in tutti gli step. Quindi chiarezza e professionalità contraddistinguono la Jobify Recruiting. ",
-                },
-                {
-                  nickname: "Giulia Miccoli",
-                  ruolo: "Inside Sales",
-                  azienda: "DOTSTAY ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "L'esperienza vissuta con Jobify è stata molto positiva, l'azienda è stata un tramite perfetto tra me e il mio attuale datore di lavoro. Hanno seguito con molta attenzione tutta la fase di assunzione: dalla prima telefonata orientativa fino alla firma del contratto, tutto sempre con estrema umanità e professionalità",
-                },
-                {
-                  nickname: "Marco G.",
-                  ruolo: "Addetto alle vendite (Malta)",
-                  azienda: "CASCONE HOME ",
-                  data: "1 Dicembre 2022",
-                  storia_testo: "Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio targhetizzato, chiaro e per nulla impersonale. Le mie precedenti esperienze con le apl non sono state positive, in quanto non avevo questo costante rapporto di condivisione e aggiornamento con la parte hr. Ho riscontrato in jobify l’attenzione nel mettere il candidato al centro del processo di r&s , dove essere considerato una persona con le proprie ambizioni e talento da far incrociare perfettamente con le richieste dell’azienda. La chiarezza a partire dall’annuncio, sino all’orientamento verso il colloquio finale con l’azienda mi ha fatto sentire sicuro e seguito.",
-                },
-                {
-                  nickname: "K.R.",
-                  ruolo: "Impiegata Contabile",
-                  azienda: "Celda 2000 Servizi Integrati srls",
-                  data: "8 Dicembre 2022",
-                  storia_testo: "Mi sono sentita da subito a mio agio, capita e compresa, ho avuto addirittura, nel momento del colloquio con la mia referente Elisa, dei suggerimenti per migliorare il mio cv e la mia presentazione, non mi era mai capitato. Ho apprezzato in Jobify Recruiting la serietà, e umanità, mi sono sentita trattata alla pari, e sostenuta per tutto l’iter di selezione, per affrontare al meglio il colloquio finale con l’azienda.",
-                },
-                {
-                  nickname: "Enis Gulishi",
-                  ruolo: "Manutentore Elettromeccanico Trasfertista",
-                  azienda: "NTE Processs",
-                  data: "30 Dicembre 2022",
-                  storia_testo: "Sono stato assistito da Martina Di Palma. Che dire? Servizio impeccabile. Personale attento, cordiale e disponibile. Molto soddisfatto.",
-                },
-                {
-                  nickname: "Valentina Mura",
-                  ruolo: "HR Manager",
-                  azienda: "Mamacrowd ",
-                  data: "13 Dicembre 2022",
-                  storia_testo: "L'esperienza con Jobify è stata un esperienza nuova perché l'approccio che usano è differente rispetto a chi tradizionalmente si occupa di recruiting. Si tratta di un approccio human centric dove mettono al primo posto l'attenzione del candidato e la trasparenza. Ritengo questi due aspetti fondamentali per far sentire il candidato a proprio agio e per permettergli di esprimere al meglio le proprie competenze e skills.",
-                },
+                
               ],
+
+              stories: [],
     };
   },
-  mounted() {
+  async mounted() {
+
+    const db = firebase
+        .initializeApp({ projectId: "jobify-d2a24" })
+        .firestore();
+
+    const querySnapshot = await getDocs(collection(db, "storie_dei_talenti"));
+    querySnapshot.forEach((doc) => {
+      this.storie.push({ 
+        nickname: doc.data().nickname,
+        ruolo: doc.data().ruolo,
+        azienda: doc.data().azienda,
+        data: doc.data().data,
+        storia_testo: doc.data().storia_testo,
+        background: doc.data().background,
+      });
+    });
+    
     let recaptchaScript = document.createElement("script");
     recaptchaScript.setAttribute(
       "src",
@@ -134,28 +99,22 @@ export default {
         slider.scrollLeft = scrollLeft - walk;
       });
     }
+    
+    const firebaseConfig = {
+        apiKey: "AIzaSyDvtosJB--sCCj3TlZhuGBWxvToa0c12ec",
+        authDomain: "jobify-d2a24.firebaseapp.com",
+        databaseURL: "https://jobify-d2a24-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "jobify-d2a24",
+        storageBucket: "jobify-d2a24.appspot.com",
+        messagingSenderId: "27249165508",
+        appId: "1:27249165508:web:b5f27662b7488d85b57591",
+        measurementId: "G-KZXCNHDBT0"
+    };
 
-    for (let i = 6; i < this.storie.length; i++) {
-      var nickname = document.getElementById("username"+i);
-      nickname.textContent = this.storie[i].nickname;
+    
 
-      var ruolo = document.getElementById("jobtitle"+i);
-      ruolo.textContent = this.storie[i].ruolo;
-    }
   },
   methods: {
-    btnScrollSx() {
-      let content = document.querySelector(".featuredContent");
-      const itemWidth = content.querySelector(".featured").clientWidth;
-      content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
-      console.log(content);
-    },
-
-    btnScrollDx() {
-      let content = document.querySelector(".featuredContent");
-      const itemWidth = content.querySelector(".featured").clientWidth;
-      content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
-    },
 
     story(x){
       let content = document.querySelector(".story");
@@ -177,19 +136,6 @@ export default {
     close_story(x){
       let close_story = document.getElementById(x);
       close_story.style.display = "none";
-    },
-
-    btnScrollSx() {
-      let content = document.querySelector(".feedbacks");
-      const itemWidth = content.querySelector(".feedback").clientWidth;
-      content.scrollBy({ left: -itemWidth * 2, top: 0, behavior: "smooth" });
-      console.log(content);
-    },
-
-    btnScrollDx() {
-      let content = document.querySelector(".feedbacks");
-      const itemWidth = content.querySelector(".feedback").clientWidth;
-      content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
     },
   },
 };
@@ -324,175 +270,17 @@ export default {
           <div class="featureds">
             <div class="titles">
               <h2>Storie dei talenti</h2>
-              <div class="buttons">
-                <div class="btnScrollL" @click="btnScrollSx()">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    fill="#0c2550"
-                    class="bi bi-chevron-left"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
-                    />
-                  </svg>
-                </div>
-                <div class="btnScrollR" @click="btnScrollDx()">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    fill="#0c2550"
-                    class="bi bi-chevron-right"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
             </div>
-            <div class="featuredContent">
-              <div class="featured" @click="story(1)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
-                <div class="hover"></div>
-                <!--<div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username0"></div>
-                    <div class="jobtitle" id="jobtitle0"></div>
-                  </div>
-                  <div class="text_preview">
-                    L’approccio umano è stato una componente fondamentale di tutto il processo...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>-->
-              </div>
-              <div class="featured2" @click="story(2)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
-                <div class="hover"></div>
-                <!--<div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username1"></div>
-                    <div class="jobtitle" id="jobtitle1"></div>
-                  </div>
-                  <div class="text_preview">
-                    Umanamente, mi ha colpito l’approccio di JOBIFY in quanto sono stato messo subito...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>-->
-              </div>
-              <div class="featured" @click="story(3)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
-                <div class="hover"></div>
-                <!--<div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username2"></div>
-                    <div class="jobtitle" id="jobtitle2"></div>
-                  </div>
-                  <div class="text_preview">
-                    Ringrazio Jobify recruiting per avermi selezionata e portato a buon fine la mia...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>-->
-              </div>
-              <div class="featured2" @click="story(4)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
-                <div class="hover"></div>
-                <!--<div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username3"></div>
-                    <div class="jobtitle" id="jobtitle3"></div>
-                  </div>
-                  <div class="text_preview">
-                    Rispetto alle agenzie di recruiting sono spesso stata molto diffidente...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>-->
-              </div>
-              <div class="featured" @click="story(5)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
-                <div class="hover"></div>
-                <!--<div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username4"></div>
-                    <div class="jobtitle" id="jobtitle4"></div>
-                  </div>
-                  <div class="text_preview">
-                    L'esperienza vissuta con Jobify è stata molto positiva...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>-->
-              </div>
-              <div class="featured2" @click="story(6)" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/storie_talenti%2Ftest.png?alt=media&token=6fb00b8b-0e6a-4eee-bc18-23f4815e17f4);">
-                <div class="hover"></div>
-                <!--<div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username5"></div>
-                    <div class="jobtitle" id="jobtitle5"></div>
-                  </div>
-                  <div class="text_preview">
-                    Mi sono sentito valorizzato, dal primo contatto tramite linkedin, in cui ho ricevuto un messaggio...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>-->
-              </div>
-              <div class="featured" @click="story(7)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username6"></div>
-                    <div class="jobtitle" id="jobtitle6"></div>
-                  </div>
-                  <div class="text_preview">
-                    Mi sono sentita da subito a mio agio, capita e compresa...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
-              <div class="featured2" @click="story(8)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username7"></div>
-                    <div class="jobtitle" id="jobtitle7"></div>
-                  </div>
-                  <div class="text_preview">
-                    Sono stato assistito da Martina Di Palma. Che dire?
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
-              <div class="featured" @click="story(9)">
-                <div class="hover"></div>
-                <div class="text"><h2></h2>
-                </div>
-                <div class="info_story">
-                  <div class="basic_informations">
-                    <div class="username" id="username8"></div>
-                    <div class="jobtitle" id="jobtitle8"></div>
-                  </div>
-                  <div class="text_preview">
-                    L'esperienza con Jobify è stata un esperienza nuova ...
-                    <span>Leggi di più</span>
-                  </div>
-                </div>
-              </div>
+            <div class="featuredContent" id="featureds">
+              <div
+                    v-for="(featured, index) in storie"
+                    class="featured"
+                    v-bind:key="featured"
+                    v-bind:style="{ backgroundImage: 'url(' + featured.background + ')' }"
+                    @click="story(index + 1)"
+                  >
+                    <div class="hover"></div>
+              </div> 
             </div>
             <div class="story" id="1">
               <div class="close_story" @click="close_story(1)">
@@ -949,13 +737,6 @@ export default {
     margin-bottom: 2rem;
   }
 
-  .featureds .buttons {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-    width: fit-content;
-  }
-
   .featureds .titles h2 {
     font-size: 40px;
     line-height: 42px;
@@ -966,32 +747,7 @@ export default {
     width: fit-content;
   }
 
-  .featureds .btnScrollR {
-    width: fit-content;
-    background: white;
-    border: 2px solid rgb(209, 209, 209);
-    border-radius: 25rem;
-    height: auto;
-    z-index: 10;
-    padding: 0.7rem;
-    line-height: 0px;
-    cursor: pointer;
-  }
-
-  .featureds .btnScrollL {
-    margin-right: 1rem;
-    width: fit-content;
-    background: #fff;
-    border: 2px solid rgb(209, 209, 209);
-    border-radius: 25rem;
-    height: auto;
-    z-index: 10;
-    padding: 0.7rem;
-    line-height: 0px;
-    cursor: pointer;
-  }
-
-  .featureds .featured {
+  .featured {
     border-radius: 30px;
     background-color: #0089cc;
     margin-right: 1rem;
@@ -1000,13 +756,20 @@ export default {
     box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
       0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
       0 22px 17px rgb(0 0 0 / 2%) !important;
-    background-size: cover;
+    background-size: 104%;
     background-position: center;
-    width: 25vw;
+    background-repeat: no-repeat;
+    width: 18vw;
     float: left;
     /*height: 11vw;*/
-    height: 25vw;
+    height: 18vw;
     position: relative;
+    transition: 0.3s all;
+    border: 3px solid transparent;
+  }
+
+  .featured:hover {
+    border-color:#027bfd
   }
 
   .featured .info_story{
@@ -1083,9 +846,9 @@ export default {
       0 22px 17px rgb(0 0 0 / 2%) !important;
     background-size: cover;
     background-position: center;
-    width: 25vw;
+    width: 18vw;
     /*height: 11vw;*/
-    height: 25vw;
+    height: 19vw;
     position: relative;
   }
 
