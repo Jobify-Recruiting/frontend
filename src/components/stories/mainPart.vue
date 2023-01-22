@@ -232,7 +232,7 @@ export default {
               </p>
 
               <div class="mainButton">
-                <router-link to="/workwithus"
+                <router-link to="/workers"
                   ><button class="btn">
                     Scopri i servizi per il candidato
                     <span>
