@@ -329,24 +329,91 @@ export default {
       });
     }
     }
-  },
-  methods: {
 
-    filter_search(event){
+    if(this.search_text == ""){
+      let search_button = document.querySelector("#search_button");
+      search_button.style.display = "inline";
+
+      let remove_search_button = document.querySelector("#remove_search_button");
+      remove_search_button.style.display = "none";
+    }
+  },
+  watch: {
+      search_text(search) {
+       if (search == 0) {
+        let content = document.querySelector("#all_jobs");
+        content.style.display = "grid";
+
+        let content2 = document.querySelector("#all_jobs_filtered");
+        content2.style.display = "none";
+
+        let search_button = document.querySelector("#search_button");
+        search_button.style.display = "inline";
+
+        let remove_search_button = document.querySelector("#remove_search_button");
+        remove_search_button.style.display = "none";
+      }
+    },              
+ },
+  methods: {
+    closeSuggestWords() {
+      let suggestWords2 = document.querySelector("#suggestWords2");
+      suggestWords2.style.opacity = "0";
+      suggestWords2.style.visibility = "hidden";
+      suggestWords2.style.display = "none";
+      suggestWords2.style.width = "0%";
+    },
+
+    filter_search(search_text){
+      this.suggestWords2();
+      //event.target.value
       function filterByValue(array, string) {
           return array.filter(o =>
               Object.keys(o).some(k => o[k].toLowerCase().includes(string.toLowerCase())));
       }
-      this.all_jobs_filtered = filterByValue(this.all_jobs, event.target.value);
+      this.all_jobs_filtered = filterByValue(this.all_jobs, search_text);
 
       let content = document.querySelector("#all_jobs");
       content.style.display = "none";
 
       let content2 = document.querySelector("#all_jobs_filtered");
       content2.style.display = "grid";
+
+      if(this.all_jobs_filtered.length == 0){
+        let content2 = document.querySelector("#all_jobs_filtered");
+        content2.style.display = "grid";
+
+        let no_results = document.querySelector("#no_results");
+        no_results.style.display = "inline";
+      }
+
+      let search_button = document.querySelector("#search_button");
+      search_button.style.display = "none";
+
+      let remove_search_button = document.querySelector("#remove_search_button");
+      remove_search_button.style.display = "inline";
+    },
+
+    cancel_search(){
+      let search_button = document.querySelector("#search_button");
+      search_button.style.display = "inline";
+
+      let remove_search_button = document.querySelector("#remove_search_button");
+      remove_search_button.style.display = "none";
+
+      const search_input = document.querySelector('#nav');
+      search_input.value = "";
+
+      this.search_text = "";
+
+      this.all_jobs_filtered = this.all_jobs;
+
+      let no_results = document.querySelector("#no_results");
+      no_results.style.display = "none";
     },
 
     keyword_search(event){
+      this.suggestWords2();
       this.search_text = event;
 
       function filterByValue(array, string) {
@@ -360,6 +427,23 @@ export default {
 
       let content2 = document.querySelector("#all_jobs_filtered");
       content2.style.display = "grid";
+
+      let search_button = document.querySelector("#search_button");
+      search_button.style.display = "none";
+
+      let remove_search_button = document.querySelector("#remove_search_button");
+      remove_search_button.style.display = "inline";
+
+      if(this.all_jobs_filtered.length == 0){
+        let content2 = document.querySelector("#all_jobs_filtered");
+        content2.style.display = "grid";
+
+        let no_results = document.querySelector("#no_results");
+        no_results.style.display = "inline";
+      }else{
+        let no_results = document.querySelector("#no_results");
+        no_results.style.display = "none";
+      }
     },
 
     filter_func(event) {
@@ -448,21 +532,13 @@ export default {
     }, 
 
     suggestWords() {
-      let content = document.querySelector(".suggestWords");
+      let content = document.querySelector("#suggestWords2");
       content.style.width = "40%";
       content.style.opacity = "1";
       content.style.visibility = "visible";
       content.style.display = "inline";
       /*var overlay = document.getElementById("suggestWordsOverlay");
       overlay.style.display = "block";*/
-    },
-
-    closeSuggestWords() {
-      let content = document.querySelector(".suggestWords");
-      content.style.width = "0%";
-      content.style.opacity = "0";
-      content.style.visibility = "hidden";
-      content.style.display = "none";
     },
 
     jobAlert() {
@@ -584,9 +660,8 @@ export default {
                 v-model="search_text"
                 autocomplete="off"
                 placeholder="Che lavoro cerchi?"
-                @input="filter_search"
               />
-              <span @click="send_search()">
+              <span @click="filter_search(search_text)" id="search_button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -600,39 +675,44 @@ export default {
                   />
                 </svg>
               </span>
+              <span @click="cancel_search()" id="remove_search_button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+              </span>
             </div>
             <div @click="jobAlert()" class="btn btnJobAlert">
                 <a href="#">Crea una Job Alert</a>
-              </div>
-            <div class="suggestWords">
-              <div id="suggestWordsOverlay"></div>
-              <div class="suggestTopDiv">
-                <h5>Parole chiave</h5>
-                <div class="closesuggestWords" @click="closeSuggestWords()">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-x-lg"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-                    ></path>
-                  </svg>
+            </div>
+            <div class="suggestWords" id="suggestWords2">
+                <div id="suggestWordsOverlay"></div>
+                <div class="suggestTopDiv">
+                  <h5>Parole chiave</h5>
+                  <div class="closesuggestWords" @click="closeSuggestWords()">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-x-lg"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="keyWords">
+                  <div class="keyWord"
+                            v-for="word in suggested_words2"
+                            v-bind:key="word"
+                            v-bind:value=word.word
+                            @click="keyword_search(word.word)"
+                          >{{ word.word }}</div>
                 </div>
               </div>
-
-              <div class="keyWords">
-                <div class="keyWord"
-                          v-for="word in suggested_words2"
-                          v-bind:key="word"
-                          v-bind:value=word.word
-                          @click="keyword_search(word.word)"
-                        >{{ word.word }}</div>
-              </div>
-            </div>
           </div>
           <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -669,7 +749,7 @@ export default {
                 
               </div>
               <div class="filters_jobs">
-                  <div class="filter_category filter_job">
+                <div class="filter_category filter_job">
                     <select class="form-select" id="area_funzione" @change="filter_func($event)">
                       <option value="disabled" disabled selected>Funzione</option>
                       <option
@@ -678,18 +758,9 @@ export default {
                           v-bind:value=func.function
                         >{{ func.function }}</option>
                     </select>
-                  </div>
-
-                  <!--<div class="industry_category filter_job">
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Settore</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>-->
-
-                  <div class="city_category filter_job">
+                </div>
+                  
+                <div class="city_category filter_job">
                     <select class="form-select" id="city" @change="filter_city($event)">
                       <option value="disabled" disabled selected>Città</option>
                       <option
@@ -698,18 +769,9 @@ export default {
                           v-bind:value=city.city
                       >{{ city.city }}</option>
                     </select>
-                  </div>
+                </div>
 
-                  <!--<div class="date_category filter_job">
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected>Data</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                  </div>-->
-
-                  <div class="contract_category filter_job">
+                <div class="contract_category filter_job">
                     <select class="form-select" id="contract" @change="filter_contract($event)">
                       <option value="disabled" disabled selected>Tipo di contratto</option>
                       <option
@@ -718,19 +780,19 @@ export default {
                           v-bind:value=filter.contract_type
                       >{{ filter.contract_type }}</option>
                     </select>
-                  </div>
+                </div>
 
-                  <div class="sort_by">
+                <div class="sort_by">
                   <select class="form-select" id="sort_by" @change="filter_sort_by($event)">
                     <option value="2" selected>Meno recente</option>
                     <option value="1">Più recente</option>
                   </select>
-                  </div>
-                  <div v-if="this.remove_filter == true" class="remove_filter_div">
+                </div>
+
+                <div v-if="this.remove_filter == true" class="remove_filter_div">
                     <div class="remove_filter" @click="remove_filter2()">Rimuovi filtri</div>
-                  </div>
-                  
-                </div>    
+                </div>
+              </div>    
               <div class="tab-pane in active jobs" id="all_jobs">
                   <div
                     v-for="job in all_jobs"
@@ -770,6 +832,17 @@ export default {
               </div>
 
               <div class="tab-pane in active jobs" id="all_jobs_filtered" style="display: none;">
+                <div class="" id="no_results" v-if="this.search_text.length > 0" style="display: none;">
+                  <h3>Ci spiace, non abbiamo trovato offerte corrispondenti a "<span>{{ this.search_text }}</span>".</h3>
+                  <p>
+                    Utilizza i filtri per ottenere più risultati, oppure segui i suggerimenti:
+                    <ul>
+                      <li>Controlla che il ruolo o le parole chiave che hai digitato siano corrette. Prova eventualmente a cambiarle.</li>
+                      <li>Valuta la possibilità di iniziare la tua ricerca partendo dal filtro categoria.</li>
+                      <li>Stai cercando lavoro in una località specifica? Prova ad estendere l’area territoriale della tua ricerca.</li>
+                    </ul>
+                  </p>
+                </div>
                   <div
                     v-for="job in all_jobs_filtered"
                     class="card"
@@ -1412,7 +1485,8 @@ sviluppare in azienda.
 
   .filter_job{
     padding-bottom: 1.5rem;
-    
+    width: 17%;
+    margin-right: 2rem;
   }
 
   .filters_jobs{
@@ -1444,10 +1518,28 @@ sviluppare in azienda.
     font-weight: 500;
     color: #2c3e50;
     cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 50%;
+    border: 1px solid #dfdfdf;
+    border-radius: 15px;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+    width: 89%;
   }
 
   select:focus{
     border: none;
+  }
+
+  select:focus-visible{
+    outline: none;
+    border: 1px solid #dfdfdf;
   }
 
   select:visited{
@@ -1473,7 +1565,7 @@ sviluppare in azienda.
   .tab_header{
     padding-left: 3rem;
     padding-right: 3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .tab_header{
@@ -1511,6 +1603,22 @@ sviluppare in azienda.
 
   .filters_jobs .remove_filter:hover{
     border-color: #000;
+  }
+
+  #no_results{
+    width: 70vw;
+  }
+
+  #no_results h3{
+    font-weight: 300;
+  }
+
+  #no_results h3 span{
+    font-weight: 700;
+  }
+
+  #no_results p{
+    font-size: 18px;
   }
 
   .jobs{
@@ -2031,6 +2139,10 @@ sviluppare in azienda.
     border-radius: 12px;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+  }
+
+  .searchKey #remove_search_button{
+    display: none;
   }
 
   .searchKey span:hover {
