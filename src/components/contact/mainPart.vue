@@ -36,12 +36,7 @@ export default {
 
     window.addEventListener("scroll", reveal);
     window.scrollTo({ top: 0, behavior: "smooth" });
-
-    let content = document.querySelector(".menu");
-    content.style.width = "0%";
-    content.style.opacity = "0";
-    content.style.visibility = "hidden";
-    content.style.display = "unset";
+    
   },
   methods: {},
 };

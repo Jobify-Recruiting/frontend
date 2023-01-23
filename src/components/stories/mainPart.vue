@@ -66,12 +66,6 @@ export default {
     window.addEventListener("scroll", reveal);
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    let content = document.querySelector(".menu");
-    content.style.width = "0%";
-    content.style.opacity = "0";
-    content.style.visibility = "hidden";
-    content.style.display = "unset";
-
     const slider = document.querySelector(".featuredContent");
     let isDown = false;
     let startX;
@@ -145,79 +139,6 @@ export default {
     <div class="main">
       <div class="first">
         <div class="firstPart">
-          <!--<div class="firstPartBody">
-              <div
-                class="people1"
-                style="
-                  top: 60%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-                "
-              ></div>
-              <div
-                class="people2"
-                style="
-                  top: 80%;
-                  left: 15%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-                "
-              ></div>
-              <div
-                class="people2"
-                style="
-                  top: 20%;
-                  left: 5%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-                "
-              ></div>
-              <div
-                class="people1"
-                style="
-                  top: 40%;
-                  left: 12%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-                "
-              ></div>
-
-              <div
-                class="people1"
-                style="
-                  top: 25%;
-                  right: 10%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-                "
-              ></div>
-              <div
-                class="people2"
-                style="
-                    top: 41%;
-                    right: 2%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-                "
-              ></div>
-              <div
-                class="people2"
-                style="
-                  top: 80%;
-                  right: 10%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-                "
-              ></div>
-              <div
-                class="people1"
-                style="
-                  top: 60%;
-                  right: 10%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-                "
-              ></div>
-              <div class="subtitle">Lavora con noi</div>
-              <h2>Un team fatto di persone per le persone</h2>
-              <p>
-                Jobify Recruiting lavora con passione e impegno e mette competenza, tecnologia e umanità al servizio di
-    clienti che possono essere di volta in volta candidati e aziende. Se pensi di possedere queste qualità entra
-    nel nostro team.
-              </p>
-          </div>-->
 
           <div class="firstPartBody">
             <div class="subtitle">storie dei talenti</div>
@@ -314,7 +235,7 @@ export default {
                 >
               </div>
             </div>
-            <div class="col" data-v-1672ca76="" style="background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png); background-size: cover; border-radius: 30px; background-position: top;"></div>
+            <div class="col" data-v-1672ca76="" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fmatch_perfetto.png?alt=media&token=c27b57b6-190f-4931-a118-6c43fae019fe); background-size: cover; border-radius: 30px; background-position: top;"></div>
           </div>
         </div>
       </div>
@@ -957,7 +878,7 @@ export default {
   .fifthDiv .adviser .col_image {
     background: transparent;
     border-radius: 60px;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fmatch_perfetto.png?alt=media&token=c27b57b6-190f-4931-a118-6c43fae019fe);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;

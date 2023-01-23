@@ -35,14 +35,6 @@ export default {
       document.getElementById("globeViz")
     );
 
-    console.log(Globe().arcDashAnimateTime())
-
-    let content = document.querySelector(".menu");
-    content.style.width = "0%";
-    content.style.opacity = "0";
-    content.style.visibility = "hidden";
-    content.style.display = "unset";
-
     window.scrollTo({ top: 0, behavior: "smooth" });
 
     function animateValue(obj, start, end, duration) {

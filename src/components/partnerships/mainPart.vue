@@ -48,11 +48,6 @@ export default {
     window.addEventListener("scroll", reveal);
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    let content = document.querySelector(".menu");
-    content.style.width = "0%";
-    content.style.opacity = "0";
-    content.style.visibility = "hidden";
-    content.style.display = "unset";
   },
   methods: {
     requestPartner(){
@@ -189,7 +184,7 @@ successo suo e nostro.
                 style="
                   left: 31%;
                   top: -18%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo1.png);
+                  background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Flogo1.png?alt=media&token=03248c4f-dd05-46d4-aa48-2a379d97d659);
                 "
               >
                 <div class="" style=""></div>
@@ -215,7 +210,7 @@ successo suo e nostro.
                 style="
                   right: 32%;
                   top: -18%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo3.png);
+                  background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Flogo3.png?alt=media&token=aeee0210-dfef-47dc-8617-59228505717a);
                 "
               >
                 <div class="" style=""></div>
@@ -228,7 +223,7 @@ successo suo e nostro.
                 style="
                   right: 18%;
                   top: 60%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo4.png);
+                  background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Flogo4.png?alt=media&token=d02f1c3d-d0c0-447a-8895-14e09350edb7);
                 "
               >
                 <div class="" style=""></div>
@@ -254,7 +249,7 @@ successo suo e nostro.
                 style="
                   top: 60%;
                   left: 18%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo6.png);
+                  background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Flogo6.png?alt=media&token=54ac02b4-d5e2-429a-8926-ff40e9e7dfe4);
                 "
                 ><div class="" style=""></div
               ></a>
@@ -266,7 +261,7 @@ successo suo e nostro.
                 style="
                   left: 13%;
                   top: 14%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/partners/logo7.png);
+                  background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Flogo7.png?alt=media&token=96c67df3-7cb6-4436-967e-440cc4236351);
                 "
                 ><div class="" style=""></div
               ></a>

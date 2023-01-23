@@ -51,12 +51,6 @@ export default {
     window.addEventListener("scroll", reveal);
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    let content = document.querySelector(".menu");
-    content.style.width = "0%";
-    content.style.opacity = "0";
-    content.style.visibility = "hidden";
-    content.style.display = "unset";
-
     const slider = document.querySelector(".feedbacks");
     let isDown = false;
     let startX;
@@ -795,7 +789,7 @@ porta all’interpretazione dei nostri desideri con consapevolezza del e sul mer
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pamela.jpeg);
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fpamela.jpeg?alt=media&token=94c2dbd4-349e-418b-b2f6-a67d973de823);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -818,7 +812,7 @@ mie esigenze, offrendo al tempo stesso una consulenza di valore, da cui traspare
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/roberto.jpg);
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Froberto.jpg?alt=media&token=79651861-3370-495d-a974-c1ff07d51339);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -842,7 +836,7 @@ compito di ricerca e selezione del personale.
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/Ivan_Rallo.jpg);
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FIvan_Rallo.jpg?alt=media&token=fcdd92c8-1fb8-40ba-901c-739ae37bb9c3);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -864,7 +858,7 @@ nuovo personale.</h3>
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/adamo.jpeg);
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fadamo.jpeg?alt=media&token=c1cff70c-c60d-45f2-8a10-ea238f09ccc2);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -873,24 +867,6 @@ nuovo personale.</h3>
                   </div>
                 </div>
               </div>
-              <!--<div class="feedback">
-                <p class="quote">"</p>
-                <h3>
-                  Consiglierei jobify recruiting per la perseveranza, bravura, con cui sono stato seguito nell’aggiornamento costante della ricerca affidatagli. Soprattuto con la mia referente elisa con cui si e’ istaurato da subito un rapporto di affinita’, empatia e accoglienza nel capire le mie esigenze di trovare una risorsa valida da far crescere nella mia realta’ professionale. Se dovessi effettuare nuove ricerche di personale mi rivolgerei di nuovo a jobify che ha saputo consigliarmi e orientarmi nella scelta del miglior candidato, e tutto questo svolto dall’italia , visto la mia attivita’ si trova a malta. Sono molto contento di come abbiano lavorato con attenzione e costanza per la mia azienda.
-                </h3>
-                <div class="feedbackInfo">
-                  <div
-                    class="feedbackInfoPhoto"
-                    style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/adamo.jpeg);
-                    "
-                  ></div>
-                  <div class="feddbackData">
-                    <p class="author">Simone Cascone</p>
-                    <p class="worktitle">Adetto alle vendite (Malta) presso Cascone Home</p>
-                  </div>
-                </div>
-              </div>-->
               <div class="feedback">
                 <p class="quote">"</p>
                 <h3>
@@ -924,7 +900,7 @@ la persona a cui affidarsi.
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/Riccardo_Camillo.png);
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FRiccardo_Camillo.png?alt=media&token=6ff3d151-b1f7-4a89-901b-dcc2661cc8f3);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -1519,227 +1495,227 @@ cercano personale.
             </div>
             <div class="clientsCoDiv">
               <div class="clientsCoBody" id="clientsCoBodyId">
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-4.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-4.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="data:image/svg+xml,%3csvg width='330px' height='44px' viewBox='0 0 330 44' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3c!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch --%3e %3ctitle%3elogo/mamacrowd_logo_2020%3c/title%3e %3cdesc%3eCreated with Sketch.%3c/desc%3e %3cg id='logo/mamacrowd_logo_2020' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cpath d='M166.56625,36.98 C163.632045,36.98 160.97066,36.3404424 158.589504,35.0603989 C156.203924,33.7779773 154.324101,31.9949099 152.957504,29.7172479 C151.589878,27.4378723 150.90625,24.8621823 150.90625,22 C150.90625,19.1378177 151.589878,16.5621277 152.957504,14.2827521 C154.324101,12.0050901 156.203924,10.2220227 158.589504,8.93960107 C160.970852,7.65945451 163.645559,7.02 166.60625,7.02 C169.099515,7.02 171.360682,7.45986212 173.385841,8.34156419 C175.416819,9.22579954 177.126792,10.4996255 178.510361,12.1599078 L178.814628,12.5250284 L173.926118,17.0374992 L173.588253,16.6472897 C171.789012,14.5692923 169.579799,13.54 166.92625,13.54 C165.276048,13.54 163.813432,13.8993497 162.530161,14.6164717 C161.250921,15.3313411 160.257591,16.3246708 159.542722,17.6039107 C158.8256,18.8871817 158.46625,20.349798 158.46625,22 C158.46625,23.650202 158.8256,25.1128183 159.542722,26.3960893 C160.257591,27.6753292 161.250921,28.6686589 162.530161,29.3835283 C163.813432,30.1006503 165.276048,30.46 166.92625,30.46 C169.578437,30.46 171.786893,29.418512 173.586299,27.3149815 L173.923837,26.920395 L178.8118,31.4323617 L178.512946,31.796964 C177.128781,33.4856458 175.410801,34.7741305 173.364706,35.6589285 C171.326642,36.5402534 169.059198,36.98 166.56625,36.98 Z M194.164274,28.7 L188.96625,28.7 L188.96625,36.5 L181.48625,36.5 L181.48625,7.5 L194.10625,7.5 C196.653926,7.5 198.877063,7.92673209 200.7724,8.78447577 C202.68401,9.6495839 204.165419,10.8852617 205.20564,12.4877645 C206.246974,14.0919814 206.76625,15.9866385 206.76625,18.16 C206.76625,20.3349847 206.239401,22.2246152 205.182841,23.8164988 C204.230907,25.2507467 202.919606,26.3803129 201.257273,27.2025453 L207.74483,36.5 L199.564274,36.5 L194.164274,28.7 Z M188.96625,13.78 L188.96625,22.54 L193.74625,22.54 C195.584471,22.54 196.951892,22.1457883 197.864182,21.3775444 C198.759309,20.6237534 199.20625,19.5652087 199.20625,18.16 C199.20625,16.7285934 198.759515,15.664659 197.867155,14.9249397 C196.954549,14.1684371 195.585771,13.78 193.74625,13.78 L188.96625,13.78 Z M224.44625,36.98 C221.458907,36.98 218.757584,36.3338821 216.349651,35.0404778 C213.937571,33.7448464 212.044272,31.9551953 210.677504,29.6772479 C209.310005,27.398084 208.62625,24.8357286 208.62625,22 C208.62625,19.1642714 209.310005,16.601916 210.677504,14.3227521 C212.044272,12.0448047 213.937571,10.2551536 216.349651,8.95952222 C218.757584,7.66611786 221.458907,7.02 224.44625,7.02 C227.433902,7.02 230.12894,7.66625926 232.523903,8.96008959 C234.921679,10.2554399 236.814097,12.0442585 238.193849,14.3208491 C239.575395,16.6004009 240.26625,19.1634713 240.26625,22 C240.26625,24.8365287 239.575395,27.3995991 238.193849,29.6791509 C236.814097,31.9557415 234.921679,33.7445601 232.523903,35.0399104 C230.12894,36.3337407 227.433902,36.98 224.44625,36.98 Z M224.44625,30.46 C226.014394,30.46 227.422274,30.1017448 228.678648,29.3856114 C229.932541,28.6708925 230.914032,27.6768989 231.629778,26.3960893 C232.3469,25.1128183 232.70625,23.650202 232.70625,22 C232.70625,20.349798 232.3469,18.8871817 231.629778,17.6039107 C230.914032,16.3231011 229.932541,15.3291075 228.678648,14.6143886 C227.422274,13.8982552 226.014394,13.54 224.44625,13.54 C222.878106,13.54 221.470226,13.8982552 220.213852,14.6143886 C218.959959,15.3291075 217.978468,16.3231011 217.262722,17.6039107 C216.5456,18.8871817 216.18625,20.349798 216.18625,22 C216.18625,23.650202 216.5456,25.1128183 217.262722,26.3960893 C217.978468,27.6768989 218.959959,28.6708925 220.213852,29.3856114 C221.470226,30.1017448 222.878106,30.46 224.44625,30.46 Z M262.258665,18.6348026 L256.265909,36.5 L248.624238,36.5 L239.095666,7.5 L246.870831,7.5 L252.836546,26.076783 L259.066564,7.5 L265.790331,7.5 L271.830666,26.2250392 L277.984257,7.5 L285.235897,7.5 L275.748754,36.5 L268.06297,36.5 L262.258665,18.6348026 Z M287.74625,7.5 L300.96625,7.5 C304.080668,7.5 306.843361,8.09641273 309.248833,9.29227589 C311.664986,10.4934492 313.549264,12.1906848 314.892357,14.3784028 C316.235698,16.5665258 316.90625,19.1104756 316.90625,22 C316.90625,24.8895244 316.235698,27.4334742 314.892357,29.6215972 C313.549264,31.8093152 311.664986,33.5065508 309.248833,34.7077241 C306.843361,35.9035873 304.080668,36.5 300.96625,36.5 L287.74625,36.5 L287.74625,7.5 Z M295.22625,13.82 L295.22625,30.18 L300.64625,30.18 C303.325738,30.18 305.436268,29.4428894 307.004571,27.9749583 C308.565477,26.5139504 309.34625,24.5339097 309.34625,22 C309.34625,19.4660903 308.565477,17.4860496 307.004571,16.0250417 C305.436268,14.5571106 303.325738,13.82 300.64625,13.82 L295.22625,13.82 Z' id='crowd' stroke='%234FBDBF' fill='%234EBDBF'%3e%3c/path%3e %3cpath d='M38.893058,21.0099512 L31.4329711,33.54 L27.9476609,33.54 L20.52875,21.3440343 L20.52875,36.5 L13.44875,36.5 L13.44875,7.5 L19.591288,7.5 L29.7854486,24.4254193 L39.8239731,7.5 L45.9273235,7.5 L46.0101806,36.5 L38.9299391,36.5 L38.893058,21.0099512 Z M71.2543888,30.5 L58.9231112,30.5 L56.4431112,36.5 L48.6984759,36.5 L61.6241902,7.5 L68.6728867,7.5 L81.6400295,36.5 L73.7343888,36.5 L71.2543888,30.5 Z M68.8004709,24.58 L65.10875,15.6666557 L61.4170291,24.58 L68.8004709,24.58 Z M109.733058,21.0099512 L102.272971,33.54 L98.7876609,33.54 L91.36875,21.3440343 L91.36875,36.5 L84.28875,36.5 L84.28875,7.5 L90.431288,7.5 L100.625449,24.4254193 L110.663973,7.5 L116.767323,7.5 L116.850181,36.5 L109.769939,36.5 L109.733058,21.0099512 Z M142.094389,30.5 L129.763111,30.5 L127.283111,36.5 L119.538476,36.5 L132.46419,7.5 L139.512887,7.5 L152.48003,36.5 L144.574389,36.5 L142.094389,30.5 Z M139.640471,24.58 L135.94875,15.6666557 L132.257029,24.58 L139.640471,24.58 Z' id='mama' stroke='%234A4A4A' fill='%234A4A4A'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="data:image/svg+xml,%3csvg width='330px' height='44px' viewBox='0 0 330 44' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3e %3c!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch --%3e %3ctitle%3elogo/mamacrowd_logo_2020%3c/title%3e %3cdesc%3eCreated with Sketch.%3c/desc%3e %3cg id='logo/mamacrowd_logo_2020' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3e %3cpath d='M166.56625,36.98 C163.632045,36.98 160.97066,36.3404424 158.589504,35.0603989 C156.203924,33.7779773 154.324101,31.9949099 152.957504,29.7172479 C151.589878,27.4378723 150.90625,24.8621823 150.90625,22 C150.90625,19.1378177 151.589878,16.5621277 152.957504,14.2827521 C154.324101,12.0050901 156.203924,10.2220227 158.589504,8.93960107 C160.970852,7.65945451 163.645559,7.02 166.60625,7.02 C169.099515,7.02 171.360682,7.45986212 173.385841,8.34156419 C175.416819,9.22579954 177.126792,10.4996255 178.510361,12.1599078 L178.814628,12.5250284 L173.926118,17.0374992 L173.588253,16.6472897 C171.789012,14.5692923 169.579799,13.54 166.92625,13.54 C165.276048,13.54 163.813432,13.8993497 162.530161,14.6164717 C161.250921,15.3313411 160.257591,16.3246708 159.542722,17.6039107 C158.8256,18.8871817 158.46625,20.349798 158.46625,22 C158.46625,23.650202 158.8256,25.1128183 159.542722,26.3960893 C160.257591,27.6753292 161.250921,28.6686589 162.530161,29.3835283 C163.813432,30.1006503 165.276048,30.46 166.92625,30.46 C169.578437,30.46 171.786893,29.418512 173.586299,27.3149815 L173.923837,26.920395 L178.8118,31.4323617 L178.512946,31.796964 C177.128781,33.4856458 175.410801,34.7741305 173.364706,35.6589285 C171.326642,36.5402534 169.059198,36.98 166.56625,36.98 Z M194.164274,28.7 L188.96625,28.7 L188.96625,36.5 L181.48625,36.5 L181.48625,7.5 L194.10625,7.5 C196.653926,7.5 198.877063,7.92673209 200.7724,8.78447577 C202.68401,9.6495839 204.165419,10.8852617 205.20564,12.4877645 C206.246974,14.0919814 206.76625,15.9866385 206.76625,18.16 C206.76625,20.3349847 206.239401,22.2246152 205.182841,23.8164988 C204.230907,25.2507467 202.919606,26.3803129 201.257273,27.2025453 L207.74483,36.5 L199.564274,36.5 L194.164274,28.7 Z M188.96625,13.78 L188.96625,22.54 L193.74625,22.54 C195.584471,22.54 196.951892,22.1457883 197.864182,21.3775444 C198.759309,20.6237534 199.20625,19.5652087 199.20625,18.16 C199.20625,16.7285934 198.759515,15.664659 197.867155,14.9249397 C196.954549,14.1684371 195.585771,13.78 193.74625,13.78 L188.96625,13.78 Z M224.44625,36.98 C221.458907,36.98 218.757584,36.3338821 216.349651,35.0404778 C213.937571,33.7448464 212.044272,31.9551953 210.677504,29.6772479 C209.310005,27.398084 208.62625,24.8357286 208.62625,22 C208.62625,19.1642714 209.310005,16.601916 210.677504,14.3227521 C212.044272,12.0448047 213.937571,10.2551536 216.349651,8.95952222 C218.757584,7.66611786 221.458907,7.02 224.44625,7.02 C227.433902,7.02 230.12894,7.66625926 232.523903,8.96008959 C234.921679,10.2554399 236.814097,12.0442585 238.193849,14.3208491 C239.575395,16.6004009 240.26625,19.1634713 240.26625,22 C240.26625,24.8365287 239.575395,27.3995991 238.193849,29.6791509 C236.814097,31.9557415 234.921679,33.7445601 232.523903,35.0399104 C230.12894,36.3337407 227.433902,36.98 224.44625,36.98 Z M224.44625,30.46 C226.014394,30.46 227.422274,30.1017448 228.678648,29.3856114 C229.932541,28.6708925 230.914032,27.6768989 231.629778,26.3960893 C232.3469,25.1128183 232.70625,23.650202 232.70625,22 C232.70625,20.349798 232.3469,18.8871817 231.629778,17.6039107 C230.914032,16.3231011 229.932541,15.3291075 228.678648,14.6143886 C227.422274,13.8982552 226.014394,13.54 224.44625,13.54 C222.878106,13.54 221.470226,13.8982552 220.213852,14.6143886 C218.959959,15.3291075 217.978468,16.3231011 217.262722,17.6039107 C216.5456,18.8871817 216.18625,20.349798 216.18625,22 C216.18625,23.650202 216.5456,25.1128183 217.262722,26.3960893 C217.978468,27.6768989 218.959959,28.6708925 220.213852,29.3856114 C221.470226,30.1017448 222.878106,30.46 224.44625,30.46 Z M262.258665,18.6348026 L256.265909,36.5 L248.624238,36.5 L239.095666,7.5 L246.870831,7.5 L252.836546,26.076783 L259.066564,7.5 L265.790331,7.5 L271.830666,26.2250392 L277.984257,7.5 L285.235897,7.5 L275.748754,36.5 L268.06297,36.5 L262.258665,18.6348026 Z M287.74625,7.5 L300.96625,7.5 C304.080668,7.5 306.843361,8.09641273 309.248833,9.29227589 C311.664986,10.4934492 313.549264,12.1906848 314.892357,14.3784028 C316.235698,16.5665258 316.90625,19.1104756 316.90625,22 C316.90625,24.8895244 316.235698,27.4334742 314.892357,29.6215972 C313.549264,31.8093152 311.664986,33.5065508 309.248833,34.7077241 C306.843361,35.9035873 304.080668,36.5 300.96625,36.5 L287.74625,36.5 L287.74625,7.5 Z M295.22625,13.82 L295.22625,30.18 L300.64625,30.18 C303.325738,30.18 305.436268,29.4428894 307.004571,27.9749583 C308.565477,26.5139504 309.34625,24.5339097 309.34625,22 C309.34625,19.4660903 308.565477,17.4860496 307.004571,16.0250417 C305.436268,14.5571106 303.325738,13.82 300.64625,13.82 L295.22625,13.82 Z' id='crowd' stroke='%234FBDBF' fill='%234EBDBF'%3e%3c/path%3e %3cpath d='M38.893058,21.0099512 L31.4329711,33.54 L27.9476609,33.54 L20.52875,21.3440343 L20.52875,36.5 L13.44875,36.5 L13.44875,7.5 L19.591288,7.5 L29.7854486,24.4254193 L39.8239731,7.5 L45.9273235,7.5 L46.0101806,36.5 L38.9299391,36.5 L38.893058,21.0099512 Z M71.2543888,30.5 L58.9231112,30.5 L56.4431112,36.5 L48.6984759,36.5 L61.6241902,7.5 L68.6728867,7.5 L81.6400295,36.5 L73.7343888,36.5 L71.2543888,30.5 Z M68.8004709,24.58 L65.10875,15.6666557 L61.4170291,24.58 L68.8004709,24.58 Z M109.733058,21.0099512 L102.272971,33.54 L98.7876609,33.54 L91.36875,21.3440343 L91.36875,36.5 L84.28875,36.5 L84.28875,7.5 L90.431288,7.5 L100.625449,24.4254193 L110.663973,7.5 L116.767323,7.5 L116.850181,36.5 L109.769939,36.5 L109.733058,21.0099512 Z M142.094389,30.5 L129.763111,30.5 L127.283111,36.5 L119.538476,36.5 L132.46419,7.5 L139.512887,7.5 L152.48003,36.5 L144.574389,36.5 L142.094389,30.5 Z M139.640471,24.58 L135.94875,15.6666557 L132.257029,24.58 L139.640471,24.58 Z' id='mama' stroke='%234A4A4A' fill='%234A4A4A'%3e%3c/path%3e %3c/g%3e %3c/svg%3e"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://www.serverplan.com/assets/images/serverplan.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://www.serverplan.com/assets/images/serverplan.png"
+              />
+            </div>
 
-                <div class="logoClient" >
-                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/10/logo.png"
-                  />
-                </div>
+            <div class="logoClient" >
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/10/logo.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-2.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-2.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/06/logo_bit4id.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/06/logo_bit4id.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://static.wixstatic.com/media/aa2e06_cd3d54eb615144ca903cc5a5d5d754e7~mv2.png/v1/fill/w_214,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Contaq%20Logo%20blu.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://static.wixstatic.com/media/aa2e06_cd3d54eb615144ca903cc5a5d5d754e7~mv2.png/v1/fill/w_214,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Contaq%20Logo%20blu.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img src="https://www.simol.com/static/img/logo.png" />
-                </div>
+            <div class="logoClient">
+              <img src="https://www.simol.com/static/img/logo.png" />
+            </div>
 
-                <div class="logoClient">
-                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/equity+factory.jpg" />
-                </div>
+            <div class="logoClient">
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fequity%20factory.jpg?alt=media&token=e6236ba5-d052-4f68-99fa-3892be2c5731" />
+            </div>
 
-                <div class="logoClient">
-                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
-                  src="https://thingsss.s3.eu-central-1.amazonaws.com/cikis+studio.png" />
-                </div>
+            <div class="logoClient">
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
+              src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fcikis%20studio.png?alt=media&token=efd472ea-190a-4fbd-a5a8-07f24555e283" />
+            </div>
 
-                <div class="logoClient">
-                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/nte+process.png" />
-                </div>
+            <div class="logoClient">
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fnte%20process.png?alt=media&token=0c7add54-d491-42f2-b225-71df7d147701" />
+            </div>
 
-                <div class="logoClient">
-                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/adipso.png" />
-                </div>
+            <div class="logoClient">
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fadipso.png?alt=media&token=fe3c488f-fc2c-415c-bac0-999395d79402" />
+            </div>
 
-                <div class="logoClient">
-                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/Khale+automation.png" />
-                </div>
-                
-                <div class="logoClient">
-                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/stragroup.png" />
-                </div>
+            <div class="logoClient">
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FKhale%20automation.png?alt=media&token=cf3819f3-dbcc-4767-b38c-158a4e41aed7" />
+            </div>
+            
+            <div class="logoClient">
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fstragroup.png?alt=media&token=899b27b2-7351-4696-a3b3-f6543c454084" />
+            </div>
 
-                <div class="logoClient">
-                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/ghezzi.png" />
-                </div>
-                
-                <div class="logoClient">
-                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/system+management.jpeg" />
-                </div>
+            <div class="logoClient">
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fghezzi.png?alt=media&token=a7b63c63-a8c4-4b9f-8657-8fc2c1453bee" />
+            </div>
+            
+            <div class="logoClient">
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fsystem%20management.jpeg?alt=media&token=eba169c3-4831-45fa-af61-eb2a0acca208" />
+            </div>
 
-                <div class="logoClient">
-                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/unipol+rental.png" />
-                </div>
+            <div class="logoClient">
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Funipol%20rental.png?alt=media&token=0a43eea8-0624-4715-9fc1-ae5a7afd4cb2" />
+            </div>
 
-                <div class="logoClient">
-                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/alifmed.png" />
-                </div>
+            <div class="logoClient">
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Falifmed.png?alt=media&token=963e8fb1-bda8-45c4-b7c4-a4966985a9bd" />
+            </div>
 
-                <div class="logoClient">
-                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/betflag.png" />
-                </div>
+            <div class="logoClient">
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fbetflag.png?alt=media&token=27c67d30-2189-46f1-a616-6a9a6f8ac6d8" />
+            </div>
 
-                <div class="logoClient">
-                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                  src="https://thingsss.s3.eu-central-1.amazonaws.com/BN+Partners.png" />
-                </div>
+            <div class="logoClient">
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+              src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FBN%20Partners.png?alt=media&token=66f90cc3-03df-4190-8da3-416011fe7f18" />
+            </div>
 
-                <div class="logoClient">
-                  <img src="https://thingsss.s3.eu-central-1.amazonaws.com/celda.jpeg" />
-                </div>
+            <div class="logoClient">
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fcelda.jpeg?alt=media&token=35332a91-a55a-4116-a13c-a1fcf0eb3129" />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/athena_logo.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/athena_logo.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-etwo.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-etwo.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-border-white-1-1.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-border-white-1-1.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-OrfinSito.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-OrfinSito.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/studio-felli-1-1.jpg"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/studio-felli-1-1.jpg"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-07-at-22.44.28-1.jpeg"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/WhatsApp-Image-2021-04-07-at-22.44.28-1.jpeg"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-5.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-5.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-3-1.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/09/Senza-titolo-3-1.png"
+              />
+            </div>
 
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-autoscuole-furia-3-1.jpg"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo-autoscuole-furia-3-1.jpg"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo20white.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo20white.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Schermata-2020-07-10-alle-16.59.13-1-1.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Schermata-2020-07-10-alle-16.59.13-1-1.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo_irec-1.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/logo_irec-1.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/AG_LOGO_CLAIM_BIANCO-1.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/AG_LOGO_CLAIM_BIANCO-1.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/PentaFinanziamentiItalia.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/PentaFinanziamentiItalia.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Cattura-4.png"
-                  />
-                </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Cattura-4.png"
+              />
+            </div>
 
-                <div class="logoClient">
-                  <img
-                    src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Unione-professionisti-1.jpg"
-                  />
-                </div>
-                
-                <div class="logoClient">
-                  <img
-                    src="https://www.studiorossihr.com/wp-content/uploads/2020/10/logo-orizzontale500.png"
-                  />
-                </div>
-                
-                <div class="logoClient">
-                  <img src="https://www.autosystemspa.it/img/logo-autosystem.png" />
-                </div>
-                <div class="logoClient">
-                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
-                        src="https://thingsss.s3.eu-central-1.amazonaws.com/logo-cascone-home.png" />
-                </div>
-                <div class="logoClient">
-                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
-                    src="https://www.dotstay.com/workspace/static/images/logos/logodotstaybianco.svg"
-                  />
-                </div>
-                <div class="logoClient">
-                  <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxOTAuMiA1My4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOTAuMiA1My4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+Cjx0aXRsZT5Bc3NldCA1PC90aXRsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI1LjYsNDAuOGMtMywwLjEtNi0wLjgtOC41LTIuNWMtMi4xLTEuNS0zLjQtMy45LTMuNi02LjVoNy42YzAuMSwxLDAuNiwyLDEuNSwyLjZjMC45LDAuNiwyLDAuOSwzLjEsMC45CgljMi4zLDAsMy41LTAuNywzLjUtMi4xYzAtMC42LTAuMy0xLjItMC44LTEuNmMtMC44LTAuNS0xLjctMC44LTIuNi0xbC01LTEuM2MtMi0wLjQtMy44LTEuNS01LjEtMy4xYy0xLjEtMS41LTEuNy0zLjMtMS43LTUuMgoJYzAtMi4zLDEtNC40LDIuOS01LjdjMi4zLTEuNiw1LTIuMyw3LjgtMi4yYzIuNy0wLjEsNS4zLDAuNyw3LjUsMi4zYzIsMS41LDMuMiwzLjcsMy4zLDYuMWgtNy40Yy0wLjMtMS44LTEuNS0yLjctMy41LTIuNwoJYy0wLjgsMC0xLjYsMC4xLTIuMywwLjVjLTAuNSwwLjMtMC45LDAuOS0wLjksMS41YzAsMS4yLDEsMiwzLDIuNWw0LjcsMS4zYzIuMSwwLjQsNC4xLDEuNCw1LjYsM2MxLjIsMS41LDEuOCwzLjMsMS44LDUuMwoJYzAsMi40LTEuMSw0LjYtMy4xLDUuOUMzMS4yLDQwLjEsMjguNCw0MC45LDI1LjYsNDAuOCIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDguNyw1MS4zaC03LjNWMTMuNmg3LjN2M2MwLjgtMS4xLDEuOS0xLjksMy4xLTIuNWMxLjQtMC43LDMtMS4xLDQuNi0xLjFjMy40LDAsNi43LDEuNSw4LjksNC4xCgljMi40LDIuNywzLjcsNi4yLDMuNyw5LjhjMC4xLDMuNi0xLjIsNy4xLTMuNiw5LjhjLTIuMiwyLjYtNS41LDQuMS04LjksNC4xYy0xLjYsMC0zLjItMC4zLTQuNi0xLjFjLTEuMi0wLjYtMi4zLTEuNC0zLjEtMi41CglMNDguNyw1MS4zTDQ4LjcsNTEuM3ogTTUwLDMyLjFjMi43LDIuNyw3LDIuNyw5LjcsMGMwLDAsMCwwLDAsMGMxLjMtMS40LDEuOS0zLjMsMS44LTUuMmMwLjEtMS45LTAuNi0zLjgtMS44LTUuMgoJYy0yLjctMi43LTcuMS0yLjctOS43LDBjMCwwLDAsMCwwLDBjLTEuMywxLjQtMS45LDMuMy0xLjgsNS4yQzQ4LjEsMjguOCw0OC43LDMwLjcsNTAsMzIuMSIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNODcuNSw0MC4yVjEzLjZoNy4zdjNjMS42LTIuNCw0LjItMy42LDcuNi0zLjZjMi45LTAuMiw1LjYsMSw3LjYsMy4xYzEuOSwyLjQsMi45LDUuNCwyLjcsOC40djE1LjZoLTcuM1YyNS44CgljMC4xLTEuNi0wLjMtMy4yLTEuMi00LjVjLTAuOC0xLjEtMi4xLTEuNy0zLjUtMS42Yy0xLjctMC4xLTMuMiwwLjctNC4zLDEuOWMtMS4yLDEuNi0xLjgsMy42LTEuNiw1LjZ2MTNIODcuNXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEyOC42LDQwLjhjLTIuOCwwLjItNS42LTEtNy40LTMuMmMtMS45LTIuNS0yLjgtNS41LTIuNi04LjZWMTMuNmg3LjN2MTQuMmMwLDQuMiwxLjUsNi4zLDQuNSw2LjMKCWMxLjYsMC4xLDMuMS0wLjcsNC0xLjljMS4xLTEuNywxLjYtMy43LDEuNS01LjZ2LTEzaDcuM3YyNi42aC03LjN2LTNDMTM0LjMsMzkuNiwxMzEuNSw0MSwxMjguNiw0MC44Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNTcsNTEuM2gtNy4zVjEzLjZoNy4zdjNjMC44LTEuMSwxLjktMS45LDMuMS0yLjVjMS40LTAuNywzLTEuMSw0LjYtMS4xYzMuNCwwLDYuNywxLjUsOC45LDQuMQoJYzIuNCwyLjcsMy43LDYuMiwzLjYsOS44YzAuMSwzLjYtMS4yLDcuMS0zLjYsOS44Yy0yLjIsMi42LTUuNSw0LjEtOC45LDQuMWMtMS42LDAtMy4yLTAuMy00LjYtMS4xYy0xLjItMC42LTIuMy0xLjQtMy4xLTIuNVY1MS4zegoJIE0xNTguMiwzMi4xYzIuNywyLjcsNywyLjcsOS43LDBjMCwwLDAsMCwwLDBjMS4zLTEuNCwxLjktMy4zLDEuOC01LjJjMC4xLTEuOS0wLjYtMy44LTEuOC01LjJjLTIuNy0yLjctNy4xLTIuNy05LjcsMGMwLDAsMCwwLDAsMAoJYy0xLjMsMS40LTEuOSwzLjMtMS44LDUuMkMxNTYuMywyOC44LDE1NywzMC43LDE1OC4yLDMyLjEiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI3My44LDQwLjIgODEuMSw0MC4yIDgxLjEsMjkuMyA3My44LDI5LjMgNzMuOCw0MC4yICIvPgo8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjgxLjEsMTMuNiA3My44LDEzLjYgNzMuOCwyNC41IDgxLjEsMjQuNSA4MS4xLDEzLjYgIi8+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMCw1My4yIDAsMCAxMS44LDAgMTEuOCw1LjcgNy4zLDUuNyA3LjMsNDcuNSAxMS44LDQ3LjUgMTEuOCw1My4yIDAsNTMuMiAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxOTAuMiwwIDE5MC4yLDUzLjIgMTc4LjQsNTMuMiAxNzguNCw0Ny41IDE4Mi45LDQ3LjUgMTgyLjksNS43IDE3OC40LDUuNyAxNzguNCwwIDE5MC4yLDAgIi8+Cjwvc3ZnPgo="
-                  />
-                </div>
-              </div>
+            <div class="logoClient">
+              <img
+                src="https://davidemaggiohr.it/wp-content/uploads/2021/04/Unione-professionisti-1.jpg"
+              />
+            </div>
+            
+            <div class="logoClient">
+              <img
+                src="https://www.studiorossihr.com/wp-content/uploads/2020/10/logo-orizzontale500.png"
+              />
+            </div>
+            
+            <div class="logoClient">
+              <img src="https://www.autosystemspa.it/img/logo-autosystem.png" />
+            </div>
+            <div class="logoClient">
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
+                    src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Flogo-cascone-home.png?alt=media&token=848b5d29-14dc-4c5a-bab4-0f0eaec529cc" />
+            </div>
+            <div class="logoClient">
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
+                src="https://www.dotstay.com/workspace/static/images/logos/logodotstaybianco.svg"
+              />
+            </div>
+            <div class="logoClient">
+              <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
+                src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIzLjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAxOTAuMiA1My4yIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAxOTAuMiA1My4yOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6I0ZGRkZGRjt9Cjwvc3R5bGU+Cjx0aXRsZT5Bc3NldCA1PC90aXRsZT4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTI1LjYsNDAuOGMtMywwLjEtNi0wLjgtOC41LTIuNWMtMi4xLTEuNS0zLjQtMy45LTMuNi02LjVoNy42YzAuMSwxLDAuNiwyLDEuNSwyLjZjMC45LDAuNiwyLDAuOSwzLjEsMC45CgljMi4zLDAsMy41LTAuNywzLjUtMi4xYzAtMC42LTAuMy0xLjItMC44LTEuNmMtMC44LTAuNS0xLjctMC44LTIuNi0xbC01LTEuM2MtMi0wLjQtMy44LTEuNS01LjEtMy4xYy0xLjEtMS41LTEuNy0zLjMtMS43LTUuMgoJYzAtMi4zLDEtNC40LDIuOS01LjdjMi4zLTEuNiw1LTIuMyw3LjgtMi4yYzIuNy0wLjEsNS4zLDAuNyw3LjUsMi4zYzIsMS41LDMuMiwzLjcsMy4zLDYuMWgtNy40Yy0wLjMtMS44LTEuNS0yLjctMy41LTIuNwoJYy0wLjgsMC0xLjYsMC4xLTIuMywwLjVjLTAuNSwwLjMtMC45LDAuOS0wLjksMS41YzAsMS4yLDEsMiwzLDIuNWw0LjcsMS4zYzIuMSwwLjQsNC4xLDEuNCw1LjYsM2MxLjIsMS41LDEuOCwzLjMsMS44LDUuMwoJYzAsMi40LTEuMSw0LjYtMy4xLDUuOUMzMS4yLDQwLjEsMjguNCw0MC45LDI1LjYsNDAuOCIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNNDguNyw1MS4zaC03LjNWMTMuNmg3LjN2M2MwLjgtMS4xLDEuOS0xLjksMy4xLTIuNWMxLjQtMC43LDMtMS4xLDQuNi0xLjFjMy40LDAsNi43LDEuNSw4LjksNC4xCgljMi40LDIuNywzLjcsNi4yLDMuNyw5LjhjMC4xLDMuNi0xLjIsNy4xLTMuNiw5LjhjLTIuMiwyLjYtNS41LDQuMS04LjksNC4xYy0xLjYsMC0zLjItMC4zLTQuNi0xLjFjLTEuMi0wLjYtMi4zLTEuNC0zLjEtMi41CglMNDguNyw1MS4zTDQ4LjcsNTEuM3ogTTUwLDMyLjFjMi43LDIuNyw3LDIuNyw5LjcsMGMwLDAsMCwwLDAsMGMxLjMtMS40LDEuOS0zLjMsMS44LTUuMmMwLjEtMS45LTAuNi0zLjgtMS44LTUuMgoJYy0yLjctMi43LTcuMS0yLjctOS43LDBjMCwwLDAsMCwwLDBjLTEuMywxLjQtMS45LDMuMy0xLjgsNS4yQzQ4LjEsMjguOCw0OC43LDMwLjcsNTAsMzIuMSIvPgo8cGF0aCBjbGFzcz0ic3QwIiBkPSJNODcuNSw0MC4yVjEzLjZoNy4zdjNjMS42LTIuNCw0LjItMy42LDcuNi0zLjZjMi45LTAuMiw1LjYsMSw3LjYsMy4xYzEuOSwyLjQsMi45LDUuNCwyLjcsOC40djE1LjZoLTcuM1YyNS44CgljMC4xLTEuNi0wLjMtMy4yLTEuMi00LjVjLTAuOC0xLjEtMi4xLTEuNy0zLjUtMS42Yy0xLjctMC4xLTMuMiwwLjctNC4zLDEuOWMtMS4yLDEuNi0xLjgsMy42LTEuNiw1LjZ2MTNIODcuNXoiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTEyOC42LDQwLjhjLTIuOCwwLjItNS42LTEtNy40LTMuMmMtMS45LTIuNS0yLjgtNS41LTIuNi04LjZWMTMuNmg3LjN2MTQuMmMwLDQuMiwxLjUsNi4zLDQuNSw2LjMKCWMxLjYsMC4xLDMuMS0wLjcsNC0xLjljMS4xLTEuNywxLjYtMy43LDEuNS01LjZ2LTEzaDcuM3YyNi42aC03LjN2LTNDMTM0LjMsMzkuNiwxMzEuNSw0MSwxMjguNiw0MC44Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xNTcsNTEuM2gtNy4zVjEzLjZoNy4zdjNjMC44LTEuMSwxLjktMS45LDMuMS0yLjVjMS40LTAuNywzLTEuMSw0LjYtMS4xYzMuNCwwLDYuNywxLjUsOC45LDQuMQoJYzIuNCwyLjcsMy43LDYuMiwzLjYsOS44YzAuMSwzLjYtMS4yLDcuMS0zLjYsOS44Yy0yLjIsMi42LTUuNSw0LjEtOC45LDQuMWMtMS42LDAtMy4yLTAuMy00LjYtMS4xYy0xLjItMC42LTIuMy0xLjQtMy4xLTIuNVY1MS4zegoJIE0xNTguMiwzMi4xYzIuNywyLjcsNywyLjcsOS43LDBjMCwwLDAsMCwwLDBjMS4zLTEuNCwxLjktMy4zLDEuOC01LjJjMC4xLTEuOS0wLjYtMy44LTEuOC01LjJjLTIuNy0yLjctNy4xLTIuNy05LjcsMGMwLDAsMCwwLDAsMAoJYy0xLjMsMS40LTEuOSwzLjMtMS44LDUuMkMxNTYuMywyOC44LDE1NywzMC43LDE1OC4yLDMyLjEiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSI3My44LDQwLjIgODEuMSw0MC4yIDgxLjEsMjkuMyA3My44LDI5LjMgNzMuOCw0MC4yICIvPgo8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjgxLjEsMTMuNiA3My44LDEzLjYgNzMuOCwyNC41IDgxLjEsMjQuNSA4MS4xLDEzLjYgIi8+Cjxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMCw1My4yIDAsMCAxMS44LDAgMTEuOCw1LjcgNy4zLDUuNyA3LjMsNDcuNSAxMS44LDQ3LjUgMTEuOCw1My4yIDAsNTMuMiAiLz4KPHBvbHlnb24gY2xhc3M9InN0MCIgcG9pbnRzPSIxOTAuMiwwIDE5MC4yLDUzLjIgMTc4LjQsNTMuMiAxNzguNCw0Ny41IDE4Mi45LDQ3LjUgMTgyLjksNS43IDE3OC40LDUuNyAxNzguNCwwIDE5MC4yLDAgIi8+Cjwvc3ZnPgo="
+              />
+            </div>
+          </div>
             </div>
           </div>
         </div>
@@ -1752,28 +1728,6 @@ cercano personale.
               Se anche tu stai cercando il candidato perfetto per la posizione aperta nella tua azienda fissa un
 appuntamento con Jobify Recruiting.
             </div>
-            <!--<div class="images">
-              <div
-                class="photo"
-                style="
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-                "
-              ></div>
-
-              <div
-                class="photo"
-                style="
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-                "
-              ></div>
-
-              <div
-                class="photo"
-                style="
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-                "
-              ></div>
-            </div>-->
           </div>
           <div class="col col_2 transition">
             <h3>Invia richiesta</h3>
@@ -2037,7 +1991,7 @@ appuntamento con Jobify Recruiting.
     padding-left: 8rem;
     padding-right: 0;
     padding-top: 5rem;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/sei_azienda.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fsei_azienda.png?alt=media&token=6043acaf-3cf4-4212-bd51-2c8183a747aa);
     background-position: top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -2806,7 +2760,7 @@ appuntamento con Jobify Recruiting.
   .fifthDiv .adviser .col_image {
     background: transparent;
     border-radius: 30px;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/storie.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fstorie.jpg?alt=media&token=78064b9a-393a-4c5e-83e8-5a15be65189c);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -3018,7 +2972,7 @@ appuntamento con Jobify Recruiting.
   .thirdPart .thirdPartImage{
     width: 36vw;
     height: 44vw;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ilproblemadelleaziende.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Filproblemadelleaziende.png?alt=media&token=e780d648-5475-4cf9-b4ca-80449b202965);
     background-position: center;
     background-size: cover;
     
@@ -3252,7 +3206,7 @@ appuntamento con Jobify Recruiting.
     box-shadow: 0 0 0 1px rgb(53 72 91 / 14%), 0 3px 2px rgb(0 0 0 / 4%),
       0 7px 5px rgb(0 0 0 / 2%), 0 13px 10px rgb(0 0 0 / 2%),
       0 22px 17px rgb(0 0 0 / 2%) !important;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph17.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fph17.jpg?alt=media&token=afb18c7e-0935-4868-9059-651e03ab91d1);
     background-size: cover;
     background-position: center;
     width: 75vw;

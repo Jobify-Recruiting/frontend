@@ -34,12 +34,7 @@ export default {
 
     window.addEventListener("scroll", reveal);
     window.scrollTo({ top: 0, behavior: "smooth" });
-
-    let content = document.querySelector(".menu");
-    content.style.width = "0%";
-    content.style.opacity = "0";
-    content.style.visibility = "hidden";
-    content.style.display = "unset";
+    
   },
   methods: {
     sendCV() {
@@ -316,7 +311,7 @@ export default {
             <div class="second">
 
               <div class="card">
-                <img class="card-img-top" src="https://thingsss.s3.eu-central-1.amazonaws.com/curriculum.jpg" alt="Card image cap">
+                <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fcurriculum.jpg?alt=media&token=3a3b17b8-0368-4283-b6be-d7993ea204f9" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Il Curriculum Vitae</h5>
                   <p class="card-text">
@@ -333,7 +328,7 @@ export default {
               </div>
 
               <div class="card">
-                <img class="card-img-top" src="https://thingsss.s3.eu-central-1.amazonaws.com/colloquio.jpg" alt="Card image cap">
+                <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fcolloquio.jpg?alt=media&token=f1c4ffe3-f163-49f1-ae13-2a479631f7e6" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">Il colloquio</h5>
                   <p class="card-text">
@@ -349,7 +344,7 @@ export default {
               </div>
 
               <div class="card">
-                <img class="card-img-top" src="https://thingsss.s3.eu-central-1.amazonaws.com/colloquio.jpg" alt="Card image cap">
+                <img class="card-img-top" src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Flettera.jpg?alt=media&token=3f8e59ad-8a3a-41a4-85f3-b9e20c1465fb" alt="Card image cap">
                 <div class="card-body">
                   <h5 class="card-title">La lettera di presentazione</h5>
                   <p class="card-text">
@@ -1587,7 +1582,7 @@ export default {
   .fifthDiv .adviser .col_image {
     background: transparent;
     border-radius: 30px;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fmatch_perfetto.png?alt=media&token=c27b57b6-190f-4931-a118-6c43fae019fe);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

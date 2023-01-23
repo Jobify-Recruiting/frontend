@@ -1,7 +1,8 @@
 <script>
+import right_navbar from "@/components/right_navbar/mainPart.vue";
 export default {
   name: "navbar",
-  components: {},
+  components: {right_navbar},
   data() {
     return {
       scrollPosition: null,
@@ -99,27 +100,8 @@ export default {
             ><div class="link">Storie dei talenti</div></router-link
           >
         </div>
-        <div class="left">
-          <!-- @click="call_btn()" -->
-          <!--<div class="link menuBtn" @click="openMenu()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="26"
-              height="26"
-              fill="#fff"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
-          </div>-->
-          <a href="https://jobifyrecruiting.netlify.app/book"
-            ><div class="link menuBtn">Prenota un appuntamento</div>
-        </a>
-        </div>
+        <right_navbar></right_navbar>
+        
       </div>
     </div>
   </header>
@@ -135,108 +117,6 @@ export default {
     </div>
   </div>
 
-  <div class="menu">
-    <div class="top">
-      <div class="logo">Logo</div>
-      <div class="closeMenu" @click="closeMenu()">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-x-lg"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"
-          />
-        </svg>
-      </div>
-    </div>
-    <div class="main">
-      <div class="list">
-        <router-link to="/">
-          <div class="link">
-            <h3>
-              <p class="icon">01</p>
-              Home
-            </h3>
-          </div>
-        </router-link>
-        <router-link to="/openposition">
-          <div class="link">
-            <h3>
-              <p class="icon">02</p>
-              Posizioni aperte
-            </h3>
-          </div>
-        </router-link>
-        <router-link to="/stories">
-          <div class="link">
-            <h3>
-              <p class="icon">03</p>
-              Storie dei talenti
-            </h3>
-          </div>
-        </router-link>
-        <router-link to="/journal">
-          <div class="link">
-            <h3>
-              <p class="icon">04</p>
-              Journal
-            </h3>
-          </div>
-        </router-link>
-      </div>
-
-      <div class="list">
-        <router-link to="/about">
-          <div class="link">
-            <h3>
-              <p class="icon">05</p>
-              Chi siamo
-            </h3>
-          </div>
-        </router-link>
-        <router-link to="/workwithus">
-          <div class="link">
-            <h3>
-              <p class="icon">06</p>
-              Lavora con noi
-            </h3>
-          </div>
-        </router-link>
-        <router-link to="/partnerships">
-          <div class="link">
-            <h3>
-              <p class="icon">07</p>
-              Partnerships
-            </h3>
-          </div>
-        </router-link>
-        <router-link to="/contact">
-          <div class="link">
-            <h3>
-              <p class="icon">08</p>
-              Contattaci
-            </h3>
-          </div>
-        </router-link>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="menuFooterSx">
-        <p>
-          © 2022 &nbsp;&nbsp;•&nbsp;&nbsp; Jobify Recruiting Srl. (Aut. Min.
-          Prot. N.F205S530526 del 26.07.2022)
-        </p>
-      </div>
-      <div class="socialFooter">
-        <div class="link">Facebook</div>
-        <div class="link">Linkedin</div>
-      </div>
-    </div>
-  </div>
   <RouterView />
 </template>
 
@@ -315,6 +195,20 @@ a:hover {
   .nav .left {
     display: flex;
     align-items: center;
+  }
+
+  .nav .favorite_list{
+    margin-right: 2rem;
+    color: rgb(222 222 222);
+    cursor: pointer;
+  }
+
+  .nav .favorite_list svg{
+    margin-right: 0.5rem;
+  }
+
+  .nav .favorite_list:hover{
+    color: #fff;
   }
 
   .nav .center {

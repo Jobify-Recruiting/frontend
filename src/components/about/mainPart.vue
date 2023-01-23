@@ -92,11 +92,6 @@ export default {
     window.addEventListener("scroll", bold);
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    let content = document.querySelector(".menu");
-    content.style.width = "0%";
-    content.style.opacity = "0";
-    content.style.visibility = "hidden";
-    content.style.display = "unset";
   },
   methods: {
     story(x){
@@ -250,7 +245,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/marcofattizzo.png);
+                background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fmarcofattizzo.png?alt=media&token=eb30a01f-1efe-4781-a2ae-1d364bbc9124);
               "
             ></div>
             <div class="name">Marco Fattizzo</div>
@@ -265,7 +260,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/martinadipalma.png);
+                background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fmartinadipalma.png?alt=media&token=f047d48f-e1ae-47dc-9814-100508a98a70);
               "
             ></div>
             <div class="name">Martina Di Palma</div>
@@ -273,7 +268,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
           </div>
           <div class="person" @click="story(4)">
             <div class="photo" style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ceciliadondi.png);
+                background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fceciliadondi.png?alt=media&token=ec3880ec-283d-4dbe-803c-bb2fe3c43f46);
               "></div>
             <div class="name">Cecilia Dondi</div>
             <div class="jobtitle">HR Consultant</div>
@@ -282,7 +277,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/chiaraluciagraziano.png);
+                background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fchiaraluciagraziano.png?alt=media&token=ecc96c60-d5e5-45dd-8e89-9947194447e8);
               "
             ></div>
             <div class="name">Chiara Lucia Graziano</div>
@@ -292,7 +287,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/elisasevera.png);
+                background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Felisasevera.png?alt=media&token=19ae83b4-de89-478f-9c25-ddb9234e8e4b);
               "
             ></div>
             <div class="name">Elisa Severa</div>
@@ -302,7 +297,7 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
             <div
               class="photo"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/alessiocinao.png);
+                background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Falessiocinao.png?alt=media&token=e36200d8-5ffe-4239-8ab9-82ed522296ee);
               "
             ></div>
             <div class="name">Alessio Cinao</div>

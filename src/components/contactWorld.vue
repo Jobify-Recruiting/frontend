@@ -51,12 +51,6 @@ export default {
       document.getElementById("globeViz")
     );
 
-    let content = document.querySelector(".menu");
-    content.style.width = "0%";
-    content.style.opacity = "0";
-    content.style.visibility = "hidden";
-    content.style.display = "unset";
-
     window.scrollTo({ top: 0, behavior: "smooth" });
   },
   methods: {
@@ -281,13 +275,13 @@ export default {
             <div class="img1">
               <img
                 class="mainImage"
-                src="https://thingsss.s3.eu-central-1.amazonaws.com/ph17.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fph17.jpg?alt=media&token=afb18c7e-0935-4868-9059-651e03ab91d1"
               />
             </div>
             <div class="img2">
               <img
                 class="mainImage"
-                src="https://thingsss.s3.eu-central-1.amazonaws.com/ph18.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fph18.jpg?alt=media&token=e1da6c72-9039-471d-8d33-20d25c79f26d"
               />
             </div>
           </div>
@@ -731,7 +725,7 @@ export default {
   .office .image {
     width: 5vw;
     height: 5vw;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph15.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fph15.jpg?alt=media&token=4bb8f423-f8c0-41a0-a343-e22c1d89bb40);
     background-position: center;
     background-size: cover;
     border-radius: 25rem;
@@ -745,7 +739,7 @@ export default {
   .office .image2 {
     width: 5vw;
     height: 5vw;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph17.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fph17.jpg?alt=media&token=afb18c7e-0935-4868-9059-651e03ab91d1);
     background-position: center;
     background-size: cover;
     border-radius: 25rem;
@@ -759,7 +753,7 @@ export default {
   .office .image3 {
     width: 5vw;
     height: 5vw;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/ph19.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fph19.jpg?alt=media&token=f0c9ef2e-9746-47f7-8972-6d05eacdb404);
     background-position: center;
     background-size: cover;
     border-radius: 25rem;

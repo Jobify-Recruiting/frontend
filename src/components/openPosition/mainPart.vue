@@ -264,12 +264,6 @@ export default {
     window.addEventListener("scroll", reveal);
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    let content = document.querySelector(".menu");
-    content.style.width = "0%";
-    content.style.opacity = "0";
-    content.style.visibility = "hidden";
-    content.style.display = "unset";
-
     const slider = document.querySelector(".filtersContent");
     let isDown = false;
     let startX;
@@ -356,6 +350,14 @@ export default {
     },              
  },
   methods: {
+    uniqBy(a, key) {
+        var seen = {};
+        return a.filter(function(item) {
+            var k = key(item);
+            return seen.hasOwnProperty(k) ? false : (seen[k] = true);
+        })
+    },
+
     closeSuggestWords() {
       let suggestWords2 = document.querySelector("#suggestWords2");
       suggestWords2.style.opacity = "0";
@@ -365,7 +367,7 @@ export default {
     },
 
     filter_search(search_text){
-      this.suggestWords2();
+      this.closeSuggestWords();
       //event.target.value
       function filterByValue(array, string) {
           return array.filter(o =>
@@ -413,7 +415,7 @@ export default {
     },
 
     keyword_search(event){
-      this.suggestWords2();
+      this.closeSuggestWords();
       this.search_text = event;
 
       function filterByValue(array, string) {
@@ -540,6 +542,45 @@ export default {
       /*var overlay = document.getElementById("suggestWordsOverlay");
       overlay.style.display = "block";*/
     },
+
+    add_favorite(job, event){
+      console.log(this.$favorite_list)
+      var bi_heart = event.currentTarget;
+      var bi_heart_fill1 = bi_heart.parentElement;
+      var bi_heart_fill2 = bi_heart_fill1.querySelector('.bi-heart-fill');
+      bi_heart.style.display = "none";
+      bi_heart_fill2.style.display = "inline";
+
+      this.$favorite_list.push({ 
+          id: job.id,
+          job_title: job.job_title,
+          location: job.location,
+          company: job.company,
+          contact: job.contact,
+          publication_date: job.publication_date,
+          closing_date: job.closing_date,
+          contract_type: job.contract_type,
+          area_funzione: job.area_funzione,
+          url: job.url,
+      });
+
+      this.$favorite_list2 = this.uniqBy(this.$favorite_list, JSON.stringify)
+        
+      console.log(this.$favorite_list2)
+    },  
+
+    remove_favorite(job, event){
+      var bi_heart = event.currentTarget;
+      var bi_heart_fill1 = bi_heart.parentElement;
+      var bi_heart_fill2 = bi_heart_fill1.querySelector('.bi-heart');
+      
+      bi_heart_fill2.style.display = "inline";
+      bi_heart.style.display = "none";
+
+      this.$favorite_list2 = this.$favorite_list2.filter(item => item.id !== job.id)
+        
+      console.log(this.$favorite_list2)
+    },  
 
     jobAlert() {
       let content = document.querySelector(".bg1");
@@ -800,7 +841,17 @@ export default {
                     v-bind:key="job"
                   >
                       <div class="card-body">
-                        <h5 class="card-title">{{ job.job_title }}</h5>
+                        <h5 class="card-title">
+                          {{ job.job_title }}
+                          <div id="favorite_btn">
+                            <svg @click="add_favorite(job, $event)" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                            <svg @click="remove_favorite(job, $event)" xmlns="http://www.w3.org/2000/svg" style="display: none;" width="26" height="26" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                            </svg>
+                          </div>
+                        </h5>
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0c2550" class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -849,7 +900,17 @@ export default {
                     v-bind:key="job"
                   >
                       <div class="card-body">
-                        <h5 class="card-title">{{ job.job_title }}</h5>
+                        <h5 class="card-title">
+                          {{ job.job_title }}
+                          <div id="favorite_btn">
+                            <svg @click="add_favorite(job, $event)" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                            </svg>
+                            <svg @click="remove_favorite(job, $event)" xmlns="http://www.w3.org/2000/svg" style="display: none;" width="26" height="26" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                            </svg>
+                          </div>
+                        </h5>
                         <ul class="list-group list-group-flush">
                           <li class="list-group-item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0c2550" class="bi bi-geo-alt" viewBox="0 0 16 16">
@@ -1177,7 +1238,7 @@ sviluppare in azienda.
             <div
               class="col"
               style="
-                background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png);
+                background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fmatch_perfetto.png?alt=media&token=c27b57b6-190f-4931-a118-6c43fae019fe);
                 background-size: cover;
                 border-radius: 30px;
                 background-repeat: no-repeat;
@@ -1586,13 +1647,10 @@ sviluppare in azienda.
     align-items: center;
   }
 
-  .filters_jobs .remove_filter_div{
-    width: 100%;
-  }
-
   .filters_jobs .remove_filter{
     padding: 0.4rem;
     padding-bottom: 0.1rem;
+    padding-top: 1rem;
     margin-left: 2rem;
     cursor: pointer;
     height: fit-content;
@@ -1654,6 +1712,16 @@ sviluppare in azienda.
     color: #000;
     font-weight: 700;
     padding-bottom: 0;
+    display: flex;
+  }
+
+  .card .card-title #favorite_btn{
+    cursor: pointer;
+    margin-left: 0.5rem;
+  }
+
+  .card .card-title #favorite_btn:hover{
+    color: red;
   }
 
   .card ul li{
@@ -2590,7 +2658,7 @@ sviluppare in azienda.
   .popup .body .jobAlertHeader .photo {
     background: transparent;
     border-radius: 30px;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/storie.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fstorie.jpg?alt=media&token=78064b9a-393a-4c5e-83e8-5a15be65189c);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;

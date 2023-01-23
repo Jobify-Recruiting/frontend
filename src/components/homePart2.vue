@@ -327,57 +327,57 @@ export default {
             </div>
 
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/equity+factory.jpg" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fequity%20factory.jpg?alt=media&token=e6236ba5-d052-4f68-99fa-3892be2c5731" />
             </div>
 
             <div class="logoClient">
               <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
-              src="https://thingsss.s3.eu-central-1.amazonaws.com/cikis+studio.png" />
+              src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fcikis%20studio.png?alt=media&token=efd472ea-190a-4fbd-a5a8-07f24555e283" />
             </div>
 
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/nte+process.png" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fnte%20process.png?alt=media&token=0c7add54-d491-42f2-b225-71df7d147701" />
             </div>
 
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/adipso.png" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fadipso.png?alt=media&token=fe3c488f-fc2c-415c-bac0-999395d79402" />
             </div>
 
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/Khale+automation.png" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FKhale%20automation.png?alt=media&token=cf3819f3-dbcc-4767-b38c-158a4e41aed7" />
             </div>
             
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/stragroup.png" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fstragroup.png?alt=media&token=899b27b2-7351-4696-a3b3-f6543c454084" />
             </div>
 
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/ghezzi.png" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fghezzi.png?alt=media&token=a7b63c63-a8c4-4b9f-8657-8fc2c1453bee" />
             </div>
             
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/system+management.jpeg" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fsystem%20management.jpeg?alt=media&token=eba169c3-4831-45fa-af61-eb2a0acca208" />
             </div>
 
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/unipol+rental.png" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Funipol%20rental.png?alt=media&token=0a43eea8-0624-4715-9fc1-ae5a7afd4cb2" />
             </div>
 
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/alifmed.png" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Falifmed.png?alt=media&token=963e8fb1-bda8-45c4-b7c4-a4966985a9bd" />
             </div>
 
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/betflag.png" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fbetflag.png?alt=media&token=27c67d30-2189-46f1-a616-6a9a6f8ac6d8" />
             </div>
 
             <div class="logoClient">
               <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;"
-              src="https://thingsss.s3.eu-central-1.amazonaws.com/BN+Partners.png" />
+              src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FBN%20Partners.png?alt=media&token=66f90cc3-03df-4190-8da3-416011fe7f18" />
             </div>
 
             <div class="logoClient">
-              <img src="https://thingsss.s3.eu-central-1.amazonaws.com/celda.jpeg" />
+              <img src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fcelda.jpeg?alt=media&token=35332a91-a55a-4116-a13c-a1fcf0eb3129" />
             </div>
 
             <div class="logoClient">
@@ -488,7 +488,7 @@ export default {
             </div>
             <div class="logoClient">
               <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
-                    src="https://thingsss.s3.eu-central-1.amazonaws.com/logo-cascone-home.png" />
+                    src="https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Flogo-cascone-home.png?alt=media&token=848b5d29-14dc-4c5a-bab4-0f0eaec529cc" />
             </div>
             <div class="logoClient">
               <img style="background: #0c2550; padding: 1.5rem; border-radius: 20px;" 
@@ -874,7 +874,7 @@ porta all’interpretazione dei nostri desideri con consapevolezza del e sul mer
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pamela.jpeg);
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fpamela.jpeg?alt=media&token=94c2dbd4-349e-418b-b2f6-a67d973de823);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -897,7 +897,7 @@ mie esigenze, offrendo al tempo stesso una consulenza di valore, da cui traspare
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/roberto.jpg);
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Froberto.jpg?alt=media&token=79651861-3370-495d-a974-c1ff07d51339);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -921,7 +921,7 @@ compito di ricerca e selezione del personale.
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/Ivan_Rallo.jpg);
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FIvan_Rallo.jpg?alt=media&token=fcdd92c8-1fb8-40ba-901c-739ae37bb9c3);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -943,7 +943,7 @@ nuovo personale.</h3>
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/adamo.jpeg);
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fadamo.jpeg?alt=media&token=c1cff70c-c60d-45f2-8a10-ea238f09ccc2);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -952,24 +952,6 @@ nuovo personale.</h3>
                   </div>
                 </div>
               </div>
-              <!--<div class="feedback">
-                <p class="quote">"</p>
-                <h3>
-                  Consiglierei jobify recruiting per la perseveranza, bravura, con cui sono stato seguito nell’aggiornamento costante della ricerca affidatagli. Soprattuto con la mia referente elisa con cui si e’ istaurato da subito un rapporto di affinita’, empatia e accoglienza nel capire le mie esigenze di trovare una risorsa valida da far crescere nella mia realta’ professionale. Se dovessi effettuare nuove ricerche di personale mi rivolgerei di nuovo a jobify che ha saputo consigliarmi e orientarmi nella scelta del miglior candidato, e tutto questo svolto dall’italia , visto la mia attivita’ si trova a malta. Sono molto contento di come abbiano lavorato con attenzione e costanza per la mia azienda.
-                </h3>
-                <div class="feedbackInfo">
-                  <div
-                    class="feedbackInfoPhoto"
-                    style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/adamo.jpeg);
-                    "
-                  ></div>
-                  <div class="feddbackData">
-                    <p class="author">Simone Cascone</p>
-                    <p class="worktitle">Adetto alle vendite (Malta) presso Cascone Home</p>
-                  </div>
-                </div>
-              </div>-->
               <div class="feedback">
                 <p class="quote">"</p>
                 <h3>
@@ -1003,7 +985,7 @@ la persona a cui affidarsi.
                   <div
                     class="feedbackInfoPhoto"
                     style="
-                      background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/Riccardo_Camillo.png);
+                      background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2FRiccardo_Camillo.png?alt=media&token=6ff3d151-b1f7-4a89-901b-dcc2661cc8f3);
                     "
                   ></div>
                   <div class="feddbackData">
@@ -2129,7 +2111,7 @@ cercano personale.
     width: 60vw;
     height: 25vw;
     margin-right: 2rem;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/punti_di_forza.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fpunti_di_forza.png?alt=media&token=d755afb8-1a35-4da4-8739-4958d0df1b28);
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -2139,7 +2121,7 @@ cercano personale.
     width: 37vw;
     height: 20vw;
     margin-right: 2rem;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/candidato.jpg);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fcandidato.jpg?alt=media&token=caa8013b-c33a-4c4c-8712-0d8d4112c1af);
     background-position: center;
     background-size: cover;
     border-top-left-radius: 20px;
@@ -3575,7 +3557,7 @@ cercano personale.
   .fifthDiv .adviser .col_image {
     background: transparent;
     border-radius: 30px;
-    background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/match_perfetto.png);
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/jobify-d2a24.appspot.com/o/images_website%2Fmatch_perfetto.png?alt=media&token=c27b57b6-190f-4931-a118-6c43fae019fe);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;

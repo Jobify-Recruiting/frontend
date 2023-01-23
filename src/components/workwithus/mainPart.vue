@@ -49,11 +49,6 @@ export default {
     window.addEventListener("scroll", reveal);
     window.scrollTo({ top: 0, behavior: "smooth" });
 
-    let content = document.querySelector(".menu");
-    content.style.width = "0%";
-    content.style.opacity = "0";
-    content.style.visibility = "hidden";
-    content.style.display = "unset";
   },
   methods: {
     requestWorkWithUs(){
@@ -107,79 +102,6 @@ export default {
       <div class="first">
 
         <div class="firstPart">
-          <!--<div class="firstPartBody">
-              <div
-                class="people1"
-                style="
-                  top: 60%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-                "
-              ></div>
-              <div
-                class="people2"
-                style="
-                  top: 80%;
-                  left: 15%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-                "
-              ></div>
-              <div
-                class="people2"
-                style="
-                  top: 20%;
-                  left: 5%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-                "
-              ></div>
-              <div
-                class="people1"
-                style="
-                  top: 40%;
-                  left: 12%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-                "
-              ></div>
-
-              <div
-                class="people1"
-                style="
-                  top: 25%;
-                  right: 10%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe1.jpg);
-                "
-              ></div>
-              <div
-                class="people2"
-                style="
-                    top: 41%;
-                    right: 2%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe4.jpeg);
-                "
-              ></div>
-              <div
-                class="people2"
-                style="
-                  top: 80%;
-                  right: 10%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe2.jpg);
-                "
-              ></div>
-              <div
-                class="people1"
-                style="
-                  top: 60%;
-                  right: 10%;
-                  background-image: url(https://thingsss.s3.eu-central-1.amazonaws.com/pe3.jpg);
-                "
-              ></div>
-              <div class="subtitle">Lavora con noi</div>
-              <h2>Un team fatto di persone per le persone</h2>
-              <p>
-                Jobify Recruiting lavora con passione e impegno e mette competenza, tecnologia e umanità al servizio di
-    clienti che possono essere di volta in volta candidati e aziende. Se pensi di possedere queste qualità entra
-    nel nostro team.
-              </p>
-          </div>-->
 
           <div class="firstPartBody">
             <div class="subtitle">Lavora con noi</div>

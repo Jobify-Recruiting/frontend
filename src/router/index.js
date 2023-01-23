@@ -11,6 +11,7 @@ import CompaniesView from "../views/CompaniesView.vue";
 import StoriesView from "../views/StoriesView.vue";
 import UploadStoriesView from "../views/UploadStoriesView.vue";
 import UploadJobView from "../views/UploadJobView.vue";
+import FavoriteView from "../views/FavoriteView.vue";
 import searchResultView from "../views/searchResultView.vue";
 import article1View from "../views/article1View.vue";
 import article2View from "../views/article2View.vue";
@@ -111,6 +112,11 @@ const router = createRouter({
       path: "/upload_job_view",
       name: "UploadJobView",
       component: UploadJobView,
+    },
+    {
+      path: "/favorites",
+      name: "FavoriteView",
+      component: FavoriteView,
     },
   ],
 });
