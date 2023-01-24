@@ -331,6 +331,16 @@ export default {
       let remove_search_button = document.querySelector("#remove_search_button");
       remove_search_button.style.display = "none";
     }
+
+    console.log(this.all_jobs);
+    console.log(this.$favorite_list)
+    console.log(this.$favorite_list2)
+    if(this.$favorite_list2.length > 0){
+      document.querySelector("#fav_list_number").textContent = this.$favorite_list2.length;
+      document.querySelector("#fav_list").style.display = "inline"
+      document.querySelector("#fav_list_icon").style.display = "inline"
+    }
+    
   },
   watch: {
       search_text(search) {
@@ -565,8 +575,9 @@ export default {
       });
 
       this.$favorite_list2 = this.uniqBy(this.$favorite_list, JSON.stringify)
-        
-      console.log(this.$favorite_list2)
+      document.querySelector("#fav_list").style.display = "inline"
+      document.querySelector("#fav_list_number").textContent = this.$favorite_list2.length;
+      document.querySelector("#fav_list_icon").style.display = "inline"
     },  
 
     remove_favorite(job, event){
@@ -577,7 +588,18 @@ export default {
       bi_heart_fill2.style.display = "inline";
       bi_heart.style.display = "none";
 
-      this.$favorite_list2 = this.$favorite_list2.filter(item => item.id !== job.id)
+      const index = this.$favorite_list2.indexOf(job.id);
+      console.log(index)
+
+      this.$favorite_list2.splice(index, 1);
+
+      this.$favorite_list.splice(index, 1);
+
+      //this.$favorite_list2 = this.$favorite_list2.filter(item => item.id !== job.id)
+      document.querySelector("#fav_list_number").textContent = this.$favorite_list2.length;
+      if(this.$favorite_list2.length == 0){
+        document.querySelector("#fav_list").style.display = "none"
+      }
         
       console.log(this.$favorite_list2)
     },  
@@ -1586,12 +1608,17 @@ sviluppare in azienda.
     background-repeat: no-repeat;
     background-position-x: 95%;
     background-position-y: 50%;
-    border: 1px solid #dfdfdf;
+    border: 2px solid #dfdfdf;
     border-radius: 15px;
     margin-right: 2rem;
     padding: 1rem;
     padding-right: 2rem;
     width: 89%;
+    transition: 0.3s all;
+  }
+
+  select:hover{
+    border-color: #027bfd;
   }
 
   select:focus{
@@ -1600,7 +1627,7 @@ sviluppare in azienda.
 
   select:focus-visible{
     outline: none;
-    border: 1px solid #dfdfdf;
+    border: 2px solid #027bfd;
   }
 
   select:visited{
@@ -1665,6 +1692,7 @@ sviluppare in azienda.
 
   #no_results{
     width: 70vw;
+    color: #000;
   }
 
   #no_results h3{
@@ -1686,7 +1714,7 @@ sviluppare in azienda.
     padding-right: 3rem;
     margin-bottom: 5rem;
     display: grid;
-    grid-template-columns: repeat(4, calc((15/58) * 100%));
+    grid-template-columns: repeat(3, calc((20/58) * 100%));
   }
 
   .jobs .card{
@@ -1717,7 +1745,7 @@ sviluppare in azienda.
 
   .card .card-title #favorite_btn{
     cursor: pointer;
-    margin-left: 0.5rem;
+    margin-left: auto;
   }
 
   .card .card-title #favorite_btn:hover{
@@ -1727,6 +1755,7 @@ sviluppare in azienda.
   .card ul li{
     border: none;
     padding-left: 1.5rem;
+    padding-bottom: 0.1rem;
     align-items: center;
     display: flex;
     color: #000;

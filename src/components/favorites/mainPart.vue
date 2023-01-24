@@ -12,7 +12,8 @@ export default {
   components: {},
   data() {
     return {
-      all_jobs: this.$favorite_list,
+      all_jobs2: "",
+      all_jobs: [],
       new_date: "",
     };
   },
@@ -23,6 +24,18 @@ export default {
     let year = date.getFullYear();
     let new_date_composed = day+"/"+month+"/"+year;
     this.new_date = new_date_composed;
+
+    function uniqBy(a, key) {
+        var seen = {};
+        return a.filter(function(item) {
+            var k = key(item);
+            return seen.hasOwnProperty(k) ? false : (seen[k] = true);
+        })
+    }
+
+    if(this.$favorite_list.length > 0){
+      this.all_jobs = uniqBy(this.$favorite_list, JSON.stringify)
+    }
 
     let recaptchaScript = document.createElement("script");
     recaptchaScript.setAttribute(
@@ -55,6 +68,46 @@ export default {
     console.log(this.all_jobs);
   },
   methods: {
+    add_favorite(job, event){
+      var bi_heart = event.currentTarget;
+      var bi_heart_fill1 = bi_heart.parentElement;
+      var bi_heart_fill2 = bi_heart_fill1.querySelector('.bi-heart-fill');
+      bi_heart.style.display = "none";
+      bi_heart_fill2.style.display = "inline";
+
+      this.$favorite_list.push({ 
+          id: job.id,
+          job_title: job.job_title,
+          location: job.location,
+          company: job.company,
+          contact: job.contact,
+          publication_date: job.publication_date,
+          closing_date: job.closing_date,
+          contract_type: job.contract_type,
+          area_funzione: job.area_funzione,
+          url: job.url,
+      });
+
+      this.$favorite_list2 = this.uniqBy(this.$favorite_list, JSON.stringify)
+      document.querySelector("#fav_list_number").textContent = this.$favorite_list2.length;
+    },  
+
+    remove_favorite(job, event){
+      var bi_heart = event.currentTarget;
+      var bi_heart_fill1 = bi_heart.parentElement;
+      var bi_heart_fill2 = bi_heart_fill1.querySelector('.bi-heart');
+      
+      bi_heart_fill2.style.display = "inline";
+      bi_heart.style.display = "none";
+      this.all_jobs = this.all_jobs.filter(item => item.id !== job.id)
+      this.$favorite_list = this.all_jobs.filter(item => item.id !== job.id)
+      this.$favorite_list2 = this.all_jobs.filter(item => item.id !== job.id)
+      document.querySelector("#fav_list_number").textContent = this.$favorite_list2.length;
+
+      if(this.$favorite_list2.length == 0){
+        document.querySelector("#fav_list").style.display = "none"
+      }
+    },  
   },
 };
 </script>
@@ -67,7 +120,7 @@ export default {
             <div class="subtitle">Offerte di lavoro preferite</div>
               <h2>Le mie offerte preferite</h2>
               <p>
-                Qui è possibile vedere le offerte di lavoro salvate
+                Qui è possibile vedere le offerte di lavoro salvate.
               </p>
           </div>
           <svg
@@ -82,9 +135,9 @@ export default {
           </svg>
         </div>
         <div class="second">
-          <div class="featureds">
+          <div class="featureds" v-if="this.all_jobs.length > 0">
             <div class="titles">
-              <h2></h2>
+              <h2>{{ this.all_jobs.length }} offerte di lavoro salvate </h2>
             </div>
             <div class="tab-pane in active jobs" id="all_jobs">
                   <div
@@ -96,10 +149,10 @@ export default {
                         <h5 class="card-title">
                           {{ job.job_title }}
                           <div id="favorite_btn">
-                            <svg @click="add_favorite(job, $event)" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                            <svg @click="add_favorite(job, $event)" xmlns="http://www.w3.org/2000/svg" style="display: none;" width="26" height="26" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
                               <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
                             </svg>
-                            <svg @click="remove_favorite(job, $event)" xmlns="http://www.w3.org/2000/svg" style="display: none;" width="26" height="26" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                            <svg @click="remove_favorite(job, $event)" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
                               <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
                             </svg>
                           </div>
@@ -132,8 +185,31 @@ export default {
                         </div>
                       </div>
                   </div>
-              </div>
+                  <div
+                  v-if="this.all_jobs.length > 0"
+                    class="card card-cta"
+                  >
+                      <div class="card-body">
+                        <h5 class="card-title-cta">
+                          Trova altre offerte di lavoro adatte a te!
+                        </h5>
+                        
+                      </div>
+                      <div class="card-buttons">
+                        <div class="card-body">
+                          <router-link to="/openposition" class="card-link btn-cta">Vedi tutte le offerte di lavoro</router-link>
+                        </div>
+                      </div>
+                  </div>
+            </div>
           </div>
+            <div v-else class="" id="no_results">
+                  <h3>Non hai ancora salvato le tue offerte preferite.</h3>
+                  <p>
+                    Nella pagina Offerte di lavoro, clicca sul cuore dell'offerte che ti piacciono, in modo da poterle ritrovare in qualsiasi momento.
+                  </p>
+                  <router-link to="/openposition" class="card-link btn">Vedi tutte le offerte di lavoro</router-link>
+                </div>
         </div>
       </div>
     </div>
@@ -291,6 +367,13 @@ export default {
     letter-spacing: 1.5px;
     text-transform: uppercase;
   }
+
+  .titles{
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 2rem;
+    color: #000;
+  }
   
   .jobs{
     flex-wrap: wrap;
@@ -299,7 +382,7 @@ export default {
     padding-right: 10rem;
     margin-bottom: 5rem;
     display: grid;
-    grid-template-columns: repeat(4, calc((15/58) * 100%));
+    grid-template-columns: repeat(3, calc((20/58) * 100%));
   }
 
   .jobs .card{
@@ -308,6 +391,11 @@ export default {
     border-radius: 15px;
     transition: 0.3s all;
     border: 2px solid rgba(0,0,0,.125);
+  }
+
+  .jobs .card-cta{
+    background: #0062f5;
+    border: 2px solid #0062f5;
   }
 
   .jobs .card:hover{
@@ -328,9 +416,19 @@ export default {
     display: flex;
   }
 
+  .card-title-cta{
+    padding: 1.5rem;
+    font-size: 40px;
+    line-height: 44px;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 0;
+    display: flex;
+  }
+
   .card .card-title #favorite_btn{
     cursor: pointer;
-    margin-left: 0.5rem;
+    margin-left: auto;
   }
 
   .card .card-title #favorite_btn:hover{
@@ -340,6 +438,7 @@ export default {
   .card ul li{
     border: none;
     padding-left: 1.5rem;
+    padding-bottom: 0.1rem;
     align-items: center;
     display: flex;
     color: #000;
@@ -379,6 +478,7 @@ export default {
     z-index: 10;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     height: 50%;
+    margin-top: 1rem;
   }
 
   .btn:hover {
@@ -388,6 +488,60 @@ export default {
 
   .btn span {
     padding-left: 0.4rem;
+  }
+
+  .btn-cta {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 26px;
+    border-radius: 20px;
+    background: #fff;
+    color: #0062f5;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    z-index: 10;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: 50%;
+    margin-top: 1rem;
+  }
+
+  .btn-cta:hover {
+    background: #ed3fb4;
+    color: #fff;
+  }
+
+  .btn-cta span {
+    padding-left: 0.4rem;
+  }
+
+  #no_results{
+    width: 70vw;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: #000;
+  }
+
+  #no_results h3{
+    font-weight: 300;
+  }
+
+  #no_results h3 span{
+    font-weight: 700;
+  }
+
+  #no_results p{
+    font-size: 18px;
   }
 }
 
