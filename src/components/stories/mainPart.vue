@@ -17,6 +17,7 @@ export default {
               ],
 
               stories: [],
+              length: 8,
     };
   },
   async mounted() {
@@ -105,10 +106,37 @@ export default {
         measurementId: "G-KZXCNHDBT0"
     };
 
-    
-
   },
   methods: {
+
+    loadMore() {
+      if (this.length == this.storie.length) {
+        
+      };
+
+      if (this.length > this.storie.length) {
+        
+        this.length = this.storie.length;
+      };
+
+      if (this.length < this.storie.length) {
+        this.length = this.length + 8;
+
+        if (this.length > this.storie.length) {
+        
+          this.length = this.storie.length;
+          let btn_load_more = document.querySelector("#btn_load_more");
+          btn_load_more.style.display = "none";
+        };
+
+        if(this.length == this.storie.length){
+          let btn_load_more = document.querySelector("#btn_load_more");
+          btn_load_more.style.display = "none";
+        }
+
+      };
+        
+    },
 
     story(x){
       let content = document.querySelector(".story");
@@ -130,6 +158,11 @@ export default {
     close_story(x){
       let close_story = document.getElementById(x);
       close_story.style.display = "none";
+    },
+  },
+  computed: {
+    storie() {
+      return this.storie.slice(0, this.length);
     },
   },
 };
@@ -193,15 +226,19 @@ export default {
               <h2>Storie dei talenti</h2>
             </div>
             <div class="featuredContent" id="featureds">
-              <div
-                    v-for="(featured, index) in storie"
-                    class="featured"
-                    v-bind:key="featured"
-                    v-bind:style="{ backgroundImage: 'url(' + featured.background + ')' }"
-                    @click="story(index + 1)"
-                  >
-                    <div class="hover"></div>
-              </div> 
+                <div 
+                      v-for="(featured, index) in storie"
+                      class="featured"
+                      v-bind:key="featured"
+                      v-bind:style="{ backgroundImage: 'url(' + featured.background + ')' }"
+                      @click="story(index + 1)"
+                    >
+                      <div class="hover"></div>
+                </div> 
+            </div>
+            <div class="load_more">
+              <p>{{ this.length }} di {{ this.storie.length }} storie dei talenti viste</p>
+              <button class="btn" @click="loadMore" id="btn_load_more">Vedi altre storie dei talenti</button>
             </div>
             <div class="story" id="1">
               <div class="close_story" @click="close_story(1)">
@@ -861,6 +898,21 @@ export default {
     margin-bottom: 0;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .load_more{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid #00000012;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .load_more p{
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
   }
 
   .fifthDiv {

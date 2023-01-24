@@ -34,6 +34,8 @@ export default {
       job_alert_nome: "",
       job_alert_cognome: "",
       job_alert_email: "",
+      length: 1,
+      length_filtered: 1,
     };
   },
   async mounted() {
@@ -360,6 +362,64 @@ export default {
     },              
  },
   methods: {
+    loadMore() {
+      if (this.length == this.all_jobs.length) {
+        
+      };
+
+      if (this.length > this.all_jobs.length) {
+        
+        this.length = this.all_jobs.length;
+      };
+
+      if (this.length < this.all_jobs.length) {
+        this.length = this.length + 6;
+
+        if (this.length > this.all_jobs.length) {
+        
+          this.length = this.all_jobs.length;
+          let btn_load_more = document.querySelector("#btn_load_more");
+          btn_load_more.style.display = "none";
+        };
+
+        if(this.length == this.all_jobs.length){
+          let btn_load_more = document.querySelector("#btn_load_more");
+          btn_load_more.style.display = "none";
+        }
+
+      };
+        
+      },
+
+      loadMore_filtered() {
+      if (this.length_filtered == this.all_jobs_filtered.length) {
+        
+      };
+
+      if (this.length_filtered > this.all_jobs_filtered.length) {
+        
+        this.length_filtered = this.all_jobs_filtered.length;
+      };
+
+      if (this.length_filtered < this.all_jobs_filtered.length) {
+        this.length_filtered = this.length_filtered + 1;
+
+        if (this.length_filtered > this.all_jobs_filtered.length) {
+        
+          this.length_filtered = this.all_jobs_filtered.length;
+          let btn_load_more = document.querySelector("#btn_load_more_filtered");
+          btn_load_more.style.display = "none";
+        };
+
+        if(this.length_filtered == this.all_jobs_filtered.length){
+          let btn_load_more = document.querySelector("#btn_load_more_filtered");
+          btn_load_more.style.display = "none";
+        }
+
+      };
+        
+      },
+
     uniqBy(a, key) {
         var seen = {};
         return a.filter(function(item) {
@@ -404,6 +464,12 @@ export default {
 
       let remove_search_button = document.querySelector("#remove_search_button");
       remove_search_button.style.display = "inline";
+
+      let load_more = document.querySelector(".load_more");
+      load_more.style.display = "none";
+
+      let load_more_filtered = document.querySelector(".load_more_filtered");
+      load_more_filtered.style.display = "inherit";
     },
 
     cancel_search(){
@@ -422,6 +488,18 @@ export default {
 
       let no_results = document.querySelector("#no_results");
       no_results.style.display = "none";
+
+      let content = document.querySelector("#all_jobs");
+      content.style.display = "grid";
+
+      let content2 = document.querySelector("#all_jobs_filtered");
+      content2.style.display = "none";
+
+      let load_more_filtered = document.querySelector(".load_more_filtered");
+      load_more_filtered.style.display = "none";
+
+      let load_more = document.querySelector(".load_more");
+      load_more.style.display = "inherit";
     },
 
     keyword_search(event){
@@ -446,6 +524,12 @@ export default {
       let remove_search_button = document.querySelector("#remove_search_button");
       remove_search_button.style.display = "inline";
 
+      let load_more = document.querySelector(".load_more");
+      load_more.style.display = "none";
+
+      let load_more_filtered = document.querySelector(".load_more_filtered");
+      load_more_filtered.style.display = "inherit";
+
       if(this.all_jobs_filtered.length == 0){
         let content2 = document.querySelector("#all_jobs_filtered");
         content2.style.display = "grid";
@@ -466,6 +550,12 @@ export default {
       let content2 = document.querySelector("#all_jobs_filtered");
       content2.style.display = "grid";
       this.remove_filter = true;
+
+      let load_more = document.querySelector(".load_more");
+      load_more.style.display = "none";
+
+      let load_more_filtered = document.querySelector(".load_more_filtered");
+      load_more_filtered.style.display = "inherit";
     },
 
     filter_city(event){
@@ -476,6 +566,12 @@ export default {
       let content2 = document.querySelector("#all_jobs_filtered");
       content2.style.display = "grid";
       this.remove_filter = true;
+
+      let load_more = document.querySelector(".load_more");
+      load_more.style.display = "none";
+
+      let load_more_filtered = document.querySelector(".load_more_filtered");
+      load_more_filtered.style.display = "inherit";
     },
 
     filter_contract(event){
@@ -486,6 +582,12 @@ export default {
       let content2 = document.querySelector("#all_jobs_filtered");
       content2.style.display = "grid";
       this.remove_filter = true;
+
+      let load_more = document.querySelector(".load_more");
+      load_more.style.display = "none";
+
+      let load_more_filtered = document.querySelector(".load_more_filtered");
+      load_more_filtered.style.display = "inherit";
     },
 
     filter_sort_by(event){
@@ -514,6 +616,12 @@ export default {
       }
 
       this.remove_filter = true;
+
+      let load_more = document.querySelector(".load_more");
+      load_more.style.display = "none";
+
+      let load_more_filtered = document.querySelector(".load_more_filtered");
+      load_more_filtered.style.display = "inherit";
     },
 
     remove_filter2(){
@@ -540,7 +648,15 @@ export default {
 
       let content2 = document.querySelector("#all_jobs_filtered");
       content2.style.display = "none";
-      //location.reload();
+
+      let remove_filter_div = document.querySelector(".remove_filter_div");
+      remove_filter_div.style.display = "none";
+
+      let load_more = document.querySelector(".load_more");
+      load_more.style.display = "inherit";
+
+      let load_more_filtered = document.querySelector(".load_more_filtered");
+      load_more_filtered.style.display = "none";
     }, 
 
     suggestWords() {
@@ -549,8 +665,9 @@ export default {
       content.style.opacity = "1";
       content.style.visibility = "visible";
       content.style.display = "inline";
-      /*var overlay = document.getElementById("suggestWordsOverlay");
-      overlay.style.display = "block";*/
+
+      let load_more = document.querySelector(".load_more");
+      load_more.style.display = "none";
     },
 
     add_favorite(job, event){
@@ -589,7 +706,6 @@ export default {
       bi_heart.style.display = "none";
 
       const index = this.$favorite_list2.indexOf(job.id);
-      console.log(index)
 
       this.$favorite_list2.splice(index, 1);
 
@@ -600,8 +716,6 @@ export default {
       if(this.$favorite_list2.length == 0){
         document.querySelector("#fav_list").style.display = "none"
       }
-        
-      console.log(this.$favorite_list2)
     },  
 
     jobAlert() {
@@ -675,6 +789,15 @@ export default {
             document.getElementById("notify").style.display = "none";
           }, 6000); // 👈️ time in milliseconds
           });
+    },
+  },
+
+  computed: {
+    all_jobs() {
+      return this.all_jobs.slice(0, this.length);
+    },
+    all_jobs_filtered() {
+      return this.all_jobs_filtered.slice(0, this.length_filtered);
     },
   },
 };
@@ -791,23 +914,11 @@ export default {
        
         
         <div class="results_jobs">
-          <!--<div class="navMain">
-            <ul class="nav nav-tabs">
-              <li class="active"><a data-toggle="tab" href="#Farm">Farm</a></li>
-              <li><a data-toggle="tab" href="#Finance">Finance</a></li>
-              <li><a data-toggle="tab" href="#IT">IT Tech</a></li>
-              <li><a data-toggle="tab" href="#Hr">HR</a></li>
-              <li><a data-toggle="tab" href="#Digital">Digital</a></li>
-              <li @click="jobAlert()" class="btn">
-                <a href="#">Crea una Job Alert</a>
-              </li>
-            </ul>
-          </div>-->
           
           <div class="tab-content">
               <div class="tab_header">
                 <div class="results">
-                  {{ jobs_lenght }} risultati
+                  {{ this.all_jobs_filtered.length }} risultati
                 </div>
                 
               </div>
@@ -961,6 +1072,16 @@ export default {
                         </div>
                       </div>
                   </div>
+              </div>
+
+              <div class="load_more_filtered">
+                <p>{{ this.length_filtered }} di {{ this.all_jobs_filtered.length }} offerte di lavoro viste</p>
+                <button class="btn" @click="loadMore_filtered" id="btn_load_more_filtered">Vedi altre offerte di lavoro</button>
+              </div>
+
+              <div class="load_more">
+                <p>{{ this.length }} di {{ this.all_jobs.length }} offerte di lavoro viste</p>
+                <button class="btn" @click="loadMore" id="btn_load_more">Vedi altre offerte di lavoro</button>
               </div>
           </div>
         </div>
@@ -1873,6 +1994,45 @@ sviluppare in azienda.
 
   .job .link .btn{
     border: 1px solid white;
+  }
+
+  .load_more{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid #00000012;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .load_more .btn{
+    margin: 0 !important;
+  }
+
+  .load_more p{
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+  }
+
+  .load_more_filtered{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid #00000012;
+    padding-top: 1rem;
+    text-align: center;
+    display: none;
+  }
+
+  .load_more_filtered .btn{
+    margin: 0 !important;
+  }
+
+  .load_more_filtered p{
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
   }
 
   .contaniner2 {
