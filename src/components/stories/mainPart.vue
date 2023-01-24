@@ -218,6 +218,10 @@ export default {
                   <div class="azienda" id="azienda"></div> 
                 </div>
                 <div class="storia_testo" id="storia_testo"></div>
+                <div class="story_signed">
+                  <h4>Storie dei talenti di <span style="color: #0062f5; font-style: italic;">Jobify Recruiting.</span></h4>
+                  <h5>"Prima persone e poi professionisti"</h5>
+                </div>
               </div>
             </div>
           </div>
@@ -603,6 +607,29 @@ export default {
     font-weight: 300;
     color: #fff;
     text-align: center;
+  }
+  
+  .story .content .story_signed{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+  }
+
+  .story .content .story_signed h4{
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .story .content .story_signed h5{
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 0.5rem;
+    font-style: oblique;
   }
 
   .second {
