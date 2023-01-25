@@ -179,10 +179,10 @@ export default {
 
               <p>
                 Il compito di Jobify
-          Recruiting è proprio questo: creare il match perfetto tra persona e azienda, talento e impresa per collocare
-          le persone giuste al posto giusto. Un compito che da sempre svolgiamo con la massima cura e attenzione
+          Recruiting è proprio questo: creare il match perfetto tra persona e azienda, talento e , per collocare
+          le persone giuste al posto giusto. Un compito che da sempre svolgiamo con la massima cura e attenzione,
           come testimoniano <span>le storie dei talenti che abbiamo raccolto in questa pagina.</span>
-          Perché nessuna persona è priva di talento e ciascuno può e deve trovare l’azienda capace di valorizzarlo.
+          Nessuna persona è priva di talento e ciascuno può e deve trovare l’azienda capace di valorizzarlo.
               </p>
 
               <div class="mainButton">
@@ -244,7 +244,7 @@ export default {
               <div class="close_story" @click="close_story(1)">
                   <svg xmlns="http://www.w3.org/2000/svg" width="22"
                                 height="22"
-                                fill="#0a1e4375" class="bi bi-x-lg" viewBox="0 0 16 16">
+                                fill="#fff" class="bi bi-x-lg" viewBox="0 0 16 16">
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
                   </svg>
                 </div>
@@ -577,7 +577,7 @@ export default {
     width: fit-content;
     padding: 1rem;
     border-radius: 16px;
-    border: 2px solid #0a1e4375;
+    border: 2px solid #fff;
     color: white;
     font-size: 18px;
     line-height: 0;

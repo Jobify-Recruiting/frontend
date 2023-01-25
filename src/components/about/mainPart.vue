@@ -127,14 +127,14 @@ export default {
       </div>
       <div class="thirdPart">
         <div class="text1 bold ">
-          <span>Jobify Recruiting è l’agenzia di head hunting digitale e dinamica</span> che punta a trovare talenti da inserire nella
-tua azienda grazie a un processo di ricerca e selezione consulenziale, umano, efficace, scientifico e rapido.
+          <span>Jobify Recruiting è l’agenzia di head hunting digitale e dinamica,</span> che punta a trovare talenti da inserire nella
+tua azienda, grazie a un processo di ricerca e selezione consulenziale, umano, efficace, scientifico e rapido.
         </div>
       </div>
       <div class="thirdPart">
         <div class="text1 bold">
-          Il nome “Jobify” nasce dall’unione di <span>“job” e “identify”</span> e proprio perché crediamo che siamo prima persone
-e poi professionisti e proprio questo diventa il fulcro del nostro lavoro di ogni giorno.
+          Il nome “Jobify” nasce dall’unione di <span>“job” e “identify”</span>, proprio perché crediamo che siamo prima persone
+e poi professionisti. Questo diventa il fulcro del nostro lavoro di ogni giorno.
         </div>
       </div>
       <div class="fourthPart">
@@ -161,7 +161,7 @@ e poi professionisti e proprio questo diventa il fulcro del nostro lavoro di ogn
         <div class="text1 bold">
           Il nostro team è composto da <span>persone giovani</span> ma altamente competenti, che svolgono il lavoro quotidiano
 di ricerca e selezione talenti con passione e impegno. Amiamo quello che facciamo, ma ancora di più
-amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori aziendali e le aziende con una risorsa ideale.
+amiamo, far incontrare il candidato con un’azienda in cui si rivede nei valori aziendali e le aziende con una risorsa ideale.
         </div>
       </div>
       <div class="fifthPart">
@@ -173,15 +173,15 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
               </div>
               <div class="quoteh5">
                 La nostra mission è creare il match perfetto tra azienda e candidato. 
-                Dal punto di vista dell'azienda si tratta di trovare una risorsa compatibile con la cultura e l'organizzazione aziendale, 
-                dal punto di vista del candidato di inserire la risorsa in un contesto aziendale in cui si identifica nei valori e negli ideali.
+                Dal punto di vista dell'azienda, si tratta di trovare una risorsa compatibile con la cultura e l'organizzazione aziendale, 
+                dal punto di vista del candidato, di inserire la risorsa in un contesto aziendale in cui si identifica nei valori e negli ideali.
               </div>
             </div>
             <div class="quote">
               <div class="quoteh4"><span>Vision</span><br> di Jobify Recruiting</div>
               <div class="quoteh5">
                 La nostra vision parla di un mondo HR sempre più human e digital, in cui competenze personali incontrano
-                le moderne tecnologie per un processo di ricerca e selezione dei candidati ottimizzato. Vogliamo trovare la
+                le moderne tecnologie, per un processo di ricerca e selezione dei candidati ottimizzato. Vogliamo trovare la
                 persona ideale per ogni azienda e dare al candidato la posizione lavorativa che cerca e sogna da sempre.
                 </div>
             </div>
@@ -205,14 +205,14 @@ amiamo far incontrare il candidato con un’azienda in cui si rivede nei valori 
       </div>
       <div class="thirdPart">
         <div class="text1 bold ">
-          Jobify Recruiting nasce a Milano nel 2021 da un’idea di Davide Maggio Ceo e Founder esperto nella
+          Jobify Recruiting nasce a Milano nel 2021 da un’idea di Davide Maggio Ceo e Founder, esperto nella
           direzione personale da oltre 10 anni e attivo nel settore della gestione, organizzazione e sviluppo del
           personale. Davide Maggio è HR Manager certificato Aicq Sicev con una laurea in Psicologia e 3 Master in HR
 
           Management. Da questo bagaglio di competenze è nata l’idea di <span>mettere l’esperienza alla servizio delle
-          aziende</span> per colmare un gap esistente nel mondo della ricerca e selezione.
+          aziende,</span> per colmare un gap esistente nel mondo della ricerca e selezione.
 
-          In jobify recruiting non ci limitiamo a valutare il talento soltanto attraverso il cv e 
+          In jobify recruiting non ci limitiamo a valutare il talento soltanto attraverso il cv, 
           quindi valutando hard e soft skills, ma prendiamo in considerazione anche i valori e 
           le aspettative professionali del candidato e la cultura aziendale della società.
         </div>

@@ -62,7 +62,11 @@ export default {
     const obj4 = document.getElementById("value4");
     animateValue(obj4, 0, -100, 7000);
   },
-  methods: {},
+  methods: {
+    scrollgo(){
+      window.scrollTo({ top: 700, behavior: "smooth" });
+    }
+  },
 };
 </script>
 
@@ -86,13 +90,11 @@ export default {
       </b>
     </div>
     <h2>
-      In jobify recruiting non ci limitiamo a valutare il talento soltanto attraverso il cv e 
-          quindi valutando hard e soft skills, ma prendiamo in considerazione anche i valori e 
-          le aspettative professionali del candidato e la cultura aziendale della società. Questo ci
-      permette di essere consulenziali, competitivi, scientifici, umani e rapidi.
+      In jobify recruiting non ci limitiamo a valutare il talento soltanto attraverso il cv, quindi valutando hard e soft skills, ma prendiamo in considerazione anche i valori e 
+          le aspettative professionali del candidato e la cultura aziendale della società.
     </h2>
     <div class="" style="display: flex; align-items: center">
-      <a href="#second"><button class="btn">Scopri di più</button></a>
+      <button class="btn" @click="scrollgo()">Scopri di più</button>
     </div>
     <div class="datas">
       <div class="item">

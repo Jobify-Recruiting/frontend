@@ -279,10 +279,10 @@ export default {
               <div class="col1">
                 <h2><span>Approcciarsi correttamente</span> al colloquio di lavoro</h2>
                 <p>
-                  Non è per nulla semplice e per questo noi di Jobify Recruiting abbiamo deciso di darti alcuni consigli per arrivare preparati all’incontro con l’azienda e con il responsabile risorse umane.
+                  Non è per nulla semplice e, per questo, noi di Jobify Recruiting abbiamo deciso di darti alcuni consigli per arrivare preparati all’incontro con l’azienda e con il responsabile risorse umane.
                 </p>
                 <p>
-                  Tanti sono gli accorgimenti da tenere a mente e i dettagli da non trascurare, in primo luogo la conoscenza dell’azienda che offre la posizione per cui ci si candida, ma non solo. <strong>Altri suggerimenti utili per affrontare il colloquio con successo</strong> sono:
+                  Tanti sono gli accorgimenti da tenere a mente e i dettagli da non trascurare, in primo luogo, la conoscenza dell’azienda che offre la posizione per cui ci si candida, ma non solo, <strong>altri suggerimenti utili per affrontare il colloquio con successo</strong> sono:
                 </p>
                 <ul>
                   <li>
@@ -299,7 +299,7 @@ export default {
                   </li>
                 </ul>
                 <p>
-                  Un valore aggiunto che permette al candidato di superare lo screening del CV e arrivare al colloquio è inoltre rappresentato dai seguenti elementi:
+                  Un valore aggiunto, che permette al candidato di superare lo screening del CV e arrivare al colloquio, è inoltre rappresentato dai seguenti elementi:
                 </p>
                 <ul>
                   <li>
@@ -329,7 +329,7 @@ export default {
           </div>
         </div>
 
-        <div class="thirdPart" id="secondDiv">
+        <div class="thirdPart">
           <div class="thirdPartDiv">
             <div class="first">
               <div class="col1">
@@ -338,7 +338,7 @@ export default {
                   Quando si è convocati per un colloquio è importante <strong>essere puntuali</strong> all’appuntamento, ma non solo. Anche la <strong>cura dell’abbigliamento e del modo di porsi</strong> permette di fare una buona impressione sui selezionatori e di rimanere impressi nella mente del responsabile HR dell’azienda.
                 </p>
                 <p>
-                  Oltre a questo per impressionare positivamente i selezionatori è bene:
+                  Oltre a questo, per impressionare positivamente i selezionatori, è bene:
                 </p>
                 <ul>
                   <li>
@@ -349,7 +349,7 @@ export default {
                   </li>
                 </ul>
                 <p>
-                  La cosa più importante nel preparare e affrontare il colloquio è <strong>essere coerenti e non mentire</strong> su esperienza lavorativa, aspettative e interessi o sul proprio carattere. <strong>Essere se stessi è fondamentale</strong> perché l’azienda deve scegliere le risorse e i talenti per come sono davvero in modo da introdurre nell’organigramma aziendale non solo professionisti, ma soprattutto persone che condividono i valori e gli ideali dell’azienda stessa e contribuiscono al raggiungimento degli obiettivi di business. 
+                  La cosa più importante nel preparare e affrontare il colloquio è <strong>essere coerenti e non mentire</strong> su esperienza lavorativa, aspettative e interessi o sul proprio carattere. <strong>Essere se stessi è fondamentale</strong> perché l’azienda deve scegliere le risorse e i talenti per come sono davvero, in modo da introdurre nell’organigramma aziendale non solo professionisti, ma soprattutto persone che condividono i valori e gli ideali dell’azienda stessa e che contribuiscono al raggiungimento degli obiettivi di business. 
                 </p>
                 <p>
                   Infine, ai candidati oggi sono richieste <strong>disponibilità e flessibilità.</strong> Questo non significa essere pronti ad accettare ogni lavoro, ma dimostrare la capacità di comprendere il contesto in cui si muove e opera l’azienda, dimostrando al contempo la volontà di mettersi in gioco e adattarsi.
@@ -376,6 +376,21 @@ export default {
             </div>
           </div>
         </div>
+
+        <div class="btn_comeback">
+          <router-link to="/workers">
+            <button class="btn">
+              <span style="margin-left: 0 !important; margin-right: 0.5rem;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+</svg>
+                    </span>
+                    Torna alla pagina Trova lavoro
+                    </button
+              >
+          </router-link>
+        </div>
+        
         
         <div class="fifthDiv">
           <div class="adviser transition">
@@ -919,6 +934,11 @@ export default {
     padding-left: 3rem;
     margin-top: 2rem;
     display: flex;
+  }
+
+  .btn_comeback{
+    width: 100%;
+    text-align: center;
   }
 
   .second .feature {

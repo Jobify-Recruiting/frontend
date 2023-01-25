@@ -217,7 +217,7 @@ export default {
             <p>
               Trovare, valorizzare e trattenere i <span style="color: #c554a0; font-weight: 500"
                 >talenti</span> è compito di ogni azienda e per questo puoi affidarti a Jobify
-              Recruiting, la tua agenzia di head hunting digitale e dinamica, formata da persone giovani che lavorano in
+              Recruiting, la tua agenzia di head hunting digitale e dinamica, formata da persone giovani, che lavorano in
               un contesto nazionale.
             </p>
             <div class="" style="display: flex; align-items: center">
@@ -251,7 +251,7 @@ export default {
       </div>
     </div>
 
-    <div class="mainTitle" id="second">
+    <div class="mainTitle">
       <div class="content">
         <div class="first" style="width: 100% !important;">
           <div class="imageContent">
@@ -261,7 +261,7 @@ export default {
             <h2>I nostri punti di <span class="gradientTitle">forza</span>
             </h2>
             <p>
-              In Jobify Recruiting digitalizziamo e umanizziamo il processo di Ricerca & Selezione mettendo a disposizione delle aziende i nostri Head Hunter e i migliori strumenti di Intelligenza Artificiale ed HR Tech. Lavorare con Jobify Recruiting significa poter contare su un
+              In Jobify Recruiting digitalizziamo e umanizziamo il processo di Ricerca & Selezione mettendo a disposizione delle aziende i nostri Head Hunter, e i migliori strumenti di Intelligenza Artificiale ed HR Tech. Lavorare con Jobify Recruiting significa poter contare su un
                   approccio:
             </p>
             <p>❖ Umano<br>
@@ -505,7 +505,7 @@ export default {
       </div>
     </div>
 
-    <div class="secondDiv" id="second">
+    <div class="secondDiv">
       <div class="content">
         <div class="first" style="display: inline !important">
           <div class="title">
@@ -513,8 +513,8 @@ export default {
               <span>I servizi offerti</span> da Jobify Recruiting
             </h2>
             <p>
-              Jobify Recruiting è un’agenzia affidabile e competente che supporta le aziende nella ricerca del giusto
-candidato e i candidati nel proporsi al meglio alle aziende grazie al supporto nella redazione CV e lettera di
+              Jobify Recruiting è un’agenzia affidabile e competente, che supporta le aziende nella ricerca del giusto
+candidato, e i candidati nel proporsi al meglio alle aziende, grazie al supporto nella redazione CV e lettera di
 presentazione. Si tratta di un lavoro complesso, che affrontiamo ogni giorno mettendo al centro potenziali
 e talenti.
               <br />
@@ -577,9 +577,9 @@ e top management. Le divisioni che trattiamo sono IT, HR, FARM, DIGITAL, FINANCE
             <h2>Perchè scegliere <br>Jobify Recruiting?</h2>
             <p>
               <!--<span>Jobify Recruiting</span>-->
-              Jobify Recruiting nasce per umanizzare il processo di Ricerca &amp; Selezione e si propone sul mercato come
-agenzia qualificata di Head Hunting che punta alla ricerca di talenti e alla valorizzazione del potenziale delle
-persone con un metodo e un approccio consulenziale ben diverso da quello delle tradizionali agenzie del
+              Jobify Recruiting nasce per umanizzare il processo di Ricerca &amp; Selezione. Si propone sul mercato come
+agenzia qualificata di Head Hunting, che punta alla ricerca di talenti e alla valorizzazione del potenziale delle
+persone, con un metodo e un approccio consulenziale, ben diverso da quello delle tradizionali agenzie del
 lavoro.
             </p>
             <p>
@@ -598,14 +598,14 @@ lavoro.
           <div class="col1">
             <h2>Il metodo</h2>
             <p>
-              Jobify Recruiting è molto diversa dalle agenzie di ricerca personale. Siamo una società di Head Hunting che
-              utilizza un metodo scientifico con un approccio consulenziale. Il processo di selezione è umano e studiato
-              nei minimi dettagli per prendere decisioni in modo consapevole e trasparente al fine di lavorare in perfetta
+              Jobify Recruiting è molto diversa dalle altre agenzie di ricerca personale. Siamo una società di Head Hunting che
+              utilizza un metodo scientifico, con un approccio consulenziale. Il processo di selezione è umano e studiato
+              nei minimi dettagli per prendere decisioni, in modo consapevole e trasparente, al fine di lavorare in perfetta
               sinergia con l’azienda. 
             </p>
             <p>Per questo il nostro metodo di ricerca talenti si basa su: Interviste all’azienda per
               comprendere e approfondire la cultura aziendale, il clima aziendale, l&#39;organigramma ed il funzionigramma,
-              oltre al riporto diretto della risorsa da inserire, Interviste al candidato per comprendere ed approfondire i
+              oltre al riporto diretto della risorsa da inserire; Interviste al candidato per comprendere ed approfondire i
               valori e le aspettative dal punto di vista professionale
             </p>
           </div>
@@ -758,7 +758,7 @@ lavoro.
               <h2>Scientificità</h2>
               <p>
                 Lavoriamo con la migliore tecnologia per prendere decisioni consapevoli e basate sui
-                dati in modo da garantire un approccio scientifico alla ricerca risorse umane.
+                dati, in modo da garantire un approccio scientifico alla ricerca risorse umane.
               </p>
             </div>
           </div>

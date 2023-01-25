@@ -34,8 +34,8 @@ export default {
       job_alert_nome: "",
       job_alert_cognome: "",
       job_alert_email: "",
-      length: 1,
-      length_filtered: 1,
+      length: 9,
+      length_filtered: 9,
     };
   },
   async mounted() {
@@ -373,7 +373,7 @@ export default {
       };
 
       if (this.length < this.all_jobs.length) {
-        this.length = this.length + 6;
+        this.length = this.length + 9;
 
         if (this.length > this.all_jobs.length) {
         
@@ -402,7 +402,7 @@ export default {
       };
 
       if (this.length_filtered < this.all_jobs_filtered.length) {
-        this.length_filtered = this.length_filtered + 1;
+        this.length_filtered = this.length_filtered + 9;
 
         if (this.length_filtered > this.all_jobs_filtered.length) {
         
@@ -543,85 +543,164 @@ export default {
     },
 
     filter_func(event) {
-      this.all_jobs_filtered = this.all_jobs.filter( element => element.area_funzione == event.target.value)
-      let content = document.querySelector("#all_jobs");
-      content.style.display = "none";
+      if(event.target.value == "remove_filter"){
+        this.all_jobs_filtered = this.all_jobs;
 
-      let content2 = document.querySelector("#all_jobs_filtered");
-      content2.style.display = "grid";
-      this.remove_filter = true;
+        let content = document.querySelector("#all_jobs");
+        content.style.display = "grid";
 
-      let load_more = document.querySelector(".load_more");
-      load_more.style.display = "none";
+        let content2 = document.querySelector("#all_jobs_filtered");
+        content2.style.display = "none";
 
-      let load_more_filtered = document.querySelector(".load_more_filtered");
-      load_more_filtered.style.display = "inherit";
+        const area_funzione = document.querySelector('#area_funzione');
+        area_funzione.value = 'disabled'
+
+      }else{
+        this.all_jobs_filtered = this.all_jobs.filter( element => element.area_funzione == event.target.value)
+        let content = document.querySelector("#all_jobs");
+        content.style.display = "none";
+
+        let content2 = document.querySelector("#all_jobs_filtered");
+        content2.style.display = "grid";
+        this.remove_filter = true;
+
+        let load_more = document.querySelector(".load_more");
+        load_more.style.display = "none";
+
+        let load_more_filtered = document.querySelector(".load_more_filtered");
+        load_more_filtered.style.display = "inherit";
+
+        let remove_filter_div = document.querySelector(".remove_filter_div");
+        remove_filter_div.style.display = "inline";
+      }
+      
     },
 
     filter_city(event){
-      this.all_jobs_filtered = this.all_jobs.filter( element => element.location == event.target.value)
-      let content = document.querySelector("#all_jobs");
-      content.style.display = "none";
+      if(event.target.value == "remove_filter"){
+        this.all_jobs_filtered = this.all_jobs;
 
-      let content2 = document.querySelector("#all_jobs_filtered");
-      content2.style.display = "grid";
-      this.remove_filter = true;
+        let content = document.querySelector("#all_jobs");
+        content.style.display = "grid";
 
-      let load_more = document.querySelector(".load_more");
-      load_more.style.display = "none";
+        let content2 = document.querySelector("#all_jobs_filtered");
+        content2.style.display = "none";
 
-      let load_more_filtered = document.querySelector(".load_more_filtered");
-      load_more_filtered.style.display = "inherit";
+        const city = document.querySelector('#city');
+        city.value = 'disabled'
+      }else{
+        this.all_jobs_filtered = this.all_jobs.filter( element => element.location == event.target.value)
+        let content = document.querySelector("#all_jobs");
+        content.style.display = "none";
+
+        let content2 = document.querySelector("#all_jobs_filtered");
+        content2.style.display = "grid";
+        this.remove_filter = true;
+
+        let load_more = document.querySelector(".load_more");
+        load_more.style.display = "none";
+
+        let load_more_filtered = document.querySelector(".load_more_filtered");
+        load_more_filtered.style.display = "inherit";
+
+        let remove_filter_div = document.querySelector(".remove_filter_div");
+        remove_filter_div.style.display = "inline";
+      }
+      
     },
 
     filter_contract(event){
-      this.all_jobs_filtered = this.all_jobs.filter( element => element.contract_type == event.target.value)
-      let content = document.querySelector("#all_jobs");
-      content.style.display = "none";
+      if(event.target.value == "remove_filter"){
+        this.all_jobs_filtered = this.all_jobs;
 
-      let content2 = document.querySelector("#all_jobs_filtered");
-      content2.style.display = "grid";
-      this.remove_filter = true;
+        let content = document.querySelector("#all_jobs");
+        content.style.display = "grid";
 
-      let load_more = document.querySelector(".load_more");
-      load_more.style.display = "none";
+        let content2 = document.querySelector("#all_jobs_filtered");
+        content2.style.display = "none";
 
-      let load_more_filtered = document.querySelector(".load_more_filtered");
-      load_more_filtered.style.display = "inherit";
+        const contract = document.querySelector('#contract');
+        contract.value = 'disabled'
+      }else{
+        this.all_jobs_filtered = this.all_jobs.filter( element => element.contract_type == event.target.value)
+        let content = document.querySelector("#all_jobs");
+        content.style.display = "none";
+
+        let content2 = document.querySelector("#all_jobs_filtered");
+        content2.style.display = "grid";
+        this.remove_filter = true;
+
+        let load_more = document.querySelector(".load_more");
+        load_more.style.display = "none";
+
+        let load_more_filtered = document.querySelector(".load_more_filtered");
+        load_more_filtered.style.display = "inherit";
+
+        let remove_filter_div = document.querySelector(".remove_filter_div");
+        remove_filter_div.style.display = "inline";
+      }
+      
     },
 
     filter_sort_by(event){
-      if(event.target.value == "2"){
-        this.all_jobs_filtered = this.all_jobs.sort((a, b) => {
-              if (a.publication_date > b.publication_date) {
-                return -1;
-              }
-        });
+      if(event.target.value == "remove_filter"){
+        this.all_jobs_filtered = this.all_jobs;
+
         let content = document.querySelector("#all_jobs");
-        content.style.display = "none";
+        content.style.display = "grid";
 
         let content2 = document.querySelector("#all_jobs_filtered");
-        content2.style.display = "grid";
-      }else if(event.target.value == "1"){
-        this.all_jobs_filtered = this.all_jobs.sort((a, b) => {
-              if (a.publication_date < b.publication_date) {
-                return -1;
-              }
-        });
-        let content = document.querySelector("#all_jobs");
-        content.style.display = "none";
+        content2.style.display = "none";
 
-        let content2 = document.querySelector("#all_jobs_filtered");
-        content2.style.display = "grid";
+        let remove_filter_div = document.querySelector(".remove_filter_div");
+        remove_filter_div.style.display = "none";
+
+        this.all_jobs_filtered = this.all_jobs.sort((a, b) => {
+                if (a.publication_date > b.publication_date) {
+                  return -1;
+                }
+          });
+        
+        const sort_by = document.querySelector('#sort_by');
+        sort_by.value = '2'
+      }else{
+          if(event.target.value == "2"){
+          this.all_jobs_filtered = this.all_jobs.sort((a, b) => {
+                if (a.publication_date > b.publication_date) {
+                  return -1;
+                }
+          });
+          let content = document.querySelector("#all_jobs");
+          content.style.display = "none";
+
+          let content2 = document.querySelector("#all_jobs_filtered");
+          content2.style.display = "grid";
+
+          
+        }else if(event.target.value == "1"){
+          this.all_jobs_filtered = this.all_jobs.sort((a, b) => {
+                if (a.publication_date < b.publication_date) {
+                  return -1;
+                }
+          });
+          let content = document.querySelector("#all_jobs");
+          content.style.display = "none";
+
+          let content2 = document.querySelector("#all_jobs_filtered");
+          content2.style.display = "grid";
+        }
+
+        this.remove_filter = true;
+
+        let load_more = document.querySelector(".load_more");
+        load_more.style.display = "none";
+
+        let load_more_filtered = document.querySelector(".load_more_filtered");
+        load_more_filtered.style.display = "inherit";
+        let remove_filter_div = document.querySelector(".remove_filter_div");
+        remove_filter_div.style.display = "inline";
       }
 
-      this.remove_filter = true;
-
-      let load_more = document.querySelector(".load_more");
-      load_more.style.display = "none";
-
-      let load_more_filtered = document.querySelector(".load_more_filtered");
-      load_more_filtered.style.display = "inherit";
     },
 
     remove_filter2(){
@@ -846,6 +925,7 @@ export default {
                 v-model="search_text"
                 autocomplete="off"
                 placeholder="Che lavoro cerchi?"
+                v-on:keyup.enter="filter_search(search_text)"
               />
               <span @click="filter_search(search_text)" id="search_button">
                 <svg
@@ -931,6 +1011,7 @@ export default {
                           v-bind:key="func"
                           v-bind:value=func.function
                         >{{ func.function }}</option>
+                        <option value="remove_filter">Rimuovi filtro</option>
                     </select>
                 </div>
                   
@@ -942,6 +1023,7 @@ export default {
                           v-bind:key="city"
                           v-bind:value=city.city
                       >{{ city.city }}</option>
+                      <option value="remove_filter">Rimuovi filtro</option>
                     </select>
                 </div>
 
@@ -953,6 +1035,7 @@ export default {
                           v-bind:key="filter"
                           v-bind:value=filter.contract_type
                       >{{ filter.contract_type }}</option>
+                      <option value="remove_filter">Rimuovi filtro</option>
                     </select>
                 </div>
 
@@ -960,6 +1043,7 @@ export default {
                   <select class="form-select" id="sort_by" @change="filter_sort_by($event)">
                     <option value="2" selected>Meno recente</option>
                     <option value="1">Più recente</option>
+                    <option value="remove_filter">Rimuovi filtro</option>
                   </select>
                 </div>
 
@@ -1008,7 +1092,7 @@ export default {
                       </div>
                       <div class="card-buttons">
                         <div class="card-body">
-                          <a v-if="job.closing_date < this.new_date" :href=job.url target="blank" class="card-link btn">Vedi offerta</a>
+                          <a v-if="job.url" :href=job.url target="blank" class="card-link btn">Vedi offerta</a>
                           <div v-else>Offerta non più disponibile</div>
                         </div>
                       </div>
@@ -1076,12 +1160,12 @@ export default {
 
               <div class="load_more_filtered">
                 <p>{{ this.length_filtered }} di {{ this.all_jobs_filtered.length }} offerte di lavoro viste</p>
-                <button class="btn" @click="loadMore_filtered" id="btn_load_more_filtered">Vedi altre offerte di lavoro</button>
+                <button class="btn" @click="loadMore_filtered" id="btn_load_more_filtered">Guarda altre 9 offerte</button>
               </div>
 
               <div class="load_more">
                 <p>{{ this.length }} di {{ this.all_jobs.length }} offerte di lavoro viste</p>
-                <button class="btn" @click="loadMore" id="btn_load_more">Vedi altre offerte di lavoro</button>
+                <button class="btn" @click="loadMore" id="btn_load_more">Guarda altre 9 offerte</button>
               </div>
           </div>
         </div>

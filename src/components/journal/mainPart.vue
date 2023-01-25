@@ -758,10 +758,10 @@ export default {
             </div>
             <div class="firstColumn transition">
               <p>Molto più di un semplice blog: il Journal di Jobify Recruiting è studiato per esplorare i mille temi connessi al
-mondo del lavoro e delle risorse umane e pensato per offrire a clienti e aziende spunti di riflessione sulla
+mondo del lavoro e delle risorse umane, e pensato per offrire, a clienti e aziende, spunti di riflessione sulla
 ricerca di lavoro, selezione dei migliori talenti e valorizzazione delle potenzialità dei candidati. L’invito è a
 leggere, commentare e condividere i contenuti proposti in queste pagine e a contattarci per un
-appuntamento se sei un’azienda che cerca persone o una persona che cerca aziende in cui lavorare.</p>
+appuntamento, se siete aziende che cercano persone o persone che cercano aziende in cui lavorare.</p>
             </div>
           </div>
         </div>

@@ -100,42 +100,12 @@ export default {
     <div class="main">
       <div class="first">
         <div class="firstPart">
-          <!--<div class="firstPartBody">
-            <div class="subtitle">Partnerships</div>
-          <h2>Una crescita solida con chi crede nei valori di Jobify Recruiting</h2>
-          <p>
-            Da sempre Jobify Recruiting seleziona partner strategici per la crescita del business. Il nostro partner ideale
-crede nei valori dell’agenzia di head hunting ed è pronto a mettersi a disposizione per contribuire al
-successo suo e nostro.
-          </p>
-          <div class="mainButton">
-            <a href="#first"
-              ><button class="btn">
-                Contattaci per diventare nostro partner
-                <span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    fill="currentColor"
-                    class="bi bi-arrow-right-short"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                    />
-                  </svg>
-                </span></button
-            ></a>
-          </div>
-          </div>-->
           <div class="firstPartBody">
             <div class="subtitle">Partnerships</div>
               <h2>Una crescita solida con chi crede nei valori di Jobify Recruiting</h2>
 
               <p>
-                Da sempre Jobify Recruiting seleziona partner strategici per la crescita del business. Il nostro partner ideale crede nei valori dell’agenzia di head hunting ed è pronto a mettersi a disposizione per contribuire al successo suo e nostro.
+                Da sempre Jobify Recruiting seleziona partner strategici per la crescita del business. Il nostro partner ideale crede nei valori dell’agenzia di head hunting ed è pronto a mettersi a disposizione per contribuire al suo successo e al nostro.
               </p>
 
               <div class="mainButton">
@@ -299,14 +269,14 @@ successo suo e nostro.
             </div>
             <div class="col col2">
               <div class="text">
-                <span>Un partner è un’azienda che collabora con un’altra e ne condivide mission, vision e valori</span> in vista di un
-obiettivo comune. Nel nostro caso Jobify Recruiting collabora con enti, aziende e associazioni per diventare
+                <span>Un partner è un’azienda che collabora con un’altra e ne condivide mission, vision e valori,</span> in vista di un
+obiettivo comune. Nel nostro caso, Jobify Recruiting collabora con enti, aziende e associazioni per diventare
 un punto di riferimento nel settore della selezione, ricerca e valorizzazione dei talenti.
               </div>
               <div class="text2">
                 Ogni persona ha un talento e ogni talento può essere valorizzato dalla giusta azienda. Questo è il nostro
-modo di pensare e lavorare e il modo di pensare e lavorare che chiediamo a chi <span>sceglie di collaborare con
-noi diventando partner di Jobify Recruiting.</span>
+modo di pensare e lavorare, e il modo di pensare e lavorare che chiediamo a chi <span>sceglie di collaborare con
+noi, diventando partner di Jobify Recruiting.</span>
               </div>
             </div>
           </div>
@@ -315,15 +285,15 @@ noi diventando partner di Jobify Recruiting.</span>
           <div class="cols">
             <div class="col col2">
               <div class="text">
-                <span>La nostra missione e quella di chi decide di diventare nostro partner è quella di creare il punto di incontro
+                <span>La nostra missione, e quella di chi decide di diventare nostro partner, è quella di creare il punto di incontro
 tra la persona che cerca lavoro</span> e l’azienda disposta ad assumerla. Si tratta di un match che deve essere
 perfetto e corrispondere alle esigenze di entrambe le parti, che decidono di unirsi nel nome degli stessi
-valori e ideali andando oltre la tradizionale visione del candidato come risorsa umana da “sfruttare” sulla
+valori e ideali, andando oltre la tradizionale visione del candidato come risorsa umana da “sfruttare”, sulla
 base di un dato job title ed esperienza.
               </div>
               <div class="text2">
-                In Jobify Recruiting quelle che per la classica agenzia di recruiting sono risorse umane diventano persone e
-talenti e ai nostri partner chiediamo la stessa visione innovativa di <span>un mercato del lavoro in continua
+                In Jobify Recruiting, quelle che per la classica agenzia di recruiting sono risorse umane, diventano persone e
+talenti e, ai nostri partner, chiediamo la stessa visione innovativa di <span>un mercato del lavoro in continua
 evoluzione e cambiamento.</span>
               </div>
             </div>

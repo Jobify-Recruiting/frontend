@@ -1,9 +1,22 @@
 <script>
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import firebase from 'firebase/compat/app';
+import storage from 'firebase/compat';
+import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
+import 'firebase/compat/firestore';
+
 export default {
   name: "mainPart",
   components: {},
   data() {
-    return {};
+    return {
+      name: "",
+      city: "",
+      email: "",
+      address: "",
+      settore: "",
+    };
   },
   mounted() {
     let recaptchaScript = document.createElement("script");
@@ -178,6 +191,48 @@ export default {
       const itemWidth = content.querySelector(".workflowColumn").clientWidth;
       content.scrollBy({ left: itemWidth * 2, top: 0, behavior: "smooth" });
     },
+
+    requestAppointmentCompany(){
+      const db = firebase
+        .initializeApp({ projectId: "jobify-d2a24" })
+        .firestore();
+
+        const current = new Date();
+      const date =
+        current.getDate() +
+        "-" +
+        (current.getMonth() + 1) +
+        "-" +
+        current.getFullYear();
+      const time =
+        current.getHours() +
+        ":" +
+        current.getMinutes() +
+        ":" +
+        current.getSeconds();
+
+        const dateTime = date + " " + time;
+
+        const data = {
+          name: this.name,
+          city: this.city,
+          email: this.email,
+          address: this.address,
+          settore: this.settore,
+          data: dateTime,
+        };
+
+        db.collection("richieste_appuntamento_aziende")
+        .add(data)
+        .then(() => {
+          document.getElementById("notify").style.display = "inline-flex";
+          document.getElementById("title").innerHTML = "Richiesta Lavora con Noi";
+          document.getElementById("subtitle").innerHTML = "Richiesta inviata con successo.";
+          setTimeout(() => {
+            document.getElementById("notify").style.display = "none";
+          }, 6000); // 👈️ time in milliseconds
+          });
+    }
   },
 };
 </script>
@@ -192,14 +247,14 @@ export default {
           <div class="subtitle">Sei un'azienda</div>
               <h2><span>Jobify</span> Recruiting trova il candidato giusto per l’azienda giusta</h2>
               <p>
-                Jobify Recruiting è molto diversa dalle agenzie di ricerca personale. Siamo una società di Head Hunting che
+                Jobify Recruiting è molto diversa dalle altre agenzie di ricerca personale. Siamo una società di Head Hunting, che
                 utilizza un metodo <span>scientifico</span> con un approccio <span>consulenziale</span>. Il processo di selezione è umano e studiato
-                nei minimi dettagli per prendere decisioni in modo consapevole e trasparente al fine di lavorare in perfetta
+                nei minimi dettagli per prendere decisioni in modo consapevole e trasparente, al fine di lavorare in perfetta
                 sinergia con l’azienda.
               </p>
 
               <p>
-                Usiamo strumenti e tecnologia avanzate e ci affidiamo all’intelligenza artificiale per velocizzare il processo
+                Usiamo strumenti e tecnologie avanzate e ci affidiamo all’intelligenza artificiale per velocizzare il processo
     di ricerca, in modo da soddisfare le esigenze delle diverse aziende che si rivolgono a noi e avere più tempo
     da dedicare alla ricerca e selezione vera e propria dei talenti.
               </p>
@@ -288,9 +343,9 @@ professionali e si riflette nella cultura aziendale</p>
               <div class="col1">
                 <h2><span>Il problema</span> delle aziende…</h2>
                 <p>
-                  Oggi le aziende hanno difficoltà a trovare i giusti talenti dato che spesso si basano unicamente sulla
-                  valutazione del CV e delle Hard &amp; Soft Skills. Per questo Jobify Recruiting propone un approccio che punta a
-                  mettere al centro valori e aspettative del candidato dal punto di vista professionale per creare i match con
+                  Oggi le aziende hanno difficoltà a trovare i giusti talenti, dato che spesso si basano unicamente sulla
+                  valutazione del CV e delle Hard &amp; Soft Skills. Per questo, Jobify Recruiting propone un approccio che punta a
+                  mettere al centro valori e aspettative del candidato, dal punto di vista professionale, per creare i match con
                   la cultura e i valori aziendali alla base di una proficua relazione candidato-azienda. Oggi in
                   Italia esistono ben 1074 società di Ricerca &amp; Selezione del personale, ma poche si caratterizzano per
                   l’approccio consulenziale e la volontà di umanizzare il processo di selezione. Questo è quello che fa Jobify
@@ -301,14 +356,13 @@ professionali e si riflette nella cultura aziendale</p>
                   <span>I punti di forza</span> del nostro metodo
                 </h2>
                 <p>
-                  Jobify Recruiting è molto diversa dalle agenzie di ricerca personale. Siamo una società di Head Hunting che
+                  Jobify Recruiting è molto diversa dalle altre agenzie di ricerca di personale. Siamo una società di Head Hunting che
                   utilizza un metodo scientifico con un approccio consulenziale. Il processo di selezione è umano e studiato
-                  nei minimi dettagli per prendere decisioni in modo consapevole poiché tutti i nostri processi di ricerca e 
-                  selezione sono <span>misurati è supportato da dati scientifici “ e trasparenti</span> in quanto condividiamo costantemente 
-                  questi dati con le aziende e questo ci consente di lavorare in perfetta sinergia con le aziende e trasparente 
-                  al fine di lavorare in perfetta sinergia con l’azienda. Per questo il nostro metodo di ricerca talenti si basa su: <span>Interviste all’azienda</span> per
+                  nei minimi dettagli per prendere decisioni in modo consapevole, poiché tutti i nostri processi di ricerca e 
+                  selezione sono <span>misurati è supportati da dati scientifici e trasparenti,</span> in quanto condividiamo costantemente 
+                  questi dati con le aziende. Questo ci consente di lavorare in perfetta sinergia. Per questo il nostro metodo di ricerca talenti si basa su: <span>Interviste all’azienda</span> per
                   comprendere e approfondire la cultura aziendale, il clima aziendale, l&#39;organigramma ed il funzionigramma,
-                  oltre al riporto diretto della risorsa da inserire, <span>Interviste al candidato</span> per comprendere ed approfondire i
+                  oltre al riporto diretto della risorsa da inserire, <span>Interviste al candidato,</span> per comprendere ed approfondire i
                   valori e le aspettative dal punto di vista professionale.
                 </p>
 
@@ -317,11 +371,11 @@ professionali e si riflette nella cultura aziendale</p>
                 </h2>
                 <p>
                   La situazione di emergenza sanitaria ha fatto riscoprire alle persone il valore della vita e le ha portate a
-                  rivedere le priorità, dando maggior importanza al nostro tempo e al nostro benessere personale.
+                  rivedere le priorità, dando maggior importanza al proprio tempo e al proprio benessere personale.
                   Il settore della Ricerca &amp; Selezione e dell’ HR Tech in Italia è fermo da 10 anni: le aziende faticano ancora a
                   trovare i talenti giusti, ed i talenti a trovare le aziende giuste.
                   Jobify Recruiting ha come obiettivo primario quello di umanizzare il processo di Ricerca &amp; Selezione,
-                  mettendo a servizio dei nostri Head Hunter strumenti di Intelligenza Artificiale ed HR Tech.
+                  mettendo a servizio dei propri Head Hunter strumenti di Intelligenza Artificiale ed HR Tech.
                 </p>
                 
               </div>
@@ -349,7 +403,7 @@ professionali e si riflette nella cultura aziendale</p>
                 <h2>Scientificità</h2>
                 <p>
                   Lavoriamo con la migliore tecnologia per prendere decisioni consapevoli e basate sui
-                dati in modo da garantire un approccio scientifico alla ricerca risorse umane.
+                dati, in modo da garantire un approccio scientifico alla ricerca risorse umane.
                 </p>
               </div>
               <div class="feature">
@@ -506,7 +560,7 @@ professionali e si riflette nella cultura aziendale</p>
               <h2>Scientificità</h2>
               <p>
                 Lavoriamo con la migliore tecnologia per prendere decisioni consapevoli e basate sui
-                dati in modo da garantire un approccio scientifico alla ricerca risorse umane.
+                dati, in modo da garantire un approccio scientifico alla ricerca risorse umane.
               </p>
             </div>
           </div>
@@ -1720,6 +1774,22 @@ cercano personale.
           </div>
         </div>
 
+        <div class="notify" id="notify">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#0c2550" class="bi bi-check-lg" viewBox="0 0 16 16">
+              <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+            </svg>
+          </div>
+          <div class="text">
+            <div class="title" id="title">
+              
+            </div>
+            <div class="subtitle" id="subtitle">
+
+            </div>
+          </div>
+        </div>
+
         <div class="cols">
           <div class="col col_1">
             <p>Sei un'azienda?</p>
@@ -1741,6 +1811,7 @@ appuntamento con Jobify Recruiting.
                 class="input"
                 type="text"
                 name="nickname"
+                v-model="name"
                 placeholder="Nome azienda"
               />
 
@@ -1750,6 +1821,7 @@ appuntamento con Jobify Recruiting.
                 class="input"
                 type="text"
                 name="nickname"
+                v-model="city"
                 placeholder="Città"
               />
             </div>
@@ -1759,6 +1831,7 @@ appuntamento con Jobify Recruiting.
                 class="input"
                 type="text"
                 name="nickname"
+                v-model="address"
                 placeholder="Via"
               />
             </div>
@@ -1768,6 +1841,7 @@ appuntamento con Jobify Recruiting.
                 class="input"
                 type="text"
                 name="nickname"
+                v-model="email"
                 placeholder="Email"
               />
             </div>
@@ -1777,13 +1851,13 @@ appuntamento con Jobify Recruiting.
                 class="input"
                 type="text"
                 name="nickname"
+                v-model="settore"
                 placeholder="Settore"
               />
             </div>
 
             <div class="formButton">
-              <a href="#first"
-                ><button class="btn">
+              <button class="btn" @click="requestAppointmentCompany()">
                   Invia
                   <span>
                     <svg
@@ -1800,7 +1874,7 @@ appuntamento con Jobify Recruiting.
                       />
                     </svg>
                   </span></button
-              ></a>
+              >
             </div>
           </div>
         </div>
@@ -1852,6 +1926,43 @@ appuntamento con Jobify Recruiting.
 }
 
 @media (min-width: 1024px) {
+
+  .notify{
+    position: fixed;
+    right: 2%;
+    bottom: 10%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: 20px;
+    z-index: 1000;
+    width: 30%;
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  .notify .title{
+    color: #0c2550;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 700;
+  }
+
+  .notify .subtitle{
+    color: #0c2550;
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 1rem;
+  }
+
   .flowSingleBtn {
     margin-top: 15rem;
   }

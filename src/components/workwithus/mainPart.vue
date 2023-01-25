@@ -108,7 +108,7 @@ export default {
               <h2>Un team fatto di persone per le persone</h2>
 
               <p>
-                Jobify Recruiting lavora con passione e impegno e mette competenza, tecnologia e umanità al servizio di clienti che possono essere di volta in volta candidati e aziende. Se pensi di possedere queste qualità entra nel nostro team.
+                Jobify Recruiting lavora con passione e impegno e mette competenza, tecnologia e umanità al servizio di clienti che possono essere, di volta in volta, candidati e aziende. Se pensi di possedere queste qualità entra nel nostro team.
               </p>
 
               <div class="mainButton">
@@ -644,7 +644,7 @@ alla ricerca di talenti per creare il futuro. Invia ora la tua candidatura!
     font-size: 14px;
     background-color: #1c1c1c;
     border-radius: 12px;
-    color: #fff;
+    color: #000;
     box-shadow: none;
     width: 100%;
     float: right;

@@ -240,7 +240,7 @@ export default {
           <h2>Jobify Recruiting è la risposta giusta!</h2>
           <p>Su Jobify Recruiting trovi ogni giorno nuove offerte in ambito Farm, Finance, IT, Tech, HR.</p>
           <div class="mainButton">
-            <router-link to='/openposition/?jobalert=open'
+            <!--<router-link to='/openposition/?jobalert=open'
               ><button class="btn">
                 Crea una job alert
                 <span>
@@ -258,7 +258,7 @@ export default {
                     />
                   </svg>
                 </span></button
-            ></router-link>
+            ></router-link>-->
           </div>
           <div class="image"></div>
           </div>
@@ -280,7 +280,7 @@ export default {
               <div class="col1">
                 <h2><span>Trova con noi</span> il tuo prossimo lavoro.</h2>
                 <p>
-                  Se sei un candidato in cerca di lavoro e cerchi nuove opportunità professionali Jobify Recruiting ti mette in
+                  Se sei un candidato in cerca di lavoro e cerchi nuove opportunità professionali, Jobify Recruiting ti mette in
                   contatto con l’azienda giusta per te. Il nostro obiettivo è creare il match perfetto tra risorse umane e
                   aziende che assumono, andando oltre una visione tradizionale basata su job title e competenze tecniche,
                   hard e soft skill.
@@ -350,7 +350,7 @@ export default {
                   <p class="card-text">
                     Le aziende non amano lettere di presentazione standardizzate e semplici copia e incolla inviati in massa.
                     Una lettera di presentazione efficace è centrata sulla posizione e sull’azienda per cui ci si candida e
-                    prepararla è sicuramente più semplice se si può contare sul supporto di Jobify Recruiting.
+                    prepararla, è sicuramente più semplice se si può contare sul supporto di Jobify Recruiting.
                   </p>
                     
                 </div>
@@ -524,7 +524,7 @@ export default {
                   data-parent="#accordionExample"
                 >
                   <div class="card-body">
-                    Per trovare lavoro grazie agli strumenti messi a disposizione da Jobify Recruiting ti consigliamo di seguire e controllare periodicamente le posizioni aperte sul sito e di iscriverti alla  job alert. Oltre a questo è importante avere un dialogo attivo e costante con i nostri recruiter ed head hunter, la cui missione è da sempre creare il match perfetto tra talento e azienda. Restiamo in contatto!
+                    Per trovare lavoro grazie agli strumenti messi a disposizione da Jobify Recruiting, ti consigliamo di seguire e controllare periodicamente le posizioni aperte sul sito e di iscriverti alla  job alert. Oltre a questo, è importante avere un dialogo attivo e costante con i nostri recruiter ed head hunter, la cui missione è da sempre creare il match perfetto tra talento e azienda. Restiamo in contatto!
                   </div>
                 </div>
               </div>
@@ -552,7 +552,7 @@ export default {
                   data-parent="#accordionExample"
                 >
                   <div class="card-body">
-                    La ricerca del nuovo lavoro e di offerte in linea con le proprie aspirazioni personali non è mai semplice, ma richiede tempo, impegno e attenzione costante. In altre parole possiamo considerare la ricerca di impiego non come un insieme di azioni non coordinate, ma come un progetto da studiare con attenzione perché possa portare al raggiungimento degli obiettivi desiderati. In media la ricerca lavoro con Jobify Recruiting dura circa 15 mesi, ma si tratta di un periodo di tempo variabile che dipende dalle competenze del candidato e dalla disponibilità di offerte da parte delle aziende.
+                    La ricerca del nuovo lavoro e di offerte in linea con le proprie aspirazioni personali non è mai semplice, ma richiede tempo, impegno e attenzione costante. In altre parole, possiamo considerare la ricerca di impiego non come un insieme di azioni non coordinate, ma come un progetto da studiare con attenzione, perché possa portare al raggiungimento degli obiettivi desiderati. In media, la ricerca lavoro con Jobify Recruiting dura circa 15 mesi, ma si tratta di un periodo di tempo variabile che dipende dalle competenze del candidato e dalla disponibilità di offerte da parte delle aziende.
                   </div>
                 </div>
               </div>
@@ -580,7 +580,7 @@ export default {
                   data-parent="#accordionExample"
                 >
                   <div class="card-body">
-                    La ricerca del nuovo lavoro e di offerte in linea con le proprie aspirazioni personali non è mai semplice, ma richiede tempo, impegno e attenzione costante. In altre parole possiamo considerare la ricerca di impiego non come un insieme di azioni non coordinate, ma come un progetto da studiare con attenzione perché possa portare al raggiungimento degli obiettivi desiderati. In media la ricerca lavoro con Jobify Recruiting dura circa 15 mesi, ma si tratta di un periodo di tempo variabile che dipende dalle competenze del candidato e dalla disponibilità di offerte da parte delle aziende.
+                    Jobify Recruiting è l’agenzia di head hunting a cui rivolgersi per trovare lavoro principalmente nei settori di HR, FARM, FINANCE, DIGITAL e IT, ma non solo. Inoltre i nostri consulenti sono specializzati nella ricerca di talenti con profilo manageriale e che appartengono al middle e top management.
                   </div>
                 </div>
               </div>
@@ -595,7 +595,7 @@ export default {
               <h3>
                 <span>Scopri le posizioni aperte</span><br> su Jobify Recruiting
               </h3>
-              <router-link to="/openposition">
+              <router-link to="/openposition/?jobalert=open">
                       <div class="button">
                         Guarda le offerte di lavoro
                         <span>
