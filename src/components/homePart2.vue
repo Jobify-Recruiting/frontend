@@ -603,9 +603,9 @@ lavoro.
               nei minimi dettagli per prendere decisioni, in modo consapevole e trasparente, al fine di lavorare in perfetta
               sinergia con l’azienda. 
             </p>
-            <p>Per questo il nostro metodo di ricerca talenti si basa su: Interviste all’azienda per
+            <p>Per questo il nostro metodo di ricerca talenti si basa su: interviste all’azienda per
               comprendere e approfondire la cultura aziendale, il clima aziendale, l&#39;organigramma ed il funzionigramma,
-              oltre al riporto diretto della risorsa da inserire; Interviste al candidato per comprendere ed approfondire i
+              oltre al riporto diretto della risorsa da inserire; interviste al candidato per comprendere ed approfondire i
               valori e le aspettative dal punto di vista professionale
             </p>
           </div>

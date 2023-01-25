@@ -268,7 +268,7 @@ export default {
       preserveAspectRatio="none"
       viewBox="0 0 1680 40"
       class="position-absolute width-full z-1"
-      style="bottom: 0"
+      style="bottom: 0; left: 0;"
     >
       <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
           </svg>
@@ -595,7 +595,7 @@ export default {
               <h3>
                 <span>Scopri le posizioni aperte</span><br> su Jobify Recruiting
               </h3>
-              <router-link to="/openposition/?jobalert=open">
+              <router-link to="/openposition"> <!--/?jobalert=open-->
                       <div class="button">
                         Guarda le offerte di lavoro
                         <span>
@@ -812,7 +812,7 @@ export default {
     background-size: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    top: -20%;
+    top: -50%;
     right: 0;
     margin-right: 0;
   }
