@@ -360,9 +360,9 @@ professionali e si riflette nella cultura aziendale</p>
                   utilizza un metodo scientifico con un approccio consulenziale. Il processo di selezione è umano e studiato
                   nei minimi dettagli per prendere decisioni in modo consapevole, poiché tutti i nostri processi di ricerca e 
                   selezione sono <span>misurati e supportati da dati scientifici e trasparenti,</span> in quanto condividiamo costantemente 
-                  questi dati con le aziende. Questo ci consente di lavorare in perfetta sinergia. Per questo il nostro metodo di ricerca talenti si basa su: <span>Interviste all’azienda,</span> per
+                  questi dati con le aziende. Questo ci consente di lavorare in perfetta sinergia. Per questo il nostro metodo di ricerca talenti si basa su: <span>interviste all’azienda,</span> per
                   comprendere e approfondire la cultura aziendale, il clima aziendale, l&#39;organigramma ed il funzionigramma,
-                  oltre al riporto diretto della risorsa da inserire, <span>Interviste al candidato,</span> per comprendere ed approfondire i
+                  oltre al riporto diretto della risorsa da inserire, <span>interviste al candidato,</span> per comprendere ed approfondire i
                   valori e le aspettative dal punto di vista professionale.
                 </p>
 
