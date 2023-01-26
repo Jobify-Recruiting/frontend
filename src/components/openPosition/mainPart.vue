@@ -972,7 +972,6 @@ export default {
             <path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path>
           </svg>
         </div>
-       
         
         <div class="results_jobs">
           
@@ -987,44 +986,47 @@ export default {
                 <div class="filter_category filter_job">
                     <select class="form-select" id="area_funzione" @change="filter_func($event)">
                       <option value="disabled" disabled selected>Funzione</option>
+                      <option class="remove_filter_option" value="remove_filter">Rimuovi filtro</option>
                       <option
                           v-for="func in filter_function2"
                           v-bind:key="func"
                           v-bind:value=func.function
                         >{{ func.function }}</option>
-                        <option value="remove_filter">Rimuovi filtro</option>
                     </select>
                 </div>
                   
                 <div class="city_category filter_job">
                     <select class="form-select" id="city" @change="filter_city($event)">
                       <option value="disabled" disabled selected>Città</option>
+                      <option class="remove_filter_option" value="remove_filter">Rimuovi filtro</option>
                       <option
                           v-for="city in filter_city2"
                           v-bind:key="city"
                           v-bind:value=city.city
                       >{{ city.city }}</option>
-                      <option value="remove_filter">Rimuovi filtro</option>
+                      
                     </select>
                 </div>
 
                 <div class="contract_category filter_job">
                     <select class="form-select" id="contract" @change="filter_contract($event)">
                       <option value="disabled" disabled selected>Tipo di contratto</option>
+                      <option class="remove_filter_option" value="remove_filter">Rimuovi filtro</option>
                       <option
                           v-for="filter in filter_contract_type2"
                           v-bind:key="filter"
                           v-bind:value=filter.contract_type
                       >{{ filter.contract_type }}</option>
-                      <option value="remove_filter">Rimuovi filtro</option>
+                      
                     </select>
                 </div>
 
                 <div class="sort_by">
                   <select class="form-select" id="sort_by" @change="filter_sort_by($event)">
+                    <option class="remove_filter_option" value="remove_filter">Rimuovi filtro</option>
                     <option value="1" selected>Più recente</option>
                     <option value="2">Meno recente</option>
-                    <option value="remove_filter">Rimuovi filtro</option>
+                    
                   </select>
                 </div>
 
@@ -1756,6 +1758,11 @@ sviluppare in azienda.
     padding-bottom: 1.5rem;
     width: 17%;
     margin-right: 2rem;
+  }
+
+  .remove_filter_option{
+    font-weight: 600;
+    text-decoration: underline;
   }
 
   .filters_jobs{
