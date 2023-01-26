@@ -424,7 +424,7 @@ export default {
           return array.filter(o =>
               Object.keys(o).some(k => o[k].toLowerCase().includes(string.toLowerCase())));
       }
-      this.all_jobs_filtered = filterByValue(this.all_jobs, search_text);
+      this.all_jobs_filtered = filterByValue(JSON.parse(JSON.stringify(this.all_jobs)), search_text);
 
       let content = document.querySelector("#all_jobs");
       content.style.display = "none";
@@ -491,7 +491,7 @@ export default {
           return array.filter(o =>
               Object.keys(o).some(k => o[k].toLowerCase().includes(string.toLowerCase())));
       }
-      this.all_jobs_filtered = filterByValue(this.all_jobs, event);
+      this.all_jobs_filtered = filterByValue(JSON.parse(JSON.stringify(this.all_jobs)), event);
 
       let content = document.querySelector("#all_jobs");
       content.style.display = "none";
