@@ -7,7 +7,7 @@ import firebase from 'firebase/compat/app';
 import storage from 'firebase/compat';
 import { getStorage, ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import 'firebase/compat/firestore';
-import { collection, getDocs } from "firebase/firestore";
+import { collection, query, where, getDocs } from "firebase/firestore";
 
 export default {
   name: "mainPart",
@@ -15,6 +15,7 @@ export default {
   data() {
     return {
       new_jobs: [],
+      new_jobs2: [],
       jobs_lenght: "",
       old_jobs: [],
       all_jobs: [],
@@ -108,50 +109,24 @@ export default {
         return this.new_jobs;
       })
 
-      for (var i = 0; i < 1; i++) {
-        if(this.new_jobs[i].id != this.old_jobs[i].id){
-          const db = firebase
-            .initializeApp({ projectId: "jobify-d2a24" })
-            .firestore();
+      
+      for (var i = 0; i < this.new_jobs.length; i++){
 
-            const current = new Date();
-            const date =
-            current.getDate() +
-            "-" +
-            (current.getMonth() + 1) +
-            "-" +
-            current.getFullYear();
-            const time =
-            current.getHours() +
-            ":" +
-            current.getMinutes() +
-            ":" +
-            current.getSeconds();
-
-            const dateTime = date + " " + time;
-
-            const data = {
-              id: this.new_jobs[i].id,
-              job_title: this.new_jobs[i].title,
-              location: this.new_jobs[i].location,
-              company: this.new_jobs[i].company,
-              contact: this.new_jobs[i].vacancy_owner,
-              publication_date: this.new_jobs[i].published,
-              closing_date: this.new_jobs[i].expires,
-              contract_type: this.new_jobs[i].contract_type,
-              area_funzione: this.new_jobs[i].function,
-              url: this.new_jobs[i].url,
-            };
-
-            console.log(data)
-
-            db.collection("offerte_di_lavoro")
-            .add(data)
-            .then(() => {
-              
-              });
-        }
+        this.new_jobs2.push({ 
+          id: this.new_jobs[i].id,
+          job_title: this.new_jobs[i].title,
+          location: this.new_jobs[i].location,
+          company: this.new_jobs[i].company,
+          contact: this.new_jobs[i].vacancy_owner,
+          publication_date: this.new_jobs[i].published,
+          closing_date: this.new_jobs[i].expires,
+          contract_type: this.new_jobs[i].contract_type,
+          area_funzione: this.new_jobs[i].function,
+          url: this.new_jobs[i].url,
+        });
       }
+
+      var newArray = this.new_jobs2.concat(this.old_jobs);
 
       const querySnapshot2 = await getDocs(collection(db, "offerte_di_lavoro"));
       querySnapshot2.forEach((doc) => {
@@ -169,8 +144,10 @@ export default {
         });
       });
 
+      this.all_jobs = this.new_jobs2.concat(this.all_jobs);
+
       let old_jobs_ordered2 = this.all_jobs.sort((a, b) => {
-              if (a.publication_date > b.publication_date) {
+              if (a.id > b.id) {
                 return -1;
               }
       });
@@ -181,31 +158,38 @@ export default {
 
     //filtro tipo contratto
     for (var i = 0; i < this.all_jobs.length; i++) {
-      this.filter_contract_type1.push({ 
-          contract_type: this.all_jobs[i].contract_type,
-        });
+      if(this.all_jobs[i].contract_type.length > 1){
+        this.filter_contract_type1.push({ 
+            contract_type: this.all_jobs[i].contract_type,
+          });
+      }
     }
     this.filter_contract_type2 = uniqBy(this.filter_contract_type1, JSON.stringify)
 
     //filtro città
     for (var i = 0; i < this.all_jobs.length; i++) {
-      this.filter_city1.push({ 
-          city: this.all_jobs[i].location,
-        });
+      if(this.all_jobs[i].location.length > 1){
+        this.filter_city1.push({ 
+            city: this.all_jobs[i].location,
+          });
+      }
     }
     this.filter_city2 = uniqBy(this.filter_city1, JSON.stringify)
 
     //filtro funzione
     for (var i = 0; i < this.all_jobs.length; i++) {
-      this.filter_function1.push({ 
+      if(this.all_jobs[i].area_funzione.length > 1){
+        this.filter_function1.push({ 
           function: this.all_jobs[i].area_funzione,
         });
+      }
+      
     }
     this.filter_function2 = uniqBy(this.filter_function1, JSON.stringify)
 
     //suggested words
     for (var i = 0; i < this.all_jobs.length; i++) {
-      if(i < 10){
+      if(i < 12){
         this.suggested_words1.push({ 
           word: this.all_jobs[i].area_funzione,
         });
@@ -334,9 +318,6 @@ export default {
       remove_search_button.style.display = "none";
     }
 
-    console.log(this.all_jobs);
-    console.log(this.$favorite_list)
-    console.log(this.$favorite_list2)
     if(this.$favorite_list2.length > 0){
       document.querySelector("#fav_list_number").textContent = this.$favorite_list2.length;
       document.querySelector("#fav_list").style.display = "inline"
@@ -391,7 +372,7 @@ export default {
         
       },
 
-      loadMore_filtered() {
+    loadMore_filtered() {
       if (this.length_filtered == this.all_jobs_filtered.length) {
         
       };
@@ -418,7 +399,7 @@ export default {
 
       };
         
-      },
+    },
 
     uniqBy(a, key) {
         var seen = {};
@@ -662,11 +643,11 @@ export default {
           });
         
         const sort_by = document.querySelector('#sort_by');
-        sort_by.value = '2'
+        sort_by.value = '1'
       }else{
           if(event.target.value == "2"){
           this.all_jobs_filtered = this.all_jobs.sort((a, b) => {
-                if (a.publication_date > b.publication_date) {
+                if (a.id < b.id) {
                   return -1;
                 }
           });
@@ -679,7 +660,7 @@ export default {
           
         }else if(event.target.value == "1"){
           this.all_jobs_filtered = this.all_jobs.sort((a, b) => {
-                if (a.publication_date < b.publication_date) {
+                if (a.id > b.id) {
                   return -1;
                 }
           });
@@ -1041,8 +1022,8 @@ export default {
 
                 <div class="sort_by">
                   <select class="form-select" id="sort_by" @change="filter_sort_by($event)">
-                    <option value="2" selected>Meno recente</option>
-                    <option value="1">Più recente</option>
+                    <option value="1" selected>Più recente</option>
+                    <option value="2">Meno recente</option>
                     <option value="remove_filter">Rimuovi filtro</option>
                   </select>
                 </div>
@@ -1093,7 +1074,7 @@ export default {
                       <div class="card-buttons">
                         <div class="card-body">
                           <a v-if="job.url" :href=job.url target="blank" class="card-link btn">Vedi offerta</a>
-                          <div v-else>Offerta non più disponibile</div>
+                          <div class="btn_job_closed" v-else>Posizione chiusa con assunzione</div>
                         </div>
                       </div>
                   </div>
@@ -1151,8 +1132,8 @@ export default {
                       </div>
                       <div class="card-buttons">
                         <div class="card-body">
-                          <a v-if="job.closing_date < this.new_date" :href=job.url target="blank" class="card-link btn">Vedi offerta</a>
-                          <div v-else>Offerta non più disponibile</div>
+                          <a v-if="job.url"  :href=job.url target="blank" class="card-link btn">Vedi offerta</a>
+                          <div class="btn_job_closed" v-else>Posizione chiusa con assunzione</div>
                         </div>
                       </div>
                   </div>
@@ -1936,6 +1917,28 @@ sviluppare in azienda.
 
   .card .card-body{
     padding: 0;
+  }
+
+  .card-body .btn_job_closed{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 14px 26px;
+    border-radius: 20px;
+    background: #0c2550;
+    color: #ffffff;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    cursor: not-allowed;
+    transition: all 0.3s ease-out;
+    margin-right: 1.5rem;
   }
 
   .card .card-title{
@@ -2827,6 +2830,8 @@ sviluppare in azienda.
 
   .suggestWords .keyWords {
     margin-top: 1rem;
+    height: 11vw;
+    overflow-y: scroll;
   }
 
   .suggestWords .keyWord {
